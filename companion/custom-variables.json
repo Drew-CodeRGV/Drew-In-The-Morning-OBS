@@ -1,6 +1,6 @@
 {
   "ditm_block_index": {
-    "description": "Current block index, 0 through 12. Arrow keys wrap.",
+    "description": "Current block index, 0 through 11. Arrow keys wrap.",
     "defaultValue": "0",
     "persistCurrentValue": false
   },

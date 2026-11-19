@@ -11,7 +11,8 @@
     "recap": "Week of Nov 11-18 and the weekend of Nov 14-15",
     "showEmail": "ditm@drewlentz.com",
     "showEmailConfirm": true,
-    "handles": "IG/TikTok @drewinthemorning · YouTube @DrewintheMorning"
+    "handles": "IG/TikTok @drewinthemorning · YouTube @DrewintheMorning",
+    "kidsTopic": "strangers online and what to say when the group chat turns mean"
   },
   "headlines": {
     "image": {
@@ -25,62 +26,82 @@
         "title": "Cameron County rejects SpaceX data-center tax break hearing, 3-2",
         "short": "County says no to SpaceX's 10-yr, 100% tax break hearing (3-2)",
         "url": "https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/",
-        "source": "MyRGV · Nov 17"
+        "source": "MyRGV · Nov 17",
+        "teaser": "the county saying no to SpaceX's tax break",
+        "open": true
       },
       {
         "title": "Texas issues air permit for SpaceX's $24B data center",
         "short": "State air permit issued Nov 16 after Abbott's Sept pause",
         "url": "https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758",
-        "source": "Politico · Nov 17"
+        "source": "Politico · Nov 17",
+        "teaser": "Texas approving SpaceX's air permit",
+        "open": false
       },
       {
         "title": "Starship Flight 15: ship caught by tower, booster aborts catch",
         "short": "Flight 15: ship caught by tower Nov 14; booster aborted",
         "url": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/",
-        "source": "Spaceflight Now · Nov 13"
+        "source": "Spaceflight Now · Nov 13",
+        "teaser": "Starship Flight 15 and the tower catch",
+        "open": false
       },
       {
         "title": "Mission mayor and council races head to Dec. 12 runoffs",
         "short": "Mission mayor, council races go to Dec 12 runoffs",
         "url": "https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/",
-        "source": "KRGV"
+        "source": "KRGV",
+        "teaser": "Mission heading to a December 12th runoff",
+        "open": true
       },
       {
         "title": "Texas A&M McAllen to build $50M health education building",
         "short": "Texas A&M McAllen: $50M health building, starts Dec",
         "url": "https://dailymcallen.com/local-news/editions/11-18-2026",
-        "source": "Daily McAllen · Nov 18"
+        "source": "Daily McAllen · Nov 18",
+        "teaser": "a new Texas A&M health building in McAllen",
+        "open": false
       },
       {
         "title": "McAllen Food Truck Park closure delayed to Jan. 14, 2027",
         "short": "Food Truck Park closure moved to Jan 14, 2027",
         "url": "https://dailymcallen.com/local-news/editions/11-17-2026",
         "source": "Daily McAllen · Nov 17",
+        "teaser": "the McAllen Food Truck Park's new closing date",
+        "open": false,
         "noprint": true
       },
       {
         "title": "Another screwworm case confirmed in Starr County cattle",
         "short": "USDA: another screwworm case in Starr County",
         "url": "https://thergvnews.com/reviews/day/2026-11-17",
-        "source": "The RGV News · Nov 17"
+        "source": "The RGV News · Nov 17",
+        "teaser": "another screwworm case in Starr County",
+        "open": false
       },
       {
         "title": "Pharr twin bridge expansion opened Nov. 13",
         "short": "Pharr International Bridge twin span opened Nov 13",
         "url": "https://gooddayedinburg.com/local-news/editions/11-14-2026",
-        "source": "Good Day Edinburg · Nov 14"
+        "source": "Good Day Edinburg · Nov 14",
+        "teaser": "Pharr's new twin bridge opening",
+        "open": false
       },
       {
         "title": "Grupo Frontera, Edgar Barrera win at Latin Grammys",
         "short": "Edinburg's Grupo Frontera wins at Latin Grammys",
         "url": "https://gooddayedinburg.com/local-news/editions/11-14-2026",
-        "source": "Good Day Edinburg · Nov 14"
+        "source": "Good Day Edinburg · Nov 14",
+        "teaser": "Grupo Frontera's Latin Grammy win",
+        "open": false
       },
       {
         "title": "PSJA ISD swears in three trustees, elects Quintanilla president",
         "short": "PSJA ISD swears in 3 trustees",
         "url": "https://www.psjaisd.us/school-news-details/~board/pharr-san-juan-alamo-isd-news/post/psja-isd-swears-in-three-trustees-elects-new-board-leadership",
-        "source": "PSJA ISD · Nov 16"
+        "source": "PSJA ISD · Nov 16",
+        "teaser": "PSJA's three new trustees",
+        "open": false
       }
     ],
     "texas": [
@@ -134,6 +155,7 @@
       "confirm": [
         "Any current FAA flight cuts (none found)"
       ],
+      "teaser": "the FAA's nationwide ground stop and what it means for Valley flyers",
       "pfact": "Nov 13: FAA grounded all U.S. flights ~3:30-8:15 PM ET; legacy network swamped; FAA sees no cyberattack.",
       "pangle": "Everybody wants it modernized; nobody wants it down for the upgrade.",
       "pvalley": "HRL, MFE, BRO issued advisories; Brownsville had 5 cancellations."
@@ -167,6 +189,7 @@
       "confirm": [
         "Drew said 'Mullen': this is Sec. Markwayne Mullin (confirm with Drew)"
       ],
+      "teaser": "the Homeland Security testimony on those outages",
       "ptitle": "Mullin on outages and the LSU-Texas flight",
       "pfact": "DHS Sec. Mullin told House Homeland Security (Nov 18) the outages weren't a coordinated attack; defended flying to the LSU-Texas game.",
       "pangle": "Fair question or cheap shot? The optics of flying to a game during a grounding.",
@@ -209,6 +232,7 @@
       "confirm": [
         "'Sister' = the sister video Drew meant (confirm with Drew)"
       ],
+      "teaser": "last weekend's Saturday Night Live",
       "ptitle": "SNL: Mulaney, Bridgers, the 'Sister' sketch",
       "pfact": "Nov 14: Mulaney hosted (7th time), Bridgers sang; 'CIA Meeting' cold open roasted tech CEOs.",
       "pangle": "A cold open that skips politics and still lands; 'Sister' hit people in the gut.",
@@ -230,7 +254,8 @@
       ],
       "confirm": [
         "Allegation details (not independently verified here)"
-      ]
+      ],
+      "teaser": "Nvidia's CEO stepping down"
     },
     {
       "id": "tencom",
@@ -248,7 +273,8 @@
       ],
       "confirm": [
         "Details of any repeal bill (verify)"
-      ]
+      ],
+      "teaser": "the future of Texas' Ten Commandments law"
     }
   ],
   "weather": {
@@ -731,5 +757,267 @@
         ]
       }
     ]
+  },
+  "trending": [
+    {
+      "id": "cma",
+      "title": "Ella Langley sweeps the CMA Awards with 'Choosin' Texas'",
+      "category": "culture",
+      "one_line": "At the 60th CMA Awards (Nov 18) Ella Langley won Single, Song and Music Video of the Year for 'Choosin' Texas'; Taylor Swift performed for the first time in 13 years and Lainey Wilson hosted.",
+      "suggested_angle": "Country's biggest night went to a song with Texas in the title. Wait, don't tell me who's spinning it most in the Valley, and does Lainey's 'Somewhere Over Laredo' count as a local song?",
+      "source_url": "https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/",
+      "source": "Variety · Nov 18",
+      "short": "CMAs: Ella Langley wins 3 for 'Choosin' Texas'; Swift performs",
+      "teaser": "Ella Langley's big night at the CMA Awards",
+      "verified": true,
+      "confirm": "",
+      "print": true,
+      "links": [
+        {
+          "label": "USA Today: full winners list",
+          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/18/cma-awards-2026-winners-list/92853447007/"
+        },
+        {
+          "label": "Billboard: winners, updating live",
+          "url": "https://www.billboard.com/music/awards/cma-2026-winners-list-1236385046/"
+        }
+      ],
+      "image_url": "",
+      "image_credit": "",
+      "video_url": ""
+    },
+    {
+      "id": "musk",
+      "title": "Musk at DealBook: 'I'm not MAGA'",
+      "category": "politics/tech",
+      "one_line": "Speaking by video from China at the NYT DealBook Summit (Nov 18), Elon Musk said 'I'm not MAGA' and that he has no extreme political views, after reportedly spending about $445M backing Republicans who lost in the midterms.",
+      "suggested_angle": "The Starbase landlord just told the country he's not MAGA. Can a billionaire un-endorse the team he bankrolled, and does it change how Cameron County deals with SpaceX?",
+      "source_url": "https://techcrunch.com/2026/11/18/elon-musk-says-im-not-maga/",
+      "source": "TechCrunch · Nov 18",
+      "short": "Musk at DealBook: 'I'm not MAGA'",
+      "teaser": "Elon Musk saying he's not MAGA",
+      "verified": true,
+      "confirm": "",
+      "print": true,
+      "links": [],
+      "image_url": "",
+      "image_credit": "",
+      "video_url": ""
+    },
+    {
+      "id": "quince",
+      "title": "A nearly empty quince becomes an all-night stadium party",
+      "category": "viral",
+      "one_line": "A 15-year-old in Axtla de Terrazas, Mexico saw few guests at her quinceañera; the story went viral and thousands filled the town stadium for an all-night celebration in the rain (AP, Nov 18).",
+      "suggested_angle": "Every Valley family has a quince story. What's the most extra quince you've ever been to, and would you show up for a stranger's?",
+      "source_url": "https://apnews.com/article/mexico-quinceanera-san-luis-potosi-isela-santiago-36f8d9a1f1dd69f05e8a6e92027cbc49",
+      "source": "AP · Nov 18",
+      "short": "Empty quince turns into all-night stadium party",
+      "teaser": "a Mexican teen's quinceañera that packed a stadium",
+      "verified": true,
+      "confirm": "",
+      "print": true,
+      "links": [
+        {
+          "label": "AP video version",
+          "url": "https://apnews.com/video/from-empty-party-to-an-all-night-stadium-bash-a-mexican-teens-15th-birthday-goes-viral-9f0d2688f5894ac1b1e452f9ff73d4dc"
+        }
+      ],
+      "image_url": "",
+      "image_credit": "",
+      "video_url": ""
+    },
+    {
+      "id": "giannis",
+      "title": "Giannis faces the Bucks for the first time as a Heat player",
+      "category": "sports",
+      "one_line": "Giannis Antetokounmpo (20 points, 11 rebounds, 9 assists) and the Heat beat the 1-13 Bucks on Nov 18, his first game against Milwaukee since the offseason trade; he called it 'just another game.' He also scored 20 in Monday's 128-110 win over Houston.",
+      "suggested_angle": "'Emotions are for the movies.' Would you be that cool facing your old job? And he just beat the Rockets on Monday, so Houston fans have opinions.",
+      "source_url": "https://www.cbssports.com/nba/news/giannis-antetokounmpo-set-to-face-bucks-for-first-time-with-heat/",
+      "source": "CBS Sports · Nov 18",
+      "short": "Giannis faces the Bucks for the first time; Heat win",
+      "teaser": "Giannis facing his old team, the Bucks",
+      "verified": true,
+      "confirm": "Final margin not independently confirmed; the NBA.com box score shows Heat 128.",
+      "print": true,
+      "links": [
+        {
+          "label": "NBA.com box score (Heat vs Bucks)",
+          "url": "https://www.nba.com/bucks/game/0022600260-bucks-vs-heat-miami-fl-11-18-2026"
+        },
+        {
+          "label": "GMA/Reuters: 'just another game'",
+          "url": "https://www.gmanetwork.com/news/sports/basketball/1009886/nba-giannis-antetokounmpo-downplays-emotions-as-heat-face-bucks/story/"
+        }
+      ],
+      "image_url": "",
+      "image_credit": "",
+      "video_url": ""
+    },
+    {
+      "id": "bond",
+      "title": "Bezos: Pattinson was picked as Bond just three days before the announcement",
+      "category": "celebrity",
+      "one_line": "Jeff Bezos said Robert Pattinson was chosen as the new James Bond on Fri Nov 13, after full-costume screen tests with five finalists; Amazon MGM announced it Mon Nov 16.",
+      "suggested_angle": "Batman to 007. Who's your Bond, and is it weird that the guy who owns Amazon made the call? Wait, don't tell me you picked Daniel Craig forever.",
+      "source_url": "https://apnews.com/article/james-bond-jeff-bezos-robert-pattinson-a90f280d9e4fed9c7fd72ab6a4851945",
+      "source": "AP · Nov 18",
+      "short": "Bezos: Pattinson picked as Bond 3 days before announcement",
+      "teaser": "Robert Pattinson becoming James Bond",
+      "verified": true,
+      "confirm": "",
+      "print": true,
+      "links": [
+        {
+          "label": "AP: Pattinson named the seventh Bond",
+          "url": "https://apnews.com/article/new-james-bond-4545b257a9924895a69623332db50c97"
+        }
+      ],
+      "image_url": "",
+      "image_credit": "",
+      "video_url": ""
+    },
+    {
+      "id": "measles",
+      "title": "US and Mexico lose their measles-elimination status",
+      "category": "health",
+      "one_line": "PAHO determined the same measles virus had circulated for at least a year, so both the U.S. and Mexico lost their elimination designation (AP, Nov 2026).",
+      "suggested_angle": "Two countries lost it, and the Valley sits right on the line. What's the vaccine conversation at your kitchen table, and what do your kids' schools say?",
+      "source_url": "https://apnews.com/article/measles-elimination-status-us-mexico-b6694152aca12e8cf4293d9f50090ec9",
+      "source": "AP · Nov 2026",
+      "short": "US and Mexico lose measles-elimination status",
+      "teaser": "the U.S. and Mexico losing measles-elimination status",
+      "verified": true,
+      "confirm": "",
+      "print": false,
+      "links": [
+        {
+          "label": "PAHO statement",
+          "url": "https://www.paho.org/en/news/17-11-2026-paho-urges-countries-step-efforts-stop-measles-outbreaks-and-move-towards"
+        },
+        {
+          "label": "AP video: do you need a booster?",
+          "url": "https://apnews.com/video/the-u-s-lost-its-measles-elimination-status-do-you-need-a-booster-f98d07c0153a463283e42ea7bc09c86a"
+        }
+      ],
+      "image_url": "",
+      "image_credit": "",
+      "video_url": ""
+    },
+    {
+      "id": "stojakovic",
+      "title": "Illinois' Andrej Stojakovic drops 46 at Duke",
+      "category": "sports",
+      "one_line": "No. 10 Illinois beat No. 5 Duke 99-78 on Nov 17; Stojakovic (son of Peja) scored 46, the most ever by a visiting player at Cameron Indoor, passing Grady Wallace's 43 from 1957.",
+      "suggested_angle": "Peja's kid just scored 46 in the most hostile gym in college basketball. Whose kid in the Valley is carrying the family sport?",
+      "source_url": "https://apnews.com/article/illinois-duke-stojakovic-46-points-c6a4a8aee2f9d7fb676dab9019fe9d83",
+      "source": "AP · Nov 17",
+      "short": "Illinois' Stojakovic scores 46 at Duke (99-78)",
+      "teaser": "Andrej Stojakovic's 46 points at Duke",
+      "verified": true,
+      "confirm": "",
+      "print": false,
+      "links": [
+        {
+          "label": "ESPN recap",
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50517287/illinois-andrej-stojakovic-scores-46-points-most-ever-opponent-duke"
+        }
+      ],
+      "image_url": "",
+      "image_credit": "",
+      "video_url": ""
+    },
+    {
+      "id": "usmnt",
+      "title": "Pulisic's bicycle kick sends Pochettino off with a 2-0 win",
+      "category": "sports",
+      "one_line": "The U.S. beat Haiti 2-0 in Cincinnati on Nov 17 in Mauricio Pochettino's last match as coach: Christian Pulisic scored with a bicycle kick in the 25th minute and Julian Hall added a second in the 43rd.",
+      "suggested_angle": "A bicycle kick as a farewell. The Valley is a soccer region, so who should coach the U.S. next, and wait, don't tell me you want Messi.",
+      "source_url": "https://apnews.com/article/usmnt-soccer-mauricio-pochettino-farewell-haiti-3fe3610a6d9a0d0fa1ef08fe56f03630",
+      "source": "AP · Nov 17",
+      "short": "Pulisic bicycle kick; US beats Haiti 2-0 in Pochettino finale",
+      "teaser": "Pulisic's bicycle kick in Pochettino's farewell",
+      "verified": true,
+      "confirm": "",
+      "print": false,
+      "links": [
+        {
+          "label": "U.S. Soccer recap",
+          "url": "https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-cincinnati-ohio"
+        }
+      ],
+      "image_url": "",
+      "image_credit": "",
+      "video_url": ""
+    },
+    {
+      "id": "youtube",
+      "title": "YouTube trending: Lil Baby's 'Aint Goin' holds #1; teasers for 'Twilight (But Better)' and '3 Body Problem' S2",
+      "category": "viral video",
+      "one_line": "On Nov 18 Lil Baby's 'Aint Goin' official video stayed #1 on YouTube's U.S. trending list all day; a 'Twilight (But Better)' teaser, a '3 Body Problem' season 2 teaser, CaseOh and Markiplier videos also charted.",
+      "suggested_angle": "What's on your kids' YouTube feed right now? If they say CaseOh, you've got your opening for the Kids Talk block.",
+      "source_url": "https://trendoday.com/youtube/2026/11/18",
+      "source": "Trendoday (YouTube US chart) · Nov 18",
+      "short": "YouTube #1: Lil Baby 'Aint Goin'; Twilight, 3 Body teasers",
+      "teaser": "what's topping YouTube trending",
+      "verified": false,
+      "confirm": "Chart comes from a third-party tracker of YouTube's trending list; confirm on youtube.com/feed/trending.",
+      "print": false,
+      "links": [],
+      "image_url": "",
+      "image_credit": "",
+      "video_url": ""
+    }
+  ],
+  "up_to": [
+    {
+      "date": "2026-11-16",
+      "short": "Talk proposal: ResCon New Orleans 2027 (shelter Wi-Fi)",
+      "title": "Sent in a talk proposal to ResCon New Orleans 2027 (Mar 9-11): standing up shelter Wi-Fi in hours",
+      "type": "conference",
+      "who": "Drew",
+      "link": {
+        "label": "ResCon 2027 call for proposals",
+        "url": "https://resconnola.com/2027-call-for-proposals/"
+      },
+      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected"
+    },
+    {
+      "date": "2026-11-16",
+      "short": "Talk proposal: South Atlantic Fire Rescue Expo 2027",
+      "title": "Sent in a talk proposal to the South Atlantic Fire Rescue Expo 2027 (Aug 11-14, Raleigh): fast Wi-Fi for command posts",
+      "type": "conference",
+      "who": "Drew",
+      "link": {
+        "label": "SAFRE 2027 call for presenters",
+        "url": "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/"
+      },
+      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected"
+    },
+    {
+      "date": "2026-11-16",
+      "short": "Talk proposals: IAFC WUI (Austin) + CALNENA 2027",
+      "title": "Sent in talk proposals to the IAFC Wildland-Urban Interface conference (Austin, Mar 23-25) and CALNENA 2027 (Los Angeles, Mar 1-3)",
+      "type": "conference",
+      "who": "Drew",
+      "link": null,
+      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected"
+    },
+    {
+      "date": "2026-11-12",
+      "short": "Talk proposal: IAEM-USA Region 6 Symposium 2027",
+      "title": "Sent in a talk proposal to the IAEM-USA Region 6 Symposium 2027: temporary Wi-Fi for EOCs and shelters",
+      "type": "conference",
+      "who": "Drew",
+      "link": null,
+      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected"
+    }
+  ],
+  "up_to_script": "Hey, for the last week, here's what I've been up to. Outside the studio I spent a good chunk of it sending in talk proposals for a handful of 2027 conferences: emergency management, fire and rescue, and 9-1-1 shows, all about getting Wi-Fi up fast when a shelter or a command post has to stand up overnight. Nothing's been accepted yet, so I'll let you know if anybody says yes. Okay, enough about me. Let's get into the Valley.",
+  "up_to_meta": {
+    "window": "Nov 11-18, 2026",
+    "calendar": "not connected (no calendar tool available); built from email only",
+    "note": "Proposals SUBMITTED, not accepted: do not say 'accepted' or 'speaking at'.",
+    "jess": "Nothing found for Jess (no access to her calendar or mail)."
   }
 }

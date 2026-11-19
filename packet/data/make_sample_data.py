@@ -190,6 +190,79 @@ data = {
  }
 }
 
+
+# ---- trending ("Wait, Don't Tell Me") + cold-open teasers (research as of Nov 18, 2026)
+def T(id, title, cat, one, angle, url, source, short, teaser, verified=True, confirm="", print_=False, links=None, image_url="", image_credit="", video_url=""):
+    return {"id": id, "title": title, "category": cat, "one_line": one, "suggested_angle": angle, "source_url": url, "source": source, "short": short,
+            "teaser": teaser, "verified": verified, "confirm": confirm, "print": print_, "links": links or [], "image_url": image_url, "image_credit": image_credit, "video_url": video_url}
+data["trending"] = [
+ T("cma", "Ella Langley sweeps the CMA Awards with 'Choosin' Texas'", "culture",
+   "At the 60th CMA Awards (Nov 18) Ella Langley won Single, Song and Music Video of the Year for 'Choosin' Texas'; Taylor Swift performed for the first time in 13 years and Lainey Wilson hosted.",
+   "Country's biggest night went to a song with Texas in the title. Wait, don't tell me who's spinning it most in the Valley, and does Lainey's 'Somewhere Over Laredo' count as a local song?",
+   "https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/", "Variety · Nov 18", "CMAs: Ella Langley wins 3 for 'Choosin' Texas'; Swift performs",
+   "Ella Langley's big night at the CMA Awards", print_=True,
+   links=[L("USA Today: full winners list", "https://www.usatoday.com/story/entertainment/music/2026/11/18/cma-awards-2026-winners-list/92853447007/"), L("Billboard: winners, updating live", "https://www.billboard.com/music/awards/cma-2026-winners-list-1236385046/")]),
+ T("musk", "Musk at DealBook: 'I'm not MAGA'", "politics/tech",
+   "Speaking by video from China at the NYT DealBook Summit (Nov 18), Elon Musk said 'I'm not MAGA' and that he has no extreme political views, after reportedly spending about $445M backing Republicans who lost in the midterms.",
+   "The Starbase landlord just told the country he's not MAGA. Can a billionaire un-endorse the team he bankrolled, and does it change how Cameron County deals with SpaceX?",
+   "https://techcrunch.com/2026/11/18/elon-musk-says-im-not-maga/", "TechCrunch · Nov 18", "Musk at DealBook: 'I'm not MAGA'",
+   "Elon Musk saying he's not MAGA", print_=True),
+ T("quince", "A nearly empty quince becomes an all-night stadium party", "viral",
+   "A 15-year-old in Axtla de Terrazas, Mexico saw few guests at her quinceañera; the story went viral and thousands filled the town stadium for an all-night celebration in the rain (AP, Nov 18).",
+   "Every Valley family has a quince story. What's the most extra quince you've ever been to, and would you show up for a stranger's?",
+   "https://apnews.com/article/mexico-quinceanera-san-luis-potosi-isela-santiago-36f8d9a1f1dd69f05e8a6e92027cbc49", "AP · Nov 18", "Empty quince turns into all-night stadium party",
+   "a Mexican teen's quinceañera that packed a stadium", print_=True,
+   links=[L("AP video version", "https://apnews.com/video/from-empty-party-to-an-all-night-stadium-bash-a-mexican-teens-15th-birthday-goes-viral-9f0d2688f5894ac1b1e452f9ff73d4dc")]),
+ T("giannis", "Giannis faces the Bucks for the first time as a Heat player", "sports",
+   "Giannis Antetokounmpo (20 points, 11 rebounds, 9 assists) and the Heat beat the 1-13 Bucks on Nov 18, his first game against Milwaukee since the offseason trade; he called it 'just another game.' He also scored 20 in Monday's 128-110 win over Houston.",
+   "'Emotions are for the movies.' Would you be that cool facing your old job? And he just beat the Rockets on Monday, so Houston fans have opinions.",
+   "https://www.cbssports.com/nba/news/giannis-antetokounmpo-set-to-face-bucks-for-first-time-with-heat/", "CBS Sports · Nov 18", "Giannis faces the Bucks for the first time; Heat win",
+   "Giannis facing his old team, the Bucks", print_=True,
+   links=[L("NBA.com box score (Heat vs Bucks)", "https://www.nba.com/bucks/game/0022600260-bucks-vs-heat-miami-fl-11-18-2026"), L("GMA/Reuters: 'just another game'", "https://www.gmanetwork.com/news/sports/basketball/1009886/nba-giannis-antetokounmpo-downplays-emotions-as-heat-face-bucks/story/")],
+   confirm="Final margin not independently confirmed; the NBA.com box score shows Heat 128."),
+ T("bond", "Bezos: Pattinson was picked as Bond just three days before the announcement", "celebrity",
+   "Jeff Bezos said Robert Pattinson was chosen as the new James Bond on Fri Nov 13, after full-costume screen tests with five finalists; Amazon MGM announced it Mon Nov 16.",
+   "Batman to 007. Who's your Bond, and is it weird that the guy who owns Amazon made the call? Wait, don't tell me you picked Daniel Craig forever.",
+   "https://apnews.com/article/james-bond-jeff-bezos-robert-pattinson-a90f280d9e4fed9c7fd72ab6a4851945", "AP · Nov 18", "Bezos: Pattinson picked as Bond 3 days before announcement",
+   "Robert Pattinson becoming James Bond", print_=True,
+   links=[L("AP: Pattinson named the seventh Bond", "https://apnews.com/article/new-james-bond-4545b257a9924895a69623332db50c97")]),
+ T("measles", "US and Mexico lose their measles-elimination status", "health",
+   "PAHO determined the same measles virus had circulated for at least a year, so both the U.S. and Mexico lost their elimination designation (AP, Nov 2026).",
+   "Two countries lost it, and the Valley sits right on the line. What's the vaccine conversation at your kitchen table, and what do your kids' schools say?",
+   "https://apnews.com/article/measles-elimination-status-us-mexico-b6694152aca12e8cf4293d9f50090ec9", "AP · Nov 2026", "US and Mexico lose measles-elimination status",
+   "the U.S. and Mexico losing measles-elimination status", verified=True,
+   links=[L("PAHO statement", "https://www.paho.org/en/news/17-11-2026-paho-urges-countries-step-efforts-stop-measles-outbreaks-and-move-towards"), L("AP video: do you need a booster?", "https://apnews.com/video/the-u-s-lost-its-measles-elimination-status-do-you-need-a-booster-f98d07c0153a463283e42ea7bc09c86a")]),
+ T("stojakovic", "Illinois' Andrej Stojakovic drops 46 at Duke", "sports",
+   "No. 10 Illinois beat No. 5 Duke 99-78 on Nov 17; Stojakovic (son of Peja) scored 46, the most ever by a visiting player at Cameron Indoor, passing Grady Wallace's 43 from 1957.",
+   "Peja's kid just scored 46 in the most hostile gym in college basketball. Whose kid in the Valley is carrying the family sport?",
+   "https://apnews.com/article/illinois-duke-stojakovic-46-points-c6a4a8aee2f9d7fb676dab9019fe9d83", "AP · Nov 17", "Illinois' Stojakovic scores 46 at Duke (99-78)",
+   "Andrej Stojakovic's 46 points at Duke",
+   links=[L("ESPN recap", "https://www.espn.com/mens-college-basketball/story/_/id/50517287/illinois-andrej-stojakovic-scores-46-points-most-ever-opponent-duke")]),
+ T("usmnt", "Pulisic's bicycle kick sends Pochettino off with a 2-0 win", "sports",
+   "The U.S. beat Haiti 2-0 in Cincinnati on Nov 17 in Mauricio Pochettino's last match as coach: Christian Pulisic scored with a bicycle kick in the 25th minute and Julian Hall added a second in the 43rd.",
+   "A bicycle kick as a farewell. The Valley is a soccer region, so who should coach the U.S. next, and wait, don't tell me you want Messi.",
+   "https://apnews.com/article/usmnt-soccer-mauricio-pochettino-farewell-haiti-3fe3610a6d9a0d0fa1ef08fe56f03630", "AP · Nov 17", "Pulisic bicycle kick; US beats Haiti 2-0 in Pochettino finale",
+   "Pulisic's bicycle kick in Pochettino's farewell",
+   links=[L("U.S. Soccer recap", "https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-cincinnati-ohio")]),
+ T("youtube", "YouTube trending: Lil Baby's 'Aint Goin' holds #1; teasers for 'Twilight (But Better)' and '3 Body Problem' S2", "viral video",
+   "On Nov 18 Lil Baby's 'Aint Goin' official video stayed #1 on YouTube's U.S. trending list all day; a 'Twilight (But Better)' teaser, a '3 Body Problem' season 2 teaser, CaseOh and Markiplier videos also charted.",
+   "What's on your kids' YouTube feed right now? If they say CaseOh, you've got your opening for the Kids Talk block.",
+   "https://trendoday.com/youtube/2026/11/18", "Trendoday (YouTube US chart) · Nov 18", "YouTube #1: Lil Baby 'Aint Goin'; Twilight, 3 Body teasers",
+   "what's topping YouTube trending", verified=False,
+   confirm="Chart comes from a third-party tracker of YouTube's trending list; confirm on youtube.com/feed/trending."),
+]
+# X trends check (US, Nov 18 8:50 PM CT): #CMAawards, Giannis, 'Dark MAGA' were all on the X US trending list; also #Survivor51, #AEWDynamite.
+for it in data["headlines"]["rgv"]:
+    it["teaser"] = {"county": "the county saying no to SpaceX's tax break", "air permit": "Texas approving SpaceX's air permit", "Flight 15": "Starship Flight 15 and the tower catch",
+                    "Mission": "Mission heading to a December 12th runoff", "A&M": "a new Texas A&M health building in McAllen", "Food Truck": "the McAllen Food Truck Park's new closing date",
+                    "screwworm": "another screwworm case in Starr County", "Pharr": "Pharr's new twin bridge opening", "Grupo Frontera": "Grupo Frontera's Latin Grammy win", "PSJA": "PSJA's three new trustees"}.get(
+        next((k for k in ("screwworm", "county", "air permit", "Flight 15", "Mission", "A&M", "Food Truck", "Pharr", "Grupo Frontera", "PSJA") if k.lower() in it["title"].lower()), ""), "")
+    if not it["teaser"]: it.pop("teaser")
+    it["open"] = ("county" in it["title"].lower() and "spacex" in it["title"].lower() and "screwworm" not in it["title"].lower()) or "Mission" in it["title"]
+TEASE_N = {"faa": "the FAA's nationwide ground stop and what it means for Valley flyers", "mullin": "the Homeland Security testimony on those outages", "snl": "last weekend's Saturday Night Live", "huang": "Nvidia's CEO stepping down", "tencom": "the future of Texas' Ten Commandments law"}
+for n in data["nationalDesk"]: n["teaser"] = TEASE_N.get(n["id"], "")
+data["meta"]["kidsTopic"] = "strangers online and what to say when the group chat turns mean"
+
 PM = {
  "roblox": ("Roblox's #1 game: pet-collecting 'Steal An Egg' (1.17M playing); other players can grab your eggs.", "Ask 'who's stealing your eggs?' Friends-only chat, spending limit."),
  "six-seven": ("Catchphrase kids yell with a hands-weighing gesture; no fixed meaning, already called overused.", "Ask them to show you the gesture; it's meant to confuse adults."),
@@ -215,5 +288,32 @@ for n in data["nationalDesk"]:
     n["print"] = n["id"] in PN
     if n["id"] in PT: n["ptitle"] = PT[n["id"]]
     if n["id"] in PN: n["pfact"], n["pangle"], n["pvalley"] = PN[n["id"]]
+
+# ---- "What I've Been Up To This Week" (block B). Window: Nov 11-18, 2026. NEVER INVENT.
+# Calendar: no Google Calendar tool is connected, so there is no calendar data. Source below is Drew's own sent-mail
+# "Wifistand submissions log" (Gmail, drew@drewlentz.com, read-only) plus public call-for-proposals pages.
+# Excluded on purpose: expert-witness/legal mail, family/school/4-H mail, payments, client threads, press pitches, newsletters.
+UPTO_SRC = "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected"
+data["up_to"] = [
+    {"date": "2026-11-16", "short": "Talk proposal: ResCon New Orleans 2027 (shelter Wi-Fi)", "title": "Sent in a talk proposal to ResCon New Orleans 2027 (Mar 9-11): standing up shelter Wi-Fi in hours", "type": "conference", "who": "Drew",
+     "link": {"label": "ResCon 2027 call for proposals", "url": "https://resconnola.com/2027-call-for-proposals/"}, "source": UPTO_SRC},
+    {"date": "2026-11-16", "short": "Talk proposal: South Atlantic Fire Rescue Expo 2027", "title": "Sent in a talk proposal to the South Atlantic Fire Rescue Expo 2027 (Aug 11-14, Raleigh): fast Wi-Fi for command posts", "type": "conference", "who": "Drew",
+     "link": {"label": "SAFRE 2027 call for presenters", "url": "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/"}, "source": UPTO_SRC},
+    {"date": "2026-11-16", "short": "Talk proposals: IAFC WUI (Austin) + CALNENA 2027", "title": "Sent in talk proposals to the IAFC Wildland-Urban Interface conference (Austin, Mar 23-25) and CALNENA 2027 (Los Angeles, Mar 1-3)", "type": "conference", "who": "Drew", "link": None, "source": UPTO_SRC},
+    {"date": "2026-11-12", "short": "Talk proposal: IAEM-USA Region 6 Symposium 2027", "title": "Sent in a talk proposal to the IAEM-USA Region 6 Symposium 2027: temporary Wi-Fi for EOCs and shelters", "type": "conference", "who": "Drew", "link": None, "source": UPTO_SRC},
+]
+data["up_to_script"] = ("Hey, for the last week, here's what I've been up to. Outside the studio I spent a good chunk of it sending in talk proposals for a handful of 2027 "
+                        "conferences: emergency management, fire and rescue, and 9-1-1 shows, all about getting Wi-Fi up fast when a shelter or a command post "
+                        "has to stand up overnight. Nothing's been accepted yet, so I'll let you know if anybody says yes. Okay, enough about me. Let's get into the Valley.")
+data["up_to_meta"] = {"window": "Nov 11-18, 2026", "calendar": "not connected (no calendar tool available); built from email only",
+                      "note": "Proposals SUBMITTED, not accepted: do not say 'accepted' or 'speaking at'.",
+                      "jess": "Nothing found for Jess (no access to her calendar or mail)."}
+
 json.dump(data, open(os.path.join(H, "packet-2026-11-23.json"), "w"), indent=2, ensure_ascii=False)
+# ---- Nov 19 daily-mode test, built from the same data (clearly marked as a test)
+import copy
+dd = copy.deepcopy(data)
+dd["meta"].update({"date": "2026-11-19", "mode": "daily", "sample": True, "sampleLabel": "TEST BUILD · daily mode, data as of Nov 18", "title": "Drew in the Morning · Daily Briefing"})
+dd["meta"].pop("dateLabel", None)
+json.dump(dd, open(os.path.join(H, "packet-2026-11-19.json"), "w"), indent=2, ensure_ascii=False)
 print("ok")

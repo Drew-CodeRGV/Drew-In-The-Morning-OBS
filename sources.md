@@ -6,6 +6,7 @@
 - RGV.me (community stories, 179K followers): https://www.facebook.com/RGV.ME
 
 - The Monitor (McAllen newspaper) Facebook page: https://www.facebook.com/monitornews
+- KRGV Channel 5 News (Weslaco) Facebook page: https://www.facebook.com/channel5news
 
 ## Reddit (readable logged out on www.reddit.com; old.reddit forces login)
 - r/RioGrandeValley: https://www.reddit.com/r/RioGrandeValley/new/

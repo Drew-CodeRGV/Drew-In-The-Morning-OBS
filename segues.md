@@ -4,89 +4,84 @@ Natural on-air lines for blending between story types (open format). Use as is o
 
 **Tip:** grab the bridge, then say the *so what* in your own words: local → why it matters → bigger picture. The pool now includes National Desk → local, listener-line, and Meme of the Week transitions for the 60-minute plan.
 
-## local politics → kids/digital
-1. "Politics is really about who decides things for our kids — so let's talk about the decisions we make at the kitchen table."
-2. "A Valley school board just swore in new trustees. Before they argue about budgets, here's what we'd want them to ask about screens and AI in class."
-3. "We just watched an election come down to turnout. You know who doesn't get a ballot? The 10-year-old who's about to get a very big game this week."
-4. "Every campaign promise has a kid somewhere in it. Let's bring Jess in and talk about the ones that show up on a phone."
-5. "Texas already bans phones during the school day — so what happens at 3:15 PM? Jess, that one's yours."
+## Cold Open & Jingle → What I've Been Up To This Week
+1. "Quick check-in on what I've been up to this week, then we jump into the Valley."
+2. "Before the news, a little of what Jess and I have been up to."
 
-## controversy → community impact
-6. "That's the headline. Now let's talk about who actually lives next to it."
-7. "The vote is the loud part. The quiet part is what a family on the Gulf side of this feels when the windows shake."
-8. "Forget the press release for a second — what does this change for somebody's Tuesday?"
-9. "Both sides said they're for the Valley. Let's find out what 'for the Valley' costs and who's paying."
-10. "Hold that thought — I want to hear from people who aren't in the room where this got decided."
+## What I've Been Up To This Week → Local News
+3. "Okay, enough about me. Let's get into the Valley."
+4. "That's my week. Here's what the Valley's been up to."
 
-## economic development → family life
-11. "A $225 million plant means 500 jobs on paper. Let's talk about what a good job does for a family dinner table."
-12. "Great, we're growing. Can a kid who grows up here afford to stay? That's the real economic development question."
-13. "A new health building means local kids can study nursing without leaving home. That's the version of growth I like."
-14. "Food trucks, jobs, schools: it's all one question — can regular families make a life here?"
+## Local News → Local Politics
+5. "That's the headline. Now let's talk about the people who decide: the politics behind it."
+6. "Hold that thought: that vote is local politics. Let's go there."
+7. "Let's stay on this one a minute. Here's what I'd ask the people who decide."
 
-## SpaceX → RGV kids
-15. "When we say 'SpaceX' we usually mean rockets. For a kid in Brownsville it can mean fishing trips, beach days or whether the ground shakes."
-16. "Some kids here are growing up watching launches from the backyard. What do we tell them it means?"
-17. "Space jobs, data centers, STEM — what does an 8th grader here actually see as their path?"
-18. "If a kid asks 'is it safe,' what's an honest answer from a parent? Jess, what would you say?"
-19. "The tech is amazing and the questions are fair. Let's teach kids both."
+## Local Politics → School Boards
+8. "We just watched an election come down to turnout. The same is true at your school board."
+9. "Elections come down to who shows up. Let's go from the ballot box to the classroom."
 
-## kids/digital → local politics/schools
-20. "Kids can't vote, but their screen time shows up in school board agendas. Let's talk about what trustees are actually deciding."
-21. "If districts are writing AI rules for students, parents deserve a seat. Who's asking at the next board meeting?"
-22. "The same people who set tax rates decide whether libraries and bus stops serve our kids. That's a political conversation too."
-23. "We told our kids to speak up — time we do the same at city hall."
+## School Boards → City Hall
+10. "Two school boards' worth of decisions land on our kids. Now the folks who run the cities."
+11. "From the classroom to City Hall: who's actually running the place?"
 
-## local story → bigger picture
-24. "This looks like a McAllen story. It's really a story about every border town trying to grow without losing itself."
-25. "Zoom out: whatever is happening here is a preview of what other small cities will face."
-26. "If this happened in Austin it'd be national news. Here it's Tuesday. Why?"
-27. "It's local until it isn't: power, water, jobs and kids are the same fights everywhere."
-28. "What does the Valley know that the rest of Texas hasn't figured out yet?"
-29. "One flipped district, one runoff, one tax break: put them together and what's the Valley telling Texas?"
+## City Hall → Economic Development
+12. "City halls make deals. Let's talk about the deals that are supposed to bring jobs."
+13. "Forget the press release for a second: what does this change for somebody's Tuesday?"
 
-## any → Jess drop-in
-30. "Somebody in this house has stronger opinions about this than I do — Jess, you're up."
-31. "Hang on, I hear someone in the kitchen. Jess, come say good morning."
+## Economic Development → Family & Kids (woven in)
+14. "A $225 million plant means 500 jobs on paper. Let's talk about what a good job does for a family dinner table."
+15. "Great, we're growing. Can a kid who grows up here afford to stay? Jess, come on in."
 
-## Jess drop-in → any
-32. "Thanks, Jess. Let's get back to the Valley."
-33. "We'll let Jess go save the morning. Back to the news."
+## Family & Kids (woven in) → Statewide
+16. "Thanks, Jess. That's the family side. Now, what's Austin up to?"
+17. "That's the kitchen-table view. Now the view from the Capitol."
 
-## any → How We'd Talk to Our Kids
-34. "Okay — time for the part of the show other parents skip. No judgment, just how we'd say it."
+## Statewide → The National Desk (+ Trending)
+18. "That's Texas. Now zoom out: what's the rest of the country arguing about?"
+19. "Austin writes the rules; Washington argues about them. Here's the national picture."
 
-## How We'd Talk to Our Kids → any
-35. "If one of those conversations feels huge, start with one sentence. Now, back to the Valley."
-36. "If you need to step away after that, there's no shame in it. 988, any time. Let's reset with something local."
+## The National Desk (+ Trending) → Listener Line
+20. "Okay, that's the 30,000-foot view. Now it's your turn: what are you hearing?"
+21. "We've talked a lot. Now it's your turn."
 
-## local politics → National Desk
-37. "That's what's happening in our backyard. Let's zoom out and see what the rest of the country is arguing about."
+## Listener Line → Meme of the Week & Close
+22. "Let's lighten up and see what the kids are saying."
+23. "That's the fun stuff. One more thing before we go: what the kids are talking about."
 
-## National Desk → local
-38. "Okay, that's the 30,000-foot view. Now, what does it mean at 1,000 feet over the Valley?"
-39. "Strip out the politics: what did that story change for somebody at MFE or HRL this week?"
+## any local block → Family & Kids
+24. "Strip out the politics: what does this change for one family? Jess, you're up."
 
-## national story → Valley angle
-40. "Everybody's talking about it in Washington. Here's how it lands in Weslaco."
+## any block → Economic Development
+25. "Forget the politics for a second: who gets the jobs, and who pays?"
 
-## local → Listener Line
-41. "We've talked a lot. Now it's your turn: what are you hearing?"
+## Statewide → Local Politics
+26. "This is a Valley story, but Austin is already writing the rules."
 
-## Listener Line → Meme of the Week
-42. "Let's lighten up and see what the kids are saying."
+## National Desk → any local block
+27. "Strip out the politics: what did that story change for somebody at MFE or HRL this week?"
+28. "Everybody's talking about it in Washington. Here's how it lands in Weslaco."
 
-## Meme of the Week → How We'd Talk to Our Kids
-43. "That's the fun stuff. Now the part other parents skip."
+## National Desk → Trending
+29. "Okay, that's the news. Here's what the internet is losing its mind over. Wait, don't tell me."
 
-## How We'd Talk to Our Kids → Listener Line
-44. "If one of those hit home, send us your story or your question. Anonymous is fine."
+## any block → Listener Line
+30. "We could go all morning on this, but let's hear from you: what are you seeing?"
 
-## local politics → deeper dive
-45. "Let's stay on this one a minute. Here's what I'd ask the people who decide."
+## any block → Meme of the Week
+31. "Let's lighten up and see what the kids are saying."
 
-## deeper dive → next block
-46. "We could go all morning on this, but there's more Valley to cover."
+## Meme of the Week → Family & Kids
+32. "That's the fun stuff. Now the part other parents skip."
+
+## Family & Kids → Listener Line
+33. "If one of those hit home, send us your story or your question. Anonymous is fine."
+
+## any block → next block
+34. "We could go all morning on this, but there's more Valley to cover."
+
+## Cold Open → What I've Been Up To
+35. "Quick check-in on what I've been up to this week, then we jump into the Valley."
 
 ## Bigger-picture pivot cheat sheet
 - Local → state: "This is a Valley story, but Austin is already writing the rules."

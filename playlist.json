@@ -87,7 +87,7 @@
       "timeRange": "8:00\u20138:02",
       "durationMinutes": 2,
       "title": "Cold Open & Jingle",
-      "subject": "Welcome, the hour's promise, listener tease",
+      "subject": "Jingle, the filled-in cold open, the hour's promise",
       "skippable": false,
       "flex": false,
       "canTrimToMinutes": null,
@@ -103,192 +103,20 @@
         "chyrons/00-A-cold-open-a1.txt",
         "chyrons/00-A-cold-open-a2.txt"
       ],
-      "needsVerification": []
+      "needsVerification": [
+        "Unconfirmed teased items are listed under the cold open on the studio page"
+      ]
     },
     {
-      "id": "B-starbase-watch",
+      "id": "B-up-to",
       "letter": "B",
       "order": 1,
       "start": "8:02",
-      "end": "8:10",
-      "timeRange": "8:02\u20138:10",
-      "durationMinutes": 8,
-      "title": "Starbase Watch: SpaceX, the Vote & the Launch",
-      "subject": "Data center tax abatement, Flight 15, community impact",
-      "skippable": false,
-      "flex": true,
-      "canTrimToMinutes": 6,
-      "canStretchToMinutes": 10,
-      "jessDropIn": false,
-      "signature": false,
-      "recurring": false,
-      "titleFile": "segment-titles/01-B-starbase-watch.txt",
-      "headlines": [
-        "headlines/01-B-starbase-watch-01.txt",
-        "headlines/01-B-starbase-watch-02.txt",
-        "headlines/01-B-starbase-watch-03.txt",
-        "headlines/01-B-starbase-watch-04.txt"
-      ],
-      "chyrons": [
-        "chyrons/01-B-starbase-watch-b1.txt",
-        "chyrons/01-B-starbase-watch-b2.txt",
-        "chyrons/01-B-starbase-watch-b3.txt",
-        "chyrons/01-B-starbase-watch-b4.txt",
-        "chyrons/01-B-starbase-watch-b5.txt",
-        "chyrons/01-B-starbase-watch-b6.txt"
-      ],
-      "needsVerification": [
-        "Dec 9 Starbase hearing date",
-        "Jobs figure (MyRGV 5,500 peak construction vs KRGV 500 new)",
-        "FAA public meeting date"
-      ]
-    },
-    {
-      "id": "C-jess-gta6",
-      "letter": "C",
-      "order": 2,
-      "start": "8:10",
-      "end": "8:14",
-      "timeRange": "8:10\u20138:14",
-      "durationMinutes": 4,
-      "title": "Jess Drop-In #1: GTA 6 Week & the Digital Generation",
-      "subject": "GTA 6 launch, school attendance, sleep, screen time, AI in class",
-      "skippable": false,
-      "flex": false,
-      "canTrimToMinutes": null,
-      "canStretchToMinutes": null,
-      "jessDropIn": true,
-      "signature": false,
-      "recurring": false,
-      "titleFile": "segment-titles/02-C-jess-gta6.txt",
-      "headlines": [
-        "headlines/02-C-jess-gta6-01.txt",
-        "headlines/02-C-jess-gta6-02.txt",
-        "headlines/02-C-jess-gta6-03.txt"
-      ],
-      "chyrons": [
-        "chyrons/02-C-jess-gta6-c1.txt",
-        "chyrons/02-C-jess-gta6-c2.txt",
-        "chyrons/02-C-jess-gta6-c3.txt",
-        "chyrons/02-C-jess-gta6-c4.txt"
-      ],
-      "needsVerification": [
-        "GTA 6 actually launched on time Nov 19",
-        "Any RGV school/attendance reaction"
-      ]
-    },
-    {
-      "id": "D-ballot-box",
-      "letter": "D",
-      "order": 3,
-      "start": "8:14",
-      "end": "8:20",
-      "timeRange": "8:14\u20138:20",
-      "durationMinutes": 6,
-      "title": "Ballot Box Rewind: Pulido, Runoffs & the Valley Flip",
-      "subject": "TX-15 result and Dec. 12 runoffs",
-      "skippable": false,
-      "flex": true,
-      "canTrimToMinutes": 4,
-      "canStretchToMinutes": 8,
-      "jessDropIn": false,
-      "signature": false,
-      "recurring": false,
-      "titleFile": "segment-titles/03-D-ballot-box.txt",
-      "headlines": [
-        "headlines/03-D-ballot-box-01.txt",
-        "headlines/03-D-ballot-box-02.txt",
-        "headlines/03-D-ballot-box-03.txt"
-      ],
-      "chyrons": [
-        "chyrons/03-D-ballot-box-d1.txt",
-        "chyrons/03-D-ballot-box-d2.txt",
-        "chyrons/03-D-ballot-box-d3.txt",
-        "chyrons/03-D-ballot-box-d4.txt"
-      ],
-      "needsVerification": [
-        "Certified vote totals",
-        "TX-34 result (not retrieved)",
-        "Early-voting dates"
-      ]
-    },
-    {
-      "id": "E-city-hall-school-board",
-      "letter": "E",
-      "order": 4,
-      "start": "8:20",
-      "end": "8:24",
-      "timeRange": "8:20\u20138:24",
-      "durationMinutes": 4,
-      "title": "City Hall & School Board Watch",
-      "subject": "School boards, mayors and city managers",
-      "skippable": false,
-      "flex": true,
-      "canTrimToMinutes": 2,
-      "canStretchToMinutes": 7,
-      "jessDropIn": false,
-      "signature": false,
-      "recurring": false,
-      "titleFile": "segment-titles/04-E-city-hall-school-board.txt",
-      "headlines": [
-        "headlines/04-E-city-hall-school-board-01.txt",
-        "headlines/04-E-city-hall-school-board-02.txt",
-        "headlines/04-E-city-hall-school-board-03.txt"
-      ],
-      "chyrons": [
-        "chyrons/04-E-city-hall-school-board-e1.txt",
-        "chyrons/04-E-city-hall-school-board-e2.txt",
-        "chyrons/04-E-city-hall-school-board-e3.txt",
-        "chyrons/04-E-city-hall-school-board-e4.txt"
-      ],
-      "needsVerification": [
-        "Edinburg CISD seating/vote happened Nov 17",
-        "McAllen ISD board vote date",
-        "Pharr city manager resignation date",
-        "Mission city manager leave"
-      ]
-    },
-    {
-      "id": "F-zoho-park",
-      "letter": "F",
-      "order": 5,
-      "start": "8:24",
-      "end": "8:27",
-      "timeRange": "8:24\u20138:27",
+      "end": "8:05",
+      "timeRange": "8:02\u20138:05",
       "durationMinutes": 3,
-      "title": "Zoho & the Park",
-      "subject": "McAllen disc golf park rezoning and Zoho's Valley footprint",
-      "skippable": false,
-      "flex": true,
-      "canTrimToMinutes": 0,
-      "canStretchToMinutes": 5,
-      "jessDropIn": false,
-      "signature": false,
-      "recurring": false,
-      "titleFile": "segment-titles/05-F-zoho-park.txt",
-      "headlines": [
-        "headlines/05-F-zoho-park-01.txt",
-        "headlines/05-F-zoho-park-02.txt"
-      ],
-      "chyrons": [
-        "chyrons/05-F-zoho-park-f1.txt",
-        "chyrons/05-F-zoho-park-f2.txt"
-      ],
-      "needsVerification": [
-        "Park DONATION to Zoho: no source found",
-        "Any 2026 update"
-      ]
-    },
-    {
-      "id": "G-metro-desk",
-      "letter": "G",
-      "order": 6,
-      "start": "8:27",
-      "end": "8:30",
-      "timeRange": "8:27\u20138:30",
-      "durationMinutes": 3,
-      "title": "McAllen Metro Desk: Economic Development",
-      "subject": "Jobs, projects and city news",
+      "title": "What I've Been Up To This Week",
+      "subject": "Personal touchpoint (2-3 min): public-facing things Drew and Jess did this week, then straight into Local news",
       "skippable": false,
       "flex": true,
       "canTrimToMinutes": 2,
@@ -296,66 +124,68 @@
       "jessDropIn": false,
       "signature": false,
       "recurring": false,
-      "titleFile": "segment-titles/06-G-metro-desk.txt",
+      "titleFile": "segment-titles/01-B-up-to.txt",
       "headlines": [
-        "headlines/06-G-metro-desk-01.txt",
-        "headlines/06-G-metro-desk-02.txt",
-        "headlines/06-G-metro-desk-03.txt"
+        "headlines/01-B-up-to-01.txt"
       ],
       "chyrons": [
-        "chyrons/06-G-metro-desk-g1.txt",
-        "chyrons/06-G-metro-desk-g2.txt",
-        "chyrons/06-G-metro-desk-g3.txt",
-        "chyrons/06-G-metro-desk-g4.txt"
+        "chyrons/01-B-up-to-b1.txt",
+        "chyrons/01-B-up-to-b2.txt"
       ],
       "needsVerification": [
-        "McAllen Holiday Parade date"
+        "Every up_to item: CONFIRM BEFORE AIR (Drew eyeballs the list)",
+        "Calendar is not connected, so events come from email only"
       ]
     },
     {
-      "id": "H-open-format",
-      "letter": "H",
-      "order": 7,
-      "start": "8:30",
-      "end": "8:33",
-      "timeRange": "8:30\u20138:33",
-      "durationMinutes": 3,
-      "title": "Open-Format Story Block (pick one or two)",
-      "subject": "Wildcard slot: Power & Pipes, Screwworm, Overheard in the Valley, Politiquera, or whatever broke this morning",
+      "id": "C-local-news",
+      "letter": "C",
+      "order": 2,
+      "start": "8:05",
+      "end": "8:13",
+      "timeRange": "8:05\u20138:13",
+      "durationMinutes": 8,
+      "title": "Local News",
+      "subject": "Top Valley stories: the Starbase/SpaceX vote and launch, Overheard in the Valley, whatever broke this morning",
       "skippable": false,
       "flex": true,
-      "canTrimToMinutes": 0,
-      "canStretchToMinutes": 6,
+      "canTrimToMinutes": 6,
+      "canStretchToMinutes": 10,
       "jessDropIn": false,
       "signature": false,
       "recurring": false,
-      "titleFile": "segment-titles/07-H-open-format.txt",
+      "titleFile": "segment-titles/02-C-local-news.txt",
       "headlines": [
-        "headlines/07-H-open-format-01.txt",
-        "headlines/07-H-open-format-02.txt"
+        "headlines/02-C-local-news-01.txt",
+        "headlines/02-C-local-news-02.txt",
+        "headlines/02-C-local-news-03.txt",
+        "headlines/02-C-local-news-04.txt"
       ],
       "chyrons": [
-        "chyrons/07-H-open-format-h1.txt",
-        "chyrons/07-H-open-format-h2.txt",
-        "chyrons/07-H-open-format-h3.txt",
-        "chyrons/07-H-open-format-h4.txt",
-        "chyrons/07-H-open-format-h5.txt"
+        "chyrons/02-C-local-news-c1.txt",
+        "chyrons/02-C-local-news-c2.txt",
+        "chyrons/02-C-local-news-c3.txt",
+        "chyrons/02-C-local-news-c4.txt",
+        "chyrons/02-C-local-news-c5.txt",
+        "chyrons/02-C-local-news-c6.txt"
       ],
       "needsVerification": [
-        "Pull live Reddit top-of-week titles",
-        "Choose the Politiquera data point"
+        "Dec 9 Starbase hearing date",
+        "Jobs figure (MyRGV 5,500 peak construction vs KRGV 500 new)",
+        "FAA public meeting date",
+        "Pull live Reddit top-of-week titles (r/RioGrandeValley, r/RGVEvents, r/McAllen)"
       ]
     },
     {
-      "id": "I-national-desk",
-      "letter": "I",
-      "order": 8,
-      "start": "8:33",
-      "end": "8:39",
-      "timeRange": "8:33\u20138:39",
+      "id": "D-local-politics",
+      "letter": "D",
+      "order": 3,
+      "start": "8:13",
+      "end": "8:19",
+      "timeRange": "8:13\u20138:19",
       "durationMinutes": 6,
-      "title": "The National Desk",
-      "subject": "Big national stories of the week, with a Valley angle (fact, then opinion, then 'why it matters here')",
+      "title": "Local Politics",
+      "subject": "Races, candidates and runoffs: TX-15 (Pulido), the Dec. 12 Mission and Weslaco runoffs",
       "skippable": false,
       "flex": true,
       "canTrimToMinutes": 4,
@@ -363,21 +193,231 @@
       "jessDropIn": false,
       "signature": false,
       "recurring": false,
-      "titleFile": "segment-titles/08-I-national-desk.txt",
+      "titleFile": "segment-titles/03-D-local-politics.txt",
       "headlines": [
-        "headlines/08-I-national-desk-01.txt",
-        "headlines/08-I-national-desk-02.txt",
-        "headlines/08-I-national-desk-03.txt",
-        "headlines/08-I-national-desk-04.txt",
-        "headlines/08-I-national-desk-05.txt"
+        "headlines/03-D-local-politics-01.txt",
+        "headlines/03-D-local-politics-02.txt",
+        "headlines/03-D-local-politics-03.txt"
       ],
       "chyrons": [
-        "chyrons/08-I-national-desk-i1.txt",
-        "chyrons/08-I-national-desk-i2.txt",
-        "chyrons/08-I-national-desk-i3.txt",
-        "chyrons/08-I-national-desk-i4.txt",
-        "chyrons/08-I-national-desk-i5.txt",
-        "chyrons/08-I-national-desk-i6.txt"
+        "chyrons/03-D-local-politics-d1.txt",
+        "chyrons/03-D-local-politics-d2.txt",
+        "chyrons/03-D-local-politics-d3.txt",
+        "chyrons/03-D-local-politics-d4.txt"
+      ],
+      "needsVerification": [
+        "Certified vote totals",
+        "TX-34 result (not retrieved)",
+        "Early-voting dates",
+        "Choose the Politiquera data point"
+      ]
+    },
+    {
+      "id": "E-school-boards",
+      "letter": "E",
+      "order": 4,
+      "start": "8:19",
+      "end": "8:24",
+      "timeRange": "8:19\u20138:24",
+      "durationMinutes": 5,
+      "title": "School Boards",
+      "subject": "Trustees, budgets and board votes: Edinburg CISD, PSJA ISD, McAllen ISD",
+      "skippable": false,
+      "flex": true,
+      "canTrimToMinutes": 3,
+      "canStretchToMinutes": 7,
+      "jessDropIn": false,
+      "signature": false,
+      "recurring": false,
+      "titleFile": "segment-titles/04-E-school-boards.txt",
+      "headlines": [
+        "headlines/04-E-school-boards-01.txt",
+        "headlines/04-E-school-boards-02.txt"
+      ],
+      "chyrons": [
+        "chyrons/04-E-school-boards-e1.txt",
+        "chyrons/04-E-school-boards-e2.txt"
+      ],
+      "needsVerification": [
+        "Edinburg CISD seating/vote happened Nov 17",
+        "McAllen ISD board vote date"
+      ]
+    },
+    {
+      "id": "F-city-hall",
+      "letter": "F",
+      "order": 5,
+      "start": "8:24",
+      "end": "8:29",
+      "timeRange": "8:24\u20138:29",
+      "durationMinutes": 5,
+      "title": "City Hall",
+      "subject": "Mayors, councils and city managers: McAllen, Brownsville, Mission, Pharr; the Zoho park rezoning",
+      "skippable": false,
+      "flex": true,
+      "canTrimToMinutes": 3,
+      "canStretchToMinutes": 7,
+      "jessDropIn": false,
+      "signature": false,
+      "recurring": false,
+      "titleFile": "segment-titles/05-F-city-hall.txt",
+      "headlines": [
+        "headlines/05-F-city-hall-01.txt",
+        "headlines/05-F-city-hall-02.txt"
+      ],
+      "chyrons": [
+        "chyrons/05-F-city-hall-f1.txt",
+        "chyrons/05-F-city-hall-f2.txt",
+        "chyrons/05-F-city-hall-f3.txt"
+      ],
+      "needsVerification": [
+        "Pharr city manager resignation date",
+        "Mission city manager leave",
+        "Park DONATION to Zoho: no source found",
+        "Any 2026 update"
+      ]
+    },
+    {
+      "id": "G-economic-development",
+      "letter": "G",
+      "order": 6,
+      "start": "8:29",
+      "end": "8:35",
+      "timeRange": "8:29\u20138:35",
+      "durationMinutes": 6,
+      "title": "Economic Development",
+      "subject": "Jobs, projects and deals: McAllen EDC, the SpaceX data center abatement, Texas A&M McAllen, power and pipes",
+      "skippable": false,
+      "flex": true,
+      "canTrimToMinutes": 4,
+      "canStretchToMinutes": 8,
+      "jessDropIn": false,
+      "signature": false,
+      "recurring": false,
+      "titleFile": "segment-titles/06-G-economic-development.txt",
+      "headlines": [
+        "headlines/06-G-economic-development-01.txt",
+        "headlines/06-G-economic-development-02.txt",
+        "headlines/06-G-economic-development-03.txt",
+        "headlines/06-G-economic-development-04.txt"
+      ],
+      "chyrons": [
+        "chyrons/06-G-economic-development-g1.txt",
+        "chyrons/06-G-economic-development-g2.txt",
+        "chyrons/06-G-economic-development-g3.txt",
+        "chyrons/06-G-economic-development-g4.txt",
+        "chyrons/06-G-economic-development-g5.txt"
+      ],
+      "needsVerification": [
+        "McAllen Holiday Parade date"
+      ]
+    },
+    {
+      "id": "H-family-kids",
+      "letter": "H",
+      "order": 7,
+      "start": "8:35",
+      "end": "8:41",
+      "timeRange": "8:35\u20138:41",
+      "durationMinutes": 6,
+      "title": "Family & Kids (woven in)",
+      "subject": "NOT a dedicated segment: a light, woven-in moment with Jess after the local blocks and before state. How We'd Talk to Our Kids lives here",
+      "skippable": false,
+      "flex": true,
+      "canTrimToMinutes": 3,
+      "canStretchToMinutes": 10,
+      "jessDropIn": true,
+      "signature": true,
+      "recurring": true,
+      "titleFile": "segment-titles/07-H-family-kids.txt",
+      "headlines": [
+        "headlines/07-H-family-kids-01.txt",
+        "headlines/07-H-family-kids-02.txt",
+        "headlines/07-H-family-kids-03.txt"
+      ],
+      "chyrons": [
+        "chyrons/07-H-family-kids-h1.txt",
+        "chyrons/07-H-family-kids-h2.txt",
+        "chyrons/07-H-family-kids-h3.txt",
+        "chyrons/07-H-family-kids-h4.txt",
+        "chyrons/07-H-family-kids-h5.txt",
+        "chyrons/07-H-family-kids-h6.txt"
+      ],
+      "needsVerification": [
+        "GTA 6 actually launched on time Nov 19",
+        "Any RGV school/attendance reaction",
+        "Verify any statistic before quoting it",
+        "Listener-story permission"
+      ]
+    },
+    {
+      "id": "I-statewide",
+      "letter": "I",
+      "order": 8,
+      "start": "8:41",
+      "end": "8:45",
+      "timeRange": "8:41\u20138:45",
+      "durationMinutes": 4,
+      "title": "Statewide",
+      "subject": "Texas and Texas politics: the packet's Texas items, r/Texas top posts, Austin",
+      "skippable": false,
+      "flex": true,
+      "canTrimToMinutes": 2,
+      "canStretchToMinutes": 6,
+      "jessDropIn": false,
+      "signature": false,
+      "recurring": false,
+      "titleFile": "segment-titles/08-I-statewide.txt",
+      "headlines": [
+        "headlines/08-I-statewide-01.txt",
+        "headlines/08-I-statewide-02.txt",
+        "headlines/08-I-statewide-03.txt"
+      ],
+      "chyrons": [
+        "chyrons/08-I-statewide-i1.txt",
+        "chyrons/08-I-statewide-i2.txt",
+        "chyrons/08-I-statewide-i3.txt",
+        "chyrons/08-I-statewide-i4.txt"
+      ],
+      "needsVerification": [
+        "Pull live r/Texas top-of-week titles",
+        "Re-check Texas items Sunday night"
+      ]
+    },
+    {
+      "id": "J-national-desk",
+      "letter": "J",
+      "order": 9,
+      "start": "8:45",
+      "end": "8:53",
+      "timeRange": "8:45\u20138:53",
+      "durationMinutes": 8,
+      "title": "The National Desk (+ Trending)",
+      "subject": "Big national stories with a Valley angle (fact, then take, then 'why it matters here'), plus Trending: Wait, Don't Tell Me as riff material",
+      "skippable": false,
+      "flex": true,
+      "canTrimToMinutes": 6,
+      "canStretchToMinutes": 10,
+      "jessDropIn": false,
+      "signature": false,
+      "recurring": false,
+      "titleFile": "segment-titles/09-J-national-desk.txt",
+      "headlines": [
+        "headlines/09-J-national-desk-01.txt",
+        "headlines/09-J-national-desk-02.txt",
+        "headlines/09-J-national-desk-03.txt",
+        "headlines/09-J-national-desk-04.txt",
+        "headlines/09-J-national-desk-05.txt",
+        "headlines/09-J-national-desk-06.txt"
+      ],
+      "chyrons": [
+        "chyrons/09-J-national-desk-j1.txt",
+        "chyrons/09-J-national-desk-j2.txt",
+        "chyrons/09-J-national-desk-j3.txt",
+        "chyrons/09-J-national-desk-j4.txt",
+        "chyrons/09-J-national-desk-j5.txt",
+        "chyrons/09-J-national-desk-j6.txt",
+        "chyrons/09-J-national-desk-j7.txt"
       ],
       "needsVerification": [
         "'Mullen' = Sec. Markwayne Mullin (confirm with Drew)",
@@ -388,46 +428,15 @@
       ]
     },
     {
-      "id": "J-listener-line-1",
-      "letter": "J",
-      "order": 9,
-      "start": "8:39",
-      "end": "8:41",
-      "timeRange": "8:39\u20138:41",
-      "durationMinutes": 2,
-      "title": "Listener Line #1: Your Topics & DMs",
-      "subject": "Read-outs of topic submissions and comments",
-      "skippable": false,
-      "flex": false,
-      "canTrimToMinutes": null,
-      "canStretchToMinutes": null,
-      "jessDropIn": false,
-      "signature": false,
-      "recurring": false,
-      "titleFile": "segment-titles/09-J-listener-line-1.txt",
-      "headlines": [
-        "headlines/09-J-listener-line-1-01.txt"
-      ],
-      "chyrons": [
-        "chyrons/09-J-listener-line-1-j1.txt",
-        "chyrons/09-J-listener-line-1-j2.txt",
-        "chyrons/09-J-listener-line-1-j3.txt"
-      ],
-      "needsVerification": [
-        "ditm@drewlentz.com (seen as the show inbox; CONFIRM BEFORE AIR that it is meant for public submissions)",
-        "Restream guest link (unverified)"
-      ]
-    },
-    {
-      "id": "K-meme-of-the-week",
+      "id": "K-listener-line",
       "letter": "K",
       "order": 10,
-      "start": "8:41",
-      "end": "8:44",
-      "timeRange": "8:41\u20138:44",
+      "start": "8:53",
+      "end": "8:56",
+      "timeRange": "8:53\u20138:56",
       "durationMinutes": 3,
-      "title": "Meme of the Week: What the Kids Are Talking About",
-      "subject": "Trending internet culture for parents: Elementary, Middle School, High School",
+      "title": "Listener Line",
+      "subject": "Call-ins and topic submissions (from submissions.md / call-ins.md); still no phone number",
       "skippable": false,
       "flex": true,
       "canTrimToMinutes": 2,
@@ -435,88 +444,52 @@
       "jessDropIn": false,
       "signature": false,
       "recurring": false,
-      "titleFile": "segment-titles/10-K-meme-of-the-week.txt",
+      "titleFile": "segment-titles/10-K-listener-line.txt",
       "headlines": [
-        "headlines/10-K-meme-of-the-week-01.txt"
+        "headlines/10-K-listener-line-01.txt"
       ],
       "chyrons": [
-        "chyrons/10-K-meme-of-the-week-k1.txt",
-        "chyrons/10-K-meme-of-the-week-k2.txt",
-        "chyrons/10-K-meme-of-the-week-k3.txt"
+        "chyrons/10-K-listener-line-k1.txt",
+        "chyrons/10-K-listener-line-k2.txt",
+        "chyrons/10-K-listener-line-k3.txt"
       ],
       "needsVerification": [
-        "Meme popularity measured on TikTok; X volume is low"
+        "ditm@drewlentz.com (seen as the show inbox; CONFIRM BEFORE AIR that it is meant for public submissions)",
+        "Restream guest link (unverified)"
       ]
     },
     {
-      "id": "L-how-wed-talk-to-our-kids",
+      "id": "L-meme-close",
       "letter": "L",
       "order": 11,
-      "start": "8:44",
-      "end": "8:56",
-      "timeRange": "8:44\u20138:56",
-      "durationMinutes": 12,
-      "title": "How We'd Talk to Our Kids",
-      "subject": "Open, honest parenting talk for parents of a 10- and 14-year-old, with Jess",
-      "skippable": false,
-      "flex": true,
-      "canTrimToMinutes": 10,
-      "canStretchToMinutes": 15,
-      "jessDropIn": true,
-      "signature": true,
-      "recurring": true,
-      "titleFile": "segment-titles/11-L-how-wed-talk-to-our-kids.txt",
-      "headlines": [
-        "headlines/11-L-how-wed-talk-to-our-kids-01.txt",
-        "headlines/11-L-how-wed-talk-to-our-kids-02.txt",
-        "headlines/11-L-how-wed-talk-to-our-kids-03.txt"
-      ],
-      "chyrons": [
-        "chyrons/11-L-how-wed-talk-to-our-kids-l1.txt",
-        "chyrons/11-L-how-wed-talk-to-our-kids-l2.txt",
-        "chyrons/11-L-how-wed-talk-to-our-kids-l3.txt",
-        "chyrons/11-L-how-wed-talk-to-our-kids-l4.txt",
-        "chyrons/11-L-how-wed-talk-to-our-kids-l5.txt",
-        "chyrons/11-L-how-wed-talk-to-our-kids-l6.txt",
-        "chyrons/11-L-how-wed-talk-to-our-kids-l7.txt",
-        "chyrons/11-L-how-wed-talk-to-our-kids-l8.txt",
-        "chyrons/11-L-how-wed-talk-to-our-kids-l9.txt"
-      ],
-      "needsVerification": [
-        "Verify any statistic before quoting it",
-        "Listener-story permission"
-      ]
-    },
-    {
-      "id": "M-listener-line-2-wrap",
-      "letter": "M",
-      "order": 12,
       "start": "8:56",
       "end": "9:00",
       "timeRange": "8:56\u20139:00",
       "durationMinutes": 4,
-      "title": "Listener Line #2, Look Ahead & Wrap (Jess back in)",
-      "subject": "Calendar, topic requests, socials, sign-off",
+      "title": "Meme of the Week & Close",
+      "subject": "What the kids are talking about (elementary, middle, high school; for parents), then the look-ahead and sign-off with Jess",
       "skippable": false,
-      "flex": false,
-      "canTrimToMinutes": null,
-      "canStretchToMinutes": null,
+      "flex": true,
+      "canTrimToMinutes": 3,
+      "canStretchToMinutes": 6,
       "jessDropIn": true,
       "signature": false,
       "recurring": false,
-      "titleFile": "segment-titles/12-M-listener-line-2-wrap.txt",
+      "titleFile": "segment-titles/11-L-meme-close.txt",
       "headlines": [
-        "headlines/12-M-listener-line-2-wrap-01.txt"
+        "headlines/11-L-meme-close-01.txt",
+        "headlines/11-L-meme-close-02.txt"
       ],
       "chyrons": [
-        "chyrons/12-M-listener-line-2-wrap-m1.txt",
-        "chyrons/12-M-listener-line-2-wrap-m2.txt",
-        "chyrons/12-M-listener-line-2-wrap-m3.txt",
-        "chyrons/12-M-listener-line-2-wrap-m4.txt",
-        "chyrons/12-M-listener-line-2-wrap-m5.txt",
-        "chyrons/12-M-listener-line-2-wrap-m6.txt"
+        "chyrons/11-L-meme-close-l1.txt",
+        "chyrons/11-L-meme-close-l2.txt",
+        "chyrons/11-L-meme-close-l3.txt",
+        "chyrons/11-L-meme-close-l4.txt",
+        "chyrons/11-L-meme-close-l5.txt",
+        "chyrons/11-L-meme-close-l6.txt"
       ],
       "needsVerification": [
+        "Meme popularity measured on TikTok; X volume is low",
         "Early-voting dates",
         "ditm@drewlentz.com (seen as the show inbox; CONFIRM BEFORE AIR that it is meant for public submissions)"
       ]

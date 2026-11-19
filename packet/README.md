@@ -1,18 +1,18 @@
-# DITM Monday show packet generator
+# DITM show packet generator (Monday packet + daily briefing)
 
 One data file per week -> one command -> every format. Nothing here ever sends email or posts.
 
 ## Regenerate (exact commands)
 
 ```bash
-cd packet
+cd /workspace/drew-in-the-morning/packet
 # 1. copy last week's file and update EVERY item (see "Weekly research" below)
 cp data/packet-2026-11-23.json data/packet-YYYY-MM-DD.json     # YYYY-MM-DD = the Monday of the show
 # 2. build everything (fetches fresh NWS weather, merges the 60-minute show clock from ../obs-data.json)
 python3 build_packet.py data/packet-YYYY-MM-DD.json --refresh-weather --check-links
 ```
 
-Flags: `--refresh-weather` (pull api.weather.gov, BRO) · `--check-links` (HEAD/GET every URL; writes `-link-check.json`; sites that bot-wall with 403 are reported as "blocked", not dead) · `--obs-data PATH` · `--out DIR` · `--no-render` (skip Chrome).
+Flags: `--no-obs-update` (do not write cold open/jingle/up-to into obs-data.json) · `--force-latest` (let a SAMPLE build replace latest) · `--refresh-weather` (pull api.weather.gov, BRO) · `--check-links` (HEAD/GET every URL; writes `-link-check.json`; sites that bot-wall with 403 are reported as "blocked", not dead) · `--obs-data PATH` · `--out DIR` · `--no-render` (skip Chrome).
 Requires: python3, `google-chrome`, `pdfinfo` + `pdftoppm` (poppler-utils). No pip packages.
 
 The build FAILS (exit 2) if the PDF is not exactly 1 page or any card clips its text (it prints which). Fix by trimming print text (`short`, `pfact`, `pwhat`, `ptip`), setting `"noprint": true` on a headline, or `"print": false` on a National Desk story. Print text stays >= 7.4pt.
@@ -46,17 +46,42 @@ Top-level keys:
 - `sports`: `highSchool` `{round, sourceNote, results:[{title,short,url,source,confirm?}], next:[...], college}`; `nfl`/`nba` `{title, scoreSource:{title,url}, scores:[[date,"AAA 1, BBB 0"]], notable:[{title,short,url}]}` (nba also `texas`); `mlb` `{title, note, notable}`. MLB is the offseason in Nov: show news, say so, no scores. Never include a score you could not verify; omit it instead.
 - `memes`: `tagline`, `intro`, `memeOfTheWeek` (an item id), `levels`: Elementary / Middle School / High School, each `{level, icon, items:[{id,title,what,means,tip,links:[{label,url}],confirm:[...],pwhat,ptip}]}`.
 - Every item needs a real, opened URL. An item with no URL is automatically stamped "NO VERIFIED LINK: CONFIRM BEFORE AIR". Put anything thin or single-sourced in `confirm` (string or list); it shows as a red CONFIRM tag everywhere.
-- `showClock` and `rundown` are NOT in the content file. They are merged from `../obs-data.json`, which `tools/show_plan.py` generates (13 blocks A-M, 60 minutes, flex ranges). To change the show plan, edit `tools/show_plan.py` and run `python3 tools/show_plan.py`; it rewrites `run-of-show-monday.md`, `obs-data.json`, `segues.md`, `show-principles.md`.
+- `showClock` and `rundown` are NOT in the content file. They are merged from `../obs-data.json`, which `tools/show_plan.py` generates (12 blocks A-L, 60 minutes, flex ranges; block B is "What I've Been Up To This Week"). To change the show plan, edit `tools/show_plan.py` and run `python3 tools/show_plan.py`; it rewrites `run-of-show-monday.md`, `obs-data.json`, `segues.md`, `show-principles.md`.
 
-## Weekly research (what the Monday scheduled run does)
+## Daily refresh (6 AM CT) and Monday packet: what the scheduled run does
 
-1. Weekend/Monday morning: RGV headlines from MyRGV, Daily McAllen (`dailymcallen.com/local-news/editions/MM-DD-YYYY`), KRGV, ValleyCentral, The Monitor, Texas Tribune; Starbase/SpaceX items (county, TCEQ, FAA, Spaceflight Now).
-2. RGV football: RGVSports (`rgvsports.com/rgv-football-playoff-schedule/`). Use the CURRENT page, scores can be edited (the Rowe opponent changed once). Note the round and the next-week matchups.
-3. NFL (pro-football-reference week page, NFL.com), NBA (basketball-reference), Texas teams, MLB offseason news (MLB.com, ESPN).
-4. National Desk: pick 3 to 5 big national stories; get a primary or major-outlet link each; write fact / take / Valley angle.
-5. Memes: check Know Your Meme, parent-guide outlets, news about platform trends; confirm popularity is real (the sample used X post counts as a sanity check, and flagged TikTok-side trends). Do not present a thin meme as big; mark CONFIRM BEFORE AIR.
-6. Date check: fetch each page and confirm its date; search results can surface old stories (a July AA outage story was rejected this way).
-7. Build (command above), look at the PNG preview (1 page, nothing clipped) and the studio screenshot.
+Two modes, set by `meta.mode` (default: `monday` if the date is a Monday, else `daily`):
+- `monday`: the full show packet for the 8 AM Monday show. Filename `DITM-packet-<date>`.
+- `daily`: a 6 AM CT briefing that is the story bank for the NEXT Monday show (the header names the next show; the rundown is "next show"). Filename `DITM-briefing-<date>`. Studio Show Start and the clock countdown are keyed to the next show date (`meta.showDate`), not to the briefing date.
+
+Steps (both modes):
+1. Sync the repo (`Drew-CodeRGV/Drew-In-The-Morning-OBS`) so used-on-show logs and obs-data.json are current; copy yesterday's data file to `data/packet-YYYY-MM-DD.json`.
+2. RGV headlines from MyRGV, Daily McAllen (`dailymcallen.com/local-news/editions/MM-DD-YYYY`), KRGV, ValleyCentral, The Monitor, Texas Tribune; Starbase/SpaceX items (county, TCEQ, FAA, Spaceflight Now). Drop anything already in the used log (see "Used on show").
+3. RGV football: RGVSports (`rgvsports.com/rgv-football-playoff-schedule/`). Use the CURRENT page, scores can be edited. Note the round and next-week matchups.
+4. NFL (pro-football-reference week page, NFL.com), NBA (basketball-reference), Texas teams, MLB offseason news (MLB.com, ESPN).
+5. National Desk: 3 to 5 big national stories; primary or major-outlet link each; fact / take / Valley angle.
+6. Trending (`trending[]`): fetch the day's top trending items (celebrity, culture, sports, viral). Each `{id, title, category, one_line, suggested_angle, source_url, source, short, teaser, verified, confirm, print, links}`. Only items with an opened URL; thin or single-sourced items get `confirm`. Block J (National + Trending) pulls these; the cold open uses `teaser`.
+7. Memes: check Know Your Meme, parent-guide outlets, platform-trend news; confirm popularity is real. Do not present a thin meme as big; mark CONFIRM BEFORE AIR.
+8. "What I've Been Up To This Week" (`up_to[]` and `up_to_script`, block B), past 7 days. Sources, in order: (a) Drew's calendar, if a calendar tool is connected (none was available on the build box on Nov 18, 2026, so the packet says "calendar not connected" in `up_to_meta.calendar`); (b) fallback: non-spam Gmail, READ-ONLY (sent-mail logs of talk proposals, public event confirmations). Each event `{date, short, title, type: conference|presentation|meeting|appearance, who: Drew|Jess, link (public URL or null), source}`. Privacy rules: include only public-facing items; exclude personal, medical, financial, legal, school/family and client-confidential items and private 1:1 meetings; never name private individuals; never invent events; mark every item CONFIRM BEFORE AIR (the generator stamps it). Say "submitted" for proposals, never "accepted" or "speaking at" unless confirmed. `up_to_script` is a conversational paragraph. If there are no events: `up_to` is `[]`, the script reads "Quiet week on the calendar..." and the packet shows "No calendar events found".
+9. Date check: fetch each page and confirm its date; search results can surface old stories.
+10. Build (command above). Look at the PNG preview (1 page, nothing clipped) and the studio screenshot. The build writes `coldOpen`, `jingle` and `upTo` into `../obs-data.json` (skip with `--no-obs-update`).
+11. Publish: the build writes `out/latest-*` and `out/docs/` (`index.html`, `packets/<date>/...`, `packets/index.html`, `packets/latest.json`). A SAMPLE/test build does not replace `latest` unless you pass `--force-latest`. Nothing is sent or pushed by the generator.
+
+### Cold open
+Generated from the templates in `../cold-open.md` (about 45 seconds read aloud, Monday vs daily variant): weather phrase (NWS), top local items, a National Desk teaser and a Trending teaser, then the jingle. Sentences with an unfilled placeholder are dropped. Shown in the studio page as a big-text card with copy buttons.
+
+### Used on the show (no repeats)
+Every item, national story, trending item, meme and up-to event on the studio page has a "Used" toggle. Marks are saved on the device in localStorage; the "Used today" bar has Log to repo / Copy list / Clear. Log used items to the repo after the show, and skip them in the next refresh.
+
+### Show Start and the countdown (studio page)
+- "Show Start" sets the start to the current America/Chicago time rounded down to the minute; every block's time range is recomputed in the browser from the embedded offsets and durations (flex "stretch to" lines shift too). Stored in localStorage keyed by show date. "Planned start 8:00 AM" / "Started 9:03 AM" indicator and a Reset to 8:00 button. The live block is highlighted with time left. Works offline (iPad: 44pt+ targets, no horizontal scroll).
+- The clock widget shows "Next: [letter] Name in m:ss" (block color), "Show starts in ..." before the show, "Show ends in ..." in the last block and "Show's over" after; amber under 60 seconds, red under 15.
+- The PDF carries the clock bar and rundown with a right-aligned time column; the live features are studio-page only.
+
+### Data format additions
+- `up_to`: list as above; `up_to_script`: string; `up_to_meta`: `{window, calendar, note, jess}`.
+- `trending`: list as above.
+- `meta.mode`, `meta.dataAsOf`, `meta.showEmail`, `meta.kidsTopic`.
 
 ## Emailing the packet (draft only until Drew approves)
 

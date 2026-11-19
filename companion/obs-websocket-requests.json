@@ -91,7 +91,7 @@
           "requestData": {
             "inputName": "DITM Chyron",
             "inputSettings": {
-              "text": "Cameron County Vote\nAbatement hearing denied 3-2 \u00b7 Nov. 17"
+              "text": "What I've Been Up To\nThis week \u00b7 Drew & Jess"
             },
             "overlay": true
           }
@@ -101,7 +101,7 @@
           "requestData": {
             "inputName": "DITM Headline",
             "inputSettings": {
-              "text": "Cameron County rejects SpaceX tax break hearing, 3-2"
+              "text": "What I've been up to this week"
             },
             "overlay": true
           }
@@ -111,7 +111,7 @@
           "requestData": {
             "inputName": "DITM Segment Title",
             "inputSettings": {
-              "text": "Starbase Watch: SpaceX, the Vote & the Launch"
+              "text": "What I've Been Up To This Week"
             },
             "overlay": true
           }
@@ -143,7 +143,7 @@
           "requestData": {
             "inputName": "DITM Chyron",
             "inputSettings": {
-              "text": "Jess\nCo-host \u00b7 Drop-in Guest"
+              "text": "Cameron County Vote\nAbatement hearing denied 3-2 \u00b7 Nov. 17"
             },
             "overlay": true
           }
@@ -153,7 +153,7 @@
           "requestData": {
             "inputName": "DITM Headline",
             "inputSettings": {
-              "text": "GTA 6 launches Nov. 19 at midnight; rated M (17+)"
+              "text": "Cameron County rejects SpaceX tax break hearing, 3-2"
             },
             "overlay": true
           }
@@ -163,7 +163,7 @@
           "requestData": {
             "inputName": "DITM Segment Title",
             "inputSettings": {
-              "text": "Jess Drop-In #1: GTA 6 Week & the Digital Generation"
+              "text": "Local News"
             },
             "overlay": true
           }
@@ -181,7 +181,7 @@
         {
           "requestType": "SetCurrentProgramScene",
           "requestData": {
-            "sceneName": "Host + Jess"
+            "sceneName": "Main Host"
           }
         }
       ]
@@ -215,7 +215,7 @@
           "requestData": {
             "inputName": "DITM Segment Title",
             "inputSettings": {
-              "text": "Ballot Box Rewind: Pulido, Runoffs & the Valley Flip"
+              "text": "Local Politics"
             },
             "overlay": true
           }
@@ -267,7 +267,7 @@
           "requestData": {
             "inputName": "DITM Segment Title",
             "inputSettings": {
-              "text": "City Hall & School Board Watch"
+              "text": "School Boards"
             },
             "overlay": true
           }
@@ -299,7 +299,7 @@
           "requestData": {
             "inputName": "DITM Chyron",
             "inputSettings": {
-              "text": "Zoho & the Disc Golf Park\nRezoned July 2023 \u00b7 commission vote 6-0"
+              "text": "McAllen City Commission\nFallek won District 5 special \u00b7 May 2026"
             },
             "overlay": true
           }
@@ -309,7 +309,7 @@
           "requestData": {
             "inputName": "DITM Headline",
             "inputSettings": {
-              "text": "2023: McAllen rezoned disc golf park for Zoho"
+              "text": "Brownsville names Alan Guard permanent city manager"
             },
             "overlay": true
           }
@@ -319,7 +319,7 @@
           "requestData": {
             "inputName": "DITM Segment Title",
             "inputSettings": {
-              "text": "Zoho & the Park"
+              "text": "City Hall"
             },
             "overlay": true
           }
@@ -371,7 +371,7 @@
           "requestData": {
             "inputName": "DITM Segment Title",
             "inputSettings": {
-              "text": "McAllen Metro Desk: Economic Development"
+              "text": "Economic Development"
             },
             "overlay": true
           }
@@ -403,7 +403,7 @@
           "requestData": {
             "inputName": "DITM Chyron",
             "inputSettings": {
-              "text": "Judge Richard Cortez\nHidalgo County Judge \u00b7 Citizens League"
+              "text": "How We'd Talk to Our Kids\nOpen \u00b7 Honest \u00b7 No judgment"
             },
             "overlay": true
           }
@@ -413,7 +413,7 @@
           "requestData": {
             "inputName": "DITM Headline",
             "inputSettings": {
-              "text": "Hidalgo County can't block data centers outside city limits"
+              "text": "GTA 6 launches Nov. 19 at midnight; rated M (17+)"
             },
             "overlay": true
           }
@@ -423,7 +423,7 @@
           "requestData": {
             "inputName": "DITM Segment Title",
             "inputSettings": {
-              "text": "Open-Format Story Block (pick one or two)"
+              "text": "Family & Kids (woven in)"
             },
             "overlay": true
           }
@@ -441,7 +441,7 @@
         {
           "requestType": "SetCurrentProgramScene",
           "requestData": {
-            "sceneName": "Main Host"
+            "sceneName": "Host + Jess"
           }
         }
       ]
@@ -455,7 +455,7 @@
           "requestData": {
             "inputName": "DITM Chyron",
             "inputSettings": {
-              "text": "National Desk\nThe big stories \u00b7 and why they matter here"
+              "text": "Statewide\nTexas news & Texas politics"
             },
             "overlay": true
           }
@@ -465,7 +465,7 @@
           "requestData": {
             "inputName": "DITM Headline",
             "inputSettings": {
-              "text": "FAA ground stop: legacy network, a router and a long weekend"
+              "text": "Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border contracts"
             },
             "overlay": true
           }
@@ -475,7 +475,7 @@
           "requestData": {
             "inputName": "DITM Segment Title",
             "inputSettings": {
-              "text": "The National Desk"
+              "text": "Statewide"
             },
             "overlay": true
           }
@@ -507,7 +507,7 @@
           "requestData": {
             "inputName": "DITM Chyron",
             "inputSettings": {
-              "text": "Send Us Your Topics\nDM @drewinthemorning or email the show"
+              "text": "National Desk\nThe big stories \u00b7 and why they matter here"
             },
             "overlay": true
           }
@@ -517,7 +517,7 @@
           "requestData": {
             "inputName": "DITM Headline",
             "inputSettings": {
-              "text": "Send us your topics: DM or email"
+              "text": "FAA ground stop: legacy network, a router and a long weekend"
             },
             "overlay": true
           }
@@ -527,7 +527,7 @@
           "requestData": {
             "inputName": "DITM Segment Title",
             "inputSettings": {
-              "text": "Listener Line #1: Your Topics & DMs"
+              "text": "The National Desk (+ Trending)"
             },
             "overlay": true
           }
@@ -559,7 +559,7 @@
           "requestData": {
             "inputName": "DITM Chyron",
             "inputSettings": {
-              "text": "Meme of the Week\nWhat your kids might be saying at school"
+              "text": "Send Us Your Topics\nDM @drewinthemorning or email the show"
             },
             "overlay": true
           }
@@ -569,7 +569,7 @@
           "requestData": {
             "inputName": "DITM Headline",
             "inputSettings": {
-              "text": "Drew & Jess are watching the feeds so you don't have to"
+              "text": "Send us your topics: DM or email"
             },
             "overlay": true
           }
@@ -579,7 +579,7 @@
           "requestData": {
             "inputName": "DITM Segment Title",
             "inputSettings": {
-              "text": "Meme of the Week: What the Kids Are Talking About"
+              "text": "Listener Line"
             },
             "overlay": true
           }
@@ -611,7 +611,7 @@
           "requestData": {
             "inputName": "DITM Chyron",
             "inputSettings": {
-              "text": "How We'd Talk to Our Kids\nOpen \u00b7 Honest \u00b7 No judgment"
+              "text": "Meme of the Week\nWhat your kids might be saying at school"
             },
             "overlay": true
           }
@@ -621,7 +621,7 @@
           "requestData": {
             "inputName": "DITM Headline",
             "inputSettings": {
-              "text": "How We'd Talk to Our Kids: no judgment, just how we'd say it"
+              "text": "Drew & Jess are watching the feeds so you don't have to"
             },
             "overlay": true
           }
@@ -631,7 +631,7 @@
           "requestData": {
             "inputName": "DITM Segment Title",
             "inputSettings": {
-              "text": "How We'd Talk to Our Kids"
+              "text": "Meme of the Week & Close"
             },
             "overlay": true
           }
@@ -642,58 +642,6 @@
             "inputName": "DITM Block Letter",
             "inputSettings": {
               "text": "L"
-            },
-            "overlay": true
-          }
-        },
-        {
-          "requestType": "SetCurrentProgramScene",
-          "requestData": {
-            "sceneName": "Host + Jess"
-          }
-        }
-      ]
-    },
-    {
-      "letter": "M",
-      "index": 12,
-      "requests": [
-        {
-          "requestType": "SetInputSettings",
-          "requestData": {
-            "inputName": "DITM Chyron",
-            "inputSettings": {
-              "text": "Jess\nCo-host \u00b7 Drop-in Guest"
-            },
-            "overlay": true
-          }
-        },
-        {
-          "requestType": "SetInputSettings",
-          "requestData": {
-            "inputName": "DITM Headline",
-            "inputSettings": {
-              "text": "See you next Monday at 8 AM"
-            },
-            "overlay": true
-          }
-        },
-        {
-          "requestType": "SetInputSettings",
-          "requestData": {
-            "inputName": "DITM Segment Title",
-            "inputSettings": {
-              "text": "Listener Line #2, Look Ahead & Wrap (Jess back in)"
-            },
-            "overlay": true
-          }
-        },
-        {
-          "requestType": "SetInputSettings",
-          "requestData": {
-            "inputName": "DITM Block Letter",
-            "inputSettings": {
-              "text": "M"
             },
             "overlay": true
           }

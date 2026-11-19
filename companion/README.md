@@ -94,7 +94,7 @@ That rewrites:
 | File | What it is |
 |---|---|
 | `ditm-showblocks.companionconfig` | Full-config JSON Companion can try to import |
-| `blocks.json` | The 13 blocks, colors, and the text each key sends |
+| `blocks.json` | The 12 blocks, colors, and the text each key sends |
 | `custom-variables.json` | The same variables, if you add them by hand |
 | `obs-websocket-requests.json` | Raw OBS WebSocket v5 requests |
 | `button-table.md` | The manual layout, if import fails |
@@ -131,11 +131,11 @@ If your module uses different option names, the button table still has the text 
 |---|---|---|---|---|---|
 | Row 0 | A | B | C | D | E |
 | Row 1 | F | G | H | I | J |
-| Row 2 | K | L | M | PREV | NEXT |
+| Row 2 | K | L | (empty) | PREV | NEXT |
 
-Each block key is filled with that block's `color` from `obs-data.json` and labeled with the letter plus a short name taken from the title (the words before a colon, trimmed so they fit).
+Each block key is filled with that block's `color` from `obs-data.json` and labeled with the letter plus a short name (`shortName` from `obs-data.json`, else the words of the title before a colon, trimmed so they fit).
 
-PREV and NEXT wrap. From M, NEXT lands on A. From A, PREV lands on M. The expression is `($(internal:custom_ditm_block_index) + 1) % 13` and `(... + 12) % 13`.
+PREV and NEXT wrap. From L, NEXT lands on A. From A, PREV lands on L. The expression is `($(internal:custom_ditm_block_index) + 1) % 12` and `(... + 11) % 12`.
 
 32-key XL (8 by 4) shows two more keys on the same page:
 

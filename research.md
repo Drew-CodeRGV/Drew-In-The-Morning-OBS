@@ -93,8 +93,6 @@ Reviewed but deliberately **excluded** from all show files (personal, financial,
 7. **OBS**: use the `obs-data.json` in this folder for chyrons/headlines; keep lower-thirds ≤60 chars.
 
 ---
-Show clock for the Nov 23 plan is in `run-of-show-monday.md`: 8:00–9:00, blocks A–M. Listener spots are **8:39–8:41** (block J) and **8:56–9:00** (block M).
-
 # 10. UPDATE (Wed Nov 18, 2026, ~8:15 PM CT): Drew's show preferences — sourced findings
 Focus: local politics (races, school boards, mayors, city managers, economic development), McAllen/RGV news, controversial local stories, and a kids/digital-generation block. **Nothing below was invented; items I could not confirm are tagged CONFIRM BEFORE AIR.**
 Note: web-search "synthesis" blurbs were sometimes wrong (e.g., mixed 2020/2021/2024 stories into 2026). Everything below was taken from pages I opened, with the page's own date.

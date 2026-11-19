@@ -19,7 +19,39 @@
     "status": 200,
     "result": "ok"
   },
+  "https://apnews.com/article/illinois-duke-stojakovic-46-points-c6a4a8aee2f9d7fb676dab9019fe9d83": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://apnews.com/article/james-bond-jeff-bezos-robert-pattinson-a90f280d9e4fed9c7fd72ab6a4851945": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://apnews.com/article/measles-elimination-status-us-mexico-b6694152aca12e8cf4293d9f50090ec9": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://apnews.com/article/mexico-quinceanera-san-luis-potosi-isela-santiago-36f8d9a1f1dd69f05e8a6e92027cbc49": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
   "https://apnews.com/article/mullin-congress-ground-stop-cyber-threats-immigration-ce63a22797c61ee53d88678000236c37": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://apnews.com/article/new-james-bond-4545b257a9924895a69623332db50c97": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://apnews.com/article/usmnt-soccer-mauricio-pochettino-farewell-haiti-3fe3610a6d9a0d0fa1ef08fe56f03630": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://apnews.com/video/from-empty-party-to-an-all-night-stadium-bash-a-mexican-teens-15th-birthday-goes-viral-9f0d2688f5894ac1b1e452f9ff73d4dc": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://apnews.com/video/the-u-s-lost-its-measles-elimination-status-do-you-need-a-booster-f98d07c0153a463283e42ea7bc09c86a": {
     "status": 403,
     "result": "blocked-by-site"
   },
@@ -107,6 +139,10 @@
     "status": 200,
     "result": "ok"
   },
+  "https://resconnola.com/2027-call-for-proposals/": {
+    "status": 200,
+    "result": "ok"
+  },
   "https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/": {
     "status": 200,
     "result": "ok"
@@ -139,6 +175,10 @@
     "status": 200,
     "result": "ok"
   },
+  "https://techcrunch.com/2026/11/18/elon-musk-says-im-not-maga/": {
+    "status": 200,
+    "result": "ok"
+  },
   "https://texasborderbusiness.com/major-investment-in-echo-hotel-property-coming-to-edinburg/": {
     "status": 200,
     "result": "ok"
@@ -159,7 +199,19 @@
     "status": 200,
     "result": "ok"
   },
+  "https://trendoday.com/youtube/2026/11/18": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/": {
+    "status": 200,
+    "result": "ok"
+  },
   "https://www.basketball-reference.com/boxscores/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.billboard.com/music/awards/cma-2026-winners-list-1236385046/": {
     "status": 200,
     "result": "ok"
   },
@@ -167,8 +219,16 @@
     "status": 200,
     "result": "ok"
   },
+  "https://www.cbssports.com/nba/news/giannis-antetokounmpo-set-to-face-bucks-for-first-time-with-heat/": {
+    "status": 200,
+    "result": "ok"
+  },
   "https://www.dhs.gov/sites/default/files/2026-08/26_0806_k2p_p2p-t2p-sextortion.pdf": {
     "status": 200,
+    "result": "ok"
+  },
+  "https://www.espn.com/mens-college-basketball/story/_/id/50517287/illinois-andrej-stojakovic-scores-46-points-most-ever-opponent-duke": {
+    "status": 202,
     "result": "ok"
   },
   "https://www.espn.com/mlb/story/_/id/50328768/free-agency-tracker-offseason-trades-moves-2026-2027": {
@@ -180,10 +240,14 @@
     "result": "ok"
   },
   "https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/sextortion": {
-    "status": 503,
-    "result": "unreachable"
+    "status": 200,
+    "result": "ok"
   },
   "https://www.footballdb.com/games/index.html?yr=2026": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.gmanetwork.com/news/sports/basketball/1009886/nba-giannis-antetokounmpo-downplays-emotions-as-heat-face-bucks/story/": {
     "status": 200,
     "result": "ok"
   },
@@ -239,6 +303,10 @@
     "status": 200,
     "result": "ok"
   },
+  "https://www.nba.com/bucks/game/0022600260-bucks-vs-heat-miami-fl-11-18-2026": {
+    "status": 200,
+    "result": "ok"
+  },
   "https://www.nba.com/news/starting-5-november-17-2026": {
     "status": 200,
     "result": "ok"
@@ -252,6 +320,10 @@
     "result": "ok"
   },
   "https://www.nimh.nih.gov/health/publications/warning-signs-of-suicide": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.paho.org/en/news/17-11-2026-paho-urges-countries-step-efforts-stop-measles-outbreaks-and-move-towards": {
     "status": 200,
     "result": "ok"
   },
@@ -287,7 +359,19 @@
     "status": 200,
     "result": "ok"
   },
+  "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/": {
+    "status": 0,
+    "result": "unreachable"
+  },
   "https://www.texastribune.org/2026/11/03/texas-bobby-pulido-monica-de-la-cruz-congress-district-15-elections-2026/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.usatoday.com/story/entertainment/music/2026/11/18/cma-awards-2026-winners-list/92853447007/": {
+    "status": 402,
+    "result": "unreachable"
+  },
+  "https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-cincinnati-ohio": {
     "status": 200,
     "result": "ok"
   },

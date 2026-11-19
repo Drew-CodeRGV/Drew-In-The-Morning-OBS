@@ -102,16 +102,17 @@ blk(id="G-metro-desk", letter="G", title="McAllen Metro Desk: Economic Developme
     links=[L("Daily McAllen Nov 16","https://dailymcallen.com/local-news/editions/11-16-2026"),L("Daily McAllen Nov 17","https://dailymcallen.com/local-news/editions/11-17-2026"),L("Daily McAllen Nov 18","https://dailymcallen.com/local-news/editions/11-18-2026"),L("The RGV News: Nov 17 brief","https://thergvnews.com/reviews/day/2026-11-17")],
     confirm=["McAllen Holiday Parade date"])
 
-blk(id="H-open-format", letter="H", title="Open-Format Story Block (pick one or two)", subject="Wildcard slot: Power & Pipes, Screwworm, Overheard in the Valley, Politiquera, or whatever broke this morning",
+blk(id="H-open-format", letter="H", title="Wait, Don't Tell Me: Trending + Open Story", subject="Trending slot: viral, celebrity, culture and sports stories a well-informed host should know (pick 1 to 3 with a Valley riff), or an open local wildcard: Power & Pipes, Overheard in the Valley, Politiquera",
     minutes=3, flex=True, trim_to=0, stretch_to=6, color="#577590",
     headlines=["Hidalgo County can't block data centers outside city limits","Speer Library bus stop march and petition"],
-    chyrons=[C("h1","Judge Richard Cortez","Hidalgo County Judge · Citizens League"),C("h2","Texas Power Grid","~98 GW now · ~100 GW more by 2027"),C("h3","Overheard in the Valley","From r/RioGrandeValley"),C("h4","Politiquera Corner","politiquera.com"),C("h5","Drew Lentz","Wireless Engineer · The Wireless Nerd")],
-    talking=["MENU. POWER & PIPES: Hidalgo County Judge Richard Cortez says the county can't unilaterally block data centers in unincorporated areas but can negotiate; Texas grid ~98 GW with ~100 GW more slated by end of 2027. Drew's wheelhouse: satellites eyeing space compute (Broadband Breakfast Nov 18) and the AT&T/AST SpaceMobile handoff test.",
+    chyrons=[C("h0","Wait, Don't Tell Me","What everybody's talking about · pick 1 to 3"),C("h1","Judge Richard Cortez","Hidalgo County Judge · Citizens League"),C("h2","Texas Power Grid","~98 GW now · ~100 GW more by 2027"),C("h3","Overheard in the Valley","From r/RioGrandeValley"),C("h4","Politiquera Corner","politiquera.com"),C("h5","Drew Lentz","Wireless Engineer · The Wireless Nerd")],
+    talking=["TRENDING (\"WAIT, DON'T TELL ME\"): open the studio page section \"Trending: Wait, Don't Tell Me\" (6 to 10 items, each with a one-line summary, a suggested riff and a source link; the print packet carries the top 5). Pick 1 to 3: the best riff with a Valley tie, not the most famous story. Format: Drew reacts first (\"wait, don't tell me...\"), Jess adds the angle, one link on screen. Items marked CONFIRM BEFORE AIR are thinly sourced: verify or skip. Never duplicate a National Desk story. THIS WEEK'S SAMPLE BANK: CMA Awards (Ella Langley, \"Choosin' Texas\"), Musk \"I'm not MAGA\" (Starbase tie), the viral Mexican quince stadium party (Valley quince tie), Giannis vs. the Bucks, Pattinson as Bond.",
+             "MENU (OPEN LOCAL WILDCARD). POWER & PIPES: Hidalgo County Judge Richard Cortez says the county can't unilaterally block data centers in unincorporated areas but can negotiate; Texas grid ~98 GW with ~100 GW more slated by end of 2027. Drew's wheelhouse: satellites eyeing space compute (Broadband Breakfast Nov 18) and the AT&T/AST SpaceMobile handoff test.",
              "OVERHEARD IN THE VALLEY: backup verified item, Speer Memorial Library Route 20 bus-stop march/petition (Nov 14; stop reportedly unserviced since ~2017). PREP: pull 2-3 top posts Sunday night from r/RioGrandeValley, r/RGVEvents, r/McAllen (Top, Past Week).",
              "POLITIQUERA CORNER: politiquera.com campaign data; pre-pick one chart from /2026midterms (Mission's Dec 12 runoff is a natural tie-in). No data was pulled for this sample.",
              "WILDCARD: whatever broke this morning. Check KRGV, MyRGV, ValleyCentral first."],
-    follow=["If you could attach one condition to a data center in the Valley (jobs, water, power or internet), which?"],
-    transitions=["Both sides said they're for the Valley. Let's find out what 'for the Valley' costs and who's paying."],
+    follow=["Wait, don't tell me: what's the one story you saw this morning that you want us to explain?","If you could attach one condition to a data center in the Valley (jobs, water, power or internet), which?"],
+    transitions=["Okay, that's what the internet is losing its mind over this morning. Now the big national stories, and why they land in the Valley.","Both sides said they're for the Valley. Let's find out what 'for the Valley' costs and who's paying."],
     links=[L("Daily McAllen Nov 17 (Cortez on data centers)","https://dailymcallen.com/local-news/editions/11-17-2026"),L("r/RioGrandeValley: Speer Library march","https://www.reddit.com/r/RioGrandeValley/comments/1xjnz54/community_march_to_petition_for_the_speer/"),L("Politiquera","https://politiquera.com/")],
     confirm=["Pull live Reddit top-of-week titles","Choose the Politiquera data point"])
 
@@ -180,29 +181,196 @@ blk(id="M-listener-line-2-wrap", letter="M", title="Listener Line #2, Look Ahead
     follow=[], transitions=[], links=[L("Show social calendar (draft)","social-calendar.md")],
     confirm=["Early-voting dates", EMAIL_FLAG])
 
+# ---- RESTRUCTURE (Nov 18, 5th update): flowing 12-block open-format menu A-L.
+# The legacy blocks above (A-M) are the raw material; the blocks below re-compose them. Nothing here is invented:
+# every talking point, chyron and link comes from the legacy blocks, the packet data, or is a process note.
+OLD = {b["letter"]: b for b in B}
+def lk(*letters, only=None):
+    out, seen = [], set()
+    for lt in letters:
+        for l in OLD[lt]["links"]:
+            if only and not any(k.lower() in l["label"].lower() for k in only): continue
+            if l["url"] in seen: continue
+            seen.add(l["url"]); out.append(l)
+    return out
+def cy(letter, items):
+    return [C(f"{letter.lower()}{i}", p, s) for i, (p, s) in enumerate(items, 1)]
+def oc(letter, ids):  # reuse legacy chyrons by id, re-id them
+    pool = {c["id"]: c for b in B for c in b["chyrons"]}
+    return [C(f"{letter.lower()}{i}", pool[x]["primary"], pool[x]["secondary"]) for i, x in enumerate(ids, 1)]
+
+PACKET_DATA = os.path.join(ROOT, "packet", "data", "packet-2026-11-23.json")
+_pk = json.load(open(PACKET_DATA)) if os.path.exists(PACKET_DATA) else {}
+_texas = _pk.get("headlines", {}).get("texas", [])
+
+NB = []
+def nb(**k): NB.append(k)
+
+nb(id="A-cold-open", letter="A", title="Cold Open & Jingle", short="Cold Open", subject="Jingle, the filled-in cold open, the hour's promise",
+   minutes=2, flex=False, color="#f2b705",
+   headlines=["Good morning, Rio Grande Valley"],
+   chyrons=oc("A", ["a1", "a2"]),
+   talking=["JINGLE: \"Drew in the Morning. Your Valley, your news, your morning.\" (alternates in cold-open.md)",
+            "COLD OPEN: read the paragraph the packet builds each morning (card at the top of the studio page; also in the PDF, txt and email, and in obs-data.json under coldOpen). It is one flowing paragraph, about 45 seconds, filled with today's real headlines.",
+            "Listener tease at the end of the open: DMs or ditm@drewlentz.com (CONFIRM BEFORE AIR). No phone number exists, so don't announce one."],
+   follow=[], transitions=["Quick check-in on what I've been up to this week, then we jump into the Valley."], links=[L("Cold open template and jingle (cold-open.md)", "cold-open.md")],
+   confirm=["Unconfirmed teased items are listed under the cold open on the studio page"])
+
+nb(id="B-up-to", letter="B", title="What I've Been Up To This Week", short="Up To", subject="Personal touchpoint (2-3 min): public-facing things Drew and Jess did this week, then straight into Local news",
+   minutes=3, flex=True, trim_to=2, stretch_to=4, jess=False, color="#d1495b",
+   headlines=["What I've been up to this week"],
+   chyrons=cy("B", [("What I've Been Up To", "This week · Drew & Jess"), ("This Week", "Talks, conferences & community events")]),
+   talking=["SCRIPT: read the paragraph the packet builds (field up_to_script; it appears on the studio page, PDF, txt, email and in obs-data.json under upTo). 2 to 3 minutes, conversational, then drop into Local news.",
+            "EVENTS: the list under the script (field up_to[]: date, title, type conference/presentation/meeting/appearance, who Drew/Jess, optional public link). Every item is CONFIRM BEFORE AIR: eyeball each one and cut anything you don't want said on air.",
+            "NO EVENTS: if nothing is found the script says so plainly (\"Quiet week on the calendar...\") and the packet notes \"No calendar events found\". Do not make something up.",
+            "PRIVACY (read on air): only public-facing participation: talks, conferences, panels, appearances, community events. Never personal, medical, financial, legal, client-confidential or private 1:1 meetings, and never name private individuals."],
+   follow=["Jess: anything from your week worth a mention (a school event, a community thing)? Ask live; nothing here is pre-filled for her."],
+   transitions=["Okay, enough about me. Let's get into the Valley.", "That's my week. Here's what the Valley's been up to."],
+   links=[], confirm=["Every up_to item: CONFIRM BEFORE AIR (Drew eyeballs the list)", "Calendar is not connected, so events come from email only"])
+
+_c = OLD["B"]; _hw = OLD["H"]
+nb(id="C-local-news", letter="C", title="Local News", short="Local News", subject="Top Valley stories: the Starbase/SpaceX vote and launch, Overheard in the Valley, whatever broke this morning",
+   minutes=8, flex=True, trim_to=6, stretch_to=10, color="#e4572e",
+   headlines=_c["headlines"],
+   chyrons=oc("C", ["b1", "b2", "b3", "b4", "b5", "b6"]),
+   talking=_c["talking"] + [_hw["talking"][2], _hw["talking"][4]],
+   follow=_c["follow"],
+   transitions=["That's the headline. Now let's talk about who actually lives next to it.", "Hold that thought: that vote is local politics. Let's go there."],
+   links=_c["links"] + [l for l in _hw["links"] if "r/RioGrandeValley" in l["label"]],
+   confirm=_c["confirm"] + ["Pull live Reddit top-of-week titles (r/RioGrandeValley, r/RGVEvents, r/McAllen)"])
+
+_d = OLD["D"]
+nb(id="D-local-politics", letter="D", title="Local Politics", short="Local Politics", subject="Races, candidates and runoffs: TX-15 (Pulido), the Dec. 12 Mission and Weslaco runoffs",
+   minutes=6, flex=True, trim_to=4, stretch_to=8, color="#2a6f97",
+   headlines=_d["headlines"], chyrons=oc("D", ["d1", "d2", "d3", "d4"]),
+   talking=_d["talking"] + ["POLITIQUERA CORNER (optional): politiquera.com campaign data; pre-pick one chart from /2026midterms (Mission's Dec 12 runoff is a natural tie-in). No data was pulled for this sample."],
+   follow=_d["follow"],
+   transitions=["One flipped district, one runoff, one tax break: put them together and what's the Valley telling Austin? Speaking of who decides, school boards are next.", "Elections come down to who shows up. The same is true at your school board."],
+   links=_d["links"] + [l for l in _hw["links"] if l["label"] == "Politiquera"], confirm=_d["confirm"] + ["Choose the Politiquera data point"])
+
+_e = OLD["E"]
+_schoolish = ("CISD", "ISD", "Edinburg Advocate", "PSJA")
+nb(id="E-school-boards", letter="E", title="School Boards", short="School Boards", subject="Trustees, budgets and board votes: Edinburg CISD, PSJA ISD, McAllen ISD",
+   minutes=5, flex=True, trim_to=3, stretch_to=7, color="#2a9d8f",
+   headlines=_e["headlines"][:2], chyrons=oc("E", ["e1", "e2"]),
+   talking=[_e["talking"][0], "WEAVE-IN: this is a natural place for a Family & kids moment (screens and AI in class: PSJA's AI guidebook; Texas phones-off-during-the-school-day rule, HB 1481)."],
+   follow=[f for f in _e["follow"] if "trustee" in f or "district" in f or "stop-loss" in f],
+   transitions=["Two school boards' worth of decisions land on our kids. Now the folks who run the cities.", "Every campaign promise has a kid somewhere in it. Let's go from the classroom to City Hall."],
+   links=[l for l in _e["links"] if any(k in l["label"] for k in _schoolish)], confirm=[c for c in _e["confirm"] if "ISD" in c or "CISD" in c], weave="Kids item: AI/screens in class (weave from H)")
+
+_f = OLD["F"]
+nb(id="F-city-hall", letter="F", title="City Hall", short="City Hall", subject="Mayors, councils and city managers: McAllen, Brownsville, Mission, Pharr; the Zoho park rezoning",
+   minutes=5, flex=True, trim_to=3, stretch_to=7, color="#bc6c25",
+   headlines=_e["headlines"][2:] + _f["headlines"][:1], chyrons=oc("F", ["e3", "e4", "f1"]),
+   talking=_e["talking"][1:] + ["ZOHO AND THE PARK (menu item, folded in from the old Zoho block): " + _f["talking"][0], _f["talking"][1]],
+   follow=[f for f in _e["follow"] if "officials" in f][:0] + _f["follow"] + ["Questions for officials: why a revolving door at the top, and what does it cost residents?"],
+   transitions=["Forget the press release for a second: what does this change for somebody's Tuesday?", "City halls make deals. Let's talk about the deals that are supposed to bring jobs."],
+   links=[l for l in _e["links"] if not any(k in l["label"] for k in _schoolish)] + _f["links"],
+   confirm=[c for c in _e["confirm"] if "ISD" not in c] + _f["confirm"])
+
+_g = OLD["G"]
+nb(id="G-economic-development", letter="G", title="Economic Development", short="Econ Dev", subject="Jobs, projects and deals: McAllen EDC, the SpaceX data center abatement, Texas A&M McAllen, power and pipes",
+   minutes=6, flex=True, trim_to=4, stretch_to=8, color="#43aa8b",
+   headlines=_g["headlines"] + ["Hidalgo County can't block data centers outside city limits"], chyrons=oc("G", ["g1", "g2", "g3", "g4", "b2"]),
+   talking=_g["talking"] + ["STARBASE / SPACEX ITEM (folded in from the old Starbase block): the $24B data center asked for a 10-year, 100% tax abatement; the county said no to a hearing, 3-2 (details in C). Ask: is this 'jobs for infrastructure', and who negotiates it? SpaceX also pledged $220M for Brownsville water projects.",
+            _hw["talking"][1]],
+   follow=_g["follow"] + ["If you could attach one condition to a data center in the Valley (jobs, water, power or internet), which?"],
+   transitions=_g["transitions"] + ["Both sides said they're for the Valley. Let's find out what 'for the Valley' costs and who's paying."],
+   links=_g["links"] + [l for l in _hw["links"] if "Daily McAllen" in l["label"]], confirm=_g["confirm"])
+
+_c3, _l = OLD["C"], OLD["L"]
+nb(id="H-family-kids", letter="H", title="Family & Kids (woven in)", short="Family+Kids", subject="NOT a dedicated segment: a light, woven-in moment with Jess after the local blocks and before state. How We'd Talk to Our Kids lives here",
+   minutes=6, flex=True, trim_to=3, stretch_to=10, jess=True, signature=True, recurring=True, color="#8e6bbf",
+   headlines=_c3["headlines"][:2] + ["How We'd Talk to Our Kids: strangers online, and when the group chat turns mean"],
+   chyrons=oc("H", ["l1", "l2", "l3", "l4", "c2", "c3"]),
+   talking=["WOVEN, NOT A SEGMENT: Jess joins for a light moment after the local blocks. Tag any kids item in B-F as 'weave into C-G' and drop it in wherever it fits (school boards: AI and phones in class; City Hall: parks and youth; Econ dev: jobs a kid can stay for). If the show runs long, this shrinks to 3 min; it stretches to 10 when a listener story lands."] + _c3["talking"][:3] + [t for t in _l["talking"][1:] ],
+   follow=_c3["follow"] + _l["follow"],
+   transitions=["Texas already bans phones during the school day. So what happens at 3:15 PM? Jess, that one's yours.", "Thanks, Jess. That's the family side. Now, what's Austin up to?"],
+   links=_c3["links"] + _l["links"], confirm=_c3["confirm"] + _l["confirm"],
+   weave="Tag kids items in C-G as 'weave into C-G' (see each block); Jess drops in here or anywhere they fit")
+
+nb(id="I-statewide", letter="I", title="Statewide", short="Statewide", subject="Texas and Texas politics: the packet's Texas items, r/Texas top posts, Austin",
+   minutes=4, flex=True, trim_to=2, stretch_to=6, color="#577590",
+   headlines=[t["title"] for t in _texas[:3]] or ["Texas headlines from the packet"],
+   chyrons=cy("I", [("Statewide", "Texas news & Texas politics")] + [((t.get("short") or t["title"])[:58], (t.get("source", "").split(" · ")[0] or "Texas")[:58]) for t in _texas[:2]] + [(OLD["H"]["chyrons"][2]["primary"], OLD["H"]["chyrons"][2]["secondary"])]),
+   talking=["TEXAS ITEMS: use the packet's Texas headlines (listed in the Headlines section; each has a source link): " + "; ".join(t["title"] for t in _texas[:3]) + ".",
+            "r/Texas: pull 2-3 top posts (Top, Past Week) that match local and Texas-wide politics, controversies or kids/digital topics; read the title and say why it matters. PREP Sunday night.",
+            "BRIDGE FROM LOCAL: \"This is a Valley story, but Austin is already writing the rules.\" TEXAS GRID: ~98 GW now, ~100 GW more slated by end of 2027 (Daily McAllen Nov 17). The Ten Commandments classroom law is also a Texas story (see the National Desk item).",
+            "Gov.-elect Hinojosa has promised to freeze new data-center development and takes office in January (details in Block C notes). CONFIRM before saying anything beyond that."],
+   follow=["What is the one Texas story that actually changes something for a Valley family this month?"],
+   transitions=["That's Texas. Now zoom out: what's the rest of the country arguing about?", "Austin writes the rules; Washington argues about them. Here's the national picture."],
+   links=[{"label": t["title"][:80], "url": t["url"]} for t in _texas[:3] if t.get("url")], confirm=["Pull live r/Texas top-of-week titles", "Re-check Texas items Sunday night"])
+
+_n = OLD["I"]
+nb(id="J-national-desk", letter="J", title="The National Desk (+ Trending)", short="National", subject="Big national stories with a Valley angle (fact, then take, then 'why it matters here'), plus Trending: Wait, Don't Tell Me as riff material",
+   minutes=8, flex=True, trim_to=6, stretch_to=10, color="#6d597a",
+   headlines=_n["headlines"] + ["Trending: pick 1 to 3 'wait, don't tell me' stories"],
+   chyrons=oc("J", ["i1", "i2", "i3", "i4", "i5", "i6", "h0"]),
+   talking=_n["talking"] + [_hw["talking"][0] + " (flex: this is riff material inside the National Desk, not a separate block)"],
+   follow=_n["follow"] + _hw["follow"][:1], transitions=["Okay, that's the 30,000-foot view. Now, what does it mean at 1,000 feet over the Valley?", "Okay, that's what the internet is losing its mind over this morning. Now it's your turn."],
+   links=_n["links"], confirm=_n["confirm"])
+
+_j = OLD["J"]; _m = OLD["M"]
+nb(id="K-listener-line", letter="K", title="Listener Line", short="Listeners", subject="Call-ins and topic submissions (from submissions.md / call-ins.md); still no phone number",
+   minutes=3, flex=True, trim_to=2, stretch_to=4, color="#f4a261",
+   headlines=_j["headlines"], chyrons=oc("K", ["j1", "j2", "j3"]),
+   talking=_j["talking"] + [_m["talking"][1]],
+   follow=_j["follow"], transitions=["We've talked a lot. Now it's your turn: what are you hearing?", "Let's lighten up and see what the kids are saying."],
+   links=_j["links"], confirm=_j["confirm"])
+
+_k = OLD["K"]
+nb(id="L-meme-close", letter="L", title="Meme of the Week & Close", short="Meme+Close", subject="What the kids are talking about (elementary, middle, high school; for parents), then the look-ahead and sign-off with Jess",
+   minutes=4, flex=True, trim_to=3, stretch_to=6, jess=True, color="#ff7f50",
+   headlines=_k["headlines"] + _m["headlines"], chyrons=oc("L", ["k1", "k2", "k3", "m2", "m3", "m5"]),
+   talking=_k["talking"] + [_m["talking"][0], _m["talking"][2]],
+   follow=_k["follow"], transitions=["That's the fun stuff. Thanks for spending the hour with us. See you next time.", "Jingle out."],
+   links=_k["links"] + _m["links"], confirm=_k["confirm"] + _m["confirm"])
+
+B[:] = NB
+assert [b["letter"] for b in B] == list("ABCDEFGHIJKL")
+for b in B: b.setdefault("short", b["title"].split(":")[0][:12])
+
 # ---- compute ranges
 def hhmm(m): return f"8:{m:02d}" if m < 60 else f"9:{m-60:02d}"
 t = 0
 for b in B:
-    b["start"] = hhmm(t); t += b["minutes"]; b["end"] = hhmm(t)
+    b["offset"] = t; b["start"] = hhmm(t); t += b["minutes"]; b["end"] = hhmm(t)
     b["timeRange"] = f"{b['start']}–{b['end']}"
 assert t == 60, t
 for b in B:
     for c in b["chyrons"]:
         assert len(c["primary"]) <= LEN and len(c["secondary"]) <= LEN, (c, len(c["primary"]), len(c["secondary"]))
 
-NEW_SEGUES = [
- ("local politics","National Desk","That's what's happening in our backyard. Let's zoom out and see what the rest of the country is arguing about."),
- ("National Desk","local","Okay, that's the 30,000-foot view. Now, what does it mean at 1,000 feet over the Valley?"),
- ("National Desk","local","Strip out the politics: what did that story change for somebody at MFE or HRL this week?"),
- ("national story","Valley angle","Everybody's talking about it in Washington. Here's how it lands in Weslaco."),
- ("local","Listener Line","We've talked a lot. Now it's your turn: what are you hearing?"),
- ("Listener Line","Meme of the Week","Let's lighten up and see what the kids are saying."),
- ("Meme of the Week","How We'd Talk to Our Kids","That's the fun stuff. Now the part other parents skip."),
- ("How We'd Talk to Our Kids","Listener Line","If one of those hit home, send us your story or your question. Anonymous is fine."),
- ("local politics","deeper dive","Let's stay on this one a minute. Here's what I'd ask the people who decide."),
- ("deeper dive","next block","We could go all morning on this, but there's more Valley to cover."),
+ADJ = {  # a segue between every adjacent pair of blocks (the menu's default flow)
+ ("A","B"): ["Quick check-in on what I've been up to this week, then we jump into the Valley.", "Before the news, a little of what Jess and I have been up to."],
+ ("B","C"): ["Okay, enough about me. Let's get into the Valley.", "That's my week. Here's what the Valley's been up to."],
+ ("C","D"): ["That's the headline. Now let's talk about the people who decide: the politics behind it.", "Hold that thought: that vote is local politics. Let's go there."],
+ ("D","E"): ["We just watched an election come down to turnout. The same is true at your school board.", "Elections come down to who shows up. Let's go from the ballot box to the classroom."],
+ ("E","F"): ["Two school boards' worth of decisions land on our kids. Now the folks who run the cities.", "From the classroom to City Hall: who's actually running the place?"],
+ ("F","G"): ["City halls make deals. Let's talk about the deals that are supposed to bring jobs.", "Forget the press release for a second: what does this change for somebody's Tuesday?"],
+ ("G","H"): ["A $225 million plant means 500 jobs on paper. Let's talk about what a good job does for a family dinner table.", "Great, we're growing. Can a kid who grows up here afford to stay? Jess, come on in."],
+ ("H","I"): ["Thanks, Jess. That's the family side. Now, what's Austin up to?", "That's the kitchen-table view. Now the view from the Capitol."],
+ ("I","J"): ["That's Texas. Now zoom out: what's the rest of the country arguing about?", "Austin writes the rules; Washington argues about them. Here's the national picture."],
+ ("J","K"): ["Okay, that's the 30,000-foot view. Now it's your turn: what are you hearing?", "We've talked a lot. Now it's your turn."],
+ ("K","L"): ["Let's lighten up and see what the kids are saying.", "That's the fun stuff. One more thing before we go: what the kids are talking about."],
+}
+NAMES = {b["letter"]: b["title"] for b in B}
+JUMPS = [  # menu jumps: Drew can move through the blocks in any order
+ ("any local block","Family & Kids","Strip out the politics: what does this change for one family? Jess, you're up."),
+ ("Local News","Local Politics","Let's stay on this one a minute. Here's what I'd ask the people who decide."),
+ ("any block","Economic Development","Forget the politics for a second: who gets the jobs, and who pays?"),
+ ("Statewide","Local Politics","This is a Valley story, but Austin is already writing the rules."),
+ ("National Desk","any local block","Strip out the politics: what did that story change for somebody at MFE or HRL this week?"),
+ ("National Desk","any local block","Everybody's talking about it in Washington. Here's how it lands in Weslaco."),
+ ("National Desk","Trending","Okay, that's the news. Here's what the internet is losing its mind over. Wait, don't tell me."),
+ ("any block","Listener Line","We could go all morning on this, but let's hear from you: what are you seeing?"),
+ ("any block","Meme of the Week","Let's lighten up and see what the kids are saying."),
+ ("Meme of the Week","Family & Kids","That's the fun stuff. Now the part other parents skip."),
+ ("Family & Kids","Listener Line","If one of those hit home, send us your story or your question. Anonymous is fine."),
+ ("any block","next block","We could go all morning on this, but there's more Valley to cover."),
+ ("Cold Open","What I've Been Up To","Quick check-in on what I've been up to this week, then we jump into the Valley."),
 ]
+NEW_SEGUES = []
 
 def build():
     path = os.path.join(ROOT, "obs-data.json")
@@ -212,19 +380,23 @@ def build():
         segs.append({
             "id": b["id"], "order": i, "suggestedOrder": i, "letter": b["letter"],
             "start": b["start"], "end": b["end"], "timeRange": b["timeRange"],
+            "offsetMinutes": b["offset"], "shortName": b["short"], "weave": b.get("weave"),
             "durationMinutes": b["minutes"], "title": b["title"], "subject": b["subject"],
             "flex": b["flex"], "canTrimToMinutes": b.get("trim_to"), "canStretchToMinutes": b.get("stretch_to"),
             "jessDropIn": b.get("jess", False), "recurring": b.get("recurring", False), "signature": b.get("signature", False),
             "color": b["color"], "headlines": b["headlines"], "chyrons": b["chyrons"],
             "talkingPoints": b["talking"], "followUpQuestions": b["follow"], "transitionLines": b["transitions"],
             "links": b["links"], "needsVerification": b["confirm"]})
-    segues = old["segues"]
-    have = {s["line"] for s in segues}
-    n = len(segues)
-    for a, c, l in NEW_SEGUES:
-        if l in have: continue
-        n += 1; segues.append({"id": f"sg{n:02d}", "from": a, "to": c, "line": l})
-    old["schemaVersion"] = 3
+    segues, n = [], 0
+    for (a, c), ls in ADJ.items():
+        for l in ls:
+            n += 1; segues.append({"id": f"sg{n:02d}", "kind": "adjacent", "fromLetter": a, "toLetter": c, "from": NAMES[a], "to": NAMES[c], "line": l})
+    for a, c, l in JUMPS:
+        n += 1; segues.append({"id": f"sg{n:02d}", "kind": "jump", "from": a, "to": c, "line": l})
+    old["schemaVersion"] = 4
+    old["chyronMaxChars"] = LEN
+    old["schemaNotes"] = "v4 (Nov 18): 12 blocks A-L (new B = What I've Been Up To, family & kids woven into H, Starbase/Zoho/trending folded into other blocks). Segments carry offsetMinutes from the planned 8:00 start. coldOpen, jingle and upTo are filled by packet/build_packet.py on every build."
+    old.setdefault("coldOpen", ""); old.setdefault("jingle", {}); old.setdefault("upTo", {})
     old["generated"] = "2026-11-18"
     old["show"]["runtimeMinutes"] = 60
     old["show"]["format"] = "open-format menu of story blocks; full 60-minute plan with suggested time ranges; blocks can be reordered, trimmed or stretched ('flex')"
@@ -249,7 +421,7 @@ def build():
                    "Controversial local stories (tax abatements, park land, SpaceX)", "The National Desk: big national stories with a Valley angle (Stern/K-Rock-style fact + take; always smaller than local)",
                    "Kids and the digital generation; Meme of the Week", "How We'd Talk to Our Kids (signature, recurring)", "Listener lines (DMs, email; no phone number)"]
     p["rules"] = ["Never state anything unverified; mark CONFIRM BEFORE AIR", "Say 988 whenever suicide or self-harm comes up",
-                  "Jess: two in-show appearances (Block C and the signature segment) plus the wrap",
+                  "Jess: joins for the woven Family & Kids moment (Block H) and the close (Block L); anywhere else she drops in is ad lib",
                   "No core/skippable split: every block has a suggested time range; 'flex' blocks may be trimmed (see canTrimToMinutes) or stretched when the story runs long",
                   "National Desk stays smaller than local (6 min of 60; about 25% of the packet page at most)",
                   "No call-in phone number is announced; point to DMs and ditm@drewlentz.com (CONFIRM BEFORE AIR)",
@@ -268,11 +440,11 @@ def md(old):
     A = o.append
     A("# DREW IN THE MORNING — MONDAY 60-MINUTE RUN OF SHOW (open-format menu)")
     A("**Monday, November 23, 2026 · 8:00–9:00 AM CT · Live (Restream → YouTube / Facebook / Instagram / TikTok)**")
-    A("Host: Drew Lentz · Jess: recurring guest (Block C, the signature segment L, and the wrap M)\n")
+    A("Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close, Block L; she can drop in anywhere)\n")
     A("## How to use this")
-    A("- **Full hour, no rush.** Most listeners stay the whole show, so the plan adds depth instead of padding: local-politics deep dives, a National Desk, a longer **How We'd Talk to Our Kids**, a Meme of the Week beat, and two listener moments. Times add up to exactly **60 minutes as planned**.")
+    A("- **Full hour, no rush.** Most listeners stay the whole show, so the plan adds depth instead of padding: a quick personal check-in (B), local news, politics, school boards, City Hall and economic development, a woven-in **Family & Kids** moment with Jess (the How We'd Talk to Our Kids topics), Statewide, the National Desk with Trending as riff material, a listener line, and the Meme of the Week close. Times add up to exactly **60 minutes as planned**.")
     A("- **Open format.** Reorder blocks as the conversation flows. Blocks marked **FLEX** can be trimmed (see 'can trim to') when a story runs long, or stretched when it's hot. There is no 'core vs skippable' split anymore.")
-    A("- **Local first.** The National Desk (6 min, stretch to 8) stays clearly smaller than the local blocks (B–H ≈ 31 min).")
+    A("- **Local first.** The National Desk and Trending (J, 8 min, stretch to 10) stay clearly smaller than the local blocks (C–G ≈ 30 min).")
     A("- **Fact rules.** Facts were checked Nov 18 against pages opened that day (sources under each block; full list in `research.md` §10 and the packet). Anything unconfirmed is **CONFIRM BEFORE AIR**. Re-check Sunday night, Nov 22.")
     A("- **Sensitive topics:** whenever suicide, self-harm or sextortion comes up, say **988** (call or text, or chat at 988lifeline.org); 911 if someone is in immediate danger.")
     A("- **Listeners:** no call-in phone number exists, so don't announce one. Point to DMs on the show accounts (IG/TikTok @drewinthemorning) and **ditm@drewlentz.com — CONFIRM BEFORE AIR** that it's for public submissions. A Restream guest link is unverified.\n")
@@ -285,7 +457,7 @@ def md(old):
         jess = " · Jess" if b.get("jess") else ""
         A(f"| {b['letter']} · {b['title']}{extra}{jess} | {b['timeRange']} | {b['minutes']} | {fx} |")
     A(f"| **Total** | 8:00–9:00 | **60** | flex blocks total {sum(b['minutes'] for b in B if b['flex'])} min |\n")
-    A("**If a story runs long:** borrow from F, G, H or E first (then D, then I). **If the show is short on news:** stretch B or D, or take 3 extra minutes for the open-format block H. L (How We'd Talk to Our Kids) is the one block that isn't trimmed below 10 min.\n---")
+    A("**If a story runs long:** borrow from F, G, I or E first (then D, then J). **If the show is short on news:** stretch C or D, or let H (Family & Kids) breathe to 10 min. Block B (What I've Been Up To) is 2 to 3 min: trim to 2 if the news is hot.\n---")
     for b in B:
         flex = f"FLEX: trim to {b.get('trim_to')} / stretch to {b.get('stretch_to')} min" if b["flex"] else "fixed"
         tag = " — SIGNATURE · RECURRING" if b.get("signature") else ""
@@ -309,7 +481,7 @@ def md(old):
             A("\n**CONFIRM BEFORE AIR:** " + "; ".join(b["confirm"]))
         A("\n---")
     A("### Producer notes")
-    A("- **What changed (Nov 18, 4th update):** dropped the 33 core + 27 skippable framing; every block now has a time range that sums to 60 min; added the National Desk (block I, 6 min; was a 5-min skippable placeholder), Listener Line #1 (J), Meme of the Week (K), and a combined Listener Line #2 + Look Ahead + Wrap (M); merged Power & Pipes, Screwworm & Ag, Overheard in the Valley and Politiquera into the open-format block H; deepened B (8 min), D (6), L (12, stretch to 15); added follow-up questions and transition lines to each block.")
+    A("- **What changed (Nov 18, 5th update):** flowing 12-block open-format menu in this order: A Cold open + jingle · B What I've Been Up To · C Local news · D Local politics · E School boards · F City hall · G Economic development · H Family & kids (woven in, with Jess) · I Statewide · J National Desk (+ Trending) · K Listener line · L Meme of the Week / close. The dedicated Starbase, Zoho and open-format blocks are gone: Starbase/SpaceX items live in Local news and Economic development, Zoho lives in City hall, Trending sits inside the National Desk as riff material. Times total exactly 60 min. Segues exist between every adjacent pair plus jump lines (segues.md).")
     A("- **Thanksgiving week:** Nov 26 is Thanksgiving; expect lighter turnout and slower news.")
     A("- **Sunday-night checklist:** refresh headlines (KRGV, MyRGV, ValleyCentral, Daily McAllen); clear the CONFIRM items; pull Reddit top posts; read new DMs/email submissions; load `obs-data.json`; open the studio packet page.")
     A("- **Do not air** anything from personal/family, financial, client or legal email.")
@@ -341,7 +513,7 @@ def side_files(old):
           "- Monday 8 AM CT, 60 minutes, live from McAllen. Drew talks about what is happening in his local universe (McAllen / Rio Grande Valley) and what it means in the larger picture.",
           "- The run of show (`run-of-show-monday.md`) is a **menu of story blocks** with a suggested time range for each; the ranges add up to exactly 60 minutes. Reorder, merge or stretch blocks as the conversation goes.",
           "- **No more core/skippable split.** Most listeners stay the whole hour, so the added time *deepens* segments (local-politics deep dives, the National Desk, How We'd Talk to Our Kids, listener moments) rather than padding. Blocks marked **FLEX** can be trimmed if a story runs long, or stretched.",
-          "- Always keep: Jess's two appearances (Block C and the signature segment L), the wrap (M), and **How We'd Talk to Our Kids** (never below 10 min; stretch to 15).",
+          "- Always keep: the Cold open (A), Local news (C), the woven Family & Kids moment (H, even if it shrinks to 3 min) and the close (L). Everything else is a menu: trim, skip, reorder or stretch as the conversation goes.",
           "- Use `segues.md` to move between blocks: local → why it matters → bigger picture.", "",
           "## Themes (what Drew watches)"] + [f"{i}. {t}" for i, t in enumerate(pr["themes"], 1)] + [
           "", "## National Desk rules",

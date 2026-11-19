@@ -21,7 +21,8 @@ class CompanionTests(unittest.TestCase):
         document = json.loads((ROOT / "companion" / "blocks.json").read_text(encoding="utf-8"))
         blocks = document["blocks"]
         segments = sorted(data["segments"], key=lambda item: item["order"])
-        self.assertEqual([block["letter"] for block in blocks], list("ABCDEFGHIJKLM"))
+        self.assertEqual(len(blocks), 12)
+        self.assertEqual([block["letter"] for block in blocks], list("ABCDEFGHIJKL"))
         limit = data["chyronMaxChars"]
         for block, segment in zip(blocks, segments):
             self.assertEqual(block["title"], segment["title"])
