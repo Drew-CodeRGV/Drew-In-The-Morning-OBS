@@ -4,7 +4,7 @@
 - Monday 8 AM CT, 60 minutes, live from McAllen. Drew talks about what is happening in his local universe (McAllen / Rio Grande Valley) and what it means in the larger picture.
 - The run of show (`run-of-show-monday.md`) is a **menu of story blocks** with a suggested time range for each; the ranges add up to exactly 60 minutes. Reorder, merge or stretch blocks as the conversation goes.
 - **No more core/skippable split.** Most listeners stay the whole hour, so the added time *deepens* segments (local-politics deep dives, the National Desk, How We'd Talk to Our Kids, listener moments) rather than padding. Blocks marked **FLEX** can be trimmed if a story runs long, or stretched.
-- Always keep: Jess's two appearances (Block C and the signature segment L), the wrap (M), and **How We'd Talk to Our Kids** (never below 10 min; stretch to 15).
+- Always keep: the Cold open (A), Local news (C), the woven Family & Kids moment (H, even if it shrinks to 3 min) and the close (L). Everything else is a menu: trim, skip, reorder or stretch as the conversation goes.
 - Use `segues.md` to move between blocks: local → why it matters → bigger picture.
 
 ## Themes (what Drew watches)
@@ -29,7 +29,7 @@
 ## Rules
 - Never state anything unverified; mark CONFIRM BEFORE AIR
 - Say 988 whenever suicide or self-harm comes up
-- Jess: two in-show appearances (Block C and the signature segment) plus the wrap
+- Jess: joins for the woven Family & Kids moment (Block H) and the close (Block L); anywhere else she drops in is ad lib
 - No core/skippable split: every block has a suggested time range; 'flex' blocks may be trimmed (see canTrimToMinutes) or stretched when the story runs long
 - National Desk stays smaller than local (6 min of 60; about 25% of the packet page at most)
 - No call-in phone number is announced; point to DMs and ditm@drewlentz.com (CONFIRM BEFORE AIR)

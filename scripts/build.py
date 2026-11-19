@@ -18,7 +18,7 @@ from pathlib import Path
 import obsio
 import render
 
-SUPPORTED_SCHEMAS = {1, 2, 3}
+SUPPORTED_SCHEMAS = {1, 2, 3, 4}
 
 # Handles that are safe to put on a pre-show card. Anything else in show.socials
 # (an inbox that still says "confirm", for example) stays in the segment index.

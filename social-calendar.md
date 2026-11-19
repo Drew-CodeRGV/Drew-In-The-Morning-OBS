@@ -45,7 +45,6 @@ Topic: #SpaceX #Starbase #BocaChica (SpaceX) · #TX15 #ValleyVotes (politics) ·
 | Tue Nov 24 | 6 PM | YouTube | Full episode and chapters |
 | Wed Nov 25 | 12 PM | IG Story, FB, YT community | "What's one thing you're thankful for in the Valley? Read the best ones Nov 30." |
 | Thu Nov 26 | all day | — | Thanksgiving: no new posts, or one holiday post that Drew approves |
-Nov 23 show clock: How We'd Talk to Our Kids is block L, **8:44–8:56**. The wrap is block M, **8:56–9:00**.
 Next show: Mon Nov 30, 8 AM CT. Fri Nov 27 tease can resume then.
 
 ## Rules for posts

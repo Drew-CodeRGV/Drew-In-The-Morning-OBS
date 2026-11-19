@@ -59,8 +59,8 @@ def main() -> int:
 def load_blocks(data: dict) -> list[dict]:
     limit = int(data.get("chyronMaxChars") or 60)
     segments = sorted(data["segments"], key=lambda item: item["order"])
-    if len(segments) != 13:
-        raise SystemExit(f"Expected 13 blocks, found {len(segments)}")
+    if len(segments) != 12:
+        raise SystemExit(f"Expected 12 blocks, found {len(segments)}")
     blocks = []
     for index, segment in enumerate(segments):
         letter = str(segment.get("letter") or segment["id"][:1]).upper()
@@ -80,7 +80,7 @@ def load_blocks(data: dict) -> list[dict]:
                 "letter": letter,
                 "id": segment["id"],
                 "title": one_line(segment["title"]),
-                "short": short_label(segment["title"]),
+                "short": str(segment.get("shortName") or short_label(segment["title"])),
                 "color": color,
                 "colorInt": int(color.lstrip("#"), 16),
                 "chyron": chyron,
@@ -90,8 +90,8 @@ def load_blocks(data: dict) -> list[dict]:
             }
         )
     letters = [block["letter"] for block in blocks]
-    if letters != list("ABCDEFGHIJKLM"):
-        raise SystemExit(f"Block letters are {''.join(letters)}, expected A-M in order")
+    if letters != list("ABCDEFGHIJKL"):
+        raise SystemExit(f"Block letters are {''.join(letters)}, expected A-L in order")
     return blocks
 
 
@@ -137,7 +137,7 @@ def custom_variables(blocks: list[dict]) -> dict:
     first = blocks[0]
     return {
         "ditm_block_index": {
-            "description": "Current block index, 0 through 12. Arrow keys wrap.",
+            "description": "Current block index, 0 through 11. Arrow keys wrap.",
             "defaultValue": "0",
             "persistCurrentValue": False,
         },
@@ -504,13 +504,13 @@ def button_table(blocks: list[dict]) -> str:
             "PREV expression for `ditm_block_index`:",
             "",
             "```",
-            "($(internal:custom_ditm_block_index) + 12) % 13",
+            "($(internal:custom_ditm_block_index) + 11) % 12",
             "```",
             "",
             "NEXT expression:",
             "",
             "```",
-            "($(internal:custom_ditm_block_index) + 1) % 13",
+            "($(internal:custom_ditm_block_index) + 1) % 12",
             "```",
             "",
             "Then set `ditm_block`, `ditm_title`, `ditm_headline`, and `ditm_chyron` from that index. The generated config uses nested ternaries. Give those actions about 30 ms of delay so they read the new index, and give the OBS text actions about 80 ms.",

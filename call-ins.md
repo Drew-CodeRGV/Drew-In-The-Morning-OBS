@@ -1,8 +1,5 @@
 # Drew in the Morning — Call-Ins & Listener Submissions (DRAFT)
 
-## When it airs (Monday, Nov. 23)
-Listener Line #1 is block J, **8:39–8:41**. Listener Line #2 and the wrap are block M, **8:56–9:00**. Full clock: `run-of-show-monday.md`.
-
 ## How listeners reach the show
 | Route | Detail | Status |
 |---|---|---|

@@ -2,7 +2,7 @@ Block: A
 Order: 0
 Id: A-cold-open
 Title: Cold Open & Jingle
-Subject: Welcome, the hour's promise, listener tease
+Subject: Jingle, the filled-in cold open, the hour's promise
 Time: 8:00–8:02
 Minutes: 2
 Jess on screen: no
@@ -17,3 +17,5 @@ Chyron: segment
 Chyron primary: Drew Lentz
 Chyron secondary: Host · Drew in the Morning
 Scene hint: host
+CONFIRM BEFORE AIR:
+- Unconfirmed teased items are listed under the cold open on the studio page
