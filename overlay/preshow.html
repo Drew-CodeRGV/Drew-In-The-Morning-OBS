@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pre-show</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="matte">
+  <div id="warn">Cannot read the show files. In a terminal, run: python scripts/live.py serve</div>
+  <main class="center">
+    <img class="logo-full" src="/images/logo/DITM_SunLogo_White.png" alt="">
+    <p class="eyebrow" data-file="/scenes/show-subtitle.txt"></p>
+    <p class="when" data-file="/scenes/episode-line.txt"></p>
+    <hr class="rule">
+    <p class="starts" data-file="/scenes/starts-at.txt"></p>
+    <p class="accounts" data-file="/scenes/account-list.txt"></p>
+  </main>
+  <script src="poll.js"></script>
+</body>
+</html>

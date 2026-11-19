@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lower third</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="warn">Cannot read the show files. In a terminal, run: python scripts/live.py serve</div>
+  <header id="bug">
+    <span class="live-pill"><i></i><span data-file="/scenes/live-bug.txt">LIVE</span></span>
+    <div id="clock" data-tz-file="/scenes/timezone.txt" data-zone-file="/scenes/zone-label.txt"></div>
+  </header>
+  <img class="logo-bug" src="/images/logo/ditm_logo_bug.png" alt="">
+  <div id="stack">
+    <div id="headline-bar">
+      <div id="kicker" data-file="/current/segment-title.txt"></div>
+      <div id="headline" data-file="/current/headline.txt" data-hide-empty="1"></div>
+    </div>
+    <div id="lt">
+      <div id="primary" data-file="/current/chyron-primary.txt"></div>
+      <div id="secondary" data-file="/current/chyron-secondary.txt"></div>
+    </div>
+  </div>
+  <div id="ticker" data-file="/ticker/ticker.txt" data-role="ticker"></div>
+  <script src="poll.js"></script>
+</body>
+</html>
