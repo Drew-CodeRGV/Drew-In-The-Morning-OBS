@@ -25,7 +25,7 @@ COLD OPEN (read aloud, about 45 seconds)
   with Hidalgo County's first screwworm case, plus SpaceX's quiet data-center air permit. On
   the National Desk, the first-ever Trump, Xi and Putin summit. In Trending, GTA Six finally
   dropping. And in How We'd Talk to Our Kids, Jess and I take on energy drinks, caffeine and
-  what a 14-year-old actually needs to know. It's 66 and cloudy outside, the coffee's hot,
+  what a 14-year-old actually needs to know. It's 67 and cloudy outside, the coffee's hot,
   so stick around, this is Drew in the Morning.
   JINGLE: Drew in the Morning. Your Valley, your news, your morning.
   CONFIRM BEFORE AIR (teased, unconfirmed; not part of the spoken text): RGV: Hidalgo Co.
@@ -57,7 +57,7 @@ WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min) · 4 item(s) found · CONFIRM 
 
 STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README.md). 44
   stories, 0 duplicate(s) merged, 1 hot, 1 trending, 2 uncovered lead(s). Google Trends US-
-  TX 10 + US 10 items, fetched 2026-11-19T12:14:15+00:00.
+  TX 10 + US 10 items, fetched 2026-11-19T12:32:27+00:00.
 
 TOP HEADLINES · RGV FIRST
   - [ACT 16] Hidalgo County confirms its first New World screwworm case (a calf); quarantine
@@ -66,7 +66,7 @@ TOP HEADLINES · RGV FIRST
   - [ACT 25] SpaceX got its TCEQ air permit (35 gas turbines, 750 MW) for the Starbase data
     center a day before Cameron County said no to a tax-break hearing (MyRGV · Nov 18)
     https://myrgv.com/local-news/2026/11/18/spacex-received-data-center-permit-a-day-before-tax-break-rejection/
-  - [ACT 20] La Joya ISD uses under 60% of its space, needs $160M+ in repairs and may close
+  - [ACT 19] La Joya ISD uses under 60% of its space, needs $160M+ in repairs and may close
     more campuses after losing ~8,000 students in a decade (KRGV · Nov 18)
     https://www.krgv.com/news/plummeting-enrollment-leaves-la-joya-isd-facing-160m-maintenance-bill-and-possible-closures/
   - [ACT 15] McAllen city manager: $17.5B in retail sales (2023, Dallas Fed), ~28% from
@@ -257,6 +257,40 @@ THE NATIONAL DESK (smaller; local leads)
     ValleyCentral: Valley airports issue advisories: https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/
     KRGV: Brownsville airport after ground stop: https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/
 
+WHAT'S HAPPENING IN TECH (sub-segment of block J, after the National Desk) [FALLBACK: TECH WIRES]
+  FALLBACK: tech wires (The Verge, TechCrunch, Ars Technica). No Fast Company Daily issue
+    from the last 48 hours was found in Gmail.
+- The nation's largest school districts consider ditching Google Search  (The Verge)  [CONFIRM BEFORE AIR: The Valley tie is a question: confirm with a local ISD that it uses Google for Education before saying so. Details are the NYT's, relayed by The Verge (RSS summary read, not the full article).]
+    SUMMARY: New York, Los Angeles and Chicago schools are weighing Google alternatives
+      after Google said it will disable Search for schools that opt out of its AI features;
+      starting next year schools can't turn off the Gemini-powered features without also
+      turning off Search (per The New York Times).
+    ON-AIR ANGLE: School-board angle: it's a question for Valley districts, not a claim. Do
+      our ISDs run Google tools for students, and what happens to student Search next year?
+      Good lead-in to the school-board block next week.
+    Link: https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google
+- How to tell a cyberattack from a plain old outage  (Ars Technica)  [CONFIRM BEFORE AIR: Only the headline and one-line standfirst were read (RSS). Read the article before citing any specifics on air.]
+    SUMMARY: Ars Technica explainer: when everything goes down, don't assume it's a
+      cyberattack.
+    ON-AIR ANGLE: Pairs with the National Desk outages story (FAA ground stop, the Mullin
+      hearing): before anyone shares 'we got hacked' in the group chat, here's how the pros
+      tell an attack from a plain old outage. Drew's wireless-engineer lane.
+    Link: https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/
+- Instagram now lets you edit your stories after you post them  (The Verge)
+    SUMMARY: You can now edit the text, music, stickers and drawings on a Story for up to 15
+      minutes after sharing, without losing views, likes or replies, Instagram head Adam
+      Mosseri announced.
+    ON-AIR ANGLE: Family angle for Jess: a 15-minute 'oops' window for teens' Stories. Good
+      opening for the 'think before you post' talk from How We'd Talk to Our Kids.
+    Link: https://www.theverge.com/tech/1036941/instagram-now-lets-you-edit-your-stories-after-you-post-them
+- Anthropic prices IPO at $83 a share, above projected range  (TechCrunch)  [CONFIRM BEFORE AIR: TechCrunch says 'reportedly': confirm the price and valuation against a second source (the filing or a wire) before air. The local data-center tie is an angle, not a reported connection.]
+    SUMMARY: The long-awaited IPO reportedly prices at $83 a share, above the projected
+      range, valuing the company at about $1.5 trillion on a fully diluted basis.
+    ON-AIR ANGLE: Biggest tech-business story of the week. Local tie to confirm before
+      using: the data-center fights (Cameron County's SpaceX data-center tax-break vote in
+      the local news) are where the AI boom touches the Valley.
+    Link: https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/
+
 WEATHER · McALLEN / RGV (National Weather Service BRO (api.weather.gov))
   Thu Nov 19  << SHOW DAY Slight Chance Rain Showers, high 79F / low 61F, rain 23%, wind N 5 to 8 mph
   Fri Nov 20  Sunny, high 81F / low 63F, rain 0%, wind NE 6 mph
@@ -442,5 +476,5 @@ What your kids might be saying at school this week, and one line on how to bring
 NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-19 06:14 CT.
-Links checked 2026-11-19: 112 ok, 7 blocked by the site's bot protection (verified in a browser/search), 0 dead, 2 unreachable.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-19 06:32 CT.
+Links checked 2026-11-19: 112 ok, 8 blocked by the site's bot protection (verified in a browser/search), 0 dead, 2 unreachable.
