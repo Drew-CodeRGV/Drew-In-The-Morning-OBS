@@ -25,6 +25,14 @@ CHROME = shutil.which("google-chrome") or shutil.which("chromium") or shutil.whi
 
 REPO = "Drew-CodeRGV/Drew-In-The-Morning-OBS"
 
+# dedupe + trend score (tools/trend_score.py). Optional: the build still works without it.
+sys.path.insert(0, os.path.join(HERE, "..", "tools"))
+try:
+    import trend_score as TS
+except Exception:  # pragma: no cover
+    TS = None
+OPTS = {"fetch_trends": False, "score": True}
+
 # ---------------------------------------------------------------- weather
 def fetch_json(url):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/geo+json"})
@@ -135,7 +143,7 @@ def prepare(data, obs_path, do_weather):
     hs = data["sports"]["highSchool"]
     [fix(i) for i in hs["results"] + hs["next"]]
     m["showDate"] = m["date"] if mode == "monday" else m["nextShow"]["date"]
-    prep_up_to(data); prep_trending(data); data["coldOpen"] = build_cold_open(data)
+    prep_up_to(data); prep_trending(data); score_stage(data); data["coldOpen"] = build_cold_open(data)
     for r in data.get("rundown", []):
         if r["letter"] == "A":
             r["talkingPoints"] = ["TODAY'S COLD OPEN (auto-filled, read aloud): " + data["coldOpen"]["text"], "JINGLE: " + data["coldOpen"]["jingle"]] + r["talkingPoints"]
@@ -146,6 +154,80 @@ def prepare(data, obs_path, do_weather):
                                   + r["talkingPoints"])
             r["links"] = [e["link"] for e in data["up_to"] if e.get("link")] + r["links"]
     return data
+
+
+# ---------------------------------------------------------------- dedupe + trend score
+SCORE_FORMULA = ("score = outlets(6 per distinct outlet, max 30) + recency(20 x 0.5^(age_h/12)) + X(20 x min(1, log10(1+eng+25 posts)/4)) "
+                 "+ Google Trends(20 TX / 12 US) + chatter(10 x min(1, log10(1+eng+5 posts)/2.5)); Hot >= 45, Trending >= 27, else Active")
+
+
+def score_stage(data):
+    """Cluster near-duplicate stories, score them, label Hot/Trending/Active, flag Uncovered; sort lists by score."""
+    data["scoring"] = None
+    if TS is None or not OPTS["score"] or data["meta"].get("score") is False:
+        return
+    cache = os.path.join(HERE, "data", "trends-cache.json")
+    trends = TS.fetch_trends(cache_path=cache) if OPTS["fetch_trends"] else TS.load_trends_cache(cache)
+    if not (trends.get("TX") or trends.get("US")):
+        trends = None
+    cfg = TS.load_config(os.path.join(HERE, ".."))
+    hl = data["headlines"]; img = hl.get("image")
+    printable = [x for x in hl["rgv"] if not x.get("noprint")]
+    target = printable[img["forItem"]] if img and isinstance(img.get("forItem"), int) and img["forItem"] < len(printable) else None
+    summ = TS.score_packet(data, trends, cfg=cfg, sort=False)   # keeps the editorial order; the studio sorts by score itself
+    # PDF / email / txt keep the editorial order (and the thumbnail stays on ITS story), except Hot items go to the front
+    for lst in (data["nationalDesk"], hl["rgv"], hl["texas"], data.get("trending") or [], data.get("leads") or []):
+        lst.sort(key=lambda it: (0 if it.get("label") == "Hot" else 1, it.get("ord", 0)))
+    if target is not None:
+        printable = [x for x in hl["rgv"] if not x.get("noprint")]
+        img["forItem"] = next((k for k, x in enumerate(printable) if x is target), -1)
+    summ["formula"] = SCORE_FORMULA
+    summ["trendsNote"] = ("Google Trends not available (no fetch, no fresh cache): trends signal = 0" if trends is None else
+                          f"Google Trends US-TX {len(trends['TX'])} + US {len(trends['US'])} items, fetched {trends.get('fetchedAt')}{' (cache)' if trends.get('fromCache') else ''}")
+    data["scoring"] = summ
+
+
+SBL = {"Hot": ("HOT", "h", "#c1121f"), "Trending": ("TREND", "t", "#e4572e"), "Active": ("ACT", "a", "#9aa6b2")}
+
+
+def sc_print(it):
+    # the one-page PDF only marks what matters: HOT / TREND / UNCOV (Active items stay unmarked so the page stays quiet)
+    if not it.get("label"): return ""
+    t, c, _ = SBL[it["label"]]
+    mk = {"Hot": "HOT", "Trending": "\u25b2"}.get(it["label"], "")   # ▲ keeps the national lines short enough that CONFIRM does not wrap
+    return (f'<span class="sb {c}">{mk}</span>' if mk else "") + ('<span class="sb u">UNCOV</span>' if it.get("uncovered") else "")
+
+
+def sc_email(it):
+    if not it.get("label"): return ""
+    t, _, col = SBL[it["label"]]
+    st = "font:700 10px Arial,sans-serif;padding:1px 5px;border-radius:3px;color:#fff;vertical-align:1px"
+    return (f'<span style="background:{col};{st}">{t} {it["score"]}</span> ' +
+            (f'<span style="background:#6f42c1;{st}">UNCOVERED</span> ' if it.get("uncovered") else ""))
+
+
+def sc_txt(it):
+    if not it.get("label"): return ""
+    return f"[{SBL[it['label']][0]} {it['score']}] " + ("[UNCOVERED LEAD: CONFIRM BEFORE AIR] " if it.get("uncovered") else "")
+
+
+def sc_studio(it):
+    if not it.get("label"): return ""
+    t, c, _ = SBL[it["label"]]
+    srcs = it.get("sources") or []
+    more = f'<span class="src" title="{esc(", ".join(x["name"] for x in srcs))}"> +{len(srcs) - 1} source{"s" if len(srcs) > 2 else ""}</span>' if len(srcs) > 1 else ""
+    return (f'<span class="sb {c}" title="{esc(it.get("scoreWhy", ""))}">{t} {it["score"]}</span>' +
+            ('<span class="sb u" title="Social/community buzz, no local outlet has it. Verify before air.">UNCOVERED</span>' if it.get("uncovered") else "") + more)
+
+
+def sc_agg(items):
+    """(count, badge html) for a section header: Hot/Trend/Uncovered/Confirm tallies."""
+    items = [i for i in items if i]
+    hot = sum(1 for i in items if i.get("label") == "Hot"); trd = sum(1 for i in items if i.get("label") == "Trending")
+    unc = sum(1 for i in items if i.get("uncovered")); cf = sum(1 for i in items if i.get("confirm"))
+    b = (f'<span class="sb h">{hot} HOT</span>' if hot else "") + (f'<span class="sb t">{trd} TREND</span>' if trd else "") + \
+        (f'<span class="sb u">{unc} UNCOVERED</span>' if unc else "") + (f'<span class="cf">{cf} CONFIRM</span>' if cf else "")
+    return len(items), b
 
 
 # ---------------------------------------------------------------- What I've Been Up To (block B)
@@ -407,6 +489,11 @@ li { margin-bottom: 1.5px }
 footer { flex: none; font-size: 7.2pt; color: #4a5a6b; font-weight: 600; display: flex; justify-content: space-between; gap: 10px }
 """
 
+PRINT_CSS += """
+.sb{display:inline-block;font-size:5.3pt;font-weight:900;letter-spacing:.03em;line-height:1;padding:1px 2.5px;border-radius:2px;margin-right:2px;vertical-align:1px;color:#fff}
+.sb.h{background:#c1121f}.sb.t{background:#e4572e}.sb.a{background:#9aa6b2}.sb.u{background:#6f42c1}
+"""
+
 def card(name, color, title, sub, inner, extra_style=""):
     return f'<section class="card" data-name="{esc(name)}" style="{extra_style}"><h2 style="background:{color}"><span>{title}</span><small>{sub}</small></h2><div class="b">{inner}</div></section>'
 
@@ -434,14 +521,14 @@ def print_html(data):
         pre = ""
         if img and img.get("forItem") == i:
             pre = f'<img class="thumb" src="{b64(asset(img["file"]), "image/jpeg")}">'
-        items += f'<li>{pre}<a href="{esc(it["url"])}"><b>{esc(it["short"])}</b> <span class="src">{esc(it["source"])}</span></a></li>'
-    tx = "".join(f'<li><a href="{esc(it["url"])}">{esc(it["short"])} <span class="src">{esc(it["source"].split(" · ")[0])}</span></a></li>' for it in hl["texas"][:1])
+        items += f'<li>{pre}<a href="{esc(it["url"])}">{sc_print(it)}<b>{esc(it["short"])}</b> <span class="src">{esc(it["source"])}</span></a></li>'
+    tx = "".join(f'<li><a href="{esc(it["url"])}">{sc_print(it)}{esc(it["short"])} <span class="src">{esc(it["source"].split(" · ")[0])}</span></a></li>' for it in hl["texas"][:1])
     headlines = card("headlines", "#e4572e", "Top Headlines · RGV First", esc(m["hlSub"]), f'<ul class="hl">{items}</ul><div class="cap">{esc(img["caption"]) if img else ""}</div><div style="font-weight:900;font-size:7.8pt;letter-spacing:.06em;margin-top:2px;color:#33404f">TEXAS</div><ul class="hl">{tx}</ul>')
     # national
     nat = ""
     for n in [x for x in data["nationalDesk"] if x.get("print")][:4]:
         conf = '<span class="cf">CONFIRM</span> ' if n.get("confirm") else ""
-        nat += f'<li><a href="{esc(n["links"][0]["url"])}"><span class="nt">{esc(n.get("ptitle") or n["title"])}</span></a> {conf}<br>{esc(n.get("pfact") or n["summary"])}<br><span class="lab" style="color:#6d597a">Take:</span> {esc(n.get("pangle") or n["angle"])} <span class="lab" style="color:#2a6f97">Valley:</span> {esc(n.get("pvalley") or n["valley"])}</li>'
+        nat += f'<li><a href="{esc(n["links"][0]["url"])}">{sc_print(n)}<span class="nt">{esc(n.get("ptitle") or n["title"])}</span></a> {conf}<br>{esc(n.get("pfact") or n["summary"])}<br><span class="lab" style="color:#6d597a">Take:</span> {esc(n.get("pangle") or n["angle"])} <span class="lab" style="color:#2a6f97">Valley:</span> {esc(n.get("pvalley") or n["valley"])}</li>'
     national = card("national", "#6d597a", "The National Desk", "smaller · local leads", f'<ul class="nat">{nat}</ul>')
     co = data["coldOpen"]
     coldstrip = f'<div class="co"><b>COLD OPEN</b> {esc(co["text"])} <span class="jg">♪ {esc(co["jingle"])}</span>{(" <span class=cf>CONFIRM</span>") if co["confirm"] else ""}</div>'
@@ -452,7 +539,7 @@ def print_html(data):
     else:
         upbody = '<div class="wnote"><b>No calendar events found.</b> The script says so plainly and moves on.</div>'
     upto = card("upto", "#d1495b", "What I've Been Up To", esc(um["banner"]), upbody)
-    trl = "".join(f'<li><span class="cat">{esc(t["category"].split("/")[0])}</span><a href="{esc(t["source_url"])}"><b>{esc(t.get("short") or t["title"])}</b></a>' + (' <span class="cf">CONFIRM</span>' if t.get("isConfirm") else "") + '</li>' for t in [x for x in data.get("trending", []) if x.get("print")][:4])
+    trl = "".join(f'<li><span class="cat">{esc(t["category"].split("/")[0])}</span><a href="{esc(t["source_url"])}">{sc_print(t)}<b>{esc(t.get("short") or t["title"])}</b></a>' + (' <span class="cf">CONFIRM</span>' if t.get("isConfirm") else "") + '</li>' for t in [x for x in data.get("trending", []) if x.get("print")][:4])
     trend = card("trending", "#577590", "Trending: Wait, Don't Tell Me", "riff material", f'<ul class="tr1">{trl}</ul>')
     # weather
     cells = ""
@@ -527,14 +614,14 @@ def email_html(data, preview=False):
     clock = "".join(f'<td style="background:{c["color"]};color:#fff;{F}font-size:12px;font-weight:bold;text-align:center;padding:5px 0" width="{max(c["minutes"]/60*100,3):.1f}%" title="{esc(c["title"])}">{c["letter"]}{"★" if c["signature"] else ""}</td>' for c in data.get("showClock", []))
     ns = m["nextShow"]
     clock_leg = " · ".join(f'<b>{c["letter"]}</b> {esc(c["short"])} {c["start"]}' for c in data.get("showClock", []))
-    rgv = "".join(li(A(i, i["title"]) + f' <span style="color:#66788c;font-size:12px">{esc(i["source"])}</span>') for i in data["headlines"]["rgv"])
-    tx = "".join(li(A(i) + f' <span style="color:#66788c;font-size:12px">{esc(i["source"])}</span>') for i in data["headlines"]["texas"])
+    rgv = "".join(li(sc_email(i) + A(i, i["title"]) + f' <span style="color:#66788c;font-size:12px">{esc(i["source"])}</span>') for i in data["headlines"]["rgv"])
+    tx = "".join(li(sc_email(i) + A(i) + f' <span style="color:#66788c;font-size:12px">{esc(i["source"])}</span>') for i in data["headlines"]["texas"])
     img_html = f'<img src="{thumb_src}" width="160" align="right" style="border-radius:6px;margin:0 0 6px 10px" alt="Starship"><div style="font-size:11px;color:#66788c;clear:both">{esc(thumb["caption"])}</div>' if thumb else ""
     nat = ""
     for n in data["nationalDesk"]:
         conf = f' <b style="color:#c1121f">[CONFIRM BEFORE AIR: {esc(conf_text(n))}]</b>' if n.get("confirm") else ""
         lks = " · ".join(f'<a href="{esc(l["url"])}" style="color:#6d597a">{esc(l["label"])}</a>' for l in n["links"][:3])
-        nat += f'<p style="margin:0 0 8px"><b>{esc(n["title"])}</b>{conf}<br>{esc(n["summary"])}<br><b style="color:#6d597a">Our take:</b> {esc(n["angle"])}<br><b style="color:#2a6f97">Why it matters in the Valley:</b> {esc(n["valley"])}<br><span style="font-size:12px">{lks}</span></p>'
+        nat += f'<p style="margin:0 0 8px">{sc_email(n)}<b>{esc(n["title"])}</b>{conf}<br>{esc(n["summary"])}<br><b style="color:#6d597a">Our take:</b> {esc(n["angle"])}<br><b style="color:#2a6f97">Why it matters in the Valley:</b> {esc(n["valley"])}<br><span style="font-size:12px">{lks}</span></p>'
     cells = "".join(f'<td align="center" style="{F}font-size:12px;padding:4px;border:1px solid #d5dde6;{"background:#fff3c4;" if d["date"]==w["monday"] else ""}"><b>{d["label"]} {d["dateLabel"].split()[1]}</b><br><span style="font-size:22px">{EMOJI[d["icon"]]}</span><br><b style="font-size:16px">{d["hi"]}°</b> / {d["lo"] if d["lo"] is not None else "–"}°<br><span style="color:#2a7de1">{d["pop"]}% rain</span></td>' for d in w["days"][:7])
     upd = datetime.datetime.fromisoformat(w["updated"].replace("Z", "+00:00")).astimezone(datetime.timezone(datetime.timedelta(hours=-6)))
     weather = f'<table width="100%" cellpadding="0" cellspacing="2"><tr>{cells}</tr></table><div style="font-size:12px;color:#4a5a6b;margin-top:4px">Source: <a href="{esc(w["pageUrl"])}">NWS {esc(w["office"])} forecast for McAllen</a>, updated {upd.strftime("%b %-d %-I:%M %p")} CT.</div>'
@@ -571,7 +658,7 @@ def email_html(data, preview=False):
     trend_b = ""
     for t in [x for x in data.get("trending", []) if x.get("print")][:6]:
         c = trend_item_conf(t)
-        trend_b += (f'<p style="margin:0 0 6px"><b>{A({"url": t["source_url"], "title": t["title"]}) if t.get("source_url") else esc(t["title"])}</b> <span style="background:#577590;color:#fff;font-size:11px;padding:0 5px;border-radius:3px">{esc(t["category"].upper())}</span>'
+        trend_b += (f'<p style="margin:0 0 6px">{sc_email(t)}<b>{A({"url": t["source_url"], "title": t["title"]}) if t.get("source_url") else esc(t["title"])}</b> <span style="background:#577590;color:#fff;font-size:11px;padding:0 5px;border-radius:3px">{esc(t["category"].upper())}</span>'
                     + (f' <b style="color:#c1121f">[CONFIRM BEFORE AIR: {esc(c)}]</b>' if c else "") + f'<br>{esc(t["one_line"])}<br><b style="color:#577590">Riff:</b> {esc(t["suggested_angle"])}</p>')
     if m["mode"] == "monday":
         clock_block = f'''<tr><td><table width="100%" cellpadding="0" cellspacing="0" style="border:1.5px solid #1b2430;border-radius:6px;border-collapse:separate"><tr>{clock}</tr></table><div style="{F}font-size:12px;color:#33404f;padding:3px 0">{clock_leg} (★ = signature segment; full 60-minute plan, blocks marked flex can be trimmed or stretched)</div></td></tr>'''
@@ -625,24 +712,26 @@ def txt(data):
     else: W("  No calendar events found.")
     W(wrap(f"Window {um.get('window', 'past 7 days')}. Calendar: {um.get('calendar', 'not connected; email only')}. {um.get('note', '')} {um.get('jess', '')} Public-facing items only."))
     W()
+    sc = data.get("scoring")
+    if sc: W(wrap(f"STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README.md). {sc['items']} stories, {sc['merged']} duplicate(s) merged, {sc['hot']} hot, {sc['trending']} trending, {sc['uncovered']} uncovered lead(s). {sc['trendsNote']}.", "")); W()
     W("TOP HEADLINES · RGV FIRST")
     for i in data["headlines"]["rgv"]:
-        W(wrap("- " + i["title"] + f" ({i['source']})")); W("    " + i["url"])
+        W(wrap("- " + sc_txt(i) + i["title"] + f" ({i['source']})" + (f" +{len(i['sources']) - 1} more source(s)" if len(i.get("sources") or []) > 1 else ""))); W("    " + i["url"])
     W("  Texas:")
     for i in data["headlines"]["texas"]:
-        W(wrap("- " + i["title"] + f" ({i['source']})")); W("    " + i["url"])
+        W(wrap("- " + sc_txt(i) + i["title"] + f" ({i['source']})")); W("    " + i["url"])
     W("  Photo: " + data["headlines"]["image"]["caption"] + " " + data["headlines"]["image"]["credit_url"]); W()
     W("TRENDING: WAIT, DON'T TELL ME (riff material; separate from the National Desk)")
     for t in data.get("trending", []):
         c = trend_item_conf(t)
-        W(f"- {t['title']}  [{t['category']}]" + (f"  [CONFIRM BEFORE AIR: {c}]" if c else ""))
+        W(f"- {sc_txt(t)}{t['title']}  [{t['category']}]" + (f"  [CONFIRM BEFORE AIR: {c}]" if c else ""))
         W(wrap("SUMMARY: " + t["one_line"], "    ")); W(wrap("RIFF: " + t["suggested_angle"], "    "))
         if t.get("source_url"): W(f"    {t.get('source', 'Source')}: {t['source_url']}")
         for l in t.get("links", []): W(f"    {l['label']}: {l['url']}")
     W()
     W("THE NATIONAL DESK (smaller; local leads)")
     for n in data["nationalDesk"]:
-        W(f"- {n['title'].upper()}"); W(wrap("FACT: " + n["summary"], "    ")); W(wrap("OUR TAKE: " + n["angle"], "    ")); W(wrap("WHY IT MATTERS IN THE VALLEY: " + n["valley"], "    "))
+        W(f"- {sc_txt(n)}{n['title'].upper()}"); W(wrap("FACT: " + n["summary"], "    ")); W(wrap("OUR TAKE: " + n["angle"], "    ")); W(wrap("WHY IT MATTERS IN THE VALLEY: " + n["valley"], "    "))
         if n.get("detail"): W(wrap("DETAIL: " + n["detail"], "    "))
         if n.get("confirm"): W(wrap("CONFIRM BEFORE AIR: " + conf_text(n), "    "))
         for l in n["links"]: W(f"    {l['label']}: {l['url']}")
@@ -765,7 +854,7 @@ summary:after{content:'\\25BE';margin-left:auto;font-size:1.2em;padding-left:6px
 .motw{background:#fff1e8;color:#1b2430;border:2px dashed #e4572e;border-radius:10px;padding:4px 8px}.motw a{color:#0b5cad}
 .tag{background:#e4572e;color:#fff;font-weight:900;font-size:.7rem;padding:1px 6px;border-radius:4px}
 .mbox{margin:0 0 10px}.mbox.used{border-radius:10px;padding:4px 6px}
-.rdgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+.rdgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;align-items:start}
 @media (min-width:1000px){.rdgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.rdgrid>details[open]{grid-column:1/-1}}
 .rd{border:2px solid var(--line);border-radius:10px;margin:6px 0;background:var(--card)}.rdgrid>.rd{margin:0}.rd>summary{border-radius:0;min-height:60px}
 .rd .bl{display:inline-flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;border-radius:10px;background:rgba(255,255,255,.25);font-size:1.6rem;font-weight:900;margin-right:8px;flex:none;letter-spacing:0}
@@ -818,8 +907,23 @@ function curfs(){return parseFloat(getComputedStyle(r).fontSize)||17}
 $('theme').onclick=function(){t=t==='dark'?'light':'dark';r.setAttribute('data-theme',t);store.set('ditm-theme',t)};
 $('bigger').onclick=function(){var n=Math.min(28,curfs()+2);r.style.setProperty('--fs',n+'px');store.set('ditm-fs',n)};
 $('smaller').onclick=function(){var n=Math.max(17,curfs()-2);r.style.setProperty('--fs',n+'px');store.set('ditm-fs',n)};
-$('expand').onclick=function(){[].forEach.call(document.querySelectorAll('details'),function(d){d.open=true})};
-$('collapse').onclick=function(){[].forEach.call(document.querySelectorAll('main > details'),function(d){d.open=false})};
+/* ---- collapsed by default; this session's open/closed state lives in sessionStorage (a fresh tab starts collapsed) ---- */
+var OK='ditm-open-v1',opn={},sm={get:function(k){try{return sessionStorage.getItem(k)}catch(e){return mem['s'+k]===undefined?null:mem['s'+k]}},set:function(k,v){mem['s'+k]=v;try{sessionStorage.setItem(k,v)}catch(e){}}};
+try{opn=JSON.parse(sm.get(OK)||'{}')||{}}catch(e){opn={}}
+var DET=[].slice.call(document.querySelectorAll('details[id]'));
+DET.forEach(function(d){if(opn[d.id])d.open=true});
+DET.forEach(function(d){d.addEventListener('toggle',function(){if(d.open)opn[d.id]=1;else delete opn[d.id];sm.set(OK,JSON.stringify(opn))})});
+function setAll(v){[].forEach.call(document.querySelectorAll('details'),function(d){d.open=v})}
+$('expand').onclick=function(){setAll(true)};
+$('collapse').onclick=function(){setAll(false)};
+if(location.hash.length>1){var hh=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(hh){var hp=hh.closest('details.sec');if(hp)hp.open=true;if(hh.tagName==='DETAILS')hh.open=true}}
+/* ---- order items by trend score (default) or editorial order ---- */
+var SORT=sm.get('ditm-sort')||'score';
+function sortAll(){[].forEach.call(document.querySelectorAll('.sortbox'),function(b){var k=[].slice.call(b.children).filter(function(c){return c.dataset.ord!==undefined});
+ k.sort(function(a,c){return SORT==='ord'?(a.dataset.ord-c.dataset.ord):((c.dataset.sc-a.dataset.sc)||(a.dataset.ord-c.dataset.ord))});k.forEach(function(c){b.appendChild(c)})});
+ $('sortbtn').textContent='Sort: '+(SORT==='ord'?'Editorial':'Score')}
+$('sortbtn').onclick=function(){SORT=SORT==='ord'?'score':'ord';sm.set('ditm-sort',SORT);sortAll()};
+sortAll();
 function copy(u,msg){function fb(){var a=document.createElement('textarea');a.value=u;a.setAttribute('readonly','');a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{a.setSelectionRange(0,99999);document.execCommand('copy');toast(msg||'Link copied')}catch(e){toast('Copy failed: long-press the link instead')}a.remove()}
 if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(u).then(function(){toast(msg||'Link copied')},fb)}else fb()}
 /* ---- used on show ---- */
@@ -831,7 +935,7 @@ function paint(){var n=0,td=today(),keys=Object.keys(used);
  [].forEach.call(document.querySelectorAll('.use'),function(b){var on=!!used[b.dataset.key];b.setAttribute('aria-pressed',on?'true':'false');
   var box=b.closest('.item,.mbox,.uhead');if(box)box.classList.toggle('used',on)});
  keys.forEach(function(k){if(ctd.format(new Date(used[k].t))===td)n++});
- $('ucount').textContent=n;
+ $('ucount').textContent=n;var uc=$('cnt-used');if(uc)uc.textContent=n+' used';
  var ul=$('usedul');ul.innerHTML='';keys.sort(function(a,b){return used[b].t<used[a].t?-1:1});
  if(!keys.length){var li=document.createElement('li');li.textContent='Nothing marked yet. Tap the box next to an item when it is used on the show.';ul.appendChild(li)}
  keys.forEach(function(k){var u=used[k],li=document.createElement('li');li.appendChild(document.createTextNode(ctd.format(new Date(u.t))+' '+ctt.format(new Date(u.t))+' CT · '));
@@ -857,6 +961,25 @@ paint();
 """
 STUDIO_CSS2 = """
 .sec>summary{min-height:48px}
+.sec>summary .st{display:flex;align-items:center;gap:8px;min-width:0;flex:1 1 300px}
+.sec>summary .tt{display:block;min-width:0}.sec>summary .tt small{display:block;margin-top:1px}
+.bl2{display:inline-flex;align-items:center;justify-content:center;min-width:2rem;height:2rem;padding:0 6px;border-radius:8px;background:rgba(0,0,0,.28);color:#fff;font-weight:900;font-size:1.05rem;letter-spacing:0;flex:none}
+.sm{display:flex;gap:6px;align-items:center;justify-content:flex-end;flex-wrap:wrap;margin-left:auto;text-transform:none;letter-spacing:0}
+.sm .cnt,.rbd .cnt{background:rgba(255,255,255,.24);border-radius:99px;padding:0 9px;font-size:.74rem;font-weight:800;white-space:nowrap;line-height:1.55}
+.rbd{display:flex;gap:5px;flex-wrap:wrap;margin-top:3px}
+.sb{display:inline-block;font-size:.66rem;font-weight:900;letter-spacing:.04em;line-height:1.55;padding:0 6px;border-radius:5px;color:#fff;text-transform:uppercase;white-space:nowrap;vertical-align:1px;margin-left:4px}
+.sb.h{background:#c1121f}.sb.t{background:#e4572e}.sb.a{background:#6b7785}.sb.u{background:#6f42c1}
+summary .sb,summary .cf{border:1px solid rgba(255,255,255,.75)}
+.sortbox{display:block}
+#brk{margin:8px max(16px,var(--sr)) 0 max(16px,var(--sl));border:2px solid var(--line);border-radius:12px;background:var(--card);padding:6px 12px}
+.brkh{display:flex;align-items:center;gap:8px 12px;flex-wrap:wrap;min-height:44px}.brkh b{font-weight:900}
+#brkcount{background:var(--chip);min-width:2em;text-align:center;font-size:.8rem}#brkcount.new{background:#c1121f;color:#fff;border-color:#c1121f}#brkcount.warn{background:#f2a900;color:#1b2430;border-color:#b87c00}
+#brkmeta{flex:1 1 160px;font-size:.8rem;font-weight:600}
+.brkrow{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;padding:6px 0;border-top:1px dashed var(--line)}.brkrow a{font-weight:700;flex:1 1 220px;min-width:0}
+.brkrow .src{white-space:nowrap}.brkrow.old{opacity:.78}
+.brkrow .nw{background:#c1121f;color:#fff;font-size:.66rem;font-weight:900;border-radius:4px;padding:0 5px}
+#brkbadge b{display:inline-block;min-width:1.6em;text-align:center;background:var(--ok);color:#fff;border-radius:99px;padding:0 6px;margin-left:6px}#brkbadge.hot b{background:#c1121f}
+.brkmore{margin:4px 0}
 .coact{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 0}
 .cotext{font-size:clamp(1.2rem,1.5vw + .9rem,1.85rem);line-height:1.5;font-weight:600;margin:0 0 8px}
 .jingle{background:var(--chip);border-left:6px solid #f2b705;border-radius:8px;padding:8px 12px;margin:8px 0;font-weight:800;font-size:1.05rem}
@@ -937,6 +1060,42 @@ paint();setInterval(live,1000);
 })();
 """
 
+BRK_JS = r"""
+(function(){var s=document.getElementById('brk');if(!s)return;
+var built=Date.parse(s.dataset.built)||0,POLL=(+s.dataset.poll||120)*1000,$=function(i){return document.getElementById(i)},
+ list=$('brklist'),cnt=$('brkcount'),meta=$('brkmeta'),bdg=$('brkbadge'),bb=$('brkb'),showAll=false,more=false,data=null;
+function feedUrl(){var p=location.pathname,i=p.indexOf('/packets/');return(i>=0?p.slice(0,i+1):p.replace(/[^\/]*$/,''))+'breaking.json'}
+function ago(ms){var m=Math.round((Date.now()-ms)/60000);if(m<1)return'just now';if(m<60)return m+'m ago';return Math.floor(m/60)+'h '+(m%60)+'m ago'}
+function safe(u){return/^https?:\/\//i.test(u||'')?u:''}
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
+function row(i,isNew){var r=el('div','brkrow'+(isNew?'':' old'));
+ if(isNew)r.appendChild(el('span','nw','NEW'));
+ var lab=el('span','sb '+(i.label==='Hot'?'h':i.label==='Trending'?'t':'a'),(i.level==='alert'?'ALERT ':'')+String(i.label||'').toUpperCase()+' '+i.score);r.appendChild(lab);
+ if(i.uncovered){r.appendChild(el('span','sb u','UNCOVERED \u00B7 CONFIRM BEFORE AIR'))}
+ var u=safe(i.url),a;if(u){a=el('a','',i.title);a.href=u;a.target='_blank';a.rel='noopener noreferrer'}else a=el('span','',i.title);r.appendChild(a);
+ var n=(i.sources||[]).length;r.appendChild(el('span','src',(i.source||'')+(n>1?' +'+(n-1)+' more':'')+' \u00B7 '+ago(Date.parse(i.firstSeen)||0)));
+ if(i.matches&&i.matches.length)r.appendChild(el('span','src','['+i.matches.slice(0,4).join(', ')+']'));
+ return r}
+function render(){if(!data)return;var items=(data.items||[]),fresh=[],old=[];
+ items.forEach(function(i){((Date.parse(i.firstSeen)||0)>built?fresh:old).push(i)});
+ var anyAlert=fresh.some(function(i){return i.level==='alert'});
+ cnt.textContent=fresh.length;cnt.className='pill'+(anyAlert?' new':fresh.length?' warn':'');
+ bb.textContent=fresh.length;bdg.className='btnlike'+(anyAlert?' hot':'');
+ var gen=Date.parse(data.generatedAt)||0;
+ meta.textContent='checked '+ago(gen)+' \u00B7 '+(data.feeds?data.feeds.ok+'/'+data.feeds.total+' feeds':'')+(data.bootstrap?' \u00B7 warming up':'')+' \u00B7 page built '+ago(built)+' \u00B7 leads only, CONFIRM BEFORE AIR';
+ list.textContent='';
+ if(!fresh.length)list.appendChild(el('div','mut','Nothing new since this page was built.'));
+ fresh.slice(0,showAll?fresh.length:5).forEach(function(i){list.appendChild(row(i,true))});
+ if(fresh.length>5&&!showAll){var b=el('button','brkmore','Show all '+fresh.length+' new');b.type='button';b.onclick=function(){showAll=true;render()};list.appendChild(b)}
+ if(old.length){if(!more){var b2=el('button','brkmore','Show earlier in the last 24h ('+old.length+')');b2.type='button';b2.onclick=function(){more=true;render()};list.appendChild(b2)}
+  else old.slice(0,15).forEach(function(i){list.appendChild(row(i,false))})}}
+function load(){if(location.protocol==='file:'){meta.textContent='Breaking feed needs the live site (this copy was opened from a file).';bb.textContent='\u2013';return}var c=window.AbortController?new AbortController():null,t=setTimeout(function(){c&&c.abort()},9000);
+ fetch(feedUrl()+'?t='+Date.now(),{cache:'no-store',signal:c?c.signal:undefined}).then(function(r){clearTimeout(t);if(!r.ok)throw new Error('HTTP '+r.status);return r.json()})
+ .then(function(j){data=j;render()},function(e){clearTimeout(t);if(!data){meta.textContent='Breaking feed not reachable from here (offline, or this file is not on the live site).';bb.textContent='\u2013'}else meta.textContent='Could not refresh ('+(e&&e.message||'offline')+'); showing the last check '+ago(Date.parse(data.generatedAt)||0)})}
+$('brkref').onclick=load;load();setInterval(load,POLL);setInterval(function(){if(data)render()},60000);window.ditmBrk={refresh:load,render:render};
+})();
+"""
+
 import hashlib
 UPTO_SEC = "What I've Been Up To"
 def use_btn(sec, title, url=""):
@@ -944,7 +1103,15 @@ def use_btn(sec, title, url=""):
     return (f'<button class="use" type="button" data-key="{key}" data-title="{esc(title)}" data-url="{esc(url)}" data-sec="{esc(sec)}" aria-pressed="false" '
             f'aria-label="Mark used on show: {esc(title)}" title="Mark used on show"><span class="ck"></span></button>')
 
+def _by_score(lst):
+    return sorted(lst, key=lambda it: (-(it.get("score") or 0), it.get("ord", 0)))
+
+
 def studio_html(data, archive_href=None):
+    data = dict(data)
+    if data.get("scoring"):   # the dashboard shows the highest-scoring stories first (a button flips to editorial order)
+        data["headlines"] = dict(data["headlines"], rgv=_by_score(data["headlines"]["rgv"]), texas=_by_score(data["headlines"]["texas"]))
+        data["nationalDesk"] = _by_score(data["nationalDesk"]); data["trending"] = _by_score(data.get("trending") or [])
     m, w = data["meta"], data["weather"]
     logo = b64(asset("assets/DITM_SunLogo.png"), "image/png")
     A = lambda url, text, extra="": f'<a href="{esc(url)}" target="_blank" rel="noopener noreferrer" {extra}>{esc(text)}</a>'
@@ -955,16 +1122,21 @@ def studio_html(data, archive_href=None):
         title = text or it["title"]
         main = A(url, title) if url else esc(title)
         acts = (CP(url) if url else "") + (use_btn(sec, it["title"], url) if use and sec else "")
-        return f'<div class="item"><div class="tx">{main} <span class="src">{esc(it.get("source",""))}</span><span class="upill">USED</span>{conf}</div><div class="acts">{acts}</div></div>'
+        return (f'<div class="item" data-ord="{it.get("ord", 0)}" data-sc="{it.get("score", 0)}"><div class="tx">{main} <span class="src">{esc(it.get("source",""))}</span>{sc_studio(it)}<span class="upill">USED</span>{conf}</div><div class="acts">{acts}</div></div>')
     def linkrow(l):
         return f'<div class="item"><div class="tx">{A(l["url"], l["label"])}</div><div class="acts">{CP(l["url"])}</div></div>'
-    def sec(id_, color, title, sub, body, wide=False, open_=True, fg=""):
-        return f'<details class="sec{" wide" if wide else ""}" id="{id_}"{" open" if open_ else ""}><summary style="background:{color};{fg}"><span>{title}</span><small>{sub}</small></summary><div class="body">{body}</div></details>'
+    def sec(id_, color, title, sub, body, wide=False, open_=False, fg="", count="", badges="", chip=""):
+        # every section starts collapsed (open_ is kept only so old calls still work); STUDIO_JS restores the session's state
+        chip_h = f'<span class="bl2">{chip}</span>' if chip else ""
+        cnt_h = f'<span class="cnt" id="cnt-{id_}">{esc(count)}</span>' if count != "" else ""
+        return (f'<details class="sec{" wide" if wide else ""}" id="{id_}"><summary style="background:{color};{fg}"><span class="st">{chip_h}<span class="tt">{title}<small>{sub}</small></span></span>'
+                f'<span class="sm">{cnt_h}{badges}</span></summary><div class="body">{body}</div></details>')
     clock = data.get("showClock", [])
     clockbar = "".join(f'<a href="#blk-{c["letter"]}" data-jump="blk-{c["letter"]}" style="width:{c["minutes"]/60*100:.3f}%;background:{c["color"]}" title="{esc(c["title"])} · {c["timeRange"]}">{c["letter"]}{"★" if c["signature"] else ""}<small>{c["minutes"]}m</small></a>' for c in clock)
     thumb = data["headlines"].get("image")
     thumbhtml = f'<img src="{b64(asset(thumb["file"]), "image/jpeg")}" alt="Starship file photo" style="float:right;width:160px;max-width:40%;border-radius:8px;margin:0 0 6px 10px"><div class="src" style="clear:both">{esc(thumb["caption"])} · {A(thumb["credit_url"], "source")}</div>' if thumb else ""
-    heads = thumbhtml + "".join(item(i, sec="Headlines: RGV") for i in data["headlines"]["rgv"]) + '<div class="src" style="margin-top:6px;font-weight:800">TEXAS</div>' + "".join(item(i, sec="Headlines: Texas") for i in data["headlines"]["texas"])
+    heads = (thumbhtml + '<div class="sortbox">' + "".join(item(i, sec="Headlines: RGV") for i in data["headlines"]["rgv"]) + '</div><div class="src" style="margin-top:6px;font-weight:800">TEXAS</div><div class="sortbox">'
+             + "".join(item(i, sec="Headlines: Texas") for i in data["headlines"]["texas"]) + '</div>')
     # ---- cold open
     co = data["coldOpen"]
     conote = f'<p class="mut"><span class="cf">CONFIRM BEFORE AIR</span> teased but unconfirmed: {esc("; ".join(co["confirm"]))}. (Not part of the spoken text.)</p>' if co["confirm"] else ""
@@ -986,24 +1158,27 @@ def studio_html(data, archive_href=None):
             f'<p class="mut">Window: {esc(um.get("window", "past 7 days"))}. Calendar: {esc(um.get("calendar", "not connected; email only"))}.{(" " + esc(um["note"])) if um.get("note") else ""} {esc(um.get("jess", ""))}</p>'
             f'<p class="mut">Public-facing only (talks, conferences, panels, appearances, community events). Personal, medical, financial, legal, client and private meetings are excluded, and private individuals are never named.</p>')
     # ---- national
-    nat = ""
-    for n in data["nationalDesk"]:
+    nat = '<div class="sortbox">'
+    for k_, n in enumerate(data["nationalDesk"]):
         lks = "".join(linkrow(l) for l in n["links"])
         conf = f' <span class="cf">CONFIRM BEFORE AIR</span> <span class="src">{esc(conf_text(n))}</span>' if n.get("confirm") else ""
-        nat += (f'<details class="rd" open><summary style="background:#6d597a"><span class="rt"><span class="tt">{esc(n["title"])}<small>click to collapse</small></span></span><span class="upill">USED</span></summary><div class="body">'
+        nat += (f'<details class="rd" id="nat-{k_}" data-ord="{n.get("ord", k_)}" data-sc="{n.get("score", 0)}"><summary style="background:#6d597a"><span class="rt"><span class="tt">{esc(n["title"])}<small>tap to expand</small></span></span><span class="sm">{sc_studio(n)}<span class="upill">USED</span></span></summary><div class="body">'
                 f'<div class="uhead"><span>Mark this story used on show</span>{use_btn("National Desk", n["title"], n["links"][0]["url"] if n["links"] else "")}</div>'
                 f'<p><b>Fact:</b> {esc(n["summary"])}{conf}</p><p><b style="color:#b07dd6">Our take:</b> {esc(n["angle"])}</p><p><b style="color:#5aa9e6">Why it matters in the Valley:</b> {esc(n["valley"])}</p><p class="mut">{esc(n.get("detail",""))}</p>{lks}</div></details>')
+    nat += "</div>"
     # ---- trending
     trn = '<p class="mut">What everybody is talking about, for the "wait, don\'t tell me" riff. Separate from the National Desk (no duplicates). Source order: X trends/news, AP/Reuters, Google Trends, YouTube trending.</p>'
+    trn += '<div class="sortbox">'
     for t in data.get("trending", []):
         c = trend_item_conf(t)
         conf = f' <span class="cf">CONFIRM BEFORE AIR</span> <span class="src">{esc(c)}</span>' if c else ""
         lks = "".join(linkrow(l) for l in t.get("links", []))
         media = ""
         if t.get("video_url"): media += f'<div class="src">Video: {A(t["video_url"], "watch")}{(" · credit: " + esc(t["image_credit"])) if t.get("image_credit") else ""}</div>'
-        trn += (f'<div class="item trn"><div class="tx"><b>{A(t["source_url"], t["title"]) if t.get("source_url") else esc(t["title"])}</b> <span class="pill">{esc(t["category"])}</span> '
-                f'<span class="src">{esc(t.get("source", ""))}</span><span class="upill">USED</span>{conf}<p>{esc(t["one_line"])}</p><p class="ang"><b>Riff:</b> {esc(t["suggested_angle"])}</p>{media}{lks}</div>'
+        trn += (f'<div class="item trn" data-ord="{t.get("ord", 0)}" data-sc="{t.get("score", 0)}"><div class="tx"><b>{A(t["source_url"], t["title"]) if t.get("source_url") else esc(t["title"])}</b> <span class="pill">{esc(t["category"])}</span> '
+                f'<span class="src">{esc(t.get("source", ""))}</span>{sc_studio(t)}<span class="upill">USED</span>{conf}<p>{esc(t["one_line"])}</p><p class="ang"><b>Riff:</b> {esc(t["suggested_angle"])}</p>{media}{lks}</div>'
                 f'<div class="acts">{CP(t["source_url"]) if t.get("source_url") else ""}{use_btn("Trending", t["title"], t.get("source_url", ""))}</div></div>')
+    trn += "</div>"
     cells = "".join(f'<div class="{"mon" if d["date"]==w["monday"] else ""}"><b>{d["label"]} {d["dateLabel"]}</b><br>{icon(d["icon"], 44)}<div class="hi">{d["hi"]}°</div><div class="mut">{d["lo"] if d["lo"] is not None else "–"}°</div><div class="pp">{d["pop"]}% rain</div><div class="mut" style="font-size:.75rem">{esc(d["short"])}</div></div>' for d in w["days"][:7])
     upd = datetime.datetime.fromisoformat(w["updated"].replace("Z", "+00:00")).astimezone(datetime.timezone(datetime.timedelta(hours=-6)))
     alerts = "No active NWS alerts." if w.get("alerts") == [] else ("Alerts: " + ", ".join(w["alerts"]) if w.get("alerts") else "")
@@ -1043,28 +1218,42 @@ def studio_html(data, archive_href=None):
         seg = f'<h4>Segue to the next block</h4><p>“{esc(r["segueNext"])}”</p>' if r.get("segueNext") else ""
         stretch = f' data-stretch="{r["stretchTo"]}"' if r["flex"] and r.get("stretchTo") else ""
         rd += (f'<details class="rd" id="blk-{r["letter"]}"><summary style="background:{r["color"]}"><span class="rt"><span class="bl">{r["letter"]}</span><span class="tt">{esc(r["title"])}{" ★" if r["signature"] else ""}<span class="tl">LIVE</span>'
-               f'<small>{r["minutes"]} min · {flex}{" · Jess" if r["jess"] else ""}</small></span></span>'
+               f'<small>{r["minutes"]} min · {flex}{" · Jess" if r["jess"] else ""}</small><span class="rbd"><span class="cnt">{len(r["talkingPoints"])} points</span><span class="cnt">{len(r["links"])} sources</span>{("<span class=cf>" + str(len(r["confirm"])) + " CONFIRM</span>") if r["confirm"] else ""}</span></span></span>'
                f'<span class="tr" data-off="{r["offset"]}" data-dur="{r["minutes"]}"{stretch} data-letter="{r["letter"]}" data-name="{esc(r["short"])}" data-color="{r["color"]}"><b>{r["timeRange"]}</b><small></small></span></summary>'
                f'<div class="body"><p class="mut">{esc(r["subject"])}</p>{weave}<h4>Talking points</h4>{lis(r["talkingPoints"])}<h4>Follow-up questions</h4>{lis(r["followUps"]) if r["followUps"] else "<p class=mut>none</p>"}'
                f'<h4>Transition lines</h4>{lis(r["transitions"]) if r["transitions"] else "<p class=mut>none</p>"}{seg}<h4>Chyrons (60 chars max)</h4><p>{chy}</p><h4>Sources</h4>{lks}{conf}</div></details>')
-    nav = "".join(f'<a href="#{i}" data-jump="{i}">{t}</a>' for i, t in (("coldopen", "Cold open"), ("upto", "Up To"), ("rundown", "Rundown"), ("headlines", "Headlines"), ("trending", "Trending"), ("national", "National"), ("weather", "Weather"), ("hs", "HS Football"), ("nfl", "NFL"), ("nba", "NBA"), ("mlb", "MLB"), ("memes", "Meme of the Week"), ("used", "Used list")))
+    nav = "".join(f'<a href="#{i}" data-jump="{i}">{t}</a>' for i, t in (("brk", "Breaking"), ("coldopen", "Cold open"), ("upto", "Up To"), ("rundown", "Rundown"), ("headlines", "Headlines"), ("trending", "Trending"), ("national", "National"), ("weather", "Weather"), ("hs", "HS Football"), ("nfl", "NFL"), ("nba", "NBA"), ("mlb", "MLB"), ("memes", "Meme of the Week"), ("used", "Used list")))
     mon = m["mode"] == "monday"
     used_body = ('<ul id="usedul"></ul><p class="mut">Tap the box next to any item when it is used on the show. Marks stay on this device until cleared, so nothing gets repeated. '
                  '"Log to repo" opens a pre-filled GitHub issue (label used-on-show) for the post-show job: it cuts clips from the recording and drafts social teasers for approval. Nothing posts by itself.</p>')
+    nh, bh = sc_agg(data["headlines"]["rgv"] + data["headlines"]["texas"])
+    nt_, bt_ = sc_agg(data.get("trending", []))
+    nn_, bn_ = sc_agg(data["nationalDesk"])
+    nm_ = sum(len(lv["items"]) for lv in data["memes"]["levels"])
+    cfm = sum(1 for lv in data["memes"]["levels"] for it in lv["items"] if it.get("confirm"))
+    n_nfl = len(data["sports"]["nfl"]["scores"]) + len(data["sports"]["nfl"]["notable"])
+    n_nba = len(data["sports"]["nba"]["scores"]) + len(data["sports"]["nba"]["notable"])
+    n_hs = len(hs["results"]) + len(hs["next"])
+    wal = w.get("alerts")
+    wb = ('<span class="cf">' + str(len(wal)) + ' ALERT' + ('S' if len(wal) != 1 else '') + '</span>') if wal else ""
     body = "".join([
-        sec("coldopen", "#f2b705", "Cold Open &amp; Jingle", "read aloud · about 45 seconds", coldopen, wide=True, fg="color:#1b2430"),
-        sec("upto", "#d1495b", "What I've Been Up To This Week", esc(um["banner"]), upto, wide=True),
-        sec("rundown", "#264653", "Full 60-Minute Rundown" if mon else "Monday 8 AM rundown (next show)", "tap a block for notes, questions, chyrons and links" if mon else f'next show: {m["nextShow"]["label"]}, 8-9 AM CT · tap a block', f'<div class="rdgrid">{rd}</div>', wide=True, open_=mon),
-        sec("headlines", "#e4572e", "Top Headlines · RGV First", esc(m["hlSub"]), heads),
-        sec("trending", "#577590", "Trending: Wait, Don't Tell Me", "riff material · not the National Desk", trn),
-        sec("national", "#6d597a", "The National Desk", "fact · take · Valley angle", nat),
-        sec("weather", "#2a7de1", "McAllen / RGV Weather", w["source"], weather),
-        sec("hs", "#2a9d8f", "RGV High School Football", hs["round"], hsb),
-        sec("nfl", "#264653", esc(sport_title(data["sports"]["nfl"], False).replace("NFL ", "NFL · ", 1)), "scores + notable", sports_nfl),
-        sec("nba", "#c1121f", "NBA", esc((data["sports"]["nba"].get("window", "") + " + Texas teams").strip(" +")), sports_nba),
-        sec("mlb", "#003f88", "MLB · Offseason (no scores)", "hot stove", sports_mlb),
-        sec("memes", "#ff7f50", "Meme of the Week · What the Kids Are Talking About", "for parents", mem, wide=True),
-        sec("used", "#1f9d55", "Used on Show · running list", "no repeats", used_body, wide=True, open_=False)])
+        sec("coldopen", "#f2b705", "Cold Open &amp; Jingle", "read aloud · about 45 seconds", coldopen, wide=True, fg="color:#1b2430", count=f'{co["words"]} words', chip="A",
+            badges=(f'<span class="cf">{len(co["confirm"])} CONFIRM</span>' if co["confirm"] else "")),
+        sec("upto", "#d1495b", "What I've Been Up To This Week", esc(um["banner"]), upto, wide=True, count=f'{len(data["up_to"])} event{"" if len(data["up_to"]) == 1 else "s"}', chip="B",
+            badges=('<span class="cf">CONFIRM ALL</span>' if data["up_to"] else "")),
+        sec("rundown", "#264653", "Full 60-Minute Rundown" if mon else "Monday 8 AM rundown (next show)", "tap a block for notes, questions, chyrons and links" if mon else f'next show: {m["nextShow"]["label"]}, 8-9 AM CT · tap a block', f'<div class="rdgrid">{rd}</div>', wide=True,
+            count=f'{len(data.get("rundown", []))} blocks · 60 min'),
+        sec("headlines", "#e4572e", "Top Headlines · RGV First", esc(m["hlSub"]), heads, count=f"{nh} stories", badges=bh),
+        sec("trending", "#577590", "Trending: Wait, Don't Tell Me", "riff material · not the National Desk", trn, count=f"{nt_} items", badges=bt_, chip="J"),
+        sec("national", "#6d597a", "The National Desk", "fact · take · Valley angle", nat, count=f"{nn_} stories", badges=bn_, chip="J"),
+        sec("weather", "#2a7de1", "McAllen / RGV Weather", w["source"], weather, count="7 days", badges=wb),
+        sec("hs", "#2a9d8f", "RGV High School Football", hs["round"], hsb, count=f"{n_hs} games"),
+        sec("nfl", "#264653", esc(sport_title(data["sports"]["nfl"], False).replace("NFL ", "NFL · ", 1)), "scores + notable", sports_nfl, count=f"{n_nfl} items"),
+        sec("nba", "#c1121f", "NBA", esc((data["sports"]["nba"].get("window", "") + " + Texas teams").strip(" +")), sports_nba, count=f"{n_nba} items"),
+        sec("mlb", "#003f88", "MLB · Offseason (no scores)", "hot stove", sports_mlb, count=f'{len(mlb["notable"])} items'),
+        sec("memes", "#ff7f50", "Meme of the Week · What the Kids Are Talking About", "for parents", mem, wide=True, count=f"{nm_} memes", chip="L",
+            badges=(f'<span class="cf">{cfm} CONFIRM</span>' if cfm else "")),
+        sec("used", "#1f9d55", "Used on Show · running list", "no repeats", used_body, wide=True, count="0 used")])
     segs = "".join(f"<li>{esc(s)}</li>" for s in data.get("segues", []))
     nowc = w.get("now") or {}
     bt = nowc.get("tempF"); bsrc = nowc.get("source", "forecast")
@@ -1082,17 +1271,21 @@ def studio_html(data, archive_href=None):
                  f'<span id="ssind" aria-live="polite">Planned start 8:00 AM</span><button id="ssreset" type="button" disabled title="Reset to 8:00 AM" aria-label="Reset show start to 8:00 AM">↺ 8:00</button><span id="sslive" aria-live="off"></span></div>')
     usedbar = (f'<div id="usedbar" data-repo="{REPO}"><span class="ubl">Used today <b id="ucount">0</b></span><span id="ustatus"></span>'
                f'<span class="ubb"><button id="ulog" type="button">Log to repo</button><button id="ucopy" type="button">Copy list</button><button id="uclear" type="button">Clear</button></span></div>')
+    brk = (f'<section id="brk" aria-label="Breaking watch" data-built="{esc(data.get("generatedAt", ""))}" data-poll="120"><div class="brkh"><b>Breaking / New since build</b>'
+           f'<span id="brkcount" class="pill">0</span><span id="brkmeta" class="mut">checking the breaking feed…</span><button id="brkref" type="button">Refresh</button></div>'
+           f'<div id="brklist" aria-live="polite"></div></section>')
     arch = f'<p><a href="{esc(archive_href)}">All past packets and briefings</a></p>' if archive_href else ""
     chk = data.get("linkCheck")
-    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src https://api.weather.gov"><title>{esc(m["emailSubject"])} · Studio</title><style>{STUDIO_CSS}{STUDIO_CSS2}</style></head><body>
+    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'self' https://api.weather.gov"><title>{esc(m["emailSubject"])} · Studio</title><style>{STUDIO_CSS}{STUDIO_CSS2}</style></head><body>
 <header id="top"><img src="{logo}" alt="Drew in the Morning"><div class="ht"><div class="k">Studio page · {esc(m["kicker"])} {('<span class="sample">'+esc(m["sampleLabel"])+'</span>') if m.get("sample") else ''}</div><div class="d">{esc(m["dateLabel"])}</div>{showstart}<div class="t">{esc(m["recap"])} · {esc(m["tagline"])}</div>
-<div class="tools"><button id="theme" type="button" title="Toggle dark/light">Dark / Light</button><button id="smaller" type="button">A−</button><button id="bigger" type="button">A+</button><button id="expand" type="button">Expand all</button><button id="collapse" type="button">Collapse all</button></div></div>
+<div class="tools"><button id="theme" type="button" title="Toggle dark/light">Dark / Light</button><button id="smaller" type="button">A−</button><button id="bigger" type="button">A+</button><button id="expand" type="button">Expand all</button><button id="collapse" type="button">Collapse all</button><button id="sortbtn" type="button" title="Order items by trend score or by the original editorial order">Sort: Score</button><a id="brkbadge" class="btnlike" href="#brk" data-jump="brk" title="Breaking watch: new since this page was built">Breaking <b id="brkb">–</b></a></div></div>
 {clockw}</header>
 {usedbar}
+{brk}
 <nav>{nav}</nav><div class="clock" aria-label="60 minute show clock">{clockbar}</div>
 <main>{body}</main>
 <footer>{arch}<b>Jump segues (menu):</b><ul>{segs}</ul>Every item links to its source and opens in a new tab; Copy link puts the URL on your clipboard for sharing on screen. CONFIRM BEFORE AIR = verify first. No trackers, no external scripts or fonts. The only network request is the header clock's weather lookup (api.weather.gov); the page works offline (the clock then shows the build-time temperature, and links need internet). Show Start times are computed in the page from each block's offset and length.{(" Links checked "+chk["date"]+": "+str(chk["ok"])+" ok, "+str(chk["blocked"])+" bot-blocked, "+str(chk["dead"])+" dead.") if chk else ""}</footer>
-<div id="toast" role="status"></div><script>{STUDIO_JS}</script><script>{SHOW_JS}</script><script>{CLOCK_JS}</script></body></html>"""
+<div id="toast" role="status"></div><script>{STUDIO_JS}</script><script>{SHOW_JS}</script><script>{CLOCK_JS}</script><script>{BRK_JS}</script></body></html>"""
 
 
 # ---------------------------------------------------------------- render
@@ -1160,7 +1353,10 @@ def main():
     ap.add_argument("--no-render", action="store_true", help="skip Chrome (PDF/PNG/screenshot)")
     ap.add_argument("--no-obs-update", action="store_true", help="do not write coldOpen/jingle/upTo into obs-data.json")
     ap.add_argument("--force-latest", action="store_true", help="let a SAMPLE/test build replace the latest-* copies and docs/index.html")
+    ap.add_argument("--fetch-trends", action="store_true", help="fetch Google Trends (US-TX + US) for the trend score and cache it in data/trends-cache.json (else use the cache if < 36 h old)")
+    ap.add_argument("--no-score", action="store_true", help="skip dedupe + trend score + badges + sorting")
     a = ap.parse_args()
+    OPTS["fetch_trends"] = a.fetch_trends; OPTS["score"] = not a.no_score
     os.makedirs(a.out, exist_ok=True)
     data = prepare(json.load(open(a.data)), a.obs_data, a.refresh_weather)
     stem = os.path.join(a.out, data["meta"]["fileStem"])

@@ -1,0 +1,106 @@
+# Keyword watch filters for tools/breaking_watch.py. Case-insensitive, whole-word. "*" at the end = any ending
+# (evacuat* matches evacuate, evacuation, evacuated). A space matches any whitespace.
+#
+# How they combine (see BREAKING-WATCH.md):
+#   ALERT (push + issue)  = score Hot, OR geo + urgent (urgent word in the headline), OR an always_alert term with a geo term or "Texas"
+#   WATCH (dashboard strip only) = any theme, OR Uncovered, OR geo + score Trending
+# geo_ambiguous terms are ordinary words too, so they only count when the story comes from a local outlet
+# or another place name / theme also appears.
+
+geo:
+  - McAllen
+  - Hidalgo County
+  - Cameron County
+  - Cameron
+  - Starr County
+  - Willacy
+  - Edinburg
+  - Pharr
+  - Mission
+  - Brownsville
+  - Harlingen
+  - Weslaco
+  - San Juan
+  - Alamo
+  - Donna
+  - Mercedes
+  - San Benito
+  - Port Isabel
+  - South Padre
+  - Rio Grande Valley
+  - RGV
+  - the Valley
+  - Palmview
+  - La Joya
+  - Roma
+  - Rio Grande City
+  - Raymondville
+  - Boca Chica
+  - Starbase
+  - UTRGV
+  - Hidalgo
+  - Reynosa
+  - Matamoros
+
+geo_ambiguous:
+  - Mission
+  - Alamo
+  - Donna
+  - Mercedes
+  - Roma
+  - Cameron
+  - San Juan
+  - Hidalgo
+  - the Valley
+
+themes:
+  - Starbase
+  - SpaceX
+  - Boca Chica
+  - Starship
+  - CD-15
+  - CD 15
+  - Congressional District 15
+  - school board
+  - trustees
+  - city manager
+  - city commission
+  - commissioners court
+  - EDC
+  - economic development
+  - abatement
+  - tax break
+  - data center
+  - Zoho
+  - UTRGV
+  - screwworm
+  - TCEQ
+  - Rio Grande Valley
+
+urgent:
+  - breaking
+  - shooting
+  - shots fired
+  - fire
+  - wildfire
+  - explosion
+  - evacuat*
+  - tornado
+  - hurricane
+  - flood*
+  - lockdown
+  - manhunt
+  - standoff
+  - stabbing
+  - Amber Alert
+  - state of emergency
+  - power outage
+  - boil water
+
+always_alert:
+  - Amber Alert
+  - tornado warning
+  - hurricane warning
+  - state of emergency
+  - disaster declaration
+  - breaking news

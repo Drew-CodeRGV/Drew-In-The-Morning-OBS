@@ -41,7 +41,29 @@
         "url": "https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/",
         "source": "MyRGV · Nov 17",
         "teaser": "the county saying no to SpaceX's tax break",
-        "open": true
+        "open": true,
+        "sources": [
+          {
+            "name": "MyRGV",
+            "domain": "myrgv.com",
+            "url": "https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/",
+            "local": true,
+            "published": "2026-11-17T18:00:00+00:00"
+          }
+        ],
+        "score": 9,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.8 (34h old)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 2.8,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 0
       },
       {
         "title": "Texas issues air permit for SpaceX's $24B data center",
@@ -49,7 +71,29 @@
         "url": "https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758",
         "source": "Politico · Nov 17",
         "teaser": "Texas approving SpaceX's air permit",
-        "open": false
+        "open": false,
+        "sources": [
+          {
+            "name": "Politico",
+            "domain": "politico.com",
+            "url": "https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758",
+            "local": false,
+            "published": "2026-11-17T18:00:00+00:00"
+          }
+        ],
+        "score": 9,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.8 (34h old)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 2.8,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 1
       },
       {
         "title": "Starship Flight 15: ship caught by tower, booster aborts catch",
@@ -57,7 +101,29 @@
         "url": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/",
         "source": "Spaceflight Now · Nov 13",
         "teaser": "Starship Flight 15 and the tower catch",
-        "open": false
+        "open": false,
+        "sources": [
+          {
+            "name": "Spaceflight Now",
+            "domain": "spaceflightnow.com",
+            "url": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/",
+            "local": false,
+            "published": "2026-11-13T18:00:00+00:00"
+          }
+        ],
+        "score": 6,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0 (130h old)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 0.0,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 2
       },
       {
         "title": "Mission mayor and council races head to Dec. 12 runoffs",
@@ -65,7 +131,29 @@
         "url": "https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/",
         "source": "KRGV",
         "teaser": "Mission heading to a December 12th runoff",
-        "open": true
+        "open": true,
+        "sources": [
+          {
+            "name": "KRGV",
+            "domain": "krgv.com",
+            "url": "https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/",
+            "local": true,
+            "published": null
+          }
+        ],
+        "score": 14,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 14: 1 outlet 6 + recency 8 (no timestamp)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 8,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 3
       },
       {
         "title": "Texas A&M McAllen to build $50M health education building",
@@ -73,7 +161,29 @@
         "url": "https://dailymcallen.com/local-news/editions/11-18-2026",
         "source": "Daily McAllen · Nov 18",
         "teaser": "a new Texas A&M health building in McAllen",
-        "open": false
+        "open": false,
+        "sources": [
+          {
+            "name": "Daily McAllen",
+            "domain": "dailymcallen.com",
+            "url": "https://dailymcallen.com/local-news/editions/11-18-2026",
+            "local": true,
+            "published": "2026-11-18T18:00:00+00:00"
+          }
+        ],
+        "score": 17,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 17: 1 outlet 6 + recency 11.2 (10h old)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 11.2,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 4
       },
       {
         "title": "McAllen Food Truck Park closure delayed to Jan. 14, 2027",
@@ -82,7 +192,29 @@
         "source": "Daily McAllen · Nov 17",
         "teaser": "the McAllen Food Truck Park's new closing date",
         "open": false,
-        "noprint": true
+        "noprint": true,
+        "sources": [
+          {
+            "name": "Daily McAllen",
+            "domain": "dailymcallen.com",
+            "url": "https://dailymcallen.com/local-news/editions/11-17-2026",
+            "local": true,
+            "published": "2026-11-17T18:00:00+00:00"
+          }
+        ],
+        "score": 9,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.8 (34h old)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 2.8,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 5
       },
       {
         "title": "Another screwworm case confirmed in Starr County cattle",
@@ -90,7 +222,29 @@
         "url": "https://thergvnews.com/reviews/day/2026-11-17",
         "source": "The RGV News · Nov 17",
         "teaser": "another screwworm case in Starr County",
-        "open": false
+        "open": false,
+        "sources": [
+          {
+            "name": "The RGV News",
+            "domain": "thergvnews.com",
+            "url": "https://thergvnews.com/reviews/day/2026-11-17",
+            "local": false,
+            "published": "2026-11-17T18:00:00+00:00"
+          }
+        ],
+        "score": 9,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.8 (34h old)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 2.8,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 6
       },
       {
         "title": "Pharr twin bridge expansion opened Nov. 13",
@@ -98,7 +252,29 @@
         "url": "https://gooddayedinburg.com/local-news/editions/11-14-2026",
         "source": "Good Day Edinburg · Nov 14",
         "teaser": "Pharr's new twin bridge opening",
-        "open": false
+        "open": false,
+        "sources": [
+          {
+            "name": "Good Day Edinburg",
+            "domain": "gooddayedinburg.com",
+            "url": "https://gooddayedinburg.com/local-news/editions/11-14-2026",
+            "local": false,
+            "published": "2026-11-14T18:00:00+00:00"
+          }
+        ],
+        "score": 6,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0 (106h old)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 0.0,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 7
       },
       {
         "title": "Grupo Frontera, Edgar Barrera win at Latin Grammys",
@@ -106,7 +282,29 @@
         "url": "https://gooddayedinburg.com/local-news/editions/11-14-2026",
         "source": "Good Day Edinburg · Nov 14",
         "teaser": "Grupo Frontera's Latin Grammy win",
-        "open": false
+        "open": false,
+        "sources": [
+          {
+            "name": "Good Day Edinburg",
+            "domain": "gooddayedinburg.com",
+            "url": "https://gooddayedinburg.com/local-news/editions/11-14-2026",
+            "local": false,
+            "published": "2026-11-14T18:00:00+00:00"
+          }
+        ],
+        "score": 6,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0 (106h old)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 0.0,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 8
       },
       {
         "title": "PSJA ISD swears in three trustees, elects Quintanilla president",
@@ -114,7 +312,29 @@
         "url": "https://www.psjaisd.us/school-news-details/~board/pharr-san-juan-alamo-isd-news/post/psja-isd-swears-in-three-trustees-elects-new-board-leadership",
         "source": "PSJA ISD · Nov 16",
         "teaser": "PSJA's three new trustees",
-        "open": false
+        "open": false,
+        "sources": [
+          {
+            "name": "PSJA ISD",
+            "domain": "psjaisd.us",
+            "url": "https://www.psjaisd.us/school-news-details/~board/pharr-san-juan-alamo-isd-news/post/psja-isd-swears-in-three-trustees-elects-new-board-leadership",
+            "local": false,
+            "published": "2026-11-16T18:00:00+00:00"
+          }
+        ],
+        "score": 7,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (58h old)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 0.7,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 9
       }
     ],
     "texas": [
@@ -122,19 +342,85 @@
         "title": "Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border contracts",
         "short": "Democrats ask for probe of ~$7.5B Big Bend border contracts",
         "url": "https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/",
-        "source": "Texian Partisan · Nov 17"
+        "source": "Texian Partisan · Nov 17",
+        "sources": [
+          {
+            "name": "Texian Partisan",
+            "domain": "texianpartisan.com",
+            "url": "https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/",
+            "local": false,
+            "published": "2026-11-17T18:00:00+00:00"
+          }
+        ],
+        "score": 9,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.8 (34h old)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 2.8,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 0
       },
       {
         "title": "Texas Supreme Court petition over HD 93 special election result",
         "short": "Texas Supreme Court petition over HD 93 special election",
         "url": "https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/",
-        "source": "Texian Partisan · Nov 17"
+        "source": "Texian Partisan · Nov 17",
+        "sources": [
+          {
+            "name": "Texian Partisan",
+            "domain": "texianpartisan.com",
+            "url": "https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/",
+            "local": false,
+            "published": "2026-11-17T18:00:00+00:00"
+          }
+        ],
+        "score": 9,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.8 (34h old)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 2.8,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 1
       },
       {
         "title": "PUC takes up Aqua Texas rate increase Thursday",
         "short": "PUC takes up Aqua Texas rate hike Thursday (Nov 19)",
         "url": "https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/",
-        "source": "Texian Partisan · Nov 17"
+        "source": "Texian Partisan · Nov 17",
+        "sources": [
+          {
+            "name": "Texian Partisan",
+            "domain": "texianpartisan.com",
+            "url": "https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/",
+            "local": false,
+            "published": "2026-11-17T18:00:00+00:00"
+          }
+        ],
+        "score": 9,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.8 (34h old)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 2.8,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 2
       }
     ]
   },
@@ -171,7 +457,50 @@
       "teaser": "the FAA's nationwide ground stop and what it means for Valley flyers",
       "pfact": "Nov 13: FAA grounded all U.S. flights ~3:30-8:15 PM ET; legacy network swamped; FAA sees no cyberattack.",
       "pangle": "Everybody wants it modernized; nobody wants it down for the upgrade.",
-      "pvalley": "HRL, MFE, BRO issued advisories; Brownsville had 5 cancellations."
+      "pvalley": "HRL, MFE, BRO issued advisories; Brownsville had 5 cancellations.",
+      "sources": [
+        {
+          "name": "FAA: Nationwide Ground Stop Q&A",
+          "domain": "faa.gov",
+          "url": "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers",
+          "local": false,
+          "published": null
+        },
+        {
+          "name": "ABC",
+          "domain": "abcnews.com",
+          "url": "https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960",
+          "local": false,
+          "published": null
+        },
+        {
+          "name": "ValleyCentral",
+          "domain": "valleycentral.com",
+          "url": "https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/",
+          "local": true,
+          "published": null
+        },
+        {
+          "name": "KRGV",
+          "domain": "krgv.com",
+          "url": "https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/",
+          "local": true,
+          "published": null
+        }
+      ],
+      "score": 32,
+      "label": "Trending",
+      "uncovered": false,
+      "scoreWhy": "Score 32: 4 outlets 24 + recency 8 (no timestamp)",
+      "scoreParts": {
+        "outlets": 24,
+        "recency": 8,
+        "x": 0.0,
+        "trends": 0.0,
+        "chatter": 0.0
+      },
+      "dupes": 0,
+      "ord": 0
     },
     {
       "id": "mullin",
@@ -206,7 +535,50 @@
       "ptitle": "Mullin on outages and the LSU-Texas flight",
       "pfact": "DHS Sec. Mullin told House Homeland Security (Nov 18) the outages weren't a coordinated attack; defended flying to the LSU-Texas game.",
       "pangle": "Fair question or cheap shot? The optics of flying to a game during a grounding.",
-      "pvalley": "DHS runs the border: what are RGV ranchers, bridges and Border Patrol seeing?"
+      "pvalley": "DHS runs the border: what are RGV ranchers, bridges and Border Patrol seeing?",
+      "sources": [
+        {
+          "name": "ABC: Mullin grilled, FAA head says 'blame me'",
+          "domain": "abcnews.com",
+          "url": "https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960",
+          "local": false,
+          "published": null
+        },
+        {
+          "name": "AP",
+          "domain": "apnews.com",
+          "url": "https://apnews.com/article/mullin-congress-ground-stop-cyber-threats-immigration-ce63a22797c61ee53d88678000236c37",
+          "local": false,
+          "published": null
+        },
+        {
+          "name": "PBS",
+          "domain": "pbs.org",
+          "url": "https://www.pbs.org/newshour/politics/watch-live-dhs-secretary-mullin-testifies-on-worldwide-threats-amid-tech-outages-iran-warnings",
+          "local": false,
+          "published": null
+        },
+        {
+          "name": "House Homeland Security",
+          "domain": "homeland.house.gov",
+          "url": "https://homeland.house.gov/wp-content/uploads/2026/11/2026-11-18-HRG-Testimony-Mullin.pdf",
+          "local": false,
+          "published": null
+        }
+      ],
+      "score": 32,
+      "label": "Trending",
+      "uncovered": false,
+      "scoreWhy": "Score 32: 4 outlets 24 + recency 8 (no timestamp)",
+      "scoreParts": {
+        "outlets": 24,
+        "recency": 8,
+        "x": 0.0,
+        "trends": 0.0,
+        "chatter": 0.0
+      },
+      "dupes": 0,
+      "ord": 1
     },
     {
       "id": "snl",
@@ -249,7 +621,57 @@
       "ptitle": "SNL: Mulaney, Bridgers, the 'Sister' sketch",
       "pfact": "Nov 14: Mulaney hosted (7th time), Bridgers sang; 'CIA Meeting' cold open roasted tech CEOs.",
       "pangle": "A cold open that skips politics and still lands; 'Sister' hit people in the gut.",
-      "pvalley": "It roasted the same ground stop that put HRL, MFE, BRO on advisory."
+      "pvalley": "It roasted the same ground stop that put HRL, MFE, BRO on advisory.",
+      "sources": [
+        {
+          "name": "YouTube: SNL 'Sister' (the sister video)",
+          "domain": "youtube.com",
+          "url": "https://www.youtube.com/watch?v=-X9dxL17t1k",
+          "local": false,
+          "published": null
+        },
+        {
+          "name": "EW",
+          "domain": "ew.com",
+          "url": "https://ew.com/snl-recap-john-mulaney-hosts-seventh-time-phoebe-bridgers-musical-guest-12253185",
+          "local": false,
+          "published": null
+        },
+        {
+          "name": "Boston.com",
+          "domain": "boston.com",
+          "url": "https://www.boston.com/culture/entertainment/2026/11/15/snl-recap-john-mulaney-2026/",
+          "local": false,
+          "published": null
+        },
+        {
+          "name": "Showbiz411",
+          "domain": "showbiz411.com",
+          "url": "https://www.showbiz411.com/2026/11/18/john-mulaney-phoebe-bridgers-snl-best-this-season-drops-back-to-season-average-ratings-down-20-from-last-weeks-high",
+          "local": false,
+          "published": null
+        },
+        {
+          "name": "NBC Insider",
+          "domain": "nbc.com",
+          "url": "https://www.nbc.com/nbc-insider/watch-john-mulaney-november-14-snl-monologue-sketches",
+          "local": false,
+          "published": null
+        }
+      ],
+      "score": 38,
+      "label": "Trending",
+      "uncovered": false,
+      "scoreWhy": "Score 38: 5 outlets 30 + recency 8 (no timestamp)",
+      "scoreParts": {
+        "outlets": 30,
+        "recency": 8,
+        "x": 0.0,
+        "trends": 0.0,
+        "chatter": 0.0
+      },
+      "dupes": 0,
+      "ord": 2
     },
     {
       "id": "huang",
@@ -268,7 +690,29 @@
       "confirm": [
         "Allegation details (not independently verified here)"
       ],
-      "teaser": "Nvidia's CEO stepping down"
+      "teaser": "Nvidia's CEO stepping down",
+      "sources": [
+        {
+          "name": "Nvidia press release: CEO transition",
+          "domain": "investor.nvidia.com",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx",
+          "local": false,
+          "published": null
+        }
+      ],
+      "score": 14,
+      "label": "Active",
+      "uncovered": false,
+      "scoreWhy": "Score 14: 1 outlet 6 + recency 8 (no timestamp)",
+      "scoreParts": {
+        "outlets": 6,
+        "recency": 8,
+        "x": 0.0,
+        "trends": 0.0,
+        "chatter": 0.0
+      },
+      "dupes": 0,
+      "ord": 3
     },
     {
       "id": "tencom",
@@ -287,7 +731,29 @@
       "confirm": [
         "Details of any repeal bill (verify)"
       ],
-      "teaser": "the future of Texas' Ten Commandments law"
+      "teaser": "the future of Texas' Ten Commandments law",
+      "sources": [
+        {
+          "name": "ABC: Democratic wave upends Ten Commandments battle in Texas classrooms",
+          "domain": "abcnews.com",
+          "url": "https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010",
+          "local": false,
+          "published": null
+        }
+      ],
+      "score": 14,
+      "label": "Active",
+      "uncovered": false,
+      "scoreWhy": "Score 14: 1 outlet 6 + recency 8 (no timestamp)",
+      "scoreParts": {
+        "outlets": 6,
+        "recency": 8,
+        "x": 0.0,
+        "trends": 0.0,
+        "chatter": 0.0
+      },
+      "dupes": 0,
+      "ord": 4
     }
   ],
   "weather": {
@@ -296,15 +762,15 @@
     "lon": -98.23,
     "note": "McAllen / Rio Grande Valley; NWS Brownsville (BRO) forecast",
     "now": {
-      "tempF": 70,
+      "tempF": 68,
       "cond": "Clear",
       "icon": "sun",
-      "at": "2026-11-19T02:40:00+00:00",
+      "at": "2026-11-19T03:45:00+00:00",
       "source": "KMFE observation"
     },
     "office": "BRO",
     "city": "McAllen",
-    "updated": "2026-11-19T02:18:15+00:00",
+    "updated": "2026-11-19T03:30:15+00:00",
     "days": [
       {
         "date": "2026-11-19",
@@ -312,9 +778,9 @@
         "dateLabel": "Nov 19",
         "hi": 78,
         "lo": 61,
-        "short": "Partly Sunny",
-        "icon": "partly",
-        "pop": 7,
+        "short": "Slight Chance Rain Showers",
+        "icon": "rain",
+        "pop": 23,
         "wind": "NNE 5 to 8 mph"
       },
       {
@@ -893,7 +1359,43 @@
       "image_url": "",
       "image_credit": "",
       "video_url": "",
-      "isConfirm": false
+      "isConfirm": false,
+      "sources": [
+        {
+          "name": "Variety",
+          "domain": "variety.com",
+          "url": "https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/",
+          "local": false,
+          "published": "2026-11-18T18:00:00+00:00"
+        },
+        {
+          "name": "USA Today",
+          "domain": "usatoday.com",
+          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/18/cma-awards-2026-winners-list/92853447007/",
+          "local": false,
+          "published": "2026-11-18T18:00:00+00:00"
+        },
+        {
+          "name": "Billboard",
+          "domain": "billboard.com",
+          "url": "https://www.billboard.com/music/awards/cma-2026-winners-list-1236385046/",
+          "local": false,
+          "published": "2026-11-18T18:00:00+00:00"
+        }
+      ],
+      "score": 29,
+      "label": "Trending",
+      "uncovered": false,
+      "scoreWhy": "Score 29: 3 outlets 18 + recency 11.2 (10h old)",
+      "scoreParts": {
+        "outlets": 18,
+        "recency": 11.2,
+        "x": 0.0,
+        "trends": 0.0,
+        "chatter": 0.0
+      },
+      "dupes": 0,
+      "ord": 0
     },
     {
       "id": "musk",
@@ -912,7 +1414,29 @@
       "image_url": "",
       "image_credit": "",
       "video_url": "",
-      "isConfirm": false
+      "isConfirm": false,
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "domain": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/11/18/elon-musk-says-im-not-maga/",
+          "local": false,
+          "published": "2026-11-18T18:00:00+00:00"
+        }
+      ],
+      "score": 17,
+      "label": "Active",
+      "uncovered": false,
+      "scoreWhy": "Score 17: 1 outlet 6 + recency 11.2 (10h old)",
+      "scoreParts": {
+        "outlets": 6,
+        "recency": 11.2,
+        "x": 0.0,
+        "trends": 0.0,
+        "chatter": 0.0
+      },
+      "dupes": 0,
+      "ord": 1
     },
     {
       "id": "quince",
@@ -936,7 +1460,29 @@
       "image_url": "",
       "image_credit": "",
       "video_url": "",
-      "isConfirm": false
+      "isConfirm": false,
+      "sources": [
+        {
+          "name": "AP",
+          "domain": "apnews.com",
+          "url": "https://apnews.com/article/mexico-quinceanera-san-luis-potosi-isela-santiago-36f8d9a1f1dd69f05e8a6e92027cbc49",
+          "local": false,
+          "published": "2026-11-18T18:00:00+00:00"
+        }
+      ],
+      "score": 17,
+      "label": "Active",
+      "uncovered": false,
+      "scoreWhy": "Score 17: 1 outlet 6 + recency 11.2 (10h old)",
+      "scoreParts": {
+        "outlets": 6,
+        "recency": 11.2,
+        "x": 0.0,
+        "trends": 0.0,
+        "chatter": 0.0
+      },
+      "dupes": 0,
+      "ord": 2
     },
     {
       "id": "giannis",
@@ -964,7 +1510,43 @@
       "image_url": "",
       "image_credit": "",
       "video_url": "",
-      "isConfirm": true
+      "isConfirm": true,
+      "sources": [
+        {
+          "name": "CBS Sports",
+          "domain": "cbssports.com",
+          "url": "https://www.cbssports.com/nba/news/giannis-antetokounmpo-set-to-face-bucks-for-first-time-with-heat/",
+          "local": false,
+          "published": "2026-11-18T18:00:00+00:00"
+        },
+        {
+          "name": "NBA.com box score (Heat vs Bucks)",
+          "domain": "nba.com",
+          "url": "https://www.nba.com/bucks/game/0022600260-bucks-vs-heat-miami-fl-11-18-2026",
+          "local": false,
+          "published": "2026-11-18T18:00:00+00:00"
+        },
+        {
+          "name": "GMA/Reuters",
+          "domain": "gmanetwork.com",
+          "url": "https://www.gmanetwork.com/news/sports/basketball/1009886/nba-giannis-antetokounmpo-downplays-emotions-as-heat-face-bucks/story/",
+          "local": false,
+          "published": "2026-11-18T18:00:00+00:00"
+        }
+      ],
+      "score": 29,
+      "label": "Trending",
+      "uncovered": false,
+      "scoreWhy": "Score 29: 3 outlets 18 + recency 11.2 (10h old)",
+      "scoreParts": {
+        "outlets": 18,
+        "recency": 11.2,
+        "x": 0.0,
+        "trends": 0.0,
+        "chatter": 0.0
+      },
+      "dupes": 0,
+      "ord": 3
     },
     {
       "id": "bond",
@@ -988,7 +1570,29 @@
       "image_url": "",
       "image_credit": "",
       "video_url": "",
-      "isConfirm": false
+      "isConfirm": false,
+      "sources": [
+        {
+          "name": "AP",
+          "domain": "apnews.com",
+          "url": "https://apnews.com/article/james-bond-jeff-bezos-robert-pattinson-a90f280d9e4fed9c7fd72ab6a4851945",
+          "local": false,
+          "published": "2026-11-18T18:00:00+00:00"
+        }
+      ],
+      "score": 17,
+      "label": "Active",
+      "uncovered": false,
+      "scoreWhy": "Score 17: 1 outlet 6 + recency 11.2 (10h old)",
+      "scoreParts": {
+        "outlets": 6,
+        "recency": 11.2,
+        "x": 0.0,
+        "trends": 0.0,
+        "chatter": 0.0
+      },
+      "dupes": 0,
+      "ord": 4
     },
     {
       "id": "measles",
@@ -1016,7 +1620,36 @@
       "image_url": "",
       "image_credit": "",
       "video_url": "",
-      "isConfirm": false
+      "isConfirm": false,
+      "sources": [
+        {
+          "name": "AP",
+          "domain": "apnews.com",
+          "url": "https://apnews.com/article/measles-elimination-status-us-mexico-b6694152aca12e8cf4293d9f50090ec9",
+          "local": false,
+          "published": null
+        },
+        {
+          "name": "PAHO statement",
+          "domain": "paho.org",
+          "url": "https://www.paho.org/en/news/17-11-2026-paho-urges-countries-step-efforts-stop-measles-outbreaks-and-move-towards",
+          "local": false,
+          "published": null
+        }
+      ],
+      "score": 20,
+      "label": "Active",
+      "uncovered": false,
+      "scoreWhy": "Score 20: 2 outlets 12 + recency 8 (no timestamp)",
+      "scoreParts": {
+        "outlets": 12,
+        "recency": 8,
+        "x": 0.0,
+        "trends": 0.0,
+        "chatter": 0.0
+      },
+      "dupes": 0,
+      "ord": 5
     },
     {
       "id": "stojakovic",
@@ -1040,7 +1673,36 @@
       "image_url": "",
       "image_credit": "",
       "video_url": "",
-      "isConfirm": false
+      "isConfirm": false,
+      "sources": [
+        {
+          "name": "AP",
+          "domain": "apnews.com",
+          "url": "https://apnews.com/article/illinois-duke-stojakovic-46-points-c6a4a8aee2f9d7fb676dab9019fe9d83",
+          "local": false,
+          "published": "2026-11-17T18:00:00+00:00"
+        },
+        {
+          "name": "ESPN recap",
+          "domain": "espn.com",
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50517287/illinois-andrej-stojakovic-scores-46-points-most-ever-opponent-duke",
+          "local": false,
+          "published": "2026-11-17T18:00:00+00:00"
+        }
+      ],
+      "score": 15,
+      "label": "Active",
+      "uncovered": false,
+      "scoreWhy": "Score 15: 2 outlets 12 + recency 2.8 (34h old)",
+      "scoreParts": {
+        "outlets": 12,
+        "recency": 2.8,
+        "x": 0.0,
+        "trends": 0.0,
+        "chatter": 0.0
+      },
+      "dupes": 0,
+      "ord": 6
     },
     {
       "id": "usmnt",
@@ -1064,7 +1726,36 @@
       "image_url": "",
       "image_credit": "",
       "video_url": "",
-      "isConfirm": false
+      "isConfirm": false,
+      "sources": [
+        {
+          "name": "AP",
+          "domain": "apnews.com",
+          "url": "https://apnews.com/article/usmnt-soccer-mauricio-pochettino-farewell-haiti-3fe3610a6d9a0d0fa1ef08fe56f03630",
+          "local": false,
+          "published": "2026-11-17T18:00:00+00:00"
+        },
+        {
+          "name": "U.S. Soccer recap",
+          "domain": "ussoccer.com",
+          "url": "https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-cincinnati-ohio",
+          "local": false,
+          "published": "2026-11-17T18:00:00+00:00"
+        }
+      ],
+      "score": 15,
+      "label": "Active",
+      "uncovered": false,
+      "scoreWhy": "Score 15: 2 outlets 12 + recency 2.8 (34h old)",
+      "scoreParts": {
+        "outlets": 12,
+        "recency": 2.8,
+        "x": 0.0,
+        "trends": 0.0,
+        "chatter": 0.0
+      },
+      "dupes": 0,
+      "ord": 7
     },
     {
       "id": "youtube",
@@ -1083,7 +1774,29 @@
       "image_url": "",
       "image_credit": "",
       "video_url": "",
-      "isConfirm": true
+      "isConfirm": true,
+      "sources": [
+        {
+          "name": "Trendoday (YouTube US chart)",
+          "domain": "trendoday.com",
+          "url": "https://trendoday.com/youtube/2026/11/18",
+          "local": false,
+          "published": "2026-11-18T18:00:00+00:00"
+        }
+      ],
+      "score": 17,
+      "label": "Active",
+      "uncovered": false,
+      "scoreWhy": "Score 17: 1 outlet 6 + recency 11.2 (10h old)",
+      "scoreParts": {
+        "outlets": 6,
+        "recency": 11.2,
+        "x": 0.0,
+        "trends": 0.0,
+        "chatter": 0.0
+      },
+      "dupes": 0,
+      "ord": 8
     }
   ],
   "up_to": [
@@ -1366,7 +2079,7 @@
       "signature": false,
       "weave": null,
       "talkingPoints": [
-        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the county saying no to SpaceX's tax break, plus Mission heading to a December 12th runoff. On the National Desk, the FAA's nationwide ground stop and what it means for Valley flyers. In Trending, Ella Langley's big night at the CMA Awards. And in How We'd Talk to Our Kids, Jess and I take on strangers online and what to say when the group chat turns mean. It's 78 and partly sunny outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the county saying no to SpaceX's tax break, plus Mission heading to a December 12th runoff. On the National Desk, the FAA's nationwide ground stop and what it means for Valley flyers. In Trending, Ella Langley's big night at the CMA Awards. And in How We'd Talk to Our Kids, Jess and I take on strangers online and what to say when the group chat turns mean. It's 78 and a slight chance of rain showers outside, the coffee's hot, so stick around, this is Drew in the Morning.",
         "JINGLE: Drew in the Morning. Your Valley, your news, your morning.",
         "JINGLE: \"Drew in the Morning. Your Valley, your news, your morning.\" (alternates in cold-open.md)",
         "COLD OPEN: read the paragraph the packet builds each morning (card at the top of the studio page; also in the PDF, txt and email, and in obs-data.json under coldOpen). It is one flowing paragraph, about 25 seconds, filled with today's real headlines.",
@@ -2344,8 +3057,24 @@
     "Okay, that's the news. Here's what the internet is losing its mind over. Wait, don't tell me.",
     "We could go all morning on this, but let's hear from you: what are you seeing?"
   ],
+  "scoring": {
+    "merged": 0,
+    "items": 27,
+    "hot": 0,
+    "trending": 5,
+    "active": 22,
+    "uncovered": 0,
+    "trends": {
+      "TX": 10,
+      "US": 10,
+      "fetchedAt": "2026-11-19T03:50:26+00:00",
+      "fromCache": true
+    },
+    "formula": "score = outlets(6 per distinct outlet, max 30) + recency(20 x 0.5^(age_h/12)) + X(20 x min(1, log10(1+eng+25 posts)/4)) + Google Trends(20 TX / 12 US) + chatter(10 x min(1, log10(1+eng+5 posts)/2.5)); Hot >= 45, Trending >= 27, else Active",
+    "trendsNote": "Google Trends US-TX 10 + US 10 items, fetched 2026-11-19T03:50:26+00:00 (cache)"
+  },
   "coldOpen": {
-    "text": "Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the county saying no to SpaceX's tax break, plus Mission heading to a December 12th runoff. On the National Desk, the FAA's nationwide ground stop and what it means for Valley flyers. In Trending, Ella Langley's big night at the CMA Awards. And in How We'd Talk to Our Kids, Jess and I take on strangers online and what to say when the group chat turns mean. It's 78 and partly sunny outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+    "text": "Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the county saying no to SpaceX's tax break, plus Mission heading to a December 12th runoff. On the National Desk, the FAA's nationwide ground stop and what it means for Valley flyers. In Trending, Ella Langley's big night at the CMA Awards. And in How We'd Talk to Our Kids, Jess and I take on strangers online and what to say when the group chat turns mean. It's 78 and a slight chance of rain showers outside, the coffee's hot, so stick around, this is Drew in the Morning.",
     "jingle": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [
       "Wake up, RGV. It's Drew in the Morning.",
@@ -2354,10 +3083,10 @@
     "confirm": [
       "National Desk: FAA nationwide ground stop"
     ],
-    "words": 113,
+    "words": 117,
     "template": "daily"
   },
-  "generatedAt": "2026-11-18T21:16:03-06:00",
+  "generatedAt": "2026-11-18T22:01:34-06:00",
   "sources": [
     {
       "section": "Top headlines: RGV",
