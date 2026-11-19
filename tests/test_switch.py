@@ -342,8 +342,14 @@ class ShippedShowTests(unittest.TestCase):
         text_parts = []
         for name in DOCS:
             text_parts.append((ROOT / name).read_text(encoding="utf-8"))
+        skip_tests = {
+            ROOT / "tests" / "test_breaking_watch.py",
+            ROOT / "tests" / "test_trend_score.py",
+        }
         for folder in SCAN_DIRS:
             for path in (ROOT / folder).rglob("*"):
+                if "fixtures" in path.parts or path in skip_tests:
+                    continue
                 if path.suffix.lower() in {".py", ".html", ".css", ".js", ".md"}:
                     text_parts.append(path.read_text(encoding="utf-8"))
         blob = "\n".join(text_parts)

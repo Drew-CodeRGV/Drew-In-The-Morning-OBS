@@ -13,6 +13,7 @@ python3 build_packet.py data/packet-YYYY-MM-DD.json --refresh-weather --check-li
 ```
 
 Flags: `--no-obs-update` (do not write cold open/jingle/up-to into obs-data.json) · `--force-latest` (let a SAMPLE build replace latest) · `--refresh-weather` (pull api.weather.gov, BRO) · `--check-links` (HEAD/GET every URL; writes `-link-check.json`; sites that bot-wall with 403 are reported as "blocked", not dead) · `--obs-data PATH` · `--out DIR` · `--no-render` (skip Chrome).
+`--fetch-trends` (pull Google Trends US-TX + US for the trend score and cache them in `data/trends-cache.json`; without it a cache under 36 h old is used) · `--no-score` (skip dedupe, scoring, badges and sorting).
 Requires: python3, `google-chrome`, `pdfinfo` + `pdftoppm` (poppler-utils). No pip packages.
 
 The build FAILS (exit 2) if the PDF is not exactly 1 page or any card clips its text (it prints which). Fix by trimming print text (`short`, `pfact`, `pwhat`, `ptip`), setting `"noprint": true` on a headline, or `"print": false` on a National Desk story. Print text stays >= 7.4pt.
@@ -82,6 +83,36 @@ Every item, national story, trending item, meme and up-to event on the studio pa
 - `up_to`: list as above; `up_to_script`: string; `up_to_meta`: `{window, calendar, note, jess}`.
 - `trending`: list as above.
 - `meta.mode`, `meta.dataAsOf`, `meta.showEmail`, `meta.kidsTopic`.
+
+## Dedupe + trend score
+
+`tools/trend_score.py` runs inside the build (`score_stage`) and in the breaking watch. It never deletes a story you wrote: it merges duplicates, adds a transparent score, and flags leads.
+
+**Dedupe.** Two stories are the same event when their URLs match after canonicalising (tracking parameters, www/m/amp, fragments and trailing slashes removed) AND their headlines overlap, or when their normalised headlines are similar: token Jaccard >= 0.60, or Jaccard >= 0.42 with 4+ shared words, or containment >= 0.75 with 5+ shared words; within 72 hours; and never when the headlines carry conflicting numbers ("2 robberies" vs "3 robberies") or conflicting places. A digest page linked by several different stories (a daily briefing) does not merge them. Precision beats recall: a missed duplicate costs one extra line; a wrong merge hides an event. The kept item gets `sources[]`; a merged duplicate's link is added to the kept item's links. National Desk stories are never dropped; every extra outlet linked under a National or Trending story counts as coverage of it. List priority for a duplicate: National Desk > RGV > Texas > Trending > leads.
+
+**Score (0-100, shown in the badge tooltip as "Score 38: 5 outlets 30 + recency 8 ...").**
+
+| part | formula | max |
+|---|---|---|
+| outlets | 6 x distinct outlets (sister sites count once) | 30 |
+| recency | 20 x 0.5^(age_hours / 12), newest coverage; no timestamp = 8 | 20 |
+| X | 20 x min(1, log10(1 + engagement + 25 x posts) / 4) | 20 |
+| Google Trends | 20 if the story matches a US-TX trending term, 12 if US | 20 |
+| Reddit / Facebook chatter | 10 x min(1, log10(1 + engagement + 5 x posts) / 2.5) | 10 |
+
+Labels: **Hot** >= 45, **Trending** >= 27, otherwise **Active**. (Overrides: `scoring:` in `feeds.yml`.) A Google Trends match is by the trend's news-item URL, a similar headline, or the trend's words all appearing in the story.
+
+**Uncovered** = community/social buzz (chatter, X, or a TX Google Trend) about a story with Valley relevance that no local outlet covers and that has no loose match against any local story. Shown as UNCOVERED with CONFIRM BEFORE AIR: it is a scoop lead, never a fact.
+
+**Where it shows.** Studio page: HOT / TREND / ACTIVE badge with score on each item, an UNCOVERED badge, "+N sources", and a Sort button (by score or editorial order); each section header shows counts and Hot/Trend tallies. PDF: only `HOT`, a red `▲` for Trending, and `UNCOV` (Active stays unmarked; the page stays one page). Email: colored `HOT 52` / `TREND 31` chips. Text file: `[HOT 52]` / `[TREND 31]` / `[ACT 14]` prefixes, `[UNCOVERED LEAD: CONFIRM BEFORE AIR]`, and a STORY SCORES summary line. The PDF, email and text keep your editorial order (Hot items first); only the studio page sorts by score.
+
+**Optional per-item data** you can add to any story in the data file (the daily research pass fills these when it has them): `published` (ISO time), `x` `{posts, engagement}`, `chatter` `{posts, engagement}` (or a list of those), `valley` (true if it is a Valley story). A top-level `leads` list (same shape as a headline: `title`, `url`, `source`, optional `x`/`chatter`) holds social/community-only items; they are scored and can come out Uncovered. `meta.score: false` turns scoring off for one file.
+
+## Studio page: collapsed by default
+Every section and every rundown block (A-L) loads collapsed to its header row (letter, color, title, time column for blocks, item count, badges). Tap a header to open it (44pt+ targets). **Expand all / Collapse all** work on every section and block. The open/closed state is kept per browser tab in `sessionStorage` (reload keeps it; a new tab starts collapsed again); a link like `#headlines` opens its section. The clock, countdown, Show Start button, Used-today bar and the Breaking strip stay visible. The PDF, email and txt are unchanged by this.
+
+## Breaking strip
+The studio page fetches `breaking.json` (same site) every 120 s; see `../BREAKING-WATCH.md`. The strip counts only items first seen after the page was built.
 
 ## Emailing the packet (draft only until Drew approves)
 

@@ -1,0 +1,142 @@
+# Feeds polled by tools/breaking_watch.py (GitHub Actions: .github/workflows/breaking-watch.yml)
+# and used by tools/trend_score.py. Public feeds only; no logins, no keys.
+# Last verified from the build box on 2026-11-18 (see "status" notes). Dead feeds were dropped.
+#
+# kind: local | regional | state | national | wire | specialist | trends | community
+#   local      counts as "local coverage" for the Uncovered flag
+#   community  Reddit etc.: counts as buzz, never as coverage
+# aggregator feeds (news.google.com) give the outlet in <source>; KRGV has no native RSS, so it comes via Google News.
+version: 1
+
+local_outlets:
+  - krgv.com
+  - valleycentral.com
+  - myrgv.com
+  - cbs4local.com
+  - dailymcallen.com
+  - riograndeguardian.com
+  - kveo.com
+  - themonitor.com
+  - brownsvilleherald.com
+  - valleymorningstar.com
+  - elnuevoheraldo.com
+  - ktrt.com
+
+outlet_aliases:
+  kveo.com: valleycentral.com
+  themonitor.com: myrgv.com
+  brownsvilleherald.com: myrgv.com
+  valleymorningstar.com: myrgv.com
+  kgbt.com: cbs4local.com
+
+# optional overrides of tools/trend_score.py DEFAULTS, e.g.:
+# scoring:
+#   hot: 45
+#   trending: 27
+
+feeds:
+  # ---- local (status: ok)
+  - id: valleycentral-local
+    name: ValleyCentral (KVEO)
+    url: https://www.valleycentral.com/news/local-news/feed/
+    kind: local
+  - id: myrgv
+    name: MyRGV (The Monitor, Edinburg, Brownsville Herald)
+    url: https://myrgv.com/feed/
+    kind: local
+    limit: 40
+  - id: gn-krgv
+    name: KRGV (via Google News; krgv.com has no RSS)
+    url: https://news.google.com/rss/search?q=site:krgv.com+when:1d&hl=en-US&gl=US&ceid=US:en
+    kind: local
+    aggregator: true
+    limit: 40
+  - id: gn-cbs4
+    name: CBS 4 / KGBT (via Google News)
+    url: https://news.google.com/rss/search?q=site:cbs4local.com+when:1d&hl=en-US&gl=US&ceid=US:en
+    kind: local
+    aggregator: true
+    limit: 25
+  - id: gn-dailymcallen
+    name: Daily McAllen (via Google News; site has no RSS)
+    url: https://news.google.com/rss/search?q=site:dailymcallen.com+when:2d&hl=en-US&gl=US&ceid=US:en
+    kind: local
+    aggregator: true
+  - id: gn-rgv
+    name: Valley place names, any outlet (Google News search)
+    url: https://news.google.com/rss/search?q=McAllen+OR+%22Hidalgo+County%22+OR+Edinburg+OR+Pharr+OR+Brownsville+OR+%22Cameron+County%22+OR+Starbase+when:1d&hl=en-US&gl=US&ceid=US:en
+    kind: regional
+    aggregator: true
+    limit: 40
+  - id: borderreport
+    name: Border Report
+    url: https://www.borderreport.com/feed/
+    kind: regional
+  # ---- state / national / wires (status: ok)
+  - id: texastribune
+    name: Texas Tribune
+    url: https://www.texastribune.org/feeds/main/
+    kind: state
+  - id: npr
+    name: NPR News
+    url: https://feeds.npr.org/1001/rss.xml
+    kind: wire
+  - id: gn-ap
+    name: AP (via Google News; apnews.com blocks bots, AP's own RSS is retired)
+    url: https://news.google.com/rss/search?q=site:apnews.com+when:1d&hl=en-US&gl=US&ceid=US:en
+    kind: wire
+    aggregator: true
+    limit: 25
+  - id: gn-reuters
+    name: Reuters (via Google News; Reuters' own RSS is retired)
+    url: https://news.google.com/rss/search?q=site:reuters.com+when:1d&hl=en-US&gl=US&ceid=US:en
+    kind: wire
+    aggregator: true
+    limit: 25
+  - id: spaceflightnow
+    name: Spaceflight Now (Starbase / SpaceX)
+    url: https://spaceflightnow.com/feed/
+    kind: specialist
+  # ---- Google Trends (signals, not stories)
+  - id: trends-tx
+    name: Google Trends, Texas
+    url: https://trends.google.com/trending/rss?geo=US-TX
+    kind: trends
+    region: TX
+  - id: trends-us
+    name: Google Trends, US
+    url: https://trends.google.com/trending/rss?geo=US
+    kind: trends
+    region: US
+  # ---- Reddit (community buzz). STATUS: Reddit answers 429/404 to the build box and often to
+  # cloud runners. Kept as optional: failures are logged, never fatal, and a feed that keeps
+  # failing is retried only every 6 hours. If they work from Actions, Uncovered leads light up.
+  - id: reddit-rgv
+    name: r/RioGrandeValley
+    url: https://www.reddit.com/r/RioGrandeValley/new/.rss
+    kind: community
+    valley: true
+    optional: true
+  - id: reddit-rgv2
+    name: r/RGV
+    url: https://www.reddit.com/r/RGV/new/.rss
+    kind: community
+    valley: true
+    optional: true
+  - id: reddit-mcallen
+    name: r/McAllen
+    url: https://www.reddit.com/r/McAllen/new/.rss
+    kind: community
+    valley: true
+    optional: true
+  - id: reddit-brownsville
+    name: r/Brownsville
+    url: https://www.reddit.com/r/Brownsville/new/.rss
+    kind: community
+    valley: true
+    optional: true
+  - id: reddit-texas
+    name: r/texas
+    url: https://www.reddit.com/r/texas/new/.rss
+    kind: community
+    optional: true
