@@ -1533,7 +1533,7 @@
     "caption": "We want YOUR voice on Monday's show. Got a topic, a story, or the hard parenting question you're afraid to ask? DM us, email, or ask for a live guest link. Anonymous is fine. #RGV #McAllen #DrewInTheMorning"
   },
   "schemaNotes": "v4 (Nov 18): 12 blocks A-L (new B = What I've Been Up To, family & kids woven into H, Starbase/Zoho/trending folded into other blocks). Segments carry offsetMinutes from the planned 8:00 start. coldOpen, jingle and upTo are filled by packet/build_packet.py on every build.",
-  "coldOpen": "Good morning, Rio Grande Valley! It's Monday, November 23rd, and you're listening to Drew in the Morning with Drew and Jess. Coming up this hour, the local stories everyone's talking about, starting with the county saying no to SpaceX's tax break, plus Mission heading to a December 12th runoff. On the National Desk, the FAA's nationwide ground stop and what it means for Valley flyers. In Trending, Ella Langley's big night at the CMA Awards. And in How We'd Talk to Our Kids, Jess and I take on strangers online and what to say when the group chat turns mean. It's 75 and a chance of rain showers outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+  "coldOpen": "Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with Hidalgo County's first screwworm case, plus SpaceX's quiet data-center air permit. On the National Desk, the first-ever Trump, Xi and Putin summit. In Trending, GTA Six finally dropping. And in How We'd Talk to Our Kids, Jess and I take on energy drinks, caffeine and what a 14-year-old actually needs to know. It's 66 and cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
   "jingle": {
     "primary": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [
@@ -1545,7 +1545,7 @@
     "banner": "4 item(s) found · CONFIRM BEFORE AIR",
     "script": "Hey, for the last week, here's what I've been up to. Outside the studio I spent a good chunk of it sending in talk proposals for a handful of 2027 conferences: emergency management, fire and rescue, and 9-1-1 shows, all about getting Wi-Fi up fast when a shelter or a command post has to stand up overnight. Nothing's been accepted yet, so I'll let you know if anybody says yes. Okay, enough about me. Let's get into the Valley.",
     "calendar": "not connected (no calendar tool available); built from email only",
-    "window": "Nov 11-18, 2026",
+    "window": "Nov 12-19, 2026",
     "confirm": "CONFIRM BEFORE AIR: Drew eyeballs every item; public-facing only",
     "events": [
       {
@@ -1585,12 +1585,14 @@
     ]
   },
   "coldOpenMeta": {
-    "date": "2026-11-23",
-    "template": "monday",
+    "date": "2026-11-19",
+    "template": "daily",
     "confirm": [
-      "National Desk: FAA nationwide ground stop"
+      "RGV: Hidalgo Co. confirms 1st screwworm case; 4-county quarantine",
+      "RGV: SpaceX got data-center air permit a day before county's 'no'",
+      "National Desk: Trump, Xi and Putin hold the first-ever three-way summit (Shenzhen, APEC)"
     ],
-    "builtFrom": "DITM-packet-2026-11-23-SAMPLE",
-    "sample": true
+    "builtFrom": "DITM-briefing-2026-11-19",
+    "sample": false
   }
 }

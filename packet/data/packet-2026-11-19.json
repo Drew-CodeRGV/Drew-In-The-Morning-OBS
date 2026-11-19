@@ -1,1023 +1,1154 @@
 {
-  "meta": {
-    "date": "2026-11-19",
-    "title": "Drew in the Morning · Daily Briefing",
-    "tagline": "Drew & Jess are watching the feeds so you don't have to",
-    "sample": true,
-    "sampleLabel": "TEST BUILD · daily mode, data as of Nov 18",
-    "dataAsOf": "Nov 18, 2026, 8:15 PM CT",
-    "timezone": "America/Chicago",
-    "recap": "Week of Nov 11-18 and the weekend of Nov 14-15",
-    "showEmail": "ditm@drewlentz.com",
-    "showEmailConfirm": true,
-    "handles": "IG/TikTok @drewinthemorning · YouTube @DrewintheMorning",
-    "kidsTopic": "strangers online and what to say when the group chat turns mean",
-    "mode": "daily"
+ "meta": {
+  "date": "2026-11-19",
+  "title": "Drew in the Morning · Daily Briefing",
+  "tagline": "Drew & Jess are watching the feeds so you don't have to",
+  "sample": false,
+  "dataAsOf": "Nov 19, 2026, 6:30 AM CT",
+  "timezone": "America/Chicago",
+  "recap": "Last 24 hours (Nov 18-19), story bank for Monday Nov 23",
+  "showEmail": "ditm@drewlentz.com",
+  "showEmailConfirm": true,
+  "handles": "IG/TikTok @drewinthemorning · YouTube @DrewintheMorning",
+  "kidsTopic": "energy drinks, caffeine and what a 14-year-old actually needs to know",
+  "mode": "daily",
+  "showDate": "2026-11-23"
+ },
+ "headlines": {
+  "image": {
+   "file": "assets/starship_thumb.jpg",
+   "caption": "File photo: Starship (Steve Jurvetson, CC BY 2.0, Wikimedia Commons)",
+   "credit_url": "https://commons.wikimedia.org/wiki/File:SpaceX_Starship_before_IFT-5.jpg",
+   "forItem": 1
   },
-  "headlines": {
-    "image": {
-      "file": "assets/starship_thumb.jpg",
-      "caption": "File photo: Starship (Steve Jurvetson, CC BY 2.0, Wikimedia Commons)",
-      "credit_url": "https://commons.wikimedia.org/wiki/File:SpaceX_Starship_before_IFT-5.jpg",
-      "forItem": 0
-    },
-    "rgv": [
-      {
-        "title": "Cameron County rejects SpaceX data-center tax break hearing, 3-2",
-        "short": "County says no to SpaceX's 10-yr, 100% tax break hearing (3-2)",
-        "url": "https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/",
-        "source": "MyRGV · Nov 17",
-        "teaser": "the county saying no to SpaceX's tax break",
-        "open": true
-      },
-      {
-        "title": "Texas issues air permit for SpaceX's $24B data center",
-        "short": "State air permit issued Nov 16 after Abbott's Sept pause",
-        "url": "https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758",
-        "source": "Politico · Nov 17",
-        "teaser": "Texas approving SpaceX's air permit",
-        "open": false
-      },
-      {
-        "title": "Starship Flight 15: ship caught by tower, booster aborts catch",
-        "short": "Flight 15: ship caught by tower Nov 14; booster aborted",
-        "url": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/",
-        "source": "Spaceflight Now · Nov 13",
-        "teaser": "Starship Flight 15 and the tower catch",
-        "open": false
-      },
-      {
-        "title": "Mission mayor and council races head to Dec. 12 runoffs",
-        "short": "Mission mayor, council races go to Dec 12 runoffs",
-        "url": "https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/",
-        "source": "KRGV",
-        "teaser": "Mission heading to a December 12th runoff",
-        "open": true
-      },
-      {
-        "title": "Texas A&M McAllen to build $50M health education building",
-        "short": "Texas A&M McAllen: $50M health building, starts Dec",
-        "url": "https://dailymcallen.com/local-news/editions/11-18-2026",
-        "source": "Daily McAllen · Nov 18",
-        "teaser": "a new Texas A&M health building in McAllen",
-        "open": false
-      },
-      {
-        "title": "McAllen Food Truck Park closure delayed to Jan. 14, 2027",
-        "short": "Food Truck Park closure moved to Jan 14, 2027",
-        "url": "https://dailymcallen.com/local-news/editions/11-17-2026",
-        "source": "Daily McAllen · Nov 17",
-        "teaser": "the McAllen Food Truck Park's new closing date",
-        "open": false,
-        "noprint": true
-      },
-      {
-        "title": "Another screwworm case confirmed in Starr County cattle",
-        "short": "USDA: another screwworm case in Starr County",
-        "url": "https://thergvnews.com/reviews/day/2026-11-17",
-        "source": "The RGV News · Nov 17",
-        "teaser": "another screwworm case in Starr County",
-        "open": false
-      },
-      {
-        "title": "Pharr twin bridge expansion opened Nov. 13",
-        "short": "Pharr International Bridge twin span opened Nov 13",
-        "url": "https://gooddayedinburg.com/local-news/editions/11-14-2026",
-        "source": "Good Day Edinburg · Nov 14",
-        "teaser": "Pharr's new twin bridge opening",
-        "open": false
-      },
-      {
-        "title": "Grupo Frontera, Edgar Barrera win at Latin Grammys",
-        "short": "Edinburg's Grupo Frontera wins at Latin Grammys",
-        "url": "https://gooddayedinburg.com/local-news/editions/11-14-2026",
-        "source": "Good Day Edinburg · Nov 14",
-        "teaser": "Grupo Frontera's Latin Grammy win",
-        "open": false
-      },
-      {
-        "title": "PSJA ISD swears in three trustees, elects Quintanilla president",
-        "short": "PSJA ISD swears in 3 trustees",
-        "url": "https://www.psjaisd.us/school-news-details/~board/pharr-san-juan-alamo-isd-news/post/psja-isd-swears-in-three-trustees-elects-new-board-leadership",
-        "source": "PSJA ISD · Nov 16",
-        "teaser": "PSJA's three new trustees",
-        "open": false
-      }
+  "rgv": [
+   {
+    "title": "Hidalgo County confirms its first New World screwworm case (a calf); quarantine zone covers parts of 4 counties",
+    "short": "Hidalgo Co. confirms 1st screwworm case; 4-county quarantine",
+    "url": "https://www.krgv.com/news/hidalgo-county-confirms-first-new-world-screwworm-case-in-calf/",
+    "source": "KRGV · Nov 18",
+    "teaser": "Hidalgo County's first screwworm case",
+    "open": true,
+    "published": "2026-11-18T18:00:00-06:00",
+    "valley": true,
+    "links": [
+     {
+      "label": "Daily McAllen Nov 19: quarantine zone + numbers to call",
+      "url": "https://dailymcallen.com/local-news/editions/11-19-2026"
+     },
+     {
+      "label": "Edinburg Advocate",
+      "url": "https://theedinburgadvocate.com/2026/11/hidalgo-county-confirms-first-new-world-screwworm-case-quarantine-imposed-on-four-county-area/"
+     }
     ],
-    "texas": [
-      {
-        "title": "Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border contracts",
-        "short": "Democrats ask for probe of ~$7.5B Big Bend border contracts",
-        "url": "https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/",
-        "source": "Texian Partisan · Nov 17"
-      },
-      {
-        "title": "Texas Supreme Court petition over HD 93 special election result",
-        "short": "Texas Supreme Court petition over HD 93 special election",
-        "url": "https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/",
-        "source": "Texian Partisan · Nov 17"
-      },
-      {
-        "title": "PUC takes up Aqua Texas rate increase Thursday",
-        "short": "PUC takes up Aqua Texas rate hike Thursday (Nov 19)",
-        "url": "https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/",
-        "source": "Texian Partisan · Nov 17"
-      }
+    "confirm": "Outlets differ on the Valley case count (KRGV: 3rd active; ValleyCentral: 4)"
+   },
+   {
+    "title": "SpaceX got its TCEQ air permit (35 gas turbines, 750 MW) for the Starbase data center a day before Cameron County said no to a tax-break hearing",
+    "short": "SpaceX got data-center air permit a day before county's 'no'",
+    "url": "https://myrgv.com/local-news/2026/11/18/spacex-received-data-center-permit-a-day-before-tax-break-rejection/",
+    "source": "MyRGV · Nov 18",
+    "teaser": "SpaceX's quiet data-center air permit",
+    "open": true,
+    "published": "2026-11-18T16:32:00-06:00",
+    "valley": true,
+    "chatter": {
+     "posts": 1,
+     "engagement": 556
+    },
+    "links": [
+     {
+      "label": "MyRGV Nov 17: county rejects tax-break hearing 3-2",
+      "url": "https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/"
+     },
+     {
+      "label": "RGV.me (Facebook): 'SpaceX responds' post, 253 reactions/283 comments",
+      "url": "https://www.facebook.com/RGV.ME"
+     }
+    ],
+    "confirm": "SpaceX's response (seen on RGV.me Facebook) not yet confirmed by a news outlet"
+   },
+   {
+    "title": "La Joya ISD uses under 60% of its space, needs $160M+ in repairs and may close more campuses after losing ~8,000 students in a decade",
+    "short": "La Joya ISD: $160M repairs, half-empty schools, closures weighed",
+    "url": "https://www.krgv.com/news/plummeting-enrollment-leaves-la-joya-isd-facing-160m-maintenance-bill-and-possible-closures/",
+    "source": "KRGV · Nov 18",
+    "published": "2026-11-18T23:42:00-06:00",
+    "valley": true,
+    "links": [
+     {
+      "label": "Daily McAllen Nov 19",
+      "url": "https://dailymcallen.com/local-news/editions/11-19-2026"
+     },
+     {
+      "label": "ValleyCentral",
+      "url": "https://www.valleycentral.com/news/local-news/la-joya-isd-announces-potential-closure-of-three-campuses-as-part-of-action-plan/"
+     }
     ]
-  },
-  "nationalDesk": [
-    {
-      "id": "faa",
-      "title": "FAA nationwide ground stop",
-      "print": true,
-      "summary": "Nov 13: FAA grounded all U.S. flights ~3:30-8:15 PM ET; legacy network overwhelmed by data; FAA sees no cyberattack.",
-      "angle": "Everybody wants the system modernized; nobody wants it down for the upgrade.",
-      "valley": "HRL, MFE and BRO issued advisories; Brownsville still had 5 cancellations that night.",
-      "detail": "FAA: legacy equipment became unstable when data flooded its FTI network; suspected sites a radar site in Amarillo and a radio site in El Dorado, AR where L3Harris was deploying a router; 17 of 22 en route centers affected; ~3,500 aircraft landed safely; ~12,462 flights canceled that day. Second nationwide ground stop since 9/11 (ABC). FAA Administrator Bryan Bedford told Congress Nov 18: 'blame me.' Duffy said the issue came on the 69th router installation. Harlingen: incoming banks from IAH/DFW/AUS couldn't depart. No current FAA flight cuts found in the sources checked.",
-      "links": [
-        {
-          "label": "FAA: Nationwide Ground Stop Q&A",
-          "url": "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers"
-        },
-        {
-          "label": "ABC: FAA head says 'blame me'",
-          "url": "https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960"
-        },
-        {
-          "label": "ValleyCentral: Valley airports issue advisories",
-          "url": "https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/"
-        },
-        {
-          "label": "KRGV: Brownsville airport after ground stop",
-          "url": "https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/"
-        }
-      ],
-      "confirm": [
-        "Any current FAA flight cuts (none found)"
-      ],
-      "teaser": "the FAA's nationwide ground stop and what it means for Valley flyers",
-      "pfact": "Nov 13: FAA grounded all U.S. flights ~3:30-8:15 PM ET; legacy network swamped; FAA sees no cyberattack.",
-      "pangle": "Everybody wants it modernized; nobody wants it down for the upgrade.",
-      "pvalley": "HRL, MFE, BRO issued advisories; Brownsville had 5 cancellations."
-    },
-    {
-      "id": "mullin",
-      "title": "Mullin testifies on outages and the LSU-Texas flight",
-      "print": true,
-      "summary": "DHS Sec. Markwayne Mullin told House Homeland Security (Nov 18) the outages weren't a coordinated attack; defended flying to the LSU-Texas game.",
-      "angle": "Fair question or cheap shot? The optics of flying to a game during a grounding are rough.",
-      "valley": "DHS runs the border; ask what RGV ranchers, bridges and Border Patrol are actually seeing.",
-      "detail": "Hearing: 'Worldwide Threats to the Homeland: 25 Years After 9/11,' with DNI Jay Clayton and FBI Deputy Director Christopher Raia. Clayton: 'separate service outages associated with maintenance and technical changes,' not a coordinated or state-sponsored attack. Mullin said he wanted to be a good uncle and will reimburse the government; he was also pressed on ICE training. His written testimony says Southwest border apprehensions fell 58% in FY2026 (DHS's claim).",
-      "links": [
-        {
-          "label": "ABC: Mullin grilled, FAA head says 'blame me'",
-          "url": "https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960"
-        },
-        {
-          "label": "AP: Takeaways from Mullin's testimony",
-          "url": "https://apnews.com/article/mullin-congress-ground-stop-cyber-threats-immigration-ce63a22797c61ee53d88678000236c37"
-        },
-        {
-          "label": "PBS: Mullin defends flight to football game",
-          "url": "https://www.pbs.org/newshour/politics/watch-live-dhs-secretary-mullin-testifies-on-worldwide-threats-amid-tech-outages-iran-warnings"
-        },
-        {
-          "label": "House Homeland Security: Mullin written testimony (PDF)",
-          "url": "https://homeland.house.gov/wp-content/uploads/2026/11/2026-11-18-HRG-Testimony-Mullin.pdf"
-        }
-      ],
-      "confirm": [
-        "Drew said 'Mullen': this is Sec. Markwayne Mullin (confirm with Drew)"
-      ],
-      "teaser": "the Homeland Security testimony on those outages",
-      "ptitle": "Mullin on outages and the LSU-Texas flight",
-      "pfact": "DHS Sec. Mullin told House Homeland Security (Nov 18) the outages weren't a coordinated attack; defended flying to the LSU-Texas game.",
-      "pangle": "Fair question or cheap shot? The optics of flying to a game during a grounding.",
-      "pvalley": "DHS runs the border: what are RGV ranchers, bridges and Border Patrol seeing?"
-    },
-    {
-      "id": "snl",
-      "title": "SNL: Mulaney, Bridgers and the 'Sister' sketch",
-      "print": true,
-      "summary": "Nov 14: John Mulaney hosted (7th time), Phoebe Bridgers sang; 'CIA Meeting' cold open roasted tech CEOs; critics called it the season's best.",
-      "angle": "A cold open that skips politics and still lands. 'Sister' hit people in the gut.",
-      "valley": "The cold open roasted the same ground stop that sent HRL, MFE and BRO advisories.",
-      "detail": "Cold open: Mulaney as a CIA officer lecturing Musk, Altman, Thiel, Zuckerberg and Amodei about honey-trap spies after the Jensen Huang scandal; Bowen Yang returned as Huang. Also: 'Sister,' 'Plane Crash,' 'Gettin' It Done,' 'Woodstock,' 'Kathy,' and a Central Park carriage ride musical sketch. Bridgers: 'Bobby' and 'Still Standing.' Reaction: EW 'easily the best episode of this season'; Boston.com 'far and away the best'; ratings 4.45M, down 20% from the prior week (Showbiz411). The 'Sister' video: a pretaped fake elder-care testimonial ad (Jane Wickline as the sister), SNL's YouTube channel, published Nov 14, 2:59, ~5.8M views when checked Nov 18. Last new episode before Thanksgiving; next is in December (Amanda Seyfried, per EW).",
-      "links": [
-        {
-          "label": "YouTube: SNL 'Sister' (the sister video)",
-          "url": "https://www.youtube.com/watch?v=-X9dxL17t1k"
-        },
-        {
-          "label": "YouTube: SNL 'CIA Meeting' cold open",
-          "url": "https://www.youtube.com/watch?v=R_8UPhJNrZ4"
-        },
-        {
-          "label": "EW: SNL recap",
-          "url": "https://ew.com/snl-recap-john-mulaney-hosts-seventh-time-phoebe-bridgers-musical-guest-12253185"
-        },
-        {
-          "label": "Boston.com: SNL recap",
-          "url": "https://www.boston.com/culture/entertainment/2026/11/15/snl-recap-john-mulaney-2026/"
-        },
-        {
-          "label": "Showbiz411: ratings",
-          "url": "https://www.showbiz411.com/2026/11/18/john-mulaney-phoebe-bridgers-snl-best-this-season-drops-back-to-season-average-ratings-down-20-from-last-weeks-high"
-        },
-        {
-          "label": "NBC Insider: monologue and sketches",
-          "url": "https://www.nbc.com/nbc-insider/watch-john-mulaney-november-14-snl-monologue-sketches"
-        }
-      ],
-      "confirm": [
-        "'Sister' = the sister video Drew meant (confirm with Drew)"
-      ],
-      "teaser": "last weekend's Saturday Night Live",
-      "ptitle": "SNL: Mulaney, Bridgers, the 'Sister' sketch",
-      "pfact": "Nov 14: Mulaney hosted (7th time), Bridgers sang; 'CIA Meeting' cold open roasted tech CEOs.",
-      "pangle": "A cold open that skips politics and still lands; 'Sister' hit people in the gut.",
-      "pvalley": "It roasted the same ground stop that put HRL, MFE, BRO on advisory."
-    },
-    {
-      "id": "huang",
-      "title": "Nvidia's Jensen Huang resigns",
-      "print": false,
-      "summary": "Nov 12: Nvidia said Huang resigned as CEO and board member effective immediately; CFO Colette Kress is interim CEO.",
-      "angle": "The AI boom's biggest face is gone, and Nvidia chips still power every data center.",
-      "valley": "Starbase's $24B data center is exactly that kind of AI compute fight.",
-      "detail": "Source for the resignation facts is Nvidia's own press release. Mainstream reports link it to an alleged affair with a suspected Chinese spy (the SNL cold open built on it); verify allegation details through a reported source before characterizing them.",
-      "links": [
-        {
-          "label": "Nvidia press release: CEO transition",
-          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx"
-        }
-      ],
-      "confirm": [
-        "Allegation details (not independently verified here)"
-      ],
-      "teaser": "Nvidia's CEO stepping down"
-    },
-    {
-      "id": "tencom",
-      "title": "Texas Ten Commandments law in doubt",
-      "print": false,
-      "summary": "ABC (Nov 18): Democratic midterm wins put Texas's classroom Ten Commandments mandate in doubt; the law still stands.",
-      "angle": "Whatever you think of it, parents deserve a straight answer on what's on the classroom wall.",
-      "valley": "It applies in every RGV school; ask what your child's classroom has up.",
-      "detail": "ABC reports legal battles over classroom displays are headed toward the Supreme Court. The law remains in effect unless courts or lawmakers change it. Verify details of repeal efforts before airing.",
-      "links": [
-        {
-          "label": "ABC: Democratic wave upends Ten Commandments battle in Texas classrooms",
-          "url": "https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010"
-        }
-      ],
-      "confirm": [
-        "Details of any repeal bill (verify)"
-      ],
-      "teaser": "the future of Texas' Ten Commandments law"
-    }
-  ],
-  "weather": {
-    "mode": "nws",
-    "lat": 26.2034,
-    "lon": -98.23,
-    "note": "McAllen / Rio Grande Valley; NWS Brownsville (BRO) forecast"
-  },
-  "sports": {
-    "highSchool": {
-      "title": "RGV High School Football Playoffs",
-      "round": "Bi-District results (Nov 12-14); Area round this week",
-      "sourceNote": "RGVSports.com scoreboard (updated Nov 18); Daily McAllen Nov 14; KRGV",
-      "results": [
-        {
-          "title": "PSJA North 64, Edinburg 10 (6A-II)",
-          "short": "PSJA North 64, Edinburg 10",
-          "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
-          "source": "RGVSports"
-        },
-        {
-          "title": "Weslaco 43, Los Fresnos 3 (6A-I)",
-          "short": "Weslaco 43, Los Fresnos 3",
-          "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
-          "source": "RGVSports"
-        },
-        {
-          "title": "Harlingen 51, La Joya 50 (6A-I)",
-          "short": "Harlingen 51, La Joya 50",
-          "url": "https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/",
-          "source": "RGVSports"
-        },
-        {
-          "title": "Edinburg Vela 42, Brownsville Veterans 20 (6A-II)",
-          "short": "Vela 42, Brownsville Vets 20",
-          "url": "https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/",
-          "source": "RGVSports"
-        },
-        {
-          "title": "McAllen High 62, Weslaco East 19 (5A-I)",
-          "short": "McAllen 62, Weslaco East 19",
-          "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
-          "source": "RGVSports"
-        },
-        {
-          "title": "McAllen Rowe 44, Flour Bluff 28 (5A-I)",
-          "short": "McAllen Rowe 44, Flour Bluff 28",
-          "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
-          "source": "RGVSports",
-          "confirm": "Opponent changed on RGVSports Nov 18 (earlier listing said Sharyland High); CONFIRM BEFORE AIR"
-        },
-        {
-          "title": "Mercedes 44, Mission Veterans 42 (5A-II)",
-          "short": "Mercedes 44, Mission Vets 42",
-          "url": "https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/",
-          "source": "RGVSports"
-        },
-        {
-          "title": "Sharyland 31, Brownsville Pace 20 (5A-II)",
-          "short": "Sharyland 31, Brownsville Pace 20",
-          "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
-          "source": "RGVSports"
-        },
-        {
-          "title": "CC Veterans 59, McAllen Memorial 23 (5A-I)",
-          "short": "CC Vets 59, McAllen Memorial 23",
-          "url": "https://dailymcallen.com/local-news/editions/11-14-2026",
-          "source": "Daily McAllen / KRIS 6"
-        },
-        {
-          "title": "CC Carroll 48, La Joya Palmview 17 (5A-I)",
-          "short": "CC Carroll 48, Palmview 17",
-          "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
-          "source": "RGVSports"
-        },
-        {
-          "title": "Gregory-Portland 68, Sharyland Pioneer 16 (5A-II)",
-          "short": "Gregory-Portland 68, Pioneer 16",
-          "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
-          "source": "RGVSports"
-        },
-        {
-          "title": "Calallen 64, Hidalgo 0 (4A-I)",
-          "short": "Calallen 64, Hidalgo 0",
-          "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
-          "source": "RGVSports"
-        },
-        {
-          "title": "Port Lavaca Calhoun 17, Edcouch-Elsa 3 (4A-I)",
-          "short": "Calhoun 17, Edcouch-Elsa 3",
-          "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
-          "source": "RGVSports"
-        },
-        {
-          "title": "Orange Grove 35, Raymondville 28 (3A-I)",
-          "short": "Orange Grove 35, Raymondville 28",
-          "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
-          "source": "RGVSports"
-        },
-        {
-          "title": "La Villa 67, Pettus 0 (2A-II)",
-          "short": "La Villa 67, Pettus 0",
-          "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
-          "source": "RGVSports"
-        }
-      ],
-      "next": [
-        {
-          "title": "Thu Nov 19: Weslaco at SA Brennan 6 PM; McAllen vs Boerne Champion 7 PM (Laredo); Mercedes vs Boerne 7 PM (Laredo); Sharyland vs Alamo Heights 7 PM (Corpus Christi)",
-          "short": "Thu: Weslaco @ SA Brennan 6; McAllen v Boerne Champion 7; Mercedes v Boerne 7; Sharyland v Alamo Heights 7",
-          "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
-          "source": "RGVSports"
-        },
-        {
-          "title": "Fri Nov 20: Harlingen vs SA Harlan 7 PM; PSJA North vs SA Warren 7 PM (Alice); McAllen Rowe vs Smithson Valley 7 PM; La Villa vs Chilton 7 PM",
-          "short": "Fri: Harlingen v SA Harlan; PSJA North v SA Warren; Rowe v Smithson Valley; La Villa v Chilton (all 7)",
-          "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
-          "source": "RGVSports"
-        },
-        {
-          "title": "Sat Nov 21: SA Sotomayor at Edinburg Vela 3 PM",
-          "short": "Sat: SA Sotomayor @ Vela 3 PM",
-          "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
-          "source": "RGVSports"
-        }
-      ],
-      "note": "Area-round results will be in the real Monday packet. College: Stephen F. Austin 48, UTRGV 0 (Nov 14).",
-      "college": {
-        "title": "UTRGV falls 48-0 to No. 7 SFA in the home finale (UTRGV 5-6)",
-        "short": "UTRGV 0, Stephen F. Austin 48 (Nov 14)",
-        "url": "https://gooddayedinburg.com/local-news/editions/11-15-2026",
-        "source": "Good Day Edinburg / CBS Sports"
-      }
-    },
-    "nfl": {
-      "title": "NFL Week 10",
-      "scoreSource": {
-        "title": "NFL.com scores, Week 10",
-        "short": "",
-        "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
-        "source": "NFL.com"
-      },
-      "scores": [
-        [
-          "Thu Nov 12",
-          "WAS 24, NYG 21"
-        ],
-        [
-          "Sun Nov 15",
-          "DET 35, NE 10 (Munich)"
-        ],
-        [
-          "Sun Nov 15",
-          "KC 35, ATL 13"
-        ],
-        [
-          "Sun Nov 15",
-          "CLE 27, HOU 24"
-        ],
-        [
-          "Sun Nov 15",
-          "MIN 30, GB 10"
-        ],
-        [
-          "Sun Nov 15",
-          "IND 24, MIA 22"
-        ],
-        [
-          "Sun Nov 15",
-          "CAR 20, NO 17"
-        ],
-        [
-          "Sun Nov 15",
-          "BUF 31, NYJ 12"
-        ],
-        [
-          "Sun Nov 15",
-          "JAX 40, TEN 23"
-        ],
-        [
-          "Sun Nov 15",
-          "LAR 34, ARI 6"
-        ],
-        [
-          "Sun Nov 15",
-          "SEA 21, LV 13"
-        ],
-        [
-          "Sun Nov 15",
-          "SF 46, DAL 40"
-        ],
-        [
-          "Sun Nov 15",
-          "CIN 38, PIT 18 (SNF)"
-        ],
-        [
-          "Mon Nov 16",
-          "LAC 23, BAL 20 (MNF)"
-        ]
-      ],
-      "notable": [
-        {
-          "title": "Burrow threw for 409 and Chase had 231 receiving yards in Cincinnati's 38-18 win over Pittsburgh",
-          "short": "Burrow 409 yds, Chase 231 yds in CIN 38-18 win",
-          "url": "https://www.pro-football-reference.com/years/2026/week_10.htm",
-          "source": "Pro-Football-Reference"
-        },
-        {
-          "title": "49ers beat the Cowboys 46-40 (Purdy 389 yds); SF and BUF lead at 8-1; Cowboys 4-6, Texans 3-6",
-          "short": "SF 46-40 over Dallas; Cowboys 4-6, Texans 3-6",
-          "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
-          "source": "NFL.com / PFR"
-        },
-        {
-          "title": "Week 11: Colts at Texans Thu Nov 19; Titans at Cowboys Sun Nov 22; Bengals at Commanders Mon Nov 23",
-          "short": "Week 11: Colts @ Texans Thu; Titans @ Cowboys Sun; Bengals @ Commanders Mon",
-          "url": "https://www.footballdb.com/games/index.html?yr=2026",
-          "source": "FootballDB schedule"
-        }
-      ]
-    },
-    "nba": {
-      "title": "NBA",
-      "scoreSource": {
-        "title": "Basketball-Reference: Nov 17 scores",
-        "short": "",
-        "url": "https://www.basketball-reference.com/boxscores/",
-        "source": "Basketball-Reference"
-      },
-      "scores": [
-        [
-          "Tue Nov 17",
-          "NYK 111, TOR 102"
-        ],
-        [
-          "Tue Nov 17",
-          "MIN 106, POR 105"
-        ],
-        [
-          "Tue Nov 17",
-          "DET 105, SAS 93"
-        ],
-        [
-          "Tue Nov 17",
-          "UTA 132, LAC 107"
-        ],
-        [
-          "Tue Nov 17",
-          "LAL 118, CHA 114 (OT)"
-        ]
-      ],
-      "texas": [
-        [
-          "Mon Nov 16",
-          "MIA 128, HOU 110"
-        ],
-        [
-          "Sun Nov 15",
-          "BOS 131, DAL 94"
-        ]
-      ],
-      "notable": [
-        {
-          "title": "Lakers (13-2) have won nine straight; Quentin Grimes scored 47 in the OT win over Charlotte",
-          "short": "Lakers 13-2, nine straight; Grimes 47 in OT win",
-          "url": "https://buzzerbeaternews.com/news/nba-scores-last-night-2026-11-17/",
-          "source": "Buzzer Beater News"
-        },
-        {
-          "title": "Spurs are 12-3 despite the loss to Detroit; Magic snapped Boston's six-game win streak Monday",
-          "short": "Spurs 12-3; Magic snapped Celtics' 6-game streak",
-          "url": "https://www.nba.com/news/starting-5-november-17-2026",
-          "source": "NBA.com"
-        },
-        {
-          "title": "Texas teams: Rockets lost at Miami 128-110 (Nov 16); Mavericks lost at Boston 131-94 (Nov 15)",
-          "short": "Rockets lost at MIA 128-110; Mavs lost at BOS 131-94",
-          "url": "https://statsnext.com/nba/games/2026-11",
-          "source": "StatsNext"
-        }
-      ]
-    },
-    "mlb": {
-      "title": "MLB: OFFSEASON (no scores)",
-      "offseason": true,
-      "note": "MLB is in the offseason in November, so this card shows news instead of scores. The Brewers are 2026 World Series champions.",
-      "notable": [
-        {
-          "title": "Skubal sweepstakes: Mets, Blue Jays, Dodgers and Padres have met or are set to meet; a deal is expected before the CBA expires Dec. 1 (11:59 PM ET)",
-          "short": "Skubal talks: Mets, Jays, Dodgers, Padres; deal expected before CBA expires Dec 1",
-          "url": "https://www.mlb.com/news/tarik-skubal-rumors-november-17-free-agent-update",
-          "source": "MLB.com"
-        },
-        {
-          "title": "Twins agree to 2 years, $55M with Sonny Gray; White Sox land Dustin May (3 yrs, ~$52.5M)",
-          "short": "Gray to Twins (2y, $55M); May to White Sox (3y, ~$52.5M)",
-          "url": "https://www.espn.com/mlb/story/_/id/50328768/free-agency-tracker-offseason-trades-moves-2026-2027",
-          "source": "ESPN tracker"
-        },
-        {
-          "title": "Mariners get Maikel Garcia from Royals in a six-player trade; Astros are gauging interest in Christian Walker",
-          "short": "Mariners get M. Garcia (6-player deal); Astros shop C. Walker",
-          "url": "https://www.mlb.com/news/mlb-rumors-and-2026-27-free-agent-news-november-18",
-          "source": "ESPN / MLB.com"
-        }
-      ]
-    }
-  },
-  "memes": {
-    "tagline": "Drew & Jess are watching the feeds so you don't have to",
-    "intro": "What your kids might be saying at school this week, and one line on how to bring it up.",
-    "memeOfTheWeek": "talk-doja",
-    "levels": [
-      {
-        "level": "Elementary",
-        "icon": "🎒",
-        "items": [
-          {
-            "id": "roblox",
-            "title": "Roblox: 'Steal An Egg' & 'Throw Food For Animals'",
-            "what": "Steal An Egg is Roblox's #1 game (about 1.17M playing); Throw Food For Animals is #2 and up 58% on the week.",
-            "means": "Pet-collecting games where other players can take your eggs; paid boosts are optional.",
-            "tip": "Ask 'who's stealing your eggs?' Set chat to friends-only and a spending limit.",
-            "links": [
-              {
-                "label": "RBLXSTAT: Roblox weekly report Nov 9-15",
-                "url": "https://rblxstat.com/blog/roblox-weekly-report-2026-11-15"
-              },
-              {
-                "label": "SafeScreens: Roblox parent's guide",
-                "url": "https://safescreens.us/guides/gaming/roblox-experiences"
-              },
-              {
-                "label": "RoStats: Top Roblox games Nov 2026",
-                "url": "https://rostats.io/charts/2026-11"
-              }
-            ],
-            "confirm": [],
-            "pwhat": "Roblox's #1 game: pet-collecting 'Steal An Egg' (1.17M playing); other players can grab your eggs.",
-            "ptip": "Ask 'who's stealing your eggs?' Friends-only chat, spending limit."
-          },
-          {
-            "id": "six-seven",
-            "title": "'6-7'",
-            "what": "A catchphrase kids yell for laughs, often with a hands-weighing gesture.",
-            "means": "No fixed meaning; some link it to LaMelo Ball (6'7\"). Already being mocked as overused.",
-            "tip": "Laugh and ask them to show you the gesture; it's meant to confuse adults.",
-            "links": [
-              {
-                "label": "Reader's Digest: Gen Alpha slang",
-                "url": "https://www.rd.com/article/gen-alpha-slang/"
-              },
-              {
-                "label": "MadeForMums: parents' guide to slang",
-                "url": "https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/"
-              }
-            ],
-            "confirm": [],
-            "pwhat": "Catchphrase kids yell with a hands-weighing gesture; no fixed meaning, already called overused.",
-            "ptip": "Ask them to show you the gesture; it's meant to confuse adults."
-          }
-        ]
-      },
-      {
-        "level": "Middle School",
-        "icon": "📱",
-        "items": [
-          {
-            "id": "talk-doja",
-            "title": "'Talk To Me Doja' (Meme of the Week)",
-            "what": "A TikTok dance trend copying a dance from the anime 'Yamada-kun and the Seven Witches' set to Doja Cat's 'Like That' (started Nov 7).",
-            "means": "Kids film their own version next to the anime clip.",
-            "tip": "Ask 'show me the dance?' Check the anime's rating before streaming it.",
-            "links": [
-              {
-                "label": "Know Your Meme: Talk To Me Doja",
-                "url": "https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained"
-              }
-            ],
-            "confirm": [
-              "Popularity is TikTok-side; X shows only ~38 posts in 7 days"
-            ],
-            "pwhat": "TikTok dance copying a scene from anime 'Yamada-kun and the Seven Witches' set to Doja Cat's 'Like That.'",
-            "ptip": "Ask 'show me the dance?' Check the anime's rating first."
-          },
-          {
-            "id": "pennywide",
-            "title": "'Pennywide' meme",
-            "what": "A Halloween trick-or-treat video of a child in a Pennywise mask went viral and became memes mocking him.",
-            "means": "A cruelty meme aimed at a real kid, remixed into brainrot edits.",
-            "tip": "Ask 'would you laugh if that was your cousin?' It's a natural bridge to the bullying talk.",
-            "links": [
-              {
-                "label": "Know Your Meme: Pennywide",
-                "url": "https://trending.knowyourmeme.com/editorials/guides/what-is-the-pennywide-meme-the-viral-pennywise-house-video-and-memes-explained"
-              }
-            ],
-            "confirm": [],
-            "pwhat": "Viral Halloween video of a kid in a Pennywise mask, turned into memes mocking him: cruelty aimed at a real kid.",
-            "ptip": "Ask 'would you laugh if that was your cousin?' Bridge to the bullying talk."
-          }
-        ]
-      },
-      {
-        "level": "High School",
-        "icon": "🎓",
-        "items": [
-          {
-            "id": "door-kick",
-            "title": "The Door Kick Challenge",
-            "what": "A TikTok trend: kick or pound a stranger's front door, film it, run.",
-            "means": "Police say it can mean vandalism, trespass or burglary charges, and a scared homeowner may react.",
-            "tip": "It's a crime, not a prank; Irvine PD says parents can be held accountable. Ask what they'd do if friends filmed it.",
-            "links": [
-              {
-                "label": "ABC7: Irvine police warning (Nov 12)",
-                "url": "https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/"
-              },
-              {
-                "label": "WBBH: Cape Coral incident (Nov 16)",
-                "url": "https://www.gulfcoastnewsnow.com/article/video-door-kick-challenge-cape-coral-florida/74444521"
-              },
-              {
-                "label": "KOBI: Talent, Oregon (Nov 12)",
-                "url": "https://kobi5.com/news/door-kicking-trend-is-growing-locally-five-incidents-reported-in-talent-319588/"
-              }
-            ],
-            "confirm": [
-              "No RGV incident found; X shows only ~39 posts in 7 days"
-            ],
-            "pwhat": "TikTok trend: pound on a stranger's door, film it, run. Police say vandalism, trespass or worse.",
-            "ptip": "A crime, not a prank; parents can be held accountable. What if friends filmed it?"
-          },
-          {
-            "id": "slang",
-            "title": "Slang: aura, aura farming, cooked",
-            "what": "'Aura' = someone's vibe; 'aura farming' = doing things to look cool online; 'cooked' = in trouble.",
-            "means": "Words to question: 'huzz,' 'bop,' 'big back' can objectify or mock women and bodies.",
-            "tip": "Be curious, not corrective: ask what a word means. Terms burn out fast.",
-            "links": [
-              {
-                "label": "MadeForMums: 45 Gen Alpha slang words",
-                "url": "https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/"
-              },
-              {
-                "label": "Reader's Digest: 24 Gen Alpha slang terms",
-                "url": "https://www.rd.com/article/gen-alpha-slang/"
-              },
-              {
-                "label": "Hello!: how to respond to bizarre slang",
-                "url": "https://www.hellomagazine.com/healthandbeauty/mother-and-baby/878329/your-gen-alpha-child-increasingly-bizarre-slang-how-to-respond/"
-              }
-            ],
-            "confirm": [],
-            "pwhat": "'Aura' = vibe; 'aura farming' = acting cool online; 'cooked' = in trouble. Question 'huzz,' 'bop,' 'big back.'",
-            "ptip": "Be curious: ask what a word means."
-          },
-          {
-            "id": "gta6",
-            "title": "GTA 6 launch week",
-            "what": "GTA VI was set to release Thu Nov 19 at midnight, rated M (17+). X volume jumped to ~255k posts on Nov 18.",
-            "means": "Late nights and possible skipped school; some UK schools set attendance prizes.",
-            "tip": "Is 17+ a rule or a suggestion at your house? (Jess has more on this in Block C.)",
-            "links": [
-              {
-                "label": "ABC News: parents and GTA 6",
-                "url": "https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889"
-              },
-              {
-                "label": "Independent: UK schools and GTA 6",
-                "url": "https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html"
-              }
-            ],
-            "confirm": [
-              "Launch actually happened on time Nov 19"
-            ],
-            "pwhat": "GTA VI launches Thu Nov 19 at midnight, rated M (17+); ~255k X posts Nov 18. Late nights, skipped school.",
-            "ptip": "Is 17+ a rule or a suggestion at your house?"
-          }
-        ]
-      }
+   },
+   {
+    "title": "McAllen city manager: $17.5B in retail sales (2023, Dallas Fed), ~28% from Mexican shoppers; ~$99M sales tax through Sept 2026",
+    "short": "McAllen: $17.5B retail, 28% from Mexican shoppers",
+    "url": "https://texasborderbusiness.com/mcallen-retail-sales-reach-17-5-billion-as-sales-tax-revenues-continue-to-climb/",
+    "source": "Texas Border Business · Nov 18",
+    "published": "2026-11-18T16:16:00-06:00",
+    "valley": true
+   },
+   {
+    "title": "Cameron County Elections Administrator Remi Garza resigns for a Secretary of State job; last day Dec. 14",
+    "short": "Cameron Co. elections chief Remi Garza resigns (last day Dec 14)",
+    "url": "https://www.krgv.com/news/cameron-county-election-commission-to-appoint-new-administrator-following-garza-s-resignation/",
+    "source": "KRGV · Nov 18",
+    "valley": true,
+    "links": [
+     {
+      "label": "MyRGV: Garza takes Secretary of State job",
+      "url": "https://myrgv.com/local-news/2026/11/18/cameron-county-election-admin-resigns-takes-secretary-of-state-job/"
+     }
     ]
+   },
+   {
+    "title": "Cameron County ballots pulled for Texas's first statewide risk-limiting audit: U.S. Senate, Supreme Court chief justice, county clerk",
+    "short": "Cameron Co. in 1st statewide election audit (3 races)",
+    "url": "https://www.krgv.com/news/cameron-county-elections-department-to-review-three-races-as-part-of-first-statewide-audit/",
+    "source": "KRGV · Nov 18",
+    "valley": true
+   },
+   {
+    "title": "Congressman-elect Bobby Pulido hosts a free Friends' Thanksgiving Celebration Mon Nov 23, 11 AM-2 PM, Bert Ogden Arena",
+    "short": "Pulido's free Thanksgiving event Mon 11/23, Bert Ogden Arena",
+    "url": "https://tejanonation.net/2026/11/18/bobby-pulido-friends-thanksgiving-celebration-edinburg-2026/",
+    "source": "Tejano Nation · Nov 18",
+    "valley": true,
+    "confirm": "Event details from Pulido's social post via Tejano Nation"
+   },
+   {
+    "title": "Weslaco family waits on appeals court in wrongful-death suit over 17-year-old who drank energy drinks; arguments heard Nov 18",
+    "short": "Weslaco energy-drink death suit goes to appeals court",
+    "url": "https://www.krgv.com/news/weslaco-family-waits-as-appeals-court-reviews-wrongful-death-lawsuit-against-energy-drink-distributor/",
+    "source": "KRGV · Nov 18",
+    "valley": true,
+    "chatter": {
+     "posts": 1,
+     "engagement": 210
+    }
+   },
+   {
+    "title": "Edinburg CISD asks families for input after losing ~2,000 students since the pandemic",
+    "short": "Edinburg CISD survey after losing ~2,000 students",
+    "url": "https://www.krgv.com/news/edinburg-cisd-launches-survey-seeking-input-on-improvement/",
+    "source": "KRGV · Nov 18",
+    "valley": true
+   },
+   {
+    "title": "State Sen. Chuy Hinojosa asks TxDMV to rescind rule requiring proof of legal status to register a vehicle (board meets Dec. 10)",
+    "short": "Sen. Hinojosa: rescind DMV legal-status registration rule",
+    "url": "https://myrgv.com/local-news/2026/11/18/texas-senator-calls-for-dmv-to-rescind-new-vehicle-registration-legal-status-rule/",
+    "source": "MyRGV · Nov 18",
+    "valley": true,
+    "chatter": {
+     "posts": 1,
+     "engagement": 108
+    }
+   },
+   {
+    "title": "Pedestrian study ordered for the University Dr. crosswalk near UTRGV after Rep. Terry Canales raised safety concerns",
+    "short": "Study of risky UTRGV crosswalk after Canales complaint",
+    "url": "https://www.krgv.com/news/safety-concerns-prompt-pedestrian-study-of-busy-crosswalk-near-utrgv-in-edinburg/",
+    "source": "KRGV · Nov 18",
+    "valley": true,
+    "noprint": true
+   },
+   {
+    "title": "Alton starts its first-ever 20-year comprehensive plan ($250K FEMA grant via the GLO); wants resident input",
+    "short": "Alton's first comprehensive plan wants resident input",
+    "url": "https://www.krgv.com/news/city-of-alton-wants-residents-to-help-shape-first-ever-comprehensive-plan/",
+    "source": "KRGV · Nov 18",
+    "valley": true,
+    "noprint": true
+   },
+   {
+    "title": "Mission councilwoman Jessica Ortega sworn in for a fourth term",
+    "short": "Mission's Jessica Ortega sworn in for 4th term",
+    "url": "https://myrgv.com/local-news/2026/11/18/jessica-ortega-sworn-in-after-voters-elect-her-to-fourth-term-with-mission/",
+    "source": "MyRGV · Nov 18",
+    "valley": true,
+    "noprint": true
+   },
+   {
+    "title": "Mission bans loud dog barking 10 PM-6 AM, caps hens at four, bans roosters",
+    "short": "Mission: no loud barking 10 PM-6 AM; 4-hen cap",
+    "url": "https://dailymcallen.com/local-news/editions/11-19-2026",
+    "source": "Daily McAllen · Nov 19",
+    "valley": true,
+    "noprint": true
+   },
+   {
+    "title": "Von Miller visits McAllen ahead of the Dec. 5 Holiday Parade ('Wild Christmas')",
+    "short": "Von Miller in McAllen; Holiday Parade Dec 5",
+    "url": "https://texasborderbusiness.com/nfl-star-von-miller-receives-warm-welcome-in-mcallen-ahead-of-holiday-parade/",
+    "source": "Texas Border Business · Nov 18",
+    "valley": true,
+    "noprint": true
+   },
+   {
+    "title": "Head football coaches at Edinburg North and Port Isabel resign",
+    "short": "Edinburg North, Port Isabel head coaches resign",
+    "url": "https://www.valleycentral.com/local-sports/edinburg-north-port-isabel-head-football-coaches-resign/",
+    "source": "ValleyCentral · Nov 18",
+    "valley": true,
+    "noprint": true,
+    "confirm": "ValleyCentral page bot-walled; headline only, details not read"
+   },
+   {
+    "title": "Two charged with murder in Brownsville homicide investigation that began with a crash",
+    "short": "Two charged with murder in Brownsville homicide",
+    "url": "https://www.krgv.com/news/two-suspects-charged-with-murder-after-brownsville-crash-leads-to-homicide-investigation/",
+    "source": "KRGV · Nov 18",
+    "valley": true,
+    "noprint": true,
+    "chatter": {
+     "posts": 2,
+     "engagement": 729
+    }
+   },
+   {
+    "title": "Mission mayor and council races head to Dec. 12 runoffs",
+    "short": "Mission mayor, council races go to Dec 12 runoffs",
+    "url": "https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/",
+    "source": "KRGV",
+    "teaser": "Mission heading to a December 12th runoff",
+    "noprint": true
+   },
+   {
+    "title": "Texas A&M McAllen to build $50M health education building",
+    "short": "Texas A&M McAllen: $50M health building, starts Dec",
+    "url": "https://dailymcallen.com/local-news/editions/11-18-2026",
+    "source": "Daily McAllen · Nov 18",
+    "teaser": "a new Texas A&M health building in McAllen",
+    "noprint": true
+   },
+   {
+    "title": "McAllen Food Truck Park closure delayed to Jan. 14, 2027",
+    "short": "Food Truck Park closure moved to Jan 14, 2027",
+    "url": "https://dailymcallen.com/local-news/editions/11-17-2026",
+    "source": "Daily McAllen · Nov 17",
+    "teaser": "the McAllen Food Truck Park's new closing date",
+    "noprint": true
+   }
+  ],
+  "texas": [
+   {
+    "title": "Texas public schools lost ~135,000 students this year, the largest one-year drop in state history (TEA)",
+    "short": "Texas schools lose ~135K students, a record drop",
+    "url": "https://communityimpact.com/central-austin/education/texas-public-schools-lost-135k-students-this-school-year-largest-decline-in-state-history/",
+    "source": "Community Impact · Nov 18",
+    "links": [
+     {
+      "label": "Texas Tribune",
+      "url": "https://www.texastribune.org/2026/11/18/texas-student-enrollment-decline-challenges/"
+     }
+    ]
+   },
+   {
+    "title": "Tesla weighs a $3.1B polysilicon plant near Robstown (515 jobs by 2032) and asks Tuloso-Midway ISD for a JETI tax break",
+    "short": "Tesla eyes $3.1B Robstown plant, seeks school tax break",
+    "url": "https://www.kiiitv.com/article/news/local/tesla-plans-31-billion-solar-materials-plant-near-robstown/503-85e31b2e-ab9d-4e9b-b87b-9731c391f939",
+    "source": "KIII · Nov 18"
+   },
+   {
+    "title": "Gov.-elect Gina Hinojosa says she talked border security with Trump; told him Big Bend residents prefer electronic monitoring to a wall",
+    "short": "Hinojosa talked border with Trump; monitoring over wall",
+    "url": "https://www.texastribune.org/2026/11/18/gina-hinojosa-texas-governor-elect-interview/",
+    "source": "Texas Tribune · Nov 18"
+   },
+   {
+    "title": "Sen. John Cornyn blocks Trump's late pick (Elliot Gaiser) for a North Texas federal judgeship: not a Texan, not vetted",
+    "short": "Cornyn blocks Trump judicial pick before Dems take Senate",
+    "url": "https://www.texastribune.org/2026/11/18/texas-john-cornyn-trump-judge-gaiser-blocked/",
+    "source": "Texas Tribune · Nov 18"
+   },
+   {
+    "title": "How Texas Republicans' 2025 congressional gerrymander fell short (incl. Cuellar's Laredo race)",
+    "short": "Why the GOP's 2025 Texas map fell short",
+    "url": "https://www.texastribune.org/2026/11/19/texas-redistricting-2026-midterms-gop-congressional-map/",
+    "source": "Texas Tribune · Nov 19",
+    "noprint": true
+   },
+   {
+    "title": "Democrats' statewide sweep reshapes Texas's high courts",
+    "short": "Blue wave reshapes Texas's top courts",
+    "url": "https://myrgv.com/wire/2026/11/18/republicans-spent-years-remaking-texas-courts-in-their-image-voters-unraveled-it-in-one-election/",
+    "source": "MyRGV (Texas Tribune) · Nov 18",
+    "noprint": true
+   }
+  ]
+ },
+ "nationalDesk": [
+  {
+   "id": "trilateral",
+   "title": "Trump, Xi and Putin hold the first-ever three-way summit (Shenzhen, APEC)",
+   "print": true,
+   "summary": "Nov 19: Xi hosted Trump and Putin for unprecedented trilateral talks on the APEC sidelines in Shenzhen; Ukraine and nuclear arms control on the agenda.",
+   "angle": "(Opinion) Three guys who don't trust each other in one room is either history or a photo op. We'll know by what happens after.",
+   "valley": "Trade with China and Mexico moves through our bridges and ports; any tariff or trade shift shows up in McAllen first.",
+   "links": [
+    {
+     "label": "NPR: Trump, Xi and Putin meet",
+     "url": "https://www.npr.org/2026/11/18/nx-s1-6040432/trump-xi-and-putin-shenzhen-china-russia-usa"
+    },
+    {
+     "label": "CNA: talks with Ukraine, nuclear arms on agenda",
+     "url": "https://www.channelnewsasia.com/east-asia/trump-xi-putin-trilateral-talks-apec-shenzhen-6563591"
+    }
+   ],
+   "confirm": "Outcomes still coming in; check for any agreement before air",
+   "teaser": "the first-ever Trump, Xi and Putin summit",
+   "pfact": "Nov 19: Xi hosted Trump and Putin in Shenzhen, the first-ever three-way summit; Ukraine, nukes on agenda.",
+   "pangle": "History, or the world's most expensive photo op?",
+   "pvalley": "Trade shifts hit our bridges and ports first."
   },
-  "trending": [
+  {
+   "id": "iran",
+   "title": "Iran targets a U.S. air base in Kuwait and sites in Bahrain",
+   "print": true,
+   "summary": "Nov 18: Iran fired drones at Ali Al Salem Air Base in Kuwait and at Bahrain after a U.S. strike on Qeshm Island; both said they intercepted them, no damage reported.",
+   "angle": "(Opinion) Nine months into this war, a quiet two months just ended. Nobody should be surprised, but everybody should be paying attention.",
+   "valley": "Valley military families and gas prices: watch the pump (KRGV's Pump Patrol) as Gulf tension rises.",
+   "links": [
     {
-      "id": "cma",
-      "title": "Ella Langley sweeps the CMA Awards with 'Choosin' Texas'",
-      "category": "culture",
-      "one_line": "At the 60th CMA Awards (Nov 18) Ella Langley won Single, Song and Music Video of the Year for 'Choosin' Texas'; Taylor Swift performed for the first time in 13 years and Lainey Wilson hosted.",
-      "suggested_angle": "Country's biggest night went to a song with Texas in the title. Wait, don't tell me who's spinning it most in the Valley, and does Lainey's 'Somewhere Over Laredo' count as a local song?",
-      "source_url": "https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/",
-      "source": "Variety · Nov 18",
-      "short": "CMAs: Ella Langley wins 3 for 'Choosin' Texas'; Swift performs",
-      "teaser": "Ella Langley's big night at the CMA Awards",
-      "verified": true,
-      "confirm": "",
-      "print": true,
-      "links": [
-        {
-          "label": "USA Today: full winners list",
-          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/18/cma-awards-2026-winners-list/92853447007/"
-        },
-        {
-          "label": "Billboard: winners, updating live",
-          "url": "https://www.billboard.com/music/awards/cma-2026-winners-list-1236385046/"
-        }
-      ],
-      "image_url": "",
-      "image_credit": "",
-      "video_url": ""
+     "label": "NBC/AP: Iran widens Gulf attacks",
+     "url": "https://www.nbcnews.com/world/iran/iran-widens-gulf-attacks-targeting-us-air-base-kuwait-sites-bahrain-rcna610128"
     },
     {
-      "id": "musk",
-      "title": "Musk at DealBook: 'I'm not MAGA'",
-      "category": "politics/tech",
-      "one_line": "Speaking by video from China at the NYT DealBook Summit (Nov 18), Elon Musk said 'I'm not MAGA' and that he has no extreme political views, after reportedly spending about $445M backing Republicans who lost in the midterms.",
-      "suggested_angle": "The Starbase landlord just told the country he's not MAGA. Can a billionaire un-endorse the team he bankrolled, and does it change how Cameron County deals with SpaceX?",
-      "source_url": "https://techcrunch.com/2026/11/18/elon-musk-says-im-not-maga/",
-      "source": "TechCrunch · Nov 18",
-      "short": "Musk at DealBook: 'I'm not MAGA'",
-      "teaser": "Elon Musk saying he's not MAGA",
-      "verified": true,
-      "confirm": "",
-      "print": true,
-      "links": [],
-      "image_url": "",
-      "image_credit": "",
-      "video_url": ""
+     "label": "BBC: Kuwait repels first attack in two months",
+     "url": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o"
     },
     {
-      "id": "quince",
-      "title": "A nearly empty quince becomes an all-night stadium party",
-      "category": "viral",
-      "one_line": "A 15-year-old in Axtla de Terrazas, Mexico saw few guests at her quinceañera; the story went viral and thousands filled the town stadium for an all-night celebration in the rain (AP, Nov 18).",
-      "suggested_angle": "Every Valley family has a quince story. What's the most extra quince you've ever been to, and would you show up for a stranger's?",
-      "source_url": "https://apnews.com/article/mexico-quinceanera-san-luis-potosi-isela-santiago-36f8d9a1f1dd69f05e8a6e92027cbc49",
-      "source": "AP · Nov 18",
-      "short": "Empty quince turns into all-night stadium party",
-      "teaser": "a Mexican teen's quinceañera that packed a stadium",
-      "verified": true,
-      "confirm": "",
-      "print": true,
-      "links": [
-        {
-          "label": "AP video version",
-          "url": "https://apnews.com/video/from-empty-party-to-an-all-night-stadium-bash-a-mexican-teens-15th-birthday-goes-viral-9f0d2688f5894ac1b1e452f9ff73d4dc"
-        }
-      ],
-      "image_url": "",
-      "image_credit": "",
-      "video_url": ""
-    },
-    {
-      "id": "giannis",
-      "title": "Giannis faces the Bucks for the first time as a Heat player",
-      "category": "sports",
-      "one_line": "Giannis Antetokounmpo (20 points, 11 rebounds, 9 assists) and the Heat beat the 1-13 Bucks on Nov 18, his first game against Milwaukee since the offseason trade; he called it 'just another game.' He also scored 20 in Monday's 128-110 win over Houston.",
-      "suggested_angle": "'Emotions are for the movies.' Would you be that cool facing your old job? And he just beat the Rockets on Monday, so Houston fans have opinions.",
-      "source_url": "https://www.cbssports.com/nba/news/giannis-antetokounmpo-set-to-face-bucks-for-first-time-with-heat/",
-      "source": "CBS Sports · Nov 18",
-      "short": "Giannis faces the Bucks for the first time; Heat win",
-      "teaser": "Giannis facing his old team, the Bucks",
-      "verified": true,
-      "confirm": "Final margin not independently confirmed; the NBA.com box score shows Heat 128.",
-      "print": true,
-      "links": [
-        {
-          "label": "NBA.com box score (Heat vs Bucks)",
-          "url": "https://www.nba.com/bucks/game/0022600260-bucks-vs-heat-miami-fl-11-18-2026"
-        },
-        {
-          "label": "GMA/Reuters: 'just another game'",
-          "url": "https://www.gmanetwork.com/news/sports/basketball/1009886/nba-giannis-antetokounmpo-downplays-emotions-as-heat-face-bucks/story/"
-        }
-      ],
-      "image_url": "",
-      "image_credit": "",
-      "video_url": ""
-    },
-    {
-      "id": "bond",
-      "title": "Bezos: Pattinson was picked as Bond just three days before the announcement",
-      "category": "celebrity",
-      "one_line": "Jeff Bezos said Robert Pattinson was chosen as the new James Bond on Fri Nov 13, after full-costume screen tests with five finalists; Amazon MGM announced it Mon Nov 16.",
-      "suggested_angle": "Batman to 007. Who's your Bond, and is it weird that the guy who owns Amazon made the call? Wait, don't tell me you picked Daniel Craig forever.",
-      "source_url": "https://apnews.com/article/james-bond-jeff-bezos-robert-pattinson-a90f280d9e4fed9c7fd72ab6a4851945",
-      "source": "AP · Nov 18",
-      "short": "Bezos: Pattinson picked as Bond 3 days before announcement",
-      "teaser": "Robert Pattinson becoming James Bond",
-      "verified": true,
-      "confirm": "",
-      "print": true,
-      "links": [
-        {
-          "label": "AP: Pattinson named the seventh Bond",
-          "url": "https://apnews.com/article/new-james-bond-4545b257a9924895a69623332db50c97"
-        }
-      ],
-      "image_url": "",
-      "image_credit": "",
-      "video_url": ""
-    },
-    {
-      "id": "measles",
-      "title": "US and Mexico lose their measles-elimination status",
-      "category": "health",
-      "one_line": "PAHO determined the same measles virus had circulated for at least a year, so both the U.S. and Mexico lost their elimination designation (AP, Nov 2026).",
-      "suggested_angle": "Two countries lost it, and the Valley sits right on the line. What's the vaccine conversation at your kitchen table, and what do your kids' schools say?",
-      "source_url": "https://apnews.com/article/measles-elimination-status-us-mexico-b6694152aca12e8cf4293d9f50090ec9",
-      "source": "AP · Nov 2026",
-      "short": "US and Mexico lose measles-elimination status",
-      "teaser": "the U.S. and Mexico losing measles-elimination status",
-      "verified": true,
-      "confirm": "",
-      "print": false,
-      "links": [
-        {
-          "label": "PAHO statement",
-          "url": "https://www.paho.org/en/news/17-11-2026-paho-urges-countries-step-efforts-stop-measles-outbreaks-and-move-towards"
-        },
-        {
-          "label": "AP video: do you need a booster?",
-          "url": "https://apnews.com/video/the-u-s-lost-its-measles-elimination-status-do-you-need-a-booster-f98d07c0153a463283e42ea7bc09c86a"
-        }
-      ],
-      "image_url": "",
-      "image_credit": "",
-      "video_url": ""
-    },
-    {
-      "id": "stojakovic",
-      "title": "Illinois' Andrej Stojakovic drops 46 at Duke",
-      "category": "sports",
-      "one_line": "No. 10 Illinois beat No. 5 Duke 99-78 on Nov 17; Stojakovic (son of Peja) scored 46, the most ever by a visiting player at Cameron Indoor, passing Grady Wallace's 43 from 1957.",
-      "suggested_angle": "Peja's kid just scored 46 in the most hostile gym in college basketball. Whose kid in the Valley is carrying the family sport?",
-      "source_url": "https://apnews.com/article/illinois-duke-stojakovic-46-points-c6a4a8aee2f9d7fb676dab9019fe9d83",
-      "source": "AP · Nov 17",
-      "short": "Illinois' Stojakovic scores 46 at Duke (99-78)",
-      "teaser": "Andrej Stojakovic's 46 points at Duke",
-      "verified": true,
-      "confirm": "",
-      "print": false,
-      "links": [
-        {
-          "label": "ESPN recap",
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50517287/illinois-andrej-stojakovic-scores-46-points-most-ever-opponent-duke"
-        }
-      ],
-      "image_url": "",
-      "image_credit": "",
-      "video_url": ""
-    },
-    {
-      "id": "usmnt",
-      "title": "Pulisic's bicycle kick sends Pochettino off with a 2-0 win",
-      "category": "sports",
-      "one_line": "The U.S. beat Haiti 2-0 in Cincinnati on Nov 17 in Mauricio Pochettino's last match as coach: Christian Pulisic scored with a bicycle kick in the 25th minute and Julian Hall added a second in the 43rd.",
-      "suggested_angle": "A bicycle kick as a farewell. The Valley is a soccer region, so who should coach the U.S. next, and wait, don't tell me you want Messi.",
-      "source_url": "https://apnews.com/article/usmnt-soccer-mauricio-pochettino-farewell-haiti-3fe3610a6d9a0d0fa1ef08fe56f03630",
-      "source": "AP · Nov 17",
-      "short": "Pulisic bicycle kick; US beats Haiti 2-0 in Pochettino finale",
-      "teaser": "Pulisic's bicycle kick in Pochettino's farewell",
-      "verified": true,
-      "confirm": "",
-      "print": false,
-      "links": [
-        {
-          "label": "U.S. Soccer recap",
-          "url": "https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-cincinnati-ohio"
-        }
-      ],
-      "image_url": "",
-      "image_credit": "",
-      "video_url": ""
-    },
-    {
-      "id": "youtube",
-      "title": "YouTube trending: Lil Baby's 'Aint Goin' holds #1; teasers for 'Twilight (But Better)' and '3 Body Problem' S2",
-      "category": "viral video",
-      "one_line": "On Nov 18 Lil Baby's 'Aint Goin' official video stayed #1 on YouTube's U.S. trending list all day; a 'Twilight (But Better)' teaser, a '3 Body Problem' season 2 teaser, CaseOh and Markiplier videos also charted.",
-      "suggested_angle": "What's on your kids' YouTube feed right now? If they say CaseOh, you've got your opening for the Kids Talk block.",
-      "source_url": "https://trendoday.com/youtube/2026/11/18",
-      "source": "Trendoday (YouTube US chart) · Nov 18",
-      "short": "YouTube #1: Lil Baby 'Aint Goin'; Twilight, 3 Body teasers",
-      "teaser": "what's topping YouTube trending",
-      "verified": false,
-      "confirm": "Chart comes from a third-party tracker of YouTube's trending list; confirm on youtube.com/feed/trending.",
-      "print": false,
-      "links": [],
-      "image_url": "",
-      "image_credit": "",
-      "video_url": ""
+     "label": "AP: allies push to avert all-out war",
+     "url": "https://apnews.com/article/iran-us-kuwait-gulf-attacks-bahrain-b1f0b530cffe951e6fcc1e27b2e1af94"
     }
-  ],
-  "up_to": [
+   ],
+   "pfact": "Nov 18: Iran fired drones at a U.S. base in Kuwait and at Bahrain after a U.S. strike; intercepted.",
+   "pangle": "Two quiet months just ended.",
+   "pvalley": "Military families; watch gas prices."
+  },
+  {
+   "id": "senate",
+   "title": "Democrats flip a 9th Senate seat, their biggest midterm gain since 1958",
+   "print": true,
+   "summary": "Mary Peltola beat Sen. Dan Sullivan in Alaska, giving Democrats a 56-44 Senate majority in January (AP, Nov 18).",
+   "angle": "(Opinion) A wave this size changes what gets a vote, and lame-duck fights like Cornyn's judge block are the preview.",
+   "valley": "Congressman-elect Bobby Pulido and the Valley delegation start in a Democratic Congress; border and trade bills reset.",
+   "links": [
     {
-      "date": "2026-11-16",
-      "short": "Talk proposal: ResCon New Orleans 2027 (shelter Wi-Fi)",
-      "title": "Sent in a talk proposal to ResCon New Orleans 2027 (Mar 9-11): standing up shelter Wi-Fi in hours",
-      "type": "conference",
-      "who": "Drew",
-      "link": {
-        "label": "ResCon 2027 call for proposals",
-        "url": "https://resconnola.com/2027-call-for-proposals/"
-      },
-      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected"
+     "label": "PBS/AP: Democrats flipped 9 Senate seats",
+     "url": "https://www.pbs.org/newshour/politics/democrats-flipped-9-us-senate-seats-the-most-in-almost-70-years"
     },
     {
-      "date": "2026-11-16",
-      "short": "Talk proposal: South Atlantic Fire Rescue Expo 2027",
-      "title": "Sent in a talk proposal to the South Atlantic Fire Rescue Expo 2027 (Aug 11-14, Raleigh): fast Wi-Fi for command posts",
-      "type": "conference",
-      "who": "Drew",
-      "link": {
-        "label": "SAFRE 2027 call for presenters",
-        "url": "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/"
-      },
-      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected"
-    },
-    {
-      "date": "2026-11-16",
-      "short": "Talk proposals: IAFC WUI (Austin) + CALNENA 2027",
-      "title": "Sent in talk proposals to the IAFC Wildland-Urban Interface conference (Austin, Mar 23-25) and CALNENA 2027 (Los Angeles, Mar 1-3)",
-      "type": "conference",
-      "who": "Drew",
-      "link": null,
-      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected"
-    },
-    {
-      "date": "2026-11-12",
-      "short": "Talk proposal: IAEM-USA Region 6 Symposium 2027",
-      "title": "Sent in a talk proposal to the IAEM-USA Region 6 Symposium 2027: temporary Wi-Fi for EOCs and shelters",
-      "type": "conference",
-      "who": "Drew",
-      "link": null,
-      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected"
+     "label": "NYT: House Dems prepare Trump investigations",
+     "url": "https://www.nytimes.com/2026/11/18/us/politics/house-democrats-trump-investigation.html"
     }
-  ],
-  "up_to_script": "Hey, for the last week, here's what I've been up to. Outside the studio I spent a good chunk of it sending in talk proposals for a handful of 2027 conferences: emergency management, fire and rescue, and 9-1-1 shows, all about getting Wi-Fi up fast when a shelter or a command post has to stand up overnight. Nothing's been accepted yet, so I'll let you know if anybody says yes. Okay, enough about me. Let's get into the Valley.",
-  "up_to_meta": {
-    "window": "Nov 11-18, 2026",
-    "calendar": "not connected (no calendar tool available); built from email only",
-    "note": "Proposals SUBMITTED, not accepted: do not say 'accepted' or 'speaking at'.",
-    "jess": "Nothing found for Jess (no access to her calendar or mail)."
+   ],
+   "pfact": "Peltola wins Alaska: Democrats flip 9 Senate seats, 56-44 majority, most since 1958.",
+   "pangle": "The lame duck is the preview.",
+   "pvalley": "Pulido starts in a Democratic Congress."
+  },
+  {
+   "id": "anthropic",
+   "title": "Anthropic's record IPO: $81B raised, shares priced at $83",
+   "print": false,
+   "summary": "Anthropic priced shares at $83 (above the $70-78 range), raising about $81B and valuing it near $1.5T; trading starts Thursday (BBC).",
+   "angle": "(Opinion) The AI boom just asked Wall Street for a report card. We find out today whether it's an A or an IOU.",
+   "valley": "AI needs data centers and power, the same fight Cameron County is having with SpaceX.",
+   "links": [
+    {
+     "label": "BBC: Anthropic raises $81bn",
+     "url": "https://www.bbc.com/news/articles/c6742m39xgzxo"
+    }
+   ],
+   "pfact": "Anthropic raised ~$81B at $83/share; trades Thursday.",
+   "pangle": "AI's report card day.",
+   "pvalley": "Same data-center fight as SpaceX."
+  },
+  {
+   "id": "faa",
+   "title": "FAA nationwide ground stop",
+   "print": false,
+   "summary": "Nov 13: FAA grounded all U.S. flights ~3:30-8:15 PM ET; legacy network overwhelmed by data; FAA sees no cyberattack.",
+   "angle": "Everybody wants the system modernized; nobody wants it down for the upgrade.",
+   "valley": "HRL, MFE and BRO issued advisories; Brownsville still had 5 cancellations that night.",
+   "detail": "FAA: legacy equipment became unstable when data flooded its FTI network; suspected sites a radar site in Amarillo and a radio site in El Dorado, AR where L3Harris was deploying a router; 17 of 22 en route centers affected; ~3,500 aircraft landed safely; ~12,462 flights canceled that day. Second nationwide ground stop since 9/11 (ABC). FAA Administrator Bryan Bedford told Congress Nov 18: 'blame me.' Duffy said the issue came on the 69th router installation. Harlingen: incoming banks from IAH/DFW/AUS couldn't depart. No current FAA flight cuts found in the sources checked.",
+   "links": [
+    {
+     "label": "FAA: Nationwide Ground Stop Q&A",
+     "url": "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers"
+    },
+    {
+     "label": "ABC: FAA head says 'blame me'",
+     "url": "https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960"
+    },
+    {
+     "label": "ValleyCentral: Valley airports issue advisories",
+     "url": "https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/"
+    },
+    {
+     "label": "KRGV: Brownsville airport after ground stop",
+     "url": "https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/"
+    }
+   ],
+   "confirm": [
+    "Any current FAA flight cuts (none found)"
+   ],
+   "teaser": "the FAA's nationwide ground stop and what it means for Valley flyers",
+   "pfact": "Nov 13: FAA grounded all U.S. flights ~3:30-8:15 PM ET; legacy network swamped; FAA sees no cyberattack.",
+   "pangle": "Everybody wants it modernized; nobody wants it down for the upgrade.",
+   "pvalley": "HRL, MFE, BRO issued advisories; Brownsville had 5 cancellations."
   }
+ ],
+ "weather": {
+  "mode": "nws",
+  "lat": 26.2034,
+  "lon": -98.23,
+  "note": "McAllen / Rio Grande Valley; NWS Brownsville (BRO) forecast"
+ },
+ "sports": {
+  "highSchool": {
+   "title": "RGV High School Football Playoffs",
+   "round": "Bi-District results (Nov 12-14); Area round this week",
+   "sourceNote": "RGVSports.com scoreboard (updated Nov 18); Daily McAllen Nov 14; KRGV",
+   "results": [
+    {
+     "title": "PSJA North 64, Edinburg 10 (6A-II)",
+     "short": "PSJA North 64, Edinburg 10",
+     "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
+     "source": "RGVSports"
+    },
+    {
+     "title": "Weslaco 43, Los Fresnos 3 (6A-I)",
+     "short": "Weslaco 43, Los Fresnos 3",
+     "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
+     "source": "RGVSports"
+    },
+    {
+     "title": "Harlingen 51, La Joya 50 (6A-I)",
+     "short": "Harlingen 51, La Joya 50",
+     "url": "https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/",
+     "source": "RGVSports"
+    },
+    {
+     "title": "Edinburg Vela 42, Brownsville Veterans 20 (6A-II)",
+     "short": "Vela 42, Brownsville Vets 20",
+     "url": "https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/",
+     "source": "RGVSports"
+    },
+    {
+     "title": "McAllen High 62, Weslaco East 19 (5A-I)",
+     "short": "McAllen 62, Weslaco East 19",
+     "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
+     "source": "RGVSports"
+    },
+    {
+     "title": "McAllen Rowe 44, Flour Bluff 28 (5A-I)",
+     "short": "McAllen Rowe 44, Flour Bluff 28",
+     "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
+     "source": "RGVSports",
+     "confirm": "Opponent changed on RGVSports Nov 18 (earlier listing said Sharyland High); CONFIRM BEFORE AIR"
+    },
+    {
+     "title": "Mercedes 44, Mission Veterans 42 (5A-II)",
+     "short": "Mercedes 44, Mission Vets 42",
+     "url": "https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/",
+     "source": "RGVSports"
+    },
+    {
+     "title": "Sharyland 31, Brownsville Pace 20 (5A-II)",
+     "short": "Sharyland 31, Brownsville Pace 20",
+     "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
+     "source": "RGVSports"
+    },
+    {
+     "title": "CC Veterans 59, McAllen Memorial 23 (5A-I)",
+     "short": "CC Vets 59, McAllen Memorial 23",
+     "url": "https://dailymcallen.com/local-news/editions/11-14-2026",
+     "source": "Daily McAllen / KRIS 6"
+    },
+    {
+     "title": "CC Carroll 48, La Joya Palmview 17 (5A-I)",
+     "short": "CC Carroll 48, Palmview 17",
+     "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
+     "source": "RGVSports"
+    },
+    {
+     "title": "Gregory-Portland 68, Sharyland Pioneer 16 (5A-II)",
+     "short": "Gregory-Portland 68, Pioneer 16",
+     "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
+     "source": "RGVSports"
+    },
+    {
+     "title": "Calallen 64, Hidalgo 0 (4A-I)",
+     "short": "Calallen 64, Hidalgo 0",
+     "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
+     "source": "RGVSports"
+    },
+    {
+     "title": "Port Lavaca Calhoun 17, Edcouch-Elsa 3 (4A-I)",
+     "short": "Calhoun 17, Edcouch-Elsa 3",
+     "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
+     "source": "RGVSports"
+    },
+    {
+     "title": "Orange Grove 35, Raymondville 28 (3A-I)",
+     "short": "Orange Grove 35, Raymondville 28",
+     "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
+     "source": "RGVSports"
+    },
+    {
+     "title": "La Villa 67, Pettus 0 (2A-II)",
+     "short": "La Villa 67, Pettus 0",
+     "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
+     "source": "RGVSports"
+    }
+   ],
+   "next": [
+    {
+     "title": "Thu Nov 19: Weslaco at SA Brennan 6 PM; McAllen vs Boerne Champion 7 PM (Laredo); Mercedes vs Boerne 7 PM (Laredo); Sharyland vs Alamo Heights 7 PM (Corpus Christi)",
+     "short": "Thu: Weslaco @ SA Brennan 6; McAllen v Boerne Champion 7; Mercedes v Boerne 7; Sharyland v Alamo Heights 7",
+     "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
+     "source": "RGVSports"
+    },
+    {
+     "title": "Fri Nov 20: Harlingen vs SA Harlan 7 PM; PSJA North vs SA Warren 7 PM (Alice); McAllen Rowe vs Smithson Valley 7 PM; La Villa vs Chilton 7 PM",
+     "short": "Fri: Harlingen v SA Harlan; PSJA North v SA Warren; Rowe v Smithson Valley; La Villa v Chilton (all 7)",
+     "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
+     "source": "RGVSports"
+    },
+    {
+     "title": "Sat Nov 21: SA Sotomayor at Edinburg Vela 3 PM",
+     "short": "Sat: SA Sotomayor @ Vela 3 PM",
+     "url": "https://rgvsports.com/rgv-football-playoff-schedule/",
+     "source": "RGVSports"
+    }
+   ],
+   "note": "Area-round results will be in the real Monday packet. College: Stephen F. Austin 48, UTRGV 0 (Nov 14).",
+   "college": {
+    "title": "UTRGV falls 48-0 to No. 7 SFA in the home finale (UTRGV 5-6)",
+    "short": "UTRGV 0, Stephen F. Austin 48 (Nov 14)",
+    "url": "https://gooddayedinburg.com/local-news/editions/11-15-2026",
+    "source": "Good Day Edinburg / CBS Sports"
+   }
+  },
+  "nfl": {
+   "title": "NFL Week 10",
+   "scoreSource": {
+    "title": "NFL.com scores, Week 10",
+    "short": "",
+    "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+    "source": "NFL.com"
+   },
+   "scores": [
+    [
+     "Thu Nov 12",
+     "WAS 24, NYG 21"
+    ],
+    [
+     "Sun Nov 15",
+     "DET 35, NE 10 (Munich)"
+    ],
+    [
+     "Sun Nov 15",
+     "KC 35, ATL 13"
+    ],
+    [
+     "Sun Nov 15",
+     "CLE 27, HOU 24"
+    ],
+    [
+     "Sun Nov 15",
+     "MIN 30, GB 10"
+    ],
+    [
+     "Sun Nov 15",
+     "IND 24, MIA 22"
+    ],
+    [
+     "Sun Nov 15",
+     "CAR 20, NO 17"
+    ],
+    [
+     "Sun Nov 15",
+     "BUF 31, NYJ 12"
+    ],
+    [
+     "Sun Nov 15",
+     "JAX 40, TEN 23"
+    ],
+    [
+     "Sun Nov 15",
+     "LAR 34, ARI 6"
+    ],
+    [
+     "Sun Nov 15",
+     "SEA 21, LV 13"
+    ],
+    [
+     "Sun Nov 15",
+     "SF 46, DAL 40"
+    ],
+    [
+     "Sun Nov 15",
+     "CIN 38, PIT 18 (SNF)"
+    ],
+    [
+     "Mon Nov 16",
+     "LAC 23, BAL 20 (MNF)"
+    ]
+   ],
+   "notable": [
+    {
+     "title": "Burrow threw for 409 and Chase had 231 receiving yards in Cincinnati's 38-18 win over Pittsburgh",
+     "short": "Burrow 409 yds, Chase 231 yds in CIN 38-18 win",
+     "url": "https://www.pro-football-reference.com/years/2026/week_10.htm",
+     "source": "Pro-Football-Reference"
+    },
+    {
+     "title": "49ers beat the Cowboys 46-40 (Purdy 389 yds); SF and BUF lead at 8-1; Cowboys 4-6, Texans 3-6",
+     "short": "SF 46-40 over Dallas; Cowboys 4-6, Texans 3-6",
+     "url": "https://www.nfl.com/schedules/2026/by-week/week-10",
+     "source": "NFL.com / PFR"
+    },
+    {
+     "title": "Week 11: Colts at Texans Thu Nov 19; Titans at Cowboys Sun Nov 22; Bengals at Commanders Mon Nov 23",
+     "short": "Week 11: Colts @ Texans Thu; Titans @ Cowboys Sun; Bengals @ Commanders Mon",
+     "url": "https://www.footballdb.com/games/index.html?yr=2026",
+     "source": "FootballDB schedule"
+    }
+   ]
+  },
+  "nba": {
+   "title": "NBA",
+   "scoreSource": {
+    "title": "Basketball-Reference: Nov 17 scores",
+    "short": "",
+    "url": "https://www.basketball-reference.com/boxscores/",
+    "source": "Basketball-Reference"
+   },
+   "scores": [
+    [
+     "Tue Nov 17",
+     "NYK 111, TOR 102"
+    ],
+    [
+     "Tue Nov 17",
+     "MIN 106, POR 105"
+    ],
+    [
+     "Tue Nov 17",
+     "DET 105, SAS 93"
+    ],
+    [
+     "Tue Nov 17",
+     "UTA 132, LAC 107"
+    ],
+    [
+     "Tue Nov 17",
+     "LAL 118, CHA 114 (OT)"
+    ]
+   ],
+   "texas": [
+    [
+     "Mon Nov 16",
+     "MIA 128, HOU 110"
+    ],
+    [
+     "Sun Nov 15",
+     "BOS 131, DAL 94"
+    ]
+   ],
+   "notable": [
+    {
+     "title": "Lakers (13-2) have won nine straight; Quentin Grimes scored 47 in the OT win over Charlotte",
+     "short": "Lakers 13-2, nine straight; Grimes 47 in OT win",
+     "url": "https://buzzerbeaternews.com/news/nba-scores-last-night-2026-11-17/",
+     "source": "Buzzer Beater News"
+    },
+    {
+     "title": "Spurs are 12-3 despite the loss to Detroit; Magic snapped Boston's six-game win streak Monday",
+     "short": "Spurs 12-3; Magic snapped Celtics' 6-game streak",
+     "url": "https://www.nba.com/news/starting-5-november-17-2026",
+     "source": "NBA.com"
+    },
+    {
+     "title": "Texas teams: Rockets lost at Miami 128-110 (Nov 16); Mavericks lost at Boston 131-94 (Nov 15)",
+     "short": "Rockets lost at MIA 128-110; Mavs lost at BOS 131-94",
+     "url": "https://statsnext.com/nba/games/2026-11",
+     "source": "StatsNext"
+    }
+   ]
+  },
+  "mlb": {
+   "title": "MLB: OFFSEASON (no scores)",
+   "offseason": true,
+   "note": "MLB is in the offseason in November, so this card shows news instead of scores. The Brewers are 2026 World Series champions.",
+   "notable": [
+    {
+     "title": "Skubal sweepstakes: Mets, Blue Jays, Dodgers and Padres have met or are set to meet; a deal is expected before the CBA expires Dec. 1 (11:59 PM ET)",
+     "short": "Skubal talks: Mets, Jays, Dodgers, Padres; deal expected before CBA expires Dec 1",
+     "url": "https://www.mlb.com/news/tarik-skubal-rumors-november-17-free-agent-update",
+     "source": "MLB.com"
+    },
+    {
+     "title": "Twins agree to 2 years, $55M with Sonny Gray; White Sox land Dustin May (3 yrs, ~$52.5M)",
+     "short": "Gray to Twins (2y, $55M); May to White Sox (3y, ~$52.5M)",
+     "url": "https://www.espn.com/mlb/story/_/id/50328768/free-agency-tracker-offseason-trades-moves-2026-2027",
+     "source": "ESPN tracker"
+    },
+    {
+     "title": "Mariners get Maikel Garcia from Royals in a six-player trade; Astros are gauging interest in Christian Walker",
+     "short": "Mariners get M. Garcia (6-player deal); Astros shop C. Walker",
+     "url": "https://www.mlb.com/news/mlb-rumors-and-2026-27-free-agent-news-november-18",
+     "source": "ESPN / MLB.com"
+    }
+   ]
+  }
+ },
+ "memes": {
+  "tagline": "Drew & Jess are watching the feeds so you don't have to",
+  "intro": "What your kids might be saying at school this week, and one line on how to bring it up.",
+  "memeOfTheWeek": "talk-doja",
+  "levels": [
+   {
+    "level": "Elementary",
+    "icon": "🎒",
+    "items": [
+     {
+      "id": "roblox",
+      "title": "Roblox: 'Steal An Egg' & 'Throw Food For Animals'",
+      "what": "Steal An Egg is Roblox's #1 game (about 1.17M playing); Throw Food For Animals is #2 and up 58% on the week.",
+      "means": "Pet-collecting games where other players can take your eggs; paid boosts are optional.",
+      "tip": "Ask 'who's stealing your eggs?' Set chat to friends-only and a spending limit.",
+      "links": [
+       {
+        "label": "RBLXSTAT: Roblox weekly report Nov 9-15",
+        "url": "https://rblxstat.com/blog/roblox-weekly-report-2026-11-15"
+       },
+       {
+        "label": "SafeScreens: Roblox parent's guide",
+        "url": "https://safescreens.us/guides/gaming/roblox-experiences"
+       },
+       {
+        "label": "RoStats: Top Roblox games Nov 2026",
+        "url": "https://rostats.io/charts/2026-11"
+       }
+      ],
+      "confirm": [],
+      "pwhat": "Roblox's #1 game: pet-collecting 'Steal An Egg' (1.17M playing); other players can grab your eggs.",
+      "ptip": "Ask 'who's stealing your eggs?' Friends-only chat, spending limit."
+     },
+     {
+      "id": "six-seven",
+      "title": "'6-7'",
+      "what": "A catchphrase kids yell for laughs, often with a hands-weighing gesture.",
+      "means": "No fixed meaning; some link it to LaMelo Ball (6'7\"). Already being mocked as overused.",
+      "tip": "Laugh and ask them to show you the gesture; it's meant to confuse adults.",
+      "links": [
+       {
+        "label": "Reader's Digest: Gen Alpha slang",
+        "url": "https://www.rd.com/article/gen-alpha-slang/"
+       },
+       {
+        "label": "MadeForMums: parents' guide to slang",
+        "url": "https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/"
+       }
+      ],
+      "confirm": [],
+      "pwhat": "Catchphrase kids yell with a hands-weighing gesture; no fixed meaning, already called overused.",
+      "ptip": "Ask them to show you the gesture; it's meant to confuse adults."
+     }
+    ]
+   },
+   {
+    "level": "Middle School",
+    "icon": "📱",
+    "items": [
+     {
+      "id": "talk-doja",
+      "title": "'Talk To Me Doja' (Meme of the Week)",
+      "what": "A TikTok dance trend copying a dance from the anime 'Yamada-kun and the Seven Witches' set to Doja Cat's 'Like That' (started Nov 7).",
+      "means": "Kids film their own version next to the anime clip.",
+      "tip": "Ask 'show me the dance?' Check the anime's rating before streaming it.",
+      "links": [
+       {
+        "label": "Know Your Meme: Talk To Me Doja",
+        "url": "https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained"
+       }
+      ],
+      "confirm": [
+       "Popularity is TikTok-side; X shows only ~38 posts in 7 days"
+      ],
+      "pwhat": "TikTok dance copying a scene from anime 'Yamada-kun and the Seven Witches' set to Doja Cat's 'Like That.'",
+      "ptip": "Ask 'show me the dance?' Check the anime's rating first."
+     },
+     {
+      "id": "pennywide",
+      "title": "'Pennywide' meme",
+      "what": "A Halloween trick-or-treat video of a child in a Pennywise mask went viral and became memes mocking him.",
+      "means": "A cruelty meme aimed at a real kid, remixed into brainrot edits.",
+      "tip": "Ask 'would you laugh if that was your cousin?' It's a natural bridge to the bullying talk.",
+      "links": [
+       {
+        "label": "Know Your Meme: Pennywide",
+        "url": "https://trending.knowyourmeme.com/editorials/guides/what-is-the-pennywide-meme-the-viral-pennywise-house-video-and-memes-explained"
+       }
+      ],
+      "confirm": [],
+      "pwhat": "Viral Halloween video of a kid in a Pennywise mask, turned into memes mocking him: cruelty aimed at a real kid.",
+      "ptip": "Ask 'would you laugh if that was your cousin?' Bridge to the bullying talk."
+     }
+    ]
+   },
+   {
+    "level": "High School",
+    "icon": "🎓",
+    "items": [
+     {
+      "id": "door-kick",
+      "title": "The Door Kick Challenge",
+      "what": "A TikTok trend: kick or pound a stranger's front door, film it, run.",
+      "means": "Police say it can mean vandalism, trespass or burglary charges, and a scared homeowner may react.",
+      "tip": "It's a crime, not a prank; Irvine PD says parents can be held accountable. Ask what they'd do if friends filmed it.",
+      "links": [
+       {
+        "label": "ABC7: Irvine police warning (Nov 12)",
+        "url": "https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/"
+       },
+       {
+        "label": "WBBH: Cape Coral incident (Nov 16)",
+        "url": "https://www.gulfcoastnewsnow.com/article/video-door-kick-challenge-cape-coral-florida/74444521"
+       },
+       {
+        "label": "KOBI: Talent, Oregon (Nov 12)",
+        "url": "https://kobi5.com/news/door-kicking-trend-is-growing-locally-five-incidents-reported-in-talent-319588/"
+       }
+      ],
+      "confirm": [
+       "No RGV incident found; X shows only ~39 posts in 7 days"
+      ],
+      "pwhat": "TikTok trend: pound on a stranger's door, film it, run. Police say vandalism, trespass or worse.",
+      "ptip": "A crime, not a prank; parents can be held accountable. What if friends filmed it?"
+     },
+     {
+      "id": "slang",
+      "title": "Slang: aura, aura farming, cooked",
+      "what": "'Aura' = someone's vibe; 'aura farming' = doing things to look cool online; 'cooked' = in trouble.",
+      "means": "Words to question: 'huzz,' 'bop,' 'big back' can objectify or mock women and bodies.",
+      "tip": "Be curious, not corrective: ask what a word means. Terms burn out fast.",
+      "links": [
+       {
+        "label": "MadeForMums: 45 Gen Alpha slang words",
+        "url": "https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/"
+       },
+       {
+        "label": "Reader's Digest: 24 Gen Alpha slang terms",
+        "url": "https://www.rd.com/article/gen-alpha-slang/"
+       },
+       {
+        "label": "Hello!: how to respond to bizarre slang",
+        "url": "https://www.hellomagazine.com/healthandbeauty/mother-and-baby/878329/your-gen-alpha-child-increasingly-bizarre-slang-how-to-respond/"
+       }
+      ],
+      "confirm": [],
+      "pwhat": "'Aura' = vibe; 'aura farming' = acting cool online; 'cooked' = in trouble. Question 'huzz,' 'bop,' 'big back.'",
+      "ptip": "Be curious: ask what a word means."
+     },
+     {
+      "id": "gta6",
+      "title": "GTA 6 launch week",
+      "what": "GTA VI was set to release Thu Nov 19 at midnight, rated M (17+). X volume jumped to ~255k posts on Nov 18.",
+      "means": "Late nights and possible skipped school; some UK schools set attendance prizes.",
+      "tip": "Is 17+ a rule or a suggestion at your house? (Jess has more on this in Block C.)",
+      "links": [
+       {
+        "label": "ABC News: parents and GTA 6",
+        "url": "https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889"
+       },
+       {
+        "label": "Independent: UK schools and GTA 6",
+        "url": "https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html"
+       }
+      ],
+      "confirm": [
+       "Launch actually happened on time Nov 19"
+      ],
+      "pwhat": "GTA VI launches Thu Nov 19 at midnight, rated M (17+); ~255k X posts Nov 18. Late nights, skipped school.",
+      "ptip": "Is 17+ a rule or a suggestion at your house?"
+     }
+    ]
+   }
+  ]
+ },
+ "trending": [
+  {
+   "verified": true,
+   "confirm": "",
+   "print": true,
+   "links": [
+    {
+     "label": "AP: Heat go all in on 'Vice City' collab",
+     "url": "https://apnews.com/article/grand-theft-auto-heat-vice-city-a19fc5a3279c95be5b4f6a7d831be199"
+    },
+    {
+     "label": "X: #1 US trend 'GTA 6'",
+     "url": "https://x.com/search?q=GTA%206"
+    }
+   ],
+   "image_url": "",
+   "image_credit": "",
+   "video_url": "",
+   "id": "gta6",
+   "title": "Grand Theft Auto VI is out after a 13-year wait",
+   "category": "gaming",
+   "one_line": "GTA VI launched Nov 19 on PS5 and Xbox Series X; the download is 212 GB, and the Miami Heat went all-in on a 'Vice City' tie-in.",
+   "suggested_angle": "Half the Valley called in sick today, the other half is downloading 212 gigs on Valley internet. Parents: check the rating on the box before it ends up under the tree.",
+   "source_url": "https://www.dw.com/en/grand-theft-auto-vi-launches-to-global-fanfare/a-79986461",
+   "source": "DW · Nov 19",
+   "short": "GTA VI launches: 212 GB, 13-year wait",
+   "teaser": "GTA Six finally dropping",
+   "x": {
+    "posts": 40,
+    "engagement": 0
+   }
+  },
+  {
+   "id": "cma",
+   "title": "Ella Langley sweeps the CMA Awards with 'Choosin' Texas'",
+   "category": "culture",
+   "one_line": "At the 60th CMA Awards (Nov 18) Ella Langley won Single, Song and Music Video of the Year for 'Choosin' Texas'; Taylor Swift performed for the first time in 13 years and Lainey Wilson hosted.",
+   "suggested_angle": "Country's biggest night went to a song with Texas in the title. Wait, don't tell me who's spinning it most in the Valley, and does Lainey's 'Somewhere Over Laredo' count as a local song?",
+   "source_url": "https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/",
+   "source": "Variety · Nov 18",
+   "short": "CMAs: Ella Langley wins 3 for 'Choosin' Texas'; Swift performs",
+   "teaser": "Ella Langley's big night at the CMA Awards",
+   "verified": true,
+   "confirm": "",
+   "print": true,
+   "links": [
+    {
+     "label": "USA Today: full winners list",
+     "url": "https://www.usatoday.com/story/entertainment/music/2026/11/18/cma-awards-2026-winners-list/92853447007/"
+    },
+    {
+     "label": "Billboard: winners, updating live",
+     "url": "https://www.billboard.com/music/awards/cma-2026-winners-list-1236385046/"
+    }
+   ],
+   "image_url": "",
+   "image_credit": "",
+   "video_url": ""
+  },
+  {
+   "verified": true,
+   "confirm": "",
+   "print": true,
+   "links": [],
+   "image_url": "",
+   "image_credit": "",
+   "video_url": "",
+   "id": "igedit",
+   "title": "Instagram now lets you edit a Story after posting (15-minute window)",
+   "category": "tech",
+   "one_line": "Instagram head Adam Mosseri confirmed users can edit a published Story (text, stickers, music) for 15 minutes.",
+   "suggested_angle": "Great for typos, but tell your kids: 15 minutes to fix it, forever for the screenshot.",
+   "source_url": "https://9to5mac.com/2026/11/18/instagram-finally-lets-users-edit-stories-after-publishing-but-theres-a-catch/",
+   "source": "9to5Mac · Nov 18",
+   "short": "Instagram Stories now editable for 15 minutes"
+  },
+  {
+   "verified": true,
+   "confirm": "",
+   "print": true,
+   "links": [],
+   "image_url": "",
+   "image_credit": "",
+   "video_url": "",
+   "id": "pettine",
+   "title": "Cowboys hand defensive play-calling to Mike Pettine",
+   "category": "sports",
+   "one_line": "After allowing 46 points and 584 yards to the 49ers, the 4-6 Cowboys moved play-calling from DC Christian Parker to senior assistant Mike Pettine (ESPN via PFR).",
+   "suggested_angle": "The Valley bleeds silver and blue, and right now it's mostly bleeding. Is a new play-caller enough before the Titans Sunday?",
+   "source_url": "https://www.profootballrumors.com/2026/11/mike-pettine-to-take-over-as-cowboys-defensive-play-caller",
+   "source": "ProFootballRumors · Nov 18",
+   "short": "Cowboys give D play-calling to Pettine"
+  },
+  {
+   "verified": true,
+   "confirm": "",
+   "print": true,
+   "links": [],
+   "image_url": "",
+   "image_credit": "",
+   "video_url": "",
+   "id": "musk",
+   "title": "Musk: his record $446M midterm spending was 'pretty foolish'",
+   "category": "business",
+   "one_line": "At the DealBook Summit, Elon Musk, the cycle's top individual donor (much of it in Texas), called the spending 'pretty foolish' and said he's 'not MAGA'.",
+   "suggested_angle": "$446 million and the shrug emoji. Meanwhile, his Starbase data center just lost its tax-break bid in Cameron County.",
+   "source_url": "https://www.bbc.com/news/articles/cm9q8j2z3gg8o",
+   "source": "BBC · Nov 19",
+   "short": "Musk: $446M midterm spend was 'pretty foolish'"
+  },
+  {
+   "verified": false,
+   "confirm": "Allegation only; single outlet opened via headline, CONFIRM BEFORE AIR",
+   "print": false,
+   "links": [],
+   "image_url": "",
+   "image_credit": "",
+   "video_url": "",
+   "id": "hila",
+   "title": "Hila Klein addresses husband Ethan Klein's alleged affair",
+   "category": "celebrity",
+   "one_line": "h3h3 co-host Hila Klein publicly addressed her husband Ethan's alleged affair: 'My whole entire life just shattered.'",
+   "suggested_angle": "Your teens know h3h3 even if you don't. Handle gently; it's a family going through it in public.",
+   "source_url": "https://www.yahoo.com/entertainment/celebrity/articles/hila-klein-addresses-husband-ethan-060440507.html",
+   "source": "Yahoo · Nov 19",
+   "short": "Hila Klein on Ethan's alleged affair"
+  },
+  {
+   "id": "giannis",
+   "title": "Giannis faces the Bucks for the first time as a Heat player",
+   "category": "sports",
+   "one_line": "Giannis Antetokounmpo (20 points, 11 rebounds, 9 assists) and the Heat beat the 1-13 Bucks on Nov 18, his first game against Milwaukee since the offseason trade; he called it 'just another game.' He also scored 20 in Monday's 128-110 win over Houston.",
+   "suggested_angle": "'Emotions are for the movies.' Would you be that cool facing your old job? And he just beat the Rockets on Monday, so Houston fans have opinions.",
+   "source_url": "https://www.cbssports.com/nba/news/giannis-antetokounmpo-set-to-face-bucks-for-first-time-with-heat/",
+   "source": "CBS Sports · Nov 18",
+   "short": "Giannis faces the Bucks for the first time; Heat win",
+   "teaser": "Giannis facing his old team, the Bucks",
+   "verified": true,
+   "confirm": "Final margin not independently confirmed; the NBA.com box score shows Heat 128.",
+   "print": false,
+   "links": [
+    {
+     "label": "NBA.com box score (Heat vs Bucks)",
+     "url": "https://www.nba.com/bucks/game/0022600260-bucks-vs-heat-miami-fl-11-18-2026"
+    },
+    {
+     "label": "GMA/Reuters: 'just another game'",
+     "url": "https://www.gmanetwork.com/news/sports/basketball/1009886/nba-giannis-antetokounmpo-downplays-emotions-as-heat-face-bucks/story/"
+    }
+   ],
+   "image_url": "",
+   "image_credit": "",
+   "video_url": ""
+  },
+  {
+   "id": "youtube",
+   "title": "YouTube trending: Lil Baby's 'Aint Goin' holds #1; teasers for 'Twilight (But Better)' and '3 Body Problem' S2",
+   "category": "viral video",
+   "one_line": "On Nov 18 Lil Baby's 'Aint Goin' official video stayed #1 on YouTube's U.S. trending list all day; a 'Twilight (But Better)' teaser, a '3 Body Problem' season 2 teaser, CaseOh and Markiplier videos also charted.",
+   "suggested_angle": "What's on your kids' YouTube feed right now? If they say CaseOh, you've got your opening for the Kids Talk block.",
+   "source_url": "https://trendoday.com/youtube/2026/11/18",
+   "source": "Trendoday (YouTube US chart) · Nov 18",
+   "short": "YouTube #1: Lil Baby 'Aint Goin'; Twilight, 3 Body teasers",
+   "teaser": "what's topping YouTube trending",
+   "verified": false,
+   "confirm": "Chart comes from a third-party tracker of YouTube's trending list; confirm on youtube.com/feed/trending.",
+   "print": false,
+   "links": [],
+   "image_url": "",
+   "image_credit": "",
+   "video_url": ""
+  }
+ ],
+ "up_to": [
+  {
+   "date": "2026-11-16",
+   "short": "Talk proposal: ResCon New Orleans 2027 (shelter Wi-Fi)",
+   "title": "Sent in a talk proposal to ResCon New Orleans 2027 (Mar 9-11): standing up shelter Wi-Fi in hours",
+   "type": "conference",
+   "who": "Drew",
+   "link": {
+    "label": "ResCon 2027 call for proposals",
+    "url": "https://resconnola.com/2027-call-for-proposals/"
+   },
+   "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected"
+  },
+  {
+   "date": "2026-11-16",
+   "short": "Talk proposal: South Atlantic Fire Rescue Expo 2027",
+   "title": "Sent in a talk proposal to the South Atlantic Fire Rescue Expo 2027 (Aug 11-14, Raleigh): fast Wi-Fi for command posts",
+   "type": "conference",
+   "who": "Drew",
+   "link": {
+    "label": "SAFRE 2027 call for presenters",
+    "url": "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/"
+   },
+   "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected"
+  },
+  {
+   "date": "2026-11-16",
+   "short": "Talk proposals: IAFC WUI (Austin) + CALNENA 2027",
+   "title": "Sent in talk proposals to the IAFC Wildland-Urban Interface conference (Austin, Mar 23-25) and CALNENA 2027 (Los Angeles, Mar 1-3)",
+   "type": "conference",
+   "who": "Drew",
+   "link": null,
+   "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected"
+  },
+  {
+   "date": "2026-11-12",
+   "short": "Talk proposal: IAEM-USA Region 6 Symposium 2027",
+   "title": "Sent in a talk proposal to the IAEM-USA Region 6 Symposium 2027: temporary Wi-Fi for EOCs and shelters",
+   "type": "conference",
+   "who": "Drew",
+   "link": null,
+   "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected"
+  }
+ ],
+ "up_to_script": "Hey, for the last week, here's what I've been up to. Outside the studio I spent a good chunk of it sending in talk proposals for a handful of 2027 conferences: emergency management, fire and rescue, and 9-1-1 shows, all about getting Wi-Fi up fast when a shelter or a command post has to stand up overnight. Nothing's been accepted yet, so I'll let you know if anybody says yes. Okay, enough about me. Let's get into the Valley.",
+ "up_to_meta": {
+  "window": "Nov 12-19, 2026",
+  "calendar": "not connected (no calendar tool available); built from email only",
+  "note": "Proposals SUBMITTED, not accepted: do not say 'accepted' or 'speaking at'. Gmail checked Nov 19: no new public events since Nov 16.",
+  "jess": "Nothing found for Jess (no access to her calendar or mail)."
+ },
+ "leads": [
+  {
+   "title": "McAllen Walmart (I-2 frontage at Jackson) evacuated; fire units on scene, commenters say AC issue",
+   "url": "https://www.facebook.com/RGV.ME",
+   "source": "RGV.me Facebook · Nov 18",
+   "chatter": {
+    "posts": 1,
+    "engagement": 158
+   },
+   "confirm": "community chatter, CONFIRM BEFORE AIR"
+  },
+  {
+   "title": "Coach planning a $1.18M remodel of its McAllen outlet store; Fabletics planning a $525K store in La Plaza Mall",
+   "url": "https://www.facebook.com/RGV.ME",
+   "source": "RGV.me Facebook · Nov 18",
+   "chatter": {
+    "posts": 2,
+    "engagement": 576
+   },
+   "confirm": "community chatter, CONFIRM BEFORE AIR (likely TDLR filings)"
+  },
+  {
+   "title": "McAllen planning a $19.5M indoor firearms training facility for police (post carried an AI-content label)",
+   "url": "https://www.facebook.com/RGV.ME",
+   "source": "RGV.me Facebook · Nov 18",
+   "confirm": "community chatter, CONFIRM BEFORE AIR"
+  },
+  {
+   "title": "CarMax gets initial City Commission approval for a 4.5-acre Brownsville dealership on Stillman Rd near Expressway 77",
+   "url": "https://www.facebook.com/BTxRGV/videos/carmax-brownsville-special-permit-approval-update/1089494557457804/",
+   "source": "City of Brownsville Facebook · Nov 18",
+   "confirm": "official city post; CONFIRM BEFORE AIR with a news outlet"
+  },
+  {
+   "title": "Portuguese man-o'-war washing up on South Padre Island",
+   "url": "https://www.facebook.com/nomorecheezmeh",
+   "source": "Nomorecheezmeh Facebook · Nov 18",
+   "confirm": "community chatter, CONFIRM BEFORE AIR"
+  }
+ ]
 }
