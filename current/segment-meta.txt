@@ -1,0 +1,19 @@
+Block: A
+Order: 0
+Id: A-cold-open
+Title: Cold Open & Jingle
+Subject: Welcome, the hour's promise, listener tease
+Time: 8:00–8:02
+Minutes: 2
+Jess on screen: no
+Skippable: no
+Flex: no
+Trim to: 
+Stretch to: 
+Signature: no
+Recurring: no
+Headline: 1 of 1
+Chyron: segment
+Chyron primary: Drew Lentz
+Chyron secondary: Host · Drew in the Morning
+Scene hint: host

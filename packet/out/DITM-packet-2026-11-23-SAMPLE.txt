@@ -1,0 +1,330 @@
+============================================================================================
+DREW IN THE MORNING · MONDAY SHOW PACKET
+MONDAY, NOVEMBER 23, 2026 · 8:00 AM CT · Live from McAllen, Texas
+*** SAMPLE / preview, data as of Nov 18 ***
+Week of Nov 11-18 and the weekend of Nov 14-15
+Drew & Jess are watching the feeds so you don't have to
+============================================================================================
+
+SHOW CLOCK (60 minutes; FLEX = can trim/stretch; * = signature segment)
+  8:00–8:02   A  Cold Open & Jingle (2 min)
+  8:02–8:10   B  Starbase Watch: SpaceX, the Vote & the Launch (8 min, FLEX 6-10)
+  8:10–8:14   C  Jess Drop-In #1: GTA 6 Week & the Digital Generation (4 min, Jess)
+  8:14–8:20   D  Ballot Box Rewind: Pulido, Runoffs & the Valley Flip (6 min, FLEX 4-8)
+  8:20–8:24   E  City Hall & School Board Watch (4 min, FLEX 2-7)
+  8:24–8:27   F  Zoho & the Park (3 min, FLEX 0-5)
+  8:27–8:30   G  McAllen Metro Desk: Economic Development (3 min, FLEX 2-4)
+  8:30–8:33   H  Open-Format Story Block (pick one or two) (3 min, FLEX 0-6)
+  8:33–8:39   I  The National Desk (6 min, FLEX 4-8)
+  8:39–8:41   J  Listener Line #1: Your Topics & DMs (2 min)
+  8:41–8:44   K  Meme of the Week: What the Kids Are Talking About (3 min, FLEX 2-4)
+  8:44–8:56   L  How We'd Talk to Our Kids (12 min, FLEX 10-15, Jess) *
+  8:56–9:00   M  Listener Line #2, Look Ahead & Wrap (Jess back in) (4 min, Jess)
+
+TOP HEADLINES · RGV FIRST
+  - Cameron County rejects SpaceX data-center tax break hearing, 3-2 (MyRGV · Nov 17)
+    https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/
+  - Texas issues air permit for SpaceX's $24B data center (Politico · Nov 17)
+    https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758
+  - Starship Flight 15: ship caught by tower, booster aborts catch (Spaceflight Now · Nov
+    13)
+    https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/
+  - Mission mayor and council races head to Dec. 12 runoffs (KRGV)
+    https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/
+  - Texas A&M McAllen to build $50M health education building (Daily McAllen · Nov 18)
+    https://dailymcallen.com/local-news/editions/11-18-2026
+  - McAllen Food Truck Park closure delayed to Jan. 14, 2027 (Daily McAllen · Nov 17)
+    https://dailymcallen.com/local-news/editions/11-17-2026
+  - Another screwworm case confirmed in Starr County cattle (The RGV News · Nov 17)
+    https://thergvnews.com/reviews/day/2026-11-17
+  - Pharr twin bridge expansion opened Nov. 13 (Good Day Edinburg · Nov 14)
+    https://gooddayedinburg.com/local-news/editions/11-14-2026
+  - Grupo Frontera, Edgar Barrera win at Latin Grammys (Good Day Edinburg · Nov 14)
+    https://gooddayedinburg.com/local-news/editions/11-14-2026
+  - PSJA ISD swears in three trustees, elects Quintanilla president (PSJA ISD · Nov 16)
+    https://www.psjaisd.us/school-news-details/~board/pharr-san-juan-alamo-isd-news/post/psja-isd-swears-in-three-trustees-elects-new-board-leadership
+  Texas:
+  - Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border contracts
+    (Texian Partisan · Nov 17)
+    https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/
+  - Texas Supreme Court petition over HD 93 special election result (Texian Partisan · Nov
+    17)
+    https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/
+  - PUC takes up Aqua Texas rate increase Thursday (Texian Partisan · Nov 17)
+    https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/
+  Photo: File photo: Starship (Steve Jurvetson, CC BY 2.0, Wikimedia Commons) https://commons.wikimedia.org/wiki/File:SpaceX_Starship_before_IFT-5.jpg
+
+THE NATIONAL DESK (smaller; local leads)
+- FAA NATIONWIDE GROUND STOP
+    FACT: Nov 13: FAA grounded all U.S. flights ~3:30-8:15 PM ET; legacy network overwhelmed
+      by data; FAA sees no cyberattack.
+    OUR TAKE: Everybody wants the system modernized; nobody wants it down for the upgrade.
+    WHY IT MATTERS IN THE VALLEY: HRL, MFE and BRO issued advisories; Brownsville still had
+      5 cancellations that night.
+    DETAIL: FAA: legacy equipment became unstable when data flooded its FTI network;
+      suspected sites a radar site in Amarillo and a radio site in El Dorado, AR where
+      L3Harris was deploying a router; 17 of 22 en route centers affected; ~3,500 aircraft
+      landed safely; ~12,462 flights canceled that day. Second nationwide ground stop since
+      9/11 (ABC). FAA Administrator Bryan Bedford told Congress Nov 18: 'blame me.' Duffy
+      said the issue came on the 69th router installation. Harlingen: incoming banks from
+      IAH/DFW/AUS couldn't depart. No current FAA flight cuts found in the sources checked.
+    CONFIRM BEFORE AIR: Any current FAA flight cuts (none found)
+    FAA: Nationwide Ground Stop Q&A: https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers
+    ABC: FAA head says 'blame me': https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960
+    ValleyCentral: Valley airports issue advisories: https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/
+    KRGV: Brownsville airport after ground stop: https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/
+- MULLIN TESTIFIES ON OUTAGES AND THE LSU-TEXAS FLIGHT
+    FACT: DHS Sec. Markwayne Mullin told House Homeland Security (Nov 18) the outages
+      weren't a coordinated attack; defended flying to the LSU-Texas game.
+    OUR TAKE: Fair question or cheap shot? The optics of flying to a game during a grounding
+      are rough.
+    WHY IT MATTERS IN THE VALLEY: DHS runs the border; ask what RGV ranchers, bridges and
+      Border Patrol are actually seeing.
+    DETAIL: Hearing: 'Worldwide Threats to the Homeland: 25 Years After 9/11,' with DNI Jay
+      Clayton and FBI Deputy Director Christopher Raia. Clayton: 'separate service outages
+      associated with maintenance and technical changes,' not a coordinated or state-
+      sponsored attack. Mullin said he wanted to be a good uncle and will reimburse the
+      government; he was also pressed on ICE training. His written testimony says Southwest
+      border apprehensions fell 58% in FY2026 (DHS's claim).
+    CONFIRM BEFORE AIR: Drew said 'Mullen': this is Sec. Markwayne Mullin (confirm with
+      Drew)
+    ABC: Mullin grilled, FAA head says 'blame me': https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960
+    AP: Takeaways from Mullin's testimony: https://apnews.com/article/mullin-congress-ground-stop-cyber-threats-immigration-ce63a22797c61ee53d88678000236c37
+    PBS: Mullin defends flight to football game: https://www.pbs.org/newshour/politics/watch-live-dhs-secretary-mullin-testifies-on-worldwide-threats-amid-tech-outages-iran-warnings
+    House Homeland Security: Mullin written testimony (PDF): https://homeland.house.gov/wp-content/uploads/2026/11/2026-11-18-HRG-Testimony-Mullin.pdf
+- SNL: MULANEY, BRIDGERS AND THE 'SISTER' SKETCH
+    FACT: Nov 14: John Mulaney hosted (7th time), Phoebe Bridgers sang; 'CIA Meeting' cold
+      open roasted tech CEOs; critics called it the season's best.
+    OUR TAKE: A cold open that skips politics and still lands. 'Sister' hit people in the
+      gut.
+    WHY IT MATTERS IN THE VALLEY: The cold open roasted the same ground stop that sent HRL,
+      MFE and BRO advisories.
+    DETAIL: Cold open: Mulaney as a CIA officer lecturing Musk, Altman, Thiel, Zuckerberg
+      and Amodei about honey-trap spies after the Jensen Huang scandal; Bowen Yang returned
+      as Huang. Also: 'Sister,' 'Plane Crash,' 'Gettin' It Done,' 'Woodstock,' 'Kathy,' and
+      a Central Park carriage ride musical sketch. Bridgers: 'Bobby' and 'Still Standing.'
+      Reaction: EW 'easily the best episode of this season'; Boston.com 'far and away the
+      best'; ratings 4.45M, down 20% from the prior week (Showbiz411). The 'Sister' video: a
+      pretaped fake elder-care testimonial ad (Jane Wickline as the sister), SNL's YouTube
+      channel, published Nov 14, 2:59, ~5.8M views when checked Nov 18. Last new episode
+      before Thanksgiving; next is in December (Amanda Seyfried, per EW).
+    CONFIRM BEFORE AIR: 'Sister' = the sister video Drew meant (confirm with Drew)
+    YouTube: SNL 'Sister' (the sister video): https://www.youtube.com/watch?v=-X9dxL17t1k
+    YouTube: SNL 'CIA Meeting' cold open: https://www.youtube.com/watch?v=R_8UPhJNrZ4
+    EW: SNL recap: https://ew.com/snl-recap-john-mulaney-hosts-seventh-time-phoebe-bridgers-musical-guest-12253185
+    Boston.com: SNL recap: https://www.boston.com/culture/entertainment/2026/11/15/snl-recap-john-mulaney-2026/
+    Showbiz411: ratings: https://www.showbiz411.com/2026/11/18/john-mulaney-phoebe-bridgers-snl-best-this-season-drops-back-to-season-average-ratings-down-20-from-last-weeks-high
+    NBC Insider: monologue and sketches: https://www.nbc.com/nbc-insider/watch-john-mulaney-november-14-snl-monologue-sketches
+- NVIDIA'S JENSEN HUANG RESIGNS
+    FACT: Nov 12: Nvidia said Huang resigned as CEO and board member effective immediately;
+      CFO Colette Kress is interim CEO.
+    OUR TAKE: The AI boom's biggest face is gone, and Nvidia chips still power every data
+      center.
+    WHY IT MATTERS IN THE VALLEY: Starbase's $24B data center is exactly that kind of AI
+      compute fight.
+    DETAIL: Source for the resignation facts is Nvidia's own press release. Mainstream
+      reports link it to an alleged affair with a suspected Chinese spy (the SNL cold open
+      built on it); verify allegation details through a reported source before
+      characterizing them.
+    CONFIRM BEFORE AIR: Allegation details (not independently verified here)
+    Nvidia press release: CEO transition: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx
+- TEXAS TEN COMMANDMENTS LAW IN DOUBT
+    FACT: ABC (Nov 18): Democratic midterm wins put Texas's classroom Ten Commandments
+      mandate in doubt; the law still stands.
+    OUR TAKE: Whatever you think of it, parents deserve a straight answer on what's on the
+      classroom wall.
+    WHY IT MATTERS IN THE VALLEY: It applies in every RGV school; ask what your child's
+      classroom has up.
+    DETAIL: ABC reports legal battles over classroom displays are headed toward the Supreme
+      Court. The law remains in effect unless courts or lawmakers change it. Verify details
+      of repeal efforts before airing.
+    CONFIRM BEFORE AIR: Details of any repeal bill (verify)
+    ABC: Democratic wave upends Ten Commandments battle in Texas classrooms: https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010
+
+WEATHER · McALLEN / RGV (National Weather Service BRO (api.weather.gov))
+  Thu Nov 19  Partly Sunny, high 78F / low 61F, rain 7%, wind NNE 5 to 8 mph
+  Fri Nov 20  Mostly Sunny, high 80F / low 63F, rain 0%, wind ENE 6 mph
+  Sat Nov 21  Partly Sunny, high 84F / low 68F, rain 2%, wind SE 3 to 9 mph
+  Sun Nov 22  Partly Sunny then Chance Showers And Thunderstorms, high 83F / low 65F, rain 50%, wind ENE 3 to 7 mph
+  Mon Nov 23  << SHOW DAY Chance Rain Showers, high 75F / low 64F, rain 30%, wind NNE 9 mph
+  Tue Nov 24  Chance Rain Showers, high 74F / low 59F, rain 28%, wind N 8 mph
+  Wed Nov 25  Partly Sunny, high 69F / low --F, rain 10%, wind NNE 7 to 10 mph
+  Alerts: none active
+  Updated 2026-11-19T02:18:15+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
+  NWS Brownsville office: https://www.weather.gov/bro/
+  API: https://api.weather.gov/gridpoints/BRO/49,19/forecast
+
+RGV HIGH SCHOOL FOOTBALL PLAYOFFS · Bi-District results (Nov 12-14); Area round this week
+  - PSJA North 64, Edinburg 10 (6A-II)
+      https://rgvsports.com/rgv-football-playoff-schedule/
+  - Weslaco 43, Los Fresnos 3 (6A-I)
+      https://rgvsports.com/rgv-football-playoff-schedule/
+  - Harlingen 51, La Joya 50 (6A-I)
+      https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/
+  - Edinburg Vela 42, Brownsville Veterans 20 (6A-II)
+      https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/
+  - McAllen High 62, Weslaco East 19 (5A-I)
+      https://rgvsports.com/rgv-football-playoff-schedule/
+  - McAllen Rowe 44, Flour Bluff 28 (5A-I)  [CONFIRM BEFORE AIR: Opponent changed on RGVSports Nov 18 (earlier listing said Sharyland High); CONFIRM BEFORE AIR]
+      https://rgvsports.com/rgv-football-playoff-schedule/
+  - Mercedes 44, Mission Veterans 42 (5A-II)
+      https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/
+  - Sharyland 31, Brownsville Pace 20 (5A-II)
+      https://rgvsports.com/rgv-football-playoff-schedule/
+  - CC Veterans 59, McAllen Memorial 23 (5A-I)
+      https://dailymcallen.com/local-news/editions/11-14-2026
+  - CC Carroll 48, La Joya Palmview 17 (5A-I)
+      https://rgvsports.com/rgv-football-playoff-schedule/
+  - Gregory-Portland 68, Sharyland Pioneer 16 (5A-II)
+      https://rgvsports.com/rgv-football-playoff-schedule/
+  - Calallen 64, Hidalgo 0 (4A-I)
+      https://rgvsports.com/rgv-football-playoff-schedule/
+  - Port Lavaca Calhoun 17, Edcouch-Elsa 3 (4A-I)
+      https://rgvsports.com/rgv-football-playoff-schedule/
+  - Orange Grove 35, Raymondville 28 (3A-I)
+      https://rgvsports.com/rgv-football-playoff-schedule/
+  - La Villa 67, Pettus 0 (2A-II)
+      https://rgvsports.com/rgv-football-playoff-schedule/
+  This week (area round):
+    - Thu Nov 19: Weslaco at SA Brennan 6 PM; McAllen vs Boerne Champion 7 PM (Laredo);
+      Mercedes vs Boerne 7 PM (Laredo); Sharyland vs Alamo Heights 7 PM (Corpus Christi)
+      https://rgvsports.com/rgv-football-playoff-schedule/
+    - Fri Nov 20: Harlingen vs SA Harlan 7 PM; PSJA North vs SA Warren 7 PM (Alice); McAllen
+      Rowe vs Smithson Valley 7 PM; La Villa vs Chilton 7 PM
+      https://rgvsports.com/rgv-football-playoff-schedule/
+    - Sat Nov 21: SA Sotomayor at Edinburg Vela 3 PM
+      https://rgvsports.com/rgv-football-playoff-schedule/
+  College: UTRGV falls 48-0 to No. 7 SFA in the home finale (UTRGV 5-6)  https://gooddayedinburg.com/local-news/editions/11-15-2026
+
+NFL · WEEK 10  (scores: https://www.nfl.com/schedules/2026/by-week/week-10)
+  Thu Nov 12: WAS 24, NYG 21
+  Sun Nov 15: DET 35, NE 10 (Munich)
+  Sun Nov 15: KC 35, ATL 13
+  Sun Nov 15: CLE 27, HOU 24
+  Sun Nov 15: MIN 30, GB 10
+  Sun Nov 15: IND 24, MIA 22
+  Sun Nov 15: CAR 20, NO 17
+  Sun Nov 15: BUF 31, NYJ 12
+  Sun Nov 15: JAX 40, TEN 23
+  Sun Nov 15: LAR 34, ARI 6
+  Sun Nov 15: SEA 21, LV 13
+  Sun Nov 15: SF 46, DAL 40
+  Sun Nov 15: CIN 38, PIT 18 (SNF)
+  Mon Nov 16: LAC 23, BAL 20 (MNF)
+  - Burrow threw for 409 and Chase had 231 receiving yards in Cincinnati's 38-18 win over
+    Pittsburgh
+    https://www.pro-football-reference.com/years/2026/week_10.htm
+  - 49ers beat the Cowboys 46-40 (Purdy 389 yds); SF and BUF lead at 8-1; Cowboys 4-6,
+    Texans 3-6
+    https://www.nfl.com/schedules/2026/by-week/week-10
+  - Week 11: Colts at Texans Thu Nov 19; Titans at Cowboys Sun Nov 22; Bengals at Commanders
+    Mon Nov 23
+    https://www.footballdb.com/games/index.html?yr=2026
+
+NBA  (scores: https://www.basketball-reference.com/boxscores/)
+  Tue Nov 17: NYK 111, TOR 102
+  Tue Nov 17: MIN 106, POR 105
+  Tue Nov 17: DET 105, SAS 93
+  Tue Nov 17: UTA 132, LAC 107
+  Tue Nov 17: LAL 118, CHA 114 (OT)
+  Texas teams, Mon Nov 16: MIA 128, HOU 110
+  Texas teams, Sun Nov 15: BOS 131, DAL 94
+  - Lakers (13-2) have won nine straight; Quentin Grimes scored 47 in the OT win over
+    Charlotte
+    https://buzzerbeaternews.com/news/nba-scores-last-night-2026-11-17/
+  - Spurs are 12-3 despite the loss to Detroit; Magic snapped Boston's six-game win streak
+    Monday
+    https://www.nba.com/news/starting-5-november-17-2026
+  - Texas teams: Rockets lost at Miami 128-110 (Nov 16); Mavericks lost at Boston 131-94
+    (Nov 15)
+    https://statsnext.com/nba/games/2026-11
+
+MLB · OFFSEASON (no scores in November; news instead)
+  MLB is in the offseason in November, so this card shows news instead of scores. The
+    Brewers are 2026 World Series champions.
+  - Skubal sweepstakes: Mets, Blue Jays, Dodgers and Padres have met or are set to meet; a
+    deal is expected before the CBA expires Dec. 1 (11:59 PM ET)
+    https://www.mlb.com/news/tarik-skubal-rumors-november-17-free-agent-update
+  - Twins agree to 2 years, $55M with Sonny Gray; White Sox land Dustin May (3 yrs, ~$52.5M)
+    https://www.espn.com/mlb/story/_/id/50328768/free-agency-tracker-offseason-trades-moves-2026-2027
+  - Mariners get Maikel Garcia from Royals in a six-player trade; Astros are gauging
+    interest in Christian Walker
+    https://www.mlb.com/news/mlb-rumors-and-2026-27-free-agent-news-november-18
+
+MEME OF THE WEEK · WHAT THE KIDS ARE TALKING ABOUT
+Drew & Jess are watching the feeds so you don't have to
+What your kids might be saying at school this week, and one line on how to bring it up.
+
+  ELEMENTARY
+  - Roblox: 'Steal An Egg' & 'Throw Food For Animals'
+      What: Steal An Egg is Roblox's #1 game (about 1.17M playing); Throw Food For Animals
+        is #2 and up 58% on the week.
+      Means: Pet-collecting games where other players can take your eggs; paid boosts are
+        optional.
+      How to bring it up: Ask 'who's stealing your eggs?' Set chat to friends-only and a
+        spending limit.
+      RBLXSTAT: Roblox weekly report Nov 9-15: https://rblxstat.com/blog/roblox-weekly-report-2026-11-15
+      SafeScreens: Roblox parent's guide: https://safescreens.us/guides/gaming/roblox-experiences
+      RoStats: Top Roblox games Nov 2026: https://rostats.io/charts/2026-11
+  - '6-7'
+      What: A catchphrase kids yell for laughs, often with a hands-weighing gesture.
+      Means: No fixed meaning; some link it to LaMelo Ball (6'7"). Already being mocked as
+        overused.
+      How to bring it up: Laugh and ask them to show you the gesture; it's meant to confuse
+        adults.
+      Reader's Digest: Gen Alpha slang: https://www.rd.com/article/gen-alpha-slang/
+      MadeForMums: parents' guide to slang: https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/
+
+  MIDDLE SCHOOL
+  - 'Talk To Me Doja' (Meme of the Week)  [MEME OF THE WEEK]
+      What: A TikTok dance trend copying a dance from the anime 'Yamada-kun and the Seven
+        Witches' set to Doja Cat's 'Like That' (started Nov 7).
+      Means: Kids film their own version next to the anime clip.
+      How to bring it up: Ask 'show me the dance?' Check the anime's rating before streaming
+        it.
+      CONFIRM BEFORE AIR: Popularity is TikTok-side; X shows only ~38 posts in 7 days
+      Know Your Meme: Talk To Me Doja: https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained
+  - 'Pennywide' meme
+      What: A Halloween trick-or-treat video of a child in a Pennywise mask went viral and
+        became memes mocking him.
+      Means: A cruelty meme aimed at a real kid, remixed into brainrot edits.
+      How to bring it up: Ask 'would you laugh if that was your cousin?' It's a natural
+        bridge to the bullying talk.
+      Know Your Meme: Pennywide: https://trending.knowyourmeme.com/editorials/guides/what-is-the-pennywide-meme-the-viral-pennywise-house-video-and-memes-explained
+
+  HIGH SCHOOL
+  - The Door Kick Challenge
+      What: A TikTok trend: kick or pound a stranger's front door, film it, run.
+      Means: Police say it can mean vandalism, trespass or burglary charges, and a scared
+        homeowner may react.
+      How to bring it up: It's a crime, not a prank; Irvine PD says parents can be held
+        accountable. Ask what they'd do if friends filmed it.
+      CONFIRM BEFORE AIR: No RGV incident found; X shows only ~39 posts in 7 days
+      ABC7: Irvine police warning (Nov 12): https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/
+      WBBH: Cape Coral incident (Nov 16): https://www.gulfcoastnewsnow.com/article/video-door-kick-challenge-cape-coral-florida/74444521
+      KOBI: Talent, Oregon (Nov 12): https://kobi5.com/news/door-kicking-trend-is-growing-locally-five-incidents-reported-in-talent-319588/
+  - Slang: aura, aura farming, cooked
+      What: 'Aura' = someone's vibe; 'aura farming' = doing things to look cool online;
+        'cooked' = in trouble.
+      Means: Words to question: 'huzz,' 'bop,' 'big back' can objectify or mock women and
+        bodies.
+      How to bring it up: Be curious, not corrective: ask what a word means. Terms burn out
+        fast.
+      MadeForMums: 45 Gen Alpha slang words: https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/
+      Reader's Digest: 24 Gen Alpha slang terms: https://www.rd.com/article/gen-alpha-slang/
+      Hello!: how to respond to bizarre slang: https://www.hellomagazine.com/healthandbeauty/mother-and-baby/878329/your-gen-alpha-child-increasingly-bizarre-slang-how-to-respond/
+  - GTA 6 launch week
+      What: GTA VI was set to release Thu Nov 19 at midnight, rated M (17+). X volume jumped
+        to ~255k posts on Nov 18.
+      Means: Late nights and possible skipped school; some UK schools set attendance prizes.
+      How to bring it up: Is 17+ a rule or a suggestion at your house? (Jess has more on
+        this in Block C.)
+      CONFIRM BEFORE AIR: Launch actually happened on time Nov 19
+      ABC News: parents and GTA 6: https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889
+      Independent: UK schools and GTA 6: https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html
+
+ON THE SHOW: see run-of-show-monday.md (13 blocks, 60 minutes) and the studio page for notes, follow-up questions and links.
+
+============================================================================================
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-18 20:34 CT.
+Links checked 2026-11-18: 73 ok, 4 blocked by the site's bot protection (verified in a browser/search), 0 dead, 1 unreachable.
