@@ -1,0 +1,2658 @@
+{
+  "version": 6,
+  "type": "full",
+  "companionBuild": "generated-not-exported",
+  "pages": {
+    "1": {
+      "name": "DITM",
+      "gridSize": {
+        "minColumn": 0,
+        "maxColumn": 7,
+        "minRow": 0,
+        "maxRow": 3
+      },
+      "controls": {
+        "0": {
+          "0": {
+            "type": "button",
+            "style": {
+              "text": "A\nCold Open",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 1318955,
+              "bgcolor": 15906565,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [
+              {
+                "id": "66475e53-4961-4cd9-8bd1-3fd8f5d12872",
+                "type": "variable_value",
+                "instance_id": "internal",
+                "options": {
+                  "variable": "internal:custom_ditm_block_index",
+                  "op": "eq",
+                  "value": "0"
+                },
+                "style": {
+                  "bgcolor": 16777215,
+                  "color": 1318955
+                },
+                "isInverted": false
+              }
+            ],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "71633381-fa74-46aa-9421-ff5afd038a58",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block_index",
+                        "value": "0"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "50ca1c41-8cbc-439f-8ef5-8fac4ba32eaa",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block",
+                        "value": "A"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "0277b006-b225-4e68-abe1-2ca026a2b05a",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_title",
+                        "value": "Cold Open & Jingle"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "e5a792ac-778a-4431-bf61-692cf769476f",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_headline",
+                        "value": "Good morning, Rio Grande Valley"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "81e0e6fe-a90a-487e-b3a6-7b8572bea3c4",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "value": "Drew Lentz\nHost \u00b7 Drew in the Morning"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "b430a08a-9065-40ac-b5c6-61addafd61c4",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_scene",
+                        "value": "Main Host"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "0b170be7-bce2-44aa-9577-4f9d67a842f5",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": "Drew Lentz\nHost \u00b7 Drew in the Morning"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "9b69fb94-d5a6-4bd0-9b55-9fd024a796ab",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": "Good morning, Rio Grande Valley"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "2f724fd9-473c-4269-8d89-b85bed7f7254",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": "Cold Open & Jingle"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "01d0fe29-5b84-4f6d-8041-5a791c9a645f",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": "A"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "405dbfff-767d-448e-827f-aaacae314964",
+                      "instance": "obs",
+                      "action": "set_current_scene",
+                      "options": {
+                        "scene": "Main Host"
+                      },
+                      "delay": 20
+                    },
+                    {
+                      "id": "56124214-355a-449b-9430-5e9296933d4c",
+                      "instance": "obs",
+                      "action": "set_source_visibility",
+                      "options": {
+                        "scene": "Main Host",
+                        "source": "DITM Lower Third",
+                        "visible": true
+                      },
+                      "delay": 30
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          },
+          "1": {
+            "type": "button",
+            "style": {
+              "text": "B\nStarbase Watch",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 16777215,
+              "bgcolor": 14964526,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [
+              {
+                "id": "79bc1a7f-dde6-4ccb-b143-265a203d9514",
+                "type": "variable_value",
+                "instance_id": "internal",
+                "options": {
+                  "variable": "internal:custom_ditm_block_index",
+                  "op": "eq",
+                  "value": "1"
+                },
+                "style": {
+                  "bgcolor": 16777215,
+                  "color": 1318955
+                },
+                "isInverted": false
+              }
+            ],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "c0f9358e-f5b8-430f-a4ea-afa26abd6527",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block_index",
+                        "value": "1"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "2f0527c8-87dc-41e8-a3e0-8ff156189fcb",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block",
+                        "value": "B"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "1276eec4-c98a-4887-a41c-73f310ee2db7",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_title",
+                        "value": "Starbase Watch: SpaceX, the Vote & the Launch"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "858d2ff4-892f-451a-86af-ef5dda96ad75",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_headline",
+                        "value": "Cameron County rejects SpaceX tax break hearing, 3-2"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "5d1c81eb-3c63-4d65-9481-daa0813c4583",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "value": "Cameron County Vote\nAbatement hearing denied 3-2 \u00b7 Nov. 17"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "f5c5b48a-f407-4253-8efc-5a5eafd23eda",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_scene",
+                        "value": "Main Host"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "047939dd-7759-4df8-8cdc-0a67af4463e3",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": "Cameron County Vote\nAbatement hearing denied 3-2 \u00b7 Nov. 17"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "a14921c8-3806-4c58-8a67-833bce2b04bb",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": "Cameron County rejects SpaceX tax break hearing, 3-2"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "d7a873e3-4d3b-48e8-b13f-cd4744e6dec5",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": "Starbase Watch: SpaceX, the Vote & the Launch"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "89529087-6460-4786-b35f-e3f4bdc053d0",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": "B"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "cc71b428-0d17-4d38-878c-323e9de02ac7",
+                      "instance": "obs",
+                      "action": "set_current_scene",
+                      "options": {
+                        "scene": "Main Host"
+                      },
+                      "delay": 20
+                    },
+                    {
+                      "id": "8b86dc36-3fb9-4e36-b643-6d75bab6d0ee",
+                      "instance": "obs",
+                      "action": "set_source_visibility",
+                      "options": {
+                        "scene": "Main Host",
+                        "source": "DITM Lower Third",
+                        "visible": true
+                      },
+                      "delay": 30
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          },
+          "2": {
+            "type": "button",
+            "style": {
+              "text": "C\nJess Drop-In",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 16777215,
+              "bgcolor": 9333695,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [
+              {
+                "id": "1cfbbdde-23f5-4ecb-89d6-6bc34ce63937",
+                "type": "variable_value",
+                "instance_id": "internal",
+                "options": {
+                  "variable": "internal:custom_ditm_block_index",
+                  "op": "eq",
+                  "value": "2"
+                },
+                "style": {
+                  "bgcolor": 16777215,
+                  "color": 1318955
+                },
+                "isInverted": false
+              }
+            ],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "f42c41a6-8cb5-4dda-a996-d94c46d18e8f",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block_index",
+                        "value": "2"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "ff51666f-8975-4f55-b611-a1dceb86ede0",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block",
+                        "value": "C"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "5fc5bb18-3198-40c8-b781-75ccfb833c3f",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_title",
+                        "value": "Jess Drop-In #1: GTA 6 Week & the Digital Generation"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "747a12dd-6886-4f60-9ddd-0cd23c9ee697",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_headline",
+                        "value": "GTA 6 launches Nov. 19 at midnight; rated M (17+)"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "40531db4-ad4e-4574-a99b-e92fe7dc407d",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "value": "Jess\nCo-host \u00b7 Drop-in Guest"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "9e99423c-9fda-42d4-9a7c-f5160aad032d",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_scene",
+                        "value": "Host + Jess"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "a36b1f8f-ec96-4363-811b-98bd7b474d77",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": "Jess\nCo-host \u00b7 Drop-in Guest"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "f7c65ef8-4c3c-4109-95c9-7b16e5d57993",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": "GTA 6 launches Nov. 19 at midnight; rated M (17+)"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "c595ec31-4c45-4a0e-b3a1-88bbdd0f3993",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": "Jess Drop-In #1: GTA 6 Week & the Digital Generation"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "aaa73150-f786-4e58-bbd8-f5fd0d165232",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": "C"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "73ce6123-54e9-4344-95cc-966246a6ee4f",
+                      "instance": "obs",
+                      "action": "set_current_scene",
+                      "options": {
+                        "scene": "Host + Jess"
+                      },
+                      "delay": 20
+                    },
+                    {
+                      "id": "73fc7ad8-693d-479d-8cfe-2d1b26a0f3c8",
+                      "instance": "obs",
+                      "action": "set_source_visibility",
+                      "options": {
+                        "scene": "Main Host",
+                        "source": "DITM Lower Third",
+                        "visible": true
+                      },
+                      "delay": 30
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          },
+          "3": {
+            "type": "button",
+            "style": {
+              "text": "D\nBallot Box",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 16777215,
+              "bgcolor": 2781079,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [
+              {
+                "id": "9146814b-39a9-4ee5-ac40-de3b22e0b85f",
+                "type": "variable_value",
+                "instance_id": "internal",
+                "options": {
+                  "variable": "internal:custom_ditm_block_index",
+                  "op": "eq",
+                  "value": "3"
+                },
+                "style": {
+                  "bgcolor": 16777215,
+                  "color": 1318955
+                },
+                "isInverted": false
+              }
+            ],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "f17e0aeb-d9c4-4273-bb83-ebf24476a8a0",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block_index",
+                        "value": "3"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "14b55205-4120-437f-8048-7c4dd2de5575",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block",
+                        "value": "D"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "76f386e3-3af3-446a-a69d-cc9abaa1412b",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_title",
+                        "value": "Ballot Box Rewind: Pulido, Runoffs & the Valley Flip"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "25f26f96-c962-40a7-a4ff-3193f21e4282",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_headline",
+                        "value": "Bobby Pulido defeats Rep. Monica De La Cruz in TX-15"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "376be6ad-b1e1-4e1c-924f-2d9ea90e3366",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "value": "TX-15: Bobby Pulido\nDefeated De La Cruz \u00b7 Takes office Jan. 3"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "4dd223e7-d88a-439e-915a-108fcf7f72be",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_scene",
+                        "value": "Main Host"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "54eb5151-3b70-4ec9-857f-9dc2022b0cd9",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": "TX-15: Bobby Pulido\nDefeated De La Cruz \u00b7 Takes office Jan. 3"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "b9f7b54a-4d81-4ba3-873f-4e366a842c9a",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": "Bobby Pulido defeats Rep. Monica De La Cruz in TX-15"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "d2d6b4e0-bc0e-4285-a042-595429f4bd1b",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": "Ballot Box Rewind: Pulido, Runoffs & the Valley Flip"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "e89dc9ac-fc9e-4aab-b8ed-e239dc34d63e",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": "D"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "e7dd8dc5-1624-4b85-9c53-10b7929e18c4",
+                      "instance": "obs",
+                      "action": "set_current_scene",
+                      "options": {
+                        "scene": "Main Host"
+                      },
+                      "delay": 20
+                    },
+                    {
+                      "id": "a961c542-08fc-4786-8f51-d01d3a662684",
+                      "instance": "obs",
+                      "action": "set_source_visibility",
+                      "options": {
+                        "scene": "Main Host",
+                        "source": "DITM Lower Third",
+                        "visible": true
+                      },
+                      "delay": 30
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          },
+          "4": {
+            "type": "button",
+            "style": {
+              "text": "E\nCity Hall",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 16777215,
+              "bgcolor": 2792847,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [
+              {
+                "id": "4f3cc030-9ce1-4ce3-b736-b3840481f532",
+                "type": "variable_value",
+                "instance_id": "internal",
+                "options": {
+                  "variable": "internal:custom_ditm_block_index",
+                  "op": "eq",
+                  "value": "4"
+                },
+                "style": {
+                  "bgcolor": 16777215,
+                  "color": 1318955
+                },
+                "isInverted": false
+              }
+            ],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "4de72645-d92a-404f-98c9-7f276f6edac8",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block_index",
+                        "value": "4"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "ce5635ff-bdac-4a3a-b34c-630099916b7e",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block",
+                        "value": "E"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "9919f716-2647-452d-8815-59959100afde",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_title",
+                        "value": "City Hall & School Board Watch"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "a4222aa6-b071-4ee0-9fb6-e51872000941",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_headline",
+                        "value": "Edinburg CISD adds new trustees; $3M stop-loss contract on agenda"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "5056033a-4f3a-4310-95ed-1531bba17cf2",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "value": "Edinburg CISD Board\nNew trustees from Nov. 3 election"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "7073ef71-a8cc-472b-9211-76640ec7ab70",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_scene",
+                        "value": "Main Host"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "1738400e-04e7-4115-9d3a-6d941cdf0ddc",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": "Edinburg CISD Board\nNew trustees from Nov. 3 election"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "3c42bd9e-13d4-4b7e-abe7-6c4d3a278b5a",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": "Edinburg CISD adds new trustees; $3M stop-loss contract on agenda"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "7889660c-fe03-4d58-b1e8-ff12846a40b8",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": "City Hall & School Board Watch"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "6e250591-2aa5-4e6a-bb4c-c5ecd9430623",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": "E"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "8cd838f8-dbac-4be1-bed4-66eb9799dfed",
+                      "instance": "obs",
+                      "action": "set_current_scene",
+                      "options": {
+                        "scene": "Main Host"
+                      },
+                      "delay": 20
+                    },
+                    {
+                      "id": "81e33542-c927-4c49-9e4e-a1a873172b5d",
+                      "instance": "obs",
+                      "action": "set_source_visibility",
+                      "options": {
+                        "scene": "Main Host",
+                        "source": "DITM Lower Third",
+                        "visible": true
+                      },
+                      "delay": 30
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          },
+          "5": {
+            "type": "button",
+            "style": {
+              "text": "$(internal:custom_ditm_block)\n$(internal:custom_ditm_title)",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 14987610,
+              "bgcolor": 926771,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [],
+                  "up": []
+                }
+              }
+            }
+          },
+          "6": {
+            "type": "button",
+            "style": {
+              "text": "CLEAR",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 16183783,
+              "bgcolor": 3811882,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "1fd13034-5f69-4792-a33e-2428d0107189",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "value": ""
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "fe5a0e61-dd78-4a01-bf56-21aaedd3cab9",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_headline",
+                        "value": ""
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "c9cb2dab-f078-4257-9625-cdb9002b715a",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_title",
+                        "value": ""
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "7af3e095-1899-4195-9645-9deaf89fd3de",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": ""
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "538e6699-7dd7-4be0-88ed-2afb908c1864",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": ""
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "2e9c550c-08bc-4b1d-beb5-bb58105bcbaf",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": ""
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "502a7da5-0865-42ef-9464-62b614c60a99",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": ""
+                      },
+                      "delay": 10
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          }
+        },
+        "1": {
+          "0": {
+            "type": "button",
+            "style": {
+              "text": "F\nZoho &",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 16777215,
+              "bgcolor": 12348453,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [
+              {
+                "id": "0b93ca49-d62d-47cd-b749-2cbdb2fd5345",
+                "type": "variable_value",
+                "instance_id": "internal",
+                "options": {
+                  "variable": "internal:custom_ditm_block_index",
+                  "op": "eq",
+                  "value": "5"
+                },
+                "style": {
+                  "bgcolor": 16777215,
+                  "color": 1318955
+                },
+                "isInverted": false
+              }
+            ],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "720ff0d8-0d09-40a2-bbd0-b80b7674acde",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block_index",
+                        "value": "5"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "42f4dfc9-15cb-40fe-8071-96e0cb64e0d2",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block",
+                        "value": "F"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "e995046c-78bc-46f8-ad93-d5d8c003d0f9",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_title",
+                        "value": "Zoho & the Park"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "d64df7d5-ce16-48bc-9e54-cb0b7062dc67",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_headline",
+                        "value": "2023: McAllen rezoned disc golf park for Zoho"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "2c60146f-c0d9-47e4-8c8b-0e27ab5de92c",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "value": "Zoho & the Disc Golf Park\nRezoned July 2023 \u00b7 commission vote 6-0"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "be6812c1-0558-44f8-8ea5-98746ad74c89",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_scene",
+                        "value": "Main Host"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "22846f37-732d-4d74-8a88-0a223b933a87",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": "Zoho & the Disc Golf Park\nRezoned July 2023 \u00b7 commission vote 6-0"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "e0060b7b-21c6-4f94-9767-bf604c5f8b96",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": "2023: McAllen rezoned disc golf park for Zoho"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "6abbdc7f-14ce-4088-a75f-f162e17bb6d5",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": "Zoho & the Park"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "bd03f295-8a42-4a67-b03a-97949018e31f",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": "F"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "cb896c14-65bc-44ca-9a53-b6b6d950eed6",
+                      "instance": "obs",
+                      "action": "set_current_scene",
+                      "options": {
+                        "scene": "Main Host"
+                      },
+                      "delay": 20
+                    },
+                    {
+                      "id": "73341d5e-cf08-408a-b2d0-dc2548f1d17e",
+                      "instance": "obs",
+                      "action": "set_source_visibility",
+                      "options": {
+                        "scene": "Main Host",
+                        "source": "DITM Lower Third",
+                        "visible": true
+                      },
+                      "delay": 30
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          },
+          "1": {
+            "type": "button",
+            "style": {
+              "text": "G\nMcAllen Metro",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 16777215,
+              "bgcolor": 4434571,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [
+              {
+                "id": "19613dc0-d1e4-4c3c-9774-630dc337218e",
+                "type": "variable_value",
+                "instance_id": "internal",
+                "options": {
+                  "variable": "internal:custom_ditm_block_index",
+                  "op": "eq",
+                  "value": "6"
+                },
+                "style": {
+                  "bgcolor": 16777215,
+                  "color": 1318955
+                },
+                "isInverted": false
+              }
+            ],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "8e22e6f8-70c5-479f-8fc9-24cd52043096",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block_index",
+                        "value": "6"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "cce5ccd2-b3af-4a7a-b71f-ff852500c7b2",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block",
+                        "value": "G"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "adb827bc-67c5-49a8-8a45-e049ef928cc8",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_title",
+                        "value": "McAllen Metro Desk: Economic Development"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "ae4e3a45-a768-4355-92f6-c91f85812b97",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_headline",
+                        "value": "McAllen EDC wins state award for Valeo's $225M plant"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "0080356d-9cf2-46cc-9c87-f3bd5e90364d",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "value": "McAllen EDC\nState award \u00b7 Valeo $225M plant"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "7ccc766f-5d00-4c27-aa09-cb96cebdd138",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_scene",
+                        "value": "Main Host"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "56a21da7-a52d-4c80-9cc9-f9d8a4c371d8",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": "McAllen EDC\nState award \u00b7 Valeo $225M plant"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "82530a28-ec6a-4667-9f58-8aa159135786",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": "McAllen EDC wins state award for Valeo's $225M plant"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "bf641999-586d-471c-97c3-a6b1b96e0db4",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": "McAllen Metro Desk: Economic Development"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "ddabf0f1-411a-4893-9353-544990aeb7ed",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": "G"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "54173fcb-bf56-40b1-9197-3e551920b8e1",
+                      "instance": "obs",
+                      "action": "set_current_scene",
+                      "options": {
+                        "scene": "Main Host"
+                      },
+                      "delay": 20
+                    },
+                    {
+                      "id": "ab2eac20-724a-449e-9fc4-207ffdfa2185",
+                      "instance": "obs",
+                      "action": "set_source_visibility",
+                      "options": {
+                        "scene": "Main Host",
+                        "source": "DITM Lower Third",
+                        "visible": true
+                      },
+                      "delay": 30
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          },
+          "2": {
+            "type": "button",
+            "style": {
+              "text": "H\nOpen-Format",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 16777215,
+              "bgcolor": 5731728,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [
+              {
+                "id": "8c07f89c-b653-4dc2-b7e6-f8a69be5175a",
+                "type": "variable_value",
+                "instance_id": "internal",
+                "options": {
+                  "variable": "internal:custom_ditm_block_index",
+                  "op": "eq",
+                  "value": "7"
+                },
+                "style": {
+                  "bgcolor": 16777215,
+                  "color": 1318955
+                },
+                "isInverted": false
+              }
+            ],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "38715490-0f57-4218-92a5-3606954bc3d7",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block_index",
+                        "value": "7"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "ecabb597-8621-499f-852f-32f2f6e95915",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block",
+                        "value": "H"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "27646200-2eac-48ef-b454-75308337780c",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_title",
+                        "value": "Open-Format Story Block (pick one or two)"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "0dc97059-683e-41d0-9bd0-87a68e06ecbf",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_headline",
+                        "value": "Hidalgo County can't block data centers outside city limits"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "25d0eddf-b7fc-48a7-a42d-748921530754",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "value": "Judge Richard Cortez\nHidalgo County Judge \u00b7 Citizens League"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "79154fc4-c123-4e30-8d85-a3bc4c73a732",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_scene",
+                        "value": "Main Host"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "57964543-059f-46a5-b8d3-70f15da7a1c8",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": "Judge Richard Cortez\nHidalgo County Judge \u00b7 Citizens League"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "b4627b9f-71a1-4f39-949c-a811ed3b08ac",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": "Hidalgo County can't block data centers outside city limits"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "60484619-862c-4566-92d3-9afde982d19e",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": "Open-Format Story Block (pick one or two)"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "b3494a33-2596-4126-bc04-98cda16803af",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": "H"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "784aad1b-7c65-4d03-8426-bb2a68a0d5e9",
+                      "instance": "obs",
+                      "action": "set_current_scene",
+                      "options": {
+                        "scene": "Main Host"
+                      },
+                      "delay": 20
+                    },
+                    {
+                      "id": "a87cb941-12cd-4478-89d4-dbc018d13a02",
+                      "instance": "obs",
+                      "action": "set_source_visibility",
+                      "options": {
+                        "scene": "Main Host",
+                        "source": "DITM Lower Third",
+                        "visible": true
+                      },
+                      "delay": 30
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          },
+          "3": {
+            "type": "button",
+            "style": {
+              "text": "I\nThe National",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 16777215,
+              "bgcolor": 7166330,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [
+              {
+                "id": "3f36ee92-4da9-48e8-b4bc-aa0131bfd3b1",
+                "type": "variable_value",
+                "instance_id": "internal",
+                "options": {
+                  "variable": "internal:custom_ditm_block_index",
+                  "op": "eq",
+                  "value": "8"
+                },
+                "style": {
+                  "bgcolor": 16777215,
+                  "color": 1318955
+                },
+                "isInverted": false
+              }
+            ],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "04b72a27-efcb-4c1d-81a7-45704833cb5d",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block_index",
+                        "value": "8"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "0b8ae193-24c2-4da1-9a94-dca1b2130907",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block",
+                        "value": "I"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "cd169ef0-4a63-44e5-b486-4fde9afbbde1",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_title",
+                        "value": "The National Desk"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "96cf798d-091f-4edb-af73-c7e8df82c6b8",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_headline",
+                        "value": "FAA ground stop: legacy network, a router and a long weekend"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "9b849be9-a2ff-4272-812b-75f5e082f56c",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "value": "National Desk\nThe big stories \u00b7 and why they matter here"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "f9a791a1-d7da-4bf1-8a3c-ddb0aa47c7cf",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_scene",
+                        "value": "Main Host"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "0304228b-bbbe-4c0b-be07-3ff37b1e8edd",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": "National Desk\nThe big stories \u00b7 and why they matter here"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "4e4b8bb1-b24f-466a-9e80-a4324ae4ba12",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": "FAA ground stop: legacy network, a router and a long weekend"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "ded93a47-6651-47be-bece-bdb5c1c7ae94",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": "The National Desk"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "a0565087-b523-4a5b-ad93-940f81f3f863",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": "I"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "b21b514f-321d-4b88-b8a7-fdbf47f0e8f2",
+                      "instance": "obs",
+                      "action": "set_current_scene",
+                      "options": {
+                        "scene": "Main Host"
+                      },
+                      "delay": 20
+                    },
+                    {
+                      "id": "912557f2-94a7-4043-9e86-9ea0502dd70a",
+                      "instance": "obs",
+                      "action": "set_source_visibility",
+                      "options": {
+                        "scene": "Main Host",
+                        "source": "DITM Lower Third",
+                        "visible": true
+                      },
+                      "delay": 30
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          },
+          "4": {
+            "type": "button",
+            "style": {
+              "text": "J\nListener Line",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 1318955,
+              "bgcolor": 16032353,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [
+              {
+                "id": "7199f3d4-616a-46b4-90f4-4bae5cf98ed0",
+                "type": "variable_value",
+                "instance_id": "internal",
+                "options": {
+                  "variable": "internal:custom_ditm_block_index",
+                  "op": "eq",
+                  "value": "9"
+                },
+                "style": {
+                  "bgcolor": 16777215,
+                  "color": 1318955
+                },
+                "isInverted": false
+              }
+            ],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "2d106e3b-15b4-4799-a39d-bd8fda04ecf1",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block_index",
+                        "value": "9"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "c33546e1-905a-4446-b105-4e4a4ed2e125",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block",
+                        "value": "J"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "9458bea8-33fd-4c4e-a27e-b333913fb44a",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_title",
+                        "value": "Listener Line #1: Your Topics & DMs"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "1366314b-b824-4039-85a8-44fb77d40588",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_headline",
+                        "value": "Send us your topics: DM or email"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "28c0d8d4-c3ee-4174-8fcf-3c09a222adda",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "value": "Send Us Your Topics\nDM @drewinthemorning or email the show"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "d292a87e-c813-47d0-ab65-0801121ff7ed",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_scene",
+                        "value": "Main Host"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "db4d062f-c25b-4651-99b0-06bfb643a513",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": "Send Us Your Topics\nDM @drewinthemorning or email the show"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "00a1702e-8d70-4959-98c8-b6d2971d2906",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": "Send us your topics: DM or email"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "96154140-29d1-4b33-97d0-136546919b23",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": "Listener Line #1: Your Topics & DMs"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "1c7fa1a3-e82f-49a3-a152-9b06e4264295",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": "J"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "c5cfe643-491d-4273-a92e-d7cf44992365",
+                      "instance": "obs",
+                      "action": "set_current_scene",
+                      "options": {
+                        "scene": "Main Host"
+                      },
+                      "delay": 20
+                    },
+                    {
+                      "id": "f00b9e56-4fa3-4053-9ce3-7a9c84b83638",
+                      "instance": "obs",
+                      "action": "set_source_visibility",
+                      "options": {
+                        "scene": "Main Host",
+                        "source": "DITM Lower Third",
+                        "visible": true
+                      },
+                      "delay": 30
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "0": {
+            "type": "button",
+            "style": {
+              "text": "K\nMeme of",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 1318955,
+              "bgcolor": 16744272,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [
+              {
+                "id": "0827a87e-6640-4e2e-8f2f-acadd600c86b",
+                "type": "variable_value",
+                "instance_id": "internal",
+                "options": {
+                  "variable": "internal:custom_ditm_block_index",
+                  "op": "eq",
+                  "value": "10"
+                },
+                "style": {
+                  "bgcolor": 16777215,
+                  "color": 1318955
+                },
+                "isInverted": false
+              }
+            ],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "db08883f-43ea-4167-b700-dd6ea643b99b",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block_index",
+                        "value": "10"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "25642c60-67d2-48a4-8ba7-911004d10a88",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block",
+                        "value": "K"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "007cd516-df0b-4d28-afd2-e39fa71e5501",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_title",
+                        "value": "Meme of the Week: What the Kids Are Talking About"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "dc0fda82-858f-4d22-b984-c899c68d697f",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_headline",
+                        "value": "Drew & Jess are watching the feeds so you don't have to"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "704de62d-5612-496b-904f-b54b6850ed1f",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "value": "Meme of the Week\nWhat your kids might be saying at school"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "b800bbb0-9999-4cdc-9f92-f1f69c769e18",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_scene",
+                        "value": "Main Host"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "16b57317-48f7-4bd9-b88b-73e46f00c4ff",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": "Meme of the Week\nWhat your kids might be saying at school"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "0b861537-c5a2-4497-b398-9064b0f47e59",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": "Drew & Jess are watching the feeds so you don't have to"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "60224589-1a3a-4b89-8d23-ef24e2b45312",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": "Meme of the Week: What the Kids Are Talking About"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "eeb9d6d9-29fa-459c-9f2f-cd2901f916cf",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": "K"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "c0255690-c125-494b-beeb-c598731f03b3",
+                      "instance": "obs",
+                      "action": "set_current_scene",
+                      "options": {
+                        "scene": "Main Host"
+                      },
+                      "delay": 20
+                    },
+                    {
+                      "id": "b601c13d-89fa-4ade-93d7-8088cd6fd8fd",
+                      "instance": "obs",
+                      "action": "set_source_visibility",
+                      "options": {
+                        "scene": "Main Host",
+                        "source": "DITM Lower Third",
+                        "visible": true
+                      },
+                      "delay": 30
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          },
+          "1": {
+            "type": "button",
+            "style": {
+              "text": "L\nHow We'd",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 16777215,
+              "bgcolor": 15167313,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [
+              {
+                "id": "80ca64f4-8ee5-4db6-bc46-c7ea1029d443",
+                "type": "variable_value",
+                "instance_id": "internal",
+                "options": {
+                  "variable": "internal:custom_ditm_block_index",
+                  "op": "eq",
+                  "value": "11"
+                },
+                "style": {
+                  "bgcolor": 16777215,
+                  "color": 1318955
+                },
+                "isInverted": false
+              }
+            ],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "22da3b34-bba8-4ffe-bb90-39e42451cac8",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block_index",
+                        "value": "11"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "4b9ecd30-f9da-4f9f-aeea-c130b2c6cbab",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block",
+                        "value": "L"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "a42f3af5-4b97-4001-8d5a-6b3c031952cd",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_title",
+                        "value": "How We'd Talk to Our Kids"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "91a2ccbf-ed43-4655-9d73-6c7b1c967987",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_headline",
+                        "value": "How We'd Talk to Our Kids: no judgment, just how we'd say it"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "d73b8726-1fe7-4bf8-95ea-f046d07d7bae",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "value": "How We'd Talk to Our Kids\nOpen \u00b7 Honest \u00b7 No judgment"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "113ace8d-7707-4886-9ad4-759582de7ad1",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_scene",
+                        "value": "Host + Jess"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "860e36e4-5135-4958-a669-312f83839f43",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": "How We'd Talk to Our Kids\nOpen \u00b7 Honest \u00b7 No judgment"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "0e23fc4b-3e30-4825-b3de-8e8fdafa2ff2",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": "How We'd Talk to Our Kids: no judgment, just how we'd say it"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "93ded8f0-5151-4734-bf4f-6fa6f034e866",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": "How We'd Talk to Our Kids"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "ce147018-81ad-4e3e-8678-402eee1dc853",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": "L"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "41df7fd2-a0ac-4c94-acc3-4eae1d9d6b2e",
+                      "instance": "obs",
+                      "action": "set_current_scene",
+                      "options": {
+                        "scene": "Host + Jess"
+                      },
+                      "delay": 20
+                    },
+                    {
+                      "id": "3d49689b-4892-4a99-b89c-54a93975b220",
+                      "instance": "obs",
+                      "action": "set_source_visibility",
+                      "options": {
+                        "scene": "Main Host",
+                        "source": "DITM Lower Third",
+                        "visible": true
+                      },
+                      "delay": 30
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          },
+          "2": {
+            "type": "button",
+            "style": {
+              "text": "M\nListener Line",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 16777215,
+              "bgcolor": 2508371,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [
+              {
+                "id": "943a7422-4cb2-496a-89bc-0f268424eea4",
+                "type": "variable_value",
+                "instance_id": "internal",
+                "options": {
+                  "variable": "internal:custom_ditm_block_index",
+                  "op": "eq",
+                  "value": "12"
+                },
+                "style": {
+                  "bgcolor": 16777215,
+                  "color": 1318955
+                },
+                "isInverted": false
+              }
+            ],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "7646ce77-8e6b-4e69-915c-208c36994672",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block_index",
+                        "value": "12"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "bf7d721b-3499-48d2-9a90-ed2456847ff7",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_block",
+                        "value": "M"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "eb5654aa-5917-4b77-8f7b-d940feada85a",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_title",
+                        "value": "Listener Line #2, Look Ahead & Wrap (Jess back in)"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "180d1ad6-a73d-4410-943b-2a4ea7ade5ea",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_headline",
+                        "value": "See you next Monday at 8 AM"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "9b43486d-b85c-44a6-b529-097f5c047e6c",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "value": "Jess\nCo-host \u00b7 Drop-in Guest"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "7092b121-cd73-4588-b832-a6329b0d2c39",
+                      "instance": "internal",
+                      "action": "custom_variable_set_value",
+                      "options": {
+                        "name": "ditm_scene",
+                        "value": "Host + Jess"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "cee4de87-bffa-45dc-bac9-3361100fafb2",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": "Jess\nCo-host \u00b7 Drop-in Guest"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "5e18f6b0-926f-4b24-94d9-e2661065c11c",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": "See you next Monday at 8 AM"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "eafebce3-245b-4da6-9873-b33d8b4fd7ad",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": "Listener Line #2, Look Ahead & Wrap (Jess back in)"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "17f7457e-c12f-4347-884c-0eba0415ba8f",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": "M"
+                      },
+                      "delay": 10
+                    },
+                    {
+                      "id": "46b4b62c-6bdd-4ab0-9efa-f48b393b77df",
+                      "instance": "obs",
+                      "action": "set_current_scene",
+                      "options": {
+                        "scene": "Host + Jess"
+                      },
+                      "delay": 20
+                    },
+                    {
+                      "id": "5269e604-4b32-4562-8d11-8f2684cf1a6a",
+                      "instance": "obs",
+                      "action": "set_source_visibility",
+                      "options": {
+                        "scene": "Main Host",
+                        "source": "DITM Lower Third",
+                        "visible": true
+                      },
+                      "delay": 30
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          },
+          "3": {
+            "type": "button",
+            "style": {
+              "text": "\u25b2 PREV",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 16183783,
+              "bgcolor": 1318955,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "b3450b9d-d232-4fb4-91f1-ddfc1d0869bd",
+                      "instance": "internal",
+                      "action": "custom_variable_set_expression",
+                      "options": {
+                        "name": "ditm_block_index",
+                        "expression": "($(internal:custom_ditm_block_index) + 12) % 13"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "e4e08d93-7c5c-4bc4-8396-37238f25e3ec",
+                      "instance": "internal",
+                      "action": "custom_variable_set_expression",
+                      "options": {
+                        "name": "ditm_block",
+                        "expression": "($(internal:custom_ditm_block_index) == 0 ? \"A\" : ($(internal:custom_ditm_block_index) == 1 ? \"B\" : ($(internal:custom_ditm_block_index) == 2 ? \"C\" : ($(internal:custom_ditm_block_index) == 3 ? \"D\" : ($(internal:custom_ditm_block_index) == 4 ? \"E\" : ($(internal:custom_ditm_block_index) == 5 ? \"F\" : ($(internal:custom_ditm_block_index) == 6 ? \"G\" : ($(internal:custom_ditm_block_index) == 7 ? \"H\" : ($(internal:custom_ditm_block_index) == 8 ? \"I\" : ($(internal:custom_ditm_block_index) == 9 ? \"J\" : ($(internal:custom_ditm_block_index) == 10 ? \"K\" : ($(internal:custom_ditm_block_index) == 11 ? \"L\" : \"M\"))))))))))))"
+                      },
+                      "delay": 30
+                    },
+                    {
+                      "id": "3a514314-3ecd-4253-96c9-9ec983d24649",
+                      "instance": "internal",
+                      "action": "custom_variable_set_expression",
+                      "options": {
+                        "name": "ditm_title",
+                        "expression": "($(internal:custom_ditm_block_index) == 0 ? \"Cold Open & Jingle\" : ($(internal:custom_ditm_block_index) == 1 ? \"Starbase Watch: SpaceX, the Vote & the Launch\" : ($(internal:custom_ditm_block_index) == 2 ? \"Jess Drop-In #1: GTA 6 Week & the Digital Generation\" : ($(internal:custom_ditm_block_index) == 3 ? \"Ballot Box Rewind: Pulido, Runoffs & the Valley Flip\" : ($(internal:custom_ditm_block_index) == 4 ? \"City Hall & School Board Watch\" : ($(internal:custom_ditm_block_index) == 5 ? \"Zoho & the Park\" : ($(internal:custom_ditm_block_index) == 6 ? \"McAllen Metro Desk: Economic Development\" : ($(internal:custom_ditm_block_index) == 7 ? \"Open-Format Story Block (pick one or two)\" : ($(internal:custom_ditm_block_index) == 8 ? \"The National Desk\" : ($(internal:custom_ditm_block_index) == 9 ? \"Listener Line #1: Your Topics & DMs\" : ($(internal:custom_ditm_block_index) == 10 ? \"Meme of the Week: What the Kids Are Talking About\" : ($(internal:custom_ditm_block_index) == 11 ? \"How We'd Talk to Our Kids\" : \"Listener Line #2, Look Ahead & Wrap (Jess back in)\"))))))))))))"
+                      },
+                      "delay": 30
+                    },
+                    {
+                      "id": "76786de1-ef6a-4259-9314-1802df9e5d53",
+                      "instance": "internal",
+                      "action": "custom_variable_set_expression",
+                      "options": {
+                        "name": "ditm_headline",
+                        "expression": "($(internal:custom_ditm_block_index) == 0 ? \"Good morning, Rio Grande Valley\" : ($(internal:custom_ditm_block_index) == 1 ? \"Cameron County rejects SpaceX tax break hearing, 3-2\" : ($(internal:custom_ditm_block_index) == 2 ? \"GTA 6 launches Nov. 19 at midnight; rated M (17+)\" : ($(internal:custom_ditm_block_index) == 3 ? \"Bobby Pulido defeats Rep. Monica De La Cruz in TX-15\" : ($(internal:custom_ditm_block_index) == 4 ? \"Edinburg CISD adds new trustees; $3M stop-loss contract on agenda\" : ($(internal:custom_ditm_block_index) == 5 ? \"2023: McAllen rezoned disc golf park for Zoho\" : ($(internal:custom_ditm_block_index) == 6 ? \"McAllen EDC wins state award for Valeo's $225M plant\" : ($(internal:custom_ditm_block_index) == 7 ? \"Hidalgo County can't block data centers outside city limits\" : ($(internal:custom_ditm_block_index) == 8 ? \"FAA ground stop: legacy network, a router and a long weekend\" : ($(internal:custom_ditm_block_index) == 9 ? \"Send us your topics: DM or email\" : ($(internal:custom_ditm_block_index) == 10 ? \"Drew & Jess are watching the feeds so you don't have to\" : ($(internal:custom_ditm_block_index) == 11 ? \"How We'd Talk to Our Kids: no judgment, just how we'd say it\" : \"See you next Monday at 8 AM\"))))))))))))"
+                      },
+                      "delay": 30
+                    },
+                    {
+                      "id": "361b2dfe-00cf-41aa-9b3c-47276d162d07",
+                      "instance": "internal",
+                      "action": "custom_variable_set_expression",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "expression": "($(internal:custom_ditm_block_index) == 0 ? \"Drew Lentz\\nHost \u00b7 Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 1 ? \"Cameron County Vote\\nAbatement hearing denied 3-2 \u00b7 Nov. 17\" : ($(internal:custom_ditm_block_index) == 2 ? \"Jess\\nCo-host \u00b7 Drop-in Guest\" : ($(internal:custom_ditm_block_index) == 3 ? \"TX-15: Bobby Pulido\\nDefeated De La Cruz \u00b7 Takes office Jan. 3\" : ($(internal:custom_ditm_block_index) == 4 ? \"Edinburg CISD Board\\nNew trustees from Nov. 3 election\" : ($(internal:custom_ditm_block_index) == 5 ? \"Zoho & the Disc Golf Park\\nRezoned July 2023 \u00b7 commission vote 6-0\" : ($(internal:custom_ditm_block_index) == 6 ? \"McAllen EDC\\nState award \u00b7 Valeo $225M plant\" : ($(internal:custom_ditm_block_index) == 7 ? \"Judge Richard Cortez\\nHidalgo County Judge \u00b7 Citizens League\" : ($(internal:custom_ditm_block_index) == 8 ? \"National Desk\\nThe big stories \u00b7 and why they matter here\" : ($(internal:custom_ditm_block_index) == 9 ? \"Send Us Your Topics\\nDM @drewinthemorning or email the show\" : ($(internal:custom_ditm_block_index) == 10 ? \"Meme of the Week\\nWhat your kids might be saying at school\" : ($(internal:custom_ditm_block_index) == 11 ? \"How We'd Talk to Our Kids\\nOpen \u00b7 Honest \u00b7 No judgment\" : \"Jess\\nCo-host \u00b7 Drop-in Guest\"))))))))))))"
+                      },
+                      "delay": 30
+                    },
+                    {
+                      "id": "a8f51810-a8c3-41d1-8343-aabdb787f5be",
+                      "instance": "internal",
+                      "action": "custom_variable_set_expression",
+                      "options": {
+                        "name": "ditm_scene",
+                        "expression": "($(internal:custom_ditm_block_index) == 0 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 1 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 2 ? \"Host + Jess\" : ($(internal:custom_ditm_block_index) == 3 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 4 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 5 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 6 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 7 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 8 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 9 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 10 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 11 ? \"Host + Jess\" : \"Host + Jess\"))))))))))))"
+                      },
+                      "delay": 30
+                    },
+                    {
+                      "id": "f11dd32e-8870-45a2-8733-7c615bc27dcd",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": "$(internal:custom_ditm_chyron)"
+                      },
+                      "delay": 80
+                    },
+                    {
+                      "id": "f4adf5a5-9094-498f-8352-d40666cba3b9",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": "$(internal:custom_ditm_headline)"
+                      },
+                      "delay": 80
+                    },
+                    {
+                      "id": "3cbc7847-2800-46a8-a617-ba2aa8a38a63",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": "$(internal:custom_ditm_title)"
+                      },
+                      "delay": 80
+                    },
+                    {
+                      "id": "48ac125f-025d-4e9a-9f82-0c0bfb260a60",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": "$(internal:custom_ditm_block)"
+                      },
+                      "delay": 80
+                    },
+                    {
+                      "id": "840bc4e7-e503-4521-9190-2673ecdf6f43",
+                      "instance": "obs",
+                      "action": "set_current_scene",
+                      "options": {
+                        "scene": "$(internal:custom_ditm_scene)"
+                      },
+                      "delay": 100
+                    },
+                    {
+                      "id": "9d7107cb-8c05-4fdc-9b2e-c167553d8b7e",
+                      "instance": "obs",
+                      "action": "set_source_visibility",
+                      "options": {
+                        "scene": "Main Host",
+                        "source": "DITM Lower Third",
+                        "visible": true
+                      },
+                      "delay": 110
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          },
+          "4": {
+            "type": "button",
+            "style": {
+              "text": "\u25bc NEXT",
+              "size": "auto",
+              "png64": null,
+              "alignment": "center:center",
+              "pngalignment": "center:center",
+              "color": 16183783,
+              "bgcolor": 1318955,
+              "show_topbar": "default"
+            },
+            "options": {
+              "relativeDelay": true,
+              "stepAutoProgress": true
+            },
+            "feedbacks": [],
+            "steps": {
+              "0": {
+                "options": {
+                  "runWhileHeld": []
+                },
+                "action_sets": {
+                  "down": [
+                    {
+                      "id": "01503002-beb0-4853-b0f1-8e7c8e92c833",
+                      "instance": "internal",
+                      "action": "custom_variable_set_expression",
+                      "options": {
+                        "name": "ditm_block_index",
+                        "expression": "($(internal:custom_ditm_block_index) + 1) % 13"
+                      },
+                      "delay": 0
+                    },
+                    {
+                      "id": "2bdfd61f-0d6f-49b2-a446-343e0704bf17",
+                      "instance": "internal",
+                      "action": "custom_variable_set_expression",
+                      "options": {
+                        "name": "ditm_block",
+                        "expression": "($(internal:custom_ditm_block_index) == 0 ? \"A\" : ($(internal:custom_ditm_block_index) == 1 ? \"B\" : ($(internal:custom_ditm_block_index) == 2 ? \"C\" : ($(internal:custom_ditm_block_index) == 3 ? \"D\" : ($(internal:custom_ditm_block_index) == 4 ? \"E\" : ($(internal:custom_ditm_block_index) == 5 ? \"F\" : ($(internal:custom_ditm_block_index) == 6 ? \"G\" : ($(internal:custom_ditm_block_index) == 7 ? \"H\" : ($(internal:custom_ditm_block_index) == 8 ? \"I\" : ($(internal:custom_ditm_block_index) == 9 ? \"J\" : ($(internal:custom_ditm_block_index) == 10 ? \"K\" : ($(internal:custom_ditm_block_index) == 11 ? \"L\" : \"M\"))))))))))))"
+                      },
+                      "delay": 30
+                    },
+                    {
+                      "id": "dac39b1a-2b7f-4bfb-862e-9558ab0cd087",
+                      "instance": "internal",
+                      "action": "custom_variable_set_expression",
+                      "options": {
+                        "name": "ditm_title",
+                        "expression": "($(internal:custom_ditm_block_index) == 0 ? \"Cold Open & Jingle\" : ($(internal:custom_ditm_block_index) == 1 ? \"Starbase Watch: SpaceX, the Vote & the Launch\" : ($(internal:custom_ditm_block_index) == 2 ? \"Jess Drop-In #1: GTA 6 Week & the Digital Generation\" : ($(internal:custom_ditm_block_index) == 3 ? \"Ballot Box Rewind: Pulido, Runoffs & the Valley Flip\" : ($(internal:custom_ditm_block_index) == 4 ? \"City Hall & School Board Watch\" : ($(internal:custom_ditm_block_index) == 5 ? \"Zoho & the Park\" : ($(internal:custom_ditm_block_index) == 6 ? \"McAllen Metro Desk: Economic Development\" : ($(internal:custom_ditm_block_index) == 7 ? \"Open-Format Story Block (pick one or two)\" : ($(internal:custom_ditm_block_index) == 8 ? \"The National Desk\" : ($(internal:custom_ditm_block_index) == 9 ? \"Listener Line #1: Your Topics & DMs\" : ($(internal:custom_ditm_block_index) == 10 ? \"Meme of the Week: What the Kids Are Talking About\" : ($(internal:custom_ditm_block_index) == 11 ? \"How We'd Talk to Our Kids\" : \"Listener Line #2, Look Ahead & Wrap (Jess back in)\"))))))))))))"
+                      },
+                      "delay": 30
+                    },
+                    {
+                      "id": "d60a0597-add7-4b30-9bec-9e590e28c37b",
+                      "instance": "internal",
+                      "action": "custom_variable_set_expression",
+                      "options": {
+                        "name": "ditm_headline",
+                        "expression": "($(internal:custom_ditm_block_index) == 0 ? \"Good morning, Rio Grande Valley\" : ($(internal:custom_ditm_block_index) == 1 ? \"Cameron County rejects SpaceX tax break hearing, 3-2\" : ($(internal:custom_ditm_block_index) == 2 ? \"GTA 6 launches Nov. 19 at midnight; rated M (17+)\" : ($(internal:custom_ditm_block_index) == 3 ? \"Bobby Pulido defeats Rep. Monica De La Cruz in TX-15\" : ($(internal:custom_ditm_block_index) == 4 ? \"Edinburg CISD adds new trustees; $3M stop-loss contract on agenda\" : ($(internal:custom_ditm_block_index) == 5 ? \"2023: McAllen rezoned disc golf park for Zoho\" : ($(internal:custom_ditm_block_index) == 6 ? \"McAllen EDC wins state award for Valeo's $225M plant\" : ($(internal:custom_ditm_block_index) == 7 ? \"Hidalgo County can't block data centers outside city limits\" : ($(internal:custom_ditm_block_index) == 8 ? \"FAA ground stop: legacy network, a router and a long weekend\" : ($(internal:custom_ditm_block_index) == 9 ? \"Send us your topics: DM or email\" : ($(internal:custom_ditm_block_index) == 10 ? \"Drew & Jess are watching the feeds so you don't have to\" : ($(internal:custom_ditm_block_index) == 11 ? \"How We'd Talk to Our Kids: no judgment, just how we'd say it\" : \"See you next Monday at 8 AM\"))))))))))))"
+                      },
+                      "delay": 30
+                    },
+                    {
+                      "id": "2c94cded-397a-4c7c-a616-83bbdd14b3d8",
+                      "instance": "internal",
+                      "action": "custom_variable_set_expression",
+                      "options": {
+                        "name": "ditm_chyron",
+                        "expression": "($(internal:custom_ditm_block_index) == 0 ? \"Drew Lentz\\nHost \u00b7 Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 1 ? \"Cameron County Vote\\nAbatement hearing denied 3-2 \u00b7 Nov. 17\" : ($(internal:custom_ditm_block_index) == 2 ? \"Jess\\nCo-host \u00b7 Drop-in Guest\" : ($(internal:custom_ditm_block_index) == 3 ? \"TX-15: Bobby Pulido\\nDefeated De La Cruz \u00b7 Takes office Jan. 3\" : ($(internal:custom_ditm_block_index) == 4 ? \"Edinburg CISD Board\\nNew trustees from Nov. 3 election\" : ($(internal:custom_ditm_block_index) == 5 ? \"Zoho & the Disc Golf Park\\nRezoned July 2023 \u00b7 commission vote 6-0\" : ($(internal:custom_ditm_block_index) == 6 ? \"McAllen EDC\\nState award \u00b7 Valeo $225M plant\" : ($(internal:custom_ditm_block_index) == 7 ? \"Judge Richard Cortez\\nHidalgo County Judge \u00b7 Citizens League\" : ($(internal:custom_ditm_block_index) == 8 ? \"National Desk\\nThe big stories \u00b7 and why they matter here\" : ($(internal:custom_ditm_block_index) == 9 ? \"Send Us Your Topics\\nDM @drewinthemorning or email the show\" : ($(internal:custom_ditm_block_index) == 10 ? \"Meme of the Week\\nWhat your kids might be saying at school\" : ($(internal:custom_ditm_block_index) == 11 ? \"How We'd Talk to Our Kids\\nOpen \u00b7 Honest \u00b7 No judgment\" : \"Jess\\nCo-host \u00b7 Drop-in Guest\"))))))))))))"
+                      },
+                      "delay": 30
+                    },
+                    {
+                      "id": "52b2e9be-73b4-4c39-9e8a-30f709f203b7",
+                      "instance": "internal",
+                      "action": "custom_variable_set_expression",
+                      "options": {
+                        "name": "ditm_scene",
+                        "expression": "($(internal:custom_ditm_block_index) == 0 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 1 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 2 ? \"Host + Jess\" : ($(internal:custom_ditm_block_index) == 3 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 4 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 5 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 6 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 7 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 8 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 9 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 10 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 11 ? \"Host + Jess\" : \"Host + Jess\"))))))))))))"
+                      },
+                      "delay": 30
+                    },
+                    {
+                      "id": "5ea9e7ff-538e-41e7-b101-88bd5222b283",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Chyron",
+                        "text": "$(internal:custom_ditm_chyron)"
+                      },
+                      "delay": 80
+                    },
+                    {
+                      "id": "23641508-f5d8-44bb-bdd9-e10f686bdd57",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Headline",
+                        "text": "$(internal:custom_ditm_headline)"
+                      },
+                      "delay": 80
+                    },
+                    {
+                      "id": "9268d804-aaf4-472e-8874-29af06424a2e",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Segment Title",
+                        "text": "$(internal:custom_ditm_title)"
+                      },
+                      "delay": 80
+                    },
+                    {
+                      "id": "15598e36-46d6-4571-ba7b-d6d52e64209e",
+                      "instance": "obs",
+                      "action": "set_text",
+                      "options": {
+                        "source": "DITM Block Letter",
+                        "text": "$(internal:custom_ditm_block)"
+                      },
+                      "delay": 80
+                    },
+                    {
+                      "id": "60714ef1-a322-4661-b389-dfdab99b9b13",
+                      "instance": "obs",
+                      "action": "set_current_scene",
+                      "options": {
+                        "scene": "$(internal:custom_ditm_scene)"
+                      },
+                      "delay": 100
+                    },
+                    {
+                      "id": "eb838bc0-86b6-4399-bc7f-ed43eef85f9b",
+                      "instance": "obs",
+                      "action": "set_source_visibility",
+                      "options": {
+                        "scene": "Main Host",
+                        "source": "DITM Lower Third",
+                        "visible": true
+                      },
+                      "delay": 110
+                    }
+                  ],
+                  "up": []
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "custom_variables": {
+    "ditm_block_index": {
+      "description": "Current block index, 0 through 12. Arrow keys wrap.",
+      "defaultValue": "0",
+      "persistCurrentValue": false
+    },
+    "ditm_block": {
+      "description": "Current block letter.",
+      "defaultValue": "A",
+      "persistCurrentValue": false
+    },
+    "ditm_title": {
+      "description": "Current segment title.",
+      "defaultValue": "Cold Open & Jingle",
+      "persistCurrentValue": false
+    },
+    "ditm_headline": {
+      "description": "Current headline.",
+      "defaultValue": "Good morning, Rio Grande Valley",
+      "persistCurrentValue": false
+    },
+    "ditm_chyron": {
+      "description": "Current chyron, primary then secondary.",
+      "defaultValue": "Drew Lentz\nHost \u00b7 Drew in the Morning",
+      "persistCurrentValue": false
+    },
+    "ditm_scene": {
+      "description": "Main Host, or Host + Jess when the block has Jess.",
+      "defaultValue": "Main Host",
+      "persistCurrentValue": false
+    }
+  },
+  "instances": {
+    "obs": {
+      "label": "obs",
+      "moduleId": "obs-studio",
+      "instance_type": "obs-studio",
+      "enabled": true,
+      "isFirstInit": false,
+      "lastUpgradeIndex": -1,
+      "config": {
+        "host": "127.0.0.1",
+        "port": 4455,
+        "password": ""
+      }
+    }
+  }
+}

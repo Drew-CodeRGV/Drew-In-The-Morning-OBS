@@ -1,0 +1,15 @@
+# User service template. Copy to ~/.config/systemd/user/companion.service
+# and change ExecStart to the companion binary from the official tarball or deb.
+# Do not put an OBS password in this file.
+
+[Unit]
+Description=Bitfocus Companion
+After=graphical-session.target
+
+[Service]
+ExecStart=%h/companion/companion
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

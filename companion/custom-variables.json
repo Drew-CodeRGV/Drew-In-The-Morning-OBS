@@ -1,0 +1,32 @@
+{
+  "ditm_block_index": {
+    "description": "Current block index, 0 through 12. Arrow keys wrap.",
+    "defaultValue": "0",
+    "persistCurrentValue": false
+  },
+  "ditm_block": {
+    "description": "Current block letter.",
+    "defaultValue": "A",
+    "persistCurrentValue": false
+  },
+  "ditm_title": {
+    "description": "Current segment title.",
+    "defaultValue": "Cold Open & Jingle",
+    "persistCurrentValue": false
+  },
+  "ditm_headline": {
+    "description": "Current headline.",
+    "defaultValue": "Good morning, Rio Grande Valley",
+    "persistCurrentValue": false
+  },
+  "ditm_chyron": {
+    "description": "Current chyron, primary then secondary.",
+    "defaultValue": "Drew Lentz\nHost \u00b7 Drew in the Morning",
+    "persistCurrentValue": false
+  },
+  "ditm_scene": {
+    "description": "Main Host, or Host + Jess when the block has Jess.",
+    "defaultValue": "Main Host",
+    "persistCurrentValue": false
+  }
+}
