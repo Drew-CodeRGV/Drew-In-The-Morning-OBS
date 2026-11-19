@@ -15,6 +15,7 @@ The live studio page is **[docs/index.html](docs/index.html)**, a copy of the la
 | `obs-data.json` | Edit this, or regenerate it with `python tools/show_plan.py`. Schema v3. |
 | `scripts/build.py` | Regenerates the text files. Run it after every edit. |
 | `scripts/live.py` | `next`, `prev`, `goto`, `skip`, chyron and headline changes. |
+| `companion/` | Stream Deck via Bitfocus Companion. See [companion/README.md](companion/README.md). |
 | `current/` | What is on screen right now. Point OBS here. |
 | `chyrons/`, `headlines/`, `segment-titles/` | One `.txt` per on-screen item, for the whole episode. |
 | `ticker/ticker.txt` | The scrolling ticker, one line. |

@@ -1,0 +1,710 @@
+{
+  "note": "OBS WebSocket v5 request bodies. overlay true keeps font and color. Password is not included.",
+  "optionalImage": {
+    "requestType": "SetInputSettings",
+    "requestData": {
+      "inputName": "DITM Block Card",
+      "inputSettings": {
+        "file": "/absolute/path/to/a-card.png"
+      },
+      "overlay": true
+    },
+    "comment": "Only if you add an image source named DITM Block Card. This repo has no per-block card art."
+  },
+  "optionalVisibility": {
+    "comment": "SetSceneItemEnabled needs the numeric sceneItemId from GetSceneItemId, not the source name.",
+    "get": {
+      "requestType": "GetSceneItemId",
+      "requestData": {
+        "sceneName": "Main Host",
+        "sourceName": "DITM Lower Third"
+      }
+    },
+    "set": {
+      "requestType": "SetSceneItemEnabled",
+      "requestData": {
+        "sceneName": "Main Host",
+        "sceneItemId": 0,
+        "sceneItemEnabled": true
+      }
+    }
+  },
+  "blocks": [
+    {
+      "letter": "A",
+      "index": 0,
+      "requests": [
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Chyron",
+            "inputSettings": {
+              "text": "Drew Lentz\nHost \u00b7 Drew in the Morning"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Headline",
+            "inputSettings": {
+              "text": "Good morning, Rio Grande Valley"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Segment Title",
+            "inputSettings": {
+              "text": "Cold Open & Jingle"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Block Letter",
+            "inputSettings": {
+              "text": "A"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetCurrentProgramScene",
+          "requestData": {
+            "sceneName": "Main Host"
+          }
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "index": 1,
+      "requests": [
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Chyron",
+            "inputSettings": {
+              "text": "Cameron County Vote\nAbatement hearing denied 3-2 \u00b7 Nov. 17"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Headline",
+            "inputSettings": {
+              "text": "Cameron County rejects SpaceX tax break hearing, 3-2"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Segment Title",
+            "inputSettings": {
+              "text": "Starbase Watch: SpaceX, the Vote & the Launch"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Block Letter",
+            "inputSettings": {
+              "text": "B"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetCurrentProgramScene",
+          "requestData": {
+            "sceneName": "Main Host"
+          }
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "index": 2,
+      "requests": [
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Chyron",
+            "inputSettings": {
+              "text": "Jess\nCo-host \u00b7 Drop-in Guest"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Headline",
+            "inputSettings": {
+              "text": "GTA 6 launches Nov. 19 at midnight; rated M (17+)"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Segment Title",
+            "inputSettings": {
+              "text": "Jess Drop-In #1: GTA 6 Week & the Digital Generation"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Block Letter",
+            "inputSettings": {
+              "text": "C"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetCurrentProgramScene",
+          "requestData": {
+            "sceneName": "Host + Jess"
+          }
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "index": 3,
+      "requests": [
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Chyron",
+            "inputSettings": {
+              "text": "TX-15: Bobby Pulido\nDefeated De La Cruz \u00b7 Takes office Jan. 3"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Headline",
+            "inputSettings": {
+              "text": "Bobby Pulido defeats Rep. Monica De La Cruz in TX-15"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Segment Title",
+            "inputSettings": {
+              "text": "Ballot Box Rewind: Pulido, Runoffs & the Valley Flip"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Block Letter",
+            "inputSettings": {
+              "text": "D"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetCurrentProgramScene",
+          "requestData": {
+            "sceneName": "Main Host"
+          }
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "index": 4,
+      "requests": [
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Chyron",
+            "inputSettings": {
+              "text": "Edinburg CISD Board\nNew trustees from Nov. 3 election"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Headline",
+            "inputSettings": {
+              "text": "Edinburg CISD adds new trustees; $3M stop-loss contract on agenda"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Segment Title",
+            "inputSettings": {
+              "text": "City Hall & School Board Watch"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Block Letter",
+            "inputSettings": {
+              "text": "E"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetCurrentProgramScene",
+          "requestData": {
+            "sceneName": "Main Host"
+          }
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "index": 5,
+      "requests": [
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Chyron",
+            "inputSettings": {
+              "text": "Zoho & the Disc Golf Park\nRezoned July 2023 \u00b7 commission vote 6-0"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Headline",
+            "inputSettings": {
+              "text": "2023: McAllen rezoned disc golf park for Zoho"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Segment Title",
+            "inputSettings": {
+              "text": "Zoho & the Park"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Block Letter",
+            "inputSettings": {
+              "text": "F"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetCurrentProgramScene",
+          "requestData": {
+            "sceneName": "Main Host"
+          }
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "index": 6,
+      "requests": [
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Chyron",
+            "inputSettings": {
+              "text": "McAllen EDC\nState award \u00b7 Valeo $225M plant"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Headline",
+            "inputSettings": {
+              "text": "McAllen EDC wins state award for Valeo's $225M plant"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Segment Title",
+            "inputSettings": {
+              "text": "McAllen Metro Desk: Economic Development"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Block Letter",
+            "inputSettings": {
+              "text": "G"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetCurrentProgramScene",
+          "requestData": {
+            "sceneName": "Main Host"
+          }
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "index": 7,
+      "requests": [
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Chyron",
+            "inputSettings": {
+              "text": "Judge Richard Cortez\nHidalgo County Judge \u00b7 Citizens League"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Headline",
+            "inputSettings": {
+              "text": "Hidalgo County can't block data centers outside city limits"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Segment Title",
+            "inputSettings": {
+              "text": "Open-Format Story Block (pick one or two)"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Block Letter",
+            "inputSettings": {
+              "text": "H"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetCurrentProgramScene",
+          "requestData": {
+            "sceneName": "Main Host"
+          }
+        }
+      ]
+    },
+    {
+      "letter": "I",
+      "index": 8,
+      "requests": [
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Chyron",
+            "inputSettings": {
+              "text": "National Desk\nThe big stories \u00b7 and why they matter here"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Headline",
+            "inputSettings": {
+              "text": "FAA ground stop: legacy network, a router and a long weekend"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Segment Title",
+            "inputSettings": {
+              "text": "The National Desk"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Block Letter",
+            "inputSettings": {
+              "text": "I"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetCurrentProgramScene",
+          "requestData": {
+            "sceneName": "Main Host"
+          }
+        }
+      ]
+    },
+    {
+      "letter": "J",
+      "index": 9,
+      "requests": [
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Chyron",
+            "inputSettings": {
+              "text": "Send Us Your Topics\nDM @drewinthemorning or email the show"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Headline",
+            "inputSettings": {
+              "text": "Send us your topics: DM or email"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Segment Title",
+            "inputSettings": {
+              "text": "Listener Line #1: Your Topics & DMs"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Block Letter",
+            "inputSettings": {
+              "text": "J"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetCurrentProgramScene",
+          "requestData": {
+            "sceneName": "Main Host"
+          }
+        }
+      ]
+    },
+    {
+      "letter": "K",
+      "index": 10,
+      "requests": [
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Chyron",
+            "inputSettings": {
+              "text": "Meme of the Week\nWhat your kids might be saying at school"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Headline",
+            "inputSettings": {
+              "text": "Drew & Jess are watching the feeds so you don't have to"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Segment Title",
+            "inputSettings": {
+              "text": "Meme of the Week: What the Kids Are Talking About"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Block Letter",
+            "inputSettings": {
+              "text": "K"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetCurrentProgramScene",
+          "requestData": {
+            "sceneName": "Main Host"
+          }
+        }
+      ]
+    },
+    {
+      "letter": "L",
+      "index": 11,
+      "requests": [
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Chyron",
+            "inputSettings": {
+              "text": "How We'd Talk to Our Kids\nOpen \u00b7 Honest \u00b7 No judgment"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Headline",
+            "inputSettings": {
+              "text": "How We'd Talk to Our Kids: no judgment, just how we'd say it"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Segment Title",
+            "inputSettings": {
+              "text": "How We'd Talk to Our Kids"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Block Letter",
+            "inputSettings": {
+              "text": "L"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetCurrentProgramScene",
+          "requestData": {
+            "sceneName": "Host + Jess"
+          }
+        }
+      ]
+    },
+    {
+      "letter": "M",
+      "index": 12,
+      "requests": [
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Chyron",
+            "inputSettings": {
+              "text": "Jess\nCo-host \u00b7 Drop-in Guest"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Headline",
+            "inputSettings": {
+              "text": "See you next Monday at 8 AM"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Segment Title",
+            "inputSettings": {
+              "text": "Listener Line #2, Look Ahead & Wrap (Jess back in)"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetInputSettings",
+          "requestData": {
+            "inputName": "DITM Block Letter",
+            "inputSettings": {
+              "text": "M"
+            },
+            "overlay": true
+          }
+        },
+        {
+          "requestType": "SetCurrentProgramScene",
+          "requestData": {
+            "sceneName": "Host + Jess"
+          }
+        }
+      ]
+    }
+  ]
+}

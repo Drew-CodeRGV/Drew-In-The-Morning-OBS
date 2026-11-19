@@ -208,20 +208,37 @@ OBS cannot run this script from its built-in hotkey page. Two ways to get keys:
 
 A second optional macro: if `current/scene-hint.txt` equals `host-jess`, switch to Host + Jess; if it equals `host`, switch to Main Host. Only set that up once the manual cut feels boring. A bad macro will cut the scene while you are mid-sentence.
 
-## 8. Sunday night, before the show
+## 8. Stream Deck
+
+Companion on this same computer can press the blocks for you. The guide is [companion/README.md](companion/README.md). After you change `obs-data.json`, run `python3 companion/build_companion.py` as well as `python3 scripts/build.py`.
+
+The deck does not write the Read-from-file text sources. Add these sources and leave **Read from file** off, or the websocket text never shows:
+
+| Source name | Type | What a block key writes |
+|---|---|---|
+| `DITM Chyron` | Text (FreeType 2) | First chyron, primary then secondary |
+| `DITM Headline` | Text (FreeType 2) | First headline |
+| `DITM Segment Title` | Text (FreeType 2) | Block title |
+| `DITM Block Letter` | Text (FreeType 2) | The letter |
+| `DITM Block Card` | Image, optional | Nothing yet. There is no per-block art in this repo. |
+| `DITM Lower Third` | Your lower-third source or a group, optional | The keys try to enable this item on Main Host |
+
+Put them on **Main Host**, then Add Existing on **Host + Jess**. A block with Jess on screen cuts to Host + Jess. The others cut to Main Host.
+
+## 9. Sunday night, before the show
 
 News has to be re-verified Sunday night. The date of the last check is the disclaimer in `obs-data.json`, also written to `show-notes/disclaimer.txt`.
 
 1. Read `run-of-show-monday.md` and `show-notes/segment-index.md`. Leave every **CONFIRM BEFORE AIR** line alone until you have checked it. The same words are in the run of show and, after a build, in the segment index and in `current/segment-meta.txt`. Also read `call-ins.md`, `segues.md`, and `sources.md`. `show-principles.md` is the format. `social-calendar.md` is a draft and is not posted from this folder. `research.md` is background only. The producer studio page is `docs/index.html`.
 2. Edit `obs-data.json`. Keep every chyron primary and secondary at or under the max. Do not add a fact you have not just re-checked.
 3. If what you will say changed, edit `run-of-show-monday.md` too. Flex blocks can be trimmed or stretched. `skip` only jumps a block the JSON still marks skippable.
-4. Run `python scripts/build.py`. Read the count it prints. If it says segments are flagged for verification, open the segment index and clear those before air, or be ready to skip the line.
+4. Run `python scripts/build.py`, then `python3 companion/build_companion.py` if the Stream Deck page should match. Read the count it prints. If it says segments are flagged for verification, open the segment index and clear those before air, or be ready to skip the line.
 5. Run `python scripts/live.py list`, then `reset`. Read `current/headline.txt` and `current/chyron.txt` once out loud.
 6. Hit **Start Streaming** only after that.
 
 Hand-edited files in `chyrons/`, `headlines/`, `segment-titles/`, `ticker/`, `scenes/`, `current/`, or `playlist.json` will be replaced the next time you build or switch. Edit the JSON.
 
-## 9. When something looks wrong
+## 10. When something looks wrong
 
 | What you see | What to do |
 |---|---|
