@@ -1,18 +1,18 @@
 {
  "version": 1,
- "generatedAt": "2026-11-19T03:54:06+00:00",
+ "generatedAt": "2026-11-19T14:13:10+00:00",
  "window_hours": 24,
- "bootstrap": true,
+ "bootstrap": false,
  "note": "Public headlines and links only. Everything here is a lead: CONFIRM BEFORE AIR.",
  "counts": {
-  "alert": 2,
-  "watch": 25,
-  "stories": 186,
-  "new": 185
+  "alert": 3,
+  "watch": 27,
+  "stories": 153,
+  "new": 64
  },
  "feeds": {
-  "ok": 14,
-  "failed": 5,
+  "ok": 13,
+  "failed": 6,
   "total": 19
  },
  "trends": {
@@ -20,6 +20,29 @@
   "US": 10
  },
  "items": [
+  {
+   "id": "d7c68230bb0f",
+   "title": "Victim in deadly Pharr shooting identified as PSJA ISD employee",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORUJ3WVhGTzl5NDR3UldpUFBSUEVCQWktUXVsR2VuZlh5X3ZKdHlVbTlYMEVKN2FjNkU1ZTZvQ01kMkxMVnJFMUpNcjVRb2hwNVUtd2JycTM1QWdXTFYwU0NmcWJUbEFQQnB5d21XZEFFMjZwckp1TmNGX1dtbi1VTGpQT25XcDNJR3psM2h6ZFRzNVly?oc=5",
+   "source": "KRGV",
+   "sources": [
+    {
+     "name": "KRGV",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORUJ3WVhGTzl5NDR3UldpUFBSUEVCQWktUXVsR2VuZlh5X3ZKdHlVbTlYMEVKN2FjNkU1ZTZvQ01kMkxMVnJFMUpNcjVRb2hwNVUtd2JycTM1QWdXTFYwU0NmcWJUbEFQQnB5d21XZEFFMjZwckp1TmNGX1dtbi1VTGpQT25XcDNJR3psM2h6ZFRzNVly?oc=5"
+    }
+   ],
+   "published": "2026-11-18T23:09:48+00:00",
+   "firstSeen": "2026-11-19T14:13:10+00:00",
+   "score": 14,
+   "label": "Active",
+   "uncovered": false,
+   "level": "alert",
+   "matches": [
+    "Pharr",
+    "shooting"
+   ],
+   "why": "Score 14: 1 outlet 6 + recency 8.4 (15h old)"
+  },
   {
    "id": "fb2b6a8b5e83",
    "title": "Suspect takes own life after fatally shooting woman in Pharr",
@@ -69,98 +92,122 @@
    "why": "Score 9: 1 outlet 6 + recency 2.5 (36h old)"
   },
   {
-   "id": "f0850dbb4493",
-   "title": "Two charged with murder in Brownsville homicide investigation",
-   "url": "https://www.valleycentral.com/news/local-news/two-charged-with-murder-in-brownsville-homicide-investigation/",
-   "source": "ValleyCentral (KVEO)",
+   "id": "54a7f53f9c0a",
+   "title": "SpaceX Breaks Silence & Says 10-Year 100% Tax Abatement For $24 Billion Starbase Data Center Infrastructure Is Necessary To Avoid Rapid Tax Value Fluctuations",
+   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOR3pYMF9GRktLSFFVZXFuR1lpY29fTDVPRG9CUE1IWHZRRTNFNnlIcDZKX1NyVzREQlk3b1VhVmU3cHdTdDBQdVNacHVTUnhPSktpeDRFU3FYaFhoZHBoNV9NWGNhNE5ydERwYl9MSEZPLTMzdE1oWUJSYkRmVEx0a3BFYnRFLWY3RTFjNVBYbEZ1SlBmRm93ZmRzOGdqUEZFQjVvVU1fdGEwUEVoUXpnM2I1ODBGbUVlU1ZrLTdaNEF3eGtmZmgzbVZkbWpfeXpNNGxFZm53TnIwOGtySk9FbWw5Ry1ibGJYMDZfTnVKZWNzMlA5V1l5TjdsMXdVdVNDLVQ4NVk1TdIBjAJBVV95cUxONXcyVXRqSzNtdnVEUjgzQjRtd2h1MFE4UENKeDVUbmppRUk5T3JmbXBTRmVCb1FaSEp1TE5CUTdDVGRtNUV3NkFGSXdIQmpoaUVZWm9DT0gxT3J2b2tuSVJIc1VybDFpX2VPVXlGak5ZV3VIUFA5LVdPS2FzNUk3ZzVveDRUOHhKVnZ6U2N2QnEwQWdwLW42aWgxYVQ3WVNKNUdVS3lBR3JqeFc1VjlPN1FmU2FudVhJSVE2TnRyVEF6a0VKVDJlYWZxaEcwOXNPWmg1SHVDd2hibmVuRWdBT2FsdjFSVEZOcUtKNVVvcWRkeUVmMWZUMTlsdEZ0a2ZkVjZWcjZtdXR3di1U?oc=5",
+   "source": "Wccftech",
    "sources": [
     {
-     "name": "ValleyCentral (KVEO)",
-     "url": "https://www.valleycentral.com/news/local-news/two-charged-with-murder-in-brownsville-homicide-investigation/"
-    },
-    {
-     "name": "KRGV",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOa0pNVWk4RTlMT0o2bVhGMUxsVUVkTGZxY090U0k3U1FiX3ZtZFlmdXdrSC01UDkyTDFsaXVxT2x4bHZPMWx5UDh4TkFaajBtcFZtRUJXUlowMnFfRUYxTFZYUVhrM1RjVWt2TUpXRHYzaElCdzF1SHNaaGx6NXYxTWZadWswWHd0Ym5taDNhVUdnVHVjWG5qeUp5YVRuUEpmYmh4UW9HQURXOTNOaDR2NGpNWm9uUQ?oc=5"
+     "name": "Wccftech",
+     "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOR3pYMF9GRktLSFFVZXFuR1lpY29fTDVPRG9CUE1IWHZRRTNFNnlIcDZKX1NyVzREQlk3b1VhVmU3cHdTdDBQdVNacHVTUnhPSktpeDRFU3FYaFhoZHBoNV9NWGNhNE5ydERwYl9MSEZPLTMzdE1oWUJSYkRmVEx0a3BFYnRFLWY3RTFjNVBYbEZ1SlBmRm93ZmRzOGdqUEZFQjVvVU1fdGEwUEVoUXpnM2I1ODBGbUVlU1ZrLTdaNEF3eGtmZmgzbVZkbWpfeXpNNGxFZm53TnIwOGtySk9FbWw5Ry1ibGJYMDZfTnVKZWNzMlA5V1l5TjdsMXdVdVNDLVQ4NVk1TdIBjAJBVV95cUxONXcyVXRqSzNtdnVEUjgzQjRtd2h1MFE4UENKeDVUbmppRUk5T3JmbXBTRmVCb1FaSEp1TE5CUTdDVGRtNUV3NkFGSXdIQmpoaUVZWm9DT0gxT3J2b2tuSVJIc1VybDFpX2VPVXlGak5ZV3VIUFA5LVdPS2FzNUk3ZzVveDRUOHhKVnZ6U2N2QnEwQWdwLW42aWgxYVQ3WVNKNUdVS3lBR3JqeFc1VjlPN1FmU2FudVhJSVE2TnRyVEF6a0VKVDJlYWZxaEcwOXNPWmg1SHVDd2hibmVuRWdBT2FsdjFSVEZOcUtKNVVvcWRkeUVmMWZUMTlsdEZ0a2ZkVjZWcjZtdXR3di1U?oc=5"
     }
    ],
-   "published": "2026-11-19T00:18:16+00:00",
-   "firstSeen": "2026-11-19T03:54:06+00:00",
-   "score": 28,
-   "label": "Trending",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "Brownsville",
-    "Harlingen"
-   ],
-   "why": "Score 28: 2 outlets 12 + recency 16.2 (4h old)"
-  },
-  {
-   "id": "e2b72df8d7db",
-   "title": "Cameron County elections administrator Remi Garza resigns",
-   "url": "https://www.valleycentral.com/news/local-news/cameron-county-elections-administrator-resigning/",
-   "source": "ValleyCentral (KVEO)",
-   "sources": [
-    {
-     "name": "ValleyCentral (KVEO)",
-     "url": "https://www.valleycentral.com/news/local-news/cameron-county-elections-administrator-resigning/"
-    },
-    {
-     "name": "KRGV",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaWZSVWlyWFI5bEVJQndhZ0I5cnUtQXpfSHpTbnNYWGF2dDBRdjY0bUxKZ0FXVHgtd0h1b3A5QTNFOGJmdkNCbmNkTEdVWW1hR0tvREIxdmJPWU5ZRmRtUkJrOHZDU0hwODRzbWxjYWJqUTZCUVdmeTdITmdTNGx6X2MzLVQ2TUplUW9VNzdVZzA?oc=5"
-    }
-   ],
-   "published": "2026-11-19T00:26:35+00:00",
-   "firstSeen": "2026-11-19T03:54:06+00:00",
-   "score": 28,
-   "label": "Trending",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "Brownsville",
-    "Cameron",
-    "Cameron County",
-    "commissioners court",
-    "Harlingen"
-   ],
-   "why": "Score 28: 2 outlets 12 + recency 16.4 (3h old)"
-  },
-  {
-   "id": "3e0e78c5ce31",
-   "title": "Cameron County commissioners reject SpaceX bid for data center tax break",
-   "url": "https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/",
-   "source": "MyRGV (The Monitor, Edinburg, Brownsville Herald)",
-   "sources": [
-    {
-     "name": "MyRGV (The Monitor, Edinburg, Brownsville Herald)",
-     "url": "https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/"
-    },
-    {
-     "name": "Data Center Dynamics",
-     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcFo2bHlMdTRNQzJpSnNNc1c2SXJYSXUzejJVM2tFNlNic3U2VHdkdV9yMXRjaHd3R0Z1SnJISVB0a0lnRF9yZHB6QW5kWFFOODVzWXpYN1pSVlZUTXhoeHlGWlE2bUxNQThkM200U2NOaXlGX2pxM09FcTNXZ0lIRkJxQTcza25aNXIwUjdSU29JOEMxNWotUER2NVVGeTFlUUduQ09DU2U2cWpzaExGQmxjRS1wdmk3Mjh1ekgxY0g5MlRiQ21rS1YtWQ?oc=5"
-    },
-    {
-     "name": "Newsweek",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxObF91Y2F4WFFJdU9nQmpYM3lodHlXaUlGc2NhUVZwY19sNklQYnBwWHA1QXJ0ZUNmWk96Ml9xY0JaWTUzVEFBYmc2enpjMnF5VGpEeVczU3hPMDc0RTVaMGJfdW9FanRybzhPeHdWX1Q2bHlMSlNRQi1vRUloMUFVS3BHMmNDaW8wVGc?oc=5"
-    }
-   ],
-   "published": "2026-11-18T15:29:43+00:00",
-   "firstSeen": "2026-11-19T03:54:06+00:00",
-   "score": 28,
-   "label": "Trending",
+   "published": "2026-11-19T13:32:39+00:00",
+   "firstSeen": "2026-11-19T14:13:10+00:00",
+   "score": 25,
+   "label": "Active",
    "uncovered": false,
    "level": "watch",
    "matches": [
     "abatement",
-    "Brownsville",
+    "data center",
+    "SpaceX",
+    "Starbase"
+   ],
+   "why": "Score 25: 1 outlet 6 + recency 19.2 (1h old)"
+  },
+  {
+   "id": "e8d4e6b90c68",
+   "title": "Bits of Elon Musk’s Starship rocket wash up on beach alongside dead turtles",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYUR5Rmx5UnpfbGV2cXVlb2o4a0lVSWQ0djdBVUs1bVFQWDNJVHdUZnEtN3Vzei0wbF9TWGduMXZoTlF3eTVqSWVTUl9ScmNITW5uSHBzLTcwMVA5NDg5LVVBc1htNVFTN3R1a1lXZU9mS0ExRTJQVm00eGNhajZGaFFhSjZTNTJfeGRyLXc1aDR3WmxyQ3c?oc=5",
+   "source": "The Independent",
+   "sources": [
+    {
+     "name": "The Independent",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYUR5Rmx5UnpfbGV2cXVlb2o4a0lVSWQ0djdBVUs1bVFQWDNJVHdUZnEtN3Vzei0wbF9TWGduMXZoTlF3eTVqSWVTUl9ScmNITW5uSHBzLTcwMVA5NDg5LVVBc1htNVFTN3R1a1lXZU9mS0ExRTJQVm00eGNhajZGaFFhSjZTNTJfeGRyLXc1aDR3WmxyQ3c?oc=5"
+    }
+   ],
+   "published": "2026-11-19T12:25:00+00:00",
+   "firstSeen": "2026-11-19T14:13:10+00:00",
+   "score": 24,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Starship"
+   ],
+   "why": "Score 24: 1 outlet 6 + recency 18 (2h old)"
+  },
+  {
+   "id": "e9b80de32f2e",
+   "title": "Elon Musk Says Anthropic Wants To Rent An Additional 10 GW Of Compute From SpaceX, Warning Power Is The Real ‘Limiting Factor’ As His Starbase Clears 1,456 MWs Of Gas Turbines",
+   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNZmo5LTRGUUJTWEFGbVQ2by1xcWx3djMtNXh2VjZ3aXJHRnVabnJicHpMclRHa0VqRmdxM0VYRmItdHduTnF1d2NNODBoMGFDel9KUkU0Sjl4Q1RXX2x3R1V2N0tNQS1KTTVSdS1qdUhBWkFNbW9mRVphODk2Q0NSRzZQZEVnS0hLWHc3dWNTT1VtanlFNUdsOWtCdy0yTVVYN3hzaXIwY1lqbk8tQ0toOXZfWnlqUEVWTi1DYm1Eejd4QWVkdm9DRXRERkYxVkZGOFBCR3JGWGFrdHRuQldqVl9nbkMxODNEUGNUYUZCbHY5VUxFcm5jTnM2aGlZcjAzYWlNaDY0SVJ0cnJsNEUzOWFaVWxuWDhUejJycWl30gGjAkFVX3lxTFBKVGRIdDVPalBIa1h1R0kxMHN5S0ZnNjdScFV2eGRjZHExX0xVWGZQRlR5NzFlVDBoVGgtYVdaQ0pLSFpyVkNRYzJfOHllb0xHZFRkZFp3ZV9EU0pMM0luQUxpTS13YnIyTi00YXNqWE5rSXA1b2d5RVl5N2kzSE5xUTVIYXNFa3NNenBIYXVfeU14WkFWRzVvTC1rMEhwZEs4blJpemI5elVHdXgtaFV3WFYtdVRUOW0tSk10ZEVRYTBRaUNjRjJFeWsyek5YRk5uMHNqZDQwTzk5RXZ0TTNJUXlqS2pFRFVhTm5uYnVOVkxRbGNCdC0wV1NRYVdPTlBkU3JBeTBwTk1GVXVSend4akc4NnE0OHdDNVpOYUpCc1R4VQ?oc=5",
+   "source": "Wccftech",
+   "sources": [
+    {
+     "name": "Wccftech",
+     "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNZmo5LTRGUUJTWEFGbVQ2by1xcWx3djMtNXh2VjZ3aXJHRnVabnJicHpMclRHa0VqRmdxM0VYRmItdHduTnF1d2NNODBoMGFDel9KUkU0Sjl4Q1RXX2x3R1V2N0tNQS1KTTVSdS1qdUhBWkFNbW9mRVphODk2Q0NSRzZQZEVnS0hLWHc3dWNTT1VtanlFNUdsOWtCdy0yTVVYN3hzaXIwY1lqbk8tQ0toOXZfWnlqUEVWTi1DYm1Eejd4QWVkdm9DRXRERkYxVkZGOFBCR3JGWGFrdHRuQldqVl9nbkMxODNEUGNUYUZCbHY5VUxFcm5jTnM2aGlZcjAzYWlNaDY0SVJ0cnJsNEUzOWFaVWxuWDhUejJycWl30gGjAkFVX3lxTFBKVGRIdDVPalBIa1h1R0kxMHN5S0ZnNjdScFV2eGRjZHExX0xVWGZQRlR5NzFlVDBoVGgtYVdaQ0pLSFpyVkNRYzJfOHllb0xHZFRkZFp3ZV9EU0pMM0luQUxpTS13YnIyTi00YXNqWE5rSXA1b2d5RVl5N2kzSE5xUTVIYXNFa3NNenBIYXVfeU14WkFWRzVvTC1rMEhwZEs4blJpemI5elVHdXgtaFV3WFYtdVRUOW0tSk10ZEVRYTBRaUNjRjJFeWsyek5YRk5uMHNqZDQwTzk5RXZ0TTNJUXlqS2pFRFVhTm5uYnVOVkxRbGNCdC0wV1NRYVdPTlBkU3JBeTBwTk1GVXVSend4akc4NnE0OHdDNVpOYUpCc1R4VQ?oc=5"
+    }
+   ],
+   "published": "2026-11-19T10:20:43+00:00",
+   "firstSeen": "2026-11-19T14:13:10+00:00",
+   "score": 22,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "SpaceX",
+    "Starbase"
+   ],
+   "why": "Score 22: 1 outlet 6 + recency 16 (4h old)"
+  },
+  {
+   "id": "fffc8a4ce04a",
+   "title": "Health officials ask pet owners to help stop the spread of screwworm ahead of holidays",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSzI5bURER1hWZ1U5b3lGSUFONG9sNEhrSi1Ia1Fwb1J3eC00ZDdSTUdxTjBleHdjbEJTODZLVGtDem9uNGtFZUxwVmc0cVZIYjJJclhCSVplLTBKbW5SdUcwV0ZWZl80XzJlbTVKSklMS3JBbnd1aFV1Unp4NzBMOUdocDgyOHpWWEFGOXFYb0tjOUd5UXRTTUtQQU5aZkxXMksxTjZPS1A5WmJ0?oc=5",
+   "source": "KDBC",
+   "sources": [
+    {
+     "name": "KDBC",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSzI5bURER1hWZ1U5b3lGSUFONG9sNEhrSi1Ia1Fwb1J3eC00ZDdSTUdxTjBleHdjbEJTODZLVGtDem9uNGtFZUxwVmc0cVZIYjJJclhCSVplLTBKbW5SdUcwV0ZWZl80XzJlbTVKSklMS3JBbnd1aFV1Unp4NzBMOUdocDgyOHpWWEFGOXFYb0tjOUd5UXRTTUtQQU5aZkxXMksxTjZPS1A5WmJ0?oc=5"
+    }
+   ],
+   "published": "2026-11-19T07:55:15+00:00",
+   "firstSeen": "2026-11-19T14:13:10+00:00",
+   "score": 20,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "screwworm"
+   ],
+   "why": "Score 20: 1 outlet 6 + recency 13.9 (6h old)"
+  },
+  {
+   "id": "3e0e78c5ce31",
+   "title": "Cameron County commissioners reject SpaceX tax break request for $24bn Texas data center",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcFo2bHlMdTRNQzJpSnNNc1c2SXJYSXUzejJVM2tFNlNic3U2VHdkdV9yMXRjaHd3R0Z1SnJISVB0a0lnRF9yZHB6QW5kWFFOODVzWXpYN1pSVlZUTXhoeHlGWlE2bUxNQThkM200U2NOaXlGX2pxM09FcTNXZ0lIRkJxQTcza25aNXIwUjdSU29JOEMxNWotUER2NVVGeTFlUUduQ09DU2U2cWpzaExGQmxjRS1wdmk3Mjh1ekgxY0g5MlRiQ21rS1YtWQ?oc=5",
+   "source": "Data Center Dynamics",
+   "sources": [
+    {
+     "name": "Data Center Dynamics",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcFo2bHlMdTRNQzJpSnNNc1c2SXJYSXUzejJVM2tFNlNic3U2VHdkdV9yMXRjaHd3R0Z1SnJISVB0a0lnRF9yZHB6QW5kWFFOODVzWXpYN1pSVlZUTXhoeHlGWlE2bUxNQThkM200U2NOaXlGX2pxM09FcTNXZ0lIRkJxQTcza25aNXIwUjdSU29JOEMxNWotUER2NVVGeTFlUUduQ09DU2U2cWpzaExGQmxjRS1wdmk3Mjh1ekgxY0g5MlRiQ21rS1YtWQ?oc=5"
+    }
+   ],
+   "published": "2026-11-18T15:29:43+00:00",
+   "firstSeen": "2026-11-19T03:54:06+00:00",
+   "score": 11,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
     "Cameron",
     "Cameron County",
     "data center",
     "SpaceX",
-    "Starbase",
     "tax break"
    ],
-   "why": "Score 28: 3 outlets 18 + recency 9.8 (12h old)"
+   "why": "Score 11: 1 outlet 6 + recency 5.4 (23h old)"
   },
   {
    "id": "1856308026ab",
@@ -171,15 +218,11 @@
     {
      "name": "ValleyCentral (KVEO)",
      "url": "https://www.valleycentral.com/news/local-news/cameron-county-adopts-resolution-to-protect-public-access-to-boca-chica-beach/"
-    },
-    {
-     "name": "KRGV",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOR0I2QnRIOGlseTlaWjhUeWJXb1VULUwwbjRxc3BRcUFCQnpwdnM0c2M4UXZUMm9fTDl0QWdsRVRTNTJULVlGOHhQWDVQSXFwQkQwaUoyekVvMThuOW1xaFN6S2FSamxHMElldkoyVHdLd1BKX3dQZVN5Nmp4a0VUTEkxTmhQQ1BKN3Z0WC1TcFVHdUs5amJTWTJZTjQtLVpkT09yc1U1RXpXdjZEQ3lVZHF5NVRNcU9mTFE?oc=5"
     }
    ],
    "published": "2026-11-18T19:01:02+00:00",
    "firstSeen": "2026-11-19T03:54:06+00:00",
-   "score": 24,
+   "score": 13,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -189,22 +232,22 @@
     "Cameron County",
     "Harlingen"
    ],
-   "why": "Score 24: 2 outlets 12 + recency 12 (9h old)"
+   "why": "Score 13: 1 outlet 6 + recency 6.6 (19h old)"
   },
   {
    "id": "d6575f1f232b",
    "title": "Safety concerns prompt pedestrian study of busy crosswalk near UTRGV in Edinburg",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPLUdtWEhqbFNXSTJWcEhwRnBmSGUtcUhGYno5TXltVTZwOUpaOFgyVE8ybHFDTGQzZ0pFUENjNnhTcG1DSWJMc085alVmdDZlLWxzVndqamVkRkdZd2s0cEtUY05Ca3E0dnFGUHVOSlZPUG5LVWRjT0w5blFrZERmbzRtV3hwVmpKMVg0d05EaGUweC1ZbFRfM3NBQVdYbnNEUnlBaGdHY3FsLXYwakE?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMXM4QW15V2h1d0dxeFk1bDlZaGxFTjh4aEZRZXdVN29nTVRKS3FzQUtUN2xrRnhPZDUzWG40R01QOHg1d0ozeU1VekhadVV4SHd3cVRuWEx6RTV1Wmg2UHlTRE5LRkV1YmNWeDZaUjdndEJPWUNrVnJWZjhkS2o2SGx5bkVmc1BRb2dfMURvQ0VWSVZyMWlMajBKQkFEY2VUZjBRTTBqREg3N0k?oc=5",
    "source": "KRGV",
    "sources": [
     {
      "name": "KRGV",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPLUdtWEhqbFNXSTJWcEhwRnBmSGUtcUhGYno5TXltVTZwOUpaOFgyVE8ybHFDTGQzZ0pFUENjNnhTcG1DSWJMc085alVmdDZlLWxzVndqamVkRkdZd2s0cEtUY05Ca3E0dnFGUHVOSlZPUG5LVWRjT0w5blFrZERmbzRtV3hwVmpKMVg0d05EaGUweC1ZbFRfM3NBQVdYbnNEUnlBaGdHY3FsLXYwakE?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMXM4QW15V2h1d0dxeFk1bDlZaGxFTjh4aEZRZXdVN29nTVRKS3FzQUtUN2xrRnhPZDUzWG40R01QOHg1d0ozeU1VekhadVV4SHd3cVRuWEx6RTV1Wmg2UHlTRE5LRkV1YmNWeDZaUjdndEJPWUNrVnJWZjhkS2o2SGx5bkVmc1BRb2dfMURvQ0VWSVZyMWlMajBKQkFEY2VUZjBRTTBqREg3N0k?oc=5"
     }
    ],
-   "published": "2026-11-19T01:44:15+00:00",
+   "published": "2026-11-19T04:46:59+00:00",
    "firstSeen": "2026-11-19T03:54:06+00:00",
-   "score": 24,
+   "score": 18,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -212,7 +255,7 @@
     "Edinburg",
     "UTRGV"
    ],
-   "why": "Score 24: 1 outlet 6 + recency 17.6 (2h old)"
+   "why": "Score 18: 1 outlet 6 + recency 11.6 (9h old)"
   },
   {
    "id": "3a9b39b83a8c",
@@ -238,55 +281,56 @@
   },
   {
    "id": "b354f2de3987",
-   "title": "Another New World Screwworm case detected in Starr County",
-   "url": "https://www.valleycentral.com/news/local-news/another-new-world-screwworm-case-detected-in-starr-county/",
+   "title": "New World screwworm case reported in Hidalgo County",
+   "url": "https://www.valleycentral.com/news/local-news/new-world-screwworm-case-reported-in-hidalgo-county/",
    "source": "ValleyCentral (KVEO)",
    "sources": [
     {
      "name": "ValleyCentral (KVEO)",
-     "url": "https://www.valleycentral.com/news/local-news/another-new-world-screwworm-case-detected-in-starr-county/"
+     "url": "https://www.valleycentral.com/news/local-news/new-world-screwworm-case-reported-in-hidalgo-county/"
+    },
+    {
+     "name": "KRGV",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSkhTb2RQVmIzbXZ0Q3Y4TEZjZWJPTGhvRjR6QnFNZGdBOVJOTGlYLV9WT2tBb29RRVFjTUJRQmVZb2x0V3dndnA5eUZobzdqUXlGR2tjUkpSMzJqeGFNZl82dmxFZGJYd3gxNEFuZldRdFhYdzg3N3BKMGVDZWZOZE9OZlpSWl9RUjlNTTFDT3ZlTVk?oc=5"
     }
    ],
-   "published": "2026-11-17T22:22:36+00:00",
+   "published": "2026-11-19T03:48:22+00:00",
    "firstSeen": "2026-11-19T03:54:06+00:00",
-   "score": 10,
+   "score": 23,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
    "matches": [
     "Harlingen",
-    "screwworm",
-    "Starr County"
+    "Hidalgo",
+    "Hidalgo County",
+    "screwworm"
    ],
-   "why": "Score 10: 1 outlet 6 + recency 3.6 (30h old)"
+   "why": "Score 23: 2 outlets 12 + recency 11 (10h old)"
   },
   {
    "id": "103259b5ead5",
    "title": "SpaceX received data center permit a day before tax break rejection",
-   "url": "https://myrgv.com/local-news/2026/11/18/spacex-received-data-center-permit-a-day-before-tax-break-rejection/",
-   "source": "MyRGV (The Monitor, Edinburg, Brownsville Herald)",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVjQ3RHhTZ0xjdlVvNUFwRlR2bkRFaGh3SGhadlB4S1d4MnBWTEhaaDZ3UlNrVUR0VTgyNkhlem1Hb3QwOG5QN3ZVRWQwcDYxNFRhcjVwTTNQZ0tBYlI2QURGY1NnLWdtaURVYXNnRFN2VFR2anV0VkkwY0hDaThRanJGQUVCaHhpc2xPbWc2S2Nic2s1NXhyVHhvM2ZEcDV6OGNWZ2hPRjRuOWlV?oc=5",
+   "source": "MyRGV.com",
    "sources": [
     {
-     "name": "MyRGV (The Monitor, Edinburg, Brownsville Herald)",
-     "url": "https://myrgv.com/local-news/2026/11/18/spacex-received-data-center-permit-a-day-before-tax-break-rejection/"
+     "name": "MyRGV.com",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVjQ3RHhTZ0xjdlVvNUFwRlR2bkRFaGh3SGhadlB4S1d4MnBWTEhaaDZ3UlNrVUR0VTgyNkhlem1Hb3QwOG5QN3ZVRWQwcDYxNFRhcjVwTTNQZ0tBYlI2QURGY1NnLWdtaURVYXNnRFN2VFR2anV0VkkwY0hDaThRanJGQUVCaHhpc2xPbWc2S2Nic2s1NXhyVHhvM2ZEcDV6OGNWZ2hPRjRuOWlV?oc=5"
     }
    ],
-   "published": "2026-11-19T00:30:00+00:00",
+   "published": "2026-11-18T22:32:00+00:00",
    "firstSeen": "2026-11-19T03:54:06+00:00",
-   "score": 22,
+   "score": 14,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
    "matches": [
-    "abatement",
-    "Brownsville",
-    "Cameron",
-    "Cameron County",
     "data center",
     "SpaceX",
     "tax break"
    ],
-   "why": "Score 22: 1 outlet 6 + recency 16.4 (3h old)"
+   "why": "Score 14: 1 outlet 6 + recency 8.1 (16h old)"
   },
   {
    "id": "c0444002b6b0",
@@ -301,14 +345,14 @@
    ],
    "published": "2026-11-18T23:59:08+00:00",
    "firstSeen": "2026-11-19T03:54:06+00:00",
-   "score": 22,
+   "score": 15,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
    "matches": [
     "commissioners court"
    ],
-   "why": "Score 22: 1 outlet 6 + recency 16 (4h old)"
+   "why": "Score 15: 1 outlet 6 + recency 8.8 (14h old)"
   },
   {
    "id": "7c4115818826",
@@ -323,7 +367,7 @@
    ],
    "published": "2026-11-18T20:31:00+00:00",
    "firstSeen": "2026-11-19T03:54:06+00:00",
-   "score": 19,
+   "score": 13,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -332,7 +376,7 @@
     "Cameron County",
     "Starbase"
    ],
-   "why": "Score 19: 1 outlet 6 + recency 13.1 (7h old)"
+   "why": "Score 13: 1 outlet 6 + recency 7.2 (18h old)"
   },
   {
    "id": "b57987329413",
@@ -347,7 +391,7 @@
    ],
    "published": "2026-11-18T18:35:00+00:00",
    "firstSeen": "2026-11-19T03:54:06+00:00",
-   "score": 18,
+   "score": 12,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -356,7 +400,7 @@
     "SpaceX",
     "Starbase"
    ],
-   "why": "Score 18: 1 outlet 6 + recency 11.7 (9h old)"
+   "why": "Score 12: 1 outlet 6 + recency 6.4 (20h old)"
   },
   {
    "id": "382acad5381e",
@@ -371,7 +415,7 @@
    ],
    "published": "2026-11-18T17:30:47+00:00",
    "firstSeen": "2026-11-19T03:54:06+00:00",
-   "score": 17,
+   "score": 12,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -379,7 +423,7 @@
     "Brownsville",
     "city commission"
    ],
-   "why": "Score 17: 1 outlet 6 + recency 11 (10h old)"
+   "why": "Score 12: 1 outlet 6 + recency 6 (21h old)"
   },
   {
    "id": "4548e2a8c114",
@@ -394,7 +438,7 @@
    ],
    "published": "2026-11-18T16:40:54+00:00",
    "firstSeen": "2026-11-19T03:54:06+00:00",
-   "score": 16,
+   "score": 12,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -403,7 +447,7 @@
     "McAllen",
     "Rio Grande Valley"
    ],
-   "why": "Score 16: 1 outlet 6 + recency 10.5 (11h old)"
+   "why": "Score 12: 1 outlet 6 + recency 5.8 (22h old)"
   },
   {
    "id": "db66e0d19ddd",
@@ -488,14 +532,14 @@
    ],
    "published": "2026-11-18T04:00:39+00:00",
    "firstSeen": "2026-11-19T03:54:06+00:00",
-   "score": 11,
+   "score": 9,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
    "matches": [
     "UTRGV"
    ],
-   "why": "Score 11: 1 outlet 6 + recency 5 (24h old)"
+   "why": "Score 9: 1 outlet 6 + recency 2.8 (34h old)"
   },
   {
    "id": "7ff7bbf0c150",
