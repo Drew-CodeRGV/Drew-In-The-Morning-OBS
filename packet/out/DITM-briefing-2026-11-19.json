@@ -66,10 +66,10 @@
         "score": 16,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 16: 1 outlet 6 + recency 9.9 (12h old)",
+        "scoreWhy": "Score 16: 1 outlet 6 + recency 9.7 (13h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 9.9,
+          "recency": 9.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -113,10 +113,10 @@
         "score": 25,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 25: 1 outlet 6 + recency 9.1 (14h old) + chatter 10",
+        "scoreWhy": "Score 25: 1 outlet 6 + recency 8.9 (14h old) + chatter 10",
         "scoreParts": {
           "outlets": 6,
-          "recency": 9.1,
+          "recency": 8.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 10.0
@@ -150,13 +150,13 @@
             "published": "2026-11-18T23:42:00-06:00"
           }
         ],
-        "score": 20,
+        "score": 19,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 20: 1 outlet 6 + recency 13.7 (7h old)",
+        "scoreWhy": "Score 19: 1 outlet 6 + recency 13.5 (7h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 13.7,
+          "recency": 13.5,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -183,10 +183,10 @@
         "score": 15,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 15: 1 outlet 6 + recency 8.9 (14h old)",
+        "scoreWhy": "Score 15: 1 outlet 6 + recency 8.8 (14h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 8.9,
+          "recency": 8.8,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -218,10 +218,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -247,10 +247,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -277,10 +277,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -310,10 +310,10 @@
         "score": 22,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 22: 1 outlet 6 + recency 7 (18h old) + chatter 9.3",
+        "scoreWhy": "Score 22: 1 outlet 6 + recency 6.9 (19h old) + chatter 9.3",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 9.3
@@ -339,10 +339,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -372,10 +372,10 @@
         "score": 21,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 21: 1 outlet 6 + recency 7 (18h old) + chatter 8.2",
+        "scoreWhy": "Score 21: 1 outlet 6 + recency 6.9 (19h old) + chatter 8.2",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 8.2
@@ -402,10 +402,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -432,10 +432,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -462,10 +462,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -522,10 +522,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -553,10 +553,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -587,10 +587,10 @@
         "score": 23,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 23: 1 outlet 6 + recency 7 (18h old) + chatter 10",
+        "scoreWhy": "Score 23: 1 outlet 6 + recency 6.9 (19h old) + chatter 10",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 10.0
@@ -647,10 +647,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -677,7 +677,7 @@
         "score": 8,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.7 (42h old)",
+        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.7 (43h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 1.7,
@@ -713,10 +713,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -741,10 +741,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -769,10 +769,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -797,10 +797,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -855,10 +855,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -1155,10 +1155,10 @@
     "lon": -98.23,
     "note": "McAllen / Rio Grande Valley; NWS Brownsville (BRO) forecast",
     "now": {
-      "tempF": 66,
+      "tempF": 67,
       "cond": "Cloudy",
       "icon": "cloud",
-      "at": "2026-11-19T11:20:00+00:00",
+      "at": "2026-11-19T11:53:00+00:00",
       "source": "KMFE observation"
     },
     "office": "BRO",
@@ -1847,10 +1847,10 @@
       "score": 25,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 25: 3 outlets 18 + recency 7 (18h old)",
+      "scoreWhy": "Score 25: 3 outlets 18 + recency 6.9 (19h old)",
       "scoreParts": {
         "outlets": 18,
-        "recency": 7.0,
+        "recency": 6.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1887,10 +1887,10 @@
       "score": 13,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+      "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 7.0,
+        "recency": 6.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1927,10 +1927,10 @@
       "score": 13,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+      "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 7.0,
+        "recency": 6.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -2071,10 +2071,10 @@
       "score": 25,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 25: 3 outlets 18 + recency 7 (18h old)",
+      "scoreWhy": "Score 25: 3 outlets 18 + recency 6.9 (19h old)",
       "scoreParts": {
         "outlets": 18,
-        "recency": 7.0,
+        "recency": 6.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -2112,10 +2112,10 @@
       "score": 13,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+      "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 7.0,
+        "recency": 6.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -2203,10 +2203,10 @@
       "score": 22,
       "label": "Active",
       "uncovered": true,
-      "scoreWhy": "Score 22: 1 outlet 6 + recency 7 (18h old) + chatter 8.9",
+      "scoreWhy": "Score 22: 1 outlet 6 + recency 6.9 (19h old) + chatter 8.9",
       "scoreParts": {
         "outlets": 6,
-        "recency": 7.0,
+        "recency": 6.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 8.9
@@ -2235,10 +2235,10 @@
       "score": 23,
       "label": "Active",
       "uncovered": true,
-      "scoreWhy": "Score 23: 1 outlet 6 + recency 7 (18h old) + chatter 10",
+      "scoreWhy": "Score 23: 1 outlet 6 + recency 6.9 (19h old) + chatter 10",
       "scoreParts": {
         "outlets": 6,
-        "recency": 7.0,
+        "recency": 6.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 10.0
@@ -2263,10 +2263,10 @@
       "score": 13,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+      "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 7.0,
+        "recency": 6.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -2291,10 +2291,10 @@
       "score": 13,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+      "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 7.0,
+        "recency": 6.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -2319,10 +2319,10 @@
       "score": 13,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+      "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 7.0,
+        "recency": 6.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -2331,6 +2331,76 @@
       "ord": 4
     }
   ],
+  "tech": {
+    "origin": "wires",
+    "issue": null,
+    "searchedAt": "2026-11-19T06:25:00-06:00",
+    "note": "Searched Drew's Gmail (drew@drewlentz.com and drew@politiquera.com, plus Outlook) on Nov 19, 2026 at 6:25 AM CT for Fast Company Daily: no issue from the last 48 hours. The only Fast Company mail is Premium subscription receipts (newest Oct 24, 2023), so the Daily is not arriving in either inbox yet. These four items are the fallback from the tech wires; the section switches to the Daily as soon as an issue arrives.",
+    "items": [
+      {
+        "id": "tech-k12-google",
+        "short": "Big-city school districts weigh dropping Google Search",
+        "title": "The nation's largest school districts consider ditching Google Search",
+        "source": "The Verge",
+        "source_url": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
+        "published": "Nov 18",
+        "verified": true,
+        "one_line": "New York, Los Angeles and Chicago schools are weighing Google alternatives after Google said it will disable Search for schools that opt out of its AI features; starting next year schools can't turn off the Gemini-powered features without also turning off Search (per The New York Times).",
+        "angle": "School-board angle: it's a question for Valley districts, not a claim. Do our ISDs run Google tools for students, and what happens to student Search next year? Good lead-in to the school-board block next week.",
+        "confirm": "The Valley tie is a question: confirm with a local ISD that it uses Google for Education before saying so. Details are the NYT's, relayed by The Verge (RSS summary read, not the full article).",
+        "links": [],
+        "basis": "FALLBACK: TECH WIRES",
+        "isConfirm": true
+      },
+      {
+        "id": "tech-outage-explainer",
+        "short": "How to tell a cyberattack from a plain old outage",
+        "title": "How to tell a cyberattack from a plain old outage",
+        "source": "Ars Technica",
+        "source_url": "https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/",
+        "published": "Nov 19",
+        "verified": true,
+        "one_line": "Ars Technica explainer: when everything goes down, don't assume it's a cyberattack.",
+        "angle": "Pairs with the National Desk outages story (FAA ground stop, the Mullin hearing): before anyone shares 'we got hacked' in the group chat, here's how the pros tell an attack from a plain old outage. Drew's wireless-engineer lane.",
+        "confirm": "Only the headline and one-line standfirst were read (RSS). Read the article before citing any specifics on air.",
+        "links": [],
+        "basis": "FALLBACK: TECH WIRES",
+        "isConfirm": true
+      },
+      {
+        "id": "tech-instagram-edit",
+        "short": "Instagram lets you edit Stories after posting",
+        "title": "Instagram now lets you edit your stories after you post them",
+        "source": "The Verge",
+        "source_url": "https://www.theverge.com/tech/1036941/instagram-now-lets-you-edit-your-stories-after-you-post-them",
+        "published": "Nov 18",
+        "verified": true,
+        "one_line": "You can now edit the text, music, stickers and drawings on a Story for up to 15 minutes after sharing, without losing views, likes or replies, Instagram head Adam Mosseri announced.",
+        "angle": "Family angle for Jess: a 15-minute 'oops' window for teens' Stories. Good opening for the 'think before you post' talk from How We'd Talk to Our Kids.",
+        "confirm": "",
+        "links": [],
+        "basis": "FALLBACK: TECH WIRES",
+        "isConfirm": false
+      },
+      {
+        "id": "tech-ipo",
+        "short": "AI company prices IPO at $83 a share, above range",
+        "title": "Anthropic prices IPO at $83 a share, above projected range",
+        "source": "TechCrunch",
+        "source_url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
+        "published": "Nov 18",
+        "verified": false,
+        "one_line": "The long-awaited IPO reportedly prices at $83 a share, above the projected range, valuing the company at about $1.5 trillion on a fully diluted basis.",
+        "angle": "Biggest tech-business story of the week. Local tie to confirm before using: the data-center fights (Cameron County's SpaceX data-center tax-break vote in the local news) are where the AI boom touches the Valley.",
+        "confirm": "TechCrunch says 'reportedly': confirm the price and valuation against a second source (the filing or a wire) before air. The local data-center tie is an angle, not a reported connection.",
+        "links": [],
+        "basis": "FALLBACK: TECH WIRES",
+        "isConfirm": true
+      }
+    ],
+    "badge": "FALLBACK: TECH WIRES",
+    "originLabel": "FALLBACK: tech wires (The Verge, TechCrunch, Ars Technica). No Fast Company Daily issue from the last 48 hours was found in Gmail."
+  },
   "showClock": [
     {
       "letter": "A",
@@ -2554,7 +2624,7 @@
       "signature": false,
       "weave": null,
       "talkingPoints": [
-        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with Hidalgo County's first screwworm case, plus SpaceX's quiet data-center air permit. On the National Desk, the first-ever Trump, Xi and Putin summit. In Trending, GTA Six finally dropping. And in How We'd Talk to Our Kids, Jess and I take on energy drinks, caffeine and what a 14-year-old actually needs to know. It's 66 and cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with Hidalgo County's first screwworm case, plus SpaceX's quiet data-center air permit. On the National Desk, the first-ever Trump, Xi and Putin summit. In Trending, GTA Six finally dropping. And in How We'd Talk to Our Kids, Jess and I take on energy drinks, caffeine and what a 14-year-old actually needs to know. It's 67 and cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
         "JINGLE: Drew in the Morning. Your Valley, your news, your morning.",
         "JINGLE: \"Drew in the Morning. Your Valley, your news, your morning.\" (alternates in cold-open.md)",
         "COLD OPEN: read the paragraph the packet builds each morning (card at the top of the studio page; also in the PDF, txt and email, and in obs-data.json under coldOpen). It is one flowing paragraph, about 25 seconds, filled with today's real headlines.",
@@ -3273,6 +3343,7 @@
         "3) SNL (Sat Nov 14, S52E06). FACT: John Mulaney hosted for the 7th time; Phoebe Bridgers was musical guest (\"Bobby,\" \"Still Standing\"). Cold open: \"CIA Meeting,\" Mulaney as a CIA officer lecturing Musk, Altman, Thiel, Zuckerberg and Amodei about honey-trap spies after the Jensen Huang scandal, with Bowen Yang returning as Huang; it also jabbed the ground stop and the Outlook outage. Other sketches: \"Sister,\" \"Plane Crash,\" \"Gettin' It Done,\" \"Woodstock,\" \"Kathy,\" and a Central Park carriage ride musical sketch. DID IT LAND: EW: \"easily the best episode of this season\"; Boston.com: \"far and away the best of Season 52\"; ratings 4.45M, down 20% from the prior week (Showbiz411). THE 'SISTER' VIDEO: a pretaped fake elder-care testimonial ad (Jane Wickline as the sister), on SNL's YouTube channel (published Nov 14, 2:59, ~5.8M views when checked Nov 18). CONFIRM BEFORE AIR that 'Sister' is the sister video Drew meant. Last new episode before Thanksgiving; the next is in December (Amanda Seyfried, per EW). ANGLE: it's the rare cold open that skips politics and still lands. VALLEY TIE: the cold open roasted the same ground stop that led HRL, MFE and BRO to issue travel advisories; 'Sister' is a caregiving story, so ask chat who is the 'Sister' in their family.",
         "4) NVIDIA'S JENSEN HUANG RESIGNS (Nov 12). FACT: Nvidia announced Huang resigned as president, CEO and board member effective immediately; CFO Colette Kress is interim CEO; Harvey C. Jones is the first board chair (Nvidia press release). Mainstream reports link it to an alleged affair with a suspected Chinese spy (SNL's cold open built on it); verify the allegations through a reported source before characterizing them. ANGLE: the AI boom's biggest face is gone, and it's still building the chips for every data center on earth. VALLEY TIE: Starbase's $24B data center is exactly that kind of AI compute fight. CONFIRM BEFORE AIR on any allegation detail.",
         "5) TEXAS TEN COMMANDMENTS (ABC, Nov 18). FACT: ABC reports the Democratic midterm sweep has put Texas's classroom Ten Commandments mandate in doubt; the law remains in effect and legal battles are headed to the Supreme Court. ANGLE: whatever you think of it, parents deserve a clear answer about what's on the classroom wall. VALLEY TIE: it applies in every RGV school; ask what your child's classroom has up. CONFIRM BEFORE AIR on details of repeal efforts.",
+        "TECH SUB-SEGMENT (about 90 seconds inside J, after the National Desk and before Trending; no extra time added to the hour): open the studio page section \"What's Happening in Tech\". It holds 3 to 5 items from the morning's Fast Company Daily email (the daily refresh reads it from Gmail); if no issue arrived in the last 48 hours the section says so and shows tech-wire items (The Verge, TechCrunch, Ars Technica) marked FALLBACK. Pick 1 or 2 with an RGV or family angle: read the one-liner, say the angle, one link on screen. Items marked CONFIRM BEFORE AIR get verified or skipped. Local stays bigger: skip Tech entirely when the local news runs long.",
         "TRENDING (\"WAIT, DON'T TELL ME\"): open the studio page section \"Trending: Wait, Don't Tell Me\" (6 to 10 items, each with a one-line summary, a suggested riff and a source link; the print packet carries the top 5). Pick 1 to 3: the best riff with a Valley tie, not the most famous story. Format: Drew reacts first (\"wait, don't tell me...\"), Jess adds the angle, one link on screen. Items marked CONFIRM BEFORE AIR are thinly sourced: verify or skip. Never duplicate a National Desk story. THIS WEEK'S SAMPLE BANK: CMA Awards (Ella Langley, \"Choosin' Texas\"), Musk \"I'm not MAGA\" (Starbase tie), the viral Mexican quince stadium party (Valley quince tie), Giannis vs. the Bucks, Pattinson as Bond. (flex: this is riff material inside the National Desk, not a separate block)"
       ],
       "followUps": [
@@ -3280,10 +3351,13 @@
         "Should a Cabinet secretary skip the football game after a national outage? Ask chat.",
         "Did SNL's 'Sister' hit you in the gut or are we overthinking it?",
         "'Current FAA flight cuts': none found in the sources checked this week. CONFIRM BEFORE AIR if Drew meant something else.",
+        "Which tech story this morning will a Valley parent or small-business owner actually feel this week?",
         "Wait, don't tell me: what's the one story you saw this morning that you want us to explain?"
       ],
       "transitions": [
         "Okay, that's the 30,000-foot view. Now, what does it mean at 1,000 feet over the Valley?",
+        "Okay, quick tech check before the internet gets weird: here's what's happening in tech.",
+        "That's tech. Now, what is everybody losing their mind over? Wait, don't tell me.",
         "Okay, that's what the internet is losing its mind over this morning. Now it's your turn."
       ],
       "segueNext": "We've talked a lot. Now it's your turn.",
@@ -3320,6 +3394,11 @@
         },
         {
           "id": "j7",
+          "primary": "What's Happening in Tech",
+          "secondary": "Quick hits from Fast Company Daily and the tech wires"
+        },
+        {
+          "id": "j8",
           "primary": "Wait, Don't Tell Me",
           "secondary": "What everybody's talking about · pick 1 to 3"
         }
@@ -3372,6 +3451,10 @@
         {
           "label": "ABC: Ten Commandments in Texas classrooms",
           "url": "https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010"
+        },
+        {
+          "label": "Fast Company Daily (Drew's email; the daily refresh pulls it)",
+          "url": "https://www.fastcompany.com/newsletters"
         }
       ],
       "confirm": [
@@ -3379,7 +3462,8 @@
         "'Sister video' = SNL 'Sister' sketch (confirm with Drew)",
         "Any allegation details on Jensen Huang",
         "Any current FAA flight cuts (none found)",
-        "Refresh everything Sunday night"
+        "Refresh everything Sunday night",
+        "Tech items: confirm each one against its source link before air (the packet marks the thin ones CONFIRM BEFORE AIR)"
       ]
     },
     {
@@ -3542,14 +3626,14 @@
     "trends": {
       "TX": 10,
       "US": 10,
-      "fetchedAt": "2026-11-19T12:14:15+00:00",
+      "fetchedAt": "2026-11-19T12:32:27+00:00",
       "fromCache": false
     },
     "formula": "score = outlets(6 per distinct outlet, max 30) + recency(20 x 0.5^(age_h/12)) + X(20 x min(1, log10(1+eng+25 posts)/4)) + Google Trends(20 TX / 12 US) + chatter(10 x min(1, log10(1+eng+5 posts)/2.5)); Hot >= 45, Trending >= 27, else Active",
-    "trendsNote": "Google Trends US-TX 10 + US 10 items, fetched 2026-11-19T12:14:15+00:00"
+    "trendsNote": "Google Trends US-TX 10 + US 10 items, fetched 2026-11-19T12:32:27+00:00"
   },
   "coldOpen": {
-    "text": "Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with Hidalgo County's first screwworm case, plus SpaceX's quiet data-center air permit. On the National Desk, the first-ever Trump, Xi and Putin summit. In Trending, GTA Six finally dropping. And in How We'd Talk to Our Kids, Jess and I take on energy drinks, caffeine and what a 14-year-old actually needs to know. It's 66 and cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+    "text": "Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with Hidalgo County's first screwworm case, plus SpaceX's quiet data-center air permit. On the National Desk, the first-ever Trump, Xi and Putin summit. In Trending, GTA Six finally dropping. And in How We'd Talk to Our Kids, Jess and I take on energy drinks, caffeine and what a 14-year-old actually needs to know. It's 67 and cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
     "jingle": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [
       "Wake up, RGV. It's Drew in the Morning.",
@@ -3566,7 +3650,7 @@
   "linkCheck": {
     "date": "2026-11-19",
     "ok": 112,
-    "blocked": 7,
+    "blocked": 8,
     "dead": 0,
     "unreachable": 2
   },
@@ -3831,6 +3915,10 @@
       "status": 200,
       "result": "ok"
     },
+    "https://www.fastcompany.com/newsletters": {
+      "status": 403,
+      "result": "blocked-by-site"
+    },
     "https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/sextortion": {
       "status": 200,
       "result": "ok"
@@ -4056,7 +4144,7 @@
       "result": "ok"
     }
   },
-  "generatedAt": "2026-11-19T06:14:20-06:00",
+  "generatedAt": "2026-11-19T06:32:50-06:00",
   "sources": [
     {
       "section": "Top headlines: RGV",
@@ -4732,6 +4820,11 @@
       "section": "Run of show: J",
       "label": "ABC: Ten Commandments in Texas classrooms",
       "url": "https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010"
+    },
+    {
+      "section": "Run of show: J",
+      "label": "Fast Company Daily (Drew's email; the daily refresh pulls it)",
+      "url": "https://www.fastcompany.com/newsletters"
     },
     {
       "section": "Run of show: L",

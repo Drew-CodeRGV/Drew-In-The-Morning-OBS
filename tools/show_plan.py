@@ -211,7 +211,7 @@ nb(id="A-cold-open", letter="A", title="Cold Open & Jingle", short="Cold Open", 
    headlines=["Good morning, Rio Grande Valley"],
    chyrons=oc("A", ["a1", "a2"]),
    talking=["JINGLE: \"Drew in the Morning. Your Valley, your news, your morning.\" (alternates in cold-open.md)",
-            "COLD OPEN: read the paragraph the packet builds each morning (card at the top of the studio page; also in the PDF, txt and email, and in obs-data.json under coldOpen). It is one flowing paragraph, about 45 seconds, filled with today's real headlines.",
+            "COLD OPEN: read the paragraph the packet builds each morning (card at the top of the studio page; also in the PDF, txt and email, and in obs-data.json under coldOpen). It is one flowing paragraph, about 25 seconds, filled with today's real headlines.",
             "Listener tease at the end of the open: DMs or ditm@drewlentz.com (CONFIRM BEFORE AIR). No phone number exists, so don't announce one."],
    follow=[], transitions=["Quick check-in on what I've been up to this week, then we jump into the Valley."], links=[L("Cold open template and jingle (cold-open.md)", "cold-open.md")],
    confirm=["Unconfirmed teased items are listed under the cold open on the studio page"])
@@ -301,14 +301,23 @@ nb(id="I-statewide", letter="I", title="Statewide", short="Statewide", subject="
    transitions=["That's Texas. Now zoom out: what's the rest of the country arguing about?", "Austin writes the rules; Washington argues about them. Here's the national picture."],
    links=[{"label": t["title"][:80], "url": t["url"]} for t in _texas[:3] if t.get("url")], confirm=["Pull live r/Texas top-of-week titles", "Re-check Texas items Sunday night"])
 
+TECH_TALK = ("TECH SUB-SEGMENT (about 90 seconds inside J, after the National Desk and before Trending; no extra time added to the hour): open the studio page section "
+             "\"What's Happening in Tech\". It holds 3 to 5 items from the morning's Fast Company Daily email (the daily refresh reads it from Gmail); if no issue arrived in the last 48 hours "
+             "the section says so and shows tech-wire items (The Verge, TechCrunch, Ars Technica) marked FALLBACK. Pick 1 or 2 with an RGV or family angle: read the one-liner, say the angle, one link on screen. "
+             "Items marked CONFIRM BEFORE AIR get verified or skipped. Local stays bigger: skip Tech entirely when the local news runs long.")
+TECH_FOLLOW = "Which tech story this morning will a Valley parent or small-business owner actually feel this week?"
+TECH_IN = "Okay, quick tech check before the internet gets weird: here's what's happening in tech."
+TECH_OUT = "That's tech. Now, what is everybody losing their mind over? Wait, don't tell me."
+TECH_LINKS = [{"label": "Fast Company Daily (Drew's email; the daily refresh pulls it)", "url": "https://www.fastcompany.com/newsletters"}]
 _n = OLD["I"]
 nb(id="J-national-desk", letter="J", title="The National Desk (+ Trending)", short="National", subject="Big national stories with a Valley angle (fact, then take, then 'why it matters here'), plus Trending: Wait, Don't Tell Me as riff material",
    minutes=8, flex=True, trim_to=6, stretch_to=10, color="#6d597a",
-   headlines=_n["headlines"] + ["Trending: pick 1 to 3 'wait, don't tell me' stories"],
-   chyrons=oc("J", ["i1", "i2", "i3", "i4", "i5", "i6", "h0"]),
-   talking=_n["talking"] + [_hw["talking"][0] + " (flex: this is riff material inside the National Desk, not a separate block)"],
-   follow=_n["follow"] + _hw["follow"][:1], transitions=["Okay, that's the 30,000-foot view. Now, what does it mean at 1,000 feet over the Valley?", "Okay, that's what the internet is losing its mind over this morning. Now it's your turn."],
-   links=_n["links"], confirm=_n["confirm"])
+   headlines=_n["headlines"] + ["Tech: 'What's Happening in Tech', pick 1 or 2 quick hits", "Trending: pick 1 to 3 'wait, don't tell me' stories"],
+   chyrons=oc("J", ["i1", "i2", "i3", "i4", "i5", "i6"]) + [C("j7", "What's Happening in Tech", "Quick hits from Fast Company Daily and the tech wires")] + [C("j8", c["primary"], c["secondary"]) for c in oc("J", ["h0"])],
+   talking=_n["talking"] + [TECH_TALK, _hw["talking"][0] + " (flex: this is riff material inside the National Desk, not a separate block)"],
+   follow=_n["follow"] + [TECH_FOLLOW] + _hw["follow"][:1],
+   transitions=["Okay, that's the 30,000-foot view. Now, what does it mean at 1,000 feet over the Valley?", TECH_IN, TECH_OUT, "Okay, that's what the internet is losing its mind over this morning. Now it's your turn."],
+   links=_n["links"] + TECH_LINKS, confirm=_n["confirm"] + ["Tech items: confirm each one against its source link before air (the packet marks the thin ones CONFIRM BEFORE AIR)"])
 
 _j = OLD["J"]; _m = OLD["M"]
 nb(id="K-listener-line", letter="K", title="Listener Line", short="Listeners", subject="Call-ins and topic submissions (from submissions.md / call-ins.md); still no phone number",
@@ -481,6 +490,7 @@ def md(old):
             A("\n**CONFIRM BEFORE AIR:** " + "; ".join(b["confirm"]))
         A("\n---")
     A("### Producer notes")
+    A("- **What changed (Nov 19):** block J (National Desk + Trending, still 8 min, flex 6 to 10) now has a **Tech** sub-segment, \"What's Happening in Tech\", about 90 seconds between the National Desk and Trending: 3 to 5 quick hits from Drew's Fast Company Daily email (tech wires marked FALLBACK when no issue arrived in 48 hours), with its own segue lines and chyron. No time added to the hour, still 12 blocks A to L, and the Companion mapping is unchanged (block J still sets the National Desk chyron).")
     A("- **What changed (Nov 18, 5th update):** flowing 12-block open-format menu in this order: A Cold open + jingle · B What I've Been Up To · C Local news · D Local politics · E School boards · F City hall · G Economic development · H Family & kids (woven in, with Jess) · I Statewide · J National Desk (+ Trending) · K Listener line · L Meme of the Week / close. The dedicated Starbase, Zoho and open-format blocks are gone: Starbase/SpaceX items live in Local news and Economic development, Zoho lives in City hall, Trending sits inside the National Desk as riff material. Times total exactly 60 min. Segues exist between every adjacent pair plus jump lines (segues.md).")
     A("- **Thanksgiving week:** Nov 26 is Thanksgiving; expect lighter turnout and slower news.")
     A("- **Sunday-night checklist:** refresh headlines (KRGV, MyRGV, ValleyCentral, Daily McAllen); clear the CONFIRM items; pull Reddit top posts; read new DMs/email submissions; load `obs-data.json`; open the studio packet page.")

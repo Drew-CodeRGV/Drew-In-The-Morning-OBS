@@ -1150,5 +1150,61 @@
    "source": "Nomorecheezmeh Facebook · Nov 18",
    "confirm": "community chatter, CONFIRM BEFORE AIR"
   }
- ]
+ ],
+ "tech": {
+  "origin": "wires",
+  "issue": null,
+  "searchedAt": "2026-11-19T06:25:00-06:00",
+  "note": "Searched Drew's Gmail (drew@drewlentz.com and drew@politiquera.com, plus Outlook) on Nov 19, 2026 at 6:25 AM CT for Fast Company Daily: no issue from the last 48 hours. The only Fast Company mail is Premium subscription receipts (newest Oct 24, 2023), so the Daily is not arriving in either inbox yet. These four items are the fallback from the tech wires; the section switches to the Daily as soon as an issue arrives.",
+  "items": [
+   {
+    "id": "tech-k12-google",
+    "short": "Big-city school districts weigh dropping Google Search",
+    "title": "The nation's largest school districts consider ditching Google Search",
+    "source": "The Verge",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
+    "published": "Nov 18",
+    "verified": true,
+    "one_line": "New York, Los Angeles and Chicago schools are weighing Google alternatives after Google said it will disable Search for schools that opt out of its AI features; starting next year schools can't turn off the Gemini-powered features without also turning off Search (per The New York Times).",
+    "angle": "School-board angle: it's a question for Valley districts, not a claim. Do our ISDs run Google tools for students, and what happens to student Search next year? Good lead-in to the school-board block next week.",
+    "confirm": "The Valley tie is a question: confirm with a local ISD that it uses Google for Education before saying so. Details are the NYT's, relayed by The Verge (RSS summary read, not the full article)."
+   },
+   {
+    "id": "tech-outage-explainer",
+    "short": "How to tell a cyberattack from a plain old outage",
+    "title": "How to tell a cyberattack from a plain old outage",
+    "source": "Ars Technica",
+    "source_url": "https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/",
+    "published": "Nov 19",
+    "verified": true,
+    "one_line": "Ars Technica explainer: when everything goes down, don't assume it's a cyberattack.",
+    "angle": "Pairs with the National Desk outages story (FAA ground stop, the Mullin hearing): before anyone shares 'we got hacked' in the group chat, here's how the pros tell an attack from a plain old outage. Drew's wireless-engineer lane.",
+    "confirm": "Only the headline and one-line standfirst were read (RSS). Read the article before citing any specifics on air."
+   },
+   {
+    "id": "tech-instagram-edit",
+    "short": "Instagram lets you edit Stories after posting",
+    "title": "Instagram now lets you edit your stories after you post them",
+    "source": "The Verge",
+    "source_url": "https://www.theverge.com/tech/1036941/instagram-now-lets-you-edit-your-stories-after-you-post-them",
+    "published": "Nov 18",
+    "verified": true,
+    "one_line": "You can now edit the text, music, stickers and drawings on a Story for up to 15 minutes after sharing, without losing views, likes or replies, Instagram head Adam Mosseri announced.",
+    "angle": "Family angle for Jess: a 15-minute 'oops' window for teens' Stories. Good opening for the 'think before you post' talk from How We'd Talk to Our Kids.",
+    "confirm": ""
+   },
+   {
+    "id": "tech-ipo",
+    "short": "AI company prices IPO at $83 a share, above range",
+    "title": "Anthropic prices IPO at $83 a share, above projected range",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
+    "published": "Nov 18",
+    "verified": false,
+    "one_line": "The long-awaited IPO reportedly prices at $83 a share, above the projected range, valuing the company at about $1.5 trillion on a fully diluted basis.",
+    "angle": "Biggest tech-business story of the week. Local tie to confirm before using: the data-center fights (Cameron County's SpaceX data-center tax-break vote in the local news) are where the AI boom touches the Valley.",
+    "confirm": "TechCrunch says 'reportedly': confirm the price and valuation against a second source (the filing or a wire) before air. The local data-center tie is an angle, not a reported connection."
+   }
+  ]
+ }
 }

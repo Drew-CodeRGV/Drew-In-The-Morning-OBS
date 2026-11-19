@@ -340,6 +340,7 @@ Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close
 - 3) SNL (Sat Nov 14, S52E06). FACT: John Mulaney hosted for the 7th time; Phoebe Bridgers was musical guest ("Bobby," "Still Standing"). Cold open: "CIA Meeting," Mulaney as a CIA officer lecturing Musk, Altman, Thiel, Zuckerberg and Amodei about honey-trap spies after the Jensen Huang scandal, with Bowen Yang returning as Huang; it also jabbed the ground stop and the Outlook outage. Other sketches: "Sister," "Plane Crash," "Gettin' It Done," "Woodstock," "Kathy," and a Central Park carriage ride musical sketch. DID IT LAND: EW: "easily the best episode of this season"; Boston.com: "far and away the best of Season 52"; ratings 4.45M, down 20% from the prior week (Showbiz411). THE 'SISTER' VIDEO: a pretaped fake elder-care testimonial ad (Jane Wickline as the sister), on SNL's YouTube channel (published Nov 14, 2:59, ~5.8M views when checked Nov 18). CONFIRM BEFORE AIR that 'Sister' is the sister video Drew meant. Last new episode before Thanksgiving; the next is in December (Amanda Seyfried, per EW). ANGLE: it's the rare cold open that skips politics and still lands. VALLEY TIE: the cold open roasted the same ground stop that led HRL, MFE and BRO to issue travel advisories; 'Sister' is a caregiving story, so ask chat who is the 'Sister' in their family.
 - 4) NVIDIA'S JENSEN HUANG RESIGNS (Nov 12). FACT: Nvidia announced Huang resigned as president, CEO and board member effective immediately; CFO Colette Kress is interim CEO; Harvey C. Jones is the first board chair (Nvidia press release). Mainstream reports link it to an alleged affair with a suspected Chinese spy (SNL's cold open built on it); verify the allegations through a reported source before characterizing them. ANGLE: the AI boom's biggest face is gone, and it's still building the chips for every data center on earth. VALLEY TIE: Starbase's $24B data center is exactly that kind of AI compute fight. CONFIRM BEFORE AIR on any allegation detail.
 - 5) TEXAS TEN COMMANDMENTS (ABC, Nov 18). FACT: ABC reports the Democratic midterm sweep has put Texas's classroom Ten Commandments mandate in doubt; the law remains in effect and legal battles are headed to the Supreme Court. ANGLE: whatever you think of it, parents deserve a clear answer about what's on the classroom wall. VALLEY TIE: it applies in every RGV school; ask what your child's classroom has up. CONFIRM BEFORE AIR on details of repeal efforts.
+- TECH SUB-SEGMENT (about 90 seconds inside J, after the National Desk and before Trending; no extra time added to the hour): open the studio page section "What's Happening in Tech". It holds 3 to 5 items from the morning's Fast Company Daily email (the daily refresh reads it from Gmail); if no issue arrived in the last 48 hours the section says so and shows tech-wire items (The Verge, TechCrunch, Ars Technica) marked FALLBACK. Pick 1 or 2 with an RGV or family angle: read the one-liner, say the angle, one link on screen. Items marked CONFIRM BEFORE AIR get verified or skipped. Local stays bigger: skip Tech entirely when the local news runs long.
 - TRENDING ("WAIT, DON'T TELL ME"): open the studio page section "Trending: Wait, Don't Tell Me" (6 to 10 items, each with a one-line summary, a suggested riff and a source link; the print packet carries the top 5). Pick 1 to 3: the best riff with a Valley tie, not the most famous story. Format: Drew reacts first ("wait, don't tell me..."), Jess adds the angle, one link on screen. Items marked CONFIRM BEFORE AIR are thinly sourced: verify or skip. Never duplicate a National Desk story. THIS WEEK'S SAMPLE BANK: CMA Awards (Ella Langley, "Choosin' Texas"), Musk "I'm not MAGA" (Starbase tie), the viral Mexican quince stadium party (Valley quince tie), Giannis vs. the Bucks, Pattinson as Bond. (flex: this is riff material inside the National Desk, not a separate block)
 
 **Follow-up questions**
@@ -347,10 +348,13 @@ Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close
 - Should a Cabinet secretary skip the football game after a national outage? Ask chat.
 - Did SNL's 'Sister' hit you in the gut or are we overthinking it?
 - 'Current FAA flight cuts': none found in the sources checked this week. CONFIRM BEFORE AIR if Drew meant something else.
+- Which tech story this morning will a Valley parent or small-business owner actually feel this week?
 - Wait, don't tell me: what's the one story you saw this morning that you want us to explain?
 
 **Transition lines**
 - "Okay, that's the 30,000-foot view. Now, what does it mean at 1,000 feet over the Valley?"
+- "Okay, quick tech check before the internet gets weird: here's what's happening in tech."
+- "That's tech. Now, what is everybody losing their mind over? Wait, don't tell me."
 - "Okay, that's what the internet is losing its mind over this morning. Now it's your turn."
 
 **Chyrons (≤60 chars)**
@@ -360,6 +364,7 @@ Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close
 - DHS Sec. Markwayne Mullin / House Homeland Security hearing · Nov. 18
 - SNL: John Mulaney Hosts / Phoebe Bridgers · Nov. 14 · 7th time hosting
 - SNL: The 'Sister' Sketch / Pretaped elder-care ad · 5.8M YouTube views
+- What's Happening in Tech / Quick hits from Fast Company Daily and the tech wires
 - Wait, Don't Tell Me / What everybody's talking about · pick 1 to 3
 
 **Sources / links**
@@ -375,8 +380,9 @@ Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close
 - Showbiz411: SNL ratings: https://www.showbiz411.com/2026/11/18/john-mulaney-phoebe-bridgers-snl-best-this-season-drops-back-to-season-average-ratings-down-20-from-last-weeks-high
 - Nvidia press release: CEO transition: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx
 - ABC: Ten Commandments in Texas classrooms: https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010
+- Fast Company Daily (Drew's email; the daily refresh pulls it): https://www.fastcompany.com/newsletters
 
-**CONFIRM BEFORE AIR:** 'Mullen' = Sec. Markwayne Mullin (confirm with Drew); 'Sister video' = SNL 'Sister' sketch (confirm with Drew); Any allegation details on Jensen Huang; Any current FAA flight cuts (none found); Refresh everything Sunday night
+**CONFIRM BEFORE AIR:** 'Mullen' = Sec. Markwayne Mullin (confirm with Drew); 'Sister video' = SNL 'Sister' sketch (confirm with Drew); Any allegation details on Jensen Huang; Any current FAA flight cuts (none found); Refresh everything Sunday night; Tech items: confirm each one against its source link before air (the packet marks the thin ones CONFIRM BEFORE AIR)
 
 ---
 ## K · LISTENER LINE (8:53–8:56, 3 min)
@@ -440,6 +446,7 @@ Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close
 
 ---
 ### Producer notes
+- **What changed (Nov 19):** block J (National Desk + Trending, still 8 min, flex 6 to 10) now has a **Tech** sub-segment, "What's Happening in Tech", about 90 seconds between the National Desk and Trending: 3 to 5 quick hits from Drew's Fast Company Daily email (tech wires marked FALLBACK when no issue arrived in 48 hours), with its own segue lines and chyron. No time added to the hour, still 12 blocks A to L, and the Companion mapping is unchanged (block J still sets the National Desk chyron).
 - **What changed (Nov 18, 5th update):** flowing 12-block open-format menu in this order: A Cold open + jingle · B What I've Been Up To · C Local news · D Local politics · E School boards · F City hall · G Economic development · H Family & kids (woven in, with Jess) · I Statewide · J National Desk (+ Trending) · K Listener line · L Meme of the Week / close. The dedicated Starbase, Zoho and open-format blocks are gone: Starbase/SpaceX items live in Local news and Economic development, Zoho lives in City hall, Trending sits inside the National Desk as riff material. Times total exactly 60 min. Segues exist between every adjacent pair plus jump lines (segues.md).
 - **Thanksgiving week:** Nov 26 is Thanksgiving; expect lighter turnout and slower news.
 - **Sunday-night checklist:** refresh headlines (KRGV, MyRGV, ValleyCentral, Daily McAllen); clear the CONFIRM items; pull Reddit top posts; read new DMs/email submissions; load `obs-data.json`; open the studio packet page.

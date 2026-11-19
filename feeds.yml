@@ -140,3 +140,21 @@ feeds:
     url: https://www.reddit.com/r/texas/new/.rss
     kind: community
     optional: true
+
+# ---- "What's Happening in Tech" fallback wires (NOT polled by the breaking watch; read by tools/tech_wires.py).
+# Used only when no Fast Company Daily issue from the last 48 hours is found in Drew's Gmail (see packet/README.md).
+# status (verified 2026-11-19): all 200 OK, RSS/Atom.
+tech_feeds:
+  - id: verge
+    name: The Verge
+    url: https://www.theverge.com/rss/index.xml
+  - id: techcrunch
+    name: TechCrunch
+    url: https://techcrunch.com/feed/
+  - id: ars
+    name: Ars Technica
+    url: https://feeds.arstechnica.com/arstechnica/index
+  - id: fastcompany-web
+    name: Fast Company (website feed, NOT the Daily email)
+    url: https://www.fastcompany.com/latest/rss
+    enabled: false   # reference only: the Daily email is the real source; switch on if the email stops arriving

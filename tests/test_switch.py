@@ -345,6 +345,7 @@ class ShippedShowTests(unittest.TestCase):
         skip_tests = {
             ROOT / "tests" / "test_breaking_watch.py",
             ROOT / "tests" / "test_trend_score.py",
+            ROOT / "tests" / "test_tech_section.py",
         }
         for folder in SCAN_DIRS:
             for path in (ROOT / folder).rglob("*"):

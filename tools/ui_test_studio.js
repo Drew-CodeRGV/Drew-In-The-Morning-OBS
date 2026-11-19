@@ -84,6 +84,14 @@ const file=process.argv[2];
    clockVisible:!!document.getElementById('cwnext')&&document.getElementById('cwnext').offsetHeight>0,ssbtn:!!document.getElementById('ssbtn')&&document.getElementById('ssbtn').offsetHeight>0,
    brkVisible:document.getElementById('brk').offsetHeight>0}});
  const fails=[]; const ok=(c,m)=>{console.log((c?'PASS ':'FAIL ')+m); if(!c)fails.push(m)};
+ {
+  const p0=await openHttp(1180,820,IPAD);
+  const t=await p0.evaluate(()=>{const e=document.getElementById('tech');return e?{open:e.open,items:e.querySelectorAll('.item.tech').length,links:[...e.querySelectorAll('.item.tech a[href^="http"]')].length,badge:(e.querySelector('summary').textContent||'').includes('TECH'),nav:!!document.querySelector('nav a[href="#tech"]'),hdr:e.querySelector('summary').getBoundingClientRect().height}:null});
+  ok(!!t,'Tech section exists'); if(t){ ok(!t.open,'Tech section starts collapsed'); ok(t.items>=3&&t.items<=5,'Tech section has 3-5 items ('+t.items+')'); ok(t.links>=t.items,'every Tech item links to its article'); ok(t.badge&&t.nav&&t.hdr>=44,'Tech header badge, nav link and 44px+ target'); }
+  const jr=await p0.evaluate(()=>{const j=document.getElementById('blk-J');return j?j.textContent.includes('TECH SUB-SEGMENT')&&j.textContent.includes('quick tech check'):false});
+  ok(jr,'Block J (rundown) carries the Tech sub-segment and its segue');
+  await p0.close();
+ }
  for(const [w,h] of [[768,1024],[820,1180],[1024,768],[1180,820],[1366,1024]]){
   const p=await openHttp(w,h,IPAD); await new Promise(r=>setTimeout(r,500));
   let s=await st(p);

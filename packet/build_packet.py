@@ -143,7 +143,7 @@ def prepare(data, obs_path, do_weather):
     hs = data["sports"]["highSchool"]
     [fix(i) for i in hs["results"] + hs["next"]]
     m["showDate"] = m["date"] if mode == "monday" else m["nextShow"]["date"]
-    prep_up_to(data); prep_trending(data); score_stage(data); data["coldOpen"] = build_cold_open(data)
+    prep_up_to(data); prep_trending(data); prep_tech(data); score_stage(data); data["coldOpen"] = build_cold_open(data)
     for r in data.get("rundown", []):
         if r["letter"] == "A":
             r["talkingPoints"] = ["TODAY'S COLD OPEN (auto-filled, read aloud): " + data["coldOpen"]["text"], "JINGLE: " + data["coldOpen"]["jingle"]] + r["talkingPoints"]
@@ -266,6 +266,40 @@ def prep_trending(data):
         if not t.get("source_url"): t["confirm"] = (t.get("confirm") or "") + " NO VERIFIED LINK: CONFIRM BEFORE AIR"
         t["isConfirm"] = bool(t.get("confirm")) or not t.get("verified", True)
     data["trending"] = tr
+
+# ---------------------------------------------------------------- Tech ("What's Happening in Tech", sub-segment of block J)
+TECH_WIRES = "tech wires (The Verge, TechCrunch, Ars Technica)"
+
+def prep_tech(data):
+    """Normalise data["tech"] = {origin, items[...]}. origin: "fast-company-daily" (the morning email) or "wires" (fallback,
+    only when no issue from the last 48 h exists). Every item is labelled with where it came from; anything without a link or
+    flagged unverified is marked CONFIRM BEFORE AIR."""
+    t = data.get("tech")
+    if not isinstance(t, dict):
+        t = {"origin": "none", "items": []}
+    t.setdefault("items", []); t.setdefault("issue", None); t.setdefault("note", "")
+    origin = t.get("origin") or "none"
+    issue = t.get("issue") or {}
+    if origin == "fast-company-daily":
+        t["badge"] = "FAST COMPANY DAILY" + (f" · {issue['date']}" if issue.get("date") else "")
+        t["originLabel"] = "From Drew's Fast Company Daily email" + (f" ({issue['date']})" if issue.get("date") else "")
+    elif origin == "wires":
+        t["badge"] = "FALLBACK: TECH WIRES"
+        t["originLabel"] = "FALLBACK: " + TECH_WIRES + ". No Fast Company Daily issue from the last 48 hours was found in Gmail."
+    else:
+        t["badge"] = "NO TECH ITEMS"
+        t["originLabel"] = "No Fast Company Daily issue from the last 48 hours and no tech-wire fallback were loaded."
+    t["origin"] = origin
+    for it in t["items"]:
+        it.setdefault("links", []); it.setdefault("verified", True); it.setdefault("angle", ""); it.setdefault("confirm", "")
+        it["basis"] = it.get("basis") or (t["badge"] if origin != "none" else "")
+        if not it.get("source_url"):
+            it["confirm"] = (it["confirm"] + " NO VERIFIED LINK: CONFIRM BEFORE AIR").strip()
+        if not it["verified"] and not it["confirm"]:
+            it["confirm"] = "Not independently verified"
+        it["isConfirm"] = bool(it["confirm"])
+    t["items"] = t["items"][:5]
+    data["tech"] = t
 
 def trend_item_conf(t):
     return t.get("confirm") or ("Not independently verified" if not t.get("verified", True) else "")
@@ -540,6 +574,10 @@ def print_html(data):
         upbody = '<div class="wnote"><b>No calendar events found.</b> The script says so plainly and moves on.</div>'
     upto = card("upto", "#d1495b", "What I've Been Up To", esc(um["banner"]), upbody)
     trl = "".join(f'<li><span class="cat">{esc(t["category"].split("/")[0])}</span><a href="{esc(t["source_url"])}">{sc_print(t)}<b>{esc(t.get("short") or t["title"])}</b></a>' + (' <span class="cf">CONFIRM</span>' if t.get("isConfirm") else "") + '</li>' for t in [x for x in data.get("trending", []) if x.get("print")][:4])
+    tk = [x for x in data["tech"]["items"]][:2]
+    if tk:
+        trl += '<li><span class="cat">TECH</span>' + ('<span class="sb a">WIRES</span>' if data["tech"]["origin"] == "wires" else "") + " · ".join(f'<a href="{esc(x["source_url"])}"><b>{esc(x.get("short") or x["title"])}</b></a>' if x.get("source_url") else esc(x.get("short") or x["title"]) for x in tk) \
+               + (' <span class="cf">CONFIRM</span>' if any(x["isConfirm"] for x in tk) else "") + '</li>'
     trend = card("trending", "#577590", "Trending: Wait, Don't Tell Me", "riff material", f'<ul class="tr1">{trl}</ul>')
     # weather
     cells = ""
@@ -660,6 +698,11 @@ def email_html(data, preview=False):
         c = trend_item_conf(t)
         trend_b += (f'<p style="margin:0 0 6px">{sc_email(t)}<b>{A({"url": t["source_url"], "title": t["title"]}) if t.get("source_url") else esc(t["title"])}</b> <span style="background:#577590;color:#fff;font-size:11px;padding:0 5px;border-radius:3px">{esc(t["category"].upper())}</span>'
                     + (f' <b style="color:#c1121f">[CONFIRM BEFORE AIR: {esc(c)}]</b>' if c else "") + f'<br>{esc(t["one_line"])}<br><b style="color:#577590">Riff:</b> {esc(t["suggested_angle"])}</p>')
+    tech_b = ""
+    for t in data["tech"]["items"]:
+        tech_b += (f'<p style="margin:0 0 6px"><b>{A({"url": t["source_url"], "title": t["title"]}) if t.get("source_url") else esc(t["title"])}</b> <span style="background:#3d5a80;color:#fff;font-size:11px;padding:0 5px;border-radius:3px">{esc(t.get("source", "TECH").upper())}</span>'
+                   + (f' <b style="color:#c1121f">[CONFIRM BEFORE AIR: {esc(t["confirm"])}]</b>' if t["confirm"] else "") + f'<br>{esc(t["one_line"])}<br><b style="color:#3d5a80">On-air angle:</b> {esc(t["angle"])}</p>')
+    tech_b = f'<p style="margin:0 0 6px;font-size:12px;color:#66788c"><b>{esc(data["tech"]["badge"])}</b>. {esc(data["tech"]["originLabel"])}</p>' + (tech_b or '<p style="margin:0">Nothing loaded today.</p>')
     if m["mode"] == "monday":
         clock_block = f'''<tr><td><table width="100%" cellpadding="0" cellspacing="0" style="border:1.5px solid #1b2430;border-radius:6px;border-collapse:separate"><tr>{clock}</tr></table><div style="{F}font-size:12px;color:#33404f;padding:3px 0">{clock_leg} (★ = signature segment; full 60-minute plan, blocks marked flex can be trimmed or stretched)</div></td></tr>'''
     else:
@@ -678,6 +721,7 @@ def email_html(data, preview=False):
 {sec("MLB · Offseason (no scores)", "#003f88", mlbb)}
 {sec("Meme of the Week · What the Kids Are Talking About", "#ff7f50", memes)}
 {sec("The National Desk", "#6d597a", nat)}
+{sec("What's Happening in Tech", "#3d5a80", tech_b)}
 {sec("On the Show: Monday's 60-minute plan (times as planned from 8:00; Show Start on the studio page shifts them)" if m["mode"] == "monday" else "Next show: Monday 8 AM rundown (" + esc(ns["label"]) + ")", "#264653", rundown + '<div style="font-size:12px;color:#4a5a6b">Studio page and run of show have notes and links for every block.</div>')}
 <tr><td style="{F}font-size:11px;color:#66788c;padding:10px 0">Every fact is sourced and linked above. CONFIRM BEFORE AIR means verify before saying it on air. Weather: NWS. Scores: sources linked in each section. Not sent automatically unless the Monday routine is approved.</td></tr>
 </table></td></tr></table></body></html>"""
@@ -735,6 +779,16 @@ def txt(data):
         if n.get("detail"): W(wrap("DETAIL: " + n["detail"], "    "))
         if n.get("confirm"): W(wrap("CONFIRM BEFORE AIR: " + conf_text(n), "    "))
         for l in n["links"]: W(f"    {l['label']}: {l['url']}")
+    W()
+    tk = data["tech"]
+    W("WHAT'S HAPPENING IN TECH (sub-segment of block J, after the National Desk) [" + tk["badge"] + "]")
+    W(wrap(tk["originLabel"], "  "))
+    for t in tk["items"]:
+        W(f"- {t['title']}  ({t.get('source', '')})" + (f"  [CONFIRM BEFORE AIR: {t['confirm']}]" if t["confirm"] else ""))
+        W(wrap("SUMMARY: " + t["one_line"], "    ")); W(wrap("ON-AIR ANGLE: " + t["angle"], "    "))
+        if t.get("source_url"): W(f"    Link: {t['source_url']}")
+        for l in t.get("links", []): W(f"    {l['label']}: {l['url']}")
+    if not tk["items"]: W("  (nothing loaded today)")
     W()
     W("WEATHER · McALLEN / RGV (" + w["source"] + ")")
     for d in w["days"][:7]:
@@ -1179,6 +1233,19 @@ def studio_html(data, archive_href=None):
                 f'<span class="src">{esc(t.get("source", ""))}</span>{sc_studio(t)}<span class="upill">USED</span>{conf}<p>{esc(t["one_line"])}</p><p class="ang"><b>Riff:</b> {esc(t["suggested_angle"])}</p>{media}{lks}</div>'
                 f'<div class="acts">{CP(t["source_url"]) if t.get("source_url") else ""}{use_btn("Trending", t["title"], t.get("source_url", ""))}</div></div>')
     trn += "</div>"
+    tk = data["tech"]
+    tech_h = f'<p class="mut"><b>{esc(tk["badge"])}</b> · {esc(tk["originLabel"])}</p>' + (f'<p class="mut">{esc(tk["note"])}</p>' if tk.get("note") else "")
+    tech_h += '<p class="mut">Sub-segment of block J: about 90 seconds after the National Desk, before Trending. Pick 1 or 2 with an RGV or family angle. Local stays bigger.</p><div class="sortbox">'
+    for k_, t in enumerate(tk["items"]):
+        conf = f' <span class="cf">CONFIRM BEFORE AIR</span> <span class="src">{esc(t["confirm"])}</span>' if t["confirm"] else ""
+        lks = "".join(linkrow(l) for l in t.get("links", []))
+        pub = f' · {esc(t["published"])}' if t.get("published") else ""
+        tech_h += (f'<div class="item trn tech" data-ord="{k_}" data-sc="0"><div class="tx"><b>{A(t["source_url"], t["title"]) if t.get("source_url") else esc(t["title"])}</b> <span class="pill">TECH</span> '
+                   f'<span class="src">{esc(t.get("source", ""))}{pub}</span><span class="sb {"a" if tk["origin"] == "wires" else "t"}" title="{esc(tk["originLabel"])}">{esc(t["basis"])}</span><span class="upill">USED</span>{conf}'
+                   f'<p>{esc(t["one_line"])}</p><p class="ang"><b>On-air angle:</b> {esc(t["angle"])}</p>{lks}</div>'
+                   f'<div class="acts">{CP(t["source_url"]) if t.get("source_url") else ""}{use_btn("Tech", t["title"], t.get("source_url", ""))}</div></div>')
+    if not tk["items"]: tech_h += '<p class="mut">No tech items loaded today.</p>'
+    tech_h += "</div>"
     cells = "".join(f'<div class="{"mon" if d["date"]==w["monday"] else ""}"><b>{d["label"]} {d["dateLabel"]}</b><br>{icon(d["icon"], 44)}<div class="hi">{d["hi"]}°</div><div class="mut">{d["lo"] if d["lo"] is not None else "–"}°</div><div class="pp">{d["pop"]}% rain</div><div class="mut" style="font-size:.75rem">{esc(d["short"])}</div></div>' for d in w["days"][:7])
     upd = datetime.datetime.fromisoformat(w["updated"].replace("Z", "+00:00")).astimezone(datetime.timezone(datetime.timedelta(hours=-6)))
     alerts = "No active NWS alerts." if w.get("alerts") == [] else ("Alerts: " + ", ".join(w["alerts"]) if w.get("alerts") else "")
@@ -1222,7 +1289,7 @@ def studio_html(data, archive_href=None):
                f'<span class="tr" data-off="{r["offset"]}" data-dur="{r["minutes"]}"{stretch} data-letter="{r["letter"]}" data-name="{esc(r["short"])}" data-color="{r["color"]}"><b>{r["timeRange"]}</b><small></small></span></summary>'
                f'<div class="body"><p class="mut">{esc(r["subject"])}</p>{weave}<h4>Talking points</h4>{lis(r["talkingPoints"])}<h4>Follow-up questions</h4>{lis(r["followUps"]) if r["followUps"] else "<p class=mut>none</p>"}'
                f'<h4>Transition lines</h4>{lis(r["transitions"]) if r["transitions"] else "<p class=mut>none</p>"}{seg}<h4>Chyrons (60 chars max)</h4><p>{chy}</p><h4>Sources</h4>{lks}{conf}</div></details>')
-    nav = "".join(f'<a href="#{i}" data-jump="{i}">{t}</a>' for i, t in (("brk", "Breaking"), ("coldopen", "Cold open"), ("upto", "Up To"), ("rundown", "Rundown"), ("headlines", "Headlines"), ("trending", "Trending"), ("national", "National"), ("weather", "Weather"), ("hs", "HS Football"), ("nfl", "NFL"), ("nba", "NBA"), ("mlb", "MLB"), ("memes", "Meme of the Week"), ("used", "Used list")))
+    nav = "".join(f'<a href="#{i}" data-jump="{i}">{t}</a>' for i, t in (("brk", "Breaking"), ("coldopen", "Cold open"), ("upto", "Up To"), ("rundown", "Rundown"), ("headlines", "Headlines"), ("trending", "Trending"), ("national", "National"), ("tech", "Tech"), ("weather", "Weather"), ("hs", "HS Football"), ("nfl", "NFL"), ("nba", "NBA"), ("mlb", "MLB"), ("memes", "Meme of the Week"), ("used", "Used list")))
     mon = m["mode"] == "monday"
     used_body = ('<ul id="usedul"></ul><p class="mut">Tap the box next to any item when it is used on the show. Marks stay on this device until cleared, so nothing gets repeated. '
                  '"Log to repo" opens a pre-filled GitHub issue (label used-on-show) for the post-show job: it cuts clips from the recording and drafts social teasers for approval. Nothing posts by itself.</p>')
@@ -1246,6 +1313,8 @@ def studio_html(data, archive_href=None):
         sec("headlines", "#e4572e", "Top Headlines · RGV First", esc(m["hlSub"]), heads, count=f"{nh} stories", badges=bh),
         sec("trending", "#577590", "Trending: Wait, Don't Tell Me", "riff material · not the National Desk", trn, count=f"{nt_} items", badges=bt_, chip="J"),
         sec("national", "#6d597a", "The National Desk", "fact · take · Valley angle", nat, count=f"{nn_} stories", badges=bn_, chip="J"),
+        sec("tech", "#3d5a80", "What's Happening in Tech", "quick hits · block J, after the National Desk", tech_h, count=f'{len(tk["items"])} items', chip="J",
+            badges=(f'<span class="sb {"a" if tk["origin"] == "wires" else "t"}">{esc(tk["badge"])}</span>' + (f'<span class="cf">{sum(1 for x in tk["items"] if x["isConfirm"])} CONFIRM</span>' if any(x["isConfirm"] for x in tk["items"]) else ""))),
         sec("weather", "#2a7de1", "McAllen / RGV Weather", w["source"], weather, count="7 days", badges=wb),
         sec("hs", "#2a9d8f", "RGV High School Football", hs["round"], hsb, count=f"{n_hs} games"),
         sec("nfl", "#264653", esc(sport_title(data["sports"]["nfl"], False).replace("NFL ", "NFL · ", 1)), "scores + notable", sports_nfl, count=f"{n_nfl} items"),
