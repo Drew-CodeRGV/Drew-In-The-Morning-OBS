@@ -1012,6 +1012,20 @@ summary:after{content:'\\25BE';margin-left:auto;font-size:1.2em;padding-left:6px
 .item .tx{flex:1 1 auto;min-width:0}.item .tx>a{font-weight:700}.src{color:var(--mut);font-size:.8rem;font-weight:600}
 .acts{display:flex;gap:6px;flex:none;align-items:center}
 .cp{font-size:.74rem;padding:2px 8px;flex:none}.cf{display:inline-block;background:#c1121f;color:#fff;font-size:.7rem;font-weight:900;border-radius:4px;padding:0 5px}
+.gp{display:none;margin:6px 0 0;border:2px solid var(--line);border-radius:12px;background:var(--card)}body.chy-on .gp{display:block}
+.gp>summary{cursor:pointer;font-weight:800;padding:10px 14px;min-height:44px;display:flex;align-items:center}
+.gpb{display:flex;gap:14px;flex-wrap:wrap;padding:4px 14px 12px}.gpc{flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:6px}
+.gpc h4{margin:0;font-size:.95rem}.gpc label{display:flex;flex-direction:column;font-size:.72rem;font-weight:700;color:var(--mut);gap:2px}
+.gpc input[type=text],.gpc input[type=url]{font:inherit;font-size:1rem;min-height:44px;padding:6px 10px;border:2px solid var(--line);border-radius:10px;background:var(--bg);color:var(--fg);width:100%;box-sizing:border-box}
+.gpa{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.gpa button,.upl{min-height:44px;min-width:44px;padding:0 14px;font-size:.85rem;font-weight:800}
+.upl{display:inline-flex!important;flex-direction:row!important;align-items:center;border:2px solid var(--line);border-radius:10px;cursor:pointer;color:var(--fg)!important;background:var(--card);position:relative;overflow:hidden}.upl input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+#c-prev{width:44px;height:44px;object-fit:cover;border-radius:8px}.gpm{font-size:.78rem;color:var(--mut)}
+.chysend{display:none;align-items:center;gap:4px;min-height:44px;min-width:44px;padding:0 10px;border-radius:12px;border-width:3px;font-size:.78rem;font-weight:800;flex:none;background:var(--card);white-space:nowrap}
+body.chy-on .chysend{display:inline-flex}.chysend .ci{font-size:.8em}
+.chysend[aria-pressed=true]{background:#e4572e;border-color:#e4572e;color:#fff}
+.onair{outline:3px solid #e4572e;outline-offset:-1px;background:rgba(228,87,46,.10)!important;position:relative}
+.onair:before{content:"ON AIR";position:absolute;top:-9px;right:10px;background:#e4572e;color:#fff;font-size:.62rem;font-weight:900;letter-spacing:.08em;border-radius:4px;padding:1px 6px}
+.ob .obn{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.ob .chysend{margin-left:auto}
 .use{width:48px;height:48px;min-width:48px;min-height:48px;padding:0;border-radius:12px;border-width:3px;display:inline-flex;align-items:center;justify-content:center;flex:none;background:var(--card)}
 .use .ck{width:26px;height:26px;border-radius:7px;border:3px solid var(--mut);display:block;background:transparent center/85% no-repeat}
 .use[aria-pressed=true]{background:var(--ok);border-color:var(--ok);color:#fff}
@@ -1335,25 +1349,55 @@ summary,summary *,.rtn,.tn,.tt,h3,h4{overflow-wrap:normal;word-break:normal;hyph
 
 CHY_JS = r"""
 (function(){var api=window.ditmRos;if(!api)return;var $=function(i){return document.getElementById(i)};
-var LK='ditm-chyron-topic-v1',RX=/^[A-Za-z0-9_-]{6,64}$/,mem=null,CMDS={start:1,stop:1,hold:1,resume:1,toggle:1,logo:1,next:1,prev:1,goto:1,clear:1,show:1};
+var LK='ditm-chyron-topic-v1',RX=/^[A-Za-z0-9_-]{6,64}$/,mem=null,CMDS={start:1,stop:1,hold:1,resume:1,toggle:1,logo:1,item:1,guest:1,guest_hide:1,caller:1,caller_show:1,caller_hide:1,next:1,prev:1,goto:1,clear:1,show:1},IDRX=/^i-[0-9a-f]{10}$/;
+function cap(v,n){return(typeof v==='string')?v.replace(/[\u0000-\u001f\u007f-\u009f]+/g,' ').replace(/\s+/g,' ').trim().slice(0,n):''}
+function httpsOnly(u){try{var x=new URL(u);return(x.protocol==='https:'&&x.hostname&&!x.username)?x.href:''}catch(e){return ''}}
 function gget(){try{return localStorage.getItem(LK)}catch(e){return mem}}function gset(v){mem=v;try{localStorage.setItem(LK,v)}catch(e){}}
 var nq=/[?&]ntfy=(https:\/\/ntfy\.sh|http:\/\/127\.0\.0\.1:\d+)(?:&|$)/.exec((function(){try{return decodeURIComponent(location.search)}catch(e){return''}})()),BASE=nq?nq[1]:'https://ntfy.sh';
 var q=/[?&#]ctl=([A-Za-z0-9_-]{6,64})/.exec(location.search+location.hash);
 if(q){gset(q[1]);try{history.replaceState(null,'',location.pathname)}catch(e){}}
 var topic=gget();if(!RX.test(topic||''))topic=null;
 var last=null,vis=true;
-function send(cmd,idx){if(!topic||!Object.prototype.hasOwnProperty.call(CMDS,cmd))return;var m={k:'cmd',cmd:cmd,at:Date.now(),v:1};if(typeof idx==='number')m.idx=idx;
+function send(cmd,idx,id,x){if(!topic||!Object.prototype.hasOwnProperty.call(CMDS,cmd))return;var m={k:'cmd',cmd:cmd,at:Date.now(),v:1};if(typeof idx==='number')m.idx=idx;if(cmd==='item'){if(!IDRX.test(id||''))return;m.id=id}
+ if(cmd==='guest'&&x){m.name=cap(x.name,60);m.title=cap(x.title,80);m.blurb=cap(x.blurb,140);if(!m.name)return}
+ if(cmd==='caller'&&x){m.name=cap(x.name,60);m.title=cap(x.title,80);m.photo=(x.photo&&httpsOnly(x.photo))||'';if(!m.name)return}
  try{fetch(BASE+'/'+topic,{method:'POST',body:JSON.stringify(m)}).catch(function(){})}catch(e){}}
 function ago(ms){var s=Math.max(0,Math.round(ms/1000));return s<60?s+'s':s<3600?Math.floor(s/60)+'m':Math.floor(s/3600)+'h'}
-function ui(){var on=!!topic;if($('chy'))$('chy').hidden=!on;if($('chlink'))$('chlink').hidden=on;if($('mb-hold'))$('mb-hold').hidden=!on;
+var sentId=null,sentAt=0;
+function card(id){return id?document.querySelector('[data-chyid="'+id+'"]'):null}
+function airId(){if(last&&last.item&&IDRX.test(last.item)&&last.rx>sentAt+200)return last.item;if(sentId&&Date.now()-sentAt<4000&&!(last&&last.rx>sentAt+200))return sentId;return(last&&last.item&&IDRX.test(last.item))?last.item:null}
+function ui(){var on=!!topic;document.body.classList.toggle('chy-on',on);
+ var aid=airId();[].forEach.call(document.querySelectorAll('.onair'),function(e){if(!aid||e.getAttribute('data-chyid')!==aid)e.classList.remove('onair')});
+ [].forEach.call(document.querySelectorAll('.chysend'),function(b){var is=!!aid&&b.getAttribute('data-chyid')===aid;b.setAttribute('aria-pressed',is?'true':'false');b.querySelector('.ct').textContent=is?'On air':'Chyron'});
+ var ac=card(aid);if(ac)ac.classList.add('onair');if($('chy'))$('chy').hidden=!on;if($('chlink'))$('chlink').hidden=on;if($('mb-hold'))$('mb-hold').hidden=!on;
  var h=api.held();['chhold','mb-hold'].forEach(function(i){var b=$(i);if(!b)return;b.textContent=h?'\u25B6 Resume':'\u23F8 Hold';b.classList.toggle('held',h);b.setAttribute('aria-pressed',h?'true':'false')});
  var c=$('chclr');if(c)c.textContent=(last&&last.visible===false)?'Show':'Clear';
  var st=$('chst');if(st){if(!last)st.textContent='waiting for the chyron\u2026';else{var age=Date.now()-last.rx,live=last.running;
-  st.textContent=(last.letter||'?')+' \u00B7 '+(live?(last.held?'HELD':'AUTO'):'MANUAL')+(last.logo?' \u00B7 logo only':(last.visible===false?' \u00B7 off air':''))+' \u00B7 '+(age>600000?'last heard '+ago(age)+' ago':'synced');st.dataset.state=live?(last.held?'held':'auto'):'manual'}}}
+  var au=aid&&last.item?(card(aid)?card(aid).getAttribute('data-chyh'):'item'):null;
+  st.textContent=(au?'audible: '+au:(last.letter||'?'))+' \u00B7 '+(live?(last.held?'HELD':'AUTO'):'MANUAL')+(last.logo?' \u00B7 logo only':(last.visible===false?' \u00B7 off air':''))+(last.guest?' \u00B7 guest: '+last.guest:'')+(last.caller?' \u00B7 on the phone: '+last.caller:'')+' \u00B7 '+(age>600000?'last heard '+ago(age)+' ago':'synced');st.dataset.state=live?(last.held?'held':'auto'):'manual'}}}
 api.onChange=ui;api.onStart=function(){send('start')};api.onStop=function(){send('stop')};
 function hold(){if(api.held()){api.resume();send('resume')}else{api.hold();send('hold')}}
 ['chhold','mb-hold'].forEach(function(i){var b=$(i);if(b)b.onclick=hold});
-if($('chprev'))$('chprev').onclick=function(){send('prev')};if($('chnext'))$('chnext').onclick=function(){send('next')};
+if($('chprev'))$('chprev').onclick=function(){send('prev')};
+/* ---- guest + phone caller panels (free text goes out only with the guest / caller commands, length-capped) ---- */
+var FK='ditm-gp-form-v1',FM={};try{FM=JSON.parse(localStorage.getItem(FK)||'{}')||{}}catch(e){}
+['g-name','g-title','g-blurb','c-name','c-title','c-photo'].forEach(function(i){var e=$(i);if(!e)return;if(typeof FM[i]==='string')e.value=FM[i].slice(0,1000);e.addEventListener('input',function(){FM[i]=e.value;try{localStorage.setItem(FK,JSON.stringify(FM))}catch(x){}})});
+function gv(i,n){return cap($(i)?$(i).value:'',n)}function gmsg(t){if($('gp-msg'))$('gp-msg').textContent=t||''}
+if($('g-show'))$('g-show').onclick=function(){var n=gv('g-name',60);if(!n){gmsg('Type the guest\u2019s name first.');return}gmsg('');send('guest',undefined,undefined,{name:n,title:gv('g-title',80),blurb:gv('g-blurb',140)})};
+if($('g-hide'))$('g-hide').onclick=function(){gmsg('');send('guest_hide')};
+if($('c-go'))$('c-go').onclick=function(){var n=gv('c-name',60);if(!n){gmsg('Type the caller\u2019s name first.');return}var ph=($('c-photo').value||'').trim();if(ph&&!httpsOnly(ph)){gmsg('The photo link must start with https://');return}gmsg('');send('caller',undefined,undefined,{name:n,title:gv('c-title',80),photo:ph?httpsOnly(ph):''})};
+if($('c-show'))$('c-show').onclick=function(){send('caller_show')};if($('c-hide'))$('c-hide').onclick=function(){send('caller_hide')};
+/* upload: shrink to <=400px JPEG in the browser, then PUT it to the private topic as an ntfy attachment; ntfy answers with the https link of the file */
+if($('c-file'))$('c-file').onchange=function(){var f=this.files&&this.files[0],up=$('c-up');this.value='';if(!f)return;if(!topic){up.textContent='Link the chyron first.';return}if(!/^image\//.test(f.type||'')){up.textContent='That file is not an image.';return}
+ up.textContent='Preparing the photo\u2026';var r=new FileReader();r.onerror=function(){up.textContent='Could not read that file.'};
+ r.onload=function(){var im=new Image();im.onerror=function(){up.textContent='Could not open that image.'};
+  im.onload=function(){var k=Math.min(1,400/Math.max(im.width,im.height)),w=Math.max(1,Math.round(im.width*k)),h=Math.max(1,Math.round(im.height*k)),cv=document.createElement('canvas');cv.width=w;cv.height=h;var cx=cv.getContext('2d');cx.fillStyle='#fff';cx.fillRect(0,0,w,h);cx.drawImage(im,0,0,w,h);
+   var prev=cv.toDataURL('image/jpeg',.85);cv.toBlob(function(bl){if(!bl){up.textContent='Could not shrink that image.';return}up.textContent='Uploading\u2026';
+    fetch(BASE+'/'+topic+'?filename=caller.jpg',{method:'PUT',body:bl,headers:{'Content-Type':'image/jpeg'}}).then(function(x){return x.ok?x.json():Promise.reject(new Error('HTTP '+x.status))}).then(function(j){var u=j&&j.attachment&&j.attachment.url,ok=u&&(httpsOnly(u)||(BASE.indexOf('http://127.0.0.1:')===0&&u.indexOf(BASE+'/')===0));
+     if(!ok){up.textContent='The upload did not return a link.';return}$('c-photo').value=u;FM['c-photo']=u;try{localStorage.setItem(FK,JSON.stringify(FM))}catch(e){}
+     var pv=$('c-prev');pv.src=prev;pv.hidden=false;up.textContent='Photo ready (ntfy keeps it about 3 hours). Tap Bring caller on.'}).catch(function(e){up.textContent='Upload failed ('+(e&&e.message||'network')+'). Paste an https link instead.'})},'image/jpeg',.85)};
+  im.src=r.result};r.readAsDataURL(f)};
+document.addEventListener('click',function(e){var b=e.target&&e.target.closest?e.target.closest('.chysend'):null;if(!b)return;e.preventDefault();var id=b.getAttribute('data-chyid');if(!IDRX.test(id||''))return;sentId=id;sentAt=Date.now();send('item',undefined,id);ui()});if($('chnext'))$('chnext').onclick=function(){send('next')};
 if($('chclr'))$('chclr').onclick=function(){send(last&&last.visible===false?'show':'clear')};
 if($('chlink'))$('chlink').onclick=function(){var v=(prompt('Paste the chyron link code (the part after ctl=)')||'').trim().replace(/^.*ctl=/,'');if(RX.test(v)){gset(v);topic=v;connect();ui()}};
 function ctDate(ms){return new Intl.DateTimeFormat('en-CA',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(ms))}
@@ -1467,6 +1511,29 @@ $('brkref').onclick=load;load();setInterval(load,POLL);setInterval(function(){if
 
 import hashlib
 UPTO_SEC = "What I've Been Up To"
+# ---- "send to chyron": the dashboard sends only an id; the words live in docs/chyron-items.json (built here, with the packet)
+CHY_ITEMS = {}
+CHY_UNCONF = "UNCONFIRMED"
+def chy_id(sec, title, url=""):
+    return "i-" + hashlib.sha1(f"chy|{sec}|{title}|{url}".encode()).hexdigest()[:10]
+def chy_trim(t, n):
+    t = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", str(t or "")))).strip()
+    if len(t) <= n:
+        return t
+    cut = t[:n - 1].rsplit(" ", 1)[0].rstrip(" ,;:-–—.")
+    return (cut or t[:n - 1]) + "…"
+def chy_line(tldr, fallback, unconf=False, n=118):
+    first = re.split(r"(?<=[.!?])\s", re.sub(r"\s+", " ", str(tldr or "")).strip(), 1)[0]
+    body = chy_trim(first or fallback, n - (len(CHY_UNCONF) + 3 if unconf else 0))
+    return (CHY_UNCONF + (" · " + body if body else "")) if unconf else body
+def chy_register(sec, title, url, tldr, fallback, unconf=False, kicker=""):
+    cid = chy_id(sec, title, url)
+    CHY_ITEMS[cid] = {"headline": chy_trim(title, 100), "line": chy_line(tldr, fallback, unconf), "kicker": chy_trim((kicker or sec).replace(": ", " · ").upper(), 44)}
+    return cid
+def chy_btn(cid, title, on=""):
+    return (f'<button class="chysend" type="button" data-chyid="{cid}" aria-pressed="false" aria-label="Send to chyron: {esc(title)}" title="Send to the on-air chyron (audible)">'
+            f'<span class="ci">▶</span><span class="ct">Chyron</span></button>')
+
 def use_btn(sec, title, url=""):
     key = hashlib.sha1(f"{sec}|{url or title}".encode()).hexdigest()[:10]
     return (f'<button class="use" type="button" data-key="{key}" data-title="{esc(title)}" data-url="{esc(url)}" data-sec="{esc(sec)}" aria-pressed="false" '
@@ -1477,6 +1544,7 @@ def _by_score(lst):
 
 
 def studio_html(data, archive_href=None):
+    CHY_ITEMS.clear()
     data = dict(data)
     if data.get("scoring"):   # the dashboard shows the highest-scoring stories first (a button flips to editorial order)
         data["headlines"] = dict(data["headlines"], rgv=_by_score(data["headlines"]["rgv"]), texas=_by_score(data["headlines"]["texas"]))
@@ -1510,7 +1578,7 @@ def studio_html(data, archive_href=None):
     um = data["up_to_meta"]
     # ================= v3 body: every section is a full-width bar that opens into Trending-model cards =================
     TZC = datetime.timezone(datetime.timedelta(hours=-6))
-    def tcard(title, url="", pills=(), meta="", tldr="", riff="", riff_label="Riff", score="", conf="", extra="", sec_="", ord_=None, sc=0, copy_text="", use=True, uid="", cls="", badges=""):
+    def tcard(title, url="", pills=(), meta="", tldr="", riff="", riff_label="Riff", score="", conf="", extra="", sec_="", ord_=None, sc=0, copy_text="", use=True, uid="", cls="", badges="", chy_unconf=False, chy_fallback=None):
         """THE card (Trending News model): headline, meta line (source / date / score / badges), TL;DR, Riff, then link + copy + used.
         Any field that has no data is left out cleanly; nothing is invented to fill a slot."""
         head = A(url, title) if url else esc(title)
@@ -1520,8 +1588,12 @@ def studio_html(data, archive_href=None):
         td = f'<p class="tldr">{esc(tldr)}</p>' if tldr else ""
         rf = f'<p class="ang"><b>{esc(riff_label)}:</b> {riff if riff.startswith("<") else esc(riff)}</p>' if riff else ""
         ct = copy_text or url or (title + (" " + tldr if tldr else ""))
-        acts = CP(ct, "Copy link" if url and not copy_text else "Copy") + (use_btn(sec_, title, url) if (use and sec_) else "")
-        attrs = (f' data-ord="{ord_}" data-sc="{sc}"' if ord_ is not None else "") + (f' id="{uid}"' if uid else "")
+        cid = ""
+        if use and sec_ and uid != "obscript":   # every story card can go to the chyron; unconfirmed items carry the label in their chyron line
+            fb = chy_fallback if chy_fallback is not None else meta
+            cid = chy_register(sec_, title, url, tldr, fb, unconf=bool(conf) or chy_unconf)
+        acts = CP(ct, "Copy link" if url and not copy_text else "Copy") + (chy_btn(cid, title) if cid else "") + (use_btn(sec_, title, url) if (use and sec_) else "")
+        attrs = (f' data-ord="{ord_}" data-sc="{sc}"' if ord_ is not None else "") + (f' id="{uid}"' if uid else "") + (f' data-chyid="{cid}" data-chyh="{esc(chy_trim(title, 100))}"' if cid else "")
         return (f'<div class="item trn tc{(" " + cls) if cls else ""}"{attrs}><div class="tx"><b>{head}</b> {pl}{mt}{score}{badges}<span class="upill">USED</span>{cf}{td}{rf}{extra}</div><div class="acts">{acts}</div></div>')
     def grid(cards, empty=""):
         return '<div class="sortbox">' + ("".join(cards) or f'<p class="mut noev">{esc(empty)}</p>') + "</div>"
@@ -1552,7 +1624,7 @@ def studio_html(data, archive_href=None):
         badge = (f'<span class="sb t" title="{esc(cb["url"])}">CONFIRMED · {esc(cb["outlet"])}</span>' if cb else f'<span class="cf">{esc(c.get("badge") or CHISME_BADGE)}</span>')
         when = dtl(c.get("published", ""))
         return tcard(c["title"], c["url"], pills=(c.get("platform", ""), c.get("source", "")), meta=when, tldr=c.get("tldr", ""), riff=c.get("riff", ""), score=score, badges=badge,
-                     sec_="Chisme", ord_=k, sc=eng or 0, cls="chisme")
+                     sec_="Chisme", ord_=k, sc=eng or 0, cls="chisme", chy_unconf=not c.get("confirmedBy"), chy_fallback=" · ".join(x for x in (c.get("platform", ""), when) if x))
     src_status = ch.get("sources") or {}
     ok_src = [f'{k.split(":")[0]} {v["items"]}' for k, v in src_status.items() if v.get("ok")]
     bad_src = sorted({k.split(":")[0].split("/")[0].replace("r", "reddit", 1) if k.startswith("r/") else k.split(":")[0] for k, v in src_status.items() if not v.get("ok")})
@@ -1593,7 +1665,8 @@ def studio_html(data, archive_href=None):
     def ocard(r):
         star = '<span class="obstar" title="in the on-air read">★</span>' if r["url"] in ob["pickUrls"] else ""
         bits = [x for x in ((f'{r["age"]}' if r.get("age") else ""), r.get("city") or "", fmt_day(r["published"])) if x]
-        return (f'<div class="ob"><div class="obn"><a href="{esc(r["url"])}" target="_blank" rel="noopener noreferrer">{esc(r["name"])}</a>{star}</div><span class="obm">{esc(" · ".join(bits))}</span></div>')
+        cid = chy_register("Remembering Our Neighbors", f'Remembering {r["name"]}', r["url"], "", " · ".join(bits), kicker="Remembering our neighbors")   # name, age, town, date only; never a cause of death
+        return (f'<div class="ob" data-chyid="{cid}" data-chyh="{esc(chy_trim("Remembering " + r["name"], 100))}"><div class="obn"><a href="{esc(r["url"])}" target="_blank" rel="noopener noreferrer">{esc(r["name"])}</a>{star}{chy_btn(cid, "Remembering " + r["name"])}</div><span class="obm">{esc(" · ".join(bits))}</span></div>')
     n_week = len(grps[0]["items"]) if grps else 0
     n_prev = sum(len(g["items"]) for g in grps[1:])
     if ob["count"]:
@@ -1767,7 +1840,20 @@ def studio_html(data, archive_href=None):
     showstart = (f'<div class="ss"><button id="ssbtn" type="button" data-showdate="{m["showDate"]}" data-showlabel="{datetime.date.fromisoformat(m["showDate"]).strftime("%a %b %-d")}" aria-label="Set show start to now">▶ Show Start</button>'
                  f'<span id="ssind" aria-live="polite">Planned start 8:00 AM</span><button id="ssreset" type="button" disabled title="Reset to 8:00 AM" aria-label="Reset show start to 8:00 AM">↺ 8:00</button><span id="sslive" aria-live="off"></span></div>'
                  f'<div id="chy" hidden><b class="chl">Chyron</b><button id="chhold" type="button" aria-pressed="false" title="Hold freezes the current topic and the show clock; Resume carries on and pushes the later topics back">⏸ Hold</button><button id="chprev" type="button">◀ Prev</button><button id="chnext" type="button">Next ▶</button><button id="chclr" type="button">Clear</button><span id="chst" aria-live="polite">waiting…</span></div>'
-                 f'<button id="chlink" type="button" class="chlink" title="Link this page to the OBS chyron (paste the link code once)">Link chyron</button>')
+                 f'<button id="chlink" type="button" class="chlink" title="Link this page to the OBS chyron (paste the link code once)">Link chyron</button>'
+                 f'<details id="gp" class="gp"><summary>Guest &amp; phone caller</summary><div class="gpb">'
+                 f'<div class="gpc"><h4>Guest on the chyron</h4>'
+                 f'<label>Name<input id="g-name" type="text" maxlength="60" autocomplete="off" placeholder="Guest name"></label>'
+                 f'<label>Title<input id="g-title" type="text" maxlength="80" autocomplete="off" placeholder="Title or role"></label>'
+                 f'<label>Blurb<input id="g-blurb" type="text" maxlength="140" autocomplete="off" placeholder="One line about them"></label>'
+                 f'<div class="gpa"><button id="g-show" type="button">Show guest on chyron</button><button id="g-hide" type="button">Hide</button></div></div>'
+                 f'<div class="gpc"><h4>On the phone</h4>'
+                 f'<label>Name<input id="c-name" type="text" maxlength="60" autocomplete="off" placeholder="Caller name"></label>'
+                 f'<label>Title<input id="c-title" type="text" maxlength="80" autocomplete="off" placeholder="Title or where they are"></label>'
+                 f'<label>Photo link<input id="c-photo" type="url" maxlength="1000" autocomplete="off" placeholder="https://…"></label>'
+                 f'<div class="gpa"><label class="upl">Upload photo<input id="c-file" type="file" accept="image/*"></label><img id="c-prev" alt="" hidden><span id="c-up" class="gpm"></span></div>'
+                 f'<div class="gpa"><button id="c-go" type="button">Bring caller on</button><button id="c-show" type="button">Show</button><button id="c-hide" type="button">Hide caller</button></div></div>'
+                 f'<p id="gp-msg" class="gpm" aria-live="polite"></p></div></details>')
     usedbar = (f'<div id="usedbar" data-repo="{REPO}"><span class="ubl">Used today <b id="ucount">0</b></span><span id="ustatus"></span>'
                f'<span class="ubb"><button id="ulog" type="button">Log to repo</button><button id="ucopy" type="button">Copy list</button><button id="uclear" type="button">Clear</button></span></div>')
     brk = (f'<section id="brk" aria-label="Breaking watch" data-built="{esc(data.get("generatedAt", ""))}" data-poll="120"><div class="brkh"><b>Breaking / New since build</b>'
@@ -1847,6 +1933,8 @@ def publish(out, stem, data, force=False):
         json.dump({"date": m["date"], "sample": bool(m.get("sample")), "stem": name}, open(lp, "w"))
         open(os.path.join(docs, "index.html"), "w").write(studio_html(data, archive_href="packets/index.html"))
         open(os.path.join(out, "latest-studio.html"), "w").write(studio_html(data))
+        # chyron-items.json: the ONLY words the on-air chyron will show for a "send to chyron" id (ids are what travels over ntfy)
+        json.dump({"v": 1, "date": m["date"], "generated": data["generatedAt"], "items": dict(CHY_ITEMS)}, open(os.path.join(docs, "chyron-items.json"), "w"), ensure_ascii=False, indent=1)
         for ext, dst in ((".pdf", "latest.pdf"), (".txt", "latest.txt"), (".png", "latest.png")):
             cp(stem + ext, os.path.join(out, dst)); cp(stem + ext, os.path.join(docs, dst))
     return folder, take

@@ -2,166 +2,166 @@ Sources for DITM-briefing-2026-11-20
 
 
 Top headlines: RGV
-  - McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan. 14 deadline still stands: https://www.krgv.com/news/mcallen-food-truck-owners-call-for-extension-on-park-closure  [ok]
-  - La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and Paredes elementaries) after losing 10,008 students in a decade: https://dailymcallen.com/local-news/editions/11-20-2026  [ok]
-  - SpaceX responds after Cameron County rejects its data center tax break, says its payment plan would have steadied county revenue: https://myrgv.com/local-news/2026/11/19/spacex-responds-to-cameron-county-rejection-of-tax-break-application/  [ok]
-  - FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and landings a year at Starbase; next session Friday 5:30 PM: https://www.valleycentral.com/news/local-news/faa-holds-virtual-hearing-on-spacex-proposal-for-more-rocket-launches/  [blocked-by-site]
-  - Rep. Vicente Gonzalez's 'Hands Off Our Boca Chica Beach Act' clears the House Natural Resources Committee: https://www.valleycentral.com/news/local-news/hands-off-our-boca-chica-beach-act-advances/  [blocked-by-site]
-  - Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some at $2.94): https://www.valleycentral.com/news/local-news/gas-prices-dip-below-3-a-gallon-across-the-valley/  [blocked-by-site]
-  - Starbase fills a vacant commission seat with Haley Ruvalcaba, wife of a SpaceX IT director: https://www.valleycentral.com/news/local-news/starbase-selects-new-city-commissioner/  [blocked-by-site]
-  - Roma's bridge is now the fastest-growing truck port on the Southwest border (imports up 17x since 2019): https://www.borderreport.com/news/trade/roma-bridge-fastest-growing-for-truck-traffic-on-southwest-border/  [blocked-by-site]
-  - Mission approves voluntary drug testing for the mayor and council (mandatory for city attorney and managers): https://myrgv.com/local-news/2026/11/19/mission-approves-voluntary-drug-testing-for-city-officials/  [ok]
-  - Brownsville ISD swears in trustees and elects Denise Garza board president: https://myrgv.com/local-news/2026/11/19/brownsville-isd-board-elects-denise-garza-as-president/  [ok]
-  - USDA confirms the Valley's fifth screwworm case (first in Hidalgo County); Brooks, Hidalgo, Kenedy and Willacy under 'Infested Zone 37' rules: https://myrgv.com/local-news/2026/11/19/usda-confirms-fifth-case-of-screwworm-in-rio-grande-valley/  [ok]
-  - Mission man sentenced to life without parole for 2018 killings of two women: https://myrgv.com/local-news/2026/11/19/mission-man-who-killed-two-women-in-2018-sentenced-to-life-without-parole/  [ok]
+  - McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan. 14 deadline still stands: https://www.krgv.com/news/mcallen-food-truck-owners-call-for-extension-on-park-closure
+  - La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and Paredes elementaries) after losing 10,008 students in a decade: https://dailymcallen.com/local-news/editions/11-20-2026
+  - SpaceX responds after Cameron County rejects its data center tax break, says its payment plan would have steadied county revenue: https://myrgv.com/local-news/2026/11/19/spacex-responds-to-cameron-county-rejection-of-tax-break-application/
+  - FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and landings a year at Starbase; next session Friday 5:30 PM: https://www.valleycentral.com/news/local-news/faa-holds-virtual-hearing-on-spacex-proposal-for-more-rocket-launches/
+  - Rep. Vicente Gonzalez's 'Hands Off Our Boca Chica Beach Act' clears the House Natural Resources Committee: https://www.valleycentral.com/news/local-news/hands-off-our-boca-chica-beach-act-advances/
+  - Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some at $2.94): https://www.valleycentral.com/news/local-news/gas-prices-dip-below-3-a-gallon-across-the-valley/
+  - Starbase fills a vacant commission seat with Haley Ruvalcaba, wife of a SpaceX IT director: https://www.valleycentral.com/news/local-news/starbase-selects-new-city-commissioner/
+  - Roma's bridge is now the fastest-growing truck port on the Southwest border (imports up 17x since 2019): https://www.borderreport.com/news/trade/roma-bridge-fastest-growing-for-truck-traffic-on-southwest-border/
+  - Mission approves voluntary drug testing for the mayor and council (mandatory for city attorney and managers): https://myrgv.com/local-news/2026/11/19/mission-approves-voluntary-drug-testing-for-city-officials/
+  - Brownsville ISD swears in trustees and elects Denise Garza board president: https://myrgv.com/local-news/2026/11/19/brownsville-isd-board-elects-denise-garza-as-president/
+  - USDA confirms the Valley's fifth screwworm case (first in Hidalgo County); Brooks, Hidalgo, Kenedy and Willacy under 'Infested Zone 37' rules: https://myrgv.com/local-news/2026/11/19/usda-confirms-fifth-case-of-screwworm-in-rio-grande-valley/
+  - Mission man sentenced to life without parole for 2018 killings of two women: https://myrgv.com/local-news/2026/11/19/mission-man-who-killed-two-women-in-2018-sentenced-to-life-without-parole/
 
 Top headlines: Texas
-  - Paxton and the feds agree to keep Texas razor wire at the border for up to 30 years (Del Rio Sector): https://www.texastribune.org/2026/11/19/texas-border-wire-immigration-ken-paxton/  [ok]
-  - Comptroller Huffines' move to stop taxing cloud, AI and data hosting would cost Texas $18 billion over six years: https://www.texastribune.org/2026/11/19/texas-comptroller-huffines-data-tax-limit/  [ok]
+  - Paxton and the feds agree to keep Texas razor wire at the border for up to 30 years (Del Rio Sector): https://www.texastribune.org/2026/11/19/texas-border-wire-immigration-ken-paxton/
+  - Comptroller Huffines' move to stop taxing cloud, AI and data hosting would cost Texas $18 billion over six years: https://www.texastribune.org/2026/11/19/texas-comptroller-huffines-data-tax-limit/
 
 National Desk
-  - AP: Dow drops 1,100: https://apnews.com/article/stocks-markets-ai-us-anthropic-206c84045137824feabe052a29ff6140  [blocked-by-site]
-  - CNBC: Anthropic IPO fails to lift AI stocks: https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-stocks-selloff.html  [ok]
-  - NBC News: https://www.nbcnews.com/politics/white-house/national-cyber-director-sean-cairncross-leaving-kirsten-davies-replaci-rcna610329  [ok]
-  - AP: https://apnews.com/article/cyber-director-kirsten-davies-sean-cairncross-2f1f84f3ca5429d01ace67929c72128d  [blocked-by-site]
-  - AP: Senate approves permitting bill: https://apnews.com/article/energy-permitting-data-center-power-grid-trump-b41c2017e4a9fe2e6de92ec77a4cdd0a  [blocked-by-site]
-  - NBC News: https://www.nbcnews.com/politics/congress/senate-passes-sweeping-bill-simplifying-permitting-rules-build-america-rcna610196  [ok]
+  - AP: Dow drops 1,100: https://apnews.com/article/stocks-markets-ai-us-anthropic-206c84045137824feabe052a29ff6140
+  - CNBC: Anthropic IPO fails to lift AI stocks: https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-stocks-selloff.html
+  - NBC News: https://www.nbcnews.com/politics/white-house/national-cyber-director-sean-cairncross-leaving-kirsten-davies-replaci-rcna610329
+  - AP: https://apnews.com/article/cyber-director-kirsten-davies-sean-cairncross-2f1f84f3ca5429d01ace67929c72128d
+  - AP: Senate approves permitting bill: https://apnews.com/article/energy-permitting-data-center-power-grid-trump-b41c2017e4a9fe2e6de92ec77a4cdd0a
+  - NBC News: https://www.nbcnews.com/politics/congress/senate-passes-sweeping-bill-simplifying-permitting-rules-build-america-rcna610196
 
 Weather
-  - NWS forecast page (McAllen): https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23  [ok]
-  - NWS Brownsville office: https://www.weather.gov/bro/  [ok]
-  - NWS API forecast (JSON): https://api.weather.gov/gridpoints/BRO/49,19/forecast  [ok]
+  - NWS forecast page (McAllen): https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
+  - NWS Brownsville office: https://www.weather.gov/bro/
+  - NWS API forecast (JSON): https://api.weather.gov/gridpoints/BRO/49,19/forecast
 
 High school sports
-  - 6A DI Area: San Antonio Brennan 31, Weslaco High 15: https://www.rgvsports.com/rgv-football-playoff-schedule/  [ok]
-  - UTRGV falls 48-0 to No. 7 SFA in the home finale (UTRGV 5-6): https://gooddayedinburg.com/local-news/editions/11-15-2026  [ok]
+  - 6A DI Area: San Antonio Brennan 31, Weslaco High 15: https://www.rgvsports.com/rgv-football-playoff-schedule/
+  - UTRGV falls 48-0 to No. 7 SFA in the home finale (UTRGV 5-6): https://gooddayedinburg.com/local-news/editions/11-15-2026
 
 NFL Week 11 (TNF) + Week 10
-  - NFL.com scores, Week 10: https://www.nfl.com/schedules/2026/by-week/week-10  [ok]
-  - Texans 26, Colts 3: C.J. Stroud throws 3 TDs on Thursday Night Football: https://apnews.com/article/texans-colts-score-a10b89e303c92efae4c15b8e9df01534  [blocked-by-site]
-  - Week 11: Colts at Texans Thu Nov 19; Titans at Cowboys Sun Nov 22; Bengals at Commanders Mon Nov 23: https://www.footballdb.com/games/index.html?yr=2026  [ok]
+  - NFL.com scores, Week 10: https://www.nfl.com/schedules/2026/by-week/week-10
+  - Texans 26, Colts 3: C.J. Stroud throws 3 TDs on Thursday Night Football: https://apnews.com/article/texans-colts-score-a10b89e303c92efae4c15b8e9df01534
+  - Week 11: Colts at Texans Thu Nov 19; Titans at Cowboys Sun Nov 22; Bengals at Commanders Mon Nov 23: https://www.footballdb.com/games/index.html?yr=2026
 
 NBA
-  - Field Level Media: Nov 18 NBA roundup: https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/  [unreachable]
+  - Field Level Media: Nov 18 NBA roundup: https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/
 
 MLB: OFFSEASON (no scores)
-  - Trump posthumously pardons Pete Rose (1990 tax convictions); symbolic, Hall eligibility unchanged: https://apnews.com/article/pete-rose-pardon-trump-baseball-14f398d4c657ccf55cb8a77cc7e60915  [blocked-by-site]
-  - Skubal sweepstakes: Mets, Blue Jays, Dodgers and Padres have met or are set to meet; a deal is expected before the CBA expires Dec. 1 (11:59 PM ET): https://www.mlb.com/news/tarik-skubal-rumors-november-17-free-agent-update  [ok]
-  - Twins agree to 2 years, $55M with Sonny Gray; White Sox land Dustin May (3 yrs, ~$52.5M): https://www.espn.com/mlb/story/_/id/50328768/free-agency-tracker-offseason-trades-moves-2026-2027  [ok]
+  - Trump posthumously pardons Pete Rose (1990 tax convictions); symbolic, Hall eligibility unchanged: https://apnews.com/article/pete-rose-pardon-trump-baseball-14f398d4c657ccf55cb8a77cc7e60915
+  - Skubal sweepstakes: Mets, Blue Jays, Dodgers and Padres have met or are set to meet; a deal is expected before the CBA expires Dec. 1 (11:59 PM ET): https://www.mlb.com/news/tarik-skubal-rumors-november-17-free-agent-update
+  - Twins agree to 2 years, $55M with Sonny Gray; White Sox land Dustin May (3 yrs, ~$52.5M): https://www.espn.com/mlb/story/_/id/50328768/free-agency-tracker-offseason-trades-moves-2026-2027
 
 Meme of the Week: Elementary
-  - RBLXSTAT: Roblox weekly report Nov 9-15: https://rblxstat.com/blog/roblox-weekly-report-2026-11-15  [ok]
-  - SafeScreens: Roblox parent's guide: https://safescreens.us/guides/gaming/roblox-experiences  [ok]
-  - RoStats: Top Roblox games Nov 2026: https://rostats.io/charts/2026-11  [ok]
-  - Reader's Digest: Gen Alpha slang: https://www.rd.com/article/gen-alpha-slang/  [ok]
-  - MadeForMums: parents' guide to slang: https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/  [ok]
+  - RBLXSTAT: Roblox weekly report Nov 9-15: https://rblxstat.com/blog/roblox-weekly-report-2026-11-15
+  - SafeScreens: Roblox parent's guide: https://safescreens.us/guides/gaming/roblox-experiences
+  - RoStats: Top Roblox games Nov 2026: https://rostats.io/charts/2026-11
+  - Reader's Digest: Gen Alpha slang: https://www.rd.com/article/gen-alpha-slang/
+  - MadeForMums: parents' guide to slang: https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/
 
 Meme of the Week: Middle School
-  - Know Your Meme: Talk To Me Doja: https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained  [ok]
-  - Know Your Meme: Pennywide: https://trending.knowyourmeme.com/editorials/guides/what-is-the-pennywide-meme-the-viral-pennywise-house-video-and-memes-explained  [ok]
+  - Know Your Meme: Talk To Me Doja: https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained
+  - Know Your Meme: Pennywide: https://trending.knowyourmeme.com/editorials/guides/what-is-the-pennywide-meme-the-viral-pennywise-house-video-and-memes-explained
 
 Meme of the Week: High School
-  - ABC7: Irvine police warning (Nov 12): https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/  [ok]
-  - WBBH: Cape Coral incident (Nov 16): https://www.gulfcoastnewsnow.com/article/video-door-kick-challenge-cape-coral-florida/74444521  [ok]
-  - KOBI: Talent, Oregon (Nov 12): https://kobi5.com/news/door-kicking-trend-is-growing-locally-five-incidents-reported-in-talent-319588/  [ok]
-  - MadeForMums: 45 Gen Alpha slang words: https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/  [ok]
-  - Reader's Digest: 24 Gen Alpha slang terms: https://www.rd.com/article/gen-alpha-slang/  [ok]
-  - Hello!: how to respond to bizarre slang: https://www.hellomagazine.com/healthandbeauty/mother-and-baby/878329/your-gen-alpha-child-increasingly-bizarre-slang-how-to-respond/  [ok]
-  - ABC News: parents and GTA 6: https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889  [ok]
-  - Independent: UK schools and GTA 6: https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html  [ok]
-  - DW: GTA VI launches: https://www.dw.com/en/grand-theft-auto-vi-launches-to-global-fanfare/a-79986461  [ok]
+  - ABC7: Irvine police warning (Nov 12): https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/
+  - WBBH: Cape Coral incident (Nov 16): https://www.gulfcoastnewsnow.com/article/video-door-kick-challenge-cape-coral-florida/74444521
+  - KOBI: Talent, Oregon (Nov 12): https://kobi5.com/news/door-kicking-trend-is-growing-locally-five-incidents-reported-in-talent-319588/
+  - MadeForMums: 45 Gen Alpha slang words: https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/
+  - Reader's Digest: 24 Gen Alpha slang terms: https://www.rd.com/article/gen-alpha-slang/
+  - Hello!: how to respond to bizarre slang: https://www.hellomagazine.com/healthandbeauty/mother-and-baby/878329/your-gen-alpha-child-increasingly-bizarre-slang-how-to-respond/
+  - ABC News: parents and GTA 6: https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889
+  - Independent: UK schools and GTA 6: https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html
+  - DW: GTA VI launches: https://www.dw.com/en/grand-theft-auto-vi-launches-to-global-fanfare/a-79986461
 
 Trending News
-  - BTS fans flood X voting for the MAMA Awards: https://x.com/search?q=%23VOTEFORBTS  [ok]
-  - Fiona the hippo dies at the Cincinnati Zoo after swallowing a visitor's knit hat: https://cincinnatizoo.org/beloved-hippo-fiona-has-passed-away/  [ok]
-  - AP: https://apnews.com/article/fiona-hippo-cincinnati-zoo-hat-3d90d10c57698af06e5a7a67bed05608  [blocked-by-site]
-  - BBC: https://www.bbc.com/news/articles/cwz0k3172xzko  [ok]
-  - Trump posthumously pardons Pete Rose: https://apnews.com/article/pete-rose-pardon-trump-baseball-14f398d4c657ccf55cb8a77cc7e60915  [blocked-by-site]
-  - BBC: https://www.bbc.com/news/articles/cx1l0pm7l9jmo  [ok]
-  - 'Percy Jackson and the Olympians' Season 3 premieres today on Disney+ and Hulu: https://www.thewrap.com/creative-content/tv-shows/percy-jackson-season-3-episode-release-schedule/  [ok]
-  - X: #PercyJackson: https://x.com/i/trending/2123145814818357459  [ok]
-  - Texans rout the Colts 26-3 on Thursday Night Football; C.J. Stroud throws 3 TDs: https://apnews.com/article/texans-colts-score-a10b89e303c92efae4c15b8e9df01534  [blocked-by-site]
-  - Magnitude 5.1 earthquake shakes Monterey County, California; 'earthquake' trends in Texas and on X: https://abc7news.com/post/magnitude-51-earthquake-hits-monterey-county-usgs-says/20058336/  [ok]
-  - KCRA: https://www.kcra.com/article/magnitude-51-earthquake-strikes-near-pinnacles/74485520  [ok]
-  - Christie's pulls a Frida Kahlo painting from auction at Mexico's request: https://www.borderreport.com/border-report-tour/border-culture/christies-halts-frida-kahlo-painting-from-auction-at-mexicos-request/  [blocked-by-site]
-  - Jazz snap the Lakers' nine-game win streak; Giannis leads the Heat past his old team: https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/  [unreachable]
+  - BTS fans flood X voting for the MAMA Awards: https://x.com/search?q=%23VOTEFORBTS
+  - Fiona the hippo dies at the Cincinnati Zoo after swallowing a visitor's knit hat: https://cincinnatizoo.org/beloved-hippo-fiona-has-passed-away/
+  - AP: https://apnews.com/article/fiona-hippo-cincinnati-zoo-hat-3d90d10c57698af06e5a7a67bed05608
+  - BBC: https://www.bbc.com/news/articles/cwz0k3172xzko
+  - Trump posthumously pardons Pete Rose: https://apnews.com/article/pete-rose-pardon-trump-baseball-14f398d4c657ccf55cb8a77cc7e60915
+  - BBC: https://www.bbc.com/news/articles/cx1l0pm7l9jmo
+  - 'Percy Jackson and the Olympians' Season 3 premieres today on Disney+ and Hulu: https://www.thewrap.com/creative-content/tv-shows/percy-jackson-season-3-episode-release-schedule/
+  - X: #PercyJackson: https://x.com/i/trending/2123145814818357459
+  - Texans rout the Colts 26-3 on Thursday Night Football; C.J. Stroud throws 3 TDs: https://apnews.com/article/texans-colts-score-a10b89e303c92efae4c15b8e9df01534
+  - Magnitude 5.1 earthquake shakes Monterey County, California; 'earthquake' trends in Texas and on X: https://abc7news.com/post/magnitude-51-earthquake-hits-monterey-county-usgs-says/20058336/
+  - KCRA: https://www.kcra.com/article/magnitude-51-earthquake-strikes-near-pinnacles/74485520
+  - Christie's pulls a Frida Kahlo painting from auction at Mexico's request: https://www.borderreport.com/border-report-tour/border-culture/christies-halts-frida-kahlo-painting-from-auction-at-mexicos-request/
+  - Jazz snap the Lakers' nine-game win streak; Giannis leads the Heat past his old team: https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/
 
 Run of show: C
-  - MyRGV: commissioners reject SpaceX bid: https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/  [ok]
-  - KRGV: commissioners reject tax break: https://www.krgv.com/news/cameron-county-commissioners-reject-spacex-data-center-tax-break-request/  [ok]
-  - Politico: Texas issues air permit: https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758  [blocked-by-site]
-  - Spaceflight Now: Flight 15: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/  [ok]
-  - Daily McAllen: Starbase says nobody is buying Boca Chica Beach: https://dailymcallen.com/local-news/editions/11-14-2026  [ok]
-  - KRGV: Boca Chica Beach resolution: https://www.krgv.com/news/cameron-county-commissioners-pass-resolution-to-protect-public-access-to-boca-chica-beach/  [ok]
-  - r/RioGrandeValley: Speer Library march: https://www.reddit.com/r/RioGrandeValley/comments/1xjnz54/community_march_to_petition_for_the_speer/  [ok]
+  - MyRGV: commissioners reject SpaceX bid: https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/
+  - KRGV: commissioners reject tax break: https://www.krgv.com/news/cameron-county-commissioners-reject-spacex-data-center-tax-break-request/
+  - Politico: Texas issues air permit: https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758
+  - Spaceflight Now: Flight 15: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/
+  - Daily McAllen: Starbase says nobody is buying Boca Chica Beach: https://dailymcallen.com/local-news/editions/11-14-2026
+  - KRGV: Boca Chica Beach resolution: https://www.krgv.com/news/cameron-county-commissioners-pass-resolution-to-protect-public-access-to-boca-chica-beach/
+  - r/RioGrandeValley: Speer Library march: https://www.reddit.com/r/RioGrandeValley/comments/1xjnz54/community_march_to_petition_for_the_speer/
 
 Run of show: D
-  - Texas Tribune: Pulido beats De La Cruz: https://www.texastribune.org/2026/11/03/texas-bobby-pulido-monica-de-la-cruz-congress-district-15-elections-2026/  [ok]
-  - Ballotpedia: Bobby Pulido: https://ballotpedia.org/Bobby_Pulido  [ok]
-  - MyRGV: Mission races to runoff: https://myrgv.com/local-news/2026/11/04/not-over-yet-nearly-all-mission-races-heading-to-runoff-elections/  [ok]
-  - KRGV: Mission runoff Dec. 12: https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/  [ok]
-  - Hidalgo County runoff page: https://www.hidalgocounty.us/3526/December-12-2026-Local-Entities-Runoff-E  [ok]
-  - Politiquera: https://politiquera.com/  [ok]
+  - Texas Tribune: Pulido beats De La Cruz: https://www.texastribune.org/2026/11/03/texas-bobby-pulido-monica-de-la-cruz-congress-district-15-elections-2026/
+  - Ballotpedia: Bobby Pulido: https://ballotpedia.org/Bobby_Pulido
+  - MyRGV: Mission races to runoff: https://myrgv.com/local-news/2026/11/04/not-over-yet-nearly-all-mission-races-heading-to-runoff-elections/
+  - KRGV: Mission runoff Dec. 12: https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/
+  - Hidalgo County runoff page: https://www.hidalgocounty.us/3526/December-12-2026-Local-Entities-Runoff-E
+  - Politiquera: https://politiquera.com/
 
 Run of show: E
-  - Edinburg Advocate: Edinburg CISD seats new members: https://theedinburgadvocate.com/2026/11/edinburg-cisd-board-to-seat-new-members-approve-3-million-stop-loss-insurance-contract-at-special-meeting-tuesday-nov-17/  [ok]
-  - PSJA ISD: swears in trustees: https://www.psjaisd.us/school-news-details/~board/pharr-san-juan-alamo-isd-news/post/psja-isd-swears-in-three-trustees-elects-new-board-leadership  [ok]
+  - Edinburg Advocate: Edinburg CISD seats new members: https://theedinburgadvocate.com/2026/11/edinburg-cisd-board-to-seat-new-members-approve-3-million-stop-loss-insurance-contract-at-special-meeting-tuesday-nov-17/
+  - PSJA ISD: swears in trustees: https://www.psjaisd.us/school-news-details/~board/pharr-san-juan-alamo-isd-news/post/psja-isd-swears-in-three-trustees-elects-new-board-leadership
 
 Run of show: F
-  - ValleyCentral: Fallek wins District 5: https://www.valleycentral.com/valleycentrals-local-elections-hq/michael-fallek-officially-declared-winner-in-district-5-city-commission-race/  [blocked-by-site]
-  - MyRGV: Brownsville names Alan Guard: https://myrgv.com/featured/2026/06/17/brownsville-appoints-interim-city-manager-alan-guard-to-permanent-position/  [ok]
-  - MyRGV 2023: commission rezones park: https://myrgv.com/local-news/2023/07/25/despite-protest-mcallen-commission-rezones-park-for-austin-tech-company/  [ok]
-  - KRGV 2023: commissioners vote to rezone: https://www.krgv.com/news/city-of-mcallen-commissioners-vote-to-rezone-disc-golf-course/  [ok]
-  - Texas Border Business: Echo Hotel: https://texasborderbusiness.com/major-investment-in-echo-hotel-property-coming-to-edinburg/  [ok]
+  - ValleyCentral: Fallek wins District 5: https://www.valleycentral.com/valleycentrals-local-elections-hq/michael-fallek-officially-declared-winner-in-district-5-city-commission-race/
+  - MyRGV: Brownsville names Alan Guard: https://myrgv.com/featured/2026/06/17/brownsville-appoints-interim-city-manager-alan-guard-to-permanent-position/
+  - MyRGV 2023: commission rezones park: https://myrgv.com/local-news/2023/07/25/despite-protest-mcallen-commission-rezones-park-for-austin-tech-company/
+  - KRGV 2023: commissioners vote to rezone: https://www.krgv.com/news/city-of-mcallen-commissioners-vote-to-rezone-disc-golf-course/
+  - Texas Border Business: Echo Hotel: https://texasborderbusiness.com/major-investment-in-echo-hotel-property-coming-to-edinburg/
 
 Run of show: G
-  - Daily McAllen Nov 16: https://dailymcallen.com/local-news/editions/11-16-2026  [ok]
-  - Daily McAllen Nov 17: https://dailymcallen.com/local-news/editions/11-17-2026  [ok]
-  - Daily McAllen Nov 18: https://dailymcallen.com/local-news/editions/11-18-2026  [ok]
-  - The RGV News: Nov 17 brief: https://thergvnews.com/reviews/day/2026-11-17  [ok]
+  - Daily McAllen Nov 16: https://dailymcallen.com/local-news/editions/11-16-2026
+  - Daily McAllen Nov 17: https://dailymcallen.com/local-news/editions/11-17-2026
+  - Daily McAllen Nov 18: https://dailymcallen.com/local-news/editions/11-18-2026
+  - The RGV News: Nov 17 brief: https://thergvnews.com/reviews/day/2026-11-17
 
 Run of show: H
-  - ABC News: parents and GTA 6: https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889  [ok]
-  - Independent: UK schools and GTA 6: https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html  [ok]
-  - News4 San Antonio: fake Uvalde post: https://news4sanantonio.com/news/local/fake-instagram-account-claims-uvalde-schools-closed-for-gta-6-release  [ok]
-  - TEA: HB 1481 phone rule: https://tea.texas.gov/taa-letters/implementation-texas-house-bill-1481-student-use-personal-communication-devices-school  [ok]
-  - PSJA ISD AI guidebook: https://www.psjaisd.us/academics/psja-isd-ai-guidebook  [ok]
-  - FBI: sextortion: https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/sextortion  [blocked-by-site]
-  - DHS: Know2Protect sextortion PDF: https://www.dhs.gov/sites/default/files/2026-08/26_0806_k2p_p2p-t2p-sextortion.pdf  [ok]
-  - NCMEC: Take It Down: https://takeitdown.ncmec.org/  [ok]
-  - NIMH: warning signs of suicide: https://www.nimh.nih.gov/health/publications/warning-signs-of-suicide  [ok]
-  - AAP HealthyChildren: when children and teens self-harm: https://www.healthychildren.org/English/health-issues/conditions/emotional-problems/Pages/when-children-and-teens-self-harm.aspx  [ok]
+  - ABC News: parents and GTA 6: https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889
+  - Independent: UK schools and GTA 6: https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html
+  - News4 San Antonio: fake Uvalde post: https://news4sanantonio.com/news/local/fake-instagram-account-claims-uvalde-schools-closed-for-gta-6-release
+  - TEA: HB 1481 phone rule: https://tea.texas.gov/taa-letters/implementation-texas-house-bill-1481-student-use-personal-communication-devices-school
+  - PSJA ISD AI guidebook: https://www.psjaisd.us/academics/psja-isd-ai-guidebook
+  - FBI: sextortion: https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/sextortion
+  - DHS: Know2Protect sextortion PDF: https://www.dhs.gov/sites/default/files/2026-08/26_0806_k2p_p2p-t2p-sextortion.pdf
+  - NCMEC: Take It Down: https://takeitdown.ncmec.org/
+  - NIMH: warning signs of suicide: https://www.nimh.nih.gov/health/publications/warning-signs-of-suicide
+  - AAP HealthyChildren: when children and teens self-harm: https://www.healthychildren.org/English/health-issues/conditions/emotional-problems/Pages/when-children-and-teens-self-harm.aspx
 
 Run of show: I
-  - Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border con: https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/  [ok]
+  - Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border con: https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/
 
 Run of show: J
-  - FAA: Nationwide Ground Stop Q&A: https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers  [ok]
-  - ABC: Mullin grilled, FAA head says 'blame me': https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960  [ok]
-  - House Homeland Security: Mullin written testimony (PDF): https://homeland.house.gov/wp-content/uploads/2026/11/2026-11-18-HRG-Testimony-Mullin.pdf  [ok]
-  - ValleyCentral: Valley airports issue advisories: https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/  [ok]
-  - KRGV: Brownsville airport after ground stop: https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/  [ok]
-  - YouTube: SNL 'Sister': https://www.youtube.com/watch?v=-X9dxL17t1k  [ok]
-  - YouTube: SNL 'CIA Meeting' cold open: https://www.youtube.com/watch?v=R_8UPhJNrZ4  [ok]
-  - EW: SNL recap: https://ew.com/snl-recap-john-mulaney-hosts-seventh-time-phoebe-bridgers-musical-guest-12253185  [ok]
-  - Boston.com: SNL recap: https://www.boston.com/culture/entertainment/2026/11/15/snl-recap-john-mulaney-2026/  [ok]
-  - Showbiz411: SNL ratings: https://www.showbiz411.com/2026/11/18/john-mulaney-phoebe-bridgers-snl-best-this-season-drops-back-to-season-average-ratings-down-20-from-last-weeks-high  [ok]
-  - Nvidia press release: CEO transition: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx  [ok]
-  - ABC: Ten Commandments in Texas classrooms: https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010  [ok]
-  - Fast Company Daily (Drew's email; the daily refresh pulls it): https://www.fastcompany.com/newsletters  [blocked-by-site]
+  - FAA: Nationwide Ground Stop Q&A: https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers
+  - ABC: Mullin grilled, FAA head says 'blame me': https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960
+  - House Homeland Security: Mullin written testimony (PDF): https://homeland.house.gov/wp-content/uploads/2026/11/2026-11-18-HRG-Testimony-Mullin.pdf
+  - ValleyCentral: Valley airports issue advisories: https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/
+  - KRGV: Brownsville airport after ground stop: https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/
+  - YouTube: SNL 'Sister': https://www.youtube.com/watch?v=-X9dxL17t1k
+  - YouTube: SNL 'CIA Meeting' cold open: https://www.youtube.com/watch?v=R_8UPhJNrZ4
+  - EW: SNL recap: https://ew.com/snl-recap-john-mulaney-hosts-seventh-time-phoebe-bridgers-musical-guest-12253185
+  - Boston.com: SNL recap: https://www.boston.com/culture/entertainment/2026/11/15/snl-recap-john-mulaney-2026/
+  - Showbiz411: SNL ratings: https://www.showbiz411.com/2026/11/18/john-mulaney-phoebe-bridgers-snl-best-this-season-drops-back-to-season-average-ratings-down-20-from-last-weeks-high
+  - Nvidia press release: CEO transition: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx
+  - ABC: Ten Commandments in Texas classrooms: https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010
+  - Fast Company Daily (Drew's email; the daily refresh pulls it): https://www.fastcompany.com/newsletters
 
 Run of show: L
-  - Know Your Meme: Talk To Me Doja: https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained  [ok]
-  - ABC7: Irvine PD on door kick challenge: https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/  [ok]
-  - Legacy.com: The Monitor obituaries, McAllen: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor  [blocked-by-site]
+  - Know Your Meme: Talk To Me Doja: https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained
+  - ABC7: Irvine PD on door kick challenge: https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/
+  - Legacy.com: The Monitor obituaries, McAllen: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor
 
 Chisme
-  - Gina Hinojosa tells sheriffs she will not cut Abbott's border security grants: https://www.reddit.com/r/texas/comments/1y0kros/gina_hinojosa_tells_sheriffs_she_will_not_cut/  [ok]
-  - Bill introduced to allow patients with menstrual cramps to qualify for medical marijuana: https://www.reddit.com/r/texas/comments/1y0qsfe/bill_introduced_to_allow_patients_with_menstrual/  [ok]
-  - "Pompous" Texas Judge Finally Faces Discipline After Going Viral For Berating IT Worker Trying To Help Him: https://www.reddit.com/r/texas/comments/1y0p38w/pompous_texas_judge_finally_faces_discipline/  [ok]
+  - Gina Hinojosa tells sheriffs she will not cut Abbott's border security grants: https://www.reddit.com/r/texas/comments/1y0kros/gina_hinojosa_tells_sheriffs_she_will_not_cut/
+  - Bill introduced to allow patients with menstrual cramps to qualify for medical marijuana: https://www.reddit.com/r/texas/comments/1y0qsfe/bill_introduced_to_allow_patients_with_menstrual/
+  - "Pompous" Texas Judge Finally Faces Discipline After Going Viral For Berating IT Worker Trying To Help Him: https://www.reddit.com/r/texas/comments/1y0p38w/pompous_texas_judge_finally_faces_discipline/
 
 Remembering Our Neighbors
-  - Legacy.com: The Monitor obituaries, McAllen: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor  [blocked-by-site]
+  - Legacy.com: The Monitor obituaries, McAllen: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor
   - Gregoria Lloyd: https://www.legacy.com/us/obituaries/themonitor/name/gregoria-lloyd-obituary?id=63025610
   - Guadalupe Valdez Gamboa: https://www.legacy.com/us/obituaries/themonitor/name/guadalupe-gamboa-obituary?id=63025611
   - Marco Antonio Capetillo Hernandez: https://www.legacy.com/us/obituaries/themonitor/name/marco-hernandez-obituary?id=63025608
