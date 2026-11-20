@@ -25,7 +25,7 @@ COLD OPEN (read aloud, about 45 seconds)
   the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the
   National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And
   in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young
-  as 10 (testing in Austin), and what a 10-year-old. It's 81 and mostly cloudy outside, the
+  as 10 (testing in Austin), and what a 10-year-old. It's 81 and cloudy outside, the
   coffee's hot, so stick around, this is Drew in the Morning.
   JINGLE: Drew in the Morning. Your Valley, your news, your morning.
 
@@ -50,7 +50,7 @@ STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README
   TX 10 + US 10 items, fetched 2026-11-20T03:00:46+00:00 (cache).
 
 TOP HEADLINES · RGV FIRST
-  - [ACT 11] McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan.
+  - [ACT 10] McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan.
     14 deadline still stands (KRGV · Nov 19)
     https://www.krgv.com/news/mcallen-food-truck-owners-call-for-extension-on-park-closure
   - [ACT 18] La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and
@@ -467,4 +467,4 @@ What your kids might be saying at school this week, and one line on how to bring
 NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-20 20:14 CT.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-20 20:18 CT.

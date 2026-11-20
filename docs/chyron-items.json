@@ -1,7 +1,7 @@
 {
  "v": 1,
  "date": "2026-11-20",
- "generated": "2026-11-20T20:14:32+00:00",
+ "generated": "2026-11-20T20:18:42+00:00",
  "items": {
   "i-dbc5767575": {
    "headline": "La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and Paredes elementaries)…",
@@ -33,11 +33,6 @@
    "line": "Prices peaked near $4.10 in May and had stayed above $3 since the Iran war began in late February.",
    "kicker": "HEADLINES · RGV"
   },
-  "i-cdd9d18715": {
-   "headline": "McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan. 14 deadline still…",
-   "line": "Vendors met a second time, with Commissioner Michael Fallek and the city attorney, asking the McAllen Chamber of…",
-   "kicker": "HEADLINES · RGV"
-  },
   "i-dc8d935b4f": {
    "headline": "Starbase fills a vacant commission seat with Haley Ruvalcaba, wife of a SpaceX IT director",
    "line": "Ruvalcaba, 36, replaces Lois Wallace, who moved away and hadn't attended since September.",
@@ -56,6 +51,11 @@
   "i-adcc440f3f": {
    "headline": "Mission man sentenced to life without parole for 2018 killings of two women",
    "line": "Mario Lozano-Lemus, 34, was found guilty of capital murder in the deaths of Irene Ozuna, 45, and Maria Angelita…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-cdd9d18715": {
+   "headline": "McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan. 14 deadline still…",
+   "line": "Vendors met a second time, with Commissioner Michael Fallek and the city attorney, asking the McAllen Chamber of…",
    "kicker": "HEADLINES · RGV"
   },
   "i-e7bd642cb4": {
