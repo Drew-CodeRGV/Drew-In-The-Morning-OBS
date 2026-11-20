@@ -212,7 +212,7 @@ class BroadcastBar(unittest.TestCase):
         cls.d = open(os.path.join(ROOT, "packet", "build_packet.py")).read()
 
     def test_strip_buttons_are_always_in_the_markup(self):
-        for needle in ('id="mc"', 'id="mc-guest"', 'id="mc-caller"', 'id="mc-logo"', 'id="ssbtn"', 'id="chhold"', 'id="chprev"', 'id="chnext"', 'id="chclr"', 'id="mc-pill"', 'id="mc-more"'):
+        for needle in ('id="mc"', 'id="mc-guest"', 'id="mc-caller"', 'id="mc-logo"', 'id="ssbtn"', 'id="chhold"', 'id="ssstop"', 'id="chprev"', 'id="chnext"', 'id="chclr"', 'id="mc-pill"', 'id="mc-more"', 'id="stop-dlg"'):
             self.assertIn(needle, self.d, needle)
 
     def test_guest_and_caller_are_modals_not_hidden_behind_chy_on(self):
@@ -424,6 +424,58 @@ class SegmentRouting(unittest.TestCase):
         for it in tech + memes + (d.get("trending") or []):
             if "uber" in (it.get("title") or "").lower() or "gta" in (it.get("title") or "").lower() or "grand theft auto" in (it.get("title") or "").lower():
                 self.assertIn(bp._story_key(it), hkeys)
+
+
+class ShowStopReset(unittest.TestCase):
+    """Stop on the broadcast strip confirms, then resets the show clock to 0:00 / STANDBY."""
+    @classmethod
+    def setUpClass(cls):
+        cls.d = open(os.path.join(ROOT, "packet", "build_packet.py")).read()
+
+    def test_confirm_dialog_copy_and_actions(self):
+        self.assertIn("Stop the show and reset to 0:00?", self.d)
+        self.assertIn("Stop &amp; reset", self.d)
+        self.assertIn(">Cancel</button>", self.d)
+        self.assertIn('id="stop-go"', self.d)
+        self.assertIn('id="stop-no"', self.d)
+        self.assertIn('id="ssstop"', self.d)
+
+    def test_stop_is_danger_styled_and_44px(self):
+        self.assertIn("#ssstop", self.d)
+        self.assertIn("#b42318", self.d)
+        # strip buttons already have a 44px target; Stop uses the same rule plus an explicit confirm action size
+        self.assertIn(".mc-ops button,.mc-ops .chlink,details#mc-more>summary{", self.d)
+        i = self.d.find(".mc-ops button,.mc-ops .chlink,details#mc-more>summary{")
+        chunk = self.d[i:i+280]
+        self.assertIn("min-height:44px", chunk)
+        self.assertIn("#stop-go,#stop-no{min-height:44px", self.d)
+
+    def test_confirm_resets_clock_and_notifies_chyron(self):
+        self.assertIn("function stopReset", self.d)
+        self.assertIn("idle=true", self.d)
+        self.assertIn("store.del(KEY)", self.d)
+        self.assertIn("pill.textContent='STANDBY'", self.d)
+        self.assertIn("if(api.onStop)api.onStop()", self.d)
+        self.assertIn("send('stop');send('clear')", self.d)
+        # Start begins a fresh clock (clears idle)
+        self.assertIn("idle=false", self.d)
+        # unlinked devices still reset locally: send() no-ops without a topic
+        self.assertIn("if(!topic||!Object.prototype.hasOwnProperty.call(CMDS,cmd))return", self.d)
+        # Stop is not gated on the link prompt
+        self.assertNotIn("$('ssstop').onclick=function(){if(needLink", self.d)
+
+    def test_more_eight_am_reset_is_the_same_action(self):
+        # the old ↺ 8:00 control now opens the same confirm, so there is one way to zero the show
+        self.assertIn("$('ssreset').onclick=openStop", self.d)
+        self.assertIn("Stop &amp; reset", self.d)
+        self.assertNotIn("Reset to 8:00 AM", self.d)
+        self.assertNotIn("↺ 8:00", self.d)
+
+    def test_idle_overrides_show_day_and_forced_clock(self):
+        self.assertIn("active=!idle&&(start!==null||onDay)", self.d)
+        self.assertIn("if(FORCE!==null&&!idle)", self.d)
+        self.assertIn("if(idle){el=0;active=false}", self.d)
+
 
 
 if __name__ == "__main__":

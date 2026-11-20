@@ -25,7 +25,7 @@ COLD OPEN (read aloud, about 45 seconds)
   the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the
   National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And
   in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young
-  as 10 (testing in Austin), and what a 10-year-old. It's 81 and cloudy outside, the
+  as 10 (testing in Austin), and what a 10-year-old. It's 83 and cloudy outside, the
   coffee's hot, so stick around, this is Drew in the Morning.
   JINGLE: Drew in the Morning. Your Valley, your news, your morning.
 
@@ -53,7 +53,7 @@ TOP HEADLINES · RGV FIRST
   - [ACT 10] McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan.
     14 deadline still stands (KRGV · Nov 19)
     https://www.krgv.com/news/mcallen-food-truck-owners-call-for-extension-on-park-closure
-  - [ACT 18] La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and
+  - [ACT 17] La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and
     Paredes elementaries) after losing 10,008 students in a decade (Daily McAllen · Nov 20)
     https://dailymcallen.com/local-news/editions/11-20-2026
   - [ACT 11] SpaceX responds after Cameron County rejects its data center tax break, says
@@ -74,16 +74,16 @@ TOP HEADLINES · RGV FIRST
   - [ACT 7] Roma's bridge is now the fastest-growing truck port on the Southwest border
     (imports up 17x since 2019) (Border Report · Nov 18-19)
     https://www.borderreport.com/news/trade/roma-bridge-fastest-growing-for-truck-traffic-on-southwest-border/
-  - [ACT 18] RioPlex says $110 billion in industrial, energy and data center investment is
+  - [ACT 17] RioPlex says $110 billion in industrial, energy and data center investment is
     headed to the Valley (Daily McAllen · Nov 20)
     https://dailymcallen.com/local-news/editions/11-20-2026
-  - [ACT 11] Mission approves voluntary drug testing for the mayor and council (mandatory
+  - [ACT 10] Mission approves voluntary drug testing for the mayor and council (mandatory
     for city attorney and managers) (MyRGV · Nov 19)
     https://myrgv.com/local-news/2026/11/19/mission-approves-voluntary-drug-testing-for-city-officials/
   - [ACT 11] Brownsville ISD swears in trustees and elects Denise Garza board president
     (MyRGV · Nov 19)
     https://myrgv.com/local-news/2026/11/19/brownsville-isd-board-elects-denise-garza-as-president/
-  - [ACT 18] Palenque Hidalgo opens today at Payne Arena (360-degree stage, tickets from
+  - [ACT 17] Palenque Hidalgo opens today at Payne Arena (360-degree stage, tickets from
     $20; Tito Double P headlines) (Daily McAllen · Nov 20)
     https://dailymcallen.com/local-news/editions/11-20-2026
   - [ACT 10] USDA confirms the Valley's fifth screwworm case (first in Hidalgo County);
@@ -467,4 +467,4 @@ What your kids might be saying at school this week, and one line on how to bring
 NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-20 21:28 CT.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-20 21:45 CT.
