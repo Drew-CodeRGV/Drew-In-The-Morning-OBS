@@ -1,7 +1,7 @@
 {
  "v": 1,
  "date": "2026-11-20",
- "generated": "2026-11-20T21:28:27+00:00",
+ "generated": "2026-11-20T21:45:35+00:00",
  "items": {
   "i-5845aaceb2": {
    "headline": "Gina Hinojosa tells sheriffs she will not cut Abbott's border security grants",
@@ -688,11 +688,6 @@
    "line": "Carlos Elizondo, Frank Ortiz and Garza were reelected; Marisa Franco Leal fills the two years left on the late…",
    "kicker": "SCHOOL BOARDS"
   },
-  "i-0272e26d88": {
-   "headline": "Mission approves voluntary drug testing for the mayor and council (mandatory for city attorney and…",
-   "line": "Approved at a special meeting Tuesday.",
-   "kicker": "CITY HALL"
-  },
   "i-543ca0556c": {
    "headline": "McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan. 14 deadline still…",
    "line": "Vendors met a second time, with Commissioner Michael Fallek and the city attorney, asking the McAllen Chamber of…",
@@ -701,6 +696,11 @@
   "i-5671af41f6": {
    "headline": "Starbase fills a vacant commission seat with Haley Ruvalcaba, wife of a SpaceX IT director",
    "line": "Ruvalcaba, 36, replaces Lois Wallace, who moved away and hadn't attended since September.",
+   "kicker": "CITY HALL"
+  },
+  "i-0272e26d88": {
+   "headline": "Mission approves voluntary drug testing for the mayor and council (mandatory for city attorney and…",
+   "line": "Approved at a special meeting Tuesday.",
    "kicker": "CITY HALL"
   },
   "i-ad25851d89": {

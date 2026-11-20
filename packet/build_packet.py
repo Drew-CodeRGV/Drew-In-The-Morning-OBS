@@ -1487,7 +1487,11 @@ nav a.q-empty{display:none}
 .mc-ops button,.mc-ops .chlink,details#mc-more>summary{appearance:none;-webkit-appearance:none;flex:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;padding:0 11px;border-radius:8px;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border:1px solid #3a4656;background:#1a222d;color:#f4f6f8}
 .mc-ops button:hover,details#mc-more>summary:hover{background:#2a3340;color:#fff;border-color:#5a6b7d}
 #ssbtn{background:#1f9d55;color:#fff;border-color:#1f9d55;font-weight:900;padding:0 14px}
+#ssstop,#stop-go{background:#b42318;color:#fff;border-color:#b42318;font-weight:900;padding:0 14px}
+#ssstop:hover,#stop-go:hover{background:#9b1c1c;border-color:#9b1c1c;color:#fff}
 #chhold.held{background:#f2a900;color:#1b2430;border-color:#f2a900}
+#stop-go,#stop-no{min-height:44px;min-width:44px;padding:0 14px;border-radius:8px;font:inherit;font-weight:800;letter-spacing:.04em;text-transform:uppercase;cursor:pointer}
+#stop-no{background:#1a222d;color:#f4f6f8;border:1px solid #3a4656}
 #mc-guest{background:#0b5cad;border-color:#0b5cad;color:#fff}
 #mc-caller{background:#c8102e;border-color:#c8102e;color:#fff}
 #mc-logo{background:#2a3340;color:#fff}
@@ -1668,7 +1672,7 @@ function card(id){return id?document.querySelector('[data-chyid="'+id+'"]'):null
 function isChyId(id){return IDRX.test(id||'')||ADRX.test(id||'')}
 function airId(){if(last&&isChyId(last.item)&&last.rx>sentAt+200)return last.item;if(sentId&&Date.now()-sentAt<4000&&!(last&&last.rx>sentAt+200))return sentId;return(last&&isChyId(last.item))?last.item:null}
 function ui(){var on=!!topic;document.body.classList.toggle('chy-on',on);
- var pill=$('mc-pill');if(pill){var live=last&&last.running,held=last&&last.held,air=last&&(last.visible||last.logo||last.guest||last.caller);pill.textContent=held?'HELD':(live?'LIVE':(air?'ON AIR':'STANDBY'));pill.className='mcp '+(held?'held':live?'live':air?'onair':'stand')}
+ var pill=$('mc-pill');if(pill){var stopped=api.idle&&api.idle(),live=!stopped&&last&&last.running,held=!stopped&&((api.held&&api.held())||(last&&last.held)),air=!stopped&&last&&(last.visible||last.logo||last.guest||last.caller);pill.textContent=held?'HELD':(live?'LIVE':(air?'ON AIR':'STANDBY'));pill.className='mcp '+(held?'held':live?'live':air?'onair':'stand')}
  var aid=airId();[].forEach.call(document.querySelectorAll('.onair'),function(e){if(!aid||e.getAttribute('data-chyid')!==aid)e.classList.remove('onair')});
  [].forEach.call(document.querySelectorAll('.chysend'),function(b){var is=!!aid&&b.getAttribute('data-chyid')===aid;b.setAttribute('aria-pressed',is?'true':'false');b.querySelector('.ct').textContent=is?'On air':'Chyron'});
  var ac=card(aid);if(ac)ac.classList.add('onair');if($('chlink'))$('chlink').hidden=on;if($('mb-hold'))$('mb-hold').hidden=!on;
@@ -1677,7 +1681,7 @@ function ui(){var on=!!topic;document.body.classList.toggle('chy-on',on);
  var st=$('chst');if(st){if(!last)st.textContent='waiting for the chyron\u2026';else{var age=Date.now()-last.rx,live=last.running;
   var au=aid&&last.item?(card(aid)?card(aid).getAttribute('data-chyh'):'item'):null;
   st.textContent=(au?'audible: '+au:(last.letter||'?'))+' \u00B7 '+(live?(last.held?'HELD':'AUTO'):'MANUAL')+(last.logo?' \u00B7 logo only':(last.visible===false?' \u00B7 off air':''))+(last.guest?' \u00B7 guest: '+last.guest:'')+(last.caller?' \u00B7 on the phone: '+last.caller:'')+' \u00B7 '+(age>600000?'last heard '+ago(age)+' ago':'synced');st.dataset.state=live?(last.held?'held':'auto'):'manual'}}}
-api.onChange=ui;api.onStart=function(){send('start')};api.onStop=function(){send('stop')};
+api.onChange=ui;api.onStart=function(){send('start')};api.onStop=function(){send('stop');send('clear')};
 function openDlg(id){var d=$(id);if(!d)return;if(d.showModal){try{d.showModal()}catch(e){d.setAttribute('open','')}}else d.setAttribute('open','')}
 function closeDlg(id){var d=$(id);if(!d)return;if(d.close){try{d.close()}catch(e){d.removeAttribute('open')}}else d.removeAttribute('open')}
 function needLink(){if(topic)return false;openDlg('link-dlg');return true}
@@ -1707,7 +1711,7 @@ if($('chclr'))$('chclr').onclick=function(){if(needLink())return;send(last&&last
 function applyLink(v){v=(v||'').trim().replace(/^.*ctl=/,'');if(!RX.test(v))return false;gset(v);topic=v;connect();ui();closeDlg('link-dlg');return true}
 if($('chlink'))$('chlink').onclick=function(){openDlg('link-dlg')};
 if($('link-go'))$('link-go').onclick=function(){if(!applyLink($('link-code')&&$('link-code').value)){var e=$('link-code');if(e)e.placeholder='That code was not recognized'};};
-['link-x','g-x','c-x'].forEach(function(i){if($(i))$(i).onclick=function(){closeDlg({ 'link-x':'link-dlg','g-x':'g-dlg','c-x':'c-dlg'}[i])}});
+['link-x','g-x','c-x','stop-x'].forEach(function(i){if($(i))$(i).onclick=function(){closeDlg({ 'link-x':'link-dlg','g-x':'g-dlg','c-x':'c-dlg','stop-x':'stop-dlg'}[i])}});
 if($('mc-guest'))$('mc-guest').onclick=function(){if(needLink())return;openDlg('g-dlg')};
 if($('mc-caller'))$('mc-caller').onclick=function(){if(needLink())return;openDlg('c-dlg')};
 if($('mc-logo'))$('mc-logo').onclick=function(){if(needLink())return;send('logo')};
@@ -1738,23 +1742,23 @@ var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hourCycle:
 function ct(){var o={};parts.formatToParts(new Date()).forEach(function(p){if(p.type!=='literal')o[p.type]=parseInt(p.value,10)});return{h:o.hour%24,m:o.minute,s:o.second}}
 function fmt(m){m=Math.floor(m+1e-6);var h=Math.floor(m/60)%24,mm=m%60;return(h%12||12)+':'+(mm<10?'0':'')+mm}
 function fmtp(m){return fmt(m)+' '+(Math.floor(m/60)%24<12?'AM':'PM')}
-var rows=[].slice.call(document.querySelectorAll('.tr[data-off]')),start=null,holdS=0,heldAt=null,fq=/[?&]t=(-?\d+(?:\.\d+)?)/.exec(location.search),FORCE=fq?parseFloat(fq[1])*60:null,segs=[].slice.call(document.querySelectorAll('#tl a[data-off]')),TL=$('tl'),PH=$('ph');
-try{var o=JSON.parse(store.get(KEY)||'null');if(o){if(typeof o.startMin==='number')start=o.startMin;if(typeof o.holdS==='number')holdS=o.holdS;if(typeof o.heldAt==='number')heldAt=o.heldAt}}catch(e){}
-function persist(){if(start===null&&heldAt===null&&!holdS)store.del(KEY);else store.set(KEY,JSON.stringify({startMin:start,setAt:new Date().toISOString(),holdS:holdS,heldAt:heldAt}))}
+var rows=[].slice.call(document.querySelectorAll('.tr[data-off]')),start=null,holdS=0,heldAt=null,idle=false,fq=/[?&]t=(-?\d+(?:\.\d+)?)/.exec(location.search),FORCE=fq?parseFloat(fq[1])*60:null,segs=[].slice.call(document.querySelectorAll('#tl a[data-off]')),TL=$('tl'),PH=$('ph');
+try{var o=JSON.parse(store.get(KEY)||'null');if(o){if(typeof o.startMin==='number')start=o.startMin;if(typeof o.holdS==='number')holdS=o.holdS;if(typeof o.heldAt==='number')heldAt=o.heldAt;if(o.idle)idle=true}}catch(e){}
+function persist(){if(start===null&&heldAt===null&&!holdS&&!idle)store.del(KEY);else store.set(KEY,JSON.stringify({startMin:start,setAt:new Date().toISOString(),holdS:holdS,heldAt:heldAt,idle:!!idle}))}
 /* hold = freeze the current topic and the show clock; resume pushes every later block back by the time held. window.ditmRos lets the chyron link (CHY_JS) drive and mirror it */
-var api=window.ditmRos={held:function(){return heldAt!==null},hold:function(at){if(heldAt===null){heldAt=at||Date.now();persist();paint()}},
+var api=window.ditmRos={held:function(){return heldAt!==null},idle:function(){return !!idle},hold:function(at){if(heldAt===null){heldAt=at||Date.now();persist();paint()}},
  resume:function(at){if(heldAt!==null){holdS+=Math.round(((at||Date.now())-heldAt)/1000);heldAt=null;persist();paint()}},
- adopt:function(a){start=a.startMin;holdS=Math.round(a.holdS||0);heldAt=a.heldAt||null;persist();paint()},snap:function(){return{start:start,holdS:holdS,heldAt:heldAt}},onStart:null,onStop:null,onChange:null};
+ adopt:function(a){start=a.startMin;holdS=Math.round(a.holdS||0);heldAt=a.heldAt||null;if(a.idle)idle=true;else if(a.startMin!=null)idle=false;persist();paint()},snap:function(){return{start:start,holdS:holdS,heldAt:heldAt,idle:!!idle}},onStart:null,onStop:null,onChange:null};
 function base(){return (start===null?PLAN:start)+holdS/60}
 function paint(){var st=base();
  rows.forEach(function(r){var off=+r.dataset.off,dur=+r.dataset.dur,s=st+off,e=s+dur,sm=r.querySelector('small');
   r.querySelector('b').textContent=fmt(s)+'\u2013'+fmt(e);r.dataset.range=fmt(s)+'\u2013'+fmt(e);
   r.dataset.flexTxt=r.dataset.stretch?('stretch to '+fmt(s+(+r.dataset.stretch))):'';if(!r.classList.contains('islive'))sm.textContent=r.dataset.flexTxt});
- $('ssind').textContent=(start===null?'Planned start 8:00 AM':'Started '+fmtp(start))+(heldAt!==null?' \u00B7 HELD':'');
- $('ssreset').disabled=start===null;b.setAttribute('aria-label',start===null?'Set show start to now':'Show started '+fmtp(start)+'. Tap to set start to now again');
+ $('ssind').textContent=(idle?'Stopped \u00B7 0:00':(start===null?'Planned start 8:00 AM':'Started '+fmtp(start)))+(heldAt!==null&&!idle?' \u00B7 HELD':'');
+ b.setAttribute('aria-label',start===null||idle?'Set show start to now':'Show started '+fmtp(start)+'. Tap to set start to now again');
  live();if(api.onChange)api.onChange()}
-function live(){var st=base(),n=ct(),nowS=n.h*3600+n.m*60+n.s,onDay=ctd.format(new Date())===SD,active=start!==null||onDay,hit=null,left=0,over=false;
- var el=nowS-st*60;if(heldAt!==null)el-=Math.floor((Date.now()-heldAt)/1000);if(FORCE!==null){active=true;el=FORCE}if(active){rows.forEach(function(r){var off=+r.dataset.off*60,dur=+r.dataset.dur*60;if(el>=off&&el<off+dur){hit=r;left=off+dur-el}});over=el>=3600}
+function live(){var st=base(),n=ct(),nowS=n.h*3600+n.m*60+n.s,onDay=ctd.format(new Date())===SD,active=!idle&&(start!==null||onDay),hit=null,left=0,over=false;
+ var el=nowS-st*60;if(heldAt!==null)el-=Math.floor((Date.now()-heldAt)/1000);if(FORCE!==null&&!idle){active=true;el=FORCE}if(idle){el=0;active=false}if(active){rows.forEach(function(r){var off=+r.dataset.off*60,dur=+r.dataset.dur*60;if(el>=off&&el<off+dur){hit=r;left=off+dur-el}});over=el>=3600}
  rows.forEach(function(r){var d=r.closest('details.sec,details.rd'),L=r===hit;r.classList.toggle('islive',L);if(d)d.classList.toggle('live',L);var tl=d&&d.querySelector('.tl');
   if(L){r.querySelector('small').textContent=(heldAt!==null?'HELD \u00B7 ':'LIVE \u00B7 ')+Math.floor(left/60)+':'+('0'+left%60).slice(-2)+' left'}else{r.querySelector('small').textContent=r.dataset.flexTxt||''}});
  [].forEach.call(document.querySelectorAll('.clock a'),function(a){a.classList.toggle('live',!!hit&&a.dataset.jump==='blk-'+hit.dataset.letter)});
@@ -1769,7 +1773,8 @@ function playhead(active,el){if(!TL||!segs.length)return;var T=0;segs.forEach(fu
 var cn=$('cwnext');
 function fmtt(t){t=Math.max(0,t);var h=Math.floor(t/3600),m=Math.floor(t%3600/60),s=t%60;return h?h+':'+('0'+m).slice(-2)+':'+('0'+s).slice(-2):m+':'+('0'+s).slice(-2)}
 function countdown(active,el,hit){if(!cn)return;var T=rows.length?(+rows[rows.length-1].dataset.off+ +rows[rows.length-1].dataset.dur)*60:3600,lab='',chip='',nm='',col='',t=null,msg='';
- if(!active){msg=(SD>ctd.format(new Date()))?'Show: '+b.dataset.showlabel+' \u00B7 8:00 AM':'Show\u2019s over'}
+ if(idle){msg='Stopped \u00B7 0:00'}
+ else if(!active){msg=(SD>ctd.format(new Date()))?'Show: '+b.dataset.showlabel+' \u00B7 8:00 AM':'Show\u2019s over'}
  else if(el<0){lab='Show starts in';t=-el}
  else if(el>=T){msg='Show\u2019s over'}
  else{var i=rows.indexOf(hit);if(i>=0&&i<rows.length-1){var nx=rows[i+1];lab='Next:';chip=nx.dataset.letter;nm=nx.dataset.name;col=nx.dataset.color;t=+nx.dataset.off*60-el}else{lab='Show ends in';t=T-el}}
@@ -1777,9 +1782,21 @@ function countdown(active,el,hit){if(!cn)return;var T=rows.length?(+rows[rows.le
  $('cwn-l').textContent=msg||lab;var c=$('cwn-c');c.textContent=chip;c.style.display=chip?'inline-block':'none';c.style.background=col||'';
  $('cwn-n').textContent=nm;$('cwn-t').textContent=t===null?'':(chip?'in ':'')+fmtt(t);
  cn.setAttribute('aria-label',(msg||lab)+' '+nm+' '+(t===null?'':fmtt(t)))}
-b.onclick=function(){var n=ct();start=n.h*60+n.m;holdS=0;heldAt=null;persist();paint();if(api.onStart)api.onStart();
+b.onclick=function(){var n=ct();start=n.h*60+n.m;holdS=0;heldAt=null;idle=false;persist();paint();if(api.onStart)api.onStart();
  var t=document.getElementById('toast');if(t){t.textContent='Show start set to '+fmtp(start);t.className='on';setTimeout(function(){t.className=''},1800)}};
-$('ssreset').onclick=function(){start=null;holdS=0;heldAt=null;store.del(KEY);paint();if(api.onStop)api.onStop()};
+function openStop(){var d=$('stop-dlg');if(!d)return;if(d.showModal){try{d.showModal()}catch(e){d.setAttribute('open','')}}else d.setAttribute('open','')}
+function closeStop(){var d=$('stop-dlg');if(!d)return;if(d.close){try{d.close()}catch(e){d.removeAttribute('open')}}else d.removeAttribute('open')}
+function stopReset(){idle=true;start=null;holdS=0;heldAt=null;store.del(KEY);persist();
+ rows.forEach(function(r){r.classList.remove('islive');var d=r.closest('details.sec,details.rd');if(d)d.classList.remove('live')});
+ [].forEach.call(document.querySelectorAll('.clock a.live'),function(a){a.classList.remove('live')});
+ var pill=$('mc-pill');if(pill){pill.textContent='STANDBY';pill.className='mcp stand'}
+ paint();if(api.onStop)api.onStop();
+ var t=document.getElementById('toast');if(t){t.textContent='Show stopped \u00B7 reset to 0:00';t.className='on';setTimeout(function(){t.className=''},1800)}}
+if($('ssstop'))$('ssstop').onclick=openStop;
+if($('ssreset'))$('ssreset').onclick=openStop;
+if($('stop-go'))$('stop-go').onclick=function(){closeStop();stopReset()};
+if($('stop-no'))$('stop-no').onclick=closeStop;
+if($('stop-dlg'))$('stop-dlg').addEventListener('cancel',function(e){e.preventDefault();closeStop()});
 paint();setInterval(live,1000);
 })();
 """
@@ -2172,7 +2189,10 @@ def studio_html(data, archive_href=None):
         f'<dialog id="link-dlg" class="dlg" aria-labelledby="link-ttl"><div class="dlg-h"><h3 id="link-ttl">Link this device</h3><button id="link-x" class="dlg-x" type="button" aria-label="Close">×</button></div><div class="dlg-b">'
         f'<p>This iPad isn\u2019t linked to the studio chyron yet. Open the dashboard once from the control link (the address with <code>?ctl=</code> in it) and this device will remember it. You can also paste the link code here.</p>'
         f'<label>Link code<input id="link-code" type="text" autocomplete="off" spellcheck="false" placeholder="Paste the link code"></label>'
-        f'<div class="dlg-a"><button id="link-go" type="button">Link</button></div></div></dialog></div>'
+        f'<div class="dlg-a"><button id="link-go" type="button">Link</button></div></div></dialog>'
+        f'<dialog id="stop-dlg" class="dlg" aria-labelledby="stop-ttl" aria-describedby="stop-msg"><div class="dlg-h"><h3 id="stop-ttl">Stop the show?</h3><button id="stop-x" class="dlg-x" type="button" aria-label="Cancel">×</button></div><div class="dlg-b">'
+        f'<p id="stop-msg">Stop the show and reset to 0:00?</p>'
+        f'<div class="dlg-a"><button id="stop-go" type="button">Stop &amp; reset</button><button id="stop-no" type="button">Cancel</button></div></div></dialog></div>'
     )
     mcbar = (
         f'<div id="mc">'
@@ -2182,6 +2202,7 @@ def studio_html(data, archive_href=None):
         f'<div id="chy" class="mc-ops">'
         f'<button id="ssbtn" type="button" data-showdate="{m["showDate"]}" data-showlabel="{showdate}" aria-label="Set show start to now">Start</button>'
         f'<button id="chhold" type="button" aria-pressed="false" title="Hold freezes the current topic and the show clock; Resume carries on and pushes the later topics back">Hold</button>'
+        f'<button id="ssstop" type="button" title="Stop the show and reset to 0:00" aria-label="Stop the show and reset to 0:00" aria-haspopup="dialog" aria-controls="stop-dlg">Stop</button>'
         f'<button id="chprev" type="button">Prev</button><button id="chnext" type="button">Next</button><button id="chclr" type="button">Clear</button>'
         f'<button id="mc-guest" type="button">Guest</button><button id="mc-caller" type="button">Caller</button><button id="mc-logo" type="button">Logo</button>'
         f'<details id="mc-more"><summary aria-label="More controls">More</summary><div class="mc-more-p">'
@@ -2189,7 +2210,7 @@ def studio_html(data, archive_href=None):
         f'<button id="smaller" type="button">A−</button><button id="bigger" type="button">A+</button>'
         f'<button id="expand" type="button">Expand all</button><button id="collapse" type="button">Collapse all</button>'
         f'<button id="sortbtn" type="button" title="Order items by trend score or by the original editorial order">Sort: Score</button>'
-        f'<button id="ssreset" type="button" disabled title="Reset to 8:00 AM" aria-label="Reset show start to 8:00 AM">↺ 8:00</button>'
+        f'<button id="ssreset" type="button" title="Stop the show and reset to 0:00" aria-label="Stop the show and reset to 0:00" aria-haspopup="dialog" aria-controls="stop-dlg">Stop &amp; reset</button>'
         f'<button id="chlink" type="button" class="chlink" title="Link this page to the OBS chyron (paste the link code once)">Link chyron</button>'
         f'<a id="brkbadge" class="btnlike" href="#brk" data-jump="brk" title="Breaking watch: new since this page was built">Breaking <b id="brkb">–</b></a>'
         f'<a href="#top" data-jump="top" aria-label="Back to top">Top ↑</a>'
