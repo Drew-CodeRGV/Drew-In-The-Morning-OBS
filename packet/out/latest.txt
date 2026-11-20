@@ -25,7 +25,7 @@ COLD OPEN (read aloud, about 45 seconds)
   with Hidalgo County's first screwworm case, plus SpaceX's quiet data-center air permit. On
   the National Desk, the first-ever Trump, Xi and Putin summit. In Trending, GTA Six finally
   dropping. And in How We'd Talk to Our Kids, Jess and I take on energy drinks, caffeine and
-  what a 14-year-old actually needs to know. It's 70 and clear outside, the coffee's hot, so
+  what a 14-year-old actually needs to know. It's 68 and clear outside, the coffee's hot, so
   stick around, this is Drew in the Morning.
   JINGLE: Drew in the Morning. Your Valley, your news, your morning.
   CONFIRM BEFORE AIR (teased, unconfirmed; not part of the spoken text): RGV: Hidalgo Co.
@@ -48,7 +48,7 @@ WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min, from the family calendar) · 5
     work, private or unsure); 5 qualifying occurrences used. Names never leave this note.
 
 STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README.md). 44
-  stories, 0 duplicate(s) merged, 1 hot, 1 trending, 2 uncovered lead(s). Google Trends US-
+  stories, 0 duplicate(s) merged, 0 hot, 2 trending, 2 uncovered lead(s). Google Trends US-
   TX 10 + US 10 items, fetched 2026-11-20T03:00:46+00:00 (cache).
 
 TOP HEADLINES · RGV FIRST
@@ -58,10 +58,10 @@ TOP HEADLINES · RGV FIRST
   - [ACT 20] SpaceX got its TCEQ air permit (35 gas turbines, 750 MW) for the Starbase data
     center a day before Cameron County said no to a tax-break hearing (MyRGV · Nov 18)
     https://myrgv.com/local-news/2026/11/18/spacex-received-data-center-permit-a-day-before-tax-break-rejection/
-  - [ACT 12] La Joya ISD uses under 60% of its space, needs $160M+ in repairs and may close
+  - [ACT 11] La Joya ISD uses under 60% of its space, needs $160M+ in repairs and may close
     more campuses after losing ~8,000 students in a decade (KRGV · Nov 18)
     https://www.krgv.com/news/plummeting-enrollment-leaves-la-joya-isd-facing-160m-maintenance-bill-and-possible-closures/
-  - [ACT 10] McAllen city manager: $17.5B in retail sales (2023, Dallas Fed), ~28% from
+  - [ACT 9] McAllen city manager: $17.5B in retail sales (2023, Dallas Fed), ~28% from
     Mexican shoppers; ~$99M sales tax through Sept 2026 (Texas Border Business · Nov 18)
     https://texasborderbusiness.com/mcallen-retail-sales-reach-17-5-billion-as-sales-tax-revenues-continue-to-climb/
   - [ACT 9] Cameron County Elections Administrator Remi Garza resigns for a Secretary of
@@ -90,7 +90,7 @@ TOP HEADLINES · RGV FIRST
     https://www.krgv.com/news/city-of-alton-wants-residents-to-help-shape-first-ever-comprehensive-plan/
   - [ACT 9] Mission councilwoman Jessica Ortega sworn in for a fourth term (MyRGV · Nov 18)
     https://myrgv.com/local-news/2026/11/18/jessica-ortega-sworn-in-after-voters-elect-her-to-fourth-term-with-mission/
-  - [ACT 18] Mission bans loud dog barking 10 PM-6 AM, caps hens at four, bans roosters
+  - [ACT 17] Mission bans loud dog barking 10 PM-6 AM, caps hens at four, bans roosters
     (Daily McAllen · Nov 19)
     https://dailymcallen.com/local-news/editions/11-19-2026
   - [ACT 9] Von Miller visits McAllen ahead of the Dec. 5 Holiday Parade ('Wild Christmas')
@@ -123,7 +123,7 @@ TOP HEADLINES · RGV FIRST
   - [ACT 9] Sen. John Cornyn blocks Trump's late pick (Elliot Gaiser) for a North Texas
     federal judgeship: not a Texan, not vetted (Texas Tribune · Nov 18)
     https://www.texastribune.org/2026/11/18/texas-john-cornyn-trump-judge-gaiser-blocked/
-  - [ACT 18] How Texas Republicans' 2025 congressional gerrymander fell short (incl.
+  - [ACT 17] How Texas Republicans' 2025 congressional gerrymander fell short (incl.
     Cuellar's Laredo race) (Texas Tribune · Nov 19)
     https://www.texastribune.org/2026/11/19/texas-redistricting-2026-midterms-gop-congressional-map/
   - [ACT 9] Democrats' statewide sweep reshapes Texas's high courts (MyRGV (Texas Tribune) ·
@@ -132,7 +132,7 @@ TOP HEADLINES · RGV FIRST
   Photo: File photo: Starship (Steve Jurvetson, CC BY 2.0, Wikimedia Commons) https://commons.wikimedia.org/wiki/File:SpaceX_Starship_before_IFT-5.jpg
 
 TRENDING NEWS · what's trending around the nation (separate from the National Desk)
-- [HOT 45] Grand Theft Auto VI is out after a 13-year wait  [gaming]
+- [TREND 44] Grand Theft Auto VI is out after a 13-year wait  [gaming]
     SUMMARY: GTA VI launched Nov 19 on PS5 and Xbox Series X; the download is 212 GB, and
       the Miami Heat went all-in on a 'Vice City' tie-in.
     RIFF: Half the Valley called in sick today, the other half is downloading 212 gigs on
@@ -162,13 +162,13 @@ TRENDING NEWS · what's trending around the nation (separate from the National D
     RIFF: The Valley bleeds silver and blue, and right now it's mostly bleeding. Is a new
       play-caller enough before the Titans Sunday?
     ProFootballRumors · Nov 18: https://www.profootballrumors.com/2026/11/mike-pettine-to-take-over-as-cowboys-defensive-play-caller
-- [ACT 18] Musk: his record $446M midterm spending was 'pretty foolish'  [business]
+- [ACT 17] Musk: his record $446M midterm spending was 'pretty foolish'  [business]
     SUMMARY: At the DealBook Summit, Elon Musk, the cycle's top individual donor (much of it
       in Texas), called the spending 'pretty foolish' and said he's 'not MAGA'.
     RIFF: $446 million and the shrug emoji. Meanwhile, his Starbase data center just lost
       its tax-break bid in Cameron County.
     BBC · Nov 19: https://www.bbc.com/news/articles/cm9q8j2z3gg8o
-- [ACT 18] Hila Klein addresses husband Ethan Klein's alleged affair  [celebrity]  [CONFIRM BEFORE AIR: Allegation only; single outlet opened via headline, CONFIRM BEFORE AIR]
+- [ACT 17] Hila Klein addresses husband Ethan Klein's alleged affair  [celebrity]  [CONFIRM BEFORE AIR: Allegation only; single outlet opened via headline, CONFIRM BEFORE AIR]
     SUMMARY: h3h3 co-host Hila Klein publicly addressed her husband Ethan's alleged affair:
       'My whole entire life just shattered.'
     RIFF: Your teens know h3h3 even if you don't. Handle gently; it's a family going through
@@ -470,7 +470,7 @@ WEATHER · McALLEN / RGV (National Weather Service BRO (api.weather.gov))
   Wed Nov 25  Mostly Sunny, high 66F / low 52F, rain 5%, wind N 9 mph
   Thu Nov 26  Mostly Sunny, high 67F / low --F, rain 9%, wind ENE 7 mph
   Alerts: none active
-  Updated 2026-11-20T02:45:13+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
+  Updated 2026-11-20T03:45:14+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
   NWS Brownsville office: https://www.weather.gov/bro/
   API: https://api.weather.gov/gridpoints/BRO/49,19/forecast
 
@@ -646,4 +646,4 @@ What your kids might be saying at school this week, and one line on how to bring
 NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-19 21:23 CT.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-19 22:41 CT.

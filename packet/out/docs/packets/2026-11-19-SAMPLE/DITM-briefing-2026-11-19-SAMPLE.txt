@@ -27,7 +27,7 @@ COLD OPEN (read aloud, about 45 seconds)
   runoff. On the National Desk, the FAA's nationwide ground stop and what it means for
   Valley flyers. In Trending, Ella Langley's big night at the CMA Awards. And in How We'd
   Talk to Our Kids, Jess and I take on strangers online and what to say when the group chat
-  turns mean. It's 70 and clear outside, the coffee's hot, so stick around, this is Drew in
+  turns mean. It's 68 and clear outside, the coffee's hot, so stick around, this is Drew in
   the Morning.
   JINGLE: Drew in the Morning. Your Valley, your news, your morning.
   CONFIRM BEFORE AIR (teased, unconfirmed; not part of the spoken text): National Desk: FAA
@@ -262,7 +262,7 @@ WEATHER · McALLEN / RGV (National Weather Service BRO (api.weather.gov))
   Wed Nov 25  Mostly Sunny, high 66F / low 52F, rain 5%, wind N 9 mph
   Thu Nov 26  Mostly Sunny, high 67F / low --F, rain 9%, wind ENE 7 mph
   Alerts: none active
-  Updated 2026-11-20T02:45:13+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
+  Updated 2026-11-20T03:45:14+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
   NWS Brownsville office: https://www.weather.gov/bro/
   API: https://api.weather.gov/gridpoints/BRO/49,19/forecast
 
@@ -438,4 +438,4 @@ What your kids might be saying at school this week, and one line on how to bring
 NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-19 21:22 CT.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-19 22:41 CT.

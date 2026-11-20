@@ -148,6 +148,6 @@ Use the `user-Gmail` connector (drew@drewlentz.com) tools `create_draft` / `send
 
 
 ## Studio page layout (v6)
-- All 15 sections are the same size when collapsed (one tile grid: 1 column on phones, 2 on iPad portrait, 3-4 on laptops; fixed tile height, one-line clamped title and subtitle, count and badges on the second row). A section that is opened spans the whole row (`grid-column: 1 / -1`) and flows its cards in 2 to 4 columns (about 320 px minimum per card).
+- Every section is a full-width horizontal bar when collapsed, one per row, all the same height (fixed bar height; at 700 px and up the title, the full subtitle, the count and badges and the arrow all sit on the one bar, with nothing truncated; on phones long subtitles clip with an ellipsis). Tapping a bar expands it in place, full width, and flows its cards in 2 to 4 columns (about 320 px minimum per card).
 - The page always scrolls natively. Cause of the old phone "no scroll": the whole header (logo, title, Show Start, six tool buttons, the clock) plus the Used bar were both `position: sticky`, together about 640 px of an 844 px phone screen (680 of 740 on a small one), so almost nothing was left to scroll and the content slid under them. Below 1000 px the header and Used bar now scroll away and only a 44 px mini clock bar stays pinned; at 1000 px and up the header is sticky but compact (tools and recap moved to a normal row under it).
 - The A-L show clock bar and the section pills swipe sideways on phones (44 px minimum tap targets).
