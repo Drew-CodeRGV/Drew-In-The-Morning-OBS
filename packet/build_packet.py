@@ -1172,6 +1172,9 @@ summary .sb,summary .cf{border:1px solid rgba(255,255,255,.75)}
 .trn .ang{color:var(--fg)}.trn .ang b{color:var(--acc)}
 .ss{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:4px 0 0}
 .ss button{min-height:44px;min-width:44px;white-space:nowrap}
+#chy{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:4px 0 0}#chy[hidden],.chlink[hidden],#mb-hold[hidden]{display:none}
+#chy .chl{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}#chy button,.chlink{min-height:44px;min-width:44px;white-space:nowrap}
+#chst{font-size:.8rem;font-weight:700;color:var(--mut);white-space:nowrap}.chlink{margin-top:4px;font-size:.8rem}
 #ssbtn{background:var(--ok);color:#fff;border-color:var(--ok);padding:4px 16px;font-weight:900}
 #ssreset:disabled{opacity:.45;cursor:default}
 #ssind{display:inline-block;min-width:11.2em;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
@@ -1203,6 +1206,7 @@ summary .sb,summary .cf{border:1px solid rgba(255,255,255,.75)}
 #minibar.red{background:#c1121f;color:#fff}#minibar.red span{color:#fff}
 #minibar a,#minibar button{flex:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;padding:0 12px;font-weight:800;font-size:.85rem;text-decoration:none}
 #minibar a{color:var(--link)}#minibar.red a{color:#fff}
+#mb-hold{border-radius:10px}#mb-hold.held,#chhold.held{background:#f2a900;color:#1b2430;border-color:#f2a900}
 #mb-start{background:var(--ok);color:#fff;border-color:var(--ok);border-radius:10px;padding:0 12px}
 .toolbar{display:flex;gap:6px 14px;align-items:center;flex-wrap:wrap;padding:6px max(16px,var(--sr)) 0 max(16px,var(--sl))}
 .toolbar .t{font-size:.82rem;color:var(--mut);font-weight:600;flex:1 1 260px;min-width:0}
@@ -1329,6 +1333,46 @@ summary,summary *,.rtn,.tn,.tt,h3,h4{overflow-wrap:normal;word-break:normal;hyph
 @media (max-width:560px){.sec>summary .sm:has(.cf) .cnt{display:none}.sec>summary .sm{max-width:11rem}.sec>summary .sm .sb{display:none}#obits>summary .sm{max-width:13.5rem}.sec.blk>summary .sm .cnt{display:none}.sec>summary .sm .tr{min-width:0;font-size:.8rem;margin:0}.sec>summary .sm .tr small{display:none}}
 """
 
+CHY_JS = r"""
+(function(){var api=window.ditmRos;if(!api)return;var $=function(i){return document.getElementById(i)};
+var LK='ditm-chyron-topic-v1',RX=/^[A-Za-z0-9_-]{6,64}$/,mem=null,CMDS={start:1,stop:1,hold:1,resume:1,next:1,prev:1,goto:1,clear:1,show:1};
+function gget(){try{return localStorage.getItem(LK)}catch(e){return mem}}function gset(v){mem=v;try{localStorage.setItem(LK,v)}catch(e){}}
+var nq=/[?&]ntfy=(https:\/\/ntfy\.sh|http:\/\/127\.0\.0\.1:\d+)(?:&|$)/.exec((function(){try{return decodeURIComponent(location.search)}catch(e){return''}})()),BASE=nq?nq[1]:'https://ntfy.sh';
+var q=/[?&#]ctl=([A-Za-z0-9_-]{6,64})/.exec(location.search+location.hash);
+if(q){gset(q[1]);try{history.replaceState(null,'',location.pathname)}catch(e){}}
+var topic=gget();if(!RX.test(topic||''))topic=null;
+var last=null,vis=true;
+function send(cmd,idx){if(!topic||!Object.prototype.hasOwnProperty.call(CMDS,cmd))return;var m={k:'cmd',cmd:cmd,at:Date.now(),v:1};if(typeof idx==='number')m.idx=idx;
+ try{fetch(BASE+'/'+topic,{method:'POST',body:JSON.stringify(m)}).catch(function(){})}catch(e){}}
+function ago(ms){var s=Math.max(0,Math.round(ms/1000));return s<60?s+'s':s<3600?Math.floor(s/60)+'m':Math.floor(s/3600)+'h'}
+function ui(){var on=!!topic;if($('chy'))$('chy').hidden=!on;if($('chlink'))$('chlink').hidden=on;if($('mb-hold'))$('mb-hold').hidden=!on;
+ var h=api.held();['chhold','mb-hold'].forEach(function(i){var b=$(i);if(!b)return;b.textContent=h?'\u25B6 Resume':'\u23F8 Hold';b.classList.toggle('held',h);b.setAttribute('aria-pressed',h?'true':'false')});
+ var c=$('chclr');if(c)c.textContent=(last&&last.visible===false)?'Show':'Clear';
+ var st=$('chst');if(st){if(!last)st.textContent='waiting for the chyron\u2026';else{var age=Date.now()-last.rx,live=last.running;
+  st.textContent=(last.letter||'?')+' \u00B7 '+(live?(last.held?'HELD':'AUTO'):'MANUAL')+(last.visible===false?' \u00B7 off air':'')+' \u00B7 '+(age>600000?'last heard '+ago(age)+' ago':'synced');st.dataset.state=live?(last.held?'held':'auto'):'manual'}}}
+api.onChange=ui;api.onStart=function(){send('start')};api.onStop=function(){send('stop')};
+function hold(){if(api.held()){api.resume();send('resume')}else{api.hold();send('hold')}}
+['chhold','mb-hold'].forEach(function(i){var b=$(i);if(b)b.onclick=hold});
+if($('chprev'))$('chprev').onclick=function(){send('prev')};if($('chnext'))$('chnext').onclick=function(){send('next')};
+if($('chclr'))$('chclr').onclick=function(){send(last&&last.visible===false?'show':'clear')};
+if($('chlink'))$('chlink').onclick=function(){var v=(prompt('Paste the chyron link code (the part after ctl=)')||'').trim().replace(/^.*ctl=/,'');if(RX.test(v)){gset(v);topic=v;connect();ui()}};
+function ctDate(ms){return new Intl.DateTimeFormat('en-CA',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(ms))}
+function ctMin(ms){var o={};new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hourCycle:'h23',hour:'2-digit',minute:'2-digit'}).formatToParts(new Date(ms)).forEach(function(p){if(p.type!=='literal')o[p.type]=parseInt(p.value,10)});return (o.hour%24)*60+o.minute}
+/* the chyron owns the truth: mirror its state (running, held, which block) and follow it when it is running */
+function onState(st){var rx=Date.now();st.rx=rx;if(last&&(last.at||0)>(st.at||0))return;last=st;
+ var fresh=rx-(st.at||0)<240000;
+ if(fresh&&st.running&&st.startAt){var sm=ctMin(st.startAt),a=api.snap(),hs=Math.round((st.holdMs||0)/1000),hd=st.held?st.heldAt:null;
+  if(a.start!==sm||a.holdS!==hs||(a.heldAt===null)!==(hd===null))api.adopt({startMin:sm,holdS:hs,heldAt:hd})}
+ ui()}
+var es=null;function connect(){if(es){try{es.close()}catch(e){}es=null}if(!topic||!window.EventSource)return;
+ es=new EventSource(BASE+'/'+topic+'/sse?since=6h');
+ es.onmessage=function(ev){var m;try{m=JSON.parse(ev.data)}catch(e){return}if(!m||m.event!=='message'||!m.message)return;var c;try{c=JSON.parse(m.message)}catch(e){return}
+  if(c&&c.k==='state'&&typeof c.at==='number')onState(c)};
+ es.onerror=function(){var st=$('chst');if(st&&!last)st.textContent='connecting\u2026'}}
+connect();ui();setInterval(ui,5000);
+window.ditmChy={send:send,linked:function(){return !!topic},state:function(){return last}};
+})();
+"""
 SHOW_JS = r"""
 (function(){var b=document.getElementById('ssbtn');if(!b)return;
 var SD=b.dataset.showdate,KEY='ditm-showstart-v1:'+SD,PLAN=480,mem={},$=function(i){return document.getElementById(i)};
@@ -1337,25 +1381,30 @@ var store={get:function(k){try{var v=localStorage.getItem(k);return v===null?(me
 var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hourCycle:'h23',hour:'2-digit',minute:'2-digit',second:'2-digit'}),
  ctd=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit'});
 function ct(){var o={};parts.formatToParts(new Date()).forEach(function(p){if(p.type!=='literal')o[p.type]=parseInt(p.value,10)});return{h:o.hour%24,m:o.minute,s:o.second}}
-function fmt(m){var h=Math.floor(m/60)%24,mm=m%60;return(h%12||12)+':'+(mm<10?'0':'')+mm}
+function fmt(m){m=Math.floor(m+1e-6);var h=Math.floor(m/60)%24,mm=m%60;return(h%12||12)+':'+(mm<10?'0':'')+mm}
 function fmtp(m){return fmt(m)+' '+(Math.floor(m/60)%24<12?'AM':'PM')}
-var rows=[].slice.call(document.querySelectorAll('.tr[data-off]')),start=null,fq=/[?&]t=(-?\d+(?:\.\d+)?)/.exec(location.search),FORCE=fq?parseFloat(fq[1])*60:null,segs=[].slice.call(document.querySelectorAll('#tl a[data-off]')),TL=$('tl'),PH=$('ph');
-try{var o=JSON.parse(store.get(KEY)||'null');if(o&&typeof o.startMin==='number')start=o.startMin}catch(e){}
-function base(){return start===null?PLAN:start}
+var rows=[].slice.call(document.querySelectorAll('.tr[data-off]')),start=null,holdS=0,heldAt=null,fq=/[?&]t=(-?\d+(?:\.\d+)?)/.exec(location.search),FORCE=fq?parseFloat(fq[1])*60:null,segs=[].slice.call(document.querySelectorAll('#tl a[data-off]')),TL=$('tl'),PH=$('ph');
+try{var o=JSON.parse(store.get(KEY)||'null');if(o){if(typeof o.startMin==='number')start=o.startMin;if(typeof o.holdS==='number')holdS=o.holdS;if(typeof o.heldAt==='number')heldAt=o.heldAt}}catch(e){}
+function persist(){if(start===null&&heldAt===null&&!holdS)store.del(KEY);else store.set(KEY,JSON.stringify({startMin:start,setAt:new Date().toISOString(),holdS:holdS,heldAt:heldAt}))}
+/* hold = freeze the current topic and the show clock; resume pushes every later block back by the time held. window.ditmRos lets the chyron link (CHY_JS) drive and mirror it */
+var api=window.ditmRos={held:function(){return heldAt!==null},hold:function(at){if(heldAt===null){heldAt=at||Date.now();persist();paint()}},
+ resume:function(at){if(heldAt!==null){holdS+=Math.round(((at||Date.now())-heldAt)/1000);heldAt=null;persist();paint()}},
+ adopt:function(a){start=a.startMin;holdS=Math.round(a.holdS||0);heldAt=a.heldAt||null;persist();paint()},snap:function(){return{start:start,holdS:holdS,heldAt:heldAt}},onStart:null,onStop:null,onChange:null};
+function base(){return (start===null?PLAN:start)+holdS/60}
 function paint(){var st=base();
  rows.forEach(function(r){var off=+r.dataset.off,dur=+r.dataset.dur,s=st+off,e=s+dur,sm=r.querySelector('small');
   r.querySelector('b').textContent=fmt(s)+'\u2013'+fmt(e);r.dataset.range=fmt(s)+'\u2013'+fmt(e);
   r.dataset.flexTxt=r.dataset.stretch?('stretch to '+fmt(s+(+r.dataset.stretch))):'';if(!r.classList.contains('islive'))sm.textContent=r.dataset.flexTxt});
- $('ssind').textContent=start===null?'Planned start 8:00 AM':'Started '+fmtp(start);
+ $('ssind').textContent=(start===null?'Planned start 8:00 AM':'Started '+fmtp(start))+(heldAt!==null?' \u00B7 HELD':'');
  $('ssreset').disabled=start===null;b.setAttribute('aria-label',start===null?'Set show start to now':'Show started '+fmtp(start)+'. Tap to set start to now again');
- live()}
+ live();if(api.onChange)api.onChange()}
 function live(){var st=base(),n=ct(),nowS=n.h*3600+n.m*60+n.s,onDay=ctd.format(new Date())===SD,active=start!==null||onDay,hit=null,left=0,over=false;
- var el=nowS-st*60;if(FORCE!==null){active=true;el=FORCE}if(active){rows.forEach(function(r){var off=+r.dataset.off*60,dur=+r.dataset.dur*60;if(el>=off&&el<off+dur){hit=r;left=off+dur-el}});over=el>=3600}
+ var el=nowS-st*60;if(heldAt!==null)el-=Math.floor((Date.now()-heldAt)/1000);if(FORCE!==null){active=true;el=FORCE}if(active){rows.forEach(function(r){var off=+r.dataset.off*60,dur=+r.dataset.dur*60;if(el>=off&&el<off+dur){hit=r;left=off+dur-el}});over=el>=3600}
  rows.forEach(function(r){var d=r.closest('details.sec,details.rd'),L=r===hit;r.classList.toggle('islive',L);if(d)d.classList.toggle('live',L);var tl=d&&d.querySelector('.tl');
-  if(L){r.querySelector('small').textContent='LIVE \u00B7 '+Math.floor(left/60)+':'+('0'+left%60).slice(-2)+' left'}else{r.querySelector('small').textContent=r.dataset.flexTxt||''}});
+  if(L){r.querySelector('small').textContent=(heldAt!==null?'HELD \u00B7 ':'LIVE \u00B7 ')+Math.floor(left/60)+':'+('0'+left%60).slice(-2)+' left'}else{r.querySelector('small').textContent=r.dataset.flexTxt||''}});
  [].forEach.call(document.querySelectorAll('.clock a'),function(a){a.classList.toggle('live',!!hit&&a.dataset.jump==='blk-'+hit.dataset.letter)});
  countdown(active,el,hit);playhead(active,el);
- $('sslive').textContent=hit?('LIVE: '+hit.dataset.letter+' \u00B7 '+hit.dataset.name+' \u00B7 '+Math.floor(left/60)+':'+('0'+left%60).slice(-2)+' left'):(active&&over?'Show time is up (60 min).':'')}
+ $('sslive').textContent=hit?((heldAt!==null?'HELD: ':'LIVE: ')+hit.dataset.letter+' \u00B7 '+hit.dataset.name+' \u00B7 '+Math.floor(left/60)+':'+('0'+left%60).slice(-2)+' left'):(active&&over?'Show time is up (60 min).':'')}
 function playhead(active,el){if(!TL||!segs.length)return;var T=0;segs.forEach(function(a){T+=+a.dataset.dur});T*=60;
  var e=active?el:0,p=Math.min(1,Math.max(0,e/T)),st=!active||e<0?'pre':e>=T?'post':'run';
  var cum=0,left=0,w=0;segs.forEach(function(a){var o=+a.dataset.off*60,d=+a.dataset.dur*60;a.classList.toggle('done',active&&e>=o+d)});
@@ -1373,9 +1422,9 @@ function countdown(active,el,hit){if(!cn)return;var T=rows.length?(+rows[rows.le
  $('cwn-l').textContent=msg||lab;var c=$('cwn-c');c.textContent=chip;c.style.display=chip?'inline-block':'none';c.style.background=col||'';
  $('cwn-n').textContent=nm;$('cwn-t').textContent=t===null?'':(chip?'in ':'')+fmtt(t);
  cn.setAttribute('aria-label',(msg||lab)+' '+nm+' '+(t===null?'':fmtt(t)))}
-b.onclick=function(){var n=ct();start=n.h*60+n.m;store.set(KEY,JSON.stringify({startMin:start,setAt:new Date().toISOString()}));paint();
+b.onclick=function(){var n=ct();start=n.h*60+n.m;holdS=0;heldAt=null;persist();paint();if(api.onStart)api.onStart();
  var t=document.getElementById('toast');if(t){t.textContent='Show start set to '+fmtp(start);t.className='on';setTimeout(function(){t.className=''},1800)}};
-$('ssreset').onclick=function(){start=null;store.del(KEY);paint()};
+$('ssreset').onclick=function(){start=null;holdS=0;heldAt=null;store.del(KEY);paint();if(api.onStop)api.onStop()};
 paint();setInterval(live,1000);
 })();
 """
@@ -1716,7 +1765,9 @@ def studio_html(data, archive_href=None):
               f'<div class="cwx"><span id="cw-ico" aria-hidden="true"></span><b id="cw-temp">--°F</b><span id="cw-cond"></span><small id="cw-note">as of build</small></div>'
               f'<div id="cwnext" class="cwn" aria-live="off"><span id="cwn-l">Planned 8:00 AM start</span><i id="cwn-c" style="display:none"></i><span id="cwn-n"></span><b id="cwn-t"></b></div></div>')
     showstart = (f'<div class="ss"><button id="ssbtn" type="button" data-showdate="{m["showDate"]}" data-showlabel="{datetime.date.fromisoformat(m["showDate"]).strftime("%a %b %-d")}" aria-label="Set show start to now">▶ Show Start</button>'
-                 f'<span id="ssind" aria-live="polite">Planned start 8:00 AM</span><button id="ssreset" type="button" disabled title="Reset to 8:00 AM" aria-label="Reset show start to 8:00 AM">↺ 8:00</button><span id="sslive" aria-live="off"></span></div>')
+                 f'<span id="ssind" aria-live="polite">Planned start 8:00 AM</span><button id="ssreset" type="button" disabled title="Reset to 8:00 AM" aria-label="Reset show start to 8:00 AM">↺ 8:00</button><span id="sslive" aria-live="off"></span></div>'
+                 f'<div id="chy" hidden><b class="chl">Chyron</b><button id="chhold" type="button" aria-pressed="false" title="Hold freezes the current topic and the show clock; Resume carries on and pushes the later topics back">⏸ Hold</button><button id="chprev" type="button">◀ Prev</button><button id="chnext" type="button">Next ▶</button><button id="chclr" type="button">Clear</button><span id="chst" aria-live="polite">waiting…</span></div>'
+                 f'<button id="chlink" type="button" class="chlink" title="Link this page to the OBS chyron (paste the link code once)">Link chyron</button>')
     usedbar = (f'<div id="usedbar" data-repo="{REPO}"><span class="ubl">Used today <b id="ucount">0</b></span><span id="ustatus"></span>'
                f'<span class="ubb"><button id="ulog" type="button">Log to repo</button><button id="ucopy" type="button">Copy list</button><button id="uclear" type="button">Clear</button></span></div>')
     brk = (f'<section id="brk" aria-label="Breaking watch" data-built="{esc(data.get("generatedAt", ""))}" data-poll="120"><div class="brkh"><b>Breaking / New since build</b>'
@@ -1724,8 +1775,8 @@ def studio_html(data, archive_href=None):
            f'<div id="brklist" aria-live="polite"></div></section>')
     arch = f'<p><a href="{esc(archive_href)}">All past packets and briefings</a></p>' if archive_href else ""
     chk = data.get("linkCheck")
-    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'self' https://api.weather.gov"><title>{esc(m["emailSubject"])} · Studio</title><style>{STUDIO_CSS}{STUDIO_CSS2}</style></head><body>
-<div id="pin"><div id="minibar"><b id="mb-time">--:--</b><span id="mb-next"></span><button id="mb-start" type="button" aria-label="Set show start to now">▶ Start</button><a href="#top" data-jump="top" aria-label="Back to top">Top ↑</a></div>
+    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'self' https://api.weather.gov https://ntfy.sh http://127.0.0.1:*"><title>{esc(m["emailSubject"])} · Studio</title><style>{STUDIO_CSS}{STUDIO_CSS2}</style></head><body>
+<div id="pin"><div id="minibar"><b id="mb-time">--:--</b><span id="mb-next"></span><button id="mb-hold" type="button" hidden aria-label="Hold or resume the chyron and show clock">⏸ Hold</button><button id="mb-start" type="button" aria-label="Set show start to now">▶ Start</button><a href="#top" data-jump="top" aria-label="Back to top">Top ↑</a></div>
 <div class="clock pre" id="tl" role="img" aria-label="60 minute show timeline, blocks A to L">{clockbar}<div id="phw"><div id="ph" aria-hidden="true"></div></div></div></div>
 <header id="top"><img src="{logo}" alt="Drew in the Morning"><div class="ht"><div class="k">Studio page · {esc(m["kicker"])} {('<span class="sample">'+esc(m["sampleLabel"])+'</span>') if m.get("sample") else ''}</div><div class="d">{esc(m["dateLabel"])}</div>{showstart}</div>
 {clockw}</header>
@@ -1735,7 +1786,7 @@ def studio_html(data, archive_href=None):
 <nav>{nav}</nav>
 <main>{body}</main>
 <footer>{arch}<b>Jump segues (menu):</b><ul>{segs}</ul>Every item links to its source and opens in a new tab; Copy link puts the URL on your clipboard for sharing on screen. CONFIRM BEFORE AIR = verify first. No trackers, no external scripts or fonts. The only network request is the header clock's weather lookup (api.weather.gov); the page works offline (the clock then shows the build-time temperature, and links need internet). Show Start times are computed in the page from each block's offset and length.{(" Links checked "+chk["date"]+": "+str(chk["ok"])+" ok, "+str(chk["blocked"])+" bot-blocked, "+str(chk["dead"])+" dead.") if chk else ""}</footer>
-<div id="toast" role="status"></div><script>{STUDIO_JS}</script><script>{SHOW_JS}</script><script>{CLOCK_JS}</script><script>{BRK_JS}</script></body></html>"""
+<div id="toast" role="status"></div><script>{STUDIO_JS}</script><script>{SHOW_JS}</script><script>{CHY_JS}</script><script>{CLOCK_JS}</script><script>{BRK_JS}</script></body></html>"""
 
 
 # ---------------------------------------------------------------- render
@@ -1782,6 +1833,12 @@ def publish(out, stem, data, force=False):
     json.dump({"date": m["date"], "mode": m["mode"], "sample": bool(m.get("sample")), "label": m["headline"].title().replace("Show Packet", "Show Packet") if False else m["dateLabel"] + (" · Monday Show Packet" if m["mode"] == "monday" else " · Daily Briefing"),
                "kind": "Monday show packet" if m["mode"] == "monday" else "Daily briefing", "files": files, "built": data["generatedAt"]}, open(os.path.join(pdir, "meta.json"), "w"), indent=2)
     open(os.path.join(pk, "index.html"), "w").write(listing_html(docs))
+    try:   # the OBS chyron page (docs/chyron.html + chyron.json) is rebuilt with every packet from obs-data.json
+        sys.path.insert(0, os.path.join(HERE, "..", "companion"))
+        import chyron_build
+        chyron_build.write(docs)
+    except Exception as e:   # never block the packet on the chyron page
+        print("chyron page not built:", e)
     # "latest": a real packet is never replaced by a sample/test build unless forced
     lp = os.path.join(pk, "latest.json")
     prev = json.load(open(lp)) if os.path.exists(lp) else None

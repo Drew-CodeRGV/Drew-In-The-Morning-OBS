@@ -52,7 +52,9 @@ def main() -> int:
         json.dumps(companion_config(blocks), indent=2) + "\n", encoding="utf-8"
     )
     (OUT / "button-table.md").write_text(button_table(blocks), encoding="utf-8")
-    print(f"Wrote {len(blocks)} blocks to {OUT}")
+    import chyron_build
+    chyron_build.write(ROOT / "docs")
+    print(f"Wrote {len(blocks)} blocks to {OUT} and docs/chyron.html")
     return 0
 
 
