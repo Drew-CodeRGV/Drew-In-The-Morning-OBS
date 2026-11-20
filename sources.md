@@ -27,7 +27,7 @@ Community posts are leads: confirm elsewhere, or mark them "community chatter, C
 - Safety rules and the RUMOR badge are in `packet/README.md` ("Chisme").
 
 ## Obituaries (Legacy.com, public page, read by tools/obituaries.py)
-- **The Monitor obituaries, McAllen, TX on Legacy.com**: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor (add `&page=2`, `&page=3` for older pages). Feeds the "Remembering Our Neighbors" section and the respectful read near the close (block L). Each name links to its own Legacy notice, e.g. `https://www.legacy.com/us/obituaries/themonitor/name/<name>-obituary?id=<id>`.
+- **The Monitor obituaries, McAllen, TX on Legacy.com**: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor (add `&page=2`, `&page=3` for older pages). Feeds the Lifestyle section's "Remembering Our Neighbors" list (name, age and town only). Each name links to its own Legacy notice, e.g. `https://www.legacy.com/us/obituaries/themonitor/name/<name>-obituary?id=<id>`.
 - Only name, age, city, death date, run date, funeral home and link are kept; no cause of death, ever.
 - Reachability (Nov 19, 2026): HTTP 200 with a browser User-Agent via curl; Python urllib gets a Cloudflare bot challenge (403); repeated pulls can hit HTTP 429 (wait and retry). Pages overlap a little and a Monitor-wide browse page (`https://www.legacy.com/us/obituaries/themonitor/browse`) also exists but lists people outside the McAllen filter, so it is not used.
 

@@ -1,88 +1,8 @@
 {
  "v": 1,
  "date": "2026-11-20",
- "generated": "2026-11-20T21:16:54+00:00",
+ "generated": "2026-11-20T21:28:27+00:00",
  "items": {
-  "i-dbc5767575": {
-   "headline": "La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and Paredes elementaries)…",
-   "line": "Enrollment fell from 29,641 to 19,633 in ten years; the district says it is about $5M short in revenue.",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-ff88a43caa": {
-   "headline": "RioPlex says $110 billion in industrial, energy and data center investment is headed to the Valley",
-   "line": "UNCONFIRMED · RioPlex Executive Director Mario Reyna estimates the multiplier effect at $40 billion to $80 billion…",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-2b8e4b934f": {
-   "headline": "Palenque Hidalgo opens today at Payne Arena (360-degree stage, tickets from $20; Tito Double P…",
-   "line": "GM Eric Trevino promised 'a full week of concerts'; Tito Double P is expected to play two sold-out shows.",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-4e7b1df097": {
-   "headline": "FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and landings a year at…",
-   "line": "Residents, environmental activists and an IATA vice president raised beach access, environmental, health…",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-dafa6846a8": {
-   "headline": "Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some at $2.94)",
-   "line": "Prices peaked near $4.10 in May and had stayed above $3 since the Iran war began in late February.",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-a6e24265f7": {
-   "headline": "SpaceX responds after Cameron County rejects its data center tax break, says its payment plan…",
-   "line": "Commissioners voted 3-2 Tuesday against scheduling a December hearing.",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-dc8d935b4f": {
-   "headline": "Starbase fills a vacant commission seat with Haley Ruvalcaba, wife of a SpaceX IT director",
-   "line": "Ruvalcaba, 36, replaces Lois Wallace, who moved away and hadn't attended since September.",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-bed22097a5": {
-   "headline": "Mission approves voluntary drug testing for the mayor and council (mandatory for city attorney and…",
-   "line": "Approved at a special meeting Tuesday.",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-76382b762e": {
-   "headline": "Brownsville ISD swears in trustees and elects Denise Garza board president",
-   "line": "Carlos Elizondo, Frank Ortiz and Garza were reelected; Marisa Franco Leal fills the two years left on the late…",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-adcc440f3f": {
-   "headline": "Mission man sentenced to life without parole for 2018 killings of two women",
-   "line": "Mario Lozano-Lemus, 34, was found guilty of capital murder in the deaths of Irene Ozuna, 45, and Maria Angelita…",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-cdd9d18715": {
-   "headline": "McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan. 14 deadline still…",
-   "line": "Vendors met a second time, with Commissioner Michael Fallek and the city attorney, asking the McAllen Chamber of…",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-e7bd642cb4": {
-   "headline": "Rep. Vicente Gonzalez's 'Hands Off Our Boca Chica Beach Act' clears the House Natural Resources…",
-   "line": "H.R.",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-2c22b20c53": {
-   "headline": "USDA confirms the Valley's fifth screwworm case (first in Hidalgo County); Brooks, Hidalgo, Kenedy…",
-   "line": "UNCONFIRMED · Warm-blooded animals need TAHC authorization and inspection to leave the zone.",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-e27e4b807f": {
-   "headline": "Roma's bridge is now the fastest-growing truck port on the Southwest border (imports up 17x since…",
-   "line": "TAMIU's Daniel Covarrubias: imports went from $42.9M (2019) to $826M (FY2026); 53,808 trucks in the past year, about…",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-51a13917e9": {
-   "headline": "Paxton and the feds agree to keep Texas razor wire at the border for up to 30 years (Del Rio Sector)",
-   "line": "Federal agents can't cut or remove Texas-owned wire on non-federal land within 25 miles of the border in the Del Rio…",
-   "kicker": "HEADLINES · TEXAS"
-  },
-  "i-e2c9f4e009": {
-   "headline": "Comptroller Huffines' move to stop taxing cloud, AI and data hosting would cost Texas $18 billion…",
-   "line": "The comptroller's own office projects the state loses $1.9B in FY2027 rising to $4.3B a year by FY2032; local…",
-   "kicker": "HEADLINES · TEXAS"
-  },
   "i-5845aaceb2": {
    "headline": "Gina Hinojosa tells sheriffs she will not cut Abbott's border security grants",
    "line": "UNCONFIRMED · A top r/texas post shares a story headlined: Gina Hinojosa tells sheriffs she will not cut Abbott's…",
@@ -118,11 +38,6 @@
    "line": "UNCONFIRMED · #VOTEFORBTS, #DAESANGFORBTS and 'OUR CHOICE IS BTS AT MAMA' are top U.S.",
    "kicker": "TRENDING"
   },
-  "i-0ae6b85a6f": {
-   "headline": "'Percy Jackson and the Olympians' Season 3 premieres today on Disney+ and Hulu",
-   "line": "UNCONFIRMED · Season 3 adapts 'The Titan's Curse'; two episodes drop today, then pairs each Friday through Dec.",
-   "kicker": "TRENDING"
-  },
   "i-da2dce77f0": {
    "headline": "Magnitude 5.1 earthquake shakes Monterey County, California; 'earthquake' trends in Texas and on X",
    "line": "Nov 19, 10:49 p.m.",
@@ -153,11 +68,6 @@
    "line": "Nov 18: Utah won 109-97 at L.A.",
    "kicker": "TRENDING"
   },
-  "i-ee1e83929a": {
-   "headline": "Uber tests rides for kids as young as 10, with extra pay for drivers",
-   "line": "'Uber Kids' quietly launched in Austin, Nashville and Madison, Wis., extending Uber's teen service (13-17) to…",
-   "kicker": "TECH"
-  },
   "i-4088b37ccc": {
    "headline": "Elon Musk says SpaceX has a plan to eliminate cell phone dead zones",
    "line": "UNCONFIRMED · Musk says SpaceX finished designing a miniature rooftop cell tower to fix indoor dead zones where…",
@@ -166,11 +76,6 @@
   "i-3981c5029a": {
    "headline": "Apple may be developing its own AI agent that runs your Mac",
    "line": "A job listing (spotted by Bloomberg) seeks a manager for an 'AI agent that can use a computer': browsing, working…",
-   "kicker": "TECH"
-  },
-  "i-fd8479d439": {
-   "headline": "Traumatized teens sue school, cops after Doritos bag triggers AI gun alert",
-   "line": "UNCONFIRMED · Teens are suing a school and police after an AI weapon-detection alert flagged a Doritos bag as a gun…",
    "kicker": "TECH"
   },
   "i-b28db242db": {
@@ -718,11 +623,6 @@
    "line": "'Aura' = someone's vibe; 'aura farming' = doing things to look cool online; 'cooked' = in trouble.",
    "kicker": "MEME OF THE WEEK · HIGH SCHOOL"
   },
-  "i-c8ffeb891b": {
-   "headline": "GTA 6 is out (launched Nov 19)",
-   "line": "GTA VI launched Nov 19 on PS5 and Xbox Series X; rated M (17+), 212 GB download.",
-   "kicker": "MEME OF THE WEEK · HIGH SCHOOL"
-  },
   "i-c235a67304": {
    "headline": "the Rayburn Fall Festival",
    "line": "Sat Nov 14",
@@ -753,6 +653,26 @@
    "line": "Fri Nov 20",
    "kicker": "WHAT I'VE BEEN UP TO"
   },
+  "i-4e7b1df097": {
+   "headline": "FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and landings a year at…",
+   "line": "Residents, environmental activists and an IATA vice president raised beach access, environmental, health…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-dafa6846a8": {
+   "headline": "Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some at $2.94)",
+   "line": "Prices peaked near $4.10 in May and had stayed above $3 since the Iran war began in late February.",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-adcc440f3f": {
+   "headline": "Mission man sentenced to life without parole for 2018 killings of two women",
+   "line": "Mario Lozano-Lemus, 34, was found guilty of capital murder in the deaths of Irene Ozuna, 45, and Maria Angelita…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-2c22b20c53": {
+   "headline": "USDA confirms the Valley's fifth screwworm case (first in Hidalgo County); Brooks, Hidalgo, Kenedy…",
+   "line": "UNCONFIRMED · Warm-blooded animals need TAHC authorization and inspection to leave the zone.",
+   "kicker": "HEADLINES · RGV"
+  },
   "i-5984ad0d5a": {
    "headline": "Rep. Vicente Gonzalez's 'Hands Off Our Boca Chica Beach Act' clears the House Natural Resources…",
    "line": "H.R.",
@@ -768,11 +688,6 @@
    "line": "Carlos Elizondo, Frank Ortiz and Garza were reelected; Marisa Franco Leal fills the two years left on the late…",
    "kicker": "SCHOOL BOARDS"
   },
-  "i-5671af41f6": {
-   "headline": "Starbase fills a vacant commission seat with Haley Ruvalcaba, wife of a SpaceX IT director",
-   "line": "Ruvalcaba, 36, replaces Lois Wallace, who moved away and hadn't attended since September.",
-   "kicker": "CITY HALL"
-  },
   "i-0272e26d88": {
    "headline": "Mission approves voluntary drug testing for the mayor and council (mandatory for city attorney and…",
    "line": "Approved at a special meeting Tuesday.",
@@ -781,6 +696,11 @@
   "i-543ca0556c": {
    "headline": "McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan. 14 deadline still…",
    "line": "Vendors met a second time, with Commissioner Michael Fallek and the city attorney, asking the McAllen Chamber of…",
+   "kicker": "CITY HALL"
+  },
+  "i-5671af41f6": {
+   "headline": "Starbase fills a vacant commission seat with Haley Ruvalcaba, wife of a SpaceX IT director",
+   "line": "Ruvalcaba, 36, replaces Lois Wallace, who moved away and hadn't attended since September.",
    "kicker": "CITY HALL"
   },
   "i-ad25851d89": {
@@ -801,6 +721,26 @@
   "i-57c9e256e0": {
    "headline": "Palenque Hidalgo opens today at Payne Arena (360-degree stage, tickets from $20; Tito Double P…",
    "line": "GM Eric Trevino promised 'a full week of concerts'; Tito Double P is expected to play two sold-out shows.",
+   "kicker": "FAMILY & KIDS"
+  },
+  "i-1a2b4e948d": {
+   "headline": "'Percy Jackson and the Olympians' Season 3 premieres today on Disney+ and Hulu",
+   "line": "UNCONFIRMED · Season 3 adapts 'The Titan's Curse'; two episodes drop today, then pairs each Friday through Dec.",
+   "kicker": "FAMILY & KIDS"
+  },
+  "i-71d291ca62": {
+   "headline": "Uber tests rides for kids as young as 10, with extra pay for drivers",
+   "line": "'Uber Kids' quietly launched in Austin, Nashville and Madison, Wis., extending Uber's teen service (13-17) to…",
+   "kicker": "FAMILY & KIDS"
+  },
+  "i-2db9a31d7e": {
+   "headline": "Traumatized teens sue school, cops after Doritos bag triggers AI gun alert",
+   "line": "UNCONFIRMED · Teens are suing a school and police after an AI weapon-detection alert flagged a Doritos bag as a gun…",
+   "kicker": "FAMILY & KIDS"
+  },
+  "i-9304c72c98": {
+   "headline": "GTA 6 is out (launched Nov 19)",
+   "line": "GTA VI launched Nov 19 on PS5 and Xbox Series X; rated M (17+), 212 GB download.",
    "kicker": "FAMILY & KIDS"
   },
   "i-c76705103d": {
