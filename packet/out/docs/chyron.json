@@ -1,0 +1,126 @@
+{
+ "generated": "2026-11-18",
+ "total": 60,
+ "blocks": [
+  {
+   "index": 0,
+   "letter": "A",
+   "color": "#f2b705",
+   "offset": 0,
+   "dur": 2,
+   "headline": "Good morning, Rio Grande Valley",
+   "kicker": "Drew Lentz",
+   "sub": "Host · Drew in the Morning"
+  },
+  {
+   "index": 1,
+   "letter": "B",
+   "color": "#d1495b",
+   "offset": 2,
+   "dur": 3,
+   "headline": "What I've been up to this week",
+   "kicker": "What I've Been Up To",
+   "sub": "This week · Drew & Jess"
+  },
+  {
+   "index": 2,
+   "letter": "C",
+   "color": "#e4572e",
+   "offset": 5,
+   "dur": 8,
+   "headline": "Cameron County rejects SpaceX tax break hearing, 3-2",
+   "kicker": "Cameron County Vote",
+   "sub": "Abatement hearing denied 3-2 · Nov. 17"
+  },
+  {
+   "index": 3,
+   "letter": "D",
+   "color": "#2a6f97",
+   "offset": 13,
+   "dur": 6,
+   "headline": "Bobby Pulido defeats Rep. Monica De La Cruz in TX-15",
+   "kicker": "TX-15: Bobby Pulido",
+   "sub": "Defeated De La Cruz · Takes office Jan. 3"
+  },
+  {
+   "index": 4,
+   "letter": "E",
+   "color": "#2a9d8f",
+   "offset": 19,
+   "dur": 5,
+   "headline": "Edinburg CISD adds new trustees; $3M stop-loss contract on agenda",
+   "kicker": "Edinburg CISD Board",
+   "sub": "New trustees from Nov. 3 election"
+  },
+  {
+   "index": 5,
+   "letter": "F",
+   "color": "#bc6c25",
+   "offset": 24,
+   "dur": 5,
+   "headline": "Brownsville names Alan Guard permanent city manager",
+   "kicker": "McAllen City Commission",
+   "sub": "Fallek won District 5 special · May 2026"
+  },
+  {
+   "index": 6,
+   "letter": "G",
+   "color": "#43aa8b",
+   "offset": 29,
+   "dur": 6,
+   "headline": "McAllen EDC wins state award for Valeo's $225M plant",
+   "kicker": "McAllen EDC",
+   "sub": "State award · Valeo $225M plant"
+  },
+  {
+   "index": 7,
+   "letter": "H",
+   "color": "#8e6bbf",
+   "offset": 35,
+   "dur": 6,
+   "headline": "GTA 6 launches Nov. 19 at midnight; rated M (17+)",
+   "kicker": "How We'd Talk to Our Kids",
+   "sub": "Open · Honest · No judgment"
+  },
+  {
+   "index": 8,
+   "letter": "I",
+   "color": "#577590",
+   "offset": 41,
+   "dur": 4,
+   "headline": "Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border contracts",
+   "kicker": "Statewide",
+   "sub": "Texas news & Texas politics"
+  },
+  {
+   "index": 9,
+   "letter": "J",
+   "color": "#6d597a",
+   "offset": 45,
+   "dur": 8,
+   "headline": "FAA ground stop: legacy network, a router and a long weekend",
+   "kicker": "National Desk",
+   "sub": "The big stories · and why they matter here"
+  },
+  {
+   "index": 10,
+   "letter": "K",
+   "color": "#f4a261",
+   "offset": 53,
+   "dur": 3,
+   "headline": "Send us your topics: DM or email",
+   "kicker": "Send Us Your Topics",
+   "sub": "DM @drewinthemorning or email the show"
+  },
+  {
+   "index": 11,
+   "letter": "L",
+   "color": "#ff7f50",
+   "offset": 56,
+   "dur": 4,
+   "headline": "Drew & Jess are watching the feeds so you don't have to",
+   "kicker": "Meme of the Week",
+   "sub": "What your kids might be saying at school"
+  }
+ ]
+}
