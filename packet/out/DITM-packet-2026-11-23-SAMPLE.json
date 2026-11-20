@@ -51,13 +51,13 @@
             "published": "2026-11-17T18:00:00+00:00"
           }
         ],
-        "score": 8,
+        "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.7 (43h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (57h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.7,
+          "recency": 0.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -81,13 +81,13 @@
             "published": "2026-11-17T18:00:00+00:00"
           }
         ],
-        "score": 8,
+        "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.7 (43h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (57h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.7,
+          "recency": 0.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -114,7 +114,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0 (139h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0 (153h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.0,
@@ -171,13 +171,13 @@
             "published": "2026-11-18T18:00:00+00:00"
           }
         ],
-        "score": 13,
+        "score": 9,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
+        "scoreWhy": "Score 9: 1 outlet 6 + recency 3 (33h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.9,
+          "recency": 3.0,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -202,13 +202,13 @@
             "published": "2026-11-17T18:00:00+00:00"
           }
         ],
-        "score": 8,
+        "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.7 (43h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (57h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.7,
+          "recency": 0.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -232,13 +232,13 @@
             "published": "2026-11-17T18:00:00+00:00"
           }
         ],
-        "score": 8,
+        "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.7 (43h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (57h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.7,
+          "recency": 0.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -265,7 +265,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0 (115h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0 (129h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.0,
@@ -295,7 +295,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0 (115h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0 (129h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.0,
@@ -325,10 +325,10 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.4 (67h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.2 (81h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 0.4,
+          "recency": 0.2,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -352,13 +352,13 @@
             "published": "2026-11-17T18:00:00+00:00"
           }
         ],
-        "score": 8,
+        "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.7 (43h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (57h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.7,
+          "recency": 0.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -380,13 +380,13 @@
             "published": "2026-11-17T18:00:00+00:00"
           }
         ],
-        "score": 8,
+        "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.7 (43h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (57h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.7,
+          "recency": 0.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -408,13 +408,13 @@
             "published": "2026-11-17T18:00:00+00:00"
           }
         ],
-        "score": 8,
+        "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.7 (43h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (57h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.7,
+          "recency": 0.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -762,92 +762,92 @@
     "lon": -98.23,
     "note": "McAllen / Rio Grande Valley; NWS Brownsville (BRO) forecast",
     "now": {
-      "tempF": 67,
-      "cond": "Cloudy",
-      "icon": "cloud",
-      "at": "2026-11-19T11:53:00+00:00",
+      "tempF": 70,
+      "cond": "Clear",
+      "icon": "sun",
+      "at": "2026-11-20T02:40:00+00:00",
       "source": "KMFE observation"
     },
     "office": "BRO",
     "city": "McAllen",
-    "updated": "2026-11-19T11:45:16+00:00",
+    "updated": "2026-11-20T02:45:13+00:00",
     "days": [
-      {
-        "date": "2026-11-19",
-        "label": "Thu",
-        "dateLabel": "Nov 19",
-        "hi": 79,
-        "lo": 61,
-        "short": "Slight Chance Rain Showers",
-        "icon": "rain",
-        "pop": 23,
-        "wind": "N 5 to 8 mph"
-      },
       {
         "date": "2026-11-20",
         "label": "Fri",
         "dateLabel": "Nov 20",
-        "hi": 81,
+        "hi": 79,
         "lo": 63,
-        "short": "Sunny",
-        "icon": "sun",
+        "short": "Mostly Sunny",
+        "icon": "partly",
         "pop": 0,
-        "wind": "NE 6 mph"
+        "wind": "NE 3 to 7 mph"
       },
       {
         "date": "2026-11-21",
         "label": "Sat",
         "dateLabel": "Nov 21",
-        "hi": 84,
-        "lo": 68,
+        "hi": 85,
+        "lo": 69,
         "short": "Mostly Sunny",
         "icon": "partly",
         "pop": 2,
-        "wind": "SE 3 to 9 mph"
+        "wind": "SE 5 to 9 mph"
       },
       {
         "date": "2026-11-22",
         "label": "Sun",
         "dateLabel": "Nov 22",
-        "hi": 82,
-        "lo": 63,
+        "hi": 83,
+        "lo": 60,
         "short": "Partly Sunny then Chance Showers And Thunderstorms",
         "icon": "storm",
-        "pop": 55,
-        "wind": "NNE 3 to 7 mph"
+        "pop": 66,
+        "wind": "NE 3 to 7 mph"
       },
       {
         "date": "2026-11-23",
         "label": "Mon",
         "dateLabel": "Nov 23",
-        "hi": 74,
-        "lo": 62,
-        "short": "Slight Chance Rain Showers",
-        "icon": "rain",
-        "pop": 23,
-        "wind": "NNE 6 to 9 mph"
+        "hi": 70,
+        "lo": 58,
+        "short": "Chance Showers And Thunderstorms",
+        "icon": "storm",
+        "pop": 40,
+        "wind": "N 6 to 10 mph"
       },
       {
         "date": "2026-11-24",
         "label": "Tue",
         "dateLabel": "Nov 24",
-        "hi": 73,
-        "lo": 57,
-        "short": "Chance Rain Showers",
+        "hi": 69,
+        "lo": 55,
+        "short": "Slight Chance Rain Showers",
         "icon": "rain",
-        "pop": 28,
-        "wind": "N 6 to 9 mph"
+        "pop": 19,
+        "wind": "N 8 mph"
       },
       {
         "date": "2026-11-25",
         "label": "Wed",
         "dateLabel": "Nov 25",
-        "hi": 68,
-        "lo": null,
-        "short": "Partly Sunny",
+        "hi": 66,
+        "lo": 52,
+        "short": "Mostly Sunny",
         "icon": "partly",
-        "pop": 2,
-        "wind": "NNE 7 to 12 mph"
+        "pop": 5,
+        "wind": "N 9 mph"
+      },
+      {
+        "date": "2026-11-26",
+        "label": "Thu",
+        "dateLabel": "Nov 26",
+        "hi": 67,
+        "lo": null,
+        "short": "Mostly Sunny",
+        "icon": "partly",
+        "pop": 9,
+        "wind": "ENE 7 mph"
       }
     ],
     "alerts": [],
@@ -1383,13 +1383,13 @@
           "published": "2026-11-18T18:00:00+00:00"
         }
       ],
-      "score": 25,
+      "score": 21,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 25: 3 outlets 18 + recency 6.9 (19h old)",
+      "scoreWhy": "Score 21: 3 outlets 18 + recency 3 (33h old)",
       "scoreParts": {
         "outlets": 18,
-        "recency": 6.9,
+        "recency": 3.0,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1424,13 +1424,13 @@
           "published": "2026-11-18T18:00:00+00:00"
         }
       ],
-      "score": 13,
+      "score": 9,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
+      "scoreWhy": "Score 9: 1 outlet 6 + recency 3 (33h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 6.9,
+        "recency": 3.0,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1470,13 +1470,13 @@
           "published": "2026-11-18T18:00:00+00:00"
         }
       ],
-      "score": 13,
+      "score": 9,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
+      "scoreWhy": "Score 9: 1 outlet 6 + recency 3 (33h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 6.9,
+        "recency": 3.0,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1534,13 +1534,13 @@
           "published": "2026-11-18T18:00:00+00:00"
         }
       ],
-      "score": 25,
+      "score": 21,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 25: 3 outlets 18 + recency 6.9 (19h old)",
+      "scoreWhy": "Score 21: 3 outlets 18 + recency 3 (33h old)",
       "scoreParts": {
         "outlets": 18,
-        "recency": 6.9,
+        "recency": 3.0,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1580,13 +1580,13 @@
           "published": "2026-11-18T18:00:00+00:00"
         }
       ],
-      "score": 13,
+      "score": 9,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
+      "scoreWhy": "Score 9: 1 outlet 6 + recency 3 (33h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 6.9,
+        "recency": 3.0,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1690,13 +1690,13 @@
           "published": "2026-11-17T18:00:00+00:00"
         }
       ],
-      "score": 14,
+      "score": 13,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 14: 2 outlets 12 + recency 1.7 (43h old)",
+      "scoreWhy": "Score 13: 2 outlets 12 + recency 0.7 (57h old)",
       "scoreParts": {
         "outlets": 12,
-        "recency": 1.7,
+        "recency": 0.7,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1743,13 +1743,13 @@
           "published": "2026-11-17T18:00:00+00:00"
         }
       ],
-      "score": 14,
+      "score": 13,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 14: 2 outlets 12 + recency 1.7 (43h old)",
+      "scoreWhy": "Score 13: 2 outlets 12 + recency 0.7 (57h old)",
       "scoreParts": {
         "outlets": 12,
-        "recency": 1.7,
+        "recency": 0.7,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1784,13 +1784,13 @@
           "published": "2026-11-18T18:00:00+00:00"
         }
       ],
-      "score": 13,
+      "score": 9,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (19h old)",
+      "scoreWhy": "Score 9: 1 outlet 6 + recency 3 (33h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 6.9,
+        "recency": 3.0,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1801,60 +1801,49 @@
   ],
   "up_to": [
     {
-      "date": "2026-11-16",
-      "short": "Talk proposal: ResCon New Orleans 2027 (shelter Wi-Fi)",
-      "title": "Sent in a talk proposal to ResCon New Orleans 2027 (Mar 9-11): standing up shelter Wi-Fi in hours",
-      "type": "conference",
-      "who": "Drew",
-      "link": {
-        "label": "ResCon 2027 call for proposals",
-        "url": "https://resconnola.com/2027-call-for-proposals/"
-      },
-      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected",
-      "confirm": "CONFIRM BEFORE AIR (Drew eyeballs every item; public-facing only)"
+      "date": "2026-11-17",
+      "label": "a school picnic",
+      "category": "school event",
+      "count": 1
     },
     {
-      "date": "2026-11-16",
-      "short": "Talk proposal: South Atlantic Fire Rescue Expo 2027",
-      "title": "Sent in a talk proposal to the South Atlantic Fire Rescue Expo 2027 (Aug 11-14, Raleigh): fast Wi-Fi for command posts",
-      "type": "conference",
-      "who": "Drew",
-      "link": {
-        "label": "SAFRE 2027 call for presenters",
-        "url": "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/"
-      },
-      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected",
-      "confirm": "CONFIRM BEFORE AIR (Drew eyeballs every item; public-facing only)"
+      "date": "2026-11-17",
+      "label": "hip hop class",
+      "category": "dance",
+      "count": 1
     },
     {
-      "date": "2026-11-16",
-      "short": "Talk proposals: IAFC WUI (Austin) + CALNENA 2027",
-      "title": "Sent in talk proposals to the IAFC Wildland-Urban Interface conference (Austin, Mar 23-25) and CALNENA 2027 (Los Angeles, Mar 1-3)",
-      "type": "conference",
-      "who": "Drew",
-      "link": null,
-      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected",
-      "confirm": "CONFIRM BEFORE AIR (Drew eyeballs every item; public-facing only)"
+      "date": "2026-11-18",
+      "label": "cotillion",
+      "category": "club",
+      "count": 1
     },
     {
-      "date": "2026-11-12",
-      "short": "Talk proposal: IAEM-USA Region 6 Symposium 2027",
-      "title": "Sent in a talk proposal to the IAEM-USA Region 6 Symposium 2027: temporary Wi-Fi for EOCs and shelters",
-      "type": "conference",
-      "who": "Drew",
-      "link": null,
-      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected",
-      "confirm": "CONFIRM BEFORE AIR (Drew eyeballs every item; public-facing only)"
+      "date": "2026-11-18",
+      "label": "tap class",
+      "category": "dance",
+      "count": 1
+    },
+    {
+      "date": "2026-11-20",
+      "label": "the region clinic and concert",
+      "category": "music",
+      "count": 1
     }
   ],
-  "up_to_script": "Hey, for the last week, here's what I've been up to. Outside the studio I spent a good chunk of it sending in talk proposals for a handful of 2027 conferences: emergency management, fire and rescue, and 9-1-1 shows, all about getting Wi-Fi up fast when a shelter or a command post has to stand up overnight. Nothing's been accepted yet, so I'll let you know if anybody says yes. Okay, enough about me. Let's get into the Valley.",
+  "up_to_script": "Busy week at the Lentz house. We had a school picnic on Tuesday, hip hop class on Tuesday, cotillion on Wednesday, tap class on Wednesday, and the region clinic and concert on Friday. Coming up this week: chess club twice, hip hop class on Tuesday, and tap class on Wednesday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.",
   "up_to_meta": {
-    "window": "Nov 11-18, 2026",
-    "calendar": "not connected (no calendar tool available); built from email only",
-    "note": "Proposals SUBMITTED, not accepted: do not say 'accepted' or 'speaking at'.",
-    "jess": "Nothing found for Jess (no access to her calendar or mail).",
+    "calendar": "Family calendar (iCloud, published feed)",
+    "mode": "monday",
+    "window": "Nov 16–22, 2026",
+    "comingWindow": "Nov 23–29, 2026",
     "status": "found",
-    "banner": "4 item(s) found · CONFIRM BEFORE AIR"
+    "nameKidsOnAir": false,
+    "internal": "2 calendar items left off the air (medical, personal, money, work, private or unsure); 9 qualifying occurrences used. Names never leave this note.",
+    "excludedCount": 2,
+    "usedCount": 9,
+    "builtAt": "2026-11-19T20:56:06-06:00",
+    "banner": "5 from the week + 3 coming up"
   },
   "tech": {
     "origin": "wires",
@@ -1926,6 +1915,1733 @@
     "badge": "FALLBACK: TECH WIRES",
     "originLabel": "FALLBACK: tech wires (The Verge, TechCrunch, Ars Technica). No Fast Company Daily issue from the last 48 hours was found in Gmail."
   },
+  "obituaries": {
+    "items": [
+      {
+        "id": "62922956",
+        "name": "Francisco A. Rodriguez Gomez",
+        "age": 83,
+        "city": "Pharr",
+        "died": "2026-11-17",
+        "published": "2026-11-19",
+        "funeralHome": "Eternal Light Funeral Home of Elsa, Texas",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/francisco-gomez-obituary?id=63017922"
+      },
+      {
+        "id": "62899481",
+        "name": "Anna Maria Gonzales",
+        "age": 71,
+        "city": "",
+        "died": "2026-11-14",
+        "published": "2026-11-18",
+        "funeralHome": "Aurora Funeral Home - Sam Houston",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/anna-gonzales-obituary?id=63008804"
+      },
+      {
+        "id": "62874130",
+        "name": "Armando Carrera",
+        "age": 81,
+        "city": "Mission",
+        "died": "2026-11-11",
+        "published": "2026-11-18",
+        "funeralHome": "Ric Brown Family Funeral Home - at the Expressway of Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/armando-carrera-obituary?id=63008783"
+      },
+      {
+        "id": "62901506",
+        "name": "Cynthia (Cindy) Roberts",
+        "age": 72,
+        "city": "",
+        "died": "2026-10-04",
+        "published": "2026-11-18",
+        "funeralHome": "",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/cynthia-roberts-obituary?id=63008803"
+      },
+      {
+        "id": "62913819",
+        "name": "Daniel Garza",
+        "age": 94,
+        "city": "Mission",
+        "died": "2026-11-09",
+        "published": "2026-11-18",
+        "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/daniel-garza-obituary?id=63008787"
+      },
+      {
+        "id": "62913822",
+        "name": "Federico Fonseca",
+        "age": 81,
+        "city": "Pharr",
+        "died": "2026-10-25",
+        "published": "2026-11-18",
+        "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/federico-fonseca-obituary?id=63008790"
+      },
+      {
+        "id": "62913831",
+        "name": "Gerardo Alvarez",
+        "age": 51,
+        "city": "Mission",
+        "died": "2026-11-01",
+        "published": "2026-11-18",
+        "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/gerardo-alvarez-obituary?id=63008799"
+      },
+      {
+        "id": "62882669",
+        "name": "Gonzalo Lerma Ortiz",
+        "age": 86,
+        "city": "Edinburg",
+        "died": "2026-11-12",
+        "published": "2026-11-18",
+        "funeralHome": "Memorial Funeral Home - Edinburg",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/gonzalo-ortiz-obituary?id=63008780"
+      },
+      {
+        "id": "62913830",
+        "name": "Janluca Amor Acosta",
+        "age": null,
+        "city": "Mission",
+        "died": "2026-10-27",
+        "published": "2026-11-18",
+        "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/janluca-acosta-obituary?id=63008798"
+      },
+      {
+        "id": "62906155",
+        "name": "John T. Hudson",
+        "age": 71,
+        "city": "",
+        "died": "2026-11-16",
+        "published": "2026-11-18",
+        "funeralHome": "Darling-Mouser Funeral Home",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/john-hudson-obituary?id=63008807"
+      },
+      {
+        "id": "62913832",
+        "name": "Jose Elizondo",
+        "age": 53,
+        "city": "Sullivan City",
+        "died": "2026-10-23",
+        "published": "2026-11-18",
+        "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/jose-elizondo-obituary?id=63008800"
+      },
+      {
+        "id": "62913824",
+        "name": "Maria Santos Gomez",
+        "age": 100,
+        "city": "Mission",
+        "died": "2026-11-03",
+        "published": "2026-11-18",
+        "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-gomez-obituary?id=63008792"
+      },
+      {
+        "id": "62913828",
+        "name": "Richard Vogelsang",
+        "age": 80,
+        "city": "Palmview",
+        "died": "2026-11-01",
+        "published": "2026-11-18",
+        "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/richard-vogelsang-obituary?id=63008796"
+      },
+      {
+        "id": "62863678",
+        "name": "Salvador Raya Sr.",
+        "age": 91,
+        "city": "",
+        "died": "2026-11-07",
+        "published": "2026-11-18",
+        "funeralHome": "Ric Brown Family Funeral Home - Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/salvador-raya-obituary?id=63008786"
+      },
+      {
+        "id": "62911818",
+        "name": "Victoria M. Kraft",
+        "age": 78,
+        "city": "Edinburg",
+        "died": "2026-11-15",
+        "published": "2026-11-18",
+        "funeralHome": "Memorial Funeral Home - Edinburg",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/victoria-kraft-obituary?id=63008808"
+      },
+      {
+        "id": "62862413",
+        "name": "Diana Cavazos Hinojosa",
+        "age": null,
+        "city": "",
+        "died": "2026-11-07",
+        "published": "2026-11-16",
+        "funeralHome": "Kreidler Funeral Home, Inc.",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/diana-hinojosa-obituary?id=62989640"
+      },
+      {
+        "id": "62826713",
+        "name": "Gregorio Castellanos",
+        "age": 77,
+        "city": "Weslaco",
+        "died": "2026-11-04",
+        "published": "2026-11-16",
+        "funeralHome": "McCaleb Funeral Home",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/gregorio-castellanos-obituary?id=62989645"
+      },
+      {
+        "id": "62883445",
+        "name": "Ray Dell McClaugherty",
+        "age": 86,
+        "city": "Hargill",
+        "died": "2026-11-11",
+        "published": "2026-11-16",
+        "funeralHome": "Memorial Funeral Home - Edinburg",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/ray-mcclaugherty-obituary?id=62989641"
+      },
+      {
+        "id": "62887939",
+        "name": "Alfredo Gonzalez",
+        "age": 76,
+        "city": "Pharr",
+        "died": "2026-11-06",
+        "published": "2026-11-14",
+        "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/alfredo-gonzalez-obituary?id=62982909"
+      },
+      {
+        "id": "62874133",
+        "name": "Alicia Navarro",
+        "age": 66,
+        "city": "",
+        "died": "2026-11-09",
+        "published": "2026-11-14",
+        "funeralHome": "Ric Brown Family Funeral Home - at the Expressway of Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/alicia-navarro-obituary?id=62982914"
+      },
+      {
+        "id": "62887938",
+        "name": "Gregoria Saavedra De Medina",
+        "age": 83,
+        "city": "McAllen",
+        "died": "2026-11-05",
+        "published": "2026-11-14",
+        "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/gregoria-medina-obituary?id=62982908"
+      },
+      {
+        "id": "62876836",
+        "name": "Guadalupe Sauceda",
+        "age": 89,
+        "city": "",
+        "died": "2026-11-11",
+        "published": "2026-11-14",
+        "funeralHome": "Salinas Funeral Home - Brownsville",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/guadalupe-sauceda-obituary?id=62982910"
+      },
+      {
+        "id": "62880188",
+        "name": "Joseph Anthony Allen",
+        "age": 65,
+        "city": "",
+        "died": "2026-11-09",
+        "published": "2026-11-14",
+        "funeralHome": "Kreidler Funeral Home, Inc.",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/joseph-allen-obituary?id=62982921"
+      },
+      {
+        "id": "62877803",
+        "name": "Maximiliano Torres",
+        "age": 17,
+        "city": "",
+        "died": "2026-11-11",
+        "published": "2026-11-14",
+        "funeralHome": "Virgil Wilson Mortuary - Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/maximiliano-torres-obituary?id=62982916"
+      },
+      {
+        "id": "62867837",
+        "name": "Peter James Graves",
+        "age": 82,
+        "city": "",
+        "died": "2026-10-30",
+        "published": "2026-11-14",
+        "funeralHome": "Kreidler Funeral Home, Inc.",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/peter-graves-obituary?id=62982902"
+      },
+      {
+        "id": "62847123",
+        "name": "Ramon Ozuna",
+        "age": 78,
+        "city": "",
+        "died": "2026-11-08",
+        "published": "2026-11-14",
+        "funeralHome": "Darling-Mouser Funeral Home",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/ramon-ozuna-obituary?id=62982905"
+      },
+      {
+        "id": "62878987",
+        "name": "Adolfo Torres Sr.",
+        "age": 74,
+        "city": "",
+        "died": "2026-11-11",
+        "published": "2026-11-13",
+        "funeralHome": "Family Funeral Home - Edinburg",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/adolfo-torres-obituary?id=62973957"
+      },
+      {
+        "id": "62857376",
+        "name": "Marina Barboza",
+        "age": 66,
+        "city": "Pharr",
+        "died": "2026-11-08",
+        "published": "2026-11-13",
+        "funeralHome": "Memorial Funeral Home - Edinburg",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/marina-barboza-obituary?id=62973955"
+      },
+      {
+        "id": "62866584",
+        "name": "Maria Martinez",
+        "age": 83,
+        "city": "Alamo",
+        "died": "2026-11-11",
+        "published": "2026-11-12",
+        "funeralHome": "Memorial Funeral Home - San Juan",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-martinez-obituary?id=62966441"
+      },
+      {
+        "id": "62862395",
+        "name": "Arnulfo Rodriguez",
+        "age": 78,
+        "city": "Pharr",
+        "died": "2026-11-09",
+        "published": "2026-11-11",
+        "funeralHome": "Memorial Funeral Home of San Juan",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/arnulfo-rodriguez-obituary?id=62957366"
+      },
+      {
+        "id": "62862421",
+        "name": "Ashley Lee Alvarado",
+        "age": 37,
+        "city": "Pharr",
+        "died": "2026-10-22",
+        "published": "2026-11-11",
+        "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/ashley-alvarado-obituary?id=62957392"
+      },
+      {
+        "id": "62862416",
+        "name": "Bertha Garcia De Munoz (Garcia)",
+        "age": 85,
+        "city": "Elsa",
+        "died": "2026-11-08",
+        "published": "2026-11-11",
+        "funeralHome": "Elizondo Mortuary & Cremation Service of Mission, TX",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/bertha-munoz-obituary?id=62957387"
+      },
+      {
+        "id": "62832408",
+        "name": "Eloy Flores Sr.",
+        "age": 84,
+        "city": "",
+        "died": "2026-11-03",
+        "published": "2026-11-11",
+        "funeralHome": "Rivera Funeral Home - McAllen",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/eloy-flores-obituary?id=62957377"
+      },
+      {
+        "id": "62862414",
+        "name": "Enriqueta Bazan (Bazan)",
+        "age": 84,
+        "city": "Hidalgo",
+        "died": "2026-11-06",
+        "published": "2026-11-11",
+        "funeralHome": "Elizondo Mortuary & Cremation Service of Mission, TX",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/enriqueta-bazan-obituary?id=62957385"
+      },
+      {
+        "id": "62850012",
+        "name": "Enriqueta Francisca Guzman Gonzalez",
+        "age": 85,
+        "city": "Alamo",
+        "died": "2026-11-09",
+        "published": "2026-11-11",
+        "funeralHome": "Family Funeral Home - Edinburg",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/enriqueta-gonzalez-obituary?id=62957380"
+      },
+      {
+        "id": "62850961",
+        "name": "Felicidad Valdez",
+        "age": 91,
+        "city": "",
+        "died": "2026-11-07",
+        "published": "2026-11-11",
+        "funeralHome": "Rivera Funeral Home - McAllen",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/felicidad-valdez-obituary?id=62957367"
+      },
+      {
+        "id": "62862420",
+        "name": "Gauge Rene Cerda",
+        "age": 17,
+        "city": "Mission",
+        "died": "2026-10-29",
+        "published": "2026-11-11",
+        "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/gauge-cerda-obituary?id=62957391"
+      },
+      {
+        "id": "62860490",
+        "name": "Gregoria B. Eureste",
+        "age": 73,
+        "city": "Gregoria B Eureste Edinburg",
+        "died": "2026-11-06",
+        "published": "2026-11-11",
+        "funeralHome": "Memorial Funeral Home - Edinburg",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/gregoria-eureste-obituary?id=62957356"
+      },
+      {
+        "id": "62851511",
+        "name": "Ignacia Alfaro",
+        "age": 86,
+        "city": "Pharr",
+        "died": "2026-11-07",
+        "published": "2026-11-11",
+        "funeralHome": "Memorial Funeral Home - San Juan",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/ignacia-alfaro-obituary?id=62957354"
+      },
+      {
+        "id": "62862418",
+        "name": "Jose Olivo Hinojosa",
+        "age": 86,
+        "city": "Mission",
+        "died": "2026-11-09",
+        "published": "2026-11-11",
+        "funeralHome": "Elizondo Mortuary & Cremation Service of Mission, TX",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/jose-hinojosa-obituary?id=62957389"
+      },
+      {
+        "id": "62848311",
+        "name": "Josefina Salinas",
+        "age": 92,
+        "city": "",
+        "died": "2026-11-08",
+        "published": "2026-11-11",
+        "funeralHome": "Rivera Funeral Home - McAllen",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/josefina-salinas-obituary?id=62957375"
+      },
+      {
+        "id": "62862380",
+        "name": "Leticia Mejia",
+        "age": 60,
+        "city": "Mission",
+        "died": "2026-11-05",
+        "published": "2026-11-11",
+        "funeralHome": "Memorial Funeral Home of San Juan",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/leticia-mejia-obituary?id=62957351"
+      },
+      {
+        "id": "62791357",
+        "name": "Luis Segura",
+        "age": 77,
+        "city": "",
+        "died": "2026-10-28",
+        "published": "2026-11-11",
+        "funeralHome": "Ric Brown Family Funeral Home - at the Expressway of Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/luis-segura-obituary?id=62957390"
+      },
+      {
+        "id": "62846358",
+        "name": "Maria Elena Rodriguez",
+        "age": 54,
+        "city": "",
+        "died": "2026-11-06",
+        "published": "2026-11-11",
+        "funeralHome": "Salinas Funeral Home - Weslaco",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-rodriguez-obituary?id=62957383"
+      },
+      {
+        "id": "62848309",
+        "name": "Maria J. Hernandez Garcia",
+        "age": 59,
+        "city": "",
+        "died": "2026-11-04",
+        "published": "2026-11-11",
+        "funeralHome": "Rivera Funeral Home - McAllen",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-garcia-obituary?id=62957368"
+      },
+      {
+        "id": "62862381",
+        "name": "Maria Luisa Garza",
+        "age": 97,
+        "city": "Weslaco",
+        "died": "2026-11-07",
+        "published": "2026-11-11",
+        "funeralHome": "Memorial Funeral Home - San Juan",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-garza-obituary?id=62957352"
+      },
+      {
+        "id": "62848312",
+        "name": "Matthew Javier Garza",
+        "age": 27,
+        "city": "",
+        "died": "2026-11-06",
+        "published": "2026-11-11",
+        "funeralHome": "Rivera Funeral Home - McAllen",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/matthew-garza-obituary?id=62957373"
+      },
+      {
+        "id": "62862410",
+        "name": "Roberto Tovar",
+        "age": 48,
+        "city": "Harlingen",
+        "died": "2026-11-07",
+        "published": "2026-11-11",
+        "funeralHome": "Family Funeral Home of Donna",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/roberto-tovar-obituary?id=62957381"
+      },
+      {
+        "id": "62862389",
+        "name": "Ronda Sue Faulks",
+        "age": 67,
+        "city": "Edinburg",
+        "died": "2026-11-08",
+        "published": "2026-11-11",
+        "funeralHome": "",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/ronda-faulks-obituary?id=62957360"
+      },
+      {
+        "id": "62816330",
+        "name": "Rosa Hinojosa",
+        "age": 80,
+        "city": "",
+        "died": "2026-11-04",
+        "published": "2026-11-11",
+        "funeralHome": "Darling-Mouser Funeral Home",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/rosa-hinojosa-obituary?id=62957359"
+      },
+      {
+        "id": "62862422",
+        "name": "Senovio Arevalo",
+        "age": 90,
+        "city": "Mission",
+        "died": "2026-10-23",
+        "published": "2026-11-11",
+        "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/senovio-arevalo-obituary?id=62957393"
+      },
+      {
+        "id": "62856930",
+        "name": "Susana A. Perez",
+        "age": 76,
+        "city": "",
+        "died": "2026-11-09",
+        "published": "2026-11-11",
+        "funeralHome": "Rivera at Hillcrest Funerals and Cremations",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/susana-perez-obituary?id=62957363"
+      },
+      {
+        "id": "62862403",
+        "name": "Teresa Amelia Lopez Vazquez",
+        "age": 60,
+        "city": "Alamo",
+        "died": "2026-10-31",
+        "published": "2026-11-11",
+        "funeralHome": "Rivera Funeral Home of McAllen",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/teresa-vazquez-obituary?id=62957374"
+      },
+      {
+        "id": "62833532",
+        "name": "Tomas Alonzo Jr.",
+        "age": 86,
+        "city": "San Juan",
+        "died": "2026-11-04",
+        "published": "2026-11-11",
+        "funeralHome": "Memorial Funeral Home - San Juan",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/tomas-alonzo-obituary?id=62957349"
+      },
+      {
+        "id": "62841752",
+        "name": "Arnulfo Mercado",
+        "age": 71,
+        "city": "San Juan",
+        "died": "2026-11-05",
+        "published": "2026-11-10",
+        "funeralHome": "Memorial Funeral Home - San Juan",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/arnulfo-mercado-obituary?id=62947425"
+      },
+      {
+        "id": "62844962",
+        "name": "Jesus Vicente Garcia",
+        "age": 79,
+        "city": "Monte Alto",
+        "died": "2026-11-08",
+        "published": "2026-11-10",
+        "funeralHome": "Salinas Funeral Homes - Elsa",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/jesus-garcia-obituary?id=62947431"
+      },
+      {
+        "id": "62852456",
+        "name": "Manuel Contreras",
+        "age": 95,
+        "city": "Alamo",
+        "died": "2026-11-07",
+        "published": "2026-11-10",
+        "funeralHome": "Memorial Funeral Home - San Juan",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/manuel-contreras-obituary?id=62947427"
+      },
+      {
+        "id": "62834698",
+        "name": "Maria De La Paz Dimas",
+        "age": 90,
+        "city": "Alamo",
+        "died": "2026-11-05",
+        "published": "2026-11-10",
+        "funeralHome": "Memorial Funeral Home - San Juan",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-dimas-obituary?id=62947420"
+      },
+      {
+        "id": "62852444",
+        "name": "Maria Imelda Reyna",
+        "age": 73,
+        "city": "Weslaco",
+        "died": "2026-11-06",
+        "published": "2026-11-10",
+        "funeralHome": "",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-reyna-obituary?id=62947428"
+      },
+      {
+        "id": "62852459",
+        "name": "Maria J. Charo",
+        "age": 87,
+        "city": "Edinburg",
+        "died": "2026-11-03",
+        "published": "2026-11-10",
+        "funeralHome": "Family Funeral Home of Edinburg",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-charo-obituary?id=62947430"
+      },
+      {
+        "id": "62842543",
+        "name": "Benita Guerra",
+        "age": 84,
+        "city": "San Juan",
+        "died": "2026-11-06",
+        "published": "2026-11-09",
+        "funeralHome": "Memorial Funeral Home - San Juan",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/benita-guerra-obituary?id=62937514"
+      },
+      {
+        "id": "62834906",
+        "name": "Daisy M. Chapa",
+        "age": 68,
+        "city": "Edinburg",
+        "died": "2026-11-06",
+        "published": "2026-11-09",
+        "funeralHome": "Memorial Funeral Home - Edinburg",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/daisy-chapa-obituary?id=62937509"
+      },
+      {
+        "id": "62835290",
+        "name": "Elsa Maricela Basaldua",
+        "age": 62,
+        "city": "Wesalco",
+        "died": "2026-11-05",
+        "published": "2026-11-09",
+        "funeralHome": "Hawkins Funeral Home - Weslaco",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/elsa-basaldua-obituary?id=62937512"
+      },
+      {
+        "id": "62842537",
+        "name": "Eva Dardanella Guerra Cárdenas",
+        "age": null,
+        "city": "McAllen",
+        "died": "2026-11-02",
+        "published": "2026-11-09",
+        "funeralHome": "Kreidler Funeral Home, Inc.",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/eva-c-rdenas-obituary?id=62937508"
+      },
+      {
+        "id": "62833507",
+        "name": "Manuel Omar Hernandez",
+        "age": 50,
+        "city": "",
+        "died": "2026-11-06",
+        "published": "2026-11-09",
+        "funeralHome": "Salinas Funeral Homes - Elsa",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/manuel-hernandez-obituary?id=62937510"
+      },
+      {
+        "id": "62835996",
+        "name": "Ana Elizabeth Zavala",
+        "age": 67,
+        "city": "Edinburg",
+        "died": "2026-11-04",
+        "published": "2026-11-07",
+        "funeralHome": "",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/ana-zavala-obituary?id=62930967"
+      },
+      {
+        "id": "62835997",
+        "name": "Baby Estrella Espinoza",
+        "age": null,
+        "city": "Edinburg",
+        "died": "2026-11-05",
+        "published": "2026-11-07",
+        "funeralHome": "Ceballos-Diaz Funeral Home of Edinburg",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/estrella-espinoza-obituary?id=62930968"
+      },
+      {
+        "id": "62836002",
+        "name": "Bernardino Sanchez Hidalgo",
+        "age": 87,
+        "city": "Donna",
+        "died": "2026-11-04",
+        "published": "2026-11-07",
+        "funeralHome": "Elizondo Mortuary & Cremation Service of Mission, TX",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/bernardino-hidalgo-obituary?id=62930973"
+      },
+      {
+        "id": "62834576",
+        "name": "Carlos Javier Garcia",
+        "age": 55,
+        "city": "",
+        "died": "2026-11-01",
+        "published": "2026-11-07",
+        "funeralHome": "Rivera Funeral Home - McAllen",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/carlos-garcia-obituary?id=62930969"
+      },
+      {
+        "id": "62817078",
+        "name": "Celia Carrizal",
+        "age": 103,
+        "city": "",
+        "died": "2026-11-04",
+        "published": "2026-11-07",
+        "funeralHome": "Kreidler Funeral Home, Inc.",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/celia-carrizal-obituary?id=62930970"
+      },
+      {
+        "id": "62836003",
+        "name": "Clemente Montelongo",
+        "age": 65,
+        "city": "McAllen",
+        "died": "2026-11-04",
+        "published": "2026-11-07",
+        "funeralHome": "",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/clemente-montelongo-obituary?id=62930974"
+      },
+      {
+        "id": "62836001",
+        "name": "Francis Lally Howard",
+        "age": 74,
+        "city": "",
+        "died": "2026-11-05",
+        "published": "2026-11-07",
+        "funeralHome": "Kreidler Funeral Home, Inc.",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/francis-howard-obituary?id=62930972"
+      },
+      {
+        "id": "62825533",
+        "name": "Guadalupe R. Cantu",
+        "age": 78,
+        "city": "Mission",
+        "died": "2026-11-05",
+        "published": "2026-11-07",
+        "funeralHome": "Virgil Wilson Mortuary - Mission",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/guadalupe-cantu-obituary?id=62930958"
+      },
+      {
+        "id": "62835991",
+        "name": "Maria D. Hernandez De Salas",
+        "age": 75,
+        "city": "Edinburg",
+        "died": "2026-11-04",
+        "published": "2026-11-07",
+        "funeralHome": "",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-salas-obituary?id=62930962"
+      },
+      {
+        "id": "62836005",
+        "name": "Maria De Los Angeles Cantu de Martinez (Martinez)",
+        "age": 89,
+        "city": "Mission",
+        "died": "2026-11-05",
+        "published": "2026-11-07",
+        "funeralHome": "",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-martinez-obituary?id=62930976"
+      },
+      {
+        "id": "62836017",
+        "name": "Maria Maldonado de Guerra (Maldonado)",
+        "age": 79,
+        "city": "Alamo",
+        "died": "2026-11-05",
+        "published": "2026-11-07",
+        "funeralHome": "Elizondo Mortuary & Cremation Service of Mission, TX",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-guerra-obituary?id=62930988"
+      },
+      {
+        "id": "62813001",
+        "name": "Michael Lee Martinez",
+        "age": 41,
+        "city": "",
+        "died": "2026-10-31",
+        "published": "2026-11-07",
+        "funeralHome": "Rivera at Hillcrest Funerals and Cremations",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/michael-martinez-obituary?id=62930960"
+      },
+      {
+        "id": "62826185",
+        "name": "Olga P. Cano",
+        "age": 88,
+        "city": "",
+        "died": "2026-11-05",
+        "published": "2026-11-07",
+        "funeralHome": "Rivera at Hillcrest Funerals and Cremations",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/olga-cano-obituary?id=62930965"
+      },
+      {
+        "id": "62819021",
+        "name": "Ignacia G. Garza (Garza)",
+        "age": 80,
+        "city": "Mission",
+        "died": "2026-11-02",
+        "published": "2026-11-05",
+        "funeralHome": "Elizondo Mortuary & Cremation Service of Mission, TX",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/ignacia-garza-obituary?id=62913992"
+      },
+      {
+        "id": "62819009",
+        "name": "Jose Guadalupe De La Rosa",
+        "age": 67,
+        "city": "Pharr",
+        "died": "2026-11-01",
+        "published": "2026-11-05",
+        "funeralHome": "Memorial Funeral Home of San Juan",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/jose-rosa-obituary?id=62913980"
+      },
+      {
+        "id": "62819019",
+        "name": "Maria Garcia Solis (Garcia)",
+        "age": 54,
+        "city": "",
+        "died": "2026-11-01",
+        "published": "2026-11-05",
+        "funeralHome": "",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-solis-obituary?id=62913990"
+      },
+      {
+        "id": "62817567",
+        "name": "Maria Jesusa Munoz",
+        "age": 79,
+        "city": "Pharr",
+        "died": "2026-11-03",
+        "published": "2026-11-05",
+        "funeralHome": "Memorial Funeral Home - San Juan",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-munoz-obituary?id=62913985"
+      },
+      {
+        "id": "62723897",
+        "name": "Richard Edward Gill",
+        "age": 83,
+        "city": "",
+        "died": "2026-10-22",
+        "published": "2026-11-05",
+        "funeralHome": "Sanchez Funeral Home",
+        "url": "https://www.legacy.com/us/obituaries/themonitor/name/richard-gill-obituary?id=62913991"
+      }
+    ],
+    "count": 83,
+    "groups": [
+      {
+        "label": "Nov 13–19",
+        "from": "2026-11-13",
+        "to": "2026-11-19",
+        "items": [
+          {
+            "id": "62922956",
+            "name": "Francisco A. Rodriguez Gomez",
+            "age": 83,
+            "city": "Pharr",
+            "died": "2026-11-17",
+            "published": "2026-11-19",
+            "funeralHome": "Eternal Light Funeral Home of Elsa, Texas",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/francisco-gomez-obituary?id=63017922"
+          },
+          {
+            "id": "62899481",
+            "name": "Anna Maria Gonzales",
+            "age": 71,
+            "city": "",
+            "died": "2026-11-14",
+            "published": "2026-11-18",
+            "funeralHome": "Aurora Funeral Home - Sam Houston",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/anna-gonzales-obituary?id=63008804"
+          },
+          {
+            "id": "62874130",
+            "name": "Armando Carrera",
+            "age": 81,
+            "city": "Mission",
+            "died": "2026-11-11",
+            "published": "2026-11-18",
+            "funeralHome": "Ric Brown Family Funeral Home - at the Expressway of Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/armando-carrera-obituary?id=63008783"
+          },
+          {
+            "id": "62901506",
+            "name": "Cynthia (Cindy) Roberts",
+            "age": 72,
+            "city": "",
+            "died": "2026-10-04",
+            "published": "2026-11-18",
+            "funeralHome": "",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/cynthia-roberts-obituary?id=63008803"
+          },
+          {
+            "id": "62913819",
+            "name": "Daniel Garza",
+            "age": 94,
+            "city": "Mission",
+            "died": "2026-11-09",
+            "published": "2026-11-18",
+            "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/daniel-garza-obituary?id=63008787"
+          },
+          {
+            "id": "62913822",
+            "name": "Federico Fonseca",
+            "age": 81,
+            "city": "Pharr",
+            "died": "2026-10-25",
+            "published": "2026-11-18",
+            "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/federico-fonseca-obituary?id=63008790"
+          },
+          {
+            "id": "62913831",
+            "name": "Gerardo Alvarez",
+            "age": 51,
+            "city": "Mission",
+            "died": "2026-11-01",
+            "published": "2026-11-18",
+            "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/gerardo-alvarez-obituary?id=63008799"
+          },
+          {
+            "id": "62882669",
+            "name": "Gonzalo Lerma Ortiz",
+            "age": 86,
+            "city": "Edinburg",
+            "died": "2026-11-12",
+            "published": "2026-11-18",
+            "funeralHome": "Memorial Funeral Home - Edinburg",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/gonzalo-ortiz-obituary?id=63008780"
+          },
+          {
+            "id": "62913830",
+            "name": "Janluca Amor Acosta",
+            "age": null,
+            "city": "Mission",
+            "died": "2026-10-27",
+            "published": "2026-11-18",
+            "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/janluca-acosta-obituary?id=63008798"
+          },
+          {
+            "id": "62906155",
+            "name": "John T. Hudson",
+            "age": 71,
+            "city": "",
+            "died": "2026-11-16",
+            "published": "2026-11-18",
+            "funeralHome": "Darling-Mouser Funeral Home",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/john-hudson-obituary?id=63008807"
+          },
+          {
+            "id": "62913832",
+            "name": "Jose Elizondo",
+            "age": 53,
+            "city": "Sullivan City",
+            "died": "2026-10-23",
+            "published": "2026-11-18",
+            "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/jose-elizondo-obituary?id=63008800"
+          },
+          {
+            "id": "62913824",
+            "name": "Maria Santos Gomez",
+            "age": 100,
+            "city": "Mission",
+            "died": "2026-11-03",
+            "published": "2026-11-18",
+            "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-gomez-obituary?id=63008792"
+          },
+          {
+            "id": "62913828",
+            "name": "Richard Vogelsang",
+            "age": 80,
+            "city": "Palmview",
+            "died": "2026-11-01",
+            "published": "2026-11-18",
+            "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/richard-vogelsang-obituary?id=63008796"
+          },
+          {
+            "id": "62863678",
+            "name": "Salvador Raya Sr.",
+            "age": 91,
+            "city": "",
+            "died": "2026-11-07",
+            "published": "2026-11-18",
+            "funeralHome": "Ric Brown Family Funeral Home - Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/salvador-raya-obituary?id=63008786"
+          },
+          {
+            "id": "62911818",
+            "name": "Victoria M. Kraft",
+            "age": 78,
+            "city": "Edinburg",
+            "died": "2026-11-15",
+            "published": "2026-11-18",
+            "funeralHome": "Memorial Funeral Home - Edinburg",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/victoria-kraft-obituary?id=63008808"
+          },
+          {
+            "id": "62862413",
+            "name": "Diana Cavazos Hinojosa",
+            "age": null,
+            "city": "",
+            "died": "2026-11-07",
+            "published": "2026-11-16",
+            "funeralHome": "Kreidler Funeral Home, Inc.",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/diana-hinojosa-obituary?id=62989640"
+          },
+          {
+            "id": "62826713",
+            "name": "Gregorio Castellanos",
+            "age": 77,
+            "city": "Weslaco",
+            "died": "2026-11-04",
+            "published": "2026-11-16",
+            "funeralHome": "McCaleb Funeral Home",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/gregorio-castellanos-obituary?id=62989645"
+          },
+          {
+            "id": "62883445",
+            "name": "Ray Dell McClaugherty",
+            "age": 86,
+            "city": "Hargill",
+            "died": "2026-11-11",
+            "published": "2026-11-16",
+            "funeralHome": "Memorial Funeral Home - Edinburg",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/ray-mcclaugherty-obituary?id=62989641"
+          },
+          {
+            "id": "62887939",
+            "name": "Alfredo Gonzalez",
+            "age": 76,
+            "city": "Pharr",
+            "died": "2026-11-06",
+            "published": "2026-11-14",
+            "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/alfredo-gonzalez-obituary?id=62982909"
+          },
+          {
+            "id": "62874133",
+            "name": "Alicia Navarro",
+            "age": 66,
+            "city": "",
+            "died": "2026-11-09",
+            "published": "2026-11-14",
+            "funeralHome": "Ric Brown Family Funeral Home - at the Expressway of Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/alicia-navarro-obituary?id=62982914"
+          },
+          {
+            "id": "62887938",
+            "name": "Gregoria Saavedra De Medina",
+            "age": 83,
+            "city": "McAllen",
+            "died": "2026-11-05",
+            "published": "2026-11-14",
+            "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/gregoria-medina-obituary?id=62982908"
+          },
+          {
+            "id": "62876836",
+            "name": "Guadalupe Sauceda",
+            "age": 89,
+            "city": "",
+            "died": "2026-11-11",
+            "published": "2026-11-14",
+            "funeralHome": "Salinas Funeral Home - Brownsville",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/guadalupe-sauceda-obituary?id=62982910"
+          },
+          {
+            "id": "62880188",
+            "name": "Joseph Anthony Allen",
+            "age": 65,
+            "city": "",
+            "died": "2026-11-09",
+            "published": "2026-11-14",
+            "funeralHome": "Kreidler Funeral Home, Inc.",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/joseph-allen-obituary?id=62982921"
+          },
+          {
+            "id": "62877803",
+            "name": "Maximiliano Torres",
+            "age": 17,
+            "city": "",
+            "died": "2026-11-11",
+            "published": "2026-11-14",
+            "funeralHome": "Virgil Wilson Mortuary - Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/maximiliano-torres-obituary?id=62982916"
+          },
+          {
+            "id": "62867837",
+            "name": "Peter James Graves",
+            "age": 82,
+            "city": "",
+            "died": "2026-10-30",
+            "published": "2026-11-14",
+            "funeralHome": "Kreidler Funeral Home, Inc.",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/peter-graves-obituary?id=62982902"
+          },
+          {
+            "id": "62847123",
+            "name": "Ramon Ozuna",
+            "age": 78,
+            "city": "",
+            "died": "2026-11-08",
+            "published": "2026-11-14",
+            "funeralHome": "Darling-Mouser Funeral Home",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/ramon-ozuna-obituary?id=62982905"
+          },
+          {
+            "id": "62878987",
+            "name": "Adolfo Torres Sr.",
+            "age": 74,
+            "city": "",
+            "died": "2026-11-11",
+            "published": "2026-11-13",
+            "funeralHome": "Family Funeral Home - Edinburg",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/adolfo-torres-obituary?id=62973957"
+          },
+          {
+            "id": "62857376",
+            "name": "Marina Barboza",
+            "age": 66,
+            "city": "Pharr",
+            "died": "2026-11-08",
+            "published": "2026-11-13",
+            "funeralHome": "Memorial Funeral Home - Edinburg",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/marina-barboza-obituary?id=62973955"
+          }
+        ]
+      },
+      {
+        "label": "Nov 6–12",
+        "from": "2026-11-06",
+        "to": "2026-11-12",
+        "items": [
+          {
+            "id": "62866584",
+            "name": "Maria Martinez",
+            "age": 83,
+            "city": "Alamo",
+            "died": "2026-11-11",
+            "published": "2026-11-12",
+            "funeralHome": "Memorial Funeral Home - San Juan",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-martinez-obituary?id=62966441"
+          },
+          {
+            "id": "62862395",
+            "name": "Arnulfo Rodriguez",
+            "age": 78,
+            "city": "Pharr",
+            "died": "2026-11-09",
+            "published": "2026-11-11",
+            "funeralHome": "Memorial Funeral Home of San Juan",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/arnulfo-rodriguez-obituary?id=62957366"
+          },
+          {
+            "id": "62862421",
+            "name": "Ashley Lee Alvarado",
+            "age": 37,
+            "city": "Pharr",
+            "died": "2026-10-22",
+            "published": "2026-11-11",
+            "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/ashley-alvarado-obituary?id=62957392"
+          },
+          {
+            "id": "62862416",
+            "name": "Bertha Garcia De Munoz (Garcia)",
+            "age": 85,
+            "city": "Elsa",
+            "died": "2026-11-08",
+            "published": "2026-11-11",
+            "funeralHome": "Elizondo Mortuary & Cremation Service of Mission, TX",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/bertha-munoz-obituary?id=62957387"
+          },
+          {
+            "id": "62832408",
+            "name": "Eloy Flores Sr.",
+            "age": 84,
+            "city": "",
+            "died": "2026-11-03",
+            "published": "2026-11-11",
+            "funeralHome": "Rivera Funeral Home - McAllen",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/eloy-flores-obituary?id=62957377"
+          },
+          {
+            "id": "62862414",
+            "name": "Enriqueta Bazan (Bazan)",
+            "age": 84,
+            "city": "Hidalgo",
+            "died": "2026-11-06",
+            "published": "2026-11-11",
+            "funeralHome": "Elizondo Mortuary & Cremation Service of Mission, TX",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/enriqueta-bazan-obituary?id=62957385"
+          },
+          {
+            "id": "62850012",
+            "name": "Enriqueta Francisca Guzman Gonzalez",
+            "age": 85,
+            "city": "Alamo",
+            "died": "2026-11-09",
+            "published": "2026-11-11",
+            "funeralHome": "Family Funeral Home - Edinburg",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/enriqueta-gonzalez-obituary?id=62957380"
+          },
+          {
+            "id": "62850961",
+            "name": "Felicidad Valdez",
+            "age": 91,
+            "city": "",
+            "died": "2026-11-07",
+            "published": "2026-11-11",
+            "funeralHome": "Rivera Funeral Home - McAllen",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/felicidad-valdez-obituary?id=62957367"
+          },
+          {
+            "id": "62862420",
+            "name": "Gauge Rene Cerda",
+            "age": 17,
+            "city": "Mission",
+            "died": "2026-10-29",
+            "published": "2026-11-11",
+            "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/gauge-cerda-obituary?id=62957391"
+          },
+          {
+            "id": "62860490",
+            "name": "Gregoria B. Eureste",
+            "age": 73,
+            "city": "Gregoria B Eureste Edinburg",
+            "died": "2026-11-06",
+            "published": "2026-11-11",
+            "funeralHome": "Memorial Funeral Home - Edinburg",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/gregoria-eureste-obituary?id=62957356"
+          },
+          {
+            "id": "62851511",
+            "name": "Ignacia Alfaro",
+            "age": 86,
+            "city": "Pharr",
+            "died": "2026-11-07",
+            "published": "2026-11-11",
+            "funeralHome": "Memorial Funeral Home - San Juan",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/ignacia-alfaro-obituary?id=62957354"
+          },
+          {
+            "id": "62862418",
+            "name": "Jose Olivo Hinojosa",
+            "age": 86,
+            "city": "Mission",
+            "died": "2026-11-09",
+            "published": "2026-11-11",
+            "funeralHome": "Elizondo Mortuary & Cremation Service of Mission, TX",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/jose-hinojosa-obituary?id=62957389"
+          },
+          {
+            "id": "62848311",
+            "name": "Josefina Salinas",
+            "age": 92,
+            "city": "",
+            "died": "2026-11-08",
+            "published": "2026-11-11",
+            "funeralHome": "Rivera Funeral Home - McAllen",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/josefina-salinas-obituary?id=62957375"
+          },
+          {
+            "id": "62862380",
+            "name": "Leticia Mejia",
+            "age": 60,
+            "city": "Mission",
+            "died": "2026-11-05",
+            "published": "2026-11-11",
+            "funeralHome": "Memorial Funeral Home of San Juan",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/leticia-mejia-obituary?id=62957351"
+          },
+          {
+            "id": "62791357",
+            "name": "Luis Segura",
+            "age": 77,
+            "city": "",
+            "died": "2026-10-28",
+            "published": "2026-11-11",
+            "funeralHome": "Ric Brown Family Funeral Home - at the Expressway of Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/luis-segura-obituary?id=62957390"
+          },
+          {
+            "id": "62846358",
+            "name": "Maria Elena Rodriguez",
+            "age": 54,
+            "city": "",
+            "died": "2026-11-06",
+            "published": "2026-11-11",
+            "funeralHome": "Salinas Funeral Home - Weslaco",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-rodriguez-obituary?id=62957383"
+          },
+          {
+            "id": "62848309",
+            "name": "Maria J. Hernandez Garcia",
+            "age": 59,
+            "city": "",
+            "died": "2026-11-04",
+            "published": "2026-11-11",
+            "funeralHome": "Rivera Funeral Home - McAllen",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-garcia-obituary?id=62957368"
+          },
+          {
+            "id": "62862381",
+            "name": "Maria Luisa Garza",
+            "age": 97,
+            "city": "Weslaco",
+            "died": "2026-11-07",
+            "published": "2026-11-11",
+            "funeralHome": "Memorial Funeral Home - San Juan",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-garza-obituary?id=62957352"
+          },
+          {
+            "id": "62848312",
+            "name": "Matthew Javier Garza",
+            "age": 27,
+            "city": "",
+            "died": "2026-11-06",
+            "published": "2026-11-11",
+            "funeralHome": "Rivera Funeral Home - McAllen",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/matthew-garza-obituary?id=62957373"
+          },
+          {
+            "id": "62862410",
+            "name": "Roberto Tovar",
+            "age": 48,
+            "city": "Harlingen",
+            "died": "2026-11-07",
+            "published": "2026-11-11",
+            "funeralHome": "Family Funeral Home of Donna",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/roberto-tovar-obituary?id=62957381"
+          },
+          {
+            "id": "62862389",
+            "name": "Ronda Sue Faulks",
+            "age": 67,
+            "city": "Edinburg",
+            "died": "2026-11-08",
+            "published": "2026-11-11",
+            "funeralHome": "",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/ronda-faulks-obituary?id=62957360"
+          },
+          {
+            "id": "62816330",
+            "name": "Rosa Hinojosa",
+            "age": 80,
+            "city": "",
+            "died": "2026-11-04",
+            "published": "2026-11-11",
+            "funeralHome": "Darling-Mouser Funeral Home",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/rosa-hinojosa-obituary?id=62957359"
+          },
+          {
+            "id": "62862422",
+            "name": "Senovio Arevalo",
+            "age": 90,
+            "city": "Mission",
+            "died": "2026-10-23",
+            "published": "2026-11-11",
+            "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/senovio-arevalo-obituary?id=62957393"
+          },
+          {
+            "id": "62856930",
+            "name": "Susana A. Perez",
+            "age": 76,
+            "city": "",
+            "died": "2026-11-09",
+            "published": "2026-11-11",
+            "funeralHome": "Rivera at Hillcrest Funerals and Cremations",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/susana-perez-obituary?id=62957363"
+          },
+          {
+            "id": "62862403",
+            "name": "Teresa Amelia Lopez Vazquez",
+            "age": 60,
+            "city": "Alamo",
+            "died": "2026-10-31",
+            "published": "2026-11-11",
+            "funeralHome": "Rivera Funeral Home of McAllen",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/teresa-vazquez-obituary?id=62957374"
+          },
+          {
+            "id": "62833532",
+            "name": "Tomas Alonzo Jr.",
+            "age": 86,
+            "city": "San Juan",
+            "died": "2026-11-04",
+            "published": "2026-11-11",
+            "funeralHome": "Memorial Funeral Home - San Juan",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/tomas-alonzo-obituary?id=62957349"
+          },
+          {
+            "id": "62841752",
+            "name": "Arnulfo Mercado",
+            "age": 71,
+            "city": "San Juan",
+            "died": "2026-11-05",
+            "published": "2026-11-10",
+            "funeralHome": "Memorial Funeral Home - San Juan",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/arnulfo-mercado-obituary?id=62947425"
+          },
+          {
+            "id": "62844962",
+            "name": "Jesus Vicente Garcia",
+            "age": 79,
+            "city": "Monte Alto",
+            "died": "2026-11-08",
+            "published": "2026-11-10",
+            "funeralHome": "Salinas Funeral Homes - Elsa",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/jesus-garcia-obituary?id=62947431"
+          },
+          {
+            "id": "62852456",
+            "name": "Manuel Contreras",
+            "age": 95,
+            "city": "Alamo",
+            "died": "2026-11-07",
+            "published": "2026-11-10",
+            "funeralHome": "Memorial Funeral Home - San Juan",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/manuel-contreras-obituary?id=62947427"
+          },
+          {
+            "id": "62834698",
+            "name": "Maria De La Paz Dimas",
+            "age": 90,
+            "city": "Alamo",
+            "died": "2026-11-05",
+            "published": "2026-11-10",
+            "funeralHome": "Memorial Funeral Home - San Juan",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-dimas-obituary?id=62947420"
+          },
+          {
+            "id": "62852444",
+            "name": "Maria Imelda Reyna",
+            "age": 73,
+            "city": "Weslaco",
+            "died": "2026-11-06",
+            "published": "2026-11-10",
+            "funeralHome": "",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-reyna-obituary?id=62947428"
+          },
+          {
+            "id": "62852459",
+            "name": "Maria J. Charo",
+            "age": 87,
+            "city": "Edinburg",
+            "died": "2026-11-03",
+            "published": "2026-11-10",
+            "funeralHome": "Family Funeral Home of Edinburg",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-charo-obituary?id=62947430"
+          },
+          {
+            "id": "62842543",
+            "name": "Benita Guerra",
+            "age": 84,
+            "city": "San Juan",
+            "died": "2026-11-06",
+            "published": "2026-11-09",
+            "funeralHome": "Memorial Funeral Home - San Juan",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/benita-guerra-obituary?id=62937514"
+          },
+          {
+            "id": "62834906",
+            "name": "Daisy M. Chapa",
+            "age": 68,
+            "city": "Edinburg",
+            "died": "2026-11-06",
+            "published": "2026-11-09",
+            "funeralHome": "Memorial Funeral Home - Edinburg",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/daisy-chapa-obituary?id=62937509"
+          },
+          {
+            "id": "62835290",
+            "name": "Elsa Maricela Basaldua",
+            "age": 62,
+            "city": "Wesalco",
+            "died": "2026-11-05",
+            "published": "2026-11-09",
+            "funeralHome": "Hawkins Funeral Home - Weslaco",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/elsa-basaldua-obituary?id=62937512"
+          },
+          {
+            "id": "62842537",
+            "name": "Eva Dardanella Guerra Cárdenas",
+            "age": null,
+            "city": "McAllen",
+            "died": "2026-11-02",
+            "published": "2026-11-09",
+            "funeralHome": "Kreidler Funeral Home, Inc.",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/eva-c-rdenas-obituary?id=62937508"
+          },
+          {
+            "id": "62833507",
+            "name": "Manuel Omar Hernandez",
+            "age": 50,
+            "city": "",
+            "died": "2026-11-06",
+            "published": "2026-11-09",
+            "funeralHome": "Salinas Funeral Homes - Elsa",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/manuel-hernandez-obituary?id=62937510"
+          },
+          {
+            "id": "62835996",
+            "name": "Ana Elizabeth Zavala",
+            "age": 67,
+            "city": "Edinburg",
+            "died": "2026-11-04",
+            "published": "2026-11-07",
+            "funeralHome": "",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/ana-zavala-obituary?id=62930967"
+          },
+          {
+            "id": "62835997",
+            "name": "Baby Estrella Espinoza",
+            "age": null,
+            "city": "Edinburg",
+            "died": "2026-11-05",
+            "published": "2026-11-07",
+            "funeralHome": "Ceballos-Diaz Funeral Home of Edinburg",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/estrella-espinoza-obituary?id=62930968"
+          },
+          {
+            "id": "62836002",
+            "name": "Bernardino Sanchez Hidalgo",
+            "age": 87,
+            "city": "Donna",
+            "died": "2026-11-04",
+            "published": "2026-11-07",
+            "funeralHome": "Elizondo Mortuary & Cremation Service of Mission, TX",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/bernardino-hidalgo-obituary?id=62930973"
+          },
+          {
+            "id": "62834576",
+            "name": "Carlos Javier Garcia",
+            "age": 55,
+            "city": "",
+            "died": "2026-11-01",
+            "published": "2026-11-07",
+            "funeralHome": "Rivera Funeral Home - McAllen",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/carlos-garcia-obituary?id=62930969"
+          },
+          {
+            "id": "62817078",
+            "name": "Celia Carrizal",
+            "age": 103,
+            "city": "",
+            "died": "2026-11-04",
+            "published": "2026-11-07",
+            "funeralHome": "Kreidler Funeral Home, Inc.",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/celia-carrizal-obituary?id=62930970"
+          },
+          {
+            "id": "62836003",
+            "name": "Clemente Montelongo",
+            "age": 65,
+            "city": "McAllen",
+            "died": "2026-11-04",
+            "published": "2026-11-07",
+            "funeralHome": "",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/clemente-montelongo-obituary?id=62930974"
+          },
+          {
+            "id": "62836001",
+            "name": "Francis Lally Howard",
+            "age": 74,
+            "city": "",
+            "died": "2026-11-05",
+            "published": "2026-11-07",
+            "funeralHome": "Kreidler Funeral Home, Inc.",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/francis-howard-obituary?id=62930972"
+          },
+          {
+            "id": "62825533",
+            "name": "Guadalupe R. Cantu",
+            "age": 78,
+            "city": "Mission",
+            "died": "2026-11-05",
+            "published": "2026-11-07",
+            "funeralHome": "Virgil Wilson Mortuary - Mission",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/guadalupe-cantu-obituary?id=62930958"
+          },
+          {
+            "id": "62835991",
+            "name": "Maria D. Hernandez De Salas",
+            "age": 75,
+            "city": "Edinburg",
+            "died": "2026-11-04",
+            "published": "2026-11-07",
+            "funeralHome": "",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-salas-obituary?id=62930962"
+          },
+          {
+            "id": "62836005",
+            "name": "Maria De Los Angeles Cantu de Martinez (Martinez)",
+            "age": 89,
+            "city": "Mission",
+            "died": "2026-11-05",
+            "published": "2026-11-07",
+            "funeralHome": "",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-martinez-obituary?id=62930976"
+          },
+          {
+            "id": "62836017",
+            "name": "Maria Maldonado de Guerra (Maldonado)",
+            "age": 79,
+            "city": "Alamo",
+            "died": "2026-11-05",
+            "published": "2026-11-07",
+            "funeralHome": "Elizondo Mortuary & Cremation Service of Mission, TX",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-guerra-obituary?id=62930988"
+          },
+          {
+            "id": "62813001",
+            "name": "Michael Lee Martinez",
+            "age": 41,
+            "city": "",
+            "died": "2026-10-31",
+            "published": "2026-11-07",
+            "funeralHome": "Rivera at Hillcrest Funerals and Cremations",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/michael-martinez-obituary?id=62930960"
+          },
+          {
+            "id": "62826185",
+            "name": "Olga P. Cano",
+            "age": 88,
+            "city": "",
+            "died": "2026-11-05",
+            "published": "2026-11-07",
+            "funeralHome": "Rivera at Hillcrest Funerals and Cremations",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/olga-cano-obituary?id=62930965"
+          }
+        ]
+      },
+      {
+        "label": "Nov 5",
+        "from": "2026-11-05",
+        "to": "2026-11-05",
+        "items": [
+          {
+            "id": "62819021",
+            "name": "Ignacia G. Garza (Garza)",
+            "age": 80,
+            "city": "Mission",
+            "died": "2026-11-02",
+            "published": "2026-11-05",
+            "funeralHome": "Elizondo Mortuary & Cremation Service of Mission, TX",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/ignacia-garza-obituary?id=62913992"
+          },
+          {
+            "id": "62819009",
+            "name": "Jose Guadalupe De La Rosa",
+            "age": 67,
+            "city": "Pharr",
+            "died": "2026-11-01",
+            "published": "2026-11-05",
+            "funeralHome": "Memorial Funeral Home of San Juan",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/jose-rosa-obituary?id=62913980"
+          },
+          {
+            "id": "62819019",
+            "name": "Maria Garcia Solis (Garcia)",
+            "age": 54,
+            "city": "",
+            "died": "2026-11-01",
+            "published": "2026-11-05",
+            "funeralHome": "",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-solis-obituary?id=62913990"
+          },
+          {
+            "id": "62817567",
+            "name": "Maria Jesusa Munoz",
+            "age": 79,
+            "city": "Pharr",
+            "died": "2026-11-03",
+            "published": "2026-11-05",
+            "funeralHome": "Memorial Funeral Home - San Juan",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-munoz-obituary?id=62913985"
+          },
+          {
+            "id": "62723897",
+            "name": "Richard Edward Gill",
+            "age": 83,
+            "city": "",
+            "died": "2026-10-22",
+            "published": "2026-11-05",
+            "funeralHome": "Sanchez Funeral Home",
+            "url": "https://www.legacy.com/us/obituaries/themonitor/name/richard-gill-obituary?id=62913991"
+          }
+        ]
+      }
+    ],
+    "script": "We want to take a moment to remember some of our neighbors we lost over the past week. Francisco A. Rodriguez Gomez, 83, of Pharr; Armando Carrera, 81, of Mission; Daniel Garza, 94, of Mission; Federico Fonseca, 81, of Pharr; Gerardo Alvarez, 51, of Mission; Gonzalo Lerma Ortiz, 86, of Edinburg. Our thoughts are with their families and friends. You'll find these and more in The Monitor's obituaries on Legacy dot com.",
+    "pickUrls": [
+      "https://www.legacy.com/us/obituaries/themonitor/name/francisco-gomez-obituary?id=63017922",
+      "https://www.legacy.com/us/obituaries/themonitor/name/armando-carrera-obituary?id=63008783",
+      "https://www.legacy.com/us/obituaries/themonitor/name/daniel-garza-obituary?id=63008787",
+      "https://www.legacy.com/us/obituaries/themonitor/name/federico-fonseca-obituary?id=63008790",
+      "https://www.legacy.com/us/obituaries/themonitor/name/gerardo-alvarez-obituary?id=63008799",
+      "https://www.legacy.com/us/obituaries/themonitor/name/gonzalo-ortiz-obituary?id=63008780"
+    ],
+    "window": {
+      "from": "2026-11-05",
+      "to": "2026-11-19",
+      "days": 15
+    },
+    "windowLabel": "Nov 5–19",
+    "source": "Legacy.com · The Monitor (McAllen, TX)",
+    "sourceUrl": "https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor",
+    "fetchedAt": "2026-11-19T20:44:24-06:00",
+    "note": ""
+  },
+  "up_to_coming": [
+    {
+      "date": "2026-11-24",
+      "label": "chess club",
+      "category": "club",
+      "count": 2
+    },
+    {
+      "date": "2026-11-24",
+      "label": "hip hop class",
+      "category": "dance",
+      "count": 1
+    },
+    {
+      "date": "2026-11-25",
+      "label": "tap class",
+      "category": "dance",
+      "count": 1
+    }
+  ],
   "showClock": [
     {
       "letter": "A",
@@ -2149,7 +3865,7 @@
       "signature": false,
       "weave": null,
       "talkingPoints": [
-        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Monday, November 23rd, and you're listening to Drew in the Morning with Drew and Jess. Coming up this hour, the local stories everyone's talking about, starting with the county saying no to SpaceX's tax break, plus Mission heading to a December 12th runoff. On the National Desk, the FAA's nationwide ground stop and what it means for Valley flyers. In Trending, Ella Langley's big night at the CMA Awards. And in How We'd Talk to Our Kids, Jess and I take on strangers online and what to say when the group chat turns mean. It's 74 and a slight chance of rain showers outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Monday, November 23rd, and you're listening to Drew in the Morning with Drew and Jess. Coming up this hour, the local stories everyone's talking about, starting with the county saying no to SpaceX's tax break, plus Mission heading to a December 12th runoff. On the National Desk, the FAA's nationwide ground stop and what it means for Valley flyers. In Trending, Ella Langley's big night at the CMA Awards. And in How We'd Talk to Our Kids, Jess and I take on strangers online and what to say when the group chat turns mean. It's 70 and a chance of showers and thunderstorms outside, the coffee's hot, so stick around, this is Drew in the Morning.",
         "JINGLE: Drew in the Morning. Your Valley, your news, your morning.",
         "JINGLE: \"Drew in the Morning. Your Valley, your news, your morning.\" (alternates in cold-open.md)",
         "COLD OPEN: read the paragraph the packet builds each morning (card at the top of the studio page; also in the PDF, txt and email, and in obs-data.json under coldOpen). It is one flowing paragraph, about 25 seconds, filled with today's real headlines.",
@@ -2186,7 +3902,7 @@
       "letter": "B",
       "title": "What I've Been Up To This Week",
       "short": "Up To",
-      "subject": "Personal touchpoint (2-3 min): public-facing things Drew and Jess did this week, then straight into Local news",
+      "subject": "Light family touchpoint (about 30 seconds, up to 3 min with Jess): school, music, clubs and family fun from Drew's family calendar, then straight into Local news",
       "timeRange": "8:02–8:05",
       "minutes": 3,
       "offset": 2,
@@ -2198,22 +3914,26 @@
       "signature": false,
       "weave": null,
       "talkingPoints": [
-        "READ ALOUD (auto-built from this week's events; CONFIRM BEFORE AIR): Hey, for the last week, here's what I've been up to. Outside the studio I spent a good chunk of it sending in talk proposals for a handful of 2027 conferences: emergency management, fire and rescue, and 9-1-1 shows, all about getting Wi-Fi up fast when a shelter or a command post has to stand up overnight. Nothing's been accepted yet, so I'll let you know if anybody says yes. Okay, enough about me. Let's get into the Valley.",
-        "EVENT (CONFIRM BEFORE AIR): Nov 16 · Drew · conference: Sent in a talk proposal to ResCon New Orleans 2027 (Mar 9-11): standing up shelter Wi-Fi in hours",
-        "EVENT (CONFIRM BEFORE AIR): Nov 16 · Drew · conference: Sent in a talk proposal to the South Atlantic Fire Rescue Expo 2027 (Aug 11-14, Raleigh): fast Wi-Fi for command posts",
-        "EVENT (CONFIRM BEFORE AIR): Nov 16 · Drew · conference: Sent in talk proposals to the IAFC Wildland-Urban Interface conference (Austin, Mar 23-25) and CALNENA 2027 (Los Angeles, Mar 1-3)",
-        "EVENT (CONFIRM BEFORE AIR): Nov 12 · Drew · conference: Sent in a talk proposal to the IAEM-USA Region 6 Symposium 2027: temporary Wi-Fi for EOCs and shelters",
-        "SCRIPT: read the paragraph the packet builds (field up_to_script; it appears on the studio page, PDF, txt, email and in obs-data.json under upTo). 2 to 3 minutes, conversational, then drop into Local news.",
-        "EVENTS: the list under the script (field up_to[]: date, title, type conference/presentation/meeting/appearance, who Drew/Jess, optional public link). Every item is CONFIRM BEFORE AIR: eyeball each one and cut anything you don't want said on air.",
-        "NO EVENTS: if nothing is found the script says so plainly (\"Quiet week on the calendar...\") and the packet notes \"No calendar events found\". Do not make something up.",
-        "PRIVACY (read on air): only public-facing participation: talks, conferences, panels, appearances, community events. Never personal, medical, financial, legal, client-confidential or private 1:1 meetings, and never name private individuals."
+        "READ ALOUD (auto-built from the family calendar, generic wording): Busy week at the Lentz house. We had a school picnic on Tuesday, hip hop class on Tuesday, cotillion on Wednesday, tap class on Wednesday, and the region clinic and concert on Friday. Coming up this week: chess club twice, hip hop class on Tuesday, and tap class on Wednesday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.",
+        "FROM THE CALENDAR: a school picnic · Tue Nov 17",
+        "FROM THE CALENDAR: hip hop class · Tue Nov 17",
+        "FROM THE CALENDAR: cotillion · Wed Nov 18",
+        "FROM THE CALENDAR: tap class · Wed Nov 18",
+        "FROM THE CALENDAR: the region clinic and concert · Fri Nov 20",
+        "FROM THE CALENDAR: COMING UP: chess club · twice",
+        "FROM THE CALENDAR: COMING UP: hip hop class · Tue Nov 24",
+        "FROM THE CALENDAR: COMING UP: tap class · Wed Nov 25",
+        "SCRIPT: read the paragraph the packet builds from Drew's FAMILY calendar (field up_to_script; it appears on the studio page, PDF, txt, email and in obs-data.json under upTo). About 20 to 40 seconds, light and conversational, then toss to Jess for one question and drop into Local news.",
+        "ITEMS: the list under the script (field up_to[]: date, label, category; on Mondays also up_to_coming[], the next 7 days). Recurring activities are one line each (\"chess club twice\"). Labels are generic: the kids are not named on air unless NAME_KIDS_ON_AIR is flipped to true in family-calendar.yml.",
+        "QUIET WEEK: if nothing qualifies the script says \"Quiet week on the family calendar\" and gives Jess an easy riff prompt. Do not make something up.",
+        "LEFT OFF THE AIR, always: medical or health, personal grooming, bills and money, work admin, support appointments, pick-ups and drop-offs, routine workouts, private reservations and dinners, other people's private parties, birthdays and retirements. When unsure it is left out. No conference or work talk; no Gmail in this block."
       ],
       "followUps": [
-        "Jess: anything from your week worth a mention (a school event, a community thing)? Ask live; nothing here is pre-filled for her."
+        "Jess: what was your favorite part of the week? (One easy question, then on to the news.)"
       ],
       "transitions": [
-        "Okay, enough about me. Let's get into the Valley.",
-        "That's my week. Here's what the Valley's been up to."
+        "Okay, enough about us. Let's get into the Valley.",
+        "That's our week. Here's what the Valley's been up to."
       ],
       "segueNext": "That's my week. Here's what the Valley's been up to.",
       "chyrons": [
@@ -2225,23 +3945,11 @@
         {
           "id": "b2",
           "primary": "This Week",
-          "secondary": "Talks, conferences & community events"
+          "secondary": "School, music, clubs & family fun"
         }
       ],
-      "links": [
-        {
-          "label": "ResCon 2027 call for proposals",
-          "url": "https://resconnola.com/2027-call-for-proposals/"
-        },
-        {
-          "label": "SAFRE 2027 call for presenters",
-          "url": "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/"
-        }
-      ],
-      "confirm": [
-        "Every up_to item: CONFIRM BEFORE AIR (Drew eyeballs the list)",
-        "Calendar is not connected, so events come from email only"
-      ]
+      "links": [],
+      "confirm": []
     },
     {
       "letter": "C",
@@ -3068,13 +4776,17 @@
         "Always include one 'what parents should know' line, e.g. the Door Kick Challenge is a crime, not a prank (Irvine PD, Nov 12).",
         "Mark anything thin as CONFIRM BEFORE AIR (X volume for several trends is low, so popularity is TikTok-side and unverified).",
         "Look ahead: Thanksgiving Thu Nov 26 · FAA comments close Dec 7 · Edinburg Night of Lights Parade Dec 4 · Mission/Weslaco runoffs Dec 12 (early voting from Nov 30) · Food Truck Park closes Jan 14, 2027 · Cameron abatement hearing would have been Dec 29 (now off).",
-        "Jess back in: one thing she's watching this week; favorite moment. Socials: IG/TikTok @drewinthemorning · YouTube @DrewintheMorning · Facebook page. Tease Mon Nov 30, 8 AM CT. Jingle out."
+        "Jess back in: one thing she's watching this week; favorite moment. Socials: IG/TikTok @drewinthemorning · YouTube @DrewintheMorning · Facebook page. Tease Mon Nov 30, 8 AM CT. Jingle out.",
+        "REMEMBERING OUR NEIGHBORS (about 45 seconds, after the memes and right before the look-ahead and sign-off, so the hour ends on a human note). Slow down, no music bed, no joke before or after. The names, ages and towns are auto-built each morning from The Monitor's obituaries on Legacy.com (card on the studio page: Remembering Our Neighbors). Read only a handful, then point listeners to the full list on the page.",
+        "READ ALOUD, SLOWLY (auto-built from The Monitor's obituaries; CONFIRM name pronunciations): We want to take a moment to remember some of our neighbors we lost over the past week. Francisco A. Rodriguez Gomez, 83, of Pharr; Armando Carrera, 81, of Mission; Daniel Garza, 94, of Mission; Federico Fonseca, 81, of Pharr; Gerardo Alvarez, 51, of Mission; Gonzalo Lerma Ortiz, 86, of Edinburg. Our thoughts are with their families and friends. You'll find these and more in The Monitor's obituaries on Legacy dot com.",
+        "NEVER mention how anyone died, and don't add details that aren't in the notice. If you aren't sure how to say a name, skip it or check the link first. If block L is running long, read three names and keep the pointer."
       ],
       "followUps": [
         "Ask chat: what's the weirdest thing your kid said this week?"
       ],
       "transitions": [
         "That's the fun stuff. Thanks for spending the hour with us. See you next time.",
+        "Before we go, we want to take a moment to remember some of our neighbors. (Obituary read, then the sign-off.)",
         "Jingle out."
       ],
       "segueNext": "",
@@ -3108,6 +4820,11 @@
           "id": "l6",
           "primary": "Follow @drewinthemorning",
           "secondary": "IG · TikTok · YouTube · Facebook"
+        },
+        {
+          "id": "l7",
+          "primary": "Remembering Our Neighbors",
+          "secondary": "Obituaries from The Monitor · Legacy.com"
         }
       ],
       "links": [
@@ -3122,12 +4839,17 @@
         {
           "label": "Show social calendar (draft)",
           "url": "social-calendar.md"
+        },
+        {
+          "label": "Legacy.com: The Monitor obituaries, McAllen",
+          "url": "https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor"
         }
       ],
       "confirm": [
         "Meme popularity measured on TikTok; X volume is low",
         "Early-voting dates",
-        "ditm@drewlentz.com (seen as the show inbox; CONFIRM BEFORE AIR that it is meant for public submissions)"
+        "ditm@drewlentz.com (seen as the show inbox; CONFIRM BEFORE AIR that it is meant for public submissions)",
+        "Obituary names and spellings come from Legacy.com; CONFIRM pronunciation before reading"
       ]
     }
   ],
@@ -3151,14 +4873,14 @@
     "trends": {
       "TX": 10,
       "US": 10,
-      "fetchedAt": "2026-11-19T12:30:35+00:00",
+      "fetchedAt": "2026-11-20T02:58:56+00:00",
       "fromCache": true
     },
     "formula": "score = outlets(6 per distinct outlet, max 30) + recency(20 x 0.5^(age_h/12)) + X(20 x min(1, log10(1+eng+25 posts)/4)) + Google Trends(20 TX / 12 US) + chatter(10 x min(1, log10(1+eng+5 posts)/2.5)); Hot >= 45, Trending >= 27, else Active",
-    "trendsNote": "Google Trends US-TX 10 + US 10 items, fetched 2026-11-19T12:30:35+00:00 (cache)"
+    "trendsNote": "Google Trends US-TX 10 + US 10 items, fetched 2026-11-20T02:58:56+00:00 (cache)"
   },
   "coldOpen": {
-    "text": "Good morning, Rio Grande Valley! It's Monday, November 23rd, and you're listening to Drew in the Morning with Drew and Jess. Coming up this hour, the local stories everyone's talking about, starting with the county saying no to SpaceX's tax break, plus Mission heading to a December 12th runoff. On the National Desk, the FAA's nationwide ground stop and what it means for Valley flyers. In Trending, Ella Langley's big night at the CMA Awards. And in How We'd Talk to Our Kids, Jess and I take on strangers online and what to say when the group chat turns mean. It's 74 and a slight chance of rain showers outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+    "text": "Good morning, Rio Grande Valley! It's Monday, November 23rd, and you're listening to Drew in the Morning with Drew and Jess. Coming up this hour, the local stories everyone's talking about, starting with the county saying no to SpaceX's tax break, plus Mission heading to a December 12th runoff. On the National Desk, the FAA's nationwide ground stop and what it means for Valley flyers. In Trending, Ella Langley's big night at the CMA Awards. And in How We'd Talk to Our Kids, Jess and I take on strangers online and what to say when the group chat turns mean. It's 70 and a chance of showers and thunderstorms outside, the coffee's hot, so stick around, this is Drew in the Morning.",
     "jingle": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [
       "Wake up, RGV. It's Drew in the Morning.",
@@ -3172,10 +4894,10 @@
   },
   "linkCheck": {
     "date": "2026-11-19",
-    "ok": 85,
-    "blocked": 13,
+    "ok": 84,
+    "blocked": 14,
     "dead": 0,
-    "unreachable": 2
+    "unreachable": 1
   },
   "linkCheckDetail": {
     "https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/": {
@@ -3318,10 +5040,6 @@
       "status": 200,
       "result": "ok"
     },
-    "https://resconnola.com/2027-call-for-proposals/": {
-      "status": 200,
-      "result": "ok"
-    },
     "https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/": {
       "status": 200,
       "result": "ok"
@@ -3387,7 +5105,7 @@
       "result": "ok"
     },
     "https://www.basketball-reference.com/boxscores/": {
-      "status": 200,
+      "status": 302,
       "result": "ok"
     },
     "https://www.billboard.com/music/awards/cma-2026-winners-list-1236385046/": {
@@ -3474,6 +5192,10 @@
       "status": 200,
       "result": "ok"
     },
+    "https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor": {
+      "status": 403,
+      "result": "blocked-by-site"
+    },
     "https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/": {
       "status": 200,
       "result": "ok"
@@ -3542,10 +5264,6 @@
       "status": 200,
       "result": "ok"
     },
-    "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/": {
-      "status": 0,
-      "result": "unreachable"
-    },
     "https://www.texastribune.org/2026/11/03/texas-bobby-pulido-monica-de-la-cruz-congress-district-15-elections-2026/": {
       "status": 200,
       "result": "ok"
@@ -3579,7 +5297,7 @@
       "result": "ok"
     }
   },
-  "generatedAt": "2026-11-19T06:32:24-06:00",
+  "generatedAt": "2026-11-19T21:00:43-06:00",
   "sources": [
     {
       "section": "Top headlines: RGV",
@@ -3962,26 +5680,6 @@
       "url": "https://trendoday.com/youtube/2026/11/18"
     },
     {
-      "section": "What I've Been Up To",
-      "label": "ResCon 2027 call for proposals",
-      "url": "https://resconnola.com/2027-call-for-proposals/"
-    },
-    {
-      "section": "What I've Been Up To",
-      "label": "SAFRE 2027 call for presenters",
-      "url": "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/"
-    },
-    {
-      "section": "Run of show: B",
-      "label": "ResCon 2027 call for proposals",
-      "url": "https://resconnola.com/2027-call-for-proposals/"
-    },
-    {
-      "section": "Run of show: B",
-      "label": "SAFRE 2027 call for presenters",
-      "url": "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/"
-    },
-    {
       "section": "Run of show: C",
       "label": "MyRGV: commissioners reject SpaceX bid",
       "url": "https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/"
@@ -4230,6 +5928,431 @@
       "section": "Run of show: L",
       "label": "ABC7: Irvine PD on door kick challenge",
       "url": "https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/"
+    },
+    {
+      "section": "Run of show: L",
+      "label": "Legacy.com: The Monitor obituaries, McAllen",
+      "url": "https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Legacy.com: The Monitor obituaries, McAllen",
+      "url": "https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Francisco A. Rodriguez Gomez",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/francisco-gomez-obituary?id=63017922"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Anna Maria Gonzales",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/anna-gonzales-obituary?id=63008804"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Armando Carrera",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/armando-carrera-obituary?id=63008783"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Cynthia (Cindy) Roberts",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/cynthia-roberts-obituary?id=63008803"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Daniel Garza",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/daniel-garza-obituary?id=63008787"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Federico Fonseca",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/federico-fonseca-obituary?id=63008790"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Gerardo Alvarez",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/gerardo-alvarez-obituary?id=63008799"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Gonzalo Lerma Ortiz",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/gonzalo-ortiz-obituary?id=63008780"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Janluca Amor Acosta",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/janluca-acosta-obituary?id=63008798"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "John T. Hudson",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/john-hudson-obituary?id=63008807"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Jose Elizondo",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/jose-elizondo-obituary?id=63008800"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Maria Santos Gomez",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-gomez-obituary?id=63008792"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Richard Vogelsang",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/richard-vogelsang-obituary?id=63008796"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Salvador Raya Sr.",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/salvador-raya-obituary?id=63008786"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Victoria M. Kraft",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/victoria-kraft-obituary?id=63008808"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Diana Cavazos Hinojosa",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/diana-hinojosa-obituary?id=62989640"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Gregorio Castellanos",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/gregorio-castellanos-obituary?id=62989645"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Ray Dell McClaugherty",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/ray-mcclaugherty-obituary?id=62989641"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Alfredo Gonzalez",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/alfredo-gonzalez-obituary?id=62982909"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Alicia Navarro",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/alicia-navarro-obituary?id=62982914"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Gregoria Saavedra De Medina",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/gregoria-medina-obituary?id=62982908"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Guadalupe Sauceda",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/guadalupe-sauceda-obituary?id=62982910"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Joseph Anthony Allen",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/joseph-allen-obituary?id=62982921"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Maximiliano Torres",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/maximiliano-torres-obituary?id=62982916"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Peter James Graves",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/peter-graves-obituary?id=62982902"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Ramon Ozuna",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/ramon-ozuna-obituary?id=62982905"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Adolfo Torres Sr.",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/adolfo-torres-obituary?id=62973957"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Marina Barboza",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/marina-barboza-obituary?id=62973955"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Maria Martinez",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-martinez-obituary?id=62966441"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Arnulfo Rodriguez",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/arnulfo-rodriguez-obituary?id=62957366"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Ashley Lee Alvarado",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/ashley-alvarado-obituary?id=62957392"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Bertha Garcia De Munoz (Garcia)",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/bertha-munoz-obituary?id=62957387"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Eloy Flores Sr.",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/eloy-flores-obituary?id=62957377"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Enriqueta Bazan (Bazan)",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/enriqueta-bazan-obituary?id=62957385"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Enriqueta Francisca Guzman Gonzalez",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/enriqueta-gonzalez-obituary?id=62957380"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Felicidad Valdez",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/felicidad-valdez-obituary?id=62957367"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Gauge Rene Cerda",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/gauge-cerda-obituary?id=62957391"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Gregoria B. Eureste",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/gregoria-eureste-obituary?id=62957356"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Ignacia Alfaro",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/ignacia-alfaro-obituary?id=62957354"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Jose Olivo Hinojosa",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/jose-hinojosa-obituary?id=62957389"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Josefina Salinas",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/josefina-salinas-obituary?id=62957375"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Leticia Mejia",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/leticia-mejia-obituary?id=62957351"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Luis Segura",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/luis-segura-obituary?id=62957390"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Maria Elena Rodriguez",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-rodriguez-obituary?id=62957383"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Maria J. Hernandez Garcia",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-garcia-obituary?id=62957368"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Maria Luisa Garza",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-garza-obituary?id=62957352"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Matthew Javier Garza",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/matthew-garza-obituary?id=62957373"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Roberto Tovar",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/roberto-tovar-obituary?id=62957381"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Ronda Sue Faulks",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/ronda-faulks-obituary?id=62957360"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Rosa Hinojosa",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/rosa-hinojosa-obituary?id=62957359"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Senovio Arevalo",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/senovio-arevalo-obituary?id=62957393"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Susana A. Perez",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/susana-perez-obituary?id=62957363"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Teresa Amelia Lopez Vazquez",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/teresa-vazquez-obituary?id=62957374"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Tomas Alonzo Jr.",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/tomas-alonzo-obituary?id=62957349"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Arnulfo Mercado",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/arnulfo-mercado-obituary?id=62947425"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Jesus Vicente Garcia",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/jesus-garcia-obituary?id=62947431"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Manuel Contreras",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/manuel-contreras-obituary?id=62947427"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Maria De La Paz Dimas",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-dimas-obituary?id=62947420"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Maria Imelda Reyna",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-reyna-obituary?id=62947428"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Maria J. Charo",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-charo-obituary?id=62947430"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Benita Guerra",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/benita-guerra-obituary?id=62937514"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Daisy M. Chapa",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/daisy-chapa-obituary?id=62937509"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Elsa Maricela Basaldua",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/elsa-basaldua-obituary?id=62937512"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Eva Dardanella Guerra Cárdenas",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/eva-c-rdenas-obituary?id=62937508"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Manuel Omar Hernandez",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/manuel-hernandez-obituary?id=62937510"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Ana Elizabeth Zavala",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/ana-zavala-obituary?id=62930967"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Baby Estrella Espinoza",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/estrella-espinoza-obituary?id=62930968"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Bernardino Sanchez Hidalgo",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/bernardino-hidalgo-obituary?id=62930973"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Carlos Javier Garcia",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/carlos-garcia-obituary?id=62930969"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Celia Carrizal",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/celia-carrizal-obituary?id=62930970"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Clemente Montelongo",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/clemente-montelongo-obituary?id=62930974"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Francis Lally Howard",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/francis-howard-obituary?id=62930972"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Guadalupe R. Cantu",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/guadalupe-cantu-obituary?id=62930958"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Maria D. Hernandez De Salas",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-salas-obituary?id=62930962"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Maria De Los Angeles Cantu de Martinez (Martinez)",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-martinez-obituary?id=62930976"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Maria Maldonado de Guerra (Maldonado)",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-guerra-obituary?id=62930988"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Michael Lee Martinez",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/michael-martinez-obituary?id=62930960"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Olga P. Cano",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/olga-cano-obituary?id=62930965"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Ignacia G. Garza (Garza)",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/ignacia-garza-obituary?id=62913992"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Jose Guadalupe De La Rosa",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/jose-rosa-obituary?id=62913980"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Maria Garcia Solis (Garcia)",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-solis-obituary?id=62913990"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Maria Jesusa Munoz",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-munoz-obituary?id=62913985"
+    },
+    {
+      "section": "Remembering Our Neighbors",
+      "label": "Richard Edward Gill",
+      "url": "https://www.legacy.com/us/obituaries/themonitor/name/richard-gill-obituary?id=62913991"
     }
   ]
 }

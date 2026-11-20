@@ -135,10 +135,6 @@
     "status": 200,
     "result": "ok"
   },
-  "https://resconnola.com/2027-call-for-proposals/": {
-    "status": 200,
-    "result": "ok"
-  },
   "https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/": {
     "status": 200,
     "result": "ok"
@@ -212,7 +208,7 @@
     "result": "ok"
   },
   "https://www.basketball-reference.com/boxscores/": {
-    "status": 200,
+    "status": 302,
     "result": "ok"
   },
   "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o": {
@@ -355,6 +351,10 @@
     "status": 200,
     "result": "ok"
   },
+  "https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
   "https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/": {
     "status": 200,
     "result": "ok"
@@ -430,10 +430,6 @@
   "https://www.showbiz411.com/2026/11/18/john-mulaney-phoebe-bridgers-snl-best-this-season-drops-back-to-season-average-ratings-down-20-from-last-weeks-high": {
     "status": 200,
     "result": "ok"
-  },
-  "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/": {
-    "status": 0,
-    "result": "unreachable"
   },
   "https://www.texastribune.org/2026/11/03/texas-bobby-pulido-monica-de-la-cruz-congress-district-15-elections-2026/": {
     "status": 200,

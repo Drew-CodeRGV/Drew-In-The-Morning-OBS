@@ -346,6 +346,8 @@ class ShippedShowTests(unittest.TestCase):
             ROOT / "tests" / "test_breaking_watch.py",
             ROOT / "tests" / "test_trend_score.py",
             ROOT / "tests" / "test_tech_section.py",
+            ROOT / "tests" / "test_obituaries.py",
+            ROOT / "tests" / "test_family_calendar.py",
         }
         for folder in SCAN_DIRS:
             for path in (ROOT / folder).rglob("*"):

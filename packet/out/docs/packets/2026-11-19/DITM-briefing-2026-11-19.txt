@@ -25,122 +25,114 @@ COLD OPEN (read aloud, about 45 seconds)
   with Hidalgo County's first screwworm case, plus SpaceX's quiet data-center air permit. On
   the National Desk, the first-ever Trump, Xi and Putin summit. In Trending, GTA Six finally
   dropping. And in How We'd Talk to Our Kids, Jess and I take on energy drinks, caffeine and
-  what a 14-year-old actually needs to know. It's 67 and cloudy outside, the coffee's hot,
-  so stick around, this is Drew in the Morning.
+  what a 14-year-old actually needs to know. It's 70 and clear outside, the coffee's hot, so
+  stick around, this is Drew in the Morning.
   JINGLE: Drew in the Morning. Your Valley, your news, your morning.
   CONFIRM BEFORE AIR (teased, unconfirmed; not part of the spoken text): RGV: Hidalgo Co.
     confirms 1st screwworm case; 4-county quarantine; RGV: SpaceX got data-center air permit
     a day before county's 'no'; National Desk: Trump, Xi and Putin hold the first-ever
     three-way summit (Shenzhen, APEC)
 
-WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min) · 4 item(s) found · CONFIRM BEFORE AIR
-  Hey, for the last week, here's what I've been up to. Outside the studio I spent a good
-  chunk of it sending in talk proposals for a handful of 2027 conferences: emergency
-  management, fire and rescue, and 9-1-1 shows, all about getting Wi-Fi up fast when a
-  shelter or a command post has to stand up overnight. Nothing's been accepted yet, so I'll
-  let you know if anybody says yes. Okay, enough about me. Let's get into the Valley.
-  - Nov 16 · Drew · conference: Sent in a talk proposal to ResCon New Orleans 2027 (Mar
-    9-11): standing up shelter Wi-Fi in hours  [CONFIRM BEFORE AIR]
-    ResCon 2027 call for proposals: https://resconnola.com/2027-call-for-proposals/
-  - Nov 16 · Drew · conference: Sent in a talk proposal to the South Atlantic Fire Rescue
-    Expo 2027 (Aug 11-14, Raleigh): fast Wi-Fi for command posts  [CONFIRM BEFORE AIR]
-    SAFRE 2027 call for presenters: https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/
-  - Nov 16 · Drew · conference: Sent in talk proposals to the IAFC Wildland-Urban Interface
-    conference (Austin, Mar 23-25) and CALNENA 2027 (Los Angeles, Mar 1-3)  [CONFIRM BEFORE
-    AIR]
-  - Nov 12 · Drew · conference: Sent in a talk proposal to the IAEM-USA Region 6 Symposium
-    2027: temporary Wi-Fi for EOCs and shelters  [CONFIRM BEFORE AIR]
-  Window Nov 12-19, 2026. Calendar: not connected (no calendar tool available); built from
-    email only. Proposals SUBMITTED, not accepted: do not say 'accepted' or 'speaking at'.
-    Gmail checked Nov 19: no new public events since Nov 16. Nothing found for Jess (no
-    access to her calendar or mail). Public-facing items only.
+WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min, from the family calendar) · 5 from the week
+  Busy week at the Lentz house. We had the Rayburn Fall Festival on Saturday, a school
+  picnic on Tuesday, hip hop class on Tuesday, cotillion on Wednesday, and tap class on
+  Wednesday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.
+  - the Rayburn Fall Festival · Sat Nov 14
+  - a school picnic · Tue Nov 17
+  - hip hop class · Tue Nov 17
+  - cotillion · Wed Nov 18
+  - tap class · Wed Nov 18
+  Window Nov 13–19, 2026. Calendar: Family calendar (iCloud, published feed). Family-
+    friendly items only, generic wording.
+  INTERNAL NOTE (not for air): 4 calendar items left off the air (medical, personal, money,
+    work, private or unsure); 5 qualifying occurrences used. Names never leave this note.
 
 STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README.md). 44
   stories, 0 duplicate(s) merged, 1 hot, 1 trending, 2 uncovered lead(s). Google Trends US-
-  TX 10 + US 10 items, fetched 2026-11-19T12:32:27+00:00.
+  TX 10 + US 10 items, fetched 2026-11-20T03:00:46+00:00.
 
 TOP HEADLINES · RGV FIRST
-  - [ACT 16] Hidalgo County confirms its first New World screwworm case (a calf); quarantine
+  - [ACT 10] Hidalgo County confirms its first New World screwworm case (a calf); quarantine
     zone covers parts of 4 counties (KRGV · Nov 18)
     https://www.krgv.com/news/hidalgo-county-confirms-first-new-world-screwworm-case-in-calf/
-  - [ACT 25] SpaceX got its TCEQ air permit (35 gas turbines, 750 MW) for the Starbase data
+  - [ACT 20] SpaceX got its TCEQ air permit (35 gas turbines, 750 MW) for the Starbase data
     center a day before Cameron County said no to a tax-break hearing (MyRGV · Nov 18)
     https://myrgv.com/local-news/2026/11/18/spacex-received-data-center-permit-a-day-before-tax-break-rejection/
-  - [ACT 19] La Joya ISD uses under 60% of its space, needs $160M+ in repairs and may close
+  - [ACT 12] La Joya ISD uses under 60% of its space, needs $160M+ in repairs and may close
     more campuses after losing ~8,000 students in a decade (KRGV · Nov 18)
     https://www.krgv.com/news/plummeting-enrollment-leaves-la-joya-isd-facing-160m-maintenance-bill-and-possible-closures/
-  - [ACT 15] McAllen city manager: $17.5B in retail sales (2023, Dallas Fed), ~28% from
+  - [ACT 10] McAllen city manager: $17.5B in retail sales (2023, Dallas Fed), ~28% from
     Mexican shoppers; ~$99M sales tax through Sept 2026 (Texas Border Business · Nov 18)
     https://texasborderbusiness.com/mcallen-retail-sales-reach-17-5-billion-as-sales-tax-revenues-continue-to-climb/
-  - [ACT 13] Cameron County Elections Administrator Remi Garza resigns for a Secretary of
+  - [ACT 9] Cameron County Elections Administrator Remi Garza resigns for a Secretary of
     State job; last day Dec. 14 (KRGV · Nov 18)
     https://www.krgv.com/news/cameron-county-election-commission-to-appoint-new-administrator-following-garza-s-resignation/
-  - [ACT 13] Cameron County ballots pulled for Texas's first statewide risk-limiting audit:
+  - [ACT 9] Cameron County ballots pulled for Texas's first statewide risk-limiting audit:
     U.S. Senate, Supreme Court chief justice, county clerk (KRGV · Nov 18)
     https://www.krgv.com/news/cameron-county-elections-department-to-review-three-races-as-part-of-first-statewide-audit/
-  - [ACT 13] Congressman-elect Bobby Pulido hosts a free Friends' Thanksgiving Celebration
+  - [ACT 9] Congressman-elect Bobby Pulido hosts a free Friends' Thanksgiving Celebration
     Mon Nov 23, 11 AM-2 PM, Bert Ogden Arena (Tejano Nation · Nov 18)
     https://tejanonation.net/2026/11/18/bobby-pulido-friends-thanksgiving-celebration-edinburg-2026/
-  - [ACT 22] Weslaco family waits on appeals court in wrongful-death suit over 17-year-old
+  - [ACT 18] Weslaco family waits on appeals court in wrongful-death suit over 17-year-old
     who drank energy drinks; arguments heard Nov 18 (KRGV · Nov 18)
     https://www.krgv.com/news/weslaco-family-waits-as-appeals-court-reviews-wrongful-death-lawsuit-against-energy-drink-distributor/
-  - [ACT 13] Edinburg CISD asks families for input after losing ~2,000 students since the
+  - [ACT 9] Edinburg CISD asks families for input after losing ~2,000 students since the
     pandemic (KRGV · Nov 18)
     https://www.krgv.com/news/edinburg-cisd-launches-survey-seeking-input-on-improvement/
-  - [ACT 21] State Sen. Chuy Hinojosa asks TxDMV to rescind rule requiring proof of legal
+  - [ACT 17] State Sen. Chuy Hinojosa asks TxDMV to rescind rule requiring proof of legal
     status to register a vehicle (board meets Dec. 10) (MyRGV · Nov 18)
     https://myrgv.com/local-news/2026/11/18/texas-senator-calls-for-dmv-to-rescind-new-vehicle-registration-legal-status-rule/
-  - [ACT 13] Pedestrian study ordered for the University Dr. crosswalk near UTRGV after Rep.
+  - [ACT 9] Pedestrian study ordered for the University Dr. crosswalk near UTRGV after Rep.
     Terry Canales raised safety concerns (KRGV · Nov 18)
     https://www.krgv.com/news/safety-concerns-prompt-pedestrian-study-of-busy-crosswalk-near-utrgv-in-edinburg/
-  - [ACT 13] Alton starts its first-ever 20-year comprehensive plan ($250K FEMA grant via
-    the GLO); wants resident input (KRGV · Nov 18)
+  - [ACT 9] Alton starts its first-ever 20-year comprehensive plan ($250K FEMA grant via the
+    GLO); wants resident input (KRGV · Nov 18)
     https://www.krgv.com/news/city-of-alton-wants-residents-to-help-shape-first-ever-comprehensive-plan/
-  - [ACT 13] Mission councilwoman Jessica Ortega sworn in for a fourth term (MyRGV · Nov 18)
+  - [ACT 9] Mission councilwoman Jessica Ortega sworn in for a fourth term (MyRGV · Nov 18)
     https://myrgv.com/local-news/2026/11/18/jessica-ortega-sworn-in-after-voters-elect-her-to-fourth-term-with-mission/
-  - [ACT 26] Mission bans loud dog barking 10 PM-6 AM, caps hens at four, bans roosters
+  - [ACT 18] Mission bans loud dog barking 10 PM-6 AM, caps hens at four, bans roosters
     (Daily McAllen · Nov 19)
     https://dailymcallen.com/local-news/editions/11-19-2026
-  - [ACT 13] Von Miller visits McAllen ahead of the Dec. 5 Holiday Parade ('Wild Christmas')
+  - [ACT 9] Von Miller visits McAllen ahead of the Dec. 5 Holiday Parade ('Wild Christmas')
     (Texas Border Business · Nov 18)
     https://texasborderbusiness.com/nfl-star-von-miller-receives-warm-welcome-in-mcallen-ahead-of-holiday-parade/
-  - [ACT 13] Head football coaches at Edinburg North and Port Isabel resign (ValleyCentral ·
+  - [ACT 9] Head football coaches at Edinburg North and Port Isabel resign (ValleyCentral ·
     Nov 18)
     https://www.valleycentral.com/local-sports/edinburg-north-port-isabel-head-football-coaches-resign/
-  - [ACT 23] Two charged with murder in Brownsville homicide investigation that began with a
+  - [ACT 19] Two charged with murder in Brownsville homicide investigation that began with a
     crash (KRGV · Nov 18)
     https://www.krgv.com/news/two-suspects-charged-with-murder-after-brownsville-crash-leads-to-homicide-investigation/
   - [ACT 14] Mission mayor and council races head to Dec. 12 runoffs (KRGV)
     https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/
-  - [ACT 13] Texas A&M McAllen to build $50M health education building (Daily McAllen · Nov
+  - [ACT 9] Texas A&M McAllen to build $50M health education building (Daily McAllen · Nov
     18)
     https://dailymcallen.com/local-news/editions/11-18-2026
-  - [ACT 8] McAllen Food Truck Park closure delayed to Jan. 14, 2027 (Daily McAllen · Nov
+  - [ACT 7] McAllen Food Truck Park closure delayed to Jan. 14, 2027 (Daily McAllen · Nov
     17)
     https://dailymcallen.com/local-news/editions/11-17-2026
   Texas:
-  - [ACT 13] Texas public schools lost ~135,000 students this year, the largest one-year
-    drop in state history (TEA) (Community Impact · Nov 18)
+  - [ACT 9] Texas public schools lost ~135,000 students this year, the largest one-year drop
+    in state history (TEA) (Community Impact · Nov 18)
     https://communityimpact.com/central-austin/education/texas-public-schools-lost-135k-students-this-school-year-largest-decline-in-state-history/
-  - [ACT 13] Tesla weighs a $3.1B polysilicon plant near Robstown (515 jobs by 2032) and
-    asks Tuloso-Midway ISD for a JETI tax break (KIII · Nov 18)
+  - [ACT 9] Tesla weighs a $3.1B polysilicon plant near Robstown (515 jobs by 2032) and asks
+    Tuloso-Midway ISD for a JETI tax break (KIII · Nov 18)
     https://www.kiiitv.com/article/news/local/tesla-plans-31-billion-solar-materials-plant-near-robstown/503-85e31b2e-ab9d-4e9b-b87b-9731c391f939
-  - [ACT 13] Gov.-elect Gina Hinojosa says she talked border security with Trump; told him
+  - [ACT 9] Gov.-elect Gina Hinojosa says she talked border security with Trump; told him
     Big Bend residents prefer electronic monitoring to a wall (Texas Tribune · Nov 18)
     https://www.texastribune.org/2026/11/18/gina-hinojosa-texas-governor-elect-interview/
-  - [ACT 13] Sen. John Cornyn blocks Trump's late pick (Elliot Gaiser) for a North Texas
+  - [ACT 9] Sen. John Cornyn blocks Trump's late pick (Elliot Gaiser) for a North Texas
     federal judgeship: not a Texan, not vetted (Texas Tribune · Nov 18)
     https://www.texastribune.org/2026/11/18/texas-john-cornyn-trump-judge-gaiser-blocked/
-  - [ACT 26] How Texas Republicans' 2025 congressional gerrymander fell short (incl.
+  - [ACT 18] How Texas Republicans' 2025 congressional gerrymander fell short (incl.
     Cuellar's Laredo race) (Texas Tribune · Nov 19)
     https://www.texastribune.org/2026/11/19/texas-redistricting-2026-midterms-gop-congressional-map/
-  - [ACT 13] Democrats' statewide sweep reshapes Texas's high courts (MyRGV (Texas Tribune)
-    · Nov 18)
+  - [ACT 9] Democrats' statewide sweep reshapes Texas's high courts (MyRGV (Texas Tribune) ·
+    Nov 18)
     https://myrgv.com/wire/2026/11/18/republicans-spent-years-remaking-texas-courts-in-their-image-voters-unraveled-it-in-one-election/
   Photo: File photo: Starship (Steve Jurvetson, CC BY 2.0, Wikimedia Commons) https://commons.wikimedia.org/wiki/File:SpaceX_Starship_before_IFT-5.jpg
 
 TRENDING: WAIT, DON'T TELL ME (riff material; separate from the National Desk)
-- [HOT 53] Grand Theft Auto VI is out after a 13-year wait  [gaming]
+- [HOT 45] Grand Theft Auto VI is out after a 13-year wait  [gaming]
     SUMMARY: GTA VI launched Nov 19 on PS5 and Xbox Series X; the download is 212 GB, and
       the Miami Heat went all-in on a 'Vice City' tie-in.
     RIFF: Half the Valley called in sick today, the other half is downloading 212 gigs on
@@ -149,7 +141,7 @@ TRENDING: WAIT, DON'T TELL ME (riff material; separate from the National Desk)
     DW · Nov 19: https://www.dw.com/en/grand-theft-auto-vi-launches-to-global-fanfare/a-79986461
     AP: Heat go all in on 'Vice City' collab: https://apnews.com/article/grand-theft-auto-heat-vice-city-a19fc5a3279c95be5b4f6a7d831be199
     X: #1 US trend 'GTA 6': https://x.com/search?q=GTA%206
-- [ACT 25] Ella Langley sweeps the CMA Awards with 'Choosin' Texas'  [culture]
+- [ACT 21] Ella Langley sweeps the CMA Awards with 'Choosin' Texas'  [culture]
     SUMMARY: At the 60th CMA Awards (Nov 18) Ella Langley won Single, Song and Music Video
       of the Year for 'Choosin' Texas'; Taylor Swift performed for the first time in 13
       years and Lainey Wilson hosted.
@@ -159,31 +151,31 @@ TRENDING: WAIT, DON'T TELL ME (riff material; separate from the National Desk)
     Variety · Nov 18: https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/
     USA Today: full winners list: https://www.usatoday.com/story/entertainment/music/2026/11/18/cma-awards-2026-winners-list/92853447007/
     Billboard: winners, updating live: https://www.billboard.com/music/awards/cma-2026-winners-list-1236385046/
-- [ACT 13] Instagram now lets you edit a Story after posting (15-minute window)  [tech]
+- [ACT 9] Instagram now lets you edit a Story after posting (15-minute window)  [tech]
     SUMMARY: Instagram head Adam Mosseri confirmed users can edit a published Story (text,
       stickers, music) for 15 minutes.
     RIFF: Great for typos, but tell your kids: 15 minutes to fix it, forever for the
       screenshot.
     9to5Mac · Nov 18: https://9to5mac.com/2026/11/18/instagram-finally-lets-users-edit-stories-after-publishing-but-theres-a-catch/
-- [ACT 13] Cowboys hand defensive play-calling to Mike Pettine  [sports]
+- [ACT 9] Cowboys hand defensive play-calling to Mike Pettine  [sports]
     SUMMARY: After allowing 46 points and 584 yards to the 49ers, the 4-6 Cowboys moved
       play-calling from DC Christian Parker to senior assistant Mike Pettine (ESPN via PFR).
     RIFF: The Valley bleeds silver and blue, and right now it's mostly bleeding. Is a new
       play-caller enough before the Titans Sunday?
     ProFootballRumors · Nov 18: https://www.profootballrumors.com/2026/11/mike-pettine-to-take-over-as-cowboys-defensive-play-caller
-- [ACT 26] Musk: his record $446M midterm spending was 'pretty foolish'  [business]
+- [ACT 18] Musk: his record $446M midterm spending was 'pretty foolish'  [business]
     SUMMARY: At the DealBook Summit, Elon Musk, the cycle's top individual donor (much of it
       in Texas), called the spending 'pretty foolish' and said he's 'not MAGA'.
     RIFF: $446 million and the shrug emoji. Meanwhile, his Starbase data center just lost
       its tax-break bid in Cameron County.
     BBC · Nov 19: https://www.bbc.com/news/articles/cm9q8j2z3gg8o
-- [ACT 26] Hila Klein addresses husband Ethan Klein's alleged affair  [celebrity]  [CONFIRM BEFORE AIR: Allegation only; single outlet opened via headline, CONFIRM BEFORE AIR]
+- [ACT 18] Hila Klein addresses husband Ethan Klein's alleged affair  [celebrity]  [CONFIRM BEFORE AIR: Allegation only; single outlet opened via headline, CONFIRM BEFORE AIR]
     SUMMARY: h3h3 co-host Hila Klein publicly addressed her husband Ethan's alleged affair:
       'My whole entire life just shattered.'
     RIFF: Your teens know h3h3 even if you don't. Handle gently; it's a family going through
       it in public.
     Yahoo · Nov 19: https://www.yahoo.com/entertainment/celebrity/articles/hila-klein-addresses-husband-ethan-060440507.html
-- [ACT 25] Giannis faces the Bucks for the first time as a Heat player  [sports]  [CONFIRM BEFORE AIR: Final margin not independently confirmed; the NBA.com box score shows Heat 128.]
+- [ACT 21] Giannis faces the Bucks for the first time as a Heat player  [sports]  [CONFIRM BEFORE AIR: Final margin not independently confirmed; the NBA.com box score shows Heat 128.]
     SUMMARY: Giannis Antetokounmpo (20 points, 11 rebounds, 9 assists) and the Heat beat the
       1-13 Bucks on Nov 18, his first game against Milwaukee since the offseason trade; he
       called it 'just another game.' He also scored 20 in Monday's 128-110 win over Houston.
@@ -192,7 +184,7 @@ TRENDING: WAIT, DON'T TELL ME (riff material; separate from the National Desk)
     CBS Sports · Nov 18: https://www.cbssports.com/nba/news/giannis-antetokounmpo-set-to-face-bucks-for-first-time-with-heat/
     NBA.com box score (Heat vs Bucks): https://www.nba.com/bucks/game/0022600260-bucks-vs-heat-miami-fl-11-18-2026
     GMA/Reuters: 'just another game': https://www.gmanetwork.com/news/sports/basketball/1009886/nba-giannis-antetokounmpo-downplays-emotions-as-heat-face-bucks/story/
-- [ACT 13] YouTube trending: Lil Baby's 'Aint Goin' holds #1; teasers for 'Twilight (But Better)' and '3 Body Problem' S2  [viral video]  [CONFIRM BEFORE AIR: Chart comes from a third-party tracker of YouTube's trending list; confirm on youtube.com/feed/trending.]
+- [ACT 9] YouTube trending: Lil Baby's 'Aint Goin' holds #1; teasers for 'Twilight (But Better)' and '3 Body Problem' S2  [viral video]  [CONFIRM BEFORE AIR: Chart comes from a third-party tracker of YouTube's trending list; confirm on youtube.com/feed/trending.]
     SUMMARY: On Nov 18 Lil Baby's 'Aint Goin' official video stayed #1 on YouTube's U.S.
       trending list all day; a 'Twilight (But Better)' teaser, a '3 Body Problem' season 2
       teaser, CaseOh and Markiplier videos also charted.
@@ -291,16 +283,195 @@ WHAT'S HAPPENING IN TECH (sub-segment of block J, after the National Desk) [FALL
       the local news) are where the AI boom touches the Valley.
     Link: https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/
 
+REMEMBERING OUR NEIGHBORS (read near the close, block L) · 83 obituaries from The Monitor on Legacy.com, Nov 5–19
+  Only what each notice lists: no cause of death. CONFIRM name pronunciations before
+    reading.
+  ON-AIR READ: We want to take a moment to remember some of our neighbors we lost over the
+    past week. Francisco A. Rodriguez Gomez, 83, of Pharr; Armando Carrera, 81, of Mission;
+    Daniel Garza, 94, of Mission; Federico Fonseca, 81, of Pharr; Gerardo Alvarez, 51, of
+    Mission; Gonzalo Lerma Ortiz, 86, of Edinburg. Our thoughts are with their families and
+    friends. You'll find these and more in The Monitor's obituaries on Legacy dot com.
+  Nov 13–19 (28)
+    - Francisco A. Rodriguez Gomez, 83 · Pharr · died Nov 17 · ran Nov 19 · Eternal Light Funeral Home of Elsa, Texas
+      https://www.legacy.com/us/obituaries/themonitor/name/francisco-gomez-obituary?id=63017922
+    - Anna Maria Gonzales, 71 · died Nov 14 · ran Nov 18 · Aurora Funeral Home - Sam Houston
+      https://www.legacy.com/us/obituaries/themonitor/name/anna-gonzales-obituary?id=63008804
+    - Armando Carrera, 81 · Mission · died Nov 11 · ran Nov 18 · Ric Brown Family Funeral Home - at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/armando-carrera-obituary?id=63008783
+    - Cynthia (Cindy) Roberts, 72 · died Oct 4 · ran Nov 18
+      https://www.legacy.com/us/obituaries/themonitor/name/cynthia-roberts-obituary?id=63008803
+    - Daniel Garza, 94 · Mission · died Nov 9 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/daniel-garza-obituary?id=63008787
+    - Federico Fonseca, 81 · Pharr · died Oct 25 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/federico-fonseca-obituary?id=63008790
+    - Gerardo Alvarez, 51 · Mission · died Nov 1 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/gerardo-alvarez-obituary?id=63008799
+    - Gonzalo Lerma Ortiz, 86 · Edinburg · died Nov 12 · ran Nov 18 · Memorial Funeral Home - Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/gonzalo-ortiz-obituary?id=63008780
+    - Janluca Amor Acosta · Mission · died Oct 27 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/janluca-acosta-obituary?id=63008798
+    - John T. Hudson, 71 · died Nov 16 · ran Nov 18 · Darling-Mouser Funeral Home
+      https://www.legacy.com/us/obituaries/themonitor/name/john-hudson-obituary?id=63008807
+    - Jose Elizondo, 53 · Sullivan City · died Oct 23 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/jose-elizondo-obituary?id=63008800
+    - Maria Santos Gomez, 100 · Mission · died Nov 3 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/maria-gomez-obituary?id=63008792
+    - Richard Vogelsang, 80 · Palmview · died Nov 1 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/richard-vogelsang-obituary?id=63008796
+    - Salvador Raya Sr., 91 · died Nov 7 · ran Nov 18 · Ric Brown Family Funeral Home - Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/salvador-raya-obituary?id=63008786
+    - Victoria M. Kraft, 78 · Edinburg · died Nov 15 · ran Nov 18 · Memorial Funeral Home - Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/victoria-kraft-obituary?id=63008808
+    - Diana Cavazos Hinojosa · died Nov 7 · ran Nov 16 · Kreidler Funeral Home, Inc.
+      https://www.legacy.com/us/obituaries/themonitor/name/diana-hinojosa-obituary?id=62989640
+    - Gregorio Castellanos, 77 · Weslaco · died Nov 4 · ran Nov 16 · McCaleb Funeral Home
+      https://www.legacy.com/us/obituaries/themonitor/name/gregorio-castellanos-obituary?id=62989645
+    - Ray Dell McClaugherty, 86 · Hargill · died Nov 11 · ran Nov 16 · Memorial Funeral Home - Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/ray-mcclaugherty-obituary?id=62989641
+    - Alfredo Gonzalez, 76 · Pharr · died Nov 6 · ran Nov 14 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/alfredo-gonzalez-obituary?id=62982909
+    - Alicia Navarro, 66 · died Nov 9 · ran Nov 14 · Ric Brown Family Funeral Home - at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/alicia-navarro-obituary?id=62982914
+    - Gregoria Saavedra De Medina, 83 · McAllen · died Nov 5 · ran Nov 14 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/gregoria-medina-obituary?id=62982908
+    - Guadalupe Sauceda, 89 · died Nov 11 · ran Nov 14 · Salinas Funeral Home - Brownsville
+      https://www.legacy.com/us/obituaries/themonitor/name/guadalupe-sauceda-obituary?id=62982910
+    - Joseph Anthony Allen, 65 · died Nov 9 · ran Nov 14 · Kreidler Funeral Home, Inc.
+      https://www.legacy.com/us/obituaries/themonitor/name/joseph-allen-obituary?id=62982921
+    - Maximiliano Torres, 17 · died Nov 11 · ran Nov 14 · Virgil Wilson Mortuary - Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/maximiliano-torres-obituary?id=62982916
+    - Peter James Graves, 82 · died Oct 30 · ran Nov 14 · Kreidler Funeral Home, Inc.
+      https://www.legacy.com/us/obituaries/themonitor/name/peter-graves-obituary?id=62982902
+    - Ramon Ozuna, 78 · died Nov 8 · ran Nov 14 · Darling-Mouser Funeral Home
+      https://www.legacy.com/us/obituaries/themonitor/name/ramon-ozuna-obituary?id=62982905
+    - Adolfo Torres Sr., 74 · died Nov 11 · ran Nov 13 · Family Funeral Home - Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/adolfo-torres-obituary?id=62973957
+    - Marina Barboza, 66 · Pharr · died Nov 8 · ran Nov 13 · Memorial Funeral Home - Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/marina-barboza-obituary?id=62973955
+  Nov 6–12 (50)
+    - Maria Martinez, 83 · Alamo · died Nov 11 · ran Nov 12 · Memorial Funeral Home - San Juan
+      https://www.legacy.com/us/obituaries/themonitor/name/maria-martinez-obituary?id=62966441
+    - Arnulfo Rodriguez, 78 · Pharr · died Nov 9 · ran Nov 11 · Memorial Funeral Home of San Juan
+      https://www.legacy.com/us/obituaries/themonitor/name/arnulfo-rodriguez-obituary?id=62957366
+    - Ashley Lee Alvarado, 37 · Pharr · died Oct 22 · ran Nov 11 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/ashley-alvarado-obituary?id=62957392
+    - Bertha Garcia De Munoz (Garcia), 85 · Elsa · died Nov 8 · ran Nov 11 · Elizondo Mortuary & Cremation Service of Mission, TX
+      https://www.legacy.com/us/obituaries/themonitor/name/bertha-munoz-obituary?id=62957387
+    - Eloy Flores Sr., 84 · died Nov 3 · ran Nov 11 · Rivera Funeral Home - McAllen
+      https://www.legacy.com/us/obituaries/themonitor/name/eloy-flores-obituary?id=62957377
+    - Enriqueta Bazan (Bazan), 84 · Hidalgo · died Nov 6 · ran Nov 11 · Elizondo Mortuary & Cremation Service of Mission, TX
+      https://www.legacy.com/us/obituaries/themonitor/name/enriqueta-bazan-obituary?id=62957385
+    - Enriqueta Francisca Guzman Gonzalez, 85 · Alamo · died Nov 9 · ran Nov 11 · Family Funeral Home - Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/enriqueta-gonzalez-obituary?id=62957380
+    - Felicidad Valdez, 91 · died Nov 7 · ran Nov 11 · Rivera Funeral Home - McAllen
+      https://www.legacy.com/us/obituaries/themonitor/name/felicidad-valdez-obituary?id=62957367
+    - Gauge Rene Cerda, 17 · Mission · died Oct 29 · ran Nov 11 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/gauge-cerda-obituary?id=62957391
+    - Gregoria B. Eureste, 73 · Gregoria B Eureste Edinburg · died Nov 6 · ran Nov 11 · Memorial Funeral Home - Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/gregoria-eureste-obituary?id=62957356
+    - Ignacia Alfaro, 86 · Pharr · died Nov 7 · ran Nov 11 · Memorial Funeral Home - San Juan
+      https://www.legacy.com/us/obituaries/themonitor/name/ignacia-alfaro-obituary?id=62957354
+    - Jose Olivo Hinojosa, 86 · Mission · died Nov 9 · ran Nov 11 · Elizondo Mortuary & Cremation Service of Mission, TX
+      https://www.legacy.com/us/obituaries/themonitor/name/jose-hinojosa-obituary?id=62957389
+    - Josefina Salinas, 92 · died Nov 8 · ran Nov 11 · Rivera Funeral Home - McAllen
+      https://www.legacy.com/us/obituaries/themonitor/name/josefina-salinas-obituary?id=62957375
+    - Leticia Mejia, 60 · Mission · died Nov 5 · ran Nov 11 · Memorial Funeral Home of San Juan
+      https://www.legacy.com/us/obituaries/themonitor/name/leticia-mejia-obituary?id=62957351
+    - Luis Segura, 77 · died Oct 28 · ran Nov 11 · Ric Brown Family Funeral Home - at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/luis-segura-obituary?id=62957390
+    - Maria Elena Rodriguez, 54 · died Nov 6 · ran Nov 11 · Salinas Funeral Home - Weslaco
+      https://www.legacy.com/us/obituaries/themonitor/name/maria-rodriguez-obituary?id=62957383
+    - Maria J. Hernandez Garcia, 59 · died Nov 4 · ran Nov 11 · Rivera Funeral Home - McAllen
+      https://www.legacy.com/us/obituaries/themonitor/name/maria-garcia-obituary?id=62957368
+    - Maria Luisa Garza, 97 · Weslaco · died Nov 7 · ran Nov 11 · Memorial Funeral Home - San Juan
+      https://www.legacy.com/us/obituaries/themonitor/name/maria-garza-obituary?id=62957352
+    - Matthew Javier Garza, 27 · died Nov 6 · ran Nov 11 · Rivera Funeral Home - McAllen
+      https://www.legacy.com/us/obituaries/themonitor/name/matthew-garza-obituary?id=62957373
+    - Roberto Tovar, 48 · Harlingen · died Nov 7 · ran Nov 11 · Family Funeral Home of Donna
+      https://www.legacy.com/us/obituaries/themonitor/name/roberto-tovar-obituary?id=62957381
+    - Ronda Sue Faulks, 67 · Edinburg · died Nov 8 · ran Nov 11
+      https://www.legacy.com/us/obituaries/themonitor/name/ronda-faulks-obituary?id=62957360
+    - Rosa Hinojosa, 80 · died Nov 4 · ran Nov 11 · Darling-Mouser Funeral Home
+      https://www.legacy.com/us/obituaries/themonitor/name/rosa-hinojosa-obituary?id=62957359
+    - Senovio Arevalo, 90 · Mission · died Oct 23 · ran Nov 11 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/senovio-arevalo-obituary?id=62957393
+    - Susana A. Perez, 76 · died Nov 9 · ran Nov 11 · Rivera at Hillcrest Funerals and Cremations
+      https://www.legacy.com/us/obituaries/themonitor/name/susana-perez-obituary?id=62957363
+    - Teresa Amelia Lopez Vazquez, 60 · Alamo · died Oct 31 · ran Nov 11 · Rivera Funeral Home of McAllen
+      https://www.legacy.com/us/obituaries/themonitor/name/teresa-vazquez-obituary?id=62957374
+    - Tomas Alonzo Jr., 86 · San Juan · died Nov 4 · ran Nov 11 · Memorial Funeral Home - San Juan
+      https://www.legacy.com/us/obituaries/themonitor/name/tomas-alonzo-obituary?id=62957349
+    - Arnulfo Mercado, 71 · San Juan · died Nov 5 · ran Nov 10 · Memorial Funeral Home - San Juan
+      https://www.legacy.com/us/obituaries/themonitor/name/arnulfo-mercado-obituary?id=62947425
+    - Jesus Vicente Garcia, 79 · Monte Alto · died Nov 8 · ran Nov 10 · Salinas Funeral Homes - Elsa
+      https://www.legacy.com/us/obituaries/themonitor/name/jesus-garcia-obituary?id=62947431
+    - Manuel Contreras, 95 · Alamo · died Nov 7 · ran Nov 10 · Memorial Funeral Home - San Juan
+      https://www.legacy.com/us/obituaries/themonitor/name/manuel-contreras-obituary?id=62947427
+    - Maria De La Paz Dimas, 90 · Alamo · died Nov 5 · ran Nov 10 · Memorial Funeral Home - San Juan
+      https://www.legacy.com/us/obituaries/themonitor/name/maria-dimas-obituary?id=62947420
+    - Maria Imelda Reyna, 73 · Weslaco · died Nov 6 · ran Nov 10
+      https://www.legacy.com/us/obituaries/themonitor/name/maria-reyna-obituary?id=62947428
+    - Maria J. Charo, 87 · Edinburg · died Nov 3 · ran Nov 10 · Family Funeral Home of Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/maria-charo-obituary?id=62947430
+    - Benita Guerra, 84 · San Juan · died Nov 6 · ran Nov 9 · Memorial Funeral Home - San Juan
+      https://www.legacy.com/us/obituaries/themonitor/name/benita-guerra-obituary?id=62937514
+    - Daisy M. Chapa, 68 · Edinburg · died Nov 6 · ran Nov 9 · Memorial Funeral Home - Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/daisy-chapa-obituary?id=62937509
+    - Elsa Maricela Basaldua, 62 · Wesalco · died Nov 5 · ran Nov 9 · Hawkins Funeral Home - Weslaco
+      https://www.legacy.com/us/obituaries/themonitor/name/elsa-basaldua-obituary?id=62937512
+    - Eva Dardanella Guerra Cárdenas · McAllen · died Nov 2 · ran Nov 9 · Kreidler Funeral Home, Inc.
+      https://www.legacy.com/us/obituaries/themonitor/name/eva-c-rdenas-obituary?id=62937508
+    - Manuel Omar Hernandez, 50 · died Nov 6 · ran Nov 9 · Salinas Funeral Homes - Elsa
+      https://www.legacy.com/us/obituaries/themonitor/name/manuel-hernandez-obituary?id=62937510
+    - Ana Elizabeth Zavala, 67 · Edinburg · died Nov 4 · ran Nov 7
+      https://www.legacy.com/us/obituaries/themonitor/name/ana-zavala-obituary?id=62930967
+    - Baby Estrella Espinoza · Edinburg · died Nov 5 · ran Nov 7 · Ceballos-Diaz Funeral Home of Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/estrella-espinoza-obituary?id=62930968
+    - Bernardino Sanchez Hidalgo, 87 · Donna · died Nov 4 · ran Nov 7 · Elizondo Mortuary & Cremation Service of Mission, TX
+      https://www.legacy.com/us/obituaries/themonitor/name/bernardino-hidalgo-obituary?id=62930973
+    - Carlos Javier Garcia, 55 · died Nov 1 · ran Nov 7 · Rivera Funeral Home - McAllen
+      https://www.legacy.com/us/obituaries/themonitor/name/carlos-garcia-obituary?id=62930969
+    - Celia Carrizal, 103 · died Nov 4 · ran Nov 7 · Kreidler Funeral Home, Inc.
+      https://www.legacy.com/us/obituaries/themonitor/name/celia-carrizal-obituary?id=62930970
+    - Clemente Montelongo, 65 · McAllen · died Nov 4 · ran Nov 7
+      https://www.legacy.com/us/obituaries/themonitor/name/clemente-montelongo-obituary?id=62930974
+    - Francis Lally Howard, 74 · died Nov 5 · ran Nov 7 · Kreidler Funeral Home, Inc.
+      https://www.legacy.com/us/obituaries/themonitor/name/francis-howard-obituary?id=62930972
+    - Guadalupe R. Cantu, 78 · Mission · died Nov 5 · ran Nov 7 · Virgil Wilson Mortuary - Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/guadalupe-cantu-obituary?id=62930958
+    - Maria D. Hernandez De Salas, 75 · Edinburg · died Nov 4 · ran Nov 7
+      https://www.legacy.com/us/obituaries/themonitor/name/maria-salas-obituary?id=62930962
+    - Maria De Los Angeles Cantu de Martinez (Martinez), 89 · Mission · died Nov 5 · ran Nov 7
+      https://www.legacy.com/us/obituaries/themonitor/name/maria-martinez-obituary?id=62930976
+    - Maria Maldonado de Guerra (Maldonado), 79 · Alamo · died Nov 5 · ran Nov 7 · Elizondo Mortuary & Cremation Service of Mission, TX
+      https://www.legacy.com/us/obituaries/themonitor/name/maria-guerra-obituary?id=62930988
+    - Michael Lee Martinez, 41 · died Oct 31 · ran Nov 7 · Rivera at Hillcrest Funerals and Cremations
+      https://www.legacy.com/us/obituaries/themonitor/name/michael-martinez-obituary?id=62930960
+    - Olga P. Cano, 88 · died Nov 5 · ran Nov 7 · Rivera at Hillcrest Funerals and Cremations
+      https://www.legacy.com/us/obituaries/themonitor/name/olga-cano-obituary?id=62930965
+  Nov 5 (5)
+    - Ignacia G. Garza (Garza), 80 · Mission · died Nov 2 · ran Nov 5 · Elizondo Mortuary & Cremation Service of Mission, TX
+      https://www.legacy.com/us/obituaries/themonitor/name/ignacia-garza-obituary?id=62913992
+    - Jose Guadalupe De La Rosa, 67 · Pharr · died Nov 1 · ran Nov 5 · Memorial Funeral Home of San Juan
+      https://www.legacy.com/us/obituaries/themonitor/name/jose-rosa-obituary?id=62913980
+    - Maria Garcia Solis (Garcia), 54 · died Nov 1 · ran Nov 5
+      https://www.legacy.com/us/obituaries/themonitor/name/maria-solis-obituary?id=62913990
+    - Maria Jesusa Munoz, 79 · Pharr · died Nov 3 · ran Nov 5 · Memorial Funeral Home - San Juan
+      https://www.legacy.com/us/obituaries/themonitor/name/maria-munoz-obituary?id=62913985
+    - Richard Edward Gill, 83 · died Oct 22 · ran Nov 5 · Sanchez Funeral Home
+      https://www.legacy.com/us/obituaries/themonitor/name/richard-gill-obituary?id=62913991
+  Source page: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor
+
 WEATHER · McALLEN / RGV (National Weather Service BRO (api.weather.gov))
-  Thu Nov 19  << SHOW DAY Slight Chance Rain Showers, high 79F / low 61F, rain 23%, wind N 5 to 8 mph
-  Fri Nov 20  Sunny, high 81F / low 63F, rain 0%, wind NE 6 mph
-  Sat Nov 21  Mostly Sunny, high 84F / low 68F, rain 2%, wind SE 3 to 9 mph
-  Sun Nov 22  Partly Sunny then Chance Showers And Thunderstorms, high 82F / low 63F, rain 55%, wind NNE 3 to 7 mph
-  Mon Nov 23  Slight Chance Rain Showers, high 74F / low 62F, rain 23%, wind NNE 6 to 9 mph
-  Tue Nov 24  Chance Rain Showers, high 73F / low 57F, rain 28%, wind N 6 to 9 mph
-  Wed Nov 25  Partly Sunny, high 68F / low --F, rain 2%, wind NNE 7 to 12 mph
+  Fri Nov 20  Mostly Sunny, high 79F / low 63F, rain 0%, wind NE 3 to 7 mph
+  Sat Nov 21  Mostly Sunny, high 85F / low 69F, rain 2%, wind SE 5 to 9 mph
+  Sun Nov 22  Partly Sunny then Chance Showers And Thunderstorms, high 83F / low 60F, rain 66%, wind NE 3 to 7 mph
+  Mon Nov 23  Chance Showers And Thunderstorms, high 70F / low 58F, rain 40%, wind N 6 to 10 mph
+  Tue Nov 24  Slight Chance Rain Showers, high 69F / low 55F, rain 19%, wind N 8 mph
+  Wed Nov 25  Mostly Sunny, high 66F / low 52F, rain 5%, wind N 9 mph
+  Thu Nov 26  Mostly Sunny, high 67F / low --F, rain 9%, wind ENE 7 mph
   Alerts: none active
-  Updated 2026-11-19T11:45:16+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
+  Updated 2026-11-20T02:45:13+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
   NWS Brownsville office: https://www.weather.gov/bro/
   API: https://api.weather.gov/gridpoints/BRO/49,19/forecast
 
@@ -476,5 +647,5 @@ What your kids might be saying at school this week, and one line on how to bring
 NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-19 06:32 CT.
-Links checked 2026-11-19: 112 ok, 8 blocked by the site's bot protection (verified in a browser/search), 0 dead, 2 unreachable.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-19 21:00 CT.
+Links checked 2026-11-19: 111 ok, 9 blocked by the site's bot protection (verified in a browser/search), 0 dead, 1 unreachable.
