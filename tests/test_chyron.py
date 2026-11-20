@@ -297,6 +297,23 @@ class StudioDashboard(unittest.TestCase):
         self.assertGreater(cards, 50)
         self.assertEqual(cards, btns, f"{cards} cards vs {btns} buttons")
 
+    def test_type_is_two_steps_smaller_and_tighter(self):
+        self.assertIn("--fs:clamp(13px,1.1vw + 5px,16px)", self.src)
+        self.assertNotIn("--fs:clamp(17px,1.1vw + 9px,20px)", self.src)
+        self.assertIn("Math.max(13,", self.src)
+        self.assertIn("Math.min(24,", self.src)
+        self.assertNotIn("Math.max(17,", self.src)
+        self.assertNotIn("Math.min(28,", self.src)
+        self.assertIn("ditm-fs-v14", self.src)
+        # control strip and search stay 44px tap targets
+        self.assertIn("#q{flex:1 1 auto;min-width:0;min-height:44px;height:44px", self.src)
+        self.assertIn("font-size:16px", self.src[self.src.find("#q{"):self.src.find("#q{")+240])
+        self.assertIn(".mc-ops button,.mc-ops .chlink,details#mc-more>summary{", self.src)
+        i=self.src.find(".mc-ops button,.mc-ops .chlink,details#mc-more>summary{")
+        self.assertIn("min-height:44px", self.src[i:i+400])
+        self.assertIn("line-height:1.28", self.src)
+        self.assertIn("--sumh,3.4rem", self.src)
+
     def test_no_topic_in_the_page(self):
         self.assertNotRegex(self.studio, r"ditm-ros-[0-9a-f]{6,}")
         self.assertNotRegex(self.src, r"ditm-ros-[0-9a-f]{6,}")

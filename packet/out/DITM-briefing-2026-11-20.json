@@ -59,10 +59,10 @@
             "published": "2026-11-19T12:26:00-06:00"
           }
         ],
-        "score": 11,
+        "score": 10,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.5 (26h old)",
+        "scoreWhy": "Score 10: 1 outlet 6 + recency 4.5 (26h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 4.5,
@@ -369,10 +369,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.9 (24h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.8 (25h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 4.9,
+          "recency": 4.8,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -550,10 +550,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7.2 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 7.1 (18h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.2,
+          "recency": 7.1,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -763,9 +763,9 @@
     "note": "McAllen / Rio Grande Valley; NWS Brownsville (BRO) forecast",
     "now": {
       "tempF": 81,
-      "cond": "Mostly Cloudy",
+      "cond": "Cloudy",
       "icon": "cloud",
-      "at": "2026-11-20T19:35:00+00:00",
+      "at": "2026-11-20T20:00:00+00:00",
       "source": "KMFE observation"
     },
     "office": "BRO",
@@ -1656,10 +1656,10 @@
       "score": 44,
       "label": "Trending",
       "uncovered": false,
-      "scoreWhy": "Score 44: 1 outlet 6 + recency 17.6 (2h old) + X 20",
+      "scoreWhy": "Score 44: 1 outlet 6 + recency 17.5 (2h old) + X 20",
       "scoreParts": {
         "outlets": 6,
-        "recency": 17.6,
+        "recency": 17.5,
         "x": 20.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -3337,7 +3337,7 @@
       "signature": false,
       "weave": null,
       "talkingPoints": [
-        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Friday, November 20th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young as 10 (testing in Austin), and what a 10-year-old. It's 81 and mostly cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Friday, November 20th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young as 10 (testing in Austin), and what a 10-year-old. It's 81 and cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
         "JINGLE: Drew in the Morning. Your Valley, your news, your morning.",
         "JINGLE: \"Drew in the Morning. Your Valley, your news, your morning.\" (alternates in cold-open.md)",
         "COLD OPEN: read the paragraph the packet builds each morning (card at the top of the studio page; also in the PDF, txt and email, and in obs-data.json under coldOpen). It is one flowing paragraph, about 25 seconds, filled with today's real headlines.",
@@ -4352,17 +4352,17 @@
     "trendsNote": "Google Trends US-TX 10 + US 10 items, fetched 2026-11-20T03:00:46+00:00 (cache)"
   },
   "coldOpen": {
-    "text": "Good morning, Rio Grande Valley! It's Friday, November 20th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young as 10 (testing in Austin), and what a 10-year-old. It's 81 and mostly cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+    "text": "Good morning, Rio Grande Valley! It's Friday, November 20th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young as 10 (testing in Austin), and what a 10-year-old. It's 81 and cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
     "jingle": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [
       "Wake up, RGV. It's Drew in the Morning.",
       "From McAllen to the world, this is Drew in the Morning."
     ],
     "confirm": [],
-    "words": 104,
+    "words": 103,
     "template": "daily"
   },
-  "generatedAt": "2026-11-20T20:14:32+00:00",
+  "generatedAt": "2026-11-20T20:18:42+00:00",
   "sources": [
     {
       "section": "Top headlines: RGV",
