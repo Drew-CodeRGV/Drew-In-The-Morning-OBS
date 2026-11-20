@@ -940,7 +940,7 @@ STUDIO_CSS = """
 html{font-size:var(--fs);-webkit-text-size-adjust:100%;text-size-adjust:100%;touch-action:manipulation;scroll-padding-top:calc(var(--hh) + 8px);color-scheme:light}
 [data-theme=dark]{color-scheme:dark}
 [id]{scroll-margin-top:calc(var(--hh) + 8px)}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',Roboto,Arial,sans-serif;line-height:1.4;overflow-wrap:anywhere;touch-action:manipulation}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',Roboto,Arial,sans-serif;line-height:1.4;overflow-wrap:break-word;touch-action:manipulation}
 a,button,summary{touch-action:manipulation}
 img,svg{max-width:100%;height:auto}
 a{color:var(--link)}
@@ -966,9 +966,9 @@ button:active{transform:scale(.97)}
 .btnlike{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;padding:4px 12px;border:2px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-weight:700;text-decoration:none}
 nav{display:flex;gap:6px;flex-wrap:wrap;padding:8px max(16px,var(--sr)) 8px max(16px,var(--sl))}
 nav a{background:var(--chip);border-radius:99px;padding:8px 14px;min-height:44px;display:inline-flex;align-items:center;font-weight:700;font-size:.85rem;text-decoration:none;color:var(--fg);border:1px solid var(--line)}
-.clock{display:flex;margin:6px max(16px,var(--sr)) 6px max(16px,var(--sl));height:52px;border-radius:10px;overflow:hidden;border:2px solid var(--line)}
+.clock{display:flex;position:relative;margin:3px max(16px,var(--sr)) 0 max(16px,var(--sl));height:38px;border-radius:10px;overflow:hidden;border:2px solid var(--line)}
 .clock a{display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-weight:900;text-decoration:none;border-right:1px solid rgba(255,255,255,.6);font-size:clamp(.85rem,1vw + .4rem,1.15rem);line-height:1;min-width:0}.clock a small{font-size:clamp(.55rem,.5vw + .35rem,.7rem);font-weight:700;opacity:.95}
-main{padding:6px max(16px,var(--sr)) calc(40px + var(--sb)) max(16px,var(--sl));display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr));gap:12px;align-items:stretch}
+main{padding:6px max(16px,var(--sr)) calc(40px + var(--sb)) max(16px,var(--sl));display:grid;grid-template-columns:minmax(0,1fr);gap:10px;align-items:stretch}
 details{background:var(--card);border:2px solid var(--line);border-radius:12px;overflow:hidden;min-width:0}
 summary{cursor:pointer;list-style:none;padding:8px 12px;min-height:48px;color:#fff;font-weight:900;letter-spacing:.05em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;gap:4px 10px;flex-wrap:wrap;font-size:clamp(.92rem,.8vw + .65rem,1.15rem)}
 summary::-webkit-details-marker{display:none}summary small{font-weight:600;text-transform:none;letter-spacing:0;opacity:.95;font-size:.78em}
@@ -994,8 +994,8 @@ summary:after{content:'\\25BE';margin-left:auto;font-size:1.2em;padding-left:6px
 .motw{background:#fff1e8;color:#1b2430;border:2px dashed #e4572e;border-radius:10px;padding:4px 8px}.motw a{color:#0b5cad}
 .tag{background:#e4572e;color:#fff;font-weight:900;font-size:.7rem;padding:1px 6px;border-radius:4px}
 .mbox{margin:0 0 10px}.mbox.used{border-radius:10px;padding:4px 6px}
-.rdgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;align-items:start}
-@media (min-width:600px){.rdgrid{grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr))}.rdgrid>details[open]{grid-column:1/-1}}
+.rdgrid{display:flex;flex-direction:column;gap:8px}
+
 .rd{border:2px solid var(--line);border-radius:10px;margin:6px 0;background:var(--card)}.rdgrid>.rd{margin:0}.rd>summary{border-radius:0;min-height:60px}
 .rd .bl{display:inline-flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;border-radius:10px;background:rgba(255,255,255,.25);font-size:1.6rem;font-weight:900;margin-right:8px;flex:none;letter-spacing:0}
 .rd .rt{display:flex;align-items:center;min-width:0;flex:1 1 220px}
@@ -1006,7 +1006,7 @@ summary:after{content:'\\25BE';margin-left:auto;font-size:1.2em;padding-left:6px
 .obl{list-style:none;margin:0 0 8px;padding:0}.obl li{padding:5px 0;border-bottom:1px dashed var(--line)}.obh{margin:10px 0 2px;font-size:1rem}
 footer{padding:10px max(16px,var(--sr)) calc(30px + var(--sb)) max(16px,var(--sl));color:var(--mut);font-size:.8rem}
 @media (pointer:coarse){.cp{min-height:44px;min-width:56px}}
-@media print{#minibar{display:none}header,#usedbar{position:static}.cp,.use,#clockw,#usedbar,.tools{display:none}}
+@media print{#pin{position:static}#minibar,#ph{display:none}header,#usedbar{position:static}.cp,.use,#clockw,#usedbar,.tools{display:none}}
 """
 CLOCK_JS = r"""
 (function(){var w=document.getElementById('clockw');if(!w)return;var TZ='America/Chicago';
@@ -1030,10 +1030,11 @@ get(OBS).then(function(j){var p=j.properties,c=p&&p.temperature&&p.temperature.v
 .catch(function(){return get(HR).then(function(j){var q=j.properties.periods[0],f=q.temperature;if(q.temperatureUnit==='C')f=Math.round(f*9/5+32);ok(f,q.shortForecast,j.properties.updateTime||q.startTime,'NWS hourly forecast');w.dataset.state='hourly'})})
 .catch(function(){w.dataset.state=live?'stale':'build';if(!live)build();else $('cw-note').textContent=$('cw-note').textContent.replace(/ \(stale\)$/,'')+' (stale)'})}
 build();load();setInterval(load,600000);
-var hd=document.querySelector('header'),mb=$('minibar');
-function hh2(){var h=getComputedStyle(hd).position==='sticky'?hd.offsetHeight:(mb&&getComputedStyle(mb).display!=='none'?mb.offsetHeight:0);document.documentElement.style.setProperty('--hh',h+'px')}hh2();addEventListener('resize',hh2);if(window.ResizeObserver)new ResizeObserver(hh2).observe(hd);
-/* slim sticky mini clock on phones/tablets: mirrors the big clock so the header itself can scroll away */
-function mini(){var t=$('cw-time'),n=$('cwnext');if(!mb||!t)return;$('mb-time').textContent=t.textContent.replace(/:\d\d(?= [AP]M)/,'');var x=n?(n.textContent||'').replace(/\s+/g,' ').trim():'';$('mb-next').textContent=x;mb.className=n&&/amber/.test(n.className)?'amber':n&&/red/.test(n.className)?'red':''}
+var pin=$('pin'),mb=$('minibar');
+function hh2(){document.documentElement.style.setProperty('--hh',(pin?pin.offsetHeight:0)+'px')}hh2();addEventListener('resize',hh2);if(window.ResizeObserver&&pin)new ResizeObserver(hh2).observe(pin);
+/* pinned bar: mirrors the big clock + countdown, and has its own Show Start */
+function mini(){var t=$('cw-time'),n=$('cwnext');if(!mb||!t)return;$('mb-time').textContent=t.textContent.replace(/:\d\d(?= [AP]M)/,'');var x=n?[].map.call(n.children,function(e){return e.style.display==='none'?'':e.textContent}).join(' ').replace(/\s+/g,' ').trim():'';$('mb-next').textContent=x;mb.className=n&&/amber/.test(n.className)?'amber':n&&/red/.test(n.className)?'red':''}
+var ms=$('mb-start');if(ms)ms.onclick=function(){var b=$('ssbtn');if(b)b.click()};
 mini();setInterval(mini,1000);
 })();
 """
@@ -1149,7 +1150,6 @@ summary .sb,summary .cf{border:1px solid rgba(255,255,255,.75)}
 .rd.live{box-shadow:0 0 0 4px var(--ok);position:relative}
 .rd.live>summary .tl{display:inline-block;background:#fff;color:#1f9d55;font-size:.68rem;font-weight:900;border-radius:4px;padding:0 5px;margin-left:6px}
 .tl{display:none}
-.clock a.live{outline:4px solid #fff;outline-offset:-4px;filter:brightness(1.15)}
 .cwn{display:flex;gap:6px;justify-content:flex-end;align-items:center;margin-top:4px;padding:2px 8px;border-radius:99px;min-height:1.9em;font-size:clamp(.78rem,.6vw + .52rem,.95rem);font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;border:2px solid transparent}
 .cwn #cwn-l{color:var(--mut)}.cwn #cwn-c{color:#fff;font-style:normal;font-weight:900;border-radius:6px;padding:0 7px;min-width:1.6em;text-align:center}
 .cwn #cwn-n{min-width:0;overflow:hidden;text-overflow:ellipsis}.cwn #cwn-t{font-weight:900}
@@ -1160,24 +1160,26 @@ summary .sb,summary .cf{border:1px solid rgba(255,255,255,.75)}
 @media (max-width:560px){.rd>summary{--trw:6.6rem}.tr{font-size:.95rem}}
 
 /* ---- layout v6: uniform collapsed tiles, full-width multi-column expanded sections, native phone scrolling ---- */
-#minibar{display:none}
+#pin{position:sticky;top:0;z-index:8;background:var(--bg);border-bottom:3px solid var(--line);padding-bottom:5px}
+#minibar{display:flex;align-items:center;gap:8px 12px;min-height:44px;padding:0 max(12px,var(--sr)) 0 max(16px,var(--sl));padding-top:max(0px,var(--st));font-weight:800;font-variant-numeric:tabular-nums}
+#minibar b{font-size:1.2rem;white-space:nowrap}
+#minibar span{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.85rem;color:var(--mut)}
+#minibar.amber{background:#f2a900;color:#1b2430}#minibar.amber span{color:#1b2430}
+#minibar.red{background:#c1121f;color:#fff}#minibar.red span{color:#fff}
+#minibar a,#minibar button{flex:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;padding:0 12px;font-weight:800;font-size:.85rem;text-decoration:none}
+#minibar a{color:var(--link)}#minibar.red a{color:#fff}
+#mb-start{background:var(--ok);color:#fff;border-color:var(--ok);border-radius:10px;padding:0 12px}
 .toolbar{display:flex;gap:6px 14px;align-items:center;flex-wrap:wrap;padding:6px max(16px,var(--sr)) 0 max(16px,var(--sl))}
 .toolbar .t{font-size:.82rem;color:var(--mut);font-weight:600;flex:1 1 260px;min-width:0}
 .toolbar .tools{margin:0;flex:0 1 auto}
 .ht .d{font-size:clamp(1.25rem,1.8vw + .6rem,1.9rem)}
 .ht{flex:1 1 280px}
 @media (min-width:1000px){
- header{position:sticky;top:0;flex-wrap:nowrap}
+ header{flex-wrap:nowrap}
  #clockw{flex:0 0 auto}
  .ss{margin:2px 0 0}
 }
 @media (max-width:999px){
- #minibar{display:flex;position:sticky;top:0;z-index:8;align-items:center;gap:8px;min-height:44px;padding:4px max(12px,var(--sr)) 4px max(12px,var(--sl));padding-top:max(4px,var(--st));background:var(--bg);border-bottom:3px solid var(--line);font-weight:800;font-variant-numeric:tabular-nums}
- #minibar b{font-size:1.15rem;white-space:nowrap}
- #minibar span{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.8rem;color:var(--mut)}
- #minibar.amber{background:#f2a900;color:#1b2430}#minibar.amber span{color:#1b2430}
- #minibar.red{background:#c1121f;color:#fff}#minibar.red span{color:#fff}
- #minibar a{flex:none;display:inline-flex;align-items:center;min-height:44px;padding:0 10px;font-weight:800;font-size:.85rem;text-decoration:none;color:var(--link)}
  #clockw{margin-left:0;width:100%;min-width:0;text-align:left;display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:12px;align-items:center}
  #cw-time{grid-row:1/3;font-size:clamp(1.5rem,6vw,2rem)}.cwd{text-align:right}.cwx{justify-content:flex-end;margin-top:0}.cwn{grid-column:1/-1}
  .ss{flex-wrap:wrap}
@@ -1192,14 +1194,22 @@ summary .sb,summary .cf{border:1px solid rgba(255,255,255,.75)}
  #ustatus{display:none}#usedbar{padding-top:4px;padding-bottom:4px}
  #brkmeta{flex:1 1 0;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#brk{padding:2px 12px}
  nav{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain}
- nav::-webkit-scrollbar,.clock::-webkit-scrollbar{display:none}
+ nav::-webkit-scrollbar{display:none}
  nav a{flex:none}
  #usedbar .ubb{margin-left:0;width:100%}#usedbar .ubb>*{flex:1 1 auto}
  #brk .brkh button{flex:none}
  #toast{max-width:calc(100vw - 24px)}
 }
-.clock{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain}
-.clock a{flex:0 0 auto;min-width:44px}
+/* A-L show timeline: pinned, always fits the width (no swiping), playhead + covered blocks darken */
+.clock a{flex:0 0 auto;min-width:0;overflow:hidden;transition:filter .8s}
+.clock a.done{filter:brightness(.6) saturate(.85)}
+.clock a.live{outline:3px solid #fff;outline-offset:-3px;filter:none}
+#phw{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:2}
+#ph{position:absolute;top:0;bottom:0;left:0;width:0;pointer-events:none;z-index:2;transition:left 1s linear,opacity .4s}
+#ph:before{content:'';position:absolute;top:0;bottom:0;left:-1px;width:3px;background:#fff;box-shadow:0 0 0 1px #1b2430,0 0 6px rgba(0,0,0,.5)}
+#ph:after{content:'';position:absolute;top:0;left:-8px;border-left:8px solid transparent;border-right:8px solid transparent;border-top:11px solid #fff;filter:drop-shadow(0 0 1px #1b2430) drop-shadow(0 0 1px #1b2430)}
+.clock.pre #ph{opacity:.55}
+@media (max-width:700px){.clock a small{display:none}.clock{height:36px}.clock a{font-size:.72rem}#minibar b{font-size:1.1rem}#minibar span{font-size:.78rem}#minibar a{display:none}}
 /* uniform collapsed tiles: same box for every section, whatever its content */
 details.sec{align-self:stretch}
 details.sec[open]{grid-column:1/-1}
@@ -1212,7 +1222,16 @@ details.sec[open]{grid-column:1/-1}
 .sec>summary .sm{grid-column:3;grid-row:2;margin:0 0 0 10px;flex-wrap:nowrap;white-space:nowrap;max-width:15rem;overflow:hidden;align-self:start;gap:4px;justify-content:flex-start}
 .sec>summary .sm .sb,.sec>summary .sm .cf,.sec>summary .sm .cnt{margin:0;white-space:nowrap;flex:none}
 .sec>summary .sm .cnt{flex:none}
-@media (max-width:560px){.sec>summary .sm{max-width:8.5rem}.sec>summary .sm .sb:nth-child(n+3){display:none}}
+/* wide screens: every section is one full-width bar; title, subtitle and badges all fit on the bar, nothing truncates */
+@media (min-width:700px){
+ .sec>summary{grid-template-columns:auto minmax(0,1fr) auto 1.6rem;padding:6px 14px}
+ .sec>summary .tn{grid-column:2;padding-right:14px;overflow:visible;text-overflow:clip}
+ .sec>summary .tt small{grid-column:2;overflow:visible;text-overflow:clip;font-size:.84rem;padding-right:14px}
+ .sec>summary .sm{grid-column:3;grid-row:1/3;align-self:center;max-width:none;overflow:visible;margin:0 8px 0 0;gap:6px}
+ .sec>summary:after{position:static;grid-column:4;grid-row:1/3;align-self:center;text-align:right;font-size:1.3em}
+ .sec>summary .tn,.sec>summary .tt small{white-space:normal}
+}
+@media (max-width:560px){.sec>summary .tn{font-size:.84rem;letter-spacing:0}.sec>summary .sm{max-width:8.5rem}.sec>summary .sm .sb:nth-child(n+3){display:none}}
 .sec>.body{padding:12px clamp(12px,1.6vw,20px) 16px}
 /* expanded sections fill the row; their content flows in 2-4 columns instead of one tall list */
 .sec .sortbox{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:10px;align-items:stretch}
@@ -1221,18 +1240,32 @@ details.sec[open]{grid-column:1/-1}
 .sec .sortbox>.item:last-child{border:1px solid var(--line)}
 .sec .sortbox>.item.used{background:rgba(31,157,85,.14)}
 .sec .sortbox>.noev{grid-column:1/-1}
-/* National Desk story cards (nested details) inside the multi-column grid */
-.sec .sortbox>details.rd{margin:0;align-self:stretch}
-.sec .sortbox>details.rd[open]{grid-column:1/-1}
-.sec .sortbox>details.rd>summary{display:flex;flex-wrap:wrap;align-content:space-between;align-items:center;gap:4px 8px;height:6.6rem;min-height:6.6rem;padding:8px 12px;overflow:hidden}
-.sec .sortbox>details.rd[open]>summary{height:auto;min-height:6.6rem}
-.sec .sortbox>details.rd>summary .rt{flex:1 1 100%;min-width:0}
-.sec .sortbox>details.rd>summary .tt{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;font-size:.95rem;line-height:1.25;letter-spacing:.02em}
-.sec .sortbox>details.rd[open]>summary .tt{-webkit-line-clamp:unset;display:block}
-.sec .sortbox>details.rd>summary .tt small{display:none}
-.sec .sortbox>details.rd>summary .src,.sec .sortbox>details.rd>summary .sm .src{color:rgba(255,255,255,.88)}
-.sec .sortbox>details.rd>summary .sm{margin:0;justify-content:flex-start;flex:1 1 auto;min-width:0}
-.sec .sortbox>details.rd>summary:after{margin-left:auto}
+/* nested story rows (National Desk): full-width rows like the rundown blocks, never side-by-side tiles */
+#national .sortbox{grid-template-columns:minmax(0,1fr)}
+.sec .sortbox>details.rd{margin:0}
+.sec .sortbox>details.rd>summary{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;min-height:60px;padding:8px 12px}
+.sec .sortbox>details.rd>summary .rt{flex:1 1 16rem;min-width:0}
+.sec .sortbox>details.rd>summary .tt{display:block;font-size:.98rem;line-height:1.25;letter-spacing:.02em}
+.sec .sortbox>details.rd>summary .sm{margin:0 0 0 auto;justify-content:flex-end;flex:0 0 auto}
+.sec .sortbox>details.rd>summary .src{color:rgba(255,255,255,.88)}
+.sec .sortbox>details.rd>summary:after{margin:0}
+/* no mid-word breaks in titles, badges or bars; badges never wrap */
+summary,summary *,.rtn,.tn,.tt,h3,h4{overflow-wrap:normal;word-break:normal;hyphens:none}
+.cf,.sb,.cnt,.pill,.tag,.upill,.ub,.cwn,.tr,.tr *,.bl,.bl2{white-space:nowrap}
+.rd>summary .rtn{display:block}
+.rd .rmeta .cnt,.rd .rmeta .cf{font-size:.68rem;padding-left:7px;padding-right:7px}.rd .rmeta{font-size:.85rem}
+@media (max-width:1100px){.rdgrid>details.rd>summary{--trw:6.4rem}}
+.sec .sortbox>details.rd:not([open])>summary .rtn{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;white-space:normal}
+.rd .rmeta{display:flex;align-items:center;flex-wrap:wrap;gap:3px 8px;margin-top:2px}.rd .rmeta small{display:inline;margin:0}.rd .rmeta .rbd{margin:0}
+.rd>summary .tl{margin-left:8px}
+.rdgrid>details.rd{width:100%;display:block}
+@media (min-width:700px){.rd>summary .rtn{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rdgrid>details.rd>summary{min-height:60px}}
+@media (max-width:560px){
+ .rdgrid>details.rd>summary{grid-template-columns:minmax(0,1fr) 1.2rem;gap:2px 8px}
+ .rdgrid>details.rd>summary .tr{grid-column:1/-1;grid-row:2;display:flex;gap:10px;align-items:baseline;text-align:left;font-size:.9rem}
+ .rdgrid>details.rd>summary .tr small{display:inline;min-height:0}
+ .rd .bl{width:2.1rem;height:2.1rem;font-size:1.3rem;margin-right:8px}
+}
 .thumbrow{display:flex;gap:12px;align-items:center;margin:0 0 10px}.thumbrow img{width:140px;max-width:35%;border-radius:8px;flex:none}
 .lvgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:4px 18px;align-items:start}
 .obl{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:0 22px}
@@ -1251,7 +1284,7 @@ var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hourCycle:
 function ct(){var o={};parts.formatToParts(new Date()).forEach(function(p){if(p.type!=='literal')o[p.type]=parseInt(p.value,10)});return{h:o.hour%24,m:o.minute,s:o.second}}
 function fmt(m){var h=Math.floor(m/60)%24,mm=m%60;return(h%12||12)+':'+(mm<10?'0':'')+mm}
 function fmtp(m){return fmt(m)+' '+(Math.floor(m/60)%24<12?'AM':'PM')}
-var rows=[].slice.call(document.querySelectorAll('.tr[data-off]')),start=null;
+var rows=[].slice.call(document.querySelectorAll('.tr[data-off]')),start=null,fq=/[?&]t=(-?\d+(?:\.\d+)?)/.exec(location.search),FORCE=fq?parseFloat(fq[1])*60:null,segs=[].slice.call(document.querySelectorAll('#tl a[data-off]')),TL=$('tl'),PH=$('ph');
 try{var o=JSON.parse(store.get(KEY)||'null');if(o&&typeof o.startMin==='number')start=o.startMin}catch(e){}
 function base(){return start===null?PLAN:start}
 function paint(){var st=base();
@@ -1262,12 +1295,18 @@ function paint(){var st=base();
  $('ssreset').disabled=start===null;b.setAttribute('aria-label',start===null?'Set show start to now':'Show started '+fmtp(start)+'. Tap to set start to now again');
  live()}
 function live(){var st=base(),n=ct(),nowS=n.h*3600+n.m*60+n.s,onDay=ctd.format(new Date())===SD,active=start!==null||onDay,hit=null,left=0,over=false;
- var el=nowS-st*60;if(active){rows.forEach(function(r){var off=+r.dataset.off*60,dur=+r.dataset.dur*60;if(el>=off&&el<off+dur){hit=r;left=off+dur-el}});over=el>=3600}
+ var el=nowS-st*60;if(FORCE!==null){active=true;el=FORCE}if(active){rows.forEach(function(r){var off=+r.dataset.off*60,dur=+r.dataset.dur*60;if(el>=off&&el<off+dur){hit=r;left=off+dur-el}});over=el>=3600}
  rows.forEach(function(r){var d=r.closest('details.rd'),L=r===hit;r.classList.toggle('islive',L);if(d)d.classList.toggle('live',L);var tl=d&&d.querySelector('.tl');
   if(L){r.querySelector('small').textContent='LIVE \u00B7 '+Math.floor(left/60)+':'+('0'+left%60).slice(-2)+' left'}else{r.querySelector('small').textContent=r.dataset.flexTxt||''}});
  [].forEach.call(document.querySelectorAll('.clock a'),function(a){a.classList.toggle('live',!!hit&&a.dataset.jump==='blk-'+hit.dataset.letter)});
- countdown(active,el,hit);
+ countdown(active,el,hit);playhead(active,el);
  $('sslive').textContent=hit?('LIVE: '+hit.dataset.letter+' \u00B7 '+hit.dataset.name+' \u00B7 '+Math.floor(left/60)+':'+('0'+left%60).slice(-2)+' left'):(active&&over?'Show time is up (60 min).':'')}
+function playhead(active,el){if(!TL||!segs.length)return;var T=0;segs.forEach(function(a){T+=+a.dataset.dur});T*=60;
+ var e=active?el:0,p=Math.min(1,Math.max(0,e/T)),st=!active||e<0?'pre':e>=T?'post':'run';
+ var cum=0,left=0,w=0;segs.forEach(function(a){var o=+a.dataset.off*60,d=+a.dataset.dur*60;a.classList.toggle('done',active&&e>=o+d)});
+ TL.classList.toggle('pre',st==='pre');TL.dataset.state=st;TL.dataset.p=p.toFixed(4);TL.dataset.el=Math.round(e);
+ var pc=p*100;PH.style.left=pc+'%';PH.dataset.pct=pc.toFixed(2);
+ TL.setAttribute('aria-label','60 minute show timeline. '+(st==='run'?Math.floor(e/60)+' minutes in':st==='post'?'Show is over':'Show has not started'))}
 var cn=$('cwnext');
 function fmtt(t){t=Math.max(0,t);var h=Math.floor(t/3600),m=Math.floor(t%3600/60),s=t%60;return h?h+':'+('0'+m).slice(-2)+':'+('0'+s).slice(-2):m+':'+('0'+s).slice(-2)}
 function countdown(active,el,hit){if(!cn)return;var T=rows.length?(+rows[rows.length-1].dataset.off+ +rows[rows.length-1].dataset.dur)*60:3600,lab='',chip='',nm='',col='',t=null,msg='';
@@ -1359,7 +1398,8 @@ def studio_html(data, archive_href=None):
         return (f'<details class="sec" id="{id_}"><summary style="background:{color};{fg}" title="{esc(ptitle)}"><span class="st">{chip_h}<span class="tt"><span class="tn">{title}</span><small>{sub}</small></span></span>'
                 f'<span class="sm">{cnt_h}{badges}</span></summary><div class="body">{body}</div></details>')
     clock = data.get("showClock", [])
-    clockbar = "".join(f'<a href="#blk-{c["letter"]}" data-jump="blk-{c["letter"]}" style="width:{c["minutes"]/60*100:.3f}%;background:{c["color"]}" title="{esc(c["title"])} · {c["timeRange"]}">{c["letter"]}{"★" if c["signature"] else ""}<small>{c["minutes"]}m</small></a>' for c in clock)
+    _off = [sum(x["minutes"] for x in clock[:i]) for i in range(len(clock))]
+    clockbar = "".join(f'<a href="#blk-{c["letter"]}" data-jump="blk-{c["letter"]}" data-off="{_off[i]}" data-dur="{c["minutes"]}" data-letter="{c["letter"]}" style="width:{c["minutes"]/60*100:.3f}%;background:{c["color"]}" title="{esc(c["title"])} · {c["timeRange"]}">{c["letter"]}{"★" if c["signature"] else ""}<small>{c["minutes"]}m</small></a>' for i, c in enumerate(clock))
     thumb = data["headlines"].get("image")
     thumbhtml = f'<div class="thumbrow"><img src="{b64(asset(thumb["file"]), "image/jpeg")}" alt="Starship file photo"><div class="src">{esc(thumb["caption"])} · {A(thumb["credit_url"], "source")}</div></div>' if thumb else ""
     heads = (thumbhtml + '<div class="sortbox">' + "".join(item(i, sec="Headlines: RGV") for i in data["headlines"]["rgv"]) + '</div><div class="src" style="margin-top:6px;font-weight:800">TEXAS</div><div class="sortbox">'
@@ -1390,7 +1430,7 @@ def studio_html(data, archive_href=None):
     for k_, n in enumerate(data["nationalDesk"]):
         lks = "".join(linkrow(l) for l in n["links"])
         conf = f' <span class="cf">CONFIRM BEFORE AIR</span> <span class="src">{esc(conf_text(n))}</span>' if n.get("confirm") else ""
-        nat += (f'<details class="rd" id="nat-{k_}" data-ord="{n.get("ord", k_)}" data-sc="{n.get("score", 0)}"><summary style="background:#6d597a"><span class="rt"><span class="tt">{esc(n["title"])}<small>tap to expand</small></span></span><span class="sm">{sc_studio(n)}<span class="upill">USED</span></span></summary><div class="body">'
+        nat += (f'<details class="rd" id="nat-{k_}" data-ord="{n.get("ord", k_)}" data-sc="{n.get("score", 0)}"><summary style="background:#6d597a"><span class="rt"><span class="tt"><span class="rtn">{esc(n["title"])}</span><small>tap to expand</small></span></span><span class="sm">{sc_studio(n)}<span class="upill">USED</span></span></summary><div class="body">'
                 f'<div class="uhead"><span>Mark this story used on show</span>{use_btn("National Desk", n["title"], n["links"][0]["url"] if n["links"] else "")}</div>'
                 f'<p><b>Fact:</b> {esc(n["summary"])}{conf}</p><p><b style="color:#b07dd6">Our take:</b> {esc(n["angle"])}</p><p><b style="color:#5aa9e6">Why it matters in the Valley:</b> {esc(n["valley"])}</p><p class="mut">{esc(n.get("detail",""))}</p>{lks}</div></details>')
     nat += "</div>"
@@ -1474,8 +1514,8 @@ def studio_html(data, archive_href=None):
         weave = f'<p class="weave">Weave: {esc(r["weave"])}</p>' if r.get("weave") else ""
         seg = f'<h4>Segue to the next block</h4><p>“{esc(r["segueNext"])}”</p>' if r.get("segueNext") else ""
         stretch = f' data-stretch="{r["stretchTo"]}"' if r["flex"] and r.get("stretchTo") else ""
-        rd += (f'<details class="rd" id="blk-{r["letter"]}"><summary style="background:{r["color"]}"><span class="rt"><span class="bl">{r["letter"]}</span><span class="tt">{esc(r["title"])}{" ★" if r["signature"] else ""}<span class="tl">LIVE</span>'
-               f'<small>{r["minutes"]} min · {flex}{" · Jess" if r["jess"] else ""}</small><span class="rbd"><span class="cnt">{len(r["talkingPoints"])} points</span><span class="cnt">{len(r["links"])} sources</span>{("<span class=cf>" + str(len(r["confirm"])) + " CONFIRM</span>") if r["confirm"] else ""}</span></span></span>'
+        rd += (f'<details class="rd" id="blk-{r["letter"]}"><summary style="background:{r["color"]}"><span class="rt"><span class="bl">{r["letter"]}</span><span class="tt"><span class="rtn">{esc(r["title"])}{" ★" if r["signature"] else ""}<span class="tl">LIVE</span></span>'
+               f'<span class="rmeta"><small>{r["minutes"]} min · {flex}{" · Jess" if r["jess"] else ""}</small><span class="rbd"><span class="cnt">{len(r["talkingPoints"])} points</span><span class="cnt">{len(r["links"])} sources</span>{("<span class=cf>" + str(len(r["confirm"])) + " CONFIRM</span>") if r["confirm"] else ""}</span></span></span></span>'
                f'<span class="tr" data-off="{r["offset"]}" data-dur="{r["minutes"]}"{stretch} data-letter="{r["letter"]}" data-name="{esc(r["short"])}" data-color="{r["color"]}"><b>{r["timeRange"]}</b><small></small></span></summary>'
                f'<div class="body"><p class="mut">{esc(r["subject"])}</p>{weave}<h4>Talking points</h4>{lis(r["talkingPoints"])}<h4>Follow-up questions</h4>{lis(r["followUps"]) if r["followUps"] else "<p class=mut>none</p>"}'
                f'<h4>Transition lines</h4>{lis(r["transitions"]) if r["transitions"] else "<p class=mut>none</p>"}{seg}<h4>Chyrons (60 chars max)</h4><p>{chy}</p><h4>Sources</h4>{lks}{conf}</div></details>')
@@ -1536,13 +1576,14 @@ def studio_html(data, archive_href=None):
     arch = f'<p><a href="{esc(archive_href)}">All past packets and briefings</a></p>' if archive_href else ""
     chk = data.get("linkCheck")
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'self' https://api.weather.gov"><title>{esc(m["emailSubject"])} · Studio</title><style>{STUDIO_CSS}{STUDIO_CSS2}</style></head><body>
-<div id="minibar" aria-hidden="true"><b id="mb-time">--:--</b><span id="mb-next"></span><a href="#top" data-jump="top" aria-label="Back to top">Top ↑</a></div>
+<div id="pin"><div id="minibar"><b id="mb-time">--:--</b><span id="mb-next"></span><button id="mb-start" type="button" aria-label="Set show start to now">▶ Start</button><a href="#top" data-jump="top" aria-label="Back to top">Top ↑</a></div>
+<div class="clock pre" id="tl" role="img" aria-label="60 minute show timeline, blocks A to L">{clockbar}<div id="phw"><div id="ph" aria-hidden="true"></div></div></div></div>
 <header id="top"><img src="{logo}" alt="Drew in the Morning"><div class="ht"><div class="k">Studio page · {esc(m["kicker"])} {('<span class="sample">'+esc(m["sampleLabel"])+'</span>') if m.get("sample") else ''}</div><div class="d">{esc(m["dateLabel"])}</div>{showstart}</div>
 {clockw}</header>
 <div class="toolbar"><div class="t">{esc(m["recap"])} · {esc(m["tagline"])}</div><div class="tools"><button id="theme" type="button" title="Toggle dark/light">Dark / Light</button><button id="smaller" type="button">A−</button><button id="bigger" type="button">A+</button><button id="expand" type="button">Expand all</button><button id="collapse" type="button">Collapse all</button><button id="sortbtn" type="button" title="Order items by trend score or by the original editorial order">Sort: Score</button><a id="brkbadge" class="btnlike" href="#brk" data-jump="brk" title="Breaking watch: new since this page was built">Breaking <b id="brkb">–</b></a></div></div>
 {usedbar}
 {brk}
-<nav>{nav}</nav><div class="clock" aria-label="60 minute show clock">{clockbar}</div>
+<nav>{nav}</nav>
 <main>{body}</main>
 <footer>{arch}<b>Jump segues (menu):</b><ul>{segs}</ul>Every item links to its source and opens in a new tab; Copy link puts the URL on your clipboard for sharing on screen. CONFIRM BEFORE AIR = verify first. No trackers, no external scripts or fonts. The only network request is the header clock's weather lookup (api.weather.gov); the page works offline (the clock then shows the build-time temperature, and links need internet). Show Start times are computed in the page from each block's offset and length.{(" Links checked "+chk["date"]+": "+str(chk["ok"])+" ok, "+str(chk["blocked"])+" bot-blocked, "+str(chk["dead"])+" dead.") if chk else ""}</footer>
 <div id="toast" role="status"></div><script>{STUDIO_JS}</script><script>{SHOW_JS}</script><script>{CLOCK_JS}</script><script>{BRK_JS}</script></body></html>"""

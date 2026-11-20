@@ -73,10 +73,10 @@ const file=process.argv[2];
  await new Promise(r=>srv.on('listening',r));
  const base='http://127.0.0.1:'+srv.address().port;
  const rel='/'+path.relative(root,pkt).split(path.sep).join('/');
- async function openHttp(w,h,ua){
+ async function openHttp(w,h,ua,q){
   const p=await b.newPage(); await p.setViewport({width:w,height:h,deviceScaleFactor:2,isMobile:!!ua,hasTouch:!!ua}); if(ua)await p.setUserAgent(ua);
   p.on('pageerror',e=>errs.push('pageerror '+e.message)); p.on('console',m=>{if(m.type()==='error'&&!/404/.test(m.text()))errs.push('console '+m.text())});
-  await p.goto(base+rel,{waitUntil:'load'}); return p;
+  await p.goto(base+rel+(q||''),{waitUntil:'load'}); return p;
  }
  const st=(p)=>p.evaluate(()=>{const d=[...document.querySelectorAll('details')];const secs=[...document.querySelectorAll('details.sec')];return {total:d.length,open:d.filter(x=>x.open).length,secs:secs.length,secOpen:secs.filter(x=>x.open).length,
    sw:document.documentElement.scrollWidth,iw:innerWidth,minHdr:Math.min(...secs.map(x=>x.querySelector('summary').getBoundingClientRect().height)),
@@ -160,19 +160,24 @@ const file=process.argv[2];
  const SHOTS='/workspace/ditm-shots'; fs.mkdirSync(SHOTS,{recursive:true});
  const IPHONE='Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1';
  const delay=(ms)=>new Promise(r=>setTimeout(r,ms));
- const uniform=(p)=>p.evaluate(()=>{const hs=[...document.querySelectorAll('details.sec>summary')].map(x=>x.getBoundingClientRect());const ws=hs.map(r=>r.width),hh=hs.map(r=>r.height);
-   return {n:hs.length,dh:Math.max(...hh)-Math.min(...hh),dw:Math.max(...ws)-Math.min(...ws),h:Math.round(hh[0])}});
+ const fullbars=(u,tag)=>{ok(u.dfull<=2,`${tag} every collapsed section is full container width (${u.inner}px; max diff ${u.dfull.toFixed(1)}px)`);ok(u.lefts===1&&u.stacked,`${tag} one bar per row, stacked (${u.lefts} left edge)`);ok(u.trunc.length===0,`${tag} no truncated titles/subtitles at wide widths ${JSON.stringify(u.trunc)}`)};
+ const uniform=(p)=>p.evaluate(()=>{const secs=[...document.querySelectorAll('details.sec')];const hs=secs.map(x=>x.querySelector('summary').getBoundingClientRect());const ws=hs.map(r=>r.width),hh=hs.map(r=>r.height);
+   const m=document.querySelector('main'),cs=getComputedStyle(m),inner=m.getBoundingClientRect().width-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);
+   const lefts=new Set(secs.map(x=>Math.round(x.getBoundingClientRect().left)));const tops=secs.map(x=>x.getBoundingClientRect().top);const stacked=tops.every((t,i)=>i===0||t>tops[i-1]);
+   const wide=window.innerWidth>=700;const trunc=wide?[...document.querySelectorAll('details.sec>summary .tn,details.sec>summary small')].filter(e=>e.scrollWidth>e.clientWidth+1).map(e=>e.textContent.slice(0,30)):[];
+   const rows=secs.map(x=>x.getBoundingClientRect().width);
+   return {n:hs.length,dh:Math.max(...hh)-Math.min(...hh),dw:Math.max(...ws)-Math.min(...ws),h:Math.round(hh[0]),inner:Math.round(inner),dfull:Math.max(...rows.map(w=>Math.abs(w-inner))),lefts:lefts.size,stacked,trunc}});
  for(const [w,h] of [[360,740],[390,844],[412,915],[430,932]]){
   const p=await openHttp(w,h,IPHONE); await delay(500);
   const r=await p.evaluate(()=>{const cs=getComputedStyle,de=document.documentElement,bd=document.body;
     const pinned=[...document.querySelectorAll('body *')].filter(e=>{const c=cs(e);return (c.position==='sticky'||c.position==='fixed')&&c.display!=='none'&&e.id!=='toast'&&e.offsetHeight>0});
-    const tg=[...document.querySelectorAll('button,nav a,summary,.clock a,.btnlike')].filter(e=>e.offsetWidth>0&&e.offsetHeight>0&&!e.closest('details:not([open]) .body')&&!e.closest('.body'));
+    const tg=[...document.querySelectorAll('button,nav a,summary,.btnlike,#minibar a')].filter(e=>e.offsetWidth>0&&e.offsetHeight>0&&!e.closest('details:not([open]) .body')&&!e.closest('.body'));
     const small=tg.filter(e=>Math.min(e.getBoundingClientRect().width,e.getBoundingClientRect().height)<43.5).map(e=>(e.id||e.className||e.tagName)+':'+Math.round(e.getBoundingClientRect().width)+'x'+Math.round(e.getBoundingClientRect().height));
     return {ovH:[cs(de).overflowY,cs(bd).overflowY],hh:[de.style.height||cs(de).height==='auto',cs(bd).height==='auto'||cs(bd).height===de.getBoundingClientRect().height+'px'],docH:de.scrollHeight,vh:innerHeight,pinned:pinned.map(e=>e.tagName+'#'+e.id+':'+e.offsetHeight),pinnedH:pinned.reduce((a,e)=>a+e.offsetHeight,0),sw:de.scrollWidth,iw:innerWidth,small,
       hasMini:!!document.getElementById('minibar')&&document.getElementById('minibar').offsetHeight>0,time:cs(de).touchAction}});
   ok(r.ovH.every(v=>v!=='hidden'&&v!=='clip'),`${w}x${h} html/body do not clip or lock vertical scrolling (${r.ovH})`);
   ok(r.docH>r.vh*1.5,`${w}x${h} document is taller than the screen (${r.docH} vs ${r.vh}) so it must scroll`);
-  ok(r.pinnedH<=r.vh*0.16,`${w}x${h} pinned (sticky/fixed) chrome is short: ${r.pinnedH}px of ${r.vh}px (${r.pinned})`);
+  ok(r.pinnedH<=110&&r.pinnedH<=r.vh*0.16,`${w}x${h} pinned (sticky/fixed) chrome is short: ${r.pinnedH}px of ${r.vh}px (${r.pinned})`);
   ok(r.sw<=r.iw,`${w}x${h} no horizontal overflow (${r.sw}<=${r.iw})`);
   ok(!/none/.test(r.time),`${w}x${h} touch-action allows scrolling (${r.time})`);
   ok(r.small.length===0,`${w}x${h} tap targets >= 44px ${r.small.slice(0,6)}`);
@@ -182,22 +187,22 @@ const file=process.argv[2];
   await drag(Math.round(h*0.4),Math.round(h*0.15));
   ok(await p.evaluate((y)=>scrollY<y,y1),`${w}x${h} dragging back scrolls up`);
   await p.evaluate(()=>scrollTo(0,0)); await delay(100);
-  const u=await uniform(p); ok(u.dh<=2&&u.dw<=2,`${w}x${h} all ${u.n} collapsed section headers are the same size (height diff ${u.dh.toFixed(1)}px, width diff ${u.dw.toFixed(1)}px, ${u.h}px tall)`);
-  const sw0=await p.evaluate(()=>document.querySelector('.clock').scrollWidth>document.querySelector('.clock').clientWidth); ok(sw0,`${w}x${h} A-L block bar swipes sideways`);
+  const u=await uniform(p); ok(u.dh<=2&&u.dw<=2,`${w}x${h} all ${u.n} collapsed section headers are the same size (height diff ${u.dh.toFixed(1)}px, width diff ${u.dw.toFixed(1)}px, ${u.h}px tall)`);fullbars(u,`${w}x${h}`);
+  const tlr=await p.evaluate(()=>{const c=document.querySelector('.clock');return {fit:c.scrollWidth<=c.clientWidth+1,h:c.getBoundingClientRect().height,letters:[...c.querySelectorAll('a')].every(a=>a.getBoundingClientRect().width>=8),n:c.querySelectorAll('a').length}}); ok(tlr.fit&&tlr.n===12&&tlr.letters,`${w}x${h} A-L timeline fits the full width with no swiping (12 segments)`); ok(tlr.h>=32&&tlr.h<=40,`${w}x${h} timeline is compact (${tlr.h}px)`);
   await p.click('#expand'); await delay(300);
   const e=await p.evaluate(()=>({sw:document.documentElement.scrollWidth,iw:innerWidth,cols:new Set([...document.querySelectorAll('#headlines .sortbox>.item')].map(x=>Math.round(x.getBoundingClientRect().left))).size}));
   ok(e.sw<=e.iw,`${w}x${h} no horizontal overflow with everything expanded (${e.sw}<=${e.iw})`); ok(e.cols===1,`${w}x${h} phone shows one column of story cards (${e.cols})`);
-  if(w===390){await p.click('#collapse');await delay(200);await p.screenshot({path:SHOTS+'/phone-390x844-collapsed.png'});
-    await p.evaluate(()=>{const d=document.getElementById('headlines');d.open=true;scrollTo(0,d.getBoundingClientRect().top+scrollY-50)});await delay(300);await p.screenshot({path:SHOTS+'/phone-390x844-headlines-open.png'});}
+  if(w===390){await p.click('#collapse');await delay(200);await p.screenshot({path:SHOTS+'/v2-phone-390x844-collapsed.png'});
+    await p.evaluate(()=>{const d=document.getElementById('headlines');d.open=true;scrollTo(0,d.getBoundingClientRect().top+scrollY-50)});await delay(300);await p.screenshot({path:SHOTS+'/v2-phone-390x844-headlines-open.png'});}
   await p.close();
  }
  for(const [w,h,ua,name] of [[768,1024,IPAD,'ipad-portrait-768x1024'],[820,1180,IPAD,'ipad-portrait-820x1180'],[1024,768,IPAD,'ipad-landscape-1024x768'],[1180,820,IPAD,'ipad-landscape-1180x820'],[1280,800,null,'macbook-1280x800'],[1440,900,null,'macbook-1440x900']]){
   const p=await openHttp(w,h,ua); await delay(500);
-  const u=await uniform(p); ok(u.dh<=2&&u.dw<=2,`${w}x${h} all ${u.n} collapsed section headers are the same size (height diff ${u.dh.toFixed(1)}px, width diff ${u.dw.toFixed(1)}px)`);
+  const u=await uniform(p); ok(u.dh<=2&&u.dw<=2,`${w}x${h} all ${u.n} collapsed section headers are the same size (height diff ${u.dh.toFixed(1)}px, width diff ${u.dw.toFixed(1)}px)`);fullbars(u,`${w}x${h}`);
   const cols=await p.evaluate(()=>{const m=document.querySelector('main');return new Set([...document.querySelectorAll('details.sec')].map(x=>Math.round(x.getBoundingClientRect().left))).size});
-  await p.screenshot({path:`${SHOTS}/${name}-collapsed.png`});
-  const sticky=await p.evaluate(()=>{const h=document.querySelector('header'),m=document.getElementById('minibar');return (getComputedStyle(h).position==='sticky'?h.offsetHeight:0)+(m&&getComputedStyle(m).display!=='none'?m.offsetHeight:0)});
-  ok(sticky<=Math.max(190,h*0.16)||w<1000&&sticky<=60,`${w}x${h} pinned header is compact (${sticky}px)`);
+  await p.screenshot({path:`${SHOTS}/v2-${name}-collapsed.png`});
+  const sticky=await p.evaluate(()=>{const e=document.getElementById('pin');return getComputedStyle(e).position==='sticky'?e.offsetHeight:9999});
+  ok(sticky<=110,`${w}x${h} pinned bar (clock row + timeline) is compact (${sticky}px)`);
   for(const id of ['headlines','trending','national','memes','rundown']){
     await p.evaluate((id)=>{[...document.querySelectorAll('details.sec')].forEach(d=>d.open=false);document.getElementById(id).open=true},id); await delay(150);
     const g=await p.evaluate((id)=>{const d=document.getElementById(id),m=document.querySelector('main'),cs=getComputedStyle(m),mr=m.getBoundingClientRect(),dr=d.getBoundingClientRect();
@@ -209,7 +214,7 @@ const file=process.argv[2];
     if(id==='headlines'){ const want=w>=1280?3:w>=700?2:1; ok(g.cols>=want,`${w}x${h} Top Headlines story cards flow in ${g.cols} columns (>= ${want})`); }
   }
   await p.evaluate(()=>{[...document.querySelectorAll('details.sec')].forEach(d=>d.open=false);const d=document.getElementById('headlines');d.open=true;scrollTo(0,d.getBoundingClientRect().top+scrollY-(document.querySelector('header').offsetHeight>0&&getComputedStyle(document.querySelector('header')).position==='sticky'?document.querySelector('header').offsetHeight+8:60))});
-  await delay(300); await p.screenshot({path:`${SHOTS}/${name}-headlines-open.png`}); await p.close();
+  await delay(300); await p.screenshot({path:`${SHOTS}/v2-${name}-headlines-open.png`}); await p.close();
  }
  {
   const p=await openHttp(1440,900,null); await delay(400);
@@ -221,7 +226,73 @@ const file=process.argv[2];
   for(const [w,h,name] of [[390,844,'phone'],[820,1180,'ipad'],[1180,820,'ipad-land'],[1440,900,'macbook']]){
     const q=await openHttp(w,h,w<500?IPHONE:w<1300?IPAD:null); await delay(300);
     await q.evaluate(()=>{const d=document.getElementById('headlines');d.open=true});await delay(200);
-    await q.screenshot({path:`${SHOTS}/headlines-open-${w}x${h}-full.png`,fullPage:true}); await q.close();
+    await q.screenshot({path:`${SHOTS}/v2-headlines-open-${w}x${h}-full.png`,fullPage:true}); await q.close();
+  }
+ }
+
+ // ---------- t54u: every rundown block is a full-width row; no mid-word breaks; titles never wrap into slivers ----------
+ for(const [w,h,ua] of [[390,844,IPHONE],[820,1180,IPAD],[1024,768,IPAD],[1180,820,IPAD],[1440,900,null]]){
+  const p=await openHttp(w,h,ua); await delay(400);
+  await p.evaluate(()=>{document.getElementById('rundown').open=true});await delay(200);
+  await p.evaluate(()=>{const d=document.getElementById('rundown');scrollTo(0,d.getBoundingClientRect().top+scrollY-150)});await delay(300);
+  await p.screenshot({path:`${SHOTS}/v2-${w}-rundown.png`});
+  await p.evaluate(()=>{document.getElementById('national').open=true});await delay(200);
+  const g=await p.evaluate(()=>{const grid=document.querySelector('#rundown .rdgrid'),gr=grid.getBoundingClientRect(),rows=[...grid.querySelectorAll(':scope>details.rd')].map(d=>d.getBoundingClientRect());
+    const lines=(e)=>{const lh=parseFloat(getComputedStyle(e).lineHeight)||parseFloat(getComputedStyle(e).fontSize)*1.25;return e.getBoundingClientRect().height/lh};
+    const rt=[...document.querySelectorAll('#rundown .rd>summary .rtn')].map(e=>({t:e.textContent,l:lines(e)}));
+    const st=[...document.querySelectorAll('details.sec>summary .tn')].map(e=>({t:e.textContent,l:lines(e)}));
+    const nat=[...document.querySelectorAll('#national .sortbox>details.rd')].map(d=>d.getBoundingClientRect());const ngr=document.querySelector('#national .sortbox').getBoundingClientRect();
+    const nt=[...document.querySelectorAll('#national .rd>summary .rtn')].map(e=>({t:e.textContent.slice(0,24),l:lines(e)}));
+    const bad=[...document.querySelectorAll('summary,summary *,.rtn,.tn,.tt')].filter(e=>{const c=getComputedStyle(e);return c.wordBreak==='break-all'||c.overflowWrap==='anywhere'||c.overflowWrap==='break-word'&&e.matches('.rtn,.tn,.tt,summary')}).length;
+    const badges=[...document.querySelectorAll('.cf,.sb,.cnt,.pill,.tag,.upill,.ub')].filter(e=>getComputedStyle(e).whiteSpace!=='nowrap').length;
+    const bw=[...document.querySelectorAll('.cf')].filter(e=>e.offsetWidth>0&&e.getBoundingClientRect().height>parseFloat(getComputedStyle(e).fontSize)*2.2).length;
+    const disp=getComputedStyle(grid).display,rh=[...grid.querySelectorAll(':scope>details.rd>summary')].map(e=>e.getBoundingClientRect().height);const words=[...document.querySelectorAll('#rundown .rd>summary .rtn,details.sec>summary .tn')].filter(e=>{const wc=e.textContent.trim().split(/\s+/).length;return lines(e)>wc+0.2||e.scrollWidth>e.clientWidth+1}).map(e=>e.textContent);
+    const minw=Math.min(...rows.map(r=>r.width/gr.width));
+    return {disp,rh,words,minw,n:rows.length,dfull:Math.max(...rows.map(r=>Math.abs(r.width-gr.width))),lefts:new Set(rows.map(r=>Math.round(r.left))).size,stacked:rows.every((r,i)=>i===0||r.top>=rows[i-1].bottom-1),rt,st,
+      natn:nat.length,natfull:nat.length?Math.max(...nat.map(r=>Math.abs(r.width-ngr.width))):0,natstacked:nat.every((r,i)=>i===0||r.top>=nat[i-1].bottom-1),nt,bad,badges,bw,sw:document.documentElement.scrollWidth,iw:innerWidth}});
+  ok(g.n===12&&g.dfull<=2,`${w}x${h} all ${g.n} rundown blocks A-L are full-width rows (max diff ${g.dfull.toFixed(1)}px)`);
+  ok(g.lefts===1&&g.stacked&&g.minw>=0.95,`${w}x${h} rundown blocks are stacked, never side by side; narrowest card is ${(g.minw*100).toFixed(0)}% of its container`);
+  ok(/^(block|flex)$/.test(g.disp),`${w}x${h} rundown list is display:${g.disp} (no CSS grid columns)`);
+  ok(g.words.length===0,`${w}x${h} no title breaks or overflows mid-word ${JSON.stringify(g.words)}`);
+  if(w>=820){const rr=g.rh.filter(x=>x<56||x>76);ok(rr.length===0,`${w}x${h} collapsed rundown rows are 56-76px tall (${g.rh.map(Math.round).join(',')})`)}
+  const maxL=w<=500?2:1; const over=g.rt.filter(x=>x.l>maxL+0.2);
+  ok(over.length===0,`${w}x${h} rundown block titles take at most ${maxL} line(s) ${JSON.stringify(over)}`);
+  const over2=g.st.filter(x=>x.l>maxL+0.2); ok(over2.length===0,`${w}x${h} section titles take at most ${maxL} line(s) ${JSON.stringify(over2)}`);
+  ok(g.natn===0||(g.natfull<=2&&g.natstacked),`${w}x${h} National Desk story rows are full width and stacked (${g.natn} rows)`);
+  const over3=g.nt.filter(x=>x.l>2.2); ok(over3.length===0,`${w}x${h} National story titles take at most 2 lines ${JSON.stringify(over3)}`);
+  ok(g.bad===0&&g.badges===0&&g.bw===0,`${w}x${h} no break-all/anywhere on titles, every badge is nowrap, CONFIRM badges stay on one line`);
+  ok(g.sw<=g.iw,`${w}x${h} no horizontal overflow with Rundown and National open`);
+  await p.close();
+ }
+
+ // ---------- t53u: pinned A-L timeline with playhead; ?t=<minutes> test hook ----------
+ for(const [w,h,ua,tag] of [[1440,900,null,'1440'],[390,844,IPHONE,'390']]){
+  for(const tm of [0,23,60]){
+   const p=await openHttp(w,h,ua,'?t='+tm); await delay(1600);
+   const r=await p.evaluate(()=>{const tl=document.getElementById('tl'),ph=document.getElementById('ph'),br=tl.getBoundingClientRect(),pr=ph.getBoundingClientRect();
+     const A=[...tl.querySelectorAll('a')];const cn=document.getElementById('cwnext');
+     return {state:tl.dataset.state,pct:parseFloat(ph.dataset.pct),leftPx:(pr.left-br.left-2),w:br.width-4,top:pr.top-br.top,ph:pr.height,bh:br.height,
+      done:A.filter(a=>a.classList.contains('done')).map(a=>a.dataset.letter).join(''),live:A.filter(a=>a.classList.contains('live')).map(a=>a.dataset.letter).join(''),
+      nextChip:document.getElementById('cwn-c').textContent,nextLabel:document.getElementById('cwn-l').textContent,mini:document.getElementById('mb-next').textContent,sw:document.documentElement.scrollWidth,iw:innerWidth,fit:tl.scrollWidth<=tl.clientWidth+1}});
+   const exp=tm/60*100, doneExp={0:'',23:'ABCD',60:'ABCDEFGHIJKL'}[tm];
+   ok(Math.abs(r.pct-exp)<0.5&&Math.abs(r.leftPx/r.w*100-exp)<1.2,`${tag} t=${tm}: playhead at ${exp.toFixed(1)}% (data ${r.pct}%, drawn ${(r.leftPx/r.w*100).toFixed(1)}%)`);
+   ok(r.ph>=r.bh-4,`${tag} t=${tm}: playhead line spans the full bar height (${Math.round(r.ph)}/${Math.round(r.bh)}px)`);
+   ok(r.done===doneExp,`${tag} t=${tm}: covered (darker) segments = "${r.done}" (expected "${doneExp}")`);
+   if(tm===23){ok(r.live==='E'&&r.nextChip==='F'&&/^Next:/.test(r.nextLabel),`${tag} t=23: current block E, countdown says next is ${r.nextChip}; consistent with the bar`); ok(/Next:/.test(r.mini),`${tag} t=23: pinned bar mirrors the countdown ("${r.mini}")`);}
+   if(tm===0) ok(r.state==='run'&&r.live==='A',`${tag} t=0: show running at the left edge, block A live`);
+   if(tm===60) ok(r.state==='post'&&r.live===''&&/over/i.test(r.nextLabel),`${tag} t=60: playhead at the right edge, show over, all covered`);
+   ok(r.sw<=r.iw&&r.fit,`${tag} t=${tm}: timeline fits, no horizontal overflow`);
+   if(tm===23){
+     await p.evaluate(()=>scrollTo(0,1600));await delay(500);
+     const pin=await p.evaluate(()=>{const e=document.getElementById('pin').getBoundingClientRect();return {top:e.top,h:e.height,y:scrollY}});
+     ok(pin.y>500&&Math.abs(pin.top)<1,`${tag} t=23: timeline stays pinned at the top after scrolling (scrollY ${Math.round(pin.y)}, top ${pin.top}, ${Math.round(pin.h)}px tall)`);
+     await p.screenshot({path:`${SHOTS}/v2-${tag}-t23.png`});
+     await p.evaluate(()=>scrollTo(0,0));await delay(200);
+     await p.evaluate(()=>{document.querySelector('#tl a[data-jump="blk-C"]').click()});await delay(700);
+     const jmp=await p.evaluate(()=>({r:document.getElementById('rundown').open,c:document.getElementById('blk-C').open}));
+     ok(jmp.r&&jmp.c,`${tag} tapping segment C opens Rundown and block C`);
+   }
+   await p.close();
   }
  }
  srv.close();
