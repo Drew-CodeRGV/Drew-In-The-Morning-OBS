@@ -37,11 +37,13 @@ function mock(){const msgs={},cl={};let n=0;
  ok(bg.every(c=>c==='rgba(0, 0, 0, 0)'||c==='transparent'),'transparent background '+bg);
  ok(await p.evaluate(()=>!document.querySelector('#seg,#title,#letter,#blk,.title,.letter')),'no title / letter elements');
  await p.evaluate(()=>window.DITM.cmd({cmd:'goto',idx:0}));await sleep(900);
- let L=await p.evaluate(()=>{const f=id=>parseFloat(getComputedStyle(document.getElementById(id)).fontSize);const r=document.getElementById('bar').getBoundingClientRect(),g=document.getElementById('bug').getBoundingClientRect(),i=document.querySelector('#bug img');
-  return{head:f('head'),kick:f('kick'),sub:f('sub'),bgi:getComputedStyle(document.getElementById('bar')).backgroundImage,bar:[r.left,r.top,r.right,r.bottom],bug:[g.left,g.top,g.right,g.bottom],img:i&&i.complete&&i.naturalWidth>0,text:document.body.innerText}});
+ let L=await p.evaluate(()=>{const f=id=>parseFloat(getComputedStyle(document.getElementById(id)).fontSize);const r=document.getElementById('bar').getBoundingClientRect(),l=document.getElementById('lt').getBoundingClientRect();
+  return{head:f('head'),kick:f('kick'),sub:f('sub'),bgi:getComputedStyle(document.getElementById('bar')).backgroundImage,bar:[r.left,r.top,r.right,r.bottom],lt:[l.left,l.top,l.right,l.bottom],rad:getComputedStyle(document.getElementById('bar')).borderRadius,hasBug:!!document.getElementById('bug'),imgsInBar:document.querySelectorAll('#lt img').length,text:document.body.innerText}});
  ok(L.head<=40&&L.head>=30,'headline size '+L.head);ok(L.sub<=30&&L.sub>=22,'chyron line size '+L.sub);ok(L.kick<=26,'kicker size '+L.kick);
- ok(/gradient/.test(L.bgi),'gradient bar');ok(L.img,'logo bug image loaded');ok(L.bug[0]<400&&L.bug[3]>800,'logo in lower-left corner '+L.bug);
- ok(L.bar[2]<=1500&&L.bar[3]<=1080,'bar clear of scene logo '+L.bar);
+ ok(/gradient/.test(L.bgi),'gradient bar');ok(!L.hasBug&&L.imgsInBar===0,'no logo bug in the bar');
+ ok(L.bar[0]===30,'left margin 30px (x='+L.bar[0]+')');ok(1080-L.bar[3]===26,'bottom margin 26px (gap='+(1080-L.bar[3])+')');ok(L.bar[0]/1920<=0.03&&(1080-L.bar[3])/1080<=0.03,'inside a ~3% title-safe margin, not flush');
+ ok(/^14px$/.test(L.rad),'rounded corners ('+L.rad+')');
+ ok(L.bar[2]<=1500&&L.bar[3]<=1080,'bar clear of the scene logo '+L.bar);
  ok(L.text.indexOf(blocks[0].headline)>=0,'block 0 headline shown');
  ok(!/^[A-L]$/m.test(L.text.replace(/\n+/g,'\n').split('\n').filter(x=>x.length===1).join('\n')||'zz'),'no stray single-letter block letter');
  // every block fits
@@ -69,6 +71,17 @@ function mock(){const msgs={},cl={};let n=0;
  const after=JSON.stringify(await p.evaluate(()=>window.DITM.state()));
  ok(JSON.parse(after).idx===JSON.parse(before).idx&&JSON.parse(after).visible===JSON.parse(before).visible&&!JSON.parse(after).running,'garbage / non-whitelisted input changes nothing '+after);
  ok(await p.evaluate(()=>!document.body.innerHTML.includes('<img src=x')&&!document.querySelector('script[src]')),'no injection into page');
+ // ======== B2. logo state (bar off, only the small sun bug bottom-right) ========
+ const lg=()=>p.evaluate(()=>{const e=document.getElementById('lg'),r=e.getBoundingClientRect();return{on:e.classList.contains('on'),r:[r.left,r.top,r.right,r.bottom],h:r.height,ok:e.complete&&e.naturalWidth>0,bar:document.getElementById('lt').classList.contains('in'),op:getComputedStyle(e).opacity}});
+ await p.evaluate(()=>window.DITM.cmd({cmd:'goto',idx:3}));await sleep(900);let lo=await lg();ok(lo.bar&&!lo.on&&+lo.op===0,'topic showing: bar in, logo bug hidden');
+ await p.evaluate(()=>window.dispatchEvent(new CustomEvent('ditm',{detail:{cmd:'logo'}})));await sleep(900);lo=await lg();st=await p.evaluate(()=>window.DITM.state());
+ ok(!lo.bar&&lo.on&&!st.visible&&st.logo,'logo: bar gone, bug on');ok(lo.ok,'logo image loaded');ok(Math.abs(lo.h-170)<=2,'logo ~170px tall ('+lo.h+')');
+ ok(Math.abs(lo.r[2]-1880)<=1&&Math.abs(lo.r[3]-1040)<=1,'logo 40px from the right and bottom ('+lo.r+')');ok(lo.r[0]>1500,'logo clear of the bar area');
+ for(const c of [{cmd:'next'},{cmd:'prev'},{cmd:'goto',idx:6},{cmd:'show'}]){await p.evaluate(()=>window.DITM.cmd({cmd:'logo'}));await sleep(100);await p.evaluate(c=>window.DITM.cmd(c),c);await sleep(700);lo=await lg();ok(lo.bar&&!lo.on,c.cmd+' brings the bar back and hides the logo');}
+ await p.evaluate(()=>window.DITM.cmd({cmd:'logo'}));await sleep(100);await p.evaluate(()=>window.DITM.cmd({cmd:'clear'}));await sleep(700);lo=await lg();st=await p.evaluate(()=>window.DITM.state());ok(!lo.bar&&!lo.on&&!st.logo&&!st.visible,'clear hides both');
+ await p.evaluate(()=>window.DITM.cmd({cmd:'logo'}));await p.evaluate(()=>window.DITM.cmd({cmd:'logo'}));st=await p.evaluate(()=>window.DITM.state());ok(st.logo&&!st.visible,'logo twice is harmless');
+ await p.evaluate(()=>window.dispatchEvent(new CustomEvent('ditm',{detail:{cmd:'LOGO'}})));await p.evaluate(()=>window.dispatchEvent(new CustomEvent('ditm',{detail:{cmd:'logo',idx:'<b>'}})));
+ await p.evaluate(()=>window.DITM.cmd({cmd:'clear'}));
  // ======== C. auto-advance with a fake clock ========
  await p.evaluate(()=>window.DITM.cmd({cmd:'clear'}));
  await p.evaluate(()=>window.DITM.cmd({cmd:'start'}));st=await p.evaluate(()=>window.DITM.state());
@@ -98,6 +111,10 @@ function mock(){const msgs={},cl={};let n=0;
  // hold twice is harmless; resume without hold is harmless
  await p.evaluate(()=>{window.DITM.cmd({cmd:'hold'});window.DITM.cmd({cmd:'hold'})});let s1=await p.evaluate(()=>window.DITM.state());await p.evaluate(()=>window.__adv(60000));
  await p.evaluate(()=>{window.DITM.cmd({cmd:'resume'});window.DITM.cmd({cmd:'resume'})});let s2=await p.evaluate(()=>window.DITM.state());ok(Math.abs(s2.elapsedMin-s1.elapsedMin)<0.05&&!s2.held,'double hold / double resume harmless');
+ // logo while auto-advance runs: stays hidden, keeps counting, 'show' brings back the current block
+ await p.evaluate(()=>window.DITM.cmd({cmd:'goto',idx:2}));await sleep(300);await p.evaluate(()=>window.DITM.cmd({cmd:'logo'}));st=await p.evaluate(()=>window.DITM.state());ok(st.running&&st.logo&&!st.visible&&st.idx===2,'logo during auto-advance keeps running');
+ await p.evaluate(b=>window.__adv((b[3].offset-b[2].offset)*60000+3000),blocks);await sleep(700);st=await p.evaluate(()=>window.DITM.state());lo=await lg();ok(st.idx===3&&st.logo&&!st.visible&&!lo.bar&&lo.on,'advances to block 3 under the logo, bar stays hidden');
+ await p.evaluate(()=>window.DITM.cmd({cmd:'show'}));await sleep(700);st=await p.evaluate(()=>window.DITM.state());lo=await lg();ok(st.idx===3&&st.visible&&!st.logo&&lo.bar&&!lo.on,'show returns to the current block');
  // goto/next/prev while running re-times the show
  await p.evaluate(()=>window.DITM.cmd({cmd:'goto',idx:7}));await sleep(500);st=await p.evaluate(()=>window.DITM.state());ok(st.idx===7&&st.running&&Math.abs(st.elapsedMin-blocks[7].offset)<0.1,'goto while running re-times to block 7');
  await p.evaluate(()=>window.__adv(20000));await sleep(500);st=await p.evaluate(()=>window.DITM.state());ok(st.idx===7,'stays on block 7 (no snap-back)');

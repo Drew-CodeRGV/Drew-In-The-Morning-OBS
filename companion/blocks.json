@@ -10,8 +10,8 @@
     "lowerThird": "DITM Lower Third"
   },
   "scenes": {
-    "host": "Main Host",
-    "jess": "Host + Jess"
+    "host": "Drew in the Morning",
+    "jess": "Drew in the Morning"
   },
   "blocks": [
     {
@@ -25,7 +25,7 @@
       "chyron": "Drew Lentz\nHost \u00b7 Drew in the Morning",
       "headline": "Good morning, Rio Grande Valley",
       "jess": false,
-      "scene": "Main Host"
+      "scene": "Drew in the Morning"
     },
     {
       "index": 1,
@@ -38,7 +38,7 @@
       "chyron": "What I've Been Up To\nThis week \u00b7 Drew & Jess",
       "headline": "What I've been up to this week",
       "jess": false,
-      "scene": "Main Host"
+      "scene": "Drew in the Morning"
     },
     {
       "index": 2,
@@ -51,7 +51,7 @@
       "chyron": "Cameron County Vote\nAbatement hearing denied 3-2 \u00b7 Nov. 17",
       "headline": "Cameron County rejects SpaceX tax break hearing, 3-2",
       "jess": false,
-      "scene": "Main Host"
+      "scene": "Drew in the Morning"
     },
     {
       "index": 3,
@@ -64,7 +64,7 @@
       "chyron": "TX-15: Bobby Pulido\nDefeated De La Cruz \u00b7 Takes office Jan. 3",
       "headline": "Bobby Pulido defeats Rep. Monica De La Cruz in TX-15",
       "jess": false,
-      "scene": "Main Host"
+      "scene": "Drew in the Morning"
     },
     {
       "index": 4,
@@ -77,7 +77,7 @@
       "chyron": "Edinburg CISD Board\nNew trustees from Nov. 3 election",
       "headline": "Edinburg CISD adds new trustees; $3M stop-loss contract on agenda",
       "jess": false,
-      "scene": "Main Host"
+      "scene": "Drew in the Morning"
     },
     {
       "index": 5,
@@ -90,7 +90,7 @@
       "chyron": "McAllen City Commission\nFallek won District 5 special \u00b7 May 2026",
       "headline": "Brownsville names Alan Guard permanent city manager",
       "jess": false,
-      "scene": "Main Host"
+      "scene": "Drew in the Morning"
     },
     {
       "index": 6,
@@ -103,7 +103,7 @@
       "chyron": "McAllen EDC\nState award \u00b7 Valeo $225M plant",
       "headline": "McAllen EDC wins state award for Valeo's $225M plant",
       "jess": false,
-      "scene": "Main Host"
+      "scene": "Drew in the Morning"
     },
     {
       "index": 7,
@@ -116,7 +116,7 @@
       "chyron": "How We'd Talk to Our Kids\nOpen \u00b7 Honest \u00b7 No judgment",
       "headline": "GTA 6 launches Nov. 19 at midnight; rated M (17+)",
       "jess": true,
-      "scene": "Host + Jess"
+      "scene": "Drew in the Morning"
     },
     {
       "index": 8,
@@ -129,7 +129,7 @@
       "chyron": "Statewide\nTexas news & Texas politics",
       "headline": "Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border contracts",
       "jess": false,
-      "scene": "Main Host"
+      "scene": "Drew in the Morning"
     },
     {
       "index": 9,
@@ -142,7 +142,7 @@
       "chyron": "National Desk\nThe big stories \u00b7 and why they matter here",
       "headline": "FAA ground stop: legacy network, a router and a long weekend",
       "jess": false,
-      "scene": "Main Host"
+      "scene": "Drew in the Morning"
     },
     {
       "index": 10,
@@ -155,7 +155,7 @@
       "chyron": "Send Us Your Topics\nDM @drewinthemorning or email the show",
       "headline": "Send us your topics: DM or email",
       "jess": false,
-      "scene": "Main Host"
+      "scene": "Drew in the Morning"
     },
     {
       "index": 11,
@@ -168,7 +168,7 @@
       "chyron": "Meme of the Week\nWhat your kids might be saying at school",
       "headline": "Drew & Jess are watching the feeds so you don't have to",
       "jess": true,
-      "scene": "Host + Jess"
+      "scene": "Drew in the Morning"
     }
   ]
 }

@@ -38,14 +38,25 @@ class ChyronBuild(unittest.TestCase):
         h = self.html
         self.assertIn("linear-gradient", h)
         self.assertIn("data:image/png;base64", h)          # logo bug embedded
+        self.assertNotIn("id=\"bug\"", h)                  # old logo bug removed from the bar
+        self.assertIn("left:30px;bottom:26px", h.replace(" ", ""))   # small title-safe margin (about half the old 60/50)
+        self.assertIn('id="lg"', h)                         # the small sun logo shown by the 'logo' command
         self.assertNotIn("id=\"seg\"", h)
         self.assertNotIn("id=\"letter\"", h)
         self.assertIn("background:transparent", h.replace(" ", ""))
 
+    def test_bug_asset_published(self):
+        from PIL import Image
+        p = os.path.join(self.tmp, "assets", "ditm-bug.png")
+        im = Image.open(p)
+        self.assertEqual(im.mode, "RGBA")
+        self.assertEqual(im.height, 340)
+        self.assertGreater(im.width, im.height)
+
     def test_commands_are_a_fixed_whitelist(self):
         m = re.search(r"CMDS=\{([^}]*)\}", self.html)
         cmds = set(re.findall(r"(\w+):1", m.group(1)))
-        self.assertEqual(cmds, {"start", "stop", "hold", "resume", "toggle", "next", "prev", "goto", "clear", "show"})
+        self.assertEqual(cmds, {"start", "stop", "hold", "resume", "toggle", "logo", "next", "prev", "goto", "clear", "show"})
         self.assertIn("hasOwnProperty", self.html)
         self.assertNotIn("eval(", self.html)
         self.assertNotIn("innerHTML", self.html)            # text only ever goes in via textContent

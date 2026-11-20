@@ -26,3 +26,9 @@ Reset on the dashboard publishes `stop`. A reloaded browser source resumes the s
 
 ## Tests
 `tools/ui_test_chyron.js <docs/chyron.html> <studio.html>` (puppeteer, mock ntfy server), `tests/test_chyron.py`.
+
+## Layout and the `logo` command (sync 10)
+The bar keeps a small title-safe margin (30px left, 26px bottom, about half the earlier gap) and ends at x=1500, clear of the scene logo.
+There is no logo on the bar. `logo` hides the bar and shows only the small white DITM sun bug (170px tall, 40px from the
+right and bottom; also published as `assets/ditm-bug.png`). `goto/next/prev/show/start` bring the bar back and hide the bug,
+`clear` hides both. If auto-advance is running it keeps counting while only the logo is up.

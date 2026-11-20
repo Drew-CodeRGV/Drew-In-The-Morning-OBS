@@ -62,7 +62,7 @@ class CompanionTests(unittest.TestCase):
             {"DITM Chyron", "DITM Headline", "DITM Segment Title", "DITM Block Letter"},
         )
         scene = [item for item in first if item["requestType"] == "SetCurrentProgramScene"]
-        self.assertEqual(scene[0]["requestData"]["sceneName"], "Main Host")
+        self.assertEqual(scene[0]["requestData"]["sceneName"], "Drew in the Morning")
 
 
 if __name__ == "__main__":

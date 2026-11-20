@@ -20,8 +20,8 @@ DATA = ROOT / "obs-data.json"
 
 # Scene names are the ones in OBS-setup.md. Source names are defined there
 # for the Stream Deck path. They are not the Read-from-file files.
-SCENE_HOST = "Main Host"
-SCENE_JESS = "Host + Jess"
+SCENE_HOST = "Drew in the Morning"
+SCENE_JESS = "Drew in the Morning"
 SOURCE_CHYRON = "DITM Chyron"
 SOURCE_HEADLINE = "DITM Headline"
 SOURCE_TITLE = "DITM Segment Title"
@@ -164,7 +164,7 @@ def custom_variables(blocks: list[dict]) -> dict:
             "persistCurrentValue": False,
         },
         "ditm_scene": {
-            "description": "Main Host, or Host + Jess when the block has Jess.",
+            "description": "The Drew in the Morning scene (one scene for every block).",
             "defaultValue": first["scene"],
             "persistCurrentValue": False,
         },
@@ -519,7 +519,7 @@ def button_table(blocks: list[dict]) -> str:
             "",
             "Highlight: on each block key, add a feedback that checks `internal:custom_ditm_block_index` equals that key's index, and invert the colors.",
             "",
-            "OBS source names: `DITM Chyron`, `DITM Headline`, `DITM Segment Title`, `DITM Block Letter`. Optional image `DITM Block Card`. Optional scene item `DITM Lower Third` on Main Host. Scenes: `Main Host` and `Host + Jess`.",
+            "OBS source names: `DITM Chyron`, `DITM Headline`, `DITM Segment Title`, `DITM Block Letter`. Optional image `DITM Block Card`. Optional scene item `DITM Lower Third` on the `Drew in the Morning` scene (the only scene the show uses). The news chyron itself is the browser source `DITM Chyron Web`, driven by obs-browser emit_event (see companion/CHYRON.md).",
             "",
             "Do not turn on Read from file for the four DITM text sources. That mode ignores the websocket text.",
             "",

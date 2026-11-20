@@ -148,7 +148,7 @@ The active block key has a feedback that turns the key white when `internal:cust
 
 ## 5. OBS sources these keys expect
 
-Create these on **Main Host** (and Add Existing on **Host + Jess**). Names must match.
+Create these on the **Drew in the Morning** scene. Names must match.
 
 | Source | Type | Read from file |
 |---|---|---|
@@ -157,11 +157,11 @@ Create these on **Main Host** (and Add Existing on **Host + Jess**). Names must 
 | `DITM Segment Title` | Text (FreeType 2) | Off |
 | `DITM Block Letter` | Text (FreeType 2) | Off |
 | `DITM Block Card` | Image | Optional. No card art ships in this repo, so leave it out until you have files. |
-| `DITM Lower Third` | The browser source, or a group around it | Optional. The keys try to enable this item on Main Host. |
+| `DITM Lower Third` | The browser source, or a group around it | Optional. The keys try to enable this item on the Drew in the Morning scene. |
 
 Leave **Read from file** off on the four text sources. If it is on, OBS keeps the file and ignores `SetInputSettings`. The file-based sources in the rest of this repo (`current/chyron-primary.txt` and the others) are the path the Python switcher uses. The Stream Deck writes the `DITM …` sources directly. Use one path or the other for a given line, not both, or they will fight.
 
-Block keys also switch the program scene to **Main Host**, or to **Host + Jess** when `jessDropIn` is true. Those scene names are the ones in `OBS-setup.md`. Rename either the scenes or `SCENE_HOST` / `SCENE_JESS` in `build_companion.py` if yours differ, then rebuild.
+Block keys also switch the program scene to **Drew in the Morning** (the only scene the show uses; `jessDropIn` no longer changes the scene). Those scene names are the ones in `OBS-setup.md`. Rename either the scenes or `SCENE_HOST` / `SCENE_JESS` in `build_companion.py` if yours differ, then rebuild.
 
 Each press sends the block's **first** chyron (primary, then secondary, each already checked to be 60 characters or fewer) and the **first** headline.
 
@@ -183,7 +183,7 @@ Each press sends the block's **first** chyron (primary, then secondary, each alr
 A scene change:
 
 ```json
-{"requestType": "SetCurrentProgramScene", "requestData": {"sceneName": "Main Host"}}
+{"requestType": "SetCurrentProgramScene", "requestData": {"sceneName": "Drew in the Morning"}}
 ```
 
 Showing the lower third needs the numeric item id from `GetSceneItemId`, then:
@@ -191,7 +191,7 @@ Showing the lower third needs the numeric item id from `GetSceneItemId`, then:
 ```json
 {
   "requestType": "SetSceneItemEnabled",
-  "requestData": {"sceneName": "Main Host", "sceneItemId": 0, "sceneItemEnabled": true}
+  "requestData": {"sceneName": "Drew in the Morning", "sceneItemId": 0, "sceneItemEnabled": true}
 }
 ```
 
@@ -232,4 +232,4 @@ Re-import, or update the keys from the new `button-table.md`. Import replaces th
 | PREV/NEXT changes the key but not the picture | The expression action did not run, or the OBS actions fired before the variables updated. Select the button and confirm the delays (30 ms on the expressions, 80 ms on the text). |
 | The active key does not light | Add the variable feedback by hand. That part of the import is the one most likely to be dropped. |
 | Middle dots look wrong | Use Text (FreeType 2), same as the rest of the show. |
-| Keys cut to the wrong scene | Your scene is not named `Main Host` or `Host + Jess`. |
+| Keys cut to the wrong scene | Your scene is not named `Drew in the Morning`. |

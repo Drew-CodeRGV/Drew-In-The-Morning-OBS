@@ -16,14 +16,14 @@
     "get": {
       "requestType": "GetSceneItemId",
       "requestData": {
-        "sceneName": "Main Host",
+        "sceneName": "Drew in the Morning",
         "sourceName": "DITM Lower Third"
       }
     },
     "set": {
       "requestType": "SetSceneItemEnabled",
       "requestData": {
-        "sceneName": "Main Host",
+        "sceneName": "Drew in the Morning",
         "sceneItemId": 0,
         "sceneItemEnabled": true
       }
@@ -77,7 +77,7 @@
         {
           "requestType": "SetCurrentProgramScene",
           "requestData": {
-            "sceneName": "Main Host"
+            "sceneName": "Drew in the Morning"
           }
         }
       ]
@@ -129,7 +129,7 @@
         {
           "requestType": "SetCurrentProgramScene",
           "requestData": {
-            "sceneName": "Main Host"
+            "sceneName": "Drew in the Morning"
           }
         }
       ]
@@ -181,7 +181,7 @@
         {
           "requestType": "SetCurrentProgramScene",
           "requestData": {
-            "sceneName": "Main Host"
+            "sceneName": "Drew in the Morning"
           }
         }
       ]
@@ -233,7 +233,7 @@
         {
           "requestType": "SetCurrentProgramScene",
           "requestData": {
-            "sceneName": "Main Host"
+            "sceneName": "Drew in the Morning"
           }
         }
       ]
@@ -285,7 +285,7 @@
         {
           "requestType": "SetCurrentProgramScene",
           "requestData": {
-            "sceneName": "Main Host"
+            "sceneName": "Drew in the Morning"
           }
         }
       ]
@@ -337,7 +337,7 @@
         {
           "requestType": "SetCurrentProgramScene",
           "requestData": {
-            "sceneName": "Main Host"
+            "sceneName": "Drew in the Morning"
           }
         }
       ]
@@ -389,7 +389,7 @@
         {
           "requestType": "SetCurrentProgramScene",
           "requestData": {
-            "sceneName": "Main Host"
+            "sceneName": "Drew in the Morning"
           }
         }
       ]
@@ -441,7 +441,7 @@
         {
           "requestType": "SetCurrentProgramScene",
           "requestData": {
-            "sceneName": "Host + Jess"
+            "sceneName": "Drew in the Morning"
           }
         }
       ]
@@ -493,7 +493,7 @@
         {
           "requestType": "SetCurrentProgramScene",
           "requestData": {
-            "sceneName": "Main Host"
+            "sceneName": "Drew in the Morning"
           }
         }
       ]
@@ -545,7 +545,7 @@
         {
           "requestType": "SetCurrentProgramScene",
           "requestData": {
-            "sceneName": "Main Host"
+            "sceneName": "Drew in the Morning"
           }
         }
       ]
@@ -597,7 +597,7 @@
         {
           "requestType": "SetCurrentProgramScene",
           "requestData": {
-            "sceneName": "Main Host"
+            "sceneName": "Drew in the Morning"
           }
         }
       ]
@@ -649,7 +649,7 @@
         {
           "requestType": "SetCurrentProgramScene",
           "requestData": {
-            "sceneName": "Host + Jess"
+            "sceneName": "Drew in the Morning"
           }
         }
       ]
