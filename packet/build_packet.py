@@ -1154,6 +1154,85 @@ document.addEventListener('click',function(e){
 paint();
 })();
 """
+SEARCH_JS = r"""
+(function(){
+var qel=document.getElementById('q'), clr=document.getElementById('q-x'), cnt=document.getElementById('q-n');
+if(!qel)return;
+function cards(){return document.querySelectorAll('.item, .ob, .brkrow');}
+function unmark(root){
+  root.querySelectorAll('mark.qhit').forEach(function(m){
+    var p=m.parentNode; if(!p)return;
+    while(m.firstChild)p.insertBefore(m.firstChild,m);
+    p.removeChild(m); p.normalize();
+  });
+}
+function mark(root,q){
+  if(!q)return;
+  var rx; try{rx=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'ig');}catch(e){return;}
+  var tw=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,null,false), nodes=[], n;
+  while((n=tw.nextNode())){
+    if(n.parentNode&&n.parentNode.closest&&n.parentNode.closest('mark.qhit,.acts,button,script,style,input'))continue;
+    rx.lastIndex=0; if(n.nodeValue&&rx.test(n.nodeValue))nodes.push(n);
+  }
+  nodes.forEach(function(n){
+    var t=n.nodeValue, frag=document.createDocumentFragment(), last=0, m;
+    rx.lastIndex=0;
+    while((m=rx.exec(t))){
+      if(m.index>last)frag.appendChild(document.createTextNode(t.slice(last,m.index)));
+      var mk=document.createElement('mark'); mk.className='qhit'; mk.textContent=m[0]; frag.appendChild(mk);
+      last=m.index+m[0].length;
+    }
+    if(last<t.length)frag.appendChild(document.createTextNode(t.slice(last)));
+    n.parentNode.replaceChild(frag,n);
+  });
+}
+function hay(el){
+  var sec=el.closest('details.sec, #brk');
+  var st='';
+  if(sec){var tn=sec.querySelector('.tn, .brkh b'); var sm=sec.querySelector('.tt small'); st=((tn&&tn.textContent)||'')+' '+((sm&&sm.textContent)||'');}
+  return ((el.getAttribute('data-q')||'')+' '+(el.textContent||'')+' '+st).toLowerCase();
+}
+function applySearch(){
+  var raw=(qel.value||'').trim(), q=raw.toLowerCase();
+  if(clr)clr.hidden=!raw;
+  var hit=0, total=0;
+  cards().forEach(function(el){
+    unmark(el);
+    total++;
+    var ok=!q||hay(el).indexOf(q)!==-1;
+    el.hidden=!ok;
+    if(ok){hit++; if(q){var box=el.querySelector('.tx, .obn, .obm')||el; mark(box,raw);}}
+  });
+  document.querySelectorAll('details.sec, #brk').forEach(function(d){
+    var n=0;
+    d.querySelectorAll('.item, .ob, .brkrow').forEach(function(c){if(!c.hidden)n++;});
+    var empty=!!q&&n===0;
+    d.classList.toggle('q-empty',empty);
+    if(q&&n)d.open=true;
+    var id=d.id, nav=id&&document.querySelector('nav a[href="#'+id+'"]');
+    if(nav)nav.classList.toggle('q-empty',empty);
+  });
+  if(cnt)cnt.textContent=q?(hit?hit+' match'+(hit===1?'':'es'):'No matches'):'';
+}
+qel.addEventListener('input',applySearch);
+qel.addEventListener('search',applySearch);
+if(clr)clr.addEventListener('click',function(){qel.value='';applySearch();qel.focus();});
+document.addEventListener('keydown',function(e){
+  if(e.key==='/'&&!e.ctrlKey&&!e.metaKey&&!e.altKey){
+    var t=e.target; if(t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'||t.isContentEditable||(t.closest&&t.closest('dialog'))))return;
+    e.preventDefault(); qel.focus(); qel.select(); return;
+  }
+  if(e.key==='Escape'&&(document.activeElement===qel||(qel.value||'').trim())){
+    if((qel.value||'').trim()){e.preventDefault(); qel.value=''; applySearch(); qel.focus();}
+    else {qel.blur();}
+  }
+});
+if(window.MutationObserver){
+  var obs=new MutationObserver(function(){if((qel.value||'').trim())applySearch();});
+  var brk=document.getElementById('brklist'); if(brk)obs.observe(brk,{childList:true,subtree:true});
+}
+})();
+"""
 STUDIO_CSS2 = """
 .sec>summary{min-height:48px}
 .sec>summary .st{display:flex;align-items:center;gap:8px;min-width:0;flex:1 1 300px}
@@ -1214,6 +1293,18 @@ summary .sb,summary .cf{border:1px solid rgba(255,255,255,.75)}
 /* ---- layout v6: uniform collapsed tiles, full-width multi-column expanded sections, native phone scrolling ---- */
 #pin{position:sticky;top:0;z-index:20;background:#0b1017;border-bottom:1px solid #2a3340;padding-bottom:0;color:#f4f6f8}
 #mc{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:max(6px,var(--st)) max(10px,var(--sr)) 8px max(12px,var(--sl));background:#0b1017;color:#f4f6f8}
+#find{display:flex;align-items:center;gap:8px;padding:0 max(12px,var(--sr)) 8px max(12px,var(--sl));background:#0b1017;color:#f4f6f8}
+#find label.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+#q{flex:1 1 auto;min-width:0;min-height:44px;height:44px;padding:0 14px;border:1px solid #3a4554;border-radius:10px;background:#151c26;color:#f4f6f8;font:inherit;font-size:16px;-webkit-appearance:none;appearance:none}
+#q::placeholder{color:#8b97a6}
+#q:focus{outline:2px solid #3d8bfd;outline-offset:1px;border-color:#3d8bfd}
+#q-x{min-height:44px;min-width:44px;padding:0 14px;border-radius:10px;border:1px solid #3a4554;background:#1c2430;color:#f4f6f8;font-weight:800;cursor:pointer;font:inherit}
+#q-x[hidden]{display:none}
+#q-n{flex:none;color:#9aa6b5;font-size:.85rem;font-weight:700;white-space:nowrap}
+mark.qhit{background:#ffe08a;color:#1b2430;padding:0 .12em;border-radius:2px}
+.sec.q-empty,#brk.q-empty{display:none}
+nav a.q-empty{display:none}
+.item[hidden],.ob[hidden],.brkrow[hidden]{display:none!important}
 .mc-id{display:flex;align-items:center;gap:8px;flex:0 0 auto;min-width:0}
 .mc-id img{height:36px;width:auto;max-width:28vw;background:#fff;border-radius:8px;padding:2px 6px;flex:none}
 .mc-brand{display:flex;flex-direction:column;line-height:1.15;min-width:0}
@@ -1330,10 +1421,12 @@ details.sec[open]{grid-column:1/-1}
 }
 @media (max-width:560px){.sec>summary .tn{font-size:.84rem;letter-spacing:0}.sec>summary .sm{max-width:8.5rem}.sec>summary .sm .sb:nth-child(n+3){display:none}}
 .sec>.body{padding:12px clamp(12px,1.6vw,20px) 16px}
-/* expanded sections fill the row; their content flows in 2-4 columns instead of one tall list */
-.sec .sortbox{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:10px;align-items:stretch}
-.sec .sortbox>.item{border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--bg);flex-direction:column;align-items:stretch;gap:6px}
-.sec .sortbox>.item>.acts{margin-top:auto;justify-content:flex-end}
+/* expanded sections fill the row; even-height story cards in a responsive grid */
+.sec .sortbox{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:12px;align-items:stretch}
+.sec .sortbox>.item{border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--bg);display:flex;flex-direction:column;align-items:stretch;gap:8px;min-width:0;min-height:100%;overflow:hidden;box-sizing:border-box}
+.sec .sortbox>.item>.tx{min-width:0;overflow:hidden;display:flex;flex-direction:column;gap:4px;flex:1 1 auto}
+.sec .sortbox>.item>.acts{margin-top:auto;justify-content:flex-end;flex-wrap:wrap;gap:6px;flex:none}
+.sec .sortbox>.item>.acts button{flex:none;max-width:100%}
 .sec .sortbox>.item:last-child{border:1px solid var(--line)}
 .sec .sortbox>.item.used{background:rgba(31,157,85,.14)}
 .sec .sortbox>.noev{grid-column:1/-1}
@@ -1371,17 +1464,19 @@ summary,summary *,.rtn,.tn,.tt,h3,h4{overflow-wrap:normal;word-break:normal;hyph
 /* ---- v3: every section opens into Trending-model cards; block bars; compact obituaries; chisme ---- */
 .sec>summary .sm .tr{flex:none;min-width:6.4rem;margin:0 0 0 4px;color:#fff;font-size:.95rem}
 .sec>summary .sm .tr small{min-height:0;font-size:.68rem;white-space:nowrap}
-.sec .sortbox>.item.trn{gap:4px}
-.sec .sortbox .tldr{margin:3px 0}
-.sec .sortbox .tc .wico{margin-top:4px}
+.sec .sortbox>.item.trn{gap:6px}
+.sec .sortbox .tldr,.sec .sortbox .ang{margin:0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;line-height:1.35;max-width:100%}
+.sec .sortbox .tc .wico{margin-top:4px;flex:none}
 .sec .sortbox>.noev{grid-column:1/-1;margin:2px 0}
 .sec .item.trn .pill{margin-right:4px}
-.sec .item.trn .tx{display:block}
-.sec .item.trn .tx>b{display:block;margin-bottom:2px;font-size:1.02em;line-height:1.3}
+.sec .item.trn .tx{min-width:0}
+.sec .item.trn .tx>b.hd,.sec .item.trn .tx>b.hd a{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;overflow-wrap:anywhere;word-break:break-word;font-size:1.02em;line-height:1.3;margin:0}
+.sec .item.trn .tx .meta{display:flex;flex-wrap:wrap;align-items:center;gap:2px 6px;min-width:0;color:var(--mut);font-size:.82rem;font-weight:600}
+.sec .item.trn .tx .meta .src{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
 .sec .item.trn .tx .ang ul,.sec .item.trn .tx .ang ol{margin:2px 0 0;padding-left:18px}
-.obgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,15rem),1fr));gap:6px 10px;margin:6px 0 10px}
-.ob{border:1px solid var(--line);border-radius:8px;background:var(--bg);padding:6px 10px;display:flex;flex-direction:column;gap:1px;min-width:0}
-.ob a{font-weight:800;overflow-wrap:break-word}.ob .obn{min-width:0}.ob .obm{color:var(--mut);font-size:.82rem}.ob .obstar{color:#e0a800;margin-left:4px}
+.obgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,15rem),1fr));gap:8px;margin:6px 0 10px;align-items:stretch}
+.ob{border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:10px 12px;display:flex;flex-direction:column;gap:4px;min-width:0;overflow:hidden;box-sizing:border-box}
+.ob a{font-weight:800;overflow-wrap:anywhere;word-break:break-word}.ob .obn{min-width:0;display:block}.ob .obm{color:var(--mut);font-size:.82rem}.ob .acts{margin-top:auto;justify-content:flex-end}
 .obmore{display:block;width:100%;min-height:48px;margin:6px 0 10px;padding:10px 14px;border:2px dashed var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-weight:800;font-size:.95rem;font-family:inherit;cursor:pointer}
 .obmore:hover,.obmore:focus-visible{border-color:var(--acc);outline:none}
 .obprev[hidden]{display:none}
@@ -1620,10 +1715,11 @@ def studio_html(data, archive_href=None):
         main = A(url, title) if url else esc(title)
         cid = chy_register(sec or "Show", title, url, "", it.get("source", ""), unconf=bool(it.get("confirm")))
         acts = (CP(url) if url else "") + chy_btn(cid, title) + (use_btn(sec, it["title"], url) if use and sec else "")
-        return (f'<div class="item" data-ord="{it.get("ord", 0)}" data-sc="{it.get("score", 0)}" data-chyid="{cid}" data-chyh="{esc(chy_trim(title, 100))}"><div class="tx">{main} <span class="src">{esc(it.get("source",""))}</span>{sc_studio(it)}<span class="upill">USED</span>{conf}</div><div class="acts">{acts}</div></div>')
+        hay = " ".join(x for x in (title, it.get("source",""), sec) if x)
+        return (f'<div class="item" data-ord="{it.get("ord", 0)}" data-sc="{it.get("score", 0)}" data-chyid="{cid}" data-chyh="{esc(chy_trim(title, 100))}" data-q="{esc(hay)}"><div class="tx">{main} <span class="src">{esc(it.get("source",""))}</span>{sc_studio(it)}<span class="upill">USED</span>{conf}</div><div class="acts">{acts}</div></div>')
     def linkrow(l):
         cid = chy_register("Links", l["label"], l["url"], "", l["label"])
-        return f'<div class="item" data-chyid="{cid}" data-chyh="{esc(chy_trim(l["label"], 100))}"><div class="tx">{A(l["url"], l["label"])}</div><div class="acts">{CP(l["url"])}{chy_btn(cid, l["label"])}</div></div>'
+        return f'<div class="item" data-chyid="{cid}" data-chyh="{esc(chy_trim(l["label"], 100))}" data-q="{esc(l["label"])}"><div class="tx">{A(l["url"], l["label"])}</div><div class="acts">{CP(l["url"])}{chy_btn(cid, l["label"])}</div></div>'
     def sec(id_, color, title, sub, body, wide=False, open_=False, fg="", count="", badges="", chip="", tr="", blk=False):
         # every section starts collapsed (open_ is kept only so old calls still work); STUDIO_JS restores the session's state
         chip_h = f'<span class="bl2">{chip}</span>' if chip else ""
@@ -1636,8 +1732,6 @@ def studio_html(data, archive_href=None):
     clockbar = "".join(f'<a href="#blk-{c["letter"]}" data-jump="blk-{c["letter"]}" data-off="{_off[i]}" data-dur="{c["minutes"]}" data-letter="{c["letter"]}" style="width:{c["minutes"]/60*100:.3f}%;background:{c["color"]}" title="{esc(c["title"])} · {c["timeRange"]}">{c["letter"]}{"★" if c["signature"] else ""}<small>{c["minutes"]}m</small></a>' for i, c in enumerate(clock))
     thumb = data["headlines"].get("image")
     thumbhtml = f'<div class="thumbrow"><img src="{b64(asset(thumb["file"]), "image/jpeg")}" alt="Starship file photo"><div class="src">{esc(thumb["caption"])} · {A(thumb["credit_url"], "source")}</div></div>' if thumb else ""
-    co = data["coldOpen"]
-    um = data["up_to_meta"]
     # ================= v3 body: every section is a full-width bar that opens into Trending-model cards =================
     TZC = datetime.timezone(datetime.timedelta(hours=-6))
     def tcard(title, url="", pills=(), meta="", tldr="", riff="", riff_label="Riff", score="", conf="", extra="", sec_="", ord_=None, sc=0, copy_text="", use=True, uid="", cls="", badges="", chy_unconf=False, chy_fallback=None):
@@ -1645,17 +1739,21 @@ def studio_html(data, archive_href=None):
         Any field that has no data is left out cleanly; nothing is invented to fill a slot."""
         head = A(url, title) if url else esc(title)
         pl = "".join(f'<span class="pill"{(" style=background:" + c) if c else ""}>{esc(p)}</span>' for p, c in ((x if isinstance(x, tuple) else (x, "")) for x in pills if x))
-        cf = f' <span class="cf">CONFIRM BEFORE AIR</span> <span class="src">{esc(conf)}</span>' if conf else ""
+        cf = ' <span class="cf">CONFIRM BEFORE AIR</span>' if conf else ""
         mt = f'<span class="src">{esc(meta)}</span>' if meta else ""
-        td = f'<p class="tldr">{esc(tldr)}</p>' if tldr else ""
-        rf = f'<p class="ang"><b>{esc(riff_label)}:</b> {riff if riff.startswith("<") else esc(riff)}</p>' if riff else ""
+        summary = tldr or (conf or "")
+        td = f'<p class="tldr">{esc(summary)}</p>' if summary else ""
+        riff_txt = re.sub(r"<[^>]+>", " ", riff) if riff.startswith("<") else riff
+        rf = f'<p class="ang"><b>{esc(riff_label)}:</b> {esc(riff_txt)}</p>' if riff_txt.strip() else ""
         ct = copy_text or url or (title + (" " + tldr if tldr else ""))
         fb = chy_fallback if chy_fallback is not None else meta
         cid = chy_register(sec_ or "Show", title, url, tldr, fb, unconf=bool(conf) or chy_unconf)
         hl = CHY_ITEMS[cid]["headline"]
         acts = CP(ct, "Copy link" if url and not copy_text else "Copy") + chy_btn(cid, hl) + (use_btn(sec_, title, url) if (use and sec_) else "")
-        attrs = (f' data-ord="{ord_}" data-sc="{sc}"' if ord_ is not None else "") + (f' id="{uid}"' if uid else "") + f' data-chyid="{cid}" data-chyh="{esc(hl)}"'
-        return (f'<div class="item trn tc{(" " + cls) if cls else ""}"{attrs}><div class="tx"><b>{head}</b> {pl}{mt}{score}{badges}<span class="upill">USED</span>{cf}{td}{rf}{extra}</div><div class="acts">{acts}</div></div>')
+        pills_txt = " ".join((x[0] if isinstance(x, tuple) else x) for x in pills if x)
+        hay = " ".join(x for x in (title, meta, tldr, riff_txt, conf, sec_, pills_txt) if x)
+        attrs = (f' data-ord="{ord_}" data-sc="{sc}"' if ord_ is not None else "") + (f' id="{uid}"' if uid else "") + f' data-chyid="{cid}" data-chyh="{esc(hl)}" data-q="{esc(hay)}"'
+        return (f'<div class="item trn tc{(" " + cls) if cls else ""}"{attrs}><div class="tx"><b class="hd">{head}</b><div class="meta">{pl}{mt}{score}{badges}<span class="upill">USED</span>{cf}</div>{td}{rf}{extra}</div><div class="acts">{acts}</div></div>')
     def grid(cards, empty=""):
         return '<div class="sortbox">' + ("".join(cards) or f'<p class="mut noev">{esc(empty)}</p>') + "</div>"
     def lks_of(links):
@@ -1669,8 +1767,8 @@ def studio_html(data, archive_href=None):
     # ---- top headlines (RGV first, then Texas)
     def hcard(i, sec_):
         pubs = ""
-        return tcard(i["title"], i.get("url", ""), pills=(("VALLEY", "#2a7de1"),) if i.get("valley") else (), meta=i.get("source", ""), tldr=i.get("tldr") or i.get("summary") or "", riff=i.get("riff") or "",
-                     score=sc_studio(i), conf=conf_text(i) if i.get("confirm") else "", extra=lks_of(i.get("links")), sec_=sec_, ord_=i.get("ord", 0), sc=i.get("score", 0))
+        return tcard(i["title"], i.get("url", ""), pills=(("VALLEY", "#2a7de1"),) if i.get("valley") else (), meta=i.get("source", "") + ((" · " + dtl(i["published"])) if i.get("published") else ""), tldr=i.get("tldr") or i.get("summary") or "",
+                     score=sc_studio(i), conf=conf_text(i) if i.get("confirm") else "", sec_=sec_, ord_=i.get("ord", 0), sc=i.get("score", 0))
     heads = (thumbhtml + '<div class="src" style="font-weight:800">RGV</div>' + grid([hcard(i, "Headlines: RGV") for i in data["headlines"]["rgv"]], "No RGV headlines loaded.")
              + '<div class="src" style="margin-top:10px;font-weight:800">TEXAS</div>' + grid([hcard(i, "Headlines: Texas") for i in data["headlines"]["texas"]], "No Texas headlines loaded."))
 
@@ -1696,54 +1794,48 @@ def studio_html(data, archive_href=None):
 
     # ---- national desk
     def ncard(n, k_):
-        lk = lks_of(n.get("links"))
         valley = f'<p class="ang"><b>Valley angle:</b> {esc(n["valley"])}</p>' if n.get("valley") else ""
-        det = f'<p class="mut">{esc(n["detail"])}</p>' if n.get("detail") else ""
         u = n["links"][0]["url"] if n.get("links") else ""
         return tcard(n["title"], u, meta="National Desk", tldr=n.get("summary", ""), riff=n.get("angle", ""), score=sc_studio(n), conf=conf_text(n) if n.get("confirm") else "",
-                     extra=valley + det + lk, sec_="National Desk", ord_=n.get("ord", k_), sc=n.get("score", 0), uid=f"nat-{k_}")
+                     extra=valley, sec_="National Desk", ord_=n.get("ord", k_), sc=n.get("score", 0), uid=f"nat-{k_}")
     nat = grid([ncard(n, k_) for k_, n in enumerate(data["nationalDesk"])], "No National Desk stories loaded.")
     # ---- trending news
     def trcard(t, k_):
         c = trend_item_conf(t)
         media = f'<div class="src">Video: {A(t["video_url"], "watch")}{(" · credit: " + esc(t["image_credit"])) if t.get("image_credit") else ""}</div>' if t.get("video_url") else ""
-        return tcard(t["title"], t.get("source_url", ""), pills=(t.get("category", ""),), meta=t.get("source", ""), tldr=t.get("one_line", ""), riff=t.get("suggested_angle", ""), score=sc_studio(t), conf=c or "",
-                     extra=media + lks_of(t.get("links")), sec_="Trending", ord_=t.get("ord", 0), sc=t.get("score", 0))
+        when = ((" · " + dtl(t["published"])) if t.get("published") else "")
+        return tcard(t["title"], t.get("source_url", ""), pills=(t.get("category", ""),), meta=(t.get("source", "") + when), tldr=t.get("one_line", ""), score=sc_studio(t), conf=c or "",
+                     extra=media, sec_="Trending", ord_=t.get("ord", 0), sc=t.get("score", 0))
     trn = '<p class="mut">What\'s trending around the nation. Separate from the National Desk (no duplicates). Source order: X trends/news, AP/Reuters, Google Trends, YouTube trending.</p>' + grid([trcard(t, k_) for k_, t in enumerate(data.get("trending", []))], "No trending items loaded.")
     # ---- tech
     tk = data["tech"]
     def tkcard(t, k_):
-        return tcard(t["title"], t.get("source_url", ""), pills=("TECH",), meta=" · ".join(x for x in (t.get("source", ""), t.get("published", "")) if x), tldr=t.get("one_line", ""), riff=t.get("angle", ""),
+        return tcard(t["title"], t.get("source_url", ""), pills=("TECH",), meta=" · ".join(x for x in (t.get("source", ""), t.get("published", "")) if x), tldr=t.get("one_line", ""),
                      badges=f'<span class="sb {"a" if tk["origin"] == "wires" else "t"}" title="{esc(tk["originLabel"])}">{esc(t["basis"])}</span>', conf=t["confirm"] if t.get("confirm") else "",
-                     extra=lks_of(t.get("links")), sec_="Tech", ord_=k_, sc=0)
+                     sec_="Tech", ord_=k_, sc=0)
     tech_h = (f'<p class="mut"><b>{esc(tk["badge"])}</b> · {esc(tk["originLabel"])}</p>' + (f'<p class="mut">{esc(tk["note"])}</p>' if tk.get("note") else "")
-              + '<p class="mut">Sub-segment of block J: about 90 seconds after the National Desk, before Trending. Pick 1 or 2 with an RGV or family angle. Local stays bigger.</p>'
               + grid([tkcard(t, k_) for k_, t in enumerate(tk["items"])], "No tech items loaded today."))
 
     # ---- obituaries: compact cards, the newest 7 days up front, the week before behind one button
     ob = data["obituaries"]
     grps = ob["groups"]
     def ocard(r):
-        star = '<span class="obstar" title="in the on-air read">★</span>' if r["url"] in ob["pickUrls"] else ""
         bits = [x for x in ((f'{r["age"]}' if r.get("age") else ""), r.get("city") or "", fmt_day(r["published"])) if x]
         cid = chy_register("Remembering Our Neighbors", f'Remembering {r["name"]}', r["url"], "", " · ".join(bits), kicker="Remembering our neighbors")   # name, age, town, date only; never a cause of death
-        return (f'<div class="ob" data-chyid="{cid}" data-chyh="{esc(chy_trim("Remembering " + r["name"], 100))}"><div class="obn"><a href="{esc(r["url"])}" target="_blank" rel="noopener noreferrer">{esc(r["name"])}</a>{star}{chy_btn(cid, "Remembering " + r["name"])}</div><span class="obm">{esc(" · ".join(bits))}</span></div>')
+        hay = " ".join(x for x in ("Remembering", r["name"], *bits, "obituaries", "neighbors") if x)
+        return (f'<div class="ob" data-chyid="{cid}" data-chyh="{esc(chy_trim("Remembering " + r["name"], 100))}" data-q="{esc(hay)}"><div class="obn"><a href="{esc(r["url"])}" target="_blank" rel="noopener noreferrer">{esc(r["name"])}</a></div><span class="obm">{esc(" · ".join(bits))}</span><div class="acts">{chy_btn(cid, "Remembering " + r["name"])}</div></div>')
     n_week = len(grps[0]["items"]) if grps else 0
     n_prev = sum(len(g["items"]) for g in grps[1:])
     if ob["count"]:
-        obit_h = (f'<p class="mut">Obituaries The Monitor ran on Legacy.com, {esc(ob["windowLabel"])}. Names, ages and towns are only what each notice lists; nothing about how anyone died. ★ marks the {len(ob["pickUrls"])} names in the on-air read.</p>')
-        obit_h += tcard(f'On-air read · block L · {len(ob["pickUrls"])} names', "", pills=("OBITUARIES",), meta="about 45 seconds, no joke before or after", tldr=ob["script"], conf="name pronunciations; skip any name you are unsure of",
-                        copy_text=ob["script"], sec_="On-air read", uid="obscript")
-        obit_h = obit_h.replace('<div class="item trn tc"', '<div class="item trn tc obread"', 1)
+        obit_h = (f'<p class="mut">Obituaries The Monitor ran on Legacy.com, {esc(ob["windowLabel"])}. Names, ages and towns only.</p>')
         if grps:
             obit_h += f'<h3 class="obh">This week · {esc(grps[0]["label"])} <span class="mut">({n_week})</span></h3><div class="obgrid" id="obnew">{"".join(ocard(r) for r in grps[0]["items"])}</div>'
         if n_prev:
             lab = " · ".join(g["label"] for g in grps[1:])
             obit_h += (f'<button class="obmore" id="obmore" type="button" aria-expanded="false" aria-controls="obprev" data-more="Show the previous week ({n_prev})" data-less="Hide the previous week ({n_prev})">Show the previous week ({n_prev})</button>'
                        f'<div id="obprev" class="obprev" hidden><h3 class="obh">The week before · {esc(lab)} <span class="mut">({n_prev})</span></h3><div class="obgrid">{"".join(ocard(r) for g in grps[1:] for r in g["items"])}</div></div>')
-        obit_h += linkrow({"url": ob["sourceUrl"], "label": ob["source"]})
     else:
-        obit_h = '<p class="mut">No obituaries loaded today. The on-air read is skipped.</p>'
+        obit_h = '<p class="mut">No obituaries loaded today.</p>'
     ob_count = (f'{n_week} this week · {ob["count"]} in 2 weeks' if n_prev else f'{ob["count"]} this week') if ob["count"] else "0 obituaries"
 
     # ---- weather
@@ -1753,8 +1845,7 @@ def studio_html(data, archive_href=None):
     for d in w["days"][:7]:
         wcards.append(tcard(f'{d["label"]} {d["dateLabel"]}', "", pills=(("MONDAY SHOW", "#e4572e"),) if d["date"] == w["monday"] else (), meta=f'{d["hi"]}° / {d["lo"] if d["lo"] is not None else "–"}° · {d["pop"]}% rain',
                             tldr=d["short"], extra=f'<div class="wico">{icon(d["icon"], 40)}</div>', use=False, copy_text=f'{d["label"]} {d["dateLabel"]}: {d["hi"]}°, {d["short"]}', cls="wx"))
-    weather = (f'<p class="mut">{esc(alerts)} Updated {upd.strftime("%b %-d %-I:%M %p")} CT. Source: {esc(w["source"])}.</p>' + grid(wcards)
-               + "".join(linkrow({"label": t, "url": u}) for t, u in (("NWS forecast page for McAllen", w["pageUrl"]), ("NWS Brownsville office (BRO)", w["officeUrl"]), ("NWS API forecast (JSON)", w["apiUrl"]))))
+    weather = (f'<p class="mut">{esc(alerts)} Updated {upd.strftime("%b %-d %-I:%M %p")} CT. Source: {esc(w["source"])}.</p>' + grid(wcards))
     # ---- sports
     hs = data["sports"]["highSchool"]
     sl, nl, nores, nonext = hs_texts(hs)
@@ -1767,7 +1858,7 @@ def studio_html(data, archive_href=None):
         sc = [tcard(b, "", pills=("FINAL",), meta=a, use=False, copy_text=f"{b} ({a})") for a, b in s["scores"]]
         if g == "nba": sc += [tcard(b, "", pills=("TEXAS",), meta=a, use=False, copy_text=f"{b} ({a})") for a, b in s["texas"]]
         sc += [scard(n, g.upper(), "NOTABLE") for n in s["notable"]]
-        return grid(sc, f"No {g.upper()} games in this window.") + item(s["scoreSource"], "Scores: " + s["scoreSource"]["title"], use=False)
+        return grid(sc, f"No {g.upper()} games in this window.")
     mlb = data["sports"]["mlb"]
     sports_nfl = scorebox("nfl", "NFL"); sports_nba = scorebox("nba", "NBA")
     sports_mlb = f'<p class="mut"><i>{esc(mlb["note"])}</i></p>' + grid([scard(n, "MLB", "HOT STOVE") for n in mlb["notable"]], "No MLB items.")
@@ -1778,73 +1869,25 @@ def studio_html(data, archive_href=None):
         for it in lv["items"]:
             is_motw = it["id"] == data["memes"].get("memeOfTheWeek")
             mcards.append(tcard(it["title"], (it["links"][0]["url"] if it["links"] else ""), pills=((lv["level"], colors.get(lv["level"], "#888")),) + ((("MEME OF THE WEEK", "#c1121f"),) if is_motw else ()), meta=lv["icon"] + " for parents",
-                                tldr=(it["what"] + " " + it["means"]).strip(), riff=it["tip"], riff_label="How to bring it up", conf=conf_text(it) if it.get("confirm") else "", extra=lks_of(it["links"][1:]),
+                                tldr=(it["what"] + " " + it["means"]).strip(), conf=conf_text(it) if it.get("confirm") else "",
                                 sec_="Meme of the Week: " + lv["level"], cls="meme"))
     mem = f'<p class="mut"><b>{esc(data["memes"]["tagline"])}</b> {esc(data["memes"]["intro"])}</p>' + grid(mcards, "No memes loaded.")
 
     # ---- run-of-show blocks A..L (each is a section and a timeline target)
-    SUBS = {"A": "jingle · cold open · the hour's promise", "B": "family touchpoint · from the family calendar", "C": "top Valley stories · headlines · chisme", "D": "races, candidates and runoffs",
+    SUBS = {"A": "jingle · cold open · the hour's promise", "B": "family calendar · look-ahead", "C": "top Valley stories · headlines · chisme", "D": "races, candidates and runoffs",
             "E": "trustees, budgets and board votes", "F": "mayors, councils and city managers", "G": "jobs, projects and deals", "H": "a light, woven-in moment with Jess",
             "I": "Texas and Texas politics", "J": "national desk · trending · tech", "K": "call-ins and topic submissions", "L": "meme of the week · neighbors · close"}
-    def lead(t):
-        t = t.strip()
-        mm = re.match(r"^([A-Z0-9][^:]{2,80}):\s+(.*)$", t, re.S)
-        if mm and (mm.group(1).isupper() or len(mm.group(1).split()) <= 8):
-            return mm.group(1).strip(), mm.group(2).strip()
-        parts = re.split(r"(?<=[.!?])\s+", t, maxsplit=1)
-        h = parts[0]
-        if len(h) > 110:
-            return h[:107].rsplit(" ", 1)[0] + "…", t
-        return h, (parts[1] if len(parts) > 1 else "")
-    def rlist(xs):
-        return "<ul>" + "".join(f"<li>{esc(x)}</li>" for x in xs) + "</ul>"
     block_secs = {}
     for r in data.get("rundown", []):
         L = r["letter"]
         flex = f'FLEX {r["trimTo"]}-{r["stretchTo"]} min' if r["flex"] else "fixed"
-        cards = [tcard(f'{L} · {r["title"]}', "", pills=("JESS",) if r["jess"] else (), meta=f'{r["minutes"]} min · {flex}', tldr=r["subject"], riff=r.get("weave") or "", riff_label="Weave", use=False,
-                       copy_text=f'{L} {r["title"]}: {r["subject"]}')]
-        if L == "A":
-            co_conf = "; ".join(co["confirm"]) if co["confirm"] else ""
-            cards.append(tcard("Cold open · read aloud", "", pills=("COLD OPEN",), meta=f'{co["words"]} words, about {max(15, round(co["words"] / 2.6))} seconds · {"Monday" if co["template"] == "monday" else "daily briefing"} template',
-                               tldr=co["text"], riff=co["jingle"], riff_label="Jingle", conf=co_conf, copy_text=co["text"], sec_="Cold open", uid="cotext"))
-            cards.append(tcard("Jingle", "", pills=("JINGLE",), tldr=co["jingle"], riff=("<ul>" + "".join(f"<li>{esc(a)}</li>" for a in co["alternates"]) + "</ul>") if co["alternates"] else "", riff_label="Alternates", copy_text=co["jingle"], use=False))
+        cards = [tcard(f'{L} · {r["title"]}', "", pills=("JESS",) if r["jess"] else (), meta=f'{r["minutes"]} min · {flex}', tldr=r["subject"], use=False,
+                       copy_text=f'{L} {r["title"]}: {r["subject"]}', sec_="Rundown", cls="rdcard")]
         if L == "B":
-            cards.append(tcard("On-air script · family week", "", pills=("FAMILY CALENDAR",), meta=f'{um.get("window", "past 7 days")}' + (f', coming up {um["comingWindow"]}' if um.get("comingWindow") else ""),
-                               tldr=data["up_to_script"], copy_text=data["up_to_script"], sec_=UPTO_SEC, uid="uptotext"))
             for e in data["up_to"] + [dict(x, coming=True) for x in data["up_to_coming"]]:
                 dd = datetime.date.fromisoformat(e["date"]).strftime("%a %b %-d")
-                cards.append(tcard(e["label"], "", pills=(e["category"],) + (("COMING UP", "#2a7de1"),) if e.get("coming") else (e["category"],), meta=dd + (f' · {upto_when(e)}' if e["count"] > 1 else ""), sec_=UPTO_SEC, cls="ev"))
-            if um.get("internal"):
-                cards.append(tcard("Internal note · not for air", "", pills=(("NOT FOR AIR", "#6b7785"),), tldr=um["internal"], use=False))
-        for tp in r["talkingPoints"]:
-            # the plan writes some points as "FACT ... ANGLE: ... VALLEY TIE: ... CONFIRM BEFORE AIR: ..."; split them into the card's slots
-            txt_, conf_, val_, ang_ = tp, "", "", ""
-            mm = re.search(r"\s*CONFIRM BEFORE AIR:\s*(.*)$", txt_, re.S)
-            if mm: conf_, txt_ = mm.group(1).strip(), txt_[:mm.start()]
-            mm = re.search(r"\s*VALLEY TIE:\s*(.*)$", txt_, re.S)
-            if mm: val_, txt_ = mm.group(1).strip(), txt_[:mm.start()]
-            mm = re.search(r"\s*ANGLE:\s*(.*)$", txt_, re.S)
-            if mm: ang_, txt_ = mm.group(1).strip(), txt_[:mm.start()]
-            h, rest = lead(txt_)
-            h = re.sub(r"\.\s*FACT$", "", h)
-            vt = f'<p class="ang"><b>Valley tie:</b> {esc(val_)}</p>' if val_ else ""
-            cards.append(tcard(h, "", meta="talking point", tldr=rest, riff=ang_, conf=conf_, extra=vt, use=False, copy_text=tp))
-        if r["followUps"]:
-            cards.append(tcard("Follow-up questions", "", meta=f'{len(r["followUps"])} to ask', riff=rlist(r["followUps"]), riff_label="Ask", use=False, copy_text="\n".join(r["followUps"])))
-        if r["transitions"]:
-            cards.append(tcard("Transition lines", "", meta="to get in and out", riff=rlist(r["transitions"]), riff_label="Say", use=False, copy_text="\n".join(r["transitions"])))
-        if r.get("segueNext"):
-            nx = next((x for x in data["rundown"] if x["letter"] == chr(ord(L) + 1)), None)
-            cards.append(tcard("Segue to " + (f'{nx["letter"]} · {nx["title"]}' if nx else "the next block"), "", meta="jump line", riff="“" + r["segueNext"] + "”", riff_label="Say", use=False, copy_text=r["segueNext"]))
-        if r["chyrons"]:
-            cards.append(tcard("Chyrons · 60 characters max", "", meta=f'{len(r["chyrons"])} on screen', tldr=" | ".join(c["primary"] + " · " + c["secondary"] for c in r["chyrons"]), use=False,
-                               copy_text="\n".join(c["primary"] + " · " + c["secondary"] for c in r["chyrons"])))
-        if r["confirm"]:
-            cards.append(tcard("Confirm before air", "", meta=f'{len(r["confirm"])} open', tldr="; ".join(r["confirm"]), conf="verify first", use=False))
-        rl = [l for l in r["links"] if l["url"].startswith("http")]
-        if rl:
-            cards.append(tcard("Sources", "", meta=f'{len(rl)} links', extra=lks_of(rl), use=False, copy_text="\n".join(l["url"] for l in rl)))
+                cards.append(tcard(e["label"], "", pills=(e["category"],) + (("COMING UP", "#2a7de1"),) if e.get("coming") else (e["category"],),
+                                   meta=dd + (f' · {upto_when(e)}' if e["count"] > 1 else ""), sec_=UPTO_SEC, cls="ev" + (" ahead" if e.get("coming") else "")))
         stretch = f' data-stretch="{r["stretchTo"]}"' if r["flex"] and r.get("stretchTo") else ""
         tr = (f'<span class="tr" data-off="{r["offset"]}" data-dur="{r["minutes"]}"{stretch} data-letter="{L}" data-name="{esc(r["short"])}" data-color="{r["color"]}"><b>{r["timeRange"]}</b><small></small></span>')
         block_secs[L] = sec(f"blk-{L}", r["color"], esc(r["title"]) + (" ★" if r["signature"] else "") + '<span class="tl">LIVE</span>', SUBS.get(L, r["subject"][:60]), grid(cards), count=f'{len(cards)} cards', chip=L, tr=tr, blk=True,
@@ -1951,6 +1994,7 @@ def studio_html(data, archive_href=None):
     chk = data.get("linkCheck")
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data: https:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'self' https://api.weather.gov https://ntfy.sh http://127.0.0.1:*"><title>{esc(m["emailSubject"])} · Studio</title><style>{STUDIO_CSS}{STUDIO_CSS2}</style></head><body>
 <div id="pin">{mcbar}
+<div id="find"><label class="sr-only" for="q">Search stories and keywords</label><input id="q" type="search" placeholder="Search stories and keywords" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="search" inputmode="search"><button id="q-x" type="button" hidden aria-label="Clear search">Clear</button><span id="q-n" aria-live="polite"></span></div>
 <div class="clock pre" id="tl" role="img" aria-label="60 minute show timeline, blocks A to L">{clockbar}<div id="phw"><div id="ph" aria-hidden="true"></div></div></div></div>
 {dialogs}
 <header id="top" class="ident"><div class="k">Studio page · {esc(m["kicker"])} {('<span class="sample">'+esc(m["sampleLabel"])+'</span>') if m.get("sample") else ''}</div><div class="t">{esc(m["recap"])} · {esc(m["tagline"])}</div></header>
@@ -1959,7 +2003,7 @@ def studio_html(data, archive_href=None):
 <nav>{nav}</nav>
 <main>{body}</main>
 <footer>{arch}<b>Jump segues (menu):</b><ul>{segs}</ul>Every item links to its source and opens in a new tab; Copy link puts the URL on your clipboard for sharing on screen. CONFIRM BEFORE AIR = verify first. No trackers, no external scripts or fonts. The only network request is the header clock's weather lookup (api.weather.gov); the page works offline (the clock then shows the build-time temperature, and links need internet). Show Start times are computed in the page from each block's offset and length.{(" Links checked "+chk["date"]+": "+str(chk["ok"])+" ok, "+str(chk["blocked"])+" bot-blocked, "+str(chk["dead"])+" dead.") if chk else ""}</footer>
-<div id="toast" role="status"></div><script>{STUDIO_JS}</script><script>{SHOW_JS}</script><script>{CHY_JS}</script><script>{CLOCK_JS}</script><script>{BRK_JS}</script></body></html>"""
+<div id="toast" role="status"></div><script>{STUDIO_JS}</script><script>{SEARCH_JS}</script><script>{SHOW_JS}</script><script>{CHY_JS}</script><script>{CLOCK_JS}</script><script>{BRK_JS}</script></body></html>"""
 
 
 # ---------------------------------------------------------------- render
