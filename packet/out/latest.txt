@@ -1,6 +1,6 @@
 ============================================================================================
 DREW IN THE MORNING
-DAILY BRIEFING · Thursday, November 19, 2026 · updated 6 AM CT
+DAILY BRIEFING · Friday, November 20, 2026 · updated 6 AM CT
 Last 24 hours
 Drew & Jess are watching the feeds so you don't have to
 ============================================================================================
@@ -20,280 +20,240 @@ NEXT SHOW: MONDAY, NOVEMBER 23, 8:00-9:00 AM CT · Monday 8 AM rundown (this bri
   8:56–9:00   L  Meme of the Week & Close (4 min, FLEX 3-6, Jess)
 
 COLD OPEN (read aloud, about 45 seconds)
-  Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in
-  the Morning daily briefing. Today: the local stories everyone's talking about, starting
-  with Hidalgo County's first screwworm case, plus SpaceX's quiet data-center air permit. On
-  the National Desk, the first-ever Trump, Xi and Putin summit. In Trending, GTA Six finally
-  dropping. And in How We'd Talk to Our Kids, Jess and I take on energy drinks, caffeine and
-  what a 14-year-old actually needs to know. It's 66 and mostly clear outside, the coffee's
+  Good morning, Rio Grande Valley! It's Friday, November 20th, and this is your Drew in the
+  Morning daily briefing. Today: the local stories everyone's talking about, starting with
+  the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the
+  National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And
+  in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young
+  as 10 (testing in Austin), and what a 10-year-old. It's 63 and clear outside, the coffee's
   hot, so stick around, this is Drew in the Morning.
   JINGLE: Drew in the Morning. Your Valley, your news, your morning.
-  CONFIRM BEFORE AIR (teased, unconfirmed; not part of the spoken text): RGV: Hidalgo Co.
-    confirms 1st screwworm case; 4-county quarantine; RGV: SpaceX got data-center air permit
-    a day before county's 'no'; National Desk: Trump, Xi and Putin hold the first-ever
-    three-way summit (Shenzhen, APEC)
 
-WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min, from the family calendar) · 5 from the week
+WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min, from the family calendar) · 6 from the week
   Busy week at the Lentz house. We had the Rayburn Fall Festival on Saturday, a school
-  picnic on Tuesday, hip hop class on Tuesday, cotillion on Wednesday, and tap class on
-  Wednesday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.
+  picnic on Tuesday, hip hop class on Tuesday, cotillion on Wednesday, tap class on
+  Wednesday, and the region clinic and concert on Friday. Jess, what was your favorite part
+  of the week? Okay, let's get into the Valley.
   - the Rayburn Fall Festival · Sat Nov 14
   - a school picnic · Tue Nov 17
   - hip hop class · Tue Nov 17
   - cotillion · Wed Nov 18
   - tap class · Wed Nov 18
-  Window Nov 13–19, 2026. Calendar: Family calendar (iCloud, published feed). Family-
+  - the region clinic and concert · Fri Nov 20
+  Window Nov 14–20, 2026. Calendar: Family calendar (iCloud, published feed). Family-
     friendly items only, generic wording.
   INTERNAL NOTE (not for air): 4 calendar items left off the air (medical, personal, money,
-    work, private or unsure); 5 qualifying occurrences used. Names never leave this note.
+    work, private or unsure); 6 qualifying occurrences used. Names never leave this note.
 
-STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README.md). 44
-  stories, 0 duplicate(s) merged, 0 hot, 2 trending, 2 uncovered lead(s). Google Trends US-
+STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README.md). 27
+  stories, 0 duplicate(s) merged, 1 hot, 2 trending, 0 uncovered lead(s). Google Trends US-
   TX 10 + US 10 items, fetched 2026-11-20T03:00:46+00:00 (cache).
 
 TOP HEADLINES · RGV FIRST
-  - [ACT 10] Hidalgo County confirms its first New World screwworm case (a calf); quarantine
-    zone covers parts of 4 counties (KRGV · Nov 18)
-    https://www.krgv.com/news/hidalgo-county-confirms-first-new-world-screwworm-case-in-calf/
-  - [ACT 19] SpaceX got its TCEQ air permit (35 gas turbines, 750 MW) for the Starbase data
-    center a day before Cameron County said no to a tax-break hearing (MyRGV · Nov 18)
-    https://myrgv.com/local-news/2026/11/18/spacex-received-data-center-permit-a-day-before-tax-break-rejection/
-  - [ACT 11] La Joya ISD uses under 60% of its space, needs $160M+ in repairs and may close
-    more campuses after losing ~8,000 students in a decade (KRGV · Nov 18)
-    https://www.krgv.com/news/plummeting-enrollment-leaves-la-joya-isd-facing-160m-maintenance-bill-and-possible-closures/
-  - [ACT 9] McAllen city manager: $17.5B in retail sales (2023, Dallas Fed), ~28% from
-    Mexican shoppers; ~$99M sales tax through Sept 2026 (Texas Border Business · Nov 18)
-    https://texasborderbusiness.com/mcallen-retail-sales-reach-17-5-billion-as-sales-tax-revenues-continue-to-climb/
-  - [ACT 9] Cameron County Elections Administrator Remi Garza resigns for a Secretary of
-    State job; last day Dec. 14 (KRGV · Nov 18)
-    https://www.krgv.com/news/cameron-county-election-commission-to-appoint-new-administrator-following-garza-s-resignation/
-  - [ACT 9] Cameron County ballots pulled for Texas's first statewide risk-limiting audit:
-    U.S. Senate, Supreme Court chief justice, county clerk (KRGV · Nov 18)
-    https://www.krgv.com/news/cameron-county-elections-department-to-review-three-races-as-part-of-first-statewide-audit/
-  - [ACT 9] Congressman-elect Bobby Pulido hosts a free Friends' Thanksgiving Celebration
-    Mon Nov 23, 11 AM-2 PM, Bert Ogden Arena (Tejano Nation · Nov 18)
-    https://tejanonation.net/2026/11/18/bobby-pulido-friends-thanksgiving-celebration-edinburg-2026/
-  - [ACT 18] Weslaco family waits on appeals court in wrongful-death suit over 17-year-old
-    who drank energy drinks; arguments heard Nov 18 (KRGV · Nov 18)
-    https://www.krgv.com/news/weslaco-family-waits-as-appeals-court-reviews-wrongful-death-lawsuit-against-energy-drink-distributor/
-  - [ACT 9] Edinburg CISD asks families for input after losing ~2,000 students since the
-    pandemic (KRGV · Nov 18)
-    https://www.krgv.com/news/edinburg-cisd-launches-survey-seeking-input-on-improvement/
-  - [ACT 17] State Sen. Chuy Hinojosa asks TxDMV to rescind rule requiring proof of legal
-    status to register a vehicle (board meets Dec. 10) (MyRGV · Nov 18)
-    https://myrgv.com/local-news/2026/11/18/texas-senator-calls-for-dmv-to-rescind-new-vehicle-registration-legal-status-rule/
-  - [ACT 9] Pedestrian study ordered for the University Dr. crosswalk near UTRGV after Rep.
-    Terry Canales raised safety concerns (KRGV · Nov 18)
-    https://www.krgv.com/news/safety-concerns-prompt-pedestrian-study-of-busy-crosswalk-near-utrgv-in-edinburg/
-  - [ACT 9] Alton starts its first-ever 20-year comprehensive plan ($250K FEMA grant via the
-    GLO); wants resident input (KRGV · Nov 18)
-    https://www.krgv.com/news/city-of-alton-wants-residents-to-help-shape-first-ever-comprehensive-plan/
-  - [ACT 9] Mission councilwoman Jessica Ortega sworn in for a fourth term (MyRGV · Nov 18)
-    https://myrgv.com/local-news/2026/11/18/jessica-ortega-sworn-in-after-voters-elect-her-to-fourth-term-with-mission/
-  - [ACT 16] Mission bans loud dog barking 10 PM-6 AM, caps hens at four, bans roosters
-    (Daily McAllen · Nov 19)
-    https://dailymcallen.com/local-news/editions/11-19-2026
-  - [ACT 9] Von Miller visits McAllen ahead of the Dec. 5 Holiday Parade ('Wild Christmas')
-    (Texas Border Business · Nov 18)
-    https://texasborderbusiness.com/nfl-star-von-miller-receives-warm-welcome-in-mcallen-ahead-of-holiday-parade/
-  - [ACT 9] Head football coaches at Edinburg North and Port Isabel resign (ValleyCentral ·
-    Nov 18)
-    https://www.valleycentral.com/local-sports/edinburg-north-port-isabel-head-football-coaches-resign/
-  - [ACT 19] Two charged with murder in Brownsville homicide investigation that began with a
-    crash (KRGV · Nov 18)
-    https://www.krgv.com/news/two-suspects-charged-with-murder-after-brownsville-crash-leads-to-homicide-investigation/
-  - [ACT 14] Mission mayor and council races head to Dec. 12 runoffs (KRGV)
-    https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/
-  - [ACT 9] Texas A&M McAllen to build $50M health education building (Daily McAllen · Nov
-    18)
-    https://dailymcallen.com/local-news/editions/11-18-2026
-  - [ACT 7] McAllen Food Truck Park closure delayed to Jan. 14, 2027 (Daily McAllen · Nov
-    17)
-    https://dailymcallen.com/local-news/editions/11-17-2026
+  - [ACT 13] McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan.
+    14 deadline still stands (KRGV · Nov 19)
+    https://www.krgv.com/news/mcallen-food-truck-owners-call-for-extension-on-park-closure
+  - [ACT 26] La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and
+    Paredes elementaries) after losing 10,008 students in a decade (Daily McAllen · Nov 20)
+    https://dailymcallen.com/local-news/editions/11-20-2026
+  - [ACT 15] SpaceX responds after Cameron County rejects its data center tax break, says
+    its payment plan would have steadied county revenue (MyRGV · Nov 19)
+    https://myrgv.com/local-news/2026/11/19/spacex-responds-to-cameron-county-rejection-of-tax-break-application/
+  - [ACT 16] FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and
+    landings a year at Starbase; next session Friday 5:30 PM (ValleyCentral · Nov 19)
+    https://www.valleycentral.com/news/local-news/faa-holds-virtual-hearing-on-spacex-proposal-for-more-rocket-launches/
+  - [ACT 13] Rep. Vicente Gonzalez's 'Hands Off Our Boca Chica Beach Act' clears the House
+    Natural Resources Committee (ValleyCentral · Nov 19)
+    https://www.valleycentral.com/news/local-news/hands-off-our-boca-chica-beach-act-advances/
+  - [ACT 16] Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some
+    at $2.94) (ValleyCentral · Nov 19)
+    https://www.valleycentral.com/news/local-news/gas-prices-dip-below-3-a-gallon-across-the-valley/
+  - [ACT 14] Starbase fills a vacant commission seat with Haley Ruvalcaba, wife of a SpaceX
+    IT director (ValleyCentral · Nov 19)
+    https://www.valleycentral.com/news/local-news/starbase-selects-new-city-commissioner/
+  - [ACT 9] Roma's bridge is now the fastest-growing truck port on the Southwest border
+    (imports up 17x since 2019) (Border Report · Nov 18-19)
+    https://www.borderreport.com/news/trade/roma-bridge-fastest-growing-for-truck-traffic-on-southwest-border/
+  - [ACT 26] RioPlex says $110 billion in industrial, energy and data center investment is
+    headed to the Valley (Daily McAllen · Nov 20)
+    https://dailymcallen.com/local-news/editions/11-20-2026
+  - [ACT 14] Mission approves voluntary drug testing for the mayor and council (mandatory
+    for city attorney and managers) (MyRGV · Nov 19)
+    https://myrgv.com/local-news/2026/11/19/mission-approves-voluntary-drug-testing-for-city-officials/
+  - [ACT 15] Brownsville ISD swears in trustees and elects Denise Garza board president
+    (MyRGV · Nov 19)
+    https://myrgv.com/local-news/2026/11/19/brownsville-isd-board-elects-denise-garza-as-president/
+  - [ACT 26] Palenque Hidalgo opens today at Payne Arena (360-degree stage, tickets from
+    $20; Tito Double P headlines) (Daily McAllen · Nov 20)
+    https://dailymcallen.com/local-news/editions/11-20-2026
+  - [ACT 13] USDA confirms the Valley's fifth screwworm case (first in Hidalgo County);
+    Brooks, Hidalgo, Kenedy and Willacy under 'Infested Zone 37' rules (MyRGV · Nov 19)
+    https://myrgv.com/local-news/2026/11/19/usda-confirms-fifth-case-of-screwworm-in-rio-grande-valley/
+  - [ACT 15] Mission man sentenced to life without parole for 2018 killings of two women
+    (MyRGV · Nov 19)
+    https://myrgv.com/local-news/2026/11/19/mission-man-who-killed-two-women-in-2018-sentenced-to-life-without-parole/
   Texas:
-  - [ACT 9] Texas public schools lost ~135,000 students this year, the largest one-year drop
-    in state history (TEA) (Community Impact · Nov 18)
-    https://communityimpact.com/central-austin/education/texas-public-schools-lost-135k-students-this-school-year-largest-decline-in-state-history/
-  - [ACT 9] Tesla weighs a $3.1B polysilicon plant near Robstown (515 jobs by 2032) and asks
-    Tuloso-Midway ISD for a JETI tax break (KIII · Nov 18)
-    https://www.kiiitv.com/article/news/local/tesla-plans-31-billion-solar-materials-plant-near-robstown/503-85e31b2e-ab9d-4e9b-b87b-9731c391f939
-  - [ACT 9] Gov.-elect Gina Hinojosa says she talked border security with Trump; told him
-    Big Bend residents prefer electronic monitoring to a wall (Texas Tribune · Nov 18)
-    https://www.texastribune.org/2026/11/18/gina-hinojosa-texas-governor-elect-interview/
-  - [ACT 9] Sen. John Cornyn blocks Trump's late pick (Elliot Gaiser) for a North Texas
-    federal judgeship: not a Texan, not vetted (Texas Tribune · Nov 18)
-    https://www.texastribune.org/2026/11/18/texas-john-cornyn-trump-judge-gaiser-blocked/
-  - [ACT 16] How Texas Republicans' 2025 congressional gerrymander fell short (incl.
-    Cuellar's Laredo race) (Texas Tribune · Nov 19)
-    https://www.texastribune.org/2026/11/19/texas-redistricting-2026-midterms-gop-congressional-map/
-  - [ACT 9] Democrats' statewide sweep reshapes Texas's high courts (MyRGV (Texas Tribune) ·
-    Nov 18)
-    https://myrgv.com/wire/2026/11/18/republicans-spent-years-remaking-texas-courts-in-their-image-voters-unraveled-it-in-one-election/
+  - [ACT 17] Paxton and the feds agree to keep Texas razor wire at the border for up to 30
+    years (Del Rio Sector) (Texas Tribune · Nov 19)
+    https://www.texastribune.org/2026/11/19/texas-border-wire-immigration-ken-paxton/
+  - [ACT 14] Comptroller Huffines' move to stop taxing cloud, AI and data hosting would cost
+    Texas $18 billion over six years (Texas Tribune · Nov 19)
+    https://www.texastribune.org/2026/11/19/texas-comptroller-huffines-data-tax-limit/
   Photo: File photo: Starship (Steve Jurvetson, CC BY 2.0, Wikimedia Commons) https://commons.wikimedia.org/wiki/File:SpaceX_Starship_before_IFT-5.jpg
 
 CHISME · what the Valley is buzzing about · RUMOR · CONFIRM BEFORE AIR · last 72 hours
-  (nothing passed the safety filter today, or the sources could not be read)
+  - Gina Hinojosa tells sheriffs she will not cut Abbott's border security grants (Reddit ·
+    r/texas) [RUMOR · CONFIRM BEFORE AIR]
+    https://www.reddit.com/r/texas/comments/1y0kros/gina_hinojosa_tells_sheriffs_she_will_not_cut/
+      TL;DR: A top r/texas post shares a story headlined: Gina Hinojosa tells sheriffs she
+    will not cut Abbott's border security grants.
+      Riff: Border sheriffs just got the news they wanted. Valley, how does that land with
+    you?
+  - Bill introduced to allow patients with menstrual cramps to qualify for medical marijuana
+    (Reddit · r/texas) [RUMOR · CONFIRM BEFORE AIR]
+    https://www.reddit.com/r/texas/comments/1y0qsfe/bill_introduced_to_allow_patients_with_menstrual/
+      TL;DR: An r/texas post shares a headline saying a bill was introduced to let patients
+    with menstrual cramps qualify for Texas medical marijuana.
+      Riff: Jess gets the first word on this one. I'm just here holding the heating pad.
+  - "Pompous" Texas Judge Finally Faces Discipline After Going Viral For Berating IT Worker
+    Trying To Help Him (Reddit · r/texas) [RUMOR · CONFIRM BEFORE AIR]
+    https://www.reddit.com/r/texas/comments/1y0p38w/pompous_texas_judge_finally_faces_discipline/
+      TL;DR: An r/texas post shares a headline saying a Texas judge who went viral for
+    berating an IT worker now faces discipline.
+      Riff: Have you tried turning your attitude off and on again, Your Honor?
 
 TRENDING NEWS · what's trending around the nation (separate from the National Desk)
-- [TREND 43] Grand Theft Auto VI is out after a 13-year wait  [gaming]
-    SUMMARY: GTA VI launched Nov 19 on PS5 and Xbox Series X; the download is 212 GB, and
-      the Miami Heat went all-in on a 'Vice City' tie-in.
-    RIFF: Half the Valley called in sick today, the other half is downloading 212 gigs on
-      Valley internet. Parents: check the rating on the box before it ends up under the
-      tree.
-    DW · Nov 19: https://www.dw.com/en/grand-theft-auto-vi-launches-to-global-fanfare/a-79986461
-    AP: Heat go all in on 'Vice City' collab: https://apnews.com/article/grand-theft-auto-heat-vice-city-a19fc5a3279c95be5b4f6a7d831be199
-    X: #1 US trend 'GTA 6': https://x.com/search?q=GTA%206
-- [ACT 21] Ella Langley sweeps the CMA Awards with 'Choosin' Texas'  [culture]
-    SUMMARY: At the 60th CMA Awards (Nov 18) Ella Langley won Single, Song and Music Video
-      of the Year for 'Choosin' Texas'; Taylor Swift performed for the first time in 13
-      years and Lainey Wilson hosted.
-    RIFF: Country's biggest night went to a song with Texas in the title. Who's spinning it
-      most in the Valley, and does Lainey's 'Somewhere Over Laredo' count as a local song?
-    Variety · Nov 18: https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/
-    USA Today: full winners list: https://www.usatoday.com/story/entertainment/music/2026/11/18/cma-awards-2026-winners-list/92853447007/
-    Billboard: winners, updating live: https://www.billboard.com/music/awards/cma-2026-winners-list-1236385046/
-- [ACT 9] Instagram now lets you edit a Story after posting (15-minute window)  [tech]
-    SUMMARY: Instagram head Adam Mosseri confirmed users can edit a published Story (text,
-      stickers, music) for 15 minutes.
-    RIFF: Great for typos, but tell your kids: 15 minutes to fix it, forever for the
-      screenshot.
-    9to5Mac · Nov 18: https://9to5mac.com/2026/11/18/instagram-finally-lets-users-edit-stories-after-publishing-but-theres-a-catch/
-- [ACT 9] Cowboys hand defensive play-calling to Mike Pettine  [sports]
-    SUMMARY: After allowing 46 points and 584 yards to the 49ers, the 4-6 Cowboys moved
-      play-calling from DC Christian Parker to senior assistant Mike Pettine (ESPN via PFR).
-    RIFF: The Valley bleeds silver and blue, and right now it's mostly bleeding. Is a new
-      play-caller enough before the Titans Sunday?
-    ProFootballRumors · Nov 18: https://www.profootballrumors.com/2026/11/mike-pettine-to-take-over-as-cowboys-defensive-play-caller
-- [ACT 16] Musk: his record $446M midterm spending was 'pretty foolish'  [business]
-    SUMMARY: At the DealBook Summit, Elon Musk, the cycle's top individual donor (much of it
-      in Texas), called the spending 'pretty foolish' and said he's 'not MAGA'.
-    RIFF: $446 million and the shrug emoji. Meanwhile, his Starbase data center just lost
-      its tax-break bid in Cameron County.
-    BBC · Nov 19: https://www.bbc.com/news/articles/cm9q8j2z3gg8o
-- [ACT 16] Hila Klein addresses husband Ethan Klein's alleged affair  [celebrity]  [CONFIRM BEFORE AIR: Allegation only; single outlet opened via headline, CONFIRM BEFORE AIR]
-    SUMMARY: h3h3 co-host Hila Klein publicly addressed her husband Ethan's alleged affair:
-      'My whole entire life just shattered.'
-    RIFF: Your teens know h3h3 even if you don't. Handle gently; it's a family going through
-      it in public.
-    Yahoo · Nov 19: https://www.yahoo.com/entertainment/celebrity/articles/hila-klein-addresses-husband-ethan-060440507.html
-- [ACT 21] Giannis faces the Bucks for the first time as a Heat player  [sports]  [CONFIRM BEFORE AIR: Final margin not independently confirmed; the NBA.com box score shows Heat 128.]
-    SUMMARY: Giannis Antetokounmpo (20 points, 11 rebounds, 9 assists) and the Heat beat the
-      1-13 Bucks on Nov 18, his first game against Milwaukee since the offseason trade; he
-      called it 'just another game.' He also scored 20 in Monday's 128-110 win over Houston.
-    RIFF: 'Emotions are for the movies.' Would you be that cool facing your old job? And he
-      just beat the Rockets on Monday, so Houston fans have opinions.
-    CBS Sports · Nov 18: https://www.cbssports.com/nba/news/giannis-antetokounmpo-set-to-face-bucks-for-first-time-with-heat/
-    NBA.com box score (Heat vs Bucks): https://www.nba.com/bucks/game/0022600260-bucks-vs-heat-miami-fl-11-18-2026
-    GMA/Reuters: 'just another game': https://www.gmanetwork.com/news/sports/basketball/1009886/nba-giannis-antetokounmpo-downplays-emotions-as-heat-face-bucks/story/
-- [ACT 9] YouTube trending: Lil Baby's 'Aint Goin' holds #1; teasers for 'Twilight (But Better)' and '3 Body Problem' S2  [viral video]  [CONFIRM BEFORE AIR: Chart comes from a third-party tracker of YouTube's trending list; confirm on youtube.com/feed/trending.]
-    SUMMARY: On Nov 18 Lil Baby's 'Aint Goin' official video stayed #1 on YouTube's U.S.
-      trending list all day; a 'Twilight (But Better)' teaser, a '3 Body Problem' season 2
-      teaser, CaseOh and Markiplier videos also charted.
-    RIFF: What's on your kids' YouTube feed right now? If they say CaseOh, you've got your
-      opening for the Kids Talk block.
-    Trendoday (YouTube US chart) · Nov 18: https://trendoday.com/youtube/2026/11/18
+- [HOT 46] BTS fans flood X voting for the MAMA Awards  [music]  [CONFIRM BEFORE AIR: X trend only; no news story opened. CONFIRM BEFORE AIR]
+    SUMMARY: #VOTEFORBTS, #DAESANGFORBTS and 'OUR CHOICE IS BTS AT MAMA' are top U.S. X
+      trends (about 90,000 posts each).
+    RIFF: If your teen's been glued to the phone, they might be voting. ARMY does not sleep.
+    X trends · Nov 20: https://x.com/search?q=%23VOTEFORBTS
+- [ACT 25] Fiona the hippo dies at the Cincinnati Zoo after swallowing a visitor's knit hat  [viral / animals]
+    SUMMARY: Nov 19: the zoo said Fiona, 9, died after a hat a visitor tossed was caught by
+      a ceiling fan and flung into her habitat; vets tried everything short of surgery.
+    RIFF: The internet's favorite hippo, taken out by a freak hat accident. Hold your hats
+      at the zoo, folks. Keep it gentle; kids loved her.
+    Cincinnati Zoo · Nov 19: https://cincinnatizoo.org/beloved-hippo-fiona-has-passed-away/
+    AP: https://apnews.com/article/fiona-hippo-cincinnati-zoo-hat-3d90d10c57698af06e5a7a67bed05608
+    BBC: https://www.bbc.com/news/articles/cwz0k3172xzko
+- [ACT 19] Trump posthumously pardons Pete Rose  [sports]
+    SUMMARY: Nov 19: Trump pardoned Rose's 1990 tax convictions; it's symbolic and doesn't
+      change Hall of Fame status (MLB lifted his ban in 2025). Trump's post said 4,256 hits
+      'in a Season'; it's career.
+    RIFF: Pardoned for taxes, not for betting. And 4,256 hits in one season would be 26 a
+      game. Somebody fact-check the President's box score.
+    AP · Nov 19: https://apnews.com/article/pete-rose-pardon-trump-baseball-14f398d4c657ccf55cb8a77cc7e60915
+    BBC: https://www.bbc.com/news/articles/cx1l0pm7l9jmo
+- [TREND 40] 'Percy Jackson and the Olympians' Season 3 premieres today on Disney+ and Hulu  [TV / kids]  [CONFIRM BEFORE AIR: Schedule from TheWrap headline and X summaries; confirm on Disney+]
+    SUMMARY: Season 3 adapts 'The Titan's Curse'; two episodes drop today, then pairs each
+      Friday through Dec. 11. #PercyJackson is trending on X.
+    RIFF: Your 10-year-old already knows. Family-movie-night pick for the weekend, and the
+      books are better (don't tell them we said it).
+    TheWrap · X trend: https://www.thewrap.com/creative-content/tv-shows/percy-jackson-season-3-episode-release-schedule/
+    X: #PercyJackson: https://x.com/i/trending/2123145814818357459
+- [ACT 13] Texans rout the Colts 26-3 on Thursday Night Football; C.J. Stroud throws 3 TDs  [sports]
+    SUMMARY: Nov 19: Houston beat Indianapolis 26-3 behind three Stroud touchdown passes.
+    RIFF: The Texans looked like the Texans again. Cowboys, your turn Sunday against
+      Tennessee.
+    AP · Nov 19: https://apnews.com/article/texans-colts-score-a10b89e303c92efae4c15b8e9df01534
+- [TREND 39] Magnitude 5.1 earthquake shakes Monterey County, California; 'earthquake' trends in Texas and on X  [news]
+    SUMMARY: Nov 19, 10:49 p.m. PT near Pinnacles, about 21 km NE of Soledad; no immediate
+      injuries or damage reported.
+    RIFF: Valley earthquake plan: we don't have one, because we don't get them. We get
+      hurricanes and screwworm.
+    ABC7 SF · Nov 19-20: https://abc7news.com/post/magnitude-51-earthquake-hits-monterey-county-usgs-says/20058336/
+    KCRA: https://www.kcra.com/article/magnitude-51-earthquake-strikes-near-pinnacles/74485520
+- [ACT 13] Christie's pulls a Frida Kahlo painting from auction at Mexico's request  [culture]
+    SUMMARY: 'Congreso de los pueblos por la paz' (1952) was withdrawn while Mexico checks
+      its provenance; Kahlo's work is a protected artistic monument under Mexican law.
+    RIFF: Mexico says 'not so fast' on Frida. Fun one for the Valley: who's been to Casa
+      Azul?
+    Border Report / AP · Nov 19: https://www.borderreport.com/border-report-tour/border-culture/christies-halts-frida-kahlo-painting-from-auction-at-mexicos-request/
+- [ACT 13] Jazz snap the Lakers' nine-game win streak; Giannis leads the Heat past his old team  [sports]
+    SUMMARY: Nov 18: Utah won 109-97 at L.A. (Keyonte George 30); Miami beat Milwaukee
+      137-130 with Giannis at 27-13-9 in his first game against the Bucks.
+    RIFF: The three-win Jazz ended the Lakers' run. Any given Wednesday.
+    Field Level Media · Nov 19: https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/
 
 THE NATIONAL DESK (smaller; local leads)
-- [ACT 20] TRUMP, XI AND PUTIN HOLD THE FIRST-EVER THREE-WAY SUMMIT (SHENZHEN, APEC)
-    FACT: Nov 19: Xi hosted Trump and Putin for unprecedented trilateral talks on the APEC
-      sidelines in Shenzhen; Ukraine and nuclear arms control on the agenda.
-    OUR TAKE: (Opinion) Three guys who don't trust each other in one room is either history
-      or a photo op. We'll know by what happens after.
-    WHY IT MATTERS IN THE VALLEY: Trade with China and Mexico moves through our bridges and
-      ports; any tariff or trade shift shows up in McAllen first.
-    CONFIRM BEFORE AIR: Outcomes still coming in; check for any agreement before air
-    NPR: Trump, Xi and Putin meet: https://www.npr.org/2026/11/18/nx-s1-6040432/trump-xi-and-putin-shenzhen-china-russia-usa
-    CNA: talks with Ukraine, nuclear arms on agenda: https://www.channelnewsasia.com/east-asia/trump-xi-putin-trilateral-talks-apec-shenzhen-6563591
-- [ACT 26] IRAN TARGETS A U.S. AIR BASE IN KUWAIT AND SITES IN BAHRAIN
-    FACT: Nov 18: Iran fired drones at Ali Al Salem Air Base in Kuwait and at Bahrain after
-      a U.S. strike on Qeshm Island; both said they intercepted them, no damage reported.
-    OUR TAKE: (Opinion) Nine months into this war, a quiet two months just ended. Nobody
-      should be surprised, but everybody should be paying attention.
-    WHY IT MATTERS IN THE VALLEY: Valley military families and gas prices: watch the pump
-      (KRGV's Pump Patrol) as Gulf tension rises.
-    NBC/AP: Iran widens Gulf attacks: https://www.nbcnews.com/world/iran/iran-widens-gulf-attacks-targeting-us-air-base-kuwait-sites-bahrain-rcna610128
-    BBC: Kuwait repels first attack in two months: https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o
-    AP: allies push to avert all-out war: https://apnews.com/article/iran-us-kuwait-gulf-attacks-bahrain-b1f0b530cffe951e6fcc1e27b2e1af94
-- [ACT 20] DEMOCRATS FLIP A 9TH SENATE SEAT, THEIR BIGGEST MIDTERM GAIN SINCE 1958
-    FACT: Mary Peltola beat Sen. Dan Sullivan in Alaska, giving Democrats a 56-44 Senate
-      majority in January (AP, Nov 18).
-    OUR TAKE: (Opinion) A wave this size changes what gets a vote, and lame-duck fights like
-      Cornyn's judge block are the preview.
-    WHY IT MATTERS IN THE VALLEY: Congressman-elect Bobby Pulido and the Valley delegation
-      start in a Democratic Congress; border and trade bills reset.
-    PBS/AP: Democrats flipped 9 Senate seats: https://www.pbs.org/newshour/politics/democrats-flipped-9-us-senate-seats-the-most-in-almost-70-years
-    NYT: House Dems prepare Trump investigations: https://www.nytimes.com/2026/11/18/us/politics/house-democrats-trump-investigation.html
-- [ACT 14] ANTHROPIC'S RECORD IPO: $81B RAISED, SHARES PRICED AT $83
-    FACT: Anthropic priced shares at $83 (above the $70-78 range), raising about $81B and
-      valuing it near $1.5T; trading starts Thursday (BBC).
-    OUR TAKE: (Opinion) The AI boom just asked Wall Street for a report card. We find out
-      today whether it's an A or an IOU.
-    WHY IT MATTERS IN THE VALLEY: AI needs data centers and power, the same fight Cameron
-      County is having with SpaceX.
-    BBC: Anthropic raises $81bn: https://www.bbc.com/news/articles/c6742m39xgzxo
-- [TREND 32] FAA NATIONWIDE GROUND STOP
-    FACT: Nov 13: FAA grounded all U.S. flights ~3:30-8:15 PM ET; legacy network overwhelmed
-      by data; FAA sees no cyberattack.
-    OUR TAKE: Everybody wants the system modernized; nobody wants it down for the upgrade.
-    WHY IT MATTERS IN THE VALLEY: HRL, MFE and BRO issued advisories; Brownsville still had
-      5 cancellations that night.
-    DETAIL: FAA: legacy equipment became unstable when data flooded its FTI network;
-      suspected sites a radar site in Amarillo and a radio site in El Dorado, AR where
-      L3Harris was deploying a router; 17 of 22 en route centers affected; ~3,500 aircraft
-      landed safely; ~12,462 flights canceled that day. Second nationwide ground stop since
-      9/11 (ABC). FAA Administrator Bryan Bedford told Congress Nov 18: 'blame me.' Duffy
-      said the issue came on the 69th router installation. Harlingen: incoming banks from
-      IAH/DFW/AUS couldn't depart. No current FAA flight cuts found in the sources checked.
-    CONFIRM BEFORE AIR: Any current FAA flight cuts (none found)
-    FAA: Nationwide Ground Stop Q&A: https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers
-    ABC: FAA head says 'blame me': https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960
-    ValleyCentral: Valley airports issue advisories: https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/
-    KRGV: Brownsville airport after ground stop: https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/
+- [ACT 20] WALL STREET'S LONGEST LOSING STREAK SINCE 2024: DOW DROPS 1,100 AS AI STOCKS SLIDE, EVEN WITH ANTHROPIC'S IPO POP
+    FACT: Nov 19: the Dow fell 1,101 points (2.2%), the S&P 500 lost 2% for a sixth straight
+      day and the Nasdaq fell 2.3%; Anthropic closed up 17% in its debut but didn't lift AI
+      stocks.
+    OUR TAKE: (Opinion) The biggest IPO ever and the market still went down. When the
+      party's best guest can't save the party, check your 401(k) and don't panic-sell.
+    WHY IT MATTERS IN THE VALLEY: The data-center money the Valley is chasing (SpaceX,
+      RioPlex's $110B) depends on investors still loving AI.
+    AP: Dow drops 1,100: https://apnews.com/article/stocks-markets-ai-us-anthropic-206c84045137824feabe052a29ff6140
+    CNBC: Anthropic IPO fails to lift AI stocks: https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-stocks-selloff.html
+- [ACT 20] WHITE HOUSE REPLACES ITS NATIONAL CYBER DIRECTOR AFTER A WEEK OF OUTAGES (FLIGHTS, MICROSOFT, BANKS)
+    FACT: Nov 19: Sean Cairncross is out; Pentagon CIO Kirsten Davies serves as acting
+      national cyber director. Officials say the outages were not a cyberattack.
+    OUR TAKE: (Opinion) A nationwide ground stop, Outlook down, banks glitching, and the
+      answer is a new name on the door. Fine, but tell us what actually broke.
+    WHY IT MATTERS IN THE VALLEY: Brownsville airport had cancellations after the ground
+      stop; Chase customers here saw bank problems too.
+    NBC News: https://www.nbcnews.com/politics/white-house/national-cyber-director-sean-cairncross-leaving-kirsten-davies-replaci-rcna610329
+    AP: https://apnews.com/article/cyber-director-kirsten-davies-sean-cairncross-2f1f84f3ca5429d01ace67929c72128d
+- [ACT 20] SENATE PASSES A BIPARTISAN PERMITTING BILL THAT SPEEDS ENERGY PROJECTS AND MAKES BIG DATA CENTERS PAY FOR THEIR POWER
+    FACT: Nov 19: the Senate passed the American Affordability and Jobs Act 62-33; it speeds
+      permits for power plants and transmission and requires large data centers to pay for
+      needed power infrastructure. It goes to the House.
+    OUR TAKE: (Opinion) Washington agreeing on anything 62-33 is news. The data-center part
+      is the sleeper: the robots pay their own light bill.
+    WHY IT MATTERS IN THE VALLEY: Directly relevant to SpaceX's Starbase data center and gas
+      turbines, and to every data-center pitch RioPlex is counting.
+    CONFIRM BEFORE AIR: Vote count from Senate Daily Press via search; confirm in AP before
+      air
+    AP: Senate approves permitting bill: https://apnews.com/article/energy-permitting-data-center-power-grid-trump-b41c2017e4a9fe2e6de92ec77a4cdd0a
+    NBC News: https://www.nbcnews.com/politics/congress/senate-passes-sweeping-bill-simplifying-permitting-rules-build-america-rcna610196
 
 WHAT'S HAPPENING IN TECH (sub-segment of block J, after the National Desk) [FALLBACK: TECH WIRES]
   FALLBACK: tech wires (The Verge, TechCrunch, Ars Technica). No Fast Company Daily issue
     from the last 48 hours was found in Gmail.
-- The nation's largest school districts consider ditching Google Search  (The Verge)  [CONFIRM BEFORE AIR: The Valley tie is a question: confirm with a local ISD that it uses Google for Education before saying so. Details are the NYT's, relayed by The Verge (RSS summary read, not the full article).]
-    SUMMARY: New York, Los Angeles and Chicago schools are weighing Google alternatives
-      after Google said it will disable Search for schools that opt out of its AI features;
-      starting next year schools can't turn off the Gemini-powered features without also
-      turning off Search (per The New York Times).
-    ON-AIR ANGLE: School-board angle: it's a question for Valley districts, not a claim. Do
-      our ISDs run Google tools for students, and what happens to student Search next year?
-      Good lead-in to the school-board block next week.
-    Link: https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google
-- How to tell a cyberattack from a plain old outage  (Ars Technica)  [CONFIRM BEFORE AIR: Only the headline and one-line standfirst were read (RSS). Read the article before citing any specifics on air.]
-    SUMMARY: Ars Technica explainer: when everything goes down, don't assume it's a
-      cyberattack.
-    ON-AIR ANGLE: Pairs with the National Desk outages story (FAA ground stop, the Mullin
-      hearing): before anyone shares 'we got hacked' in the group chat, here's how the pros
-      tell an attack from a plain old outage. Drew's wireless-engineer lane.
-    Link: https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/
-- Instagram now lets you edit your stories after you post them  (The Verge)
-    SUMMARY: You can now edit the text, music, stickers and drawings on a Story for up to 15
-      minutes after sharing, without losing views, likes or replies, Instagram head Adam
-      Mosseri announced.
-    ON-AIR ANGLE: Family angle for Jess: a 15-minute 'oops' window for teens' Stories. Good
-      opening for the 'think before you post' talk from How We'd Talk to Our Kids.
-    Link: https://www.theverge.com/tech/1036941/instagram-now-lets-you-edit-your-stories-after-you-post-them
-- Anthropic prices IPO at $83 a share, above projected range  (TechCrunch)  [CONFIRM BEFORE AIR: TechCrunch says 'reportedly': confirm the price and valuation against a second source (the filing or a wire) before air. The local data-center tie is an angle, not a reported connection.]
-    SUMMARY: The long-awaited IPO reportedly prices at $83 a share, above the projected
-      range, valuing the company at about $1.5 trillion on a fully diluted basis.
-    ON-AIR ANGLE: Biggest tech-business story of the week. Local tie to confirm before
-      using: the data-center fights (Cameron County's SpaceX data-center tax-break vote in
-      the local news) are where the AI boom touches the Valley.
-    Link: https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/
+- Uber tests rides for kids as young as 10, with extra pay for drivers  (TechCrunch)
+    SUMMARY: 'Uber Kids' quietly launched in Austin, Nashville and Madison, Wis., extending
+      Uber's teen service (13-17) to children as young as 10.
+    ON-AIR ANGLE: Parent question for Jess: would you put your 10-year-old in an Uber alone?
+      It's already in Austin.
+    Link: https://techcrunch.com/2026/11/19/uber-tests-rides-for-kids-as-young-as-10-with-extra-pay-for-drivers/
+- Elon Musk says SpaceX has a plan to eliminate cell phone dead zones  (TechCrunch)  [CONFIRM BEFORE AIR: Musk timeline claims; treat as plans, not products]
+    SUMMARY: Musk says SpaceX finished designing a miniature rooftop cell tower to fix
+      indoor dead zones where Starlink signals struggle; production expected in 2027.
+    ON-AIR ANGLE: Starbase's neighbor wants to fix your dead zone. Ranch-road Valley folks
+      will take it.
+    Link: https://techcrunch.com/2026/11/19/elon-musk-says-spacex-has-a-plan-to-eliminate-cell-phone-dead-zones/
+- Apple may be developing its own AI agent that runs your Mac  (TechCrunch)
+    SUMMARY: A job listing (spotted by Bloomberg) seeks a manager for an 'AI agent that can
+      use a computer': browsing, working across apps and coding.
+    ON-AIR ANGLE: Google just gave Gemini the same trick on Mac. Your computer is about to
+      use itself.
+    Link: https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/
+- Traumatized teens sue school, cops after Doritos bag triggers AI gun alert  (Ars Technica)  [CONFIRM BEFORE AIR: Only the headline was read; get the school, state and details before air]
+    SUMMARY: Teens are suing a school and police after an AI weapon-detection alert flagged
+      a Doritos bag as a gun (headline only read).
+    ON-AIR ANGLE: School-board question: do Valley ISDs use AI weapon detection, and what
+      happens on a false alarm?
+    Link: https://arstechnica.com/tech-policy/2026/11/traumatized-teens-sue-school-cops-after-doritos-bag-triggers-ai-gun-alert/
 
-REMEMBERING OUR NEIGHBORS (read near the close, block L) · 83 obituaries from The Monitor on Legacy.com, Nov 5–19
+REMEMBERING OUR NEIGHBORS (read near the close, block L) · 57 obituaries from The Monitor on Legacy.com, Nov 7–20
   Only what each notice lists: no cause of death. CONFIRM name pronunciations before
     reading.
   ON-AIR READ: We want to take a moment to remember some of our neighbors we lost over the
-    past week. Francisco A. Rodriguez Gomez, 83, of Pharr; Armando Carrera, 81, of Mission;
-    Daniel Garza, 94, of Mission; Federico Fonseca, 81, of Pharr; Gerardo Alvarez, 51, of
-    Mission; Gonzalo Lerma Ortiz, 86, of Edinburg. Our thoughts are with their families and
-    friends. You'll find these and more in The Monitor's obituaries on Legacy dot com.
-  Nov 13–19 (28)
+    past week. Gregoria Lloyd, 90, of Alamo; Marco Antonio Capetillo Hernandez, 67, of
+    Weslaco; Francisco A. Rodriguez Gomez, 83, of Pharr; Armando Carrera, 81, of Mission;
+    Daniel Garza, 94, of Mission; Federico Fonseca, 81, of Pharr. Our thoughts are with
+    their families and friends. You'll find these and more in The Monitor's obituaries on
+    Legacy dot com.
+  Nov 14–20 (30)
+    - Gregoria Lloyd, 90 · Alamo · died Nov 18 · ran Nov 20 · Memorial Funeral Home of San Juan
+      https://www.legacy.com/us/obituaries/themonitor/name/gregoria-lloyd-obituary?id=63025610
+    - Guadalupe Valdez Gamboa, 78 · died Nov 15 · ran Nov 20 · Family Funeral Home - Donna
+      https://www.legacy.com/us/obituaries/themonitor/name/guadalupe-gamboa-obituary?id=63025611
+    - Marco Antonio Capetillo Hernandez, 67 · Weslaco · died Nov 14 · ran Nov 20
+      https://www.legacy.com/us/obituaries/themonitor/name/marco-hernandez-obituary?id=63025608
+    - Pedro Ybarra, 46 · died Nov 18 · ran Nov 20 · Salinas Funeral Home - Weslaco
+      https://www.legacy.com/us/obituaries/themonitor/name/pedro-ybarra-obituary?id=63025607
     - Francisco A. Rodriguez Gomez, 83 · Pharr · died Nov 17 · ran Nov 19 · Eternal Light Funeral Home of Elsa, Texas
       https://www.legacy.com/us/obituaries/themonitor/name/francisco-gomez-obituary?id=63017922
     - Anna Maria Gonzales, 71 · died Nov 14 · ran Nov 18 · Aurora Funeral Home - Sam Houston
@@ -346,69 +306,44 @@ REMEMBERING OUR NEIGHBORS (read near the close, block L) · 83 obituaries from T
       https://www.legacy.com/us/obituaries/themonitor/name/peter-graves-obituary?id=62982902
     - Ramon Ozuna, 78 · died Nov 8 · ran Nov 14 · Darling-Mouser Funeral Home
       https://www.legacy.com/us/obituaries/themonitor/name/ramon-ozuna-obituary?id=62982905
-    - Adolfo Torres Sr., 74 · died Nov 11 · ran Nov 13 · Family Funeral Home - Edinburg
-      https://www.legacy.com/us/obituaries/themonitor/name/adolfo-torres-obituary?id=62973957
-    - Marina Barboza, 66 · Pharr · died Nov 8 · ran Nov 13 · Memorial Funeral Home - Edinburg
-      https://www.legacy.com/us/obituaries/themonitor/name/marina-barboza-obituary?id=62973955
-  Plus 55 from the week before: on the studio page, under 'Show the previous week'.
+  Plus 27 from the week before: on the studio page, under 'Show the previous week'.
   Source page: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor
 
 WEATHER · McALLEN / RGV (National Weather Service BRO (api.weather.gov))
-  Fri Nov 20  Mostly Sunny, high 79F / low 63F, rain 0%, wind NE 3 to 7 mph
-  Sat Nov 21  Mostly Sunny, high 85F / low 69F, rain 2%, wind SE 5 to 9 mph
-  Sun Nov 22  Partly Sunny then Chance Showers And Thunderstorms, high 83F / low 60F, rain 66%, wind NE 3 to 7 mph
-  Mon Nov 23  Chance Showers And Thunderstorms, high 70F / low 58F, rain 40%, wind N 6 to 10 mph
-  Tue Nov 24  Slight Chance Rain Showers, high 69F / low 55F, rain 19%, wind N 8 mph
-  Wed Nov 25  Mostly Sunny, high 66F / low 52F, rain 5%, wind N 9 mph
-  Thu Nov 26  Mostly Sunny, high 67F / low --F, rain 9%, wind ENE 7 mph
+  Fri Nov 20  << SHOW DAY Mostly Sunny, high 79F / low 62F, rain 0%, wind NE 6 mph
+  Sat Nov 21  Mostly Sunny, high 83F / low 68F, rain 0%, wind SE 3 to 9 mph
+  Sun Nov 22  Partly Sunny then Showers And Thunderstorms Likely, high 81F / low 59F, rain 75%, wind NE 6 mph
+  Mon Nov 23  Showers And Thunderstorms Likely, high 67F / low 57F, rain 55%, wind N 6 to 12 mph
+  Tue Nov 24  Slight Chance Rain Showers, high 68F / low 54F, rain 19%, wind N 8 mph
+  Wed Nov 25  Sunny, high 65F / low 51F, rain 3%, wind N 6 to 9 mph
+  Thu Nov 26  Mostly Sunny, high 68F / low 57F, rain 14%, wind NE 6 mph
   Alerts: none active
-  Updated 2026-11-20T04:45:14+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
+  Updated 2026-11-20T12:00:15+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
   NWS Brownsville office: https://www.weather.gov/bro/
   API: https://api.weather.gov/gridpoints/BRO/49,19/forecast
 
-RGV HIGH SCHOOL FOOTBALL · Bi-District results (Nov 12-14); Area round this week · latest results
-  - PSJA North 64, Edinburg 10 (6A-II)
-      https://rgvsports.com/rgv-football-playoff-schedule/
-  - Weslaco 43, Los Fresnos 3 (6A-I)
-      https://rgvsports.com/rgv-football-playoff-schedule/
-  - Harlingen 51, La Joya 50 (6A-I)
-      https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/
-  - Edinburg Vela 42, Brownsville Veterans 20 (6A-II)
-      https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/
-  - McAllen High 62, Weslaco East 19 (5A-I)
-      https://rgvsports.com/rgv-football-playoff-schedule/
-  - McAllen Rowe 44, Flour Bluff 28 (5A-I)  [CONFIRM BEFORE AIR: Opponent changed on RGVSports Nov 18 (earlier listing said Sharyland High); CONFIRM BEFORE AIR]
-      https://rgvsports.com/rgv-football-playoff-schedule/
-  - Mercedes 44, Mission Veterans 42 (5A-II)
-      https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/
-  - Sharyland 31, Brownsville Pace 20 (5A-II)
-      https://rgvsports.com/rgv-football-playoff-schedule/
-  - CC Veterans 59, McAllen Memorial 23 (5A-I)
-      https://dailymcallen.com/local-news/editions/11-14-2026
-  - CC Carroll 48, La Joya Palmview 17 (5A-I)
-      https://rgvsports.com/rgv-football-playoff-schedule/
-  - Gregory-Portland 68, Sharyland Pioneer 16 (5A-II)
-      https://rgvsports.com/rgv-football-playoff-schedule/
-  - Calallen 64, Hidalgo 0 (4A-I)
-      https://rgvsports.com/rgv-football-playoff-schedule/
-  - Port Lavaca Calhoun 17, Edcouch-Elsa 3 (4A-I)
-      https://rgvsports.com/rgv-football-playoff-schedule/
-  - Orange Grove 35, Raymondville 28 (3A-I)
-      https://rgvsports.com/rgv-football-playoff-schedule/
-  - La Villa 67, Pettus 0 (2A-II)
-      https://rgvsports.com/rgv-football-playoff-schedule/
+RGV HIGH SCHOOL FOOTBALL · Area round: Thursday results in; more games Fri Nov 20 and Sat Nov 21 · latest results
+  - 6A DI Area: San Antonio Brennan 31, Weslaco High 15
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+  - 5A DI Area: Boerne Champion 72, McAllen High 14 (in Laredo)
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+  - 5A DII Area: Boerne 41, Mercedes 7
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+  - 5A DII Area: Alamo Heights 56, Sharyland High 0
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
   Upcoming games:
-    - Thu Nov 19: Weslaco at SA Brennan 6 PM; McAllen vs Boerne Champion 7 PM (Laredo);
-      Mercedes vs Boerne 7 PM (Laredo); Sharyland vs Alamo Heights 7 PM (Corpus Christi)
-      https://rgvsports.com/rgv-football-playoff-schedule/
-    - Fri Nov 20: Harlingen vs SA Harlan 7 PM; PSJA North vs SA Warren 7 PM (Alice); McAllen
-      Rowe vs Smithson Valley 7 PM; La Villa vs Chilton 7 PM
-      https://rgvsports.com/rgv-football-playoff-schedule/
-    - Sat Nov 21: SA Sotomayor at Edinburg Vela 3 PM
-      https://rgvsports.com/rgv-football-playoff-schedule/
+    - Fri 7 PM: Harlingen vs. SA Harlan (Buccaneer Stadium, Corpus Christi)
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+    - Fri 7 PM: PSJA North vs. SA Warren (Alice)
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+    - Fri 7 PM: McAllen Rowe vs. Smithson Valley (Cabaniss, Corpus Christi)
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+    - Fri 7 PM: La Villa vs. Chilton (Somerset); Sat 3 PM: SA Sotomayor at Edinburg Vela
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
   College: UTRGV falls 48-0 to No. 7 SFA in the home finale (UTRGV 5-6)  https://gooddayedinburg.com/local-news/editions/11-15-2026
 
-NFL · WEEK 10  (scores: https://www.nfl.com/schedules/2026/by-week/week-10)
+NFL · WEEK 11 (TNF) + WEEK 10  (scores: https://www.nfl.com/schedules/2026/by-week/week-10)
+  Thu Nov 19: HOU 26, IND 3 (TNF)
   Thu Nov 12: WAS 24, NYG 21
   Sun Nov 15: DET 35, NE 10 (Munich)
   Sun Nov 15: KC 35, ATL 13
@@ -423,45 +358,40 @@ NFL · WEEK 10  (scores: https://www.nfl.com/schedules/2026/by-week/week-10)
   Sun Nov 15: SF 46, DAL 40
   Sun Nov 15: CIN 38, PIT 18 (SNF)
   Mon Nov 16: LAC 23, BAL 20 (MNF)
-  - Burrow threw for 409 and Chase had 231 receiving yards in Cincinnati's 38-18 win over
-    Pittsburgh
-    https://www.pro-football-reference.com/years/2026/week_10.htm
-  - 49ers beat the Cowboys 46-40 (Purdy 389 yds); SF and BUF lead at 8-1; Cowboys 4-6,
-    Texans 3-6
-    https://www.nfl.com/schedules/2026/by-week/week-10
+  - Texans 26, Colts 3: C.J. Stroud throws 3 TDs on Thursday Night Football
+    https://apnews.com/article/texans-colts-score-a10b89e303c92efae4c15b8e9df01534
   - Week 11: Colts at Texans Thu Nov 19; Titans at Cowboys Sun Nov 22; Bengals at Commanders
     Mon Nov 23
     https://www.footballdb.com/games/index.html?yr=2026
 
-NBA  (scores: https://www.basketball-reference.com/boxscores/)
-  Tue Nov 17: NYK 111, TOR 102
-  Tue Nov 17: MIN 106, POR 105
-  Tue Nov 17: DET 105, SAS 93
-  Tue Nov 17: UTA 132, LAC 107
-  Tue Nov 17: LAL 118, CHA 114 (OT)
-  Texas teams, Mon Nov 16: MIA 128, HOU 110
-  Texas teams, Sun Nov 15: BOS 131, DAL 94
-  - Lakers (13-2) have won nine straight; Quentin Grimes scored 47 in the OT win over
-    Charlotte
-    https://buzzerbeaternews.com/news/nba-scores-last-night-2026-11-17/
-  - Spurs are 12-3 despite the loss to Detroit; Magic snapped Boston's six-game win streak
-    Monday
-    https://www.nba.com/news/starting-5-november-17-2026
-  - Texas teams: Rockets lost at Miami 128-110 (Nov 16); Mavericks lost at Boston 131-94
-    (Nov 15)
-    https://statsnext.com/nba/games/2026-11
+NBA  (scores: https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/)
+  Wed Nov 18: MIA 137, MIL 130
+  Wed Nov 18: UTA 109, LAL 97
+  Wed Nov 18: ATL 117, OKC 112
+  Wed Nov 18: DEN 105, BOS 101
+  Wed Nov 18: MEM 124, CLE 121
+  Texas teams, Wed Nov 18: HOU 119, IND 104
+  Texas teams, Wed Nov 18: DAL 116, GSW 94
+  - Giannis (27-13-9) leads Miami past Milwaukee in his first game vs. the Bucks; Heat win
+    6th straight, Bucks lose 11th straight
+    https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/
+  - Jazz snap the Lakers' 9-game win streak; Thunder lose first home game (Hawks 117-112)
+    https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/
+  - Texas teams: Rockets win at Indiana 119-104 (Durant 21); Cooper Flagg 33 as Mavs beat
+    Warriors 116-94
+    https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/
 
 MLB · OFFSEASON (no scores in November; news instead)
   MLB is in the offseason in November, so this card shows news instead of scores. The
     Brewers are 2026 World Series champions.
+  - Trump posthumously pardons Pete Rose (1990 tax convictions); symbolic, Hall eligibility
+    unchanged
+    https://apnews.com/article/pete-rose-pardon-trump-baseball-14f398d4c657ccf55cb8a77cc7e60915
   - Skubal sweepstakes: Mets, Blue Jays, Dodgers and Padres have met or are set to meet; a
     deal is expected before the CBA expires Dec. 1 (11:59 PM ET)
     https://www.mlb.com/news/tarik-skubal-rumors-november-17-free-agent-update
   - Twins agree to 2 years, $55M with Sonny Gray; White Sox land Dustin May (3 yrs, ~$52.5M)
     https://www.espn.com/mlb/story/_/id/50328768/free-agency-tracker-offseason-trades-moves-2026-2027
-  - Mariners get Maikel Garcia from Royals in a six-player trade; Astros are gauging
-    interest in Christian Walker
-    https://www.mlb.com/news/mlb-rumors-and-2026-27-free-agent-news-november-18
 
 MEME OF THE WEEK · WHAT THE KIDS ARE TALKING ABOUT
 Drew & Jess are watching the feeds so you don't have to
@@ -525,17 +455,17 @@ What your kids might be saying at school this week, and one line on how to bring
       MadeForMums: 45 Gen Alpha slang words: https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/
       Reader's Digest: 24 Gen Alpha slang terms: https://www.rd.com/article/gen-alpha-slang/
       Hello!: how to respond to bizarre slang: https://www.hellomagazine.com/healthandbeauty/mother-and-baby/878329/your-gen-alpha-child-increasingly-bizarre-slang-how-to-respond/
-  - GTA 6 launch week
-      What: GTA VI was set to release Thu Nov 19 at midnight, rated M (17+). X volume jumped
-        to ~255k posts on Nov 18.
+  - GTA 6 is out (launched Nov 19)
+      What: GTA VI launched Nov 19 on PS5 and Xbox Series X; rated M (17+), 212 GB download.
       Means: Late nights and possible skipped school; some UK schools set attendance prizes.
       How to bring it up: Is 17+ a rule or a suggestion at your house? (Jess has more on
         this in Block C.)
-      CONFIRM BEFORE AIR: Launch actually happened on time Nov 19
       ABC News: parents and GTA 6: https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889
       Independent: UK schools and GTA 6: https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html
+      DW: GTA VI launches: https://www.dw.com/en/grand-theft-auto-vi-launches-to-global-fanfare/a-79986461
 
 NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-19 23:28 CT.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-20 06:16 CT.
+Links checked 2026-11-20: 88 ok, 17 blocked by the site's bot protection (verified in a browser/search), 0 dead, 1 unreachable.
