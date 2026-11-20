@@ -174,7 +174,7 @@
       "weave": null,
       "durationMinutes": 8,
       "title": "Local News",
-      "subject": "Top Valley stories: the Starbase/SpaceX vote and launch, Overheard in the Valley, whatever broke this morning",
+      "subject": "Top Valley stories: the Starbase/SpaceX vote and launch, Overheard in the Valley, Chisme (what the Valley is buzzing about), whatever broke this morning",
       "flex": true,
       "canTrimToMinutes": 6,
       "canStretchToMinutes": 10,
@@ -228,7 +228,8 @@
         "WHO FEELS IT: FAA review for up to 456 launches / 912 landings a year, comments close Dec 7. Residents describe debris, shaking windows and fishing worries; Playa Baghdad residents say they feel forgotten; Matamoros residents report cracks (allegation). Cameron County unanimously passed a Boca Chica Beach access resolution Nov 17; Starbase says \"nobody is buying or selling Boca Chica Beach.\"",
         "CONTEXT (depth): SpaceX also pledged $220M for Brownsville water projects (Daily McAllen Nov 14) and Brownsville secured another $30M SpaceX deposit (City of Brownsville Nov 17). Ask: is the deal \"jobs for infrastructure\" and who negotiates it?",
         "OVERHEARD IN THE VALLEY: backup verified item, Speer Memorial Library Route 20 bus-stop march/petition (Nov 14; stop reportedly unserviced since ~2017). PREP: pull 2-3 top posts Sunday night from r/RioGrandeValley, r/RGVEvents, r/McAllen (Top, Past Week).",
-        "WILDCARD: whatever broke this morning. Check KRGV, MyRGV, ValleyCentral first."
+        "WILDCARD: whatever broke this morning. Check KRGV, MyRGV, ValleyCentral first.",
+        "CHISME (optional, about 30 seconds, only if time allows): see the Chisme section right after Top Headlines on the studio page. Air only what a news outlet has confirmed; otherwise tease it as 'people are talking about...' and say it is unconfirmed. No private people in anything negative, nothing about kids, no addresses or personal details."
       ],
       "followUpQuestions": [
         "Does 'no tax break' mean 'no project'? What does the Valley get for being SpaceX's backyard, and who pays?",
@@ -274,7 +275,8 @@
         "Dec 9 Starbase hearing date",
         "Jobs figure (MyRGV 5,500 peak construction vs KRGV 500 new)",
         "FAA public meeting date",
-        "Pull live Reddit top-of-week titles (r/RioGrandeValley, r/RGVEvents, r/McAllen)"
+        "Pull live Reddit top-of-week titles (r/RioGrandeValley, r/RGVEvents, r/McAllen)",
+        "Chisme: every item is a rumor until a news outlet confirms it"
       ]
     },
     {
@@ -1559,7 +1561,7 @@
     "caption": "We want YOUR voice on Monday's show. Got a topic, a story, or the hard parenting question you're afraid to ask? DM us, email, or ask for a live guest link. Anonymous is fine. #RGV #McAllen #DrewInTheMorning"
   },
   "schemaNotes": "v4 (Nov 18): 12 blocks A-L (new B = What I've Been Up To, family & kids woven into H, Starbase/Zoho/trending folded into other blocks). Segments carry offsetMinutes from the planned 8:00 start. coldOpen, jingle and upTo are filled by packet/build_packet.py on every build.",
-  "coldOpen": "Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with Hidalgo County's first screwworm case, plus SpaceX's quiet data-center air permit. On the National Desk, the first-ever Trump, Xi and Putin summit. In Trending, GTA Six finally dropping. And in How We'd Talk to Our Kids, Jess and I take on energy drinks, caffeine and what a 14-year-old actually needs to know. It's 68 and clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+  "coldOpen": "Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with Hidalgo County's first screwworm case, plus SpaceX's quiet data-center air permit. On the National Desk, the first-ever Trump, Xi and Putin summit. In Trending, GTA Six finally dropping. And in How We'd Talk to Our Kids, Jess and I take on energy drinks, caffeine and what a 14-year-old actually needs to know. It's 66 and mostly clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
   "jingle": {
     "primary": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [

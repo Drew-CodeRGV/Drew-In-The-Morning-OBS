@@ -54,10 +54,10 @@
         "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (59h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.6 (59h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 0.7,
+          "recency": 0.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -84,10 +84,10 @@
         "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (59h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.6 (59h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 0.7,
+          "recency": 0.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -174,10 +174,10 @@
         "score": 9,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.7 (35h old)",
+        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.6 (35h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 2.7,
+          "recency": 2.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -205,10 +205,10 @@
         "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (59h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.6 (59h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 0.7,
+          "recency": 0.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -235,10 +235,10 @@
         "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (59h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.6 (59h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 0.7,
+          "recency": 0.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -355,10 +355,10 @@
         "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (59h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.6 (59h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 0.7,
+          "recency": 0.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -383,10 +383,10 @@
         "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (59h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.6 (59h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 0.7,
+          "recency": 0.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -411,10 +411,10 @@
         "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (59h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.6 (59h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 0.7,
+          "recency": 0.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -762,15 +762,15 @@
     "lon": -98.23,
     "note": "McAllen / Rio Grande Valley; NWS Brownsville (BRO) forecast",
     "now": {
-      "tempF": 68,
-      "cond": "Clear",
-      "icon": "sun",
-      "at": "2026-11-20T04:15:00+00:00",
+      "tempF": 66,
+      "cond": "Mostly Clear",
+      "icon": "partly",
+      "at": "2026-11-20T05:05:00+00:00",
       "source": "KMFE observation"
     },
     "office": "BRO",
     "city": "McAllen",
-    "updated": "2026-11-20T03:45:14+00:00",
+    "updated": "2026-11-20T04:45:14+00:00",
     "days": [
       {
         "date": "2026-11-20",
@@ -1386,10 +1386,10 @@
       "score": 21,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 21: 3 outlets 18 + recency 2.7 (35h old)",
+      "scoreWhy": "Score 21: 3 outlets 18 + recency 2.6 (35h old)",
       "scoreParts": {
         "outlets": 18,
-        "recency": 2.7,
+        "recency": 2.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1427,10 +1427,10 @@
       "score": 9,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 9: 1 outlet 6 + recency 2.7 (35h old)",
+      "scoreWhy": "Score 9: 1 outlet 6 + recency 2.6 (35h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 2.7,
+        "recency": 2.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1473,10 +1473,10 @@
       "score": 9,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 9: 1 outlet 6 + recency 2.7 (35h old)",
+      "scoreWhy": "Score 9: 1 outlet 6 + recency 2.6 (35h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 2.7,
+        "recency": 2.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1537,10 +1537,10 @@
       "score": 21,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 21: 3 outlets 18 + recency 2.7 (35h old)",
+      "scoreWhy": "Score 21: 3 outlets 18 + recency 2.6 (35h old)",
       "scoreParts": {
         "outlets": 18,
-        "recency": 2.7,
+        "recency": 2.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1583,10 +1583,10 @@
       "score": 9,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 9: 1 outlet 6 + recency 2.7 (35h old)",
+      "scoreWhy": "Score 9: 1 outlet 6 + recency 2.6 (35h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 2.7,
+        "recency": 2.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1693,10 +1693,10 @@
       "score": 13,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 13: 2 outlets 12 + recency 0.7 (59h old)",
+      "scoreWhy": "Score 13: 2 outlets 12 + recency 0.6 (59h old)",
       "scoreParts": {
         "outlets": 12,
-        "recency": 0.7,
+        "recency": 0.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1746,10 +1746,10 @@
       "score": 13,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 13: 2 outlets 12 + recency 0.7 (59h old)",
+      "scoreWhy": "Score 13: 2 outlets 12 + recency 0.6 (59h old)",
       "scoreParts": {
         "outlets": 12,
-        "recency": 0.7,
+        "recency": 0.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1787,10 +1787,10 @@
       "score": 9,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 9: 1 outlet 6 + recency 2.7 (35h old)",
+      "scoreWhy": "Score 9: 1 outlet 6 + recency 2.6 (35h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 2.7,
+        "recency": 2.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -3955,7 +3955,7 @@
       "letter": "C",
       "title": "Local News",
       "short": "Local News",
-      "subject": "Top Valley stories: the Starbase/SpaceX vote and launch, Overheard in the Valley, whatever broke this morning",
+      "subject": "Top Valley stories: the Starbase/SpaceX vote and launch, Overheard in the Valley, Chisme (what the Valley is buzzing about), whatever broke this morning",
       "timeRange": "8:05–8:13",
       "minutes": 8,
       "offset": 5,
@@ -3974,7 +3974,8 @@
         "WHO FEELS IT: FAA review for up to 456 launches / 912 landings a year, comments close Dec 7. Residents describe debris, shaking windows and fishing worries; Playa Baghdad residents say they feel forgotten; Matamoros residents report cracks (allegation). Cameron County unanimously passed a Boca Chica Beach access resolution Nov 17; Starbase says \"nobody is buying or selling Boca Chica Beach.\"",
         "CONTEXT (depth): SpaceX also pledged $220M for Brownsville water projects (Daily McAllen Nov 14) and Brownsville secured another $30M SpaceX deposit (City of Brownsville Nov 17). Ask: is the deal \"jobs for infrastructure\" and who negotiates it?",
         "OVERHEARD IN THE VALLEY: backup verified item, Speer Memorial Library Route 20 bus-stop march/petition (Nov 14; stop reportedly unserviced since ~2017). PREP: pull 2-3 top posts Sunday night from r/RioGrandeValley, r/RGVEvents, r/McAllen (Top, Past Week).",
-        "WILDCARD: whatever broke this morning. Check KRGV, MyRGV, ValleyCentral first."
+        "WILDCARD: whatever broke this morning. Check KRGV, MyRGV, ValleyCentral first.",
+        "CHISME (optional, about 30 seconds, only if time allows): see the Chisme section right after Top Headlines on the studio page. Air only what a news outlet has confirmed; otherwise tease it as 'people are talking about...' and say it is unconfirmed. No private people in anything negative, nothing about kids, no addresses or personal details."
       ],
       "followUps": [
         "Does 'no tax break' mean 'no project'? What does the Valley get for being SpaceX's backyard, and who pays?",
@@ -4053,7 +4054,8 @@
         "Dec 9 Starbase hearing date",
         "Jobs figure (MyRGV 5,500 peak construction vs KRGV 500 new)",
         "FAA public meeting date",
-        "Pull live Reddit top-of-week titles (r/RioGrandeValley, r/RGVEvents, r/McAllen)"
+        "Pull live Reddit top-of-week titles (r/RioGrandeValley, r/RGVEvents, r/McAllen)",
+        "Chisme: every item is a rumor until a news outlet confirms it"
       ]
     },
     {
@@ -4863,6 +4865,13 @@
     "Okay, that's the news. Here's what's trending around the nation.",
     "We could go all morning on this, but let's hear from you: what are you seeing?"
   ],
+  "chisme": {
+    "items": [],
+    "sources": {},
+    "window": "last 72 hours",
+    "generatedAt": "",
+    "dropped": {}
+  },
   "scoring": {
     "merged": 0,
     "items": 27,
@@ -4892,7 +4901,7 @@
     "words": 122,
     "template": "monday"
   },
-  "generatedAt": "2026-11-19T22:41:55-06:00",
+  "generatedAt": "2026-11-19T23:29:01-06:00",
   "sources": [
     {
       "section": "Top headlines: RGV",

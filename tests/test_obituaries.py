@@ -187,12 +187,24 @@ class Packet(unittest.TestCase):
         self.assertNotIn("cancer", studio.lower())
         email = bp.email_html(d, True)
         self.assertIn("Remembering Our Neighbors", email)
-        for r in d["obituaries"]["items"]:
-            self.assertIn(r["url"], email)
+        newest = d["obituaries"]["groups"][0]["items"]; older = [r for g in d["obituaries"]["groups"][1:] for r in g["items"]]
+        for r in newest:
+            self.assertIn(r["url"], email)           # email and txt list only the newest 7 days ...
         t = bp.txt(d)
         self.assertIn("REMEMBERING OUR NEIGHBORS", t)
-        for r in d["obituaries"]["items"]:
+        for r in newest:
             self.assertIn(r["url"], t)
+        if older:
+            self.assertIn("Plus %d from the week before" % len(older), t)   # ... and say how many more the studio page has
+            self.assertNotIn(older[0]["url"], t)
+        # studio: newest week as compact cards, the week before behind one full-width button
+        self.assertEqual(studio.count('class="ob"'), len(newest) + len(older))
+        self.assertIn('id="obmore"', studio) if older else None
+        self.assertIn("Show the previous week (%d)" % len(older), studio) if older else None
+        self.assertIn("%d this week \u00b7 %d in 2 weeks" % (len(newest), len(newest) + len(older)), studio) if older else None
+        self.assertNotIn("died of", studio.lower())
+        card = studio[studio.index('class="ob"'):studio.index('class="ob"') + 400]
+        self.assertNotIn("tldr", card); self.assertNotIn('class="ang"', card)
         pr = bp.print_html(d)
         self.assertIn("Obituaries: %d on studio page" % d["obituaries"]["count"], pr)
 

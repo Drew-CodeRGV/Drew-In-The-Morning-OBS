@@ -20,6 +20,12 @@ Community posts are leads: confirm elsewhere, or mark them "community chatter, C
 
 - Nov 19, 2026: Reddit was not reachable from the box (block page on www.reddit.com JSON and HTML); use a browser session next run.
 
+## Chisme (local social buzz; tools/chisme.py; read only, never log in, post, comment, react, join or message)
+- Reddit public JSON/RSS: r/RGV, r/McAllen, r/Brownsville, r/Harlingen, r/Edinburg, r/riograndevalley (and r/RioGrandeValley): `https://www.reddit.com/r/<sub>/top.json?t=week`, `hot.json`, `hot/.rss`. Nov 19, 2026 from the box: JSON 403, RSS 429 (use the box browser and the capture file).
+- Facebook: the watch-list pages above (The Monitor, KRGV, Nomorecheezmeh, RGV.me, Things To Do In The RGV). Logged-out fetch returns only the page shell; read them in the signed-in box browser and write them to `packet/data/chisme-capture-<date>.json`.
+- Instagram: public endpoints (`/explore/tags/<tag>`, `/api/v1/tags/web_info`) are login-walled or 404, so skipped and reported, never faked.
+- Safety rules and the RUMOR badge are in `packet/README.md` ("Chisme").
+
 ## Obituaries (Legacy.com, public page, read by tools/obituaries.py)
 - **The Monitor obituaries, McAllen, TX on Legacy.com**: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor (add `&page=2`, `&page=3` for older pages). Feeds the "Remembering Our Neighbors" section and the respectful read near the close (block L). Each name links to its own Legacy notice, e.g. `https://www.legacy.com/us/obituaries/themonitor/name/<name>-obituary?id=<id>`.
 - Only name, age, city, death date, run date, funeral home and link are kept; no cause of death, ever.

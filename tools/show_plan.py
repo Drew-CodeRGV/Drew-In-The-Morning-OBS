@@ -229,15 +229,16 @@ nb(id="B-up-to", letter="B", title="What I've Been Up To This Week", short="Up T
    links=[], confirm=[])
 
 _c = OLD["B"]; _hw = OLD["H"]
-nb(id="C-local-news", letter="C", title="Local News", short="Local News", subject="Top Valley stories: the Starbase/SpaceX vote and launch, Overheard in the Valley, whatever broke this morning",
+nb(id="C-local-news", letter="C", title="Local News", short="Local News", subject="Top Valley stories: the Starbase/SpaceX vote and launch, Overheard in the Valley, Chisme (what the Valley is buzzing about), whatever broke this morning",
    minutes=8, flex=True, trim_to=6, stretch_to=10, color="#e4572e",
    headlines=_c["headlines"],
    chyrons=oc("C", ["b1", "b2", "b3", "b4", "b5", "b6"]),
-   talking=_c["talking"] + [_hw["talking"][2], _hw["talking"][4]],
+   talking=_c["talking"] + [_hw["talking"][2], _hw["talking"][4],
+            "CHISME (optional, about 30 seconds, only if time allows): see the Chisme section right after Top Headlines on the studio page. Air only what a news outlet has confirmed; otherwise tease it as 'people are talking about...' and say it is unconfirmed. No private people in anything negative, nothing about kids, no addresses or personal details."],
    follow=_c["follow"],
    transitions=["That's the headline. Now let's talk about who actually lives next to it.", "Hold that thought: that vote is local politics. Let's go there."],
    links=_c["links"] + [l for l in _hw["links"] if "r/RioGrandeValley" in l["label"]],
-   confirm=_c["confirm"] + ["Pull live Reddit top-of-week titles (r/RioGrandeValley, r/RGVEvents, r/McAllen)"])
+   confirm=_c["confirm"] + ["Pull live Reddit top-of-week titles (r/RioGrandeValley, r/RGVEvents, r/McAllen)", "Chisme: every item is a rumor until a news outlet confirms it"])
 
 _d = OLD["D"]
 nb(id="D-local-politics", letter="D", title="Local Politics", short="Local Politics", subject="Races, candidates and runoffs: TX-15 (Pulido), the Dec. 12 Mission and Weslaco runoffs",

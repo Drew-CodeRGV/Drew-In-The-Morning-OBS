@@ -85,7 +85,7 @@ class Rendering(unittest.TestCase):
         self.assertIn("What's Happening in Tech", h)
         for it in self.data["tech"]["items"]:
             self.assertIn(it["source_url"], h)
-        self.assertIn("On-air angle", h)
+        self.assertIn("<b>Riff:</b>", h)   # the angle is the card's Riff (Trending News card model)
         self.assertIn('href="#tech"', h)  # nav link
 
     def test_txt_and_email_carry_the_section(self):
