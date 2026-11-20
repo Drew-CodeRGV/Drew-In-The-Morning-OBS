@@ -1,14 +1,14 @@
 {
  "version": 1,
- "generatedAt": "2026-11-20T08:14:59+00:00",
+ "generatedAt": "2026-11-20T18:08:50+00:00",
  "window_hours": 24,
  "bootstrap": false,
  "note": "Public headlines and links only. Everything here is a lead: CONFIRM BEFORE AIR.",
  "counts": {
-  "alert": 4,
-  "watch": 21,
-  "stories": 174,
-  "new": 136
+  "alert": 3,
+  "watch": 25,
+  "stories": 171,
+  "new": 79
  },
  "feeds": {
   "ok": 13,
@@ -21,50 +21,51 @@
  },
  "items": [
   {
-   "id": "791d1e68758a",
-   "title": "Edinburg man arrested on child pornography charges",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQV1doZlNTOFNwb0xzRzdEZmVLQ1N0WHNNRnZGbGExdDdpX2RUbDlqaFRGdEtQQWRQTTY1SVVzcUdaNEVSakRMUDB4eHhyaWIwWm5Sb3ZjbUI0cVk5amxIelhMSmluemN5OVNBTjB0S3dGdFBGeWxGenBObGpQZ1RfQy1MQ2s3aTNrT3l1aGZBakF0SzVjM1Zqdw?oc=5",
-   "source": "FOX Carolina News",
+   "id": "efbad594de1e",
+   "title": "SpaceX responds after Cameron County rejects tax break for data center, power plant",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQY3ZRTDAwRjk3THlYdDdpMkRCeVZVT202THpFZGtfdE5XLS1iTzI1RGdKa3FXNmRoVGxJaDVQQkFOd3VUZVFxOGhVUnR1aUdkbG9QZXJiVDB3SHNjemd1Qy14RlhJSjZVVHlNaVZJVmR3TkVfcnV3QlNMMlhqc0VuZUpBQWdaTXBpU1YxbkM3b3pMZER3MHZSZkVyR1lsTGJ2MWJhRUloMjYzUHBVcGc?oc=5",
+   "source": "KRGV",
    "sources": [
     {
-     "name": "FOX Carolina News",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQV1doZlNTOFNwb0xzRzdEZmVLQ1N0WHNNRnZGbGExdDdpX2RUbDlqaFRGdEtQQWRQTTY1SVVzcUdaNEVSakRMUDB4eHhyaWIwWm5Sb3ZjbUI0cVk5amxIelhMSmluemN5OVNBTjB0S3dGdFBGeWxGenBObGpQZ1RfQy1MQ2s3aTNrT3l1aGZBakF0SzVjM1Zqdw?oc=5"
+     "name": "KRGV",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQY3ZRTDAwRjk3THlYdDdpMkRCeVZVT202THpFZGtfdE5XLS1iTzI1RGdKa3FXNmRoVGxJaDVQQkFOd3VUZVFxOGhVUnR1aUdkbG9QZXJiVDB3SHNjemd1Qy14RlhJSjZVVHlNaVZJVmR3TkVfcnV3QlNMMlhqc0VuZUpBQWdaTXBpU1YxbkM3b3pMZER3MHZSZkVyR1lsTGJ2MWJhRUloMjYzUHBVcGc?oc=5"
     },
     {
-     "name": "WHSV",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObWtpRmZVWE9pOGNndm5uRnlSSmpUdXJvTWFoTmJKUGwyQWNzcXEwdkV2NkozVXFjTVpuYXA0MjhoSVlMUmJNWmlVNzRVZVgwYXhtZWtWY0l2YmltbWotNHIxdEFhcUVqYTh0OFVRTHhqM1VuYnZ6Q1J1X1RIMkxtaWoyaHQ2d0RBVWdhdVBIZw?oc=5"
+     "name": "Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVWEtQVlvMlZTNUl6T2VfNVlwVngzdjM0NHRscmZpdUFzMjNBVFJKbjdMMnFXU1pfMC1NQWUzV0RINVp0SkI4ekQ2bzJFOHYwdlhoWWh2bDFRb1FHT2h0TVhoTkkxUkF3dGtYZ1Z5cWFIMUZyMUNIa2VpMW5YcEEteFlKVEVEMkFoRDJxRHRpRTNpYWNRME5KWUM5V3M?oc=5"
     },
     {
-     "name": "KTTC | Rochester, MN",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaS1PMk14Q19TZFlzaDV3d1VYUEliTXlEYncydmlCbl9NX1Fic0NKSl9RMDVVQ1VlMTJyV2tvVFEtTGE0Sl9CYkVSVllpSFlYeHVISVphcTBPUlJqS3BOVWs2c2Y2TFVTVGZucjFEc0taTEtlclFWd3lzSFQ4ZTFzSERqM3VZYVIycFJ0OUV0UQ?oc=5"
+     "name": "San Antonio Express-News",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdGlJOWYyc0h5YWZZNUxtSFREa1dYSEZXS1JjQzgtQS0xamhSQkZlM0Mxd21jY284MTltX0hjVzFlbE5xQXIzZ3pwUDB4NjBMS1FNV2VNM2NGVlNYTnBvUW1oVUNPZndCN1k5VVN4cmt1dVpqd0FWR0dtRDNKX1lfT2ZQTXVVRm9YRXBxcWtES0FEMldxU2JJa0VMREloRzhWc2Nn?oc=5"
     },
     {
-     "name": "fox10tv.com",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWlcxc0Q1MjNPaUNHVVNpRDJGSXR6OTRBSllTSm9FdlcyY0tHblVIeHU2clNKeW1fSXRwTVZiYlYwZzB2LVNQYUVhOWVfclhYTkhTTXJua09KRU9fZXEwblZObUtEOWlDTDFEU1VaSDJraWR5V0RDdzdjVWFmUHBmM2oySkJpWFc4RWY4RzE5LXEzMDA?oc=5"
+     "name": "CRE Daily",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQXzVzSkdFUFJIckJMS3MyTXFxZ0tlVmZjUWJoZkpiRDE4WWJqUVpmTmZZb1lzZkJrQkdHUXZFOEJCYTFJeWtJbE5LZjBvalhBOEtGdjNoRHN3dmVhUXdTVHBRcnh0UVotQzd1WGYxUlRkM3VOb2ZOYm5mRE5RRnFfMDBvUEhZdmhsa3VyUw?oc=5"
     },
     {
-     "name": "WKYT",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVU5KakcxcnZsdFRpSFRDX25qMUhjd1o2WGRRWElFMDNUT2VwM21wNldvbUJYVWVfMnh3MDlYYzU1NDNnNGdSbFlfNUlPdjlfYlJfVjRCN1VLa0pBLV9zc3VZNzY5MFRiaWUtMWlfNk1RYmlEVjNzZktfVjVvak56M21JMXFzRGRBTk9KRGItWQ?oc=5"
+     "name": "MyRGV.com",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQ2ZlNXhJWGNvcUU5V0Vlc3NvaUdvWVdENmdZLTVBVHFSTnRwMzJPQkNIWERwVm5nc09vdmNLR1hrZHJrWV9fT21SZ2xZdTZfMDZHUE11ckRWcVFEQ0xlYmljSXA2WG9rMmRMb3pLVVJ6UDd1U2J1T29tX00yc19sMmppNjFhTlZacVdwRlpsbnp6SzdLX3JoWlRZeldQQ0RlVElvQnBTdHljY1oyd0E?oc=5"
     },
     {
-     "name": "WBTV",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLVMwM2ZXSHZlbzZMOFlBS2Qybk5Ld0tSVl9rUlVWdkhKZnZiZVFldzg4VnU0WkNPY0JINWU0LVpXUGlPeGQ4RDBSRXRyaFVfTm9UZm9XbklmOEYtQ0o2QVNpbWR1ZE9Oakp3VUNlU0RYa0xTTnk2MUl5V2Vud1BGbzY4VmlBR1BBWHRlUU85WQ?oc=5"
-    },
-    {
-     "name": "WOWT",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNaEpWT0x3clB3dXVWdGNGVDJFWHZ6R0QxYmNpZk1WZXZYNl9KR3I2MFVFbktZZU1MMlN1RTlwZUxCRHR6dEhsaUg0cktCekxDN0hSTzB5Yi0xWlVldi1ydlU1RlFQdlYxQlJnMkVoRllVQlNZdDZmaDYwQzFlSm5aMEs4MFItMHU0elBSdk1PZw?oc=5"
+     "name": "The Real Deal",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQkpOZkNtN1pyYVdxeFkxUFFQejVyQmF3MXkwSWI3XzJSa0NGOXRzalJPSXdMeXJSbXhGQnhkQkJIYzlkUXppNU9MQWpiR25YUUNGaExEQVUtT1FaeTZwU2FoWlFOaUpqckRzTlZHU01idE9HaWdJNHVyOTFqVXR6d0tIX2ZUZzJ1aF85YjFkdHFzWVV0LVUxaklXR2wtZms?oc=5"
     }
    ],
-   "published": "2026-11-20T04:33:00+00:00",
+   "published": "2026-11-20T17:53:45+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 46,
+   "score": 50,
    "label": "Hot",
    "uncovered": false,
    "level": "alert",
    "matches": [
-    "Edinburg"
+    "abatement",
+    "Cameron",
+    "Cameron County",
+    "data center",
+    "SpaceX",
+    "tax break"
    ],
-   "why": "Score 46: 7 outlets 30 + recency 16.2 (4h old)"
+   "why": "Score 50: 6 outlets 30 + recency 19.7 (0h old)"
   },
   {
    "id": "47deabbf4ec9",
@@ -83,7 +84,7 @@
    ],
    "published": "2026-11-19T21:43:00+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 23,
+   "score": 18,
    "label": "Active",
    "uncovered": false,
    "level": "alert",
@@ -94,7 +95,7 @@
     "Hidalgo County",
     "shooting"
    ],
-   "why": "Score 23: 2 outlets 12 + recency 10.9 (11h old)"
+   "why": "Score 18: 2 outlets 12 + recency 6.1 (20h old)"
   },
   {
    "id": "d986bd25cc3f",
@@ -107,9 +108,9 @@
      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcXdaMXd2ekFsOHN5VFctQ01CajlILWE3ekRLSHVnTlk5c05ZUXE2ZV9Ua1NMMmp0endyZzhQenNNTm95ODBHN0RhaF81ejNLTEE5amdNVTVRUlppbE1pT2h0T2tqd0FkbmtiWDZ1RVlhY0NPS2RvZTA1ZXJSZU1YSldsMng1S09VS1ZQV1FkMVZsbWNTS1BtYWI2UklQQlB4U3p1NUg3LW5SbElBaGFCektmNA?oc=5"
     }
    ],
-   "published": "2026-11-19T20:36:34+00:00",
+   "published": "2026-11-19T18:17:33+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 16,
+   "score": 11,
    "label": "Active",
    "uncovered": false,
    "level": "alert",
@@ -117,65 +118,229 @@
     "Edinburg",
     "shooting"
    ],
-   "why": "Score 16: 1 outlet 6 + recency 10.2 (12h old)"
+   "why": "Score 11: 1 outlet 6 + recency 5 (24h old)"
   },
   {
-   "id": "d7c68230bb0f",
-   "title": "Victim in deadly Pharr shooting identified as PSJA ISD employee",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORUJ3WVhGTzl5NDR3UldpUFBSUEVCQWktUXVsR2VuZlh5X3ZKdHlVbTlYMEVKN2FjNkU1ZTZvQ01kMkxMVnJFMUpNcjVRb2hwNVUtd2JycTM1QWdXTFYwU0NmcWJUbEFQQnB5d21XZEFFMjZwckp1TmNGX1dtbi1VTGpQT25XcDNJR3psM2h6ZFRzNVly?oc=5",
-   "source": "KRGV",
+   "id": "7a1e318eba6c",
+   "title": "Starship Flight 15 catch: Ship returned to Starbase",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaHJkSFNnX1dRVnFiUEJkR19Mc3ZuUHpvUU1iVnZhSGVfZ1dTTFJDTnJuU3ktZjB3X2tjYWVMV1RjTmZoVl9lT3E2eUtacXVtRkJDd1ZleEJ1aWdmX094dGk2eDdVN1U0NzdNcWNEMmpxYzRBcmpYZzJDZVR1QVFRRUV0c29LNU0?oc=5",
+   "source": "NeoTeo",
    "sources": [
     {
-     "name": "KRGV",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORUJ3WVhGTzl5NDR3UldpUFBSUEVCQWktUXVsR2VuZlh5X3ZKdHlVbTlYMEVKN2FjNkU1ZTZvQ01kMkxMVnJFMUpNcjVRb2hwNVUtd2JycTM1QWdXTFYwU0NmcWJUbEFQQnB5d21XZEFFMjZwckp1TmNGX1dtbi1VTGpQT25XcDNJR3psM2h6ZFRzNVly?oc=5"
+     "name": "NeoTeo",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaHJkSFNnX1dRVnFiUEJkR19Mc3ZuUHpvUU1iVnZhSGVfZ1dTTFJDTnJuU3ktZjB3X2tjYWVMV1RjTmZoVl9lT3E2eUtacXVtRkJDd1ZleEJ1aWdmX094dGk2eDdVN1U0NzdNcWNEMmpxYzRBcmpYZzJDZVR1QVFRRUV0c29LNU0?oc=5"
     }
    ],
-   "published": "2026-11-18T23:09:48+00:00",
-   "firstSeen": "2026-11-19T14:13:10+00:00",
+   "published": "2026-11-20T16:15:51+00:00",
+   "firstSeen": "2026-11-20T18:08:50+00:00",
+   "score": 24,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Starbase",
+    "Starship"
+   ],
+   "why": "Score 24: 1 outlet 6 + recency 17.9 (2h old)"
+  },
+  {
+   "id": "54c5294d4c77",
+   "title": "“We need to be compensated”: Texas Tech chair pushed Fermi data center company for lucrative deals, despite university ties",
+   "url": "https://feeds.texastribune.org/link/16799/17536360/texas-tech-cody-campbell-board-fermi-data-center-matador",
+   "source": "Texas Tribune",
+   "sources": [
+    {
+     "name": "Texas Tribune",
+     "url": "https://feeds.texastribune.org/link/16799/17536360/texas-tech-cody-campbell-board-fermi-data-center-matador"
+    }
+   ],
+   "published": "2026-11-20T16:18:32+00:00",
+   "firstSeen": "2026-11-20T18:08:50+00:00",
+   "score": 24,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "data center"
+   ],
+   "why": "Score 24: 1 outlet 6 + recency 18 (2h old)"
+  },
+  {
+   "id": "aa4a08b50dc6",
+   "title": "SpaceX's Cursor weighs phasing out Chinese AI models over geopolitical risk, CNBC reports",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNeWlDTVU0ZkVnYWE3bk1yYkRRUUdLTV9YNFBQam8wYjRheXdjUnRqTFBjOWJPU0k4WmdydmZyU0hvQ0RnckFXSnVEQ2VTQy1YU1hzRDBMY1ktbnVqVUwyZ1ktaVdrSXUzS2hWeVlJanE1QXZwQW5uT0I5YjlDcWhDUS1wN0JOSVpTTU5qTGRzZjRQZEFKMEhVX2gtTlNDTENCWThBNFlqTUt1ZnA1ZjZZWEdSbTctTWR1VWxqSFBKb1d2RWFQd0I2MTlHbzBLakR5NzdwMA?oc=5",
+   "source": "Reuters",
+   "sources": [
+    {
+     "name": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNeWlDTVU0ZkVnYWE3bk1yYkRRUUdLTV9YNFBQam8wYjRheXdjUnRqTFBjOWJPU0k4WmdydmZyU0hvQ0RnckFXSnVEQ2VTQy1YU1hzRDBMY1ktbnVqVUwyZ1ktaVdrSXUzS2hWeVlJanE1QXZwQW5uT0I5YjlDcWhDUS1wN0JOSVpTTU5qTGRzZjRQZEFKMEhVX2gtTlNDTENCWThBNFlqTUt1ZnA1ZjZZWEdSbTctTWR1VWxqSFBKb1d2RWFQd0I2MTlHbzBLakR5NzdwMA?oc=5"
+    }
+   ],
+   "published": "2026-11-20T15:00:50+00:00",
+   "firstSeen": "2026-11-20T18:08:50+00:00",
+   "score": 23,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "SpaceX"
+   ],
+   "why": "Score 23: 1 outlet 6 + recency 16.7 (3h old)"
+  },
+  {
+   "id": "6b1065d092e7",
+   "title": "I got to tour SpaceX's Starfactory facility in Starbase, Texas, and what I saw blew my mind",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQUkZ3QmQ1Zng0RTllYUpjLVpjRHNYTXR3R3FXNjM4c2xyR1ZfaWotUXFZcDNveElwN3Z0dFU4dGtOd0xiaHlZVXE2TjlfOGtjcjNsQjhGb0l0ZFNvN082WjJSUHMzeDhRdWxsMWtWTnItNjJmcVRINU0zcWMtVjVaTkN4OF9YbVlGTFV0NDN2U3A0czhRVmlDb203VkczRk8yRW42WXdETEF0am1vMTdMekZRenBpZEgwZGZKbUI4a0p3cDVZb1p1ZlZjZXEtdFhlTjNMcUZOZ1Q4TjIxOXY2X1RR?oc=5",
+   "source": "Space",
+   "sources": [
+    {
+     "name": "Space",
+     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQUkZ3QmQ1Zng0RTllYUpjLVpjRHNYTXR3R3FXNjM4c2xyR1ZfaWotUXFZcDNveElwN3Z0dFU4dGtOd0xiaHlZVXE2TjlfOGtjcjNsQjhGb0l0ZFNvN082WjJSUHMzeDhRdWxsMWtWTnItNjJmcVRINU0zcWMtVjVaTkN4OF9YbVlGTFV0NDN2U3A0czhRVmlDb203VkczRk8yRW42WXdETEF0am1vMTdMekZRenBpZEgwZGZKbUI4a0p3cDVZb1p1ZlZjZXEtdFhlTjNMcUZOZ1Q4TjIxOXY2X1RR?oc=5"
+    }
+   ],
+   "published": "2026-11-20T13:00:00+00:00",
+   "firstSeen": "2026-11-20T18:08:50+00:00",
+   "score": 21,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "SpaceX",
+    "Starbase"
+   ],
+   "why": "Score 21: 1 outlet 6 + recency 14.9 (5h old)"
+  },
+  {
+   "id": "b0ba25b1e5d3",
+   "title": "New World Screwworm Facility Reaches Construction Milestone",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUTNiaG5Va1gzdlh5ZUdxWDMwbzhBSDZabkRLdU01aXhUVUFmVGZCSkVWdVVVSTMzZTBwM0VaRklRVHRYTkl3aml2MHpfb0d1N1pDZHFOa1JWUjlKQkZsYzBrTVJYNEVPb04zY25rcnNGMXpWeThYZjI2VFp0NUpXOTlfUUs2M243VDNrMDJ1c2FWZnIzNjVoQzkyNNIBoAFBVV95cUxNVG5ObmhhajF5eGtQR1Z6WlZzblZDMFZWRVdjNUdYaXh1T2N3OXg5S19qZDVibjZYSm5GQWNmeVU5ZklXMVhCT1ZmYndxNkZZdDRjY0Jfd2h0VVJ3Tl9VVlI1MV9rTll4YlV3QTR5Z251N3VlY1lyc0FpTkFjVDlfbmtZM0lMZnlsTFl4RFdZdUdtQzluSXpIbXFfOWpDVFFI?oc=5",
+   "source": "Army.mil",
+   "sources": [
+    {
+     "name": "Army.mil",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUTNiaG5Va1gzdlh5ZUdxWDMwbzhBSDZabkRLdU01aXhUVUFmVGZCSkVWdVVVSTMzZTBwM0VaRklRVHRYTkl3aml2MHpfb0d1N1pDZHFOa1JWUjlKQkZsYzBrTVJYNEVPb04zY25rcnNGMXpWeThYZjI2VFp0NUpXOTlfUUs2M243VDNrMDJ1c2FWZnIzNjVoQzkyNNIBoAFBVV95cUxNVG5ObmhhajF5eGtQR1Z6WlZzblZDMFZWRVdjNUdYaXh1T2N3OXg5S19qZDVibjZYSm5GQWNmeVU5ZklXMVhCT1ZmYndxNkZZdDRjY0Jfd2h0VVJ3Tl9VVlI1MV9rTll4YlV3QTR5Z251N3VlY1lyc0FpTkFjVDlfbmtZM0lMZnlsTFl4RFdZdUdtQzluSXpIbXFfOWpDVFFI?oc=5"
+    }
+   ],
+   "published": "2026-11-20T12:42:10+00:00",
+   "firstSeen": "2026-11-20T18:08:50+00:00",
+   "score": 21,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "screwworm"
+   ],
+   "why": "Score 21: 1 outlet 6 + recency 14.6 (5h old)"
+  },
+  {
+   "id": "18b9a84ca81c",
+   "title": "Tarrant County Republicans, stung by defeat, are soul-searching and finger-pointing",
+   "url": "https://feeds.texastribune.org/link/16799/17536120/texas-tarrant-county-republicans-future-matt-krause",
+   "source": "Texas Tribune",
+   "sources": [
+    {
+     "name": "Texas Tribune",
+     "url": "https://feeds.texastribune.org/link/16799/17536120/texas-tarrant-county-republicans-future-matt-krause"
+    }
+   ],
+   "published": "2026-11-20T11:00:00+00:00",
+   "firstSeen": "2026-11-20T18:08:50+00:00",
+   "score": 19,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "commissioners court"
+   ],
+   "why": "Score 19: 1 outlet 6 + recency 13.2 (7h old)"
+  },
+  {
+   "id": "f57e1ff0d2b8",
+   "title": "Parts of Brooks and Kenedy counties placed under screwworm quarantine after larvae found in Hidalgo County",
+   "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPQVFUNmxRRnpwNW5rcXZuM2FYVk11VzVNb184WmxmMHhSb3RNcWpYQVBEck1SZVpPVnhRdF9mSEdZcGRaelVtdzNFU0Jqcm1uLVZhYUtYQW56clFnVWZLRkxuMHYzMUhqaEtnbVd6UDNPNnhDdHNKeXRqSlJtVVV0U2pIX2hhdmFHdzdBMkF5cVlnQXFWUW0xV1AwRUdLVktoYzFpZ19Gd0FNN3doYS10TElEQmFiVjZEZ0Izc0RHN1N6SW5BeUdIeERBemZBX3ZxeUk5UnNfbE1pOGRKUEF1Vi1hb3VobjBiVk9IbV9ROXBaVTlDaF81YWJ2Q2d6N2ZtSS1xRjFLcVdqb201?oc=5",
+   "source": "KRIS 6 News Corpus Christi",
+   "sources": [
+    {
+     "name": "KRIS 6 News Corpus Christi",
+     "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPQVFUNmxRRnpwNW5rcXZuM2FYVk11VzVNb184WmxmMHhSb3RNcWpYQVBEck1SZVpPVnhRdF9mSEdZcGRaelVtdzNFU0Jqcm1uLVZhYUtYQW56clFnVWZLRkxuMHYzMUhqaEtnbVd6UDNPNnhDdHNKeXRqSlJtVVV0U2pIX2hhdmFHdzdBMkF5cVlnQXFWUW0xV1AwRUdLVktoYzFpZ19Gd0FNN3doYS10TElEQmFiVjZEZ0Izc0RHN1N6SW5BeUdIeERBemZBX3ZxeUk5UnNfbE1pOGRKUEF1Vi1hb3VobjBiVk9IbV9ROXBaVTlDaF81YWJ2Q2d6N2ZtSS1xRjFLcVdqb201?oc=5"
+    }
+   ],
+   "published": "2026-11-20T02:41:36+00:00",
+   "firstSeen": "2026-11-20T18:08:50+00:00",
    "score": 14,
    "label": "Active",
    "uncovered": false,
-   "level": "alert",
+   "level": "watch",
    "matches": [
-    "Pharr",
-    "shooting"
+    "Hidalgo",
+    "Hidalgo County",
+    "screwworm"
    ],
-   "why": "Score 14: 1 outlet 6 + recency 8.4 (15h old)"
+   "why": "Score 14: 1 outlet 6 + recency 8.2 (15h old)"
   },
   {
-   "id": "efbad594de1e",
-   "title": "SpaceX responds after Cameron County rejects tax break for data center, power plant",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQY3ZRTDAwRjk3THlYdDdpMkRCeVZVT202THpFZGtfdE5XLS1iTzI1RGdKa3FXNmRoVGxJaDVQQkFOd3VUZVFxOGhVUnR1aUdkbG9QZXJiVDB3SHNjemd1Qy14RlhJSjZVVHlNaVZJVmR3TkVfcnV3QlNMMlhqc0VuZUpBQWdaTXBpU1YxbkM3b3pMZER3MHZSZkVyR1lsTGJ2MWJhRUloMjYzUHBVcGc?oc=5",
-   "source": "KRGV",
+   "id": "ba4af0f2a3ff",
+   "title": "Music: Bruckner Symphony No. 7 by UTRGV Symphony Orchestra",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1Ia3Q0WUU0cGFPSHoyZlh2bmhaMDQ2eVdjTTQ2clB6NFZqVnNVM1lkbmh2WnlRbXhSZllFemtQQmJodENiemgwakxfd09YbzdNczdTTlBkbl9KbWlhM0o4MGNfTUNkSTY3bTJ3?oc=5",
+   "source": "dailymcallen.com",
    "sources": [
     {
-     "name": "KRGV",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQY3ZRTDAwRjk3THlYdDdpMkRCeVZVT202THpFZGtfdE5XLS1iTzI1RGdKa3FXNmRoVGxJaDVQQkFOd3VUZVFxOGhVUnR1aUdkbG9QZXJiVDB3SHNjemd1Qy14RlhJSjZVVHlNaVZJVmR3TkVfcnV3QlNMMlhqc0VuZUpBQWdaTXBpU1YxbkM3b3pMZER3MHZSZkVyR1lsTGJ2MWJhRUloMjYzUHBVcGc?oc=5"
-    },
-    {
-     "name": "MyRGV.com",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQ2ZlNXhJWGNvcUU5V0Vlc3NvaUdvWVdENmdZLTVBVHFSTnRwMzJPQkNIWERwVm5nc09vdmNLR1hrZHJrWV9fT21SZ2xZdTZfMDZHUE11ckRWcVFEQ0xlYmljSXA2WG9rMmRMb3pLVVJ6UDd1U2J1T29tX00yc19sMmppNjFhTlZacVdwRlpsbnp6SzdLX3JoWlRZeldQQ0RlVElvQnBTdHljY1oyd0E?oc=5"
-    },
-    {
-     "name": "The Real Deal",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQkpOZkNtN1pyYVdxeFkxUFFQejVyQmF3MXkwSWI3XzJSa0NGOXRzalJPSXdMeXJSbXhGQnhkQkJIYzlkUXppNU9MQWpiR25YUUNGaExEQVUtT1FaeTZwU2FoWlFOaUpqckRzTlZHU01idE9HaWdJNHVyOTFqVXR6d0tIX2ZUZzJ1aF85YjFkdHFzWVV0LVUxaklXR2wtZms?oc=5"
+     "name": "dailymcallen.com",
+     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1Ia3Q0WUU0cGFPSHoyZlh2bmhaMDQ2eVdjTTQ2clB6NFZqVnNVM1lkbmh2WnlRbXhSZllFemtQQmJodENiemgwakxfd09YbzdNczdTTlBkbl9KbWlhM0o4MGNfTUNkSTY3bTJ3?oc=5"
     }
    ],
-   "published": "2026-11-19T20:51:25+00:00",
+   "published": "2026-11-19T12:00:15+00:00",
+   "firstSeen": "2026-11-20T18:08:50+00:00",
+   "score": 10,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "UTRGV"
+   ],
+   "why": "Score 10: 1 outlet 6 + recency 3.5 (30h old)"
+  },
+  {
+   "id": "791d1e68758a",
+   "title": "Edinburg man arrested on child pornography charges",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQV1doZlNTOFNwb0xzRzdEZmVLQ1N0WHNNRnZGbGExdDdpX2RUbDlqaFRGdEtQQWRQTTY1SVVzcUdaNEVSakRMUDB4eHhyaWIwWm5Sb3ZjbUI0cVk5amxIelhMSmluemN5OVNBTjB0S3dGdFBGeWxGenBObGpQZ1RfQy1MQ2s3aTNrT3l1aGZBakF0SzVjM1Zqdw?oc=5",
+   "source": "FOX Carolina News",
+   "sources": [
+    {
+     "name": "FOX Carolina News",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQV1doZlNTOFNwb0xzRzdEZmVLQ1N0WHNNRnZGbGExdDdpX2RUbDlqaFRGdEtQQWRQTTY1SVVzcUdaNEVSakRMUDB4eHhyaWIwWm5Sb3ZjbUI0cVk5amxIelhMSmluemN5OVNBTjB0S3dGdFBGeWxGenBObGpQZ1RfQy1MQ2s3aTNrT3l1aGZBakF0SzVjM1Zqdw?oc=5"
+    },
+    {
+     "name": "AZ Family",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPazlMd3lkdUNMRDFoMG1vV0p5NTJWVWpGNk1rclJIWDEwVmFSQkpUcVR3Y2lPVFNOXzh1QnRXb1Jldk05UUhMLVNFY3ZGMVJOOTRhNFI2MWJHWmx6c01qUkZrekJ3TTRNdmtGWmktTERmOFFhTXVYSGRJU0E1cTRxMWpyX2o4bC1keVN2cE1hT3BiSHYt?oc=5"
+    },
+    {
+     "name": "FOX5 Vegas",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUm9XRDJTVDduR2RZMlhpbVpPaTd4eWlWZGVzcHY2RllyTHFDOWFEbjBtaEJhMTZOUGJweFp4WFVTenJ5dTBXZGstM0ZUVTl1X2pDMmJVR3NlaDFxRnJxbl9nb0VhZjRUNkVSaUR5ZFNQU2ExcUE2cy1idGNNbnljOC0wcURNaXdyNGwzbXQ5dnVlY3ZzSmc?oc=5"
+    },
+    {
+     "name": "KTTC | Rochester, MN",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaS1PMk14Q19TZFlzaDV3d1VYUEliTXlEYncydmlCbl9NX1Fic0NKSl9RMDVVQ1VlMTJyV2tvVFEtTGE0Sl9CYkVSVllpSFlYeHVISVphcTBPUlJqS3BOVWs2c2Y2TFVTVGZucjFEc0taTEtlclFWd3lzSFQ4ZTFzSERqM3VZYVIycFJ0OUV0UQ?oc=5"
+    },
+    {
+     "name": "KKTV",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcmx5bl9nUEc1ZXZUQWRjeU84NXQ2SDd6SWNYcWRtaC1hTy00RFp3T1pQN1d3bGNOYTNkSVpwWWJWaXFfMk1vN2txMlJUYUtmOG1DQ1pSY2Rrd2VLNlNtcFp5MTZFUkRJNnJxZmM2dEtBMkE0OEhPMzE5Z3VVTDJ6X2ZZbm1hYlNKWDF0el9GVQ?oc=5"
+    },
+    {
+     "name": "WTVA",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNU2dtaW8wOHhSbDMzaFpuVkRZTWVXaFZpY0lFOVQwS0RoVlpPN1dSQmZxejA5UzhqRnJJV1RkeG5JalR4TVNjM2dsUjJGNkU0LVozUTYwcnY5OFBvVzhEWlZBWVpaSmtwa0RwS0ZudWozTGZzeDhUOGp5UjZNbHF3ajNsYUhXX1NoWG9KT1pjSQ?oc=5"
+    }
+   ],
+   "published": "2026-11-20T04:33:00+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 28,
+   "score": 39,
    "label": "Trending",
    "uncovered": false,
    "level": "watch",
    "matches": [
-    "abatement",
-    "Cameron",
-    "Cameron County",
-    "data center",
-    "SpaceX",
-    "tax break"
+    "Edinburg"
    ],
-   "why": "Score 28: 3 outlets 18 + recency 10.4 (11h old)"
+   "why": "Score 39: 6 outlets 30 + recency 9.1 (14h old)"
   },
   {
    "id": "e8ac6dce0859",
@@ -190,7 +355,7 @@
    ],
    "published": "2026-11-20T06:30:00+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 24,
+   "score": 16,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -198,7 +363,7 @@
     "Brownsville",
     "SpaceX"
    ],
-   "why": "Score 24: 1 outlet 6 + recency 18.1 (2h old)"
+   "why": "Score 16: 1 outlet 6 + recency 10.2 (12h old)"
   },
   {
    "id": "4ca0278c39e9",
@@ -211,9 +376,9 @@
      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNQXZnRFFNSjRkc2wxTVNOMkxObGM3SVJSeW5nLXNHWEo1UktJN0tCZ0JkUGdRemd1Mnk2TjFVYzY0YWJhV3lXYld3ZldDd1A3SHl3LTQ4UFBLR3lDZmZsMWdHbFVQZ1dQVWU5U1ZxeHVndWtWbGR3bXQxSFIzYWd2WEJidk5Ibmtpd00wb0gwVFZ0aTBjWC03Sw?oc=5"
     }
    ],
-   "published": "2026-11-20T05:46:42+00:00",
+   "published": "2026-11-20T05:49:26+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 23,
+   "score": 16,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -221,7 +386,7 @@
     "SpaceX",
     "tax break"
    ],
-   "why": "Score 23: 1 outlet 6 + recency 17.3 (2h old)"
+   "why": "Score 16: 1 outlet 6 + recency 9.8 (12h old)"
   },
   {
    "id": "aa4c137f2c22",
@@ -236,7 +401,7 @@
    ],
    "published": "2026-11-20T04:44:10+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 22,
+   "score": 15,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -245,7 +410,7 @@
     "Mercedes",
     "Rio Grande Valley"
    ],
-   "why": "Score 22: 1 outlet 6 + recency 16.3 (4h old)"
+   "why": "Score 15: 1 outlet 6 + recency 9.2 (13h old)"
   },
   {
    "id": "5a032d7939ed",
@@ -285,7 +450,7 @@
    ],
    "published": "2026-11-20T03:37:04+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 21,
+   "score": 15,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -294,7 +459,7 @@
     "Hidalgo County",
     "screwworm"
    ],
-   "why": "Score 21: 1 outlet 6 + recency 15.3 (5h old)"
+   "why": "Score 15: 1 outlet 6 + recency 8.6 (15h old)"
   },
   {
    "id": "7362bcc21898",
@@ -309,7 +474,7 @@
    ],
    "published": "2026-11-20T00:16:24+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 19,
+   "score": 13,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -318,7 +483,7 @@
     "Rio Grande Valley",
     "the Valley"
    ],
-   "why": "Score 19: 1 outlet 6 + recency 12.6 (8h old)"
+   "why": "Score 13: 1 outlet 6 + recency 7.1 (18h old)"
   },
   {
    "id": "82f6afce9d34",
@@ -333,7 +498,7 @@
    ],
    "published": "2026-11-19T23:59:32+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 18,
+   "score": 13,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -343,7 +508,7 @@
     "Rio Grande Valley",
     "Weslaco"
    ],
-   "why": "Score 18: 1 outlet 6 + recency 12.4 (8h old)"
+   "why": "Score 13: 1 outlet 6 + recency 7 (18h old)"
   },
   {
    "id": "7b9c5f24554e",
@@ -358,7 +523,7 @@
    ],
    "published": "2026-11-19T22:53:48+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 18,
+   "score": 13,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -366,7 +531,7 @@
     "Harlingen",
     "Rio Grande Valley"
    ],
-   "why": "Score 18: 1 outlet 6 + recency 11.7 (9h old)"
+   "why": "Score 13: 1 outlet 6 + recency 6.6 (19h old)"
   },
   {
    "id": "684718bbcf23",
@@ -381,7 +546,7 @@
    ],
    "published": "2026-11-19T23:02:01+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 18,
+   "score": 13,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -389,7 +554,7 @@
     "Brownsville",
     "city commission"
    ],
-   "why": "Score 18: 1 outlet 6 + recency 11.7 (9h old)"
+   "why": "Score 13: 1 outlet 6 + recency 6.6 (19h old)"
   },
   {
    "id": "d51787930214",
@@ -404,7 +569,7 @@
    ],
    "published": "2026-11-19T23:51:47+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 18,
+   "score": 13,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -412,7 +577,7 @@
     "Mission",
     "SpaceX"
    ],
-   "why": "Score 18: 1 outlet 6 + recency 12.3 (8h old)"
+   "why": "Score 13: 1 outlet 6 + recency 7 (18h old)"
   },
   {
    "id": "46c8b88d14ab",
@@ -427,7 +592,7 @@
    ],
    "published": "2026-11-19T21:42:00+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 17,
+   "score": 12,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -435,7 +600,7 @@
     "abatement",
     "SpaceX"
    ],
-   "why": "Score 17: 1 outlet 6 + recency 10.9 (11h old)"
+   "why": "Score 12: 1 outlet 6 + recency 6.1 (20h old)"
   },
   {
    "id": "751414fad2e1",
@@ -472,7 +637,7 @@
    ],
    "published": "2026-11-19T19:31:51+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 16,
+   "score": 11,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -480,7 +645,7 @@
     "city commission",
     "Starbase"
    ],
-   "why": "Score 16: 1 outlet 6 + recency 9.6 (13h old)"
+   "why": "Score 11: 1 outlet 6 + recency 5.4 (23h old)"
   },
   {
    "id": "45157f342b89",
@@ -495,7 +660,7 @@
    ],
    "published": "2026-11-19T17:10:00+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 14,
+   "score": 11,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -503,7 +668,7 @@
     "Boca Chica",
     "Harlingen"
    ],
-   "why": "Score 14: 1 outlet 6 + recency 8.4 (15h old)"
+   "why": "Score 11: 1 outlet 6 + recency 4.7 (25h old)"
   },
   {
    "id": "8981cdc72a37",
@@ -541,7 +706,7 @@
    ],
    "published": "2026-11-19T11:16:02+00:00",
    "firstSeen": "2026-11-20T08:14:59+00:00",
-   "score": 12,
+   "score": 9,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -551,99 +716,7 @@
     "Mission",
     "screwworm"
    ],
-   "why": "Score 12: 1 outlet 6 + recency 6 (21h old)"
-  },
-  {
-   "id": "54a7f53f9c0a",
-   "title": "SpaceX Breaks Silence & Says 10-Year 100% Tax Abatement For $24 Billion Starbase Data Center Infrastructure Is Necessary To Avoid Rapid Tax Value Fluctuations",
-   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOR3pYMF9GRktLSFFVZXFuR1lpY29fTDVPRG9CUE1IWHZRRTNFNnlIcDZKX1NyVzREQlk3b1VhVmU3cHdTdDBQdVNacHVTUnhPSktpeDRFU3FYaFhoZHBoNV9NWGNhNE5ydERwYl9MSEZPLTMzdE1oWUJSYkRmVEx0a3BFYnRFLWY3RTFjNVBYbEZ1SlBmRm93ZmRzOGdqUEZFQjVvVU1fdGEwUEVoUXpnM2I1ODBGbUVlU1ZrLTdaNEF3eGtmZmgzbVZkbWpfeXpNNGxFZm53TnIwOGtySk9FbWw5Ry1ibGJYMDZfTnVKZWNzMlA5V1l5TjdsMXdVdVNDLVQ4NVk1TdIBjAJBVV95cUxONXcyVXRqSzNtdnVEUjgzQjRtd2h1MFE4UENKeDVUbmppRUk5T3JmbXBTRmVCb1FaSEp1TE5CUTdDVGRtNUV3NkFGSXdIQmpoaUVZWm9DT0gxT3J2b2tuSVJIc1VybDFpX2VPVXlGak5ZV3VIUFA5LVdPS2FzNUk3ZzVveDRUOHhKVnZ6U2N2QnEwQWdwLW42aWgxYVQ3WVNKNUdVS3lBR3JqeFc1VjlPN1FmU2FudVhJSVE2TnRyVEF6a0VKVDJlYWZxaEcwOXNPWmg1SHVDd2hibmVuRWdBT2FsdjFSVEZOcUtKNVVvcWRkeUVmMWZUMTlsdEZ0a2ZkVjZWcjZtdXR3di1U?oc=5",
-   "source": "Wccftech",
-   "sources": [
-    {
-     "name": "Wccftech",
-     "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOR3pYMF9GRktLSFFVZXFuR1lpY29fTDVPRG9CUE1IWHZRRTNFNnlIcDZKX1NyVzREQlk3b1VhVmU3cHdTdDBQdVNacHVTUnhPSktpeDRFU3FYaFhoZHBoNV9NWGNhNE5ydERwYl9MSEZPLTMzdE1oWUJSYkRmVEx0a3BFYnRFLWY3RTFjNVBYbEZ1SlBmRm93ZmRzOGdqUEZFQjVvVU1fdGEwUEVoUXpnM2I1ODBGbUVlU1ZrLTdaNEF3eGtmZmgzbVZkbWpfeXpNNGxFZm53TnIwOGtySk9FbWw5Ry1ibGJYMDZfTnVKZWNzMlA5V1l5TjdsMXdVdVNDLVQ4NVk1TdIBjAJBVV95cUxONXcyVXRqSzNtdnVEUjgzQjRtd2h1MFE4UENKeDVUbmppRUk5T3JmbXBTRmVCb1FaSEp1TE5CUTdDVGRtNUV3NkFGSXdIQmpoaUVZWm9DT0gxT3J2b2tuSVJIc1VybDFpX2VPVXlGak5ZV3VIUFA5LVdPS2FzNUk3ZzVveDRUOHhKVnZ6U2N2QnEwQWdwLW42aWgxYVQ3WVNKNUdVS3lBR3JqeFc1VjlPN1FmU2FudVhJSVE2TnRyVEF6a0VKVDJlYWZxaEcwOXNPWmg1SHVDd2hibmVuRWdBT2FsdjFSVEZOcUtKNVVvcWRkeUVmMWZUMTlsdEZ0a2ZkVjZWcjZtdXR3di1U?oc=5"
-    }
-   ],
-   "published": "2026-11-19T13:32:39+00:00",
-   "firstSeen": "2026-11-19T14:13:10+00:00",
-   "score": 25,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "abatement",
-    "data center",
-    "SpaceX",
-    "Starbase"
-   ],
-   "why": "Score 25: 1 outlet 6 + recency 19.2 (1h old)"
-  },
-  {
-   "id": "e8d4e6b90c68",
-   "title": "Bits of Elon Musk’s Starship rocket wash up on beach alongside dead turtles",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYUR5Rmx5UnpfbGV2cXVlb2o4a0lVSWQ0djdBVUs1bVFQWDNJVHdUZnEtN3Vzei0wbF9TWGduMXZoTlF3eTVqSWVTUl9ScmNITW5uSHBzLTcwMVA5NDg5LVVBc1htNVFTN3R1a1lXZU9mS0ExRTJQVm00eGNhajZGaFFhSjZTNTJfeGRyLXc1aDR3WmxyQ3c?oc=5",
-   "source": "The Independent",
-   "sources": [
-    {
-     "name": "The Independent",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYUR5Rmx5UnpfbGV2cXVlb2o4a0lVSWQ0djdBVUs1bVFQWDNJVHdUZnEtN3Vzei0wbF9TWGduMXZoTlF3eTVqSWVTUl9ScmNITW5uSHBzLTcwMVA5NDg5LVVBc1htNVFTN3R1a1lXZU9mS0ExRTJQVm00eGNhajZGaFFhSjZTNTJfeGRyLXc1aDR3WmxyQ3c?oc=5"
-    }
-   ],
-   "published": "2026-11-19T12:25:00+00:00",
-   "firstSeen": "2026-11-19T14:13:10+00:00",
-   "score": 24,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "Starship"
-   ],
-   "why": "Score 24: 1 outlet 6 + recency 18 (2h old)"
-  },
-  {
-   "id": "e9b80de32f2e",
-   "title": "Elon Musk Says Anthropic Wants To Rent An Additional 10 GW Of Compute From SpaceX, Warning Power Is The Real ‘Limiting Factor’ As His Starbase Clears 1,456 MWs Of Gas Turbines",
-   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNZmo5LTRGUUJTWEFGbVQ2by1xcWx3djMtNXh2VjZ3aXJHRnVabnJicHpMclRHa0VqRmdxM0VYRmItdHduTnF1d2NNODBoMGFDel9KUkU0Sjl4Q1RXX2x3R1V2N0tNQS1KTTVSdS1qdUhBWkFNbW9mRVphODk2Q0NSRzZQZEVnS0hLWHc3dWNTT1VtanlFNUdsOWtCdy0yTVVYN3hzaXIwY1lqbk8tQ0toOXZfWnlqUEVWTi1DYm1Eejd4QWVkdm9DRXRERkYxVkZGOFBCR3JGWGFrdHRuQldqVl9nbkMxODNEUGNUYUZCbHY5VUxFcm5jTnM2aGlZcjAzYWlNaDY0SVJ0cnJsNEUzOWFaVWxuWDhUejJycWl30gGjAkFVX3lxTFBKVGRIdDVPalBIa1h1R0kxMHN5S0ZnNjdScFV2eGRjZHExX0xVWGZQRlR5NzFlVDBoVGgtYVdaQ0pLSFpyVkNRYzJfOHllb0xHZFRkZFp3ZV9EU0pMM0luQUxpTS13YnIyTi00YXNqWE5rSXA1b2d5RVl5N2kzSE5xUTVIYXNFa3NNenBIYXVfeU14WkFWRzVvTC1rMEhwZEs4blJpemI5elVHdXgtaFV3WFYtdVRUOW0tSk10ZEVRYTBRaUNjRjJFeWsyek5YRk5uMHNqZDQwTzk5RXZ0TTNJUXlqS2pFRFVhTm5uYnVOVkxRbGNCdC0wV1NRYVdPTlBkU3JBeTBwTk1GVXVSend4akc4NnE0OHdDNVpOYUpCc1R4VQ?oc=5",
-   "source": "Wccftech",
-   "sources": [
-    {
-     "name": "Wccftech",
-     "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNZmo5LTRGUUJTWEFGbVQ2by1xcWx3djMtNXh2VjZ3aXJHRnVabnJicHpMclRHa0VqRmdxM0VYRmItdHduTnF1d2NNODBoMGFDel9KUkU0Sjl4Q1RXX2x3R1V2N0tNQS1KTTVSdS1qdUhBWkFNbW9mRVphODk2Q0NSRzZQZEVnS0hLWHc3dWNTT1VtanlFNUdsOWtCdy0yTVVYN3hzaXIwY1lqbk8tQ0toOXZfWnlqUEVWTi1DYm1Eejd4QWVkdm9DRXRERkYxVkZGOFBCR3JGWGFrdHRuQldqVl9nbkMxODNEUGNUYUZCbHY5VUxFcm5jTnM2aGlZcjAzYWlNaDY0SVJ0cnJsNEUzOWFaVWxuWDhUejJycWl30gGjAkFVX3lxTFBKVGRIdDVPalBIa1h1R0kxMHN5S0ZnNjdScFV2eGRjZHExX0xVWGZQRlR5NzFlVDBoVGgtYVdaQ0pLSFpyVkNRYzJfOHllb0xHZFRkZFp3ZV9EU0pMM0luQUxpTS13YnIyTi00YXNqWE5rSXA1b2d5RVl5N2kzSE5xUTVIYXNFa3NNenBIYXVfeU14WkFWRzVvTC1rMEhwZEs4blJpemI5elVHdXgtaFV3WFYtdVRUOW0tSk10ZEVRYTBRaUNjRjJFeWsyek5YRk5uMHNqZDQwTzk5RXZ0TTNJUXlqS2pFRFVhTm5uYnVOVkxRbGNCdC0wV1NRYVdPTlBkU3JBeTBwTk1GVXVSend4akc4NnE0OHdDNVpOYUpCc1R4VQ?oc=5"
-    }
-   ],
-   "published": "2026-11-19T10:20:43+00:00",
-   "firstSeen": "2026-11-19T14:13:10+00:00",
-   "score": 22,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "SpaceX",
-    "Starbase"
-   ],
-   "why": "Score 22: 1 outlet 6 + recency 16 (4h old)"
-  },
-  {
-   "id": "fffc8a4ce04a",
-   "title": "Health officials ask pet owners to help stop the spread of screwworm ahead of holidays",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSzI5bURER1hWZ1U5b3lGSUFONG9sNEhrSi1Ia1Fwb1J3eC00ZDdSTUdxTjBleHdjbEJTODZLVGtDem9uNGtFZUxwVmc0cVZIYjJJclhCSVplLTBKbW5SdUcwV0ZWZl80XzJlbTVKSklMS3JBbnd1aFV1Unp4NzBMOUdocDgyOHpWWEFGOXFYb0tjOUd5UXRTTUtQQU5aZkxXMksxTjZPS1A5WmJ0?oc=5",
-   "source": "KDBC",
-   "sources": [
-    {
-     "name": "KDBC",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSzI5bURER1hWZ1U5b3lGSUFONG9sNEhrSi1Ia1Fwb1J3eC00ZDdSTUdxTjBleHdjbEJTODZLVGtDem9uNGtFZUxwVmc0cVZIYjJJclhCSVplLTBKbW5SdUcwV0ZWZl80XzJlbTVKSklMS3JBbnd1aFV1Unp4NzBMOUdocDgyOHpWWEFGOXFYb0tjOUd5UXRTTUtQQU5aZkxXMksxTjZPS1A5WmJ0?oc=5"
-    }
-   ],
-   "published": "2026-11-19T07:55:15+00:00",
-   "firstSeen": "2026-11-19T14:13:10+00:00",
-   "score": 20,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "screwworm"
-   ],
-   "why": "Score 20: 1 outlet 6 + recency 13.9 (6h old)"
+   "why": "Score 9: 1 outlet 6 + recency 3.4 (31h old)"
   }
  ]
 }
