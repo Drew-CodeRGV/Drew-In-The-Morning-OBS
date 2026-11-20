@@ -68,10 +68,10 @@ TOP HEADLINES · RGV FIRST
   - [ACT 12] Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some
     at $2.94) (ValleyCentral · Nov 19)
     https://www.valleycentral.com/news/local-news/gas-prices-dip-below-3-a-gallon-across-the-valley/
-  - [ACT 11] Starbase fills a vacant commission seat with Haley Ruvalcaba, wife of a SpaceX
+  - [ACT 10] Starbase fills a vacant commission seat with Haley Ruvalcaba, wife of a SpaceX
     IT director (ValleyCentral · Nov 19)
     https://www.valleycentral.com/news/local-news/starbase-selects-new-city-commissioner/
-  - [ACT 8] Roma's bridge is now the fastest-growing truck port on the Southwest border
+  - [ACT 7] Roma's bridge is now the fastest-growing truck port on the Southwest border
     (imports up 17x since 2019) (Border Report · Nov 18-19)
     https://www.borderreport.com/news/trade/roma-bridge-fastest-growing-for-truck-traffic-on-southwest-border/
   - [ACT 18] RioPlex says $110 billion in industrial, energy and data center investment is
@@ -169,7 +169,7 @@ TRENDING NEWS · what's trending around the nation (separate from the National D
       137-130 with Giannis at 27-13-9 in his first game against the Bucks.
     RIFF: The three-win Jazz ended the Lakers' run. Any given Wednesday.
     Field Level Media · Nov 19: https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/
-- [TREND 43] BTS fans flood X voting for the MAMA Awards  [music]  [CONFIRM BEFORE AIR: X trend only; no news story opened. CONFIRM BEFORE AIR]
+- [TREND 42] BTS fans flood X voting for the MAMA Awards  [music]  [CONFIRM BEFORE AIR: X trend only; no news story opened. CONFIRM BEFORE AIR]
     SUMMARY: #VOTEFORBTS, #DAESANGFORBTS and 'OUR CHOICE IS BTS AT MAMA' are top U.S. X
       trends (about 90,000 posts each).
     RIFF: If your teen's been glued to the phone, they might be voting. ARMY does not sleep.
@@ -467,4 +467,4 @@ What your kids might be saying at school this week, and one line on how to bring
 NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-20 21:16 CT.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-20 21:28 CT.

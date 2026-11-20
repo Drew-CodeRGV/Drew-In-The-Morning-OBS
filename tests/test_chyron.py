@@ -277,6 +277,7 @@ class StudioDashboard(unittest.TestCase):
         self.assertIn('id="headlines"', self.studio)
         self.assertIn('id="chisme"', self.studio)
         self.assertIn('id="obits"', self.studio)
+        self.assertIn('id="lifestyle"', self.studio)
         self.assertIn('id="blk-B"', self.studio)
         self.assertIn("Names, ages and towns only.", self.studio)
         self.assertNotIn("nothing about how anyone died", self.studio)
@@ -336,6 +337,17 @@ class StudioDashboard(unittest.TestCase):
         self.assertNotRegex(self.src, r"ditm-ros-[0-9a-f]{6,}")
 
 
+    def test_lifestyle_holds_obits_and_l_is_memes_only(self):
+        import re
+        life = re.search(r'<details class="sec" id="lifestyle"[^>]*>.*?</details>', self.studio, re.S)
+        self.assertIsNotNone(life)
+        self.assertIn('id="obits"', life.group(0))
+        L = re.search(r'<details class="sec blk" id="blk-L"[^>]*>.*?</details>', self.studio, re.S)
+        self.assertIsNotNone(L)
+        self.assertNotIn('id="obits"', L.group(0))
+        self.assertIn('id="memes"', L.group(0))
+
+
 class SegmentRouting(unittest.TestCase):
     """Existing headlines are assigned to D–I by best fit; one story, one segment; nothing is invented."""
     def test_today_and_fixture_titles(self):
@@ -361,6 +373,13 @@ class SegmentRouting(unittest.TestCase):
             ("Weslaco family waits on appeals court in wrongful-death suit over 17-year-old", "C"),
             ("Tesla weighs a $3.1B polysilicon plant near Robstown (515 jobs) and asks Tuloso-Midway ISD for a JETI tax break", "G"),
             ("McAllen city manager: $17.5B in retail sales", "F"),
+            ("Uber tests rides for kids as young as 10, with extra pay for drivers", "H"),
+            ("Uber for teens: parents can now open teen accounts", "H"),
+            ("Grand Theft Auto VI is out after a 13-year wait", "H"),
+            ("GTA 6 is out (launched Nov 19)", "H"),
+            ("'Percy Jackson and the Olympians' Season 3 premieres today on Disney+ and Hulu", "H"),
+            ("Traumatized teens sue school, cops after Doritos bag triggers AI gun alert", "H"),
+            ("Edinburg North names its student of the week", "LIFE"),
         ]
         for title, want in cases:
             got = bp.classify_story({"title": title, "valley": want == "C", "_desk": "rgv" if want != "I" else "texas"})
@@ -377,11 +396,34 @@ class SegmentRouting(unittest.TestCase):
         d = json.load(open(path))
         rgv, tx = d["headlines"]["rgv"], d["headlines"]["texas"]
         b = bp.assign_segment_stories(rgv, tx)
-        used = sum(len(v) for v in b.values())
+        used = sum(len(b[L]) for L in "CDEFGHI") + len(b.get("LIFE") or [])
         self.assertEqual(used, len(rgv) + len(tx))
         for L in "DEFGHI":
             self.assertGreater(len(b[L]), 0, f"{L} empty on today's packet")
         self.assertIn("No stories today.", open(os.path.join(ROOT, "packet", "build_packet.py")).read())
+
+    def test_uber_and_gta_from_other_desks_land_in_h_only(self):
+        import importlib.util, json
+        spec = importlib.util.spec_from_file_location("bp", os.path.join(ROOT, "packet", "build_packet.py"))
+        bp = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(bp)
+        path = os.path.join(ROOT, "packet", "data", "packet-2026-11-20.json")
+        if not os.path.exists(path):
+            self.skipTest("today packet missing")
+        d = json.load(open(path))
+        tech = (d.get("tech") or {}).get("items") or []
+        memes = [it for lv in (d.get("memes") or {}).get("levels") or [] for it in lv.get("items") or []]
+        b = bp.assign_segment_stories(d["headlines"]["rgv"], d["headlines"]["texas"],
+                                      national=d.get("nationalDesk"), trending=d.get("trending"),
+                                      tech=tech, memes=memes)
+        titles = [i["title"] for i in b["H"]]
+        self.assertTrue(any("uber" in t.lower() and "kid" in t.lower() for t in titles), titles)
+        self.assertTrue(any("gta" in t.lower() or "grand theft auto" in t.lower() for t in titles), titles)
+        # not left on the original desk
+        hkeys = {bp._story_key(i) for i in b["H"]}
+        for it in tech + memes + (d.get("trending") or []):
+            if "uber" in (it.get("title") or "").lower() or "gta" in (it.get("title") or "").lower() or "grand theft auto" in (it.get("title") or "").lower():
+                self.assertIn(bp._story_key(it), hkeys)
 
 
 if __name__ == "__main__":

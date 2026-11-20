@@ -238,17 +238,97 @@ def sc_agg(items):
 
 
 # ---------------------------------------------------------------- assign existing headlines to rundown blocks D–I (best fit, no duplicates)
+# Family & Kids (H) is stories that apply to kids and teens 6–18 and their parents, family-friendly only.
+# Lifestyle is the newspaper-style page: obituaries, marriages, births, student honors (not a lettered A–L block).
 _SEG_H_NO = re.compile(r"\b(murder|homicide|killing|killings|killed|sentenced|wrongful-?death|shooting|rape|assault|suicide|overdose|died|death suit)\b", re.I)
 _SEG_H_YES = re.compile(r"\b(library|holiday parade|parade|festival|thanksgiving celebration|friends['’] thanksgiving|palenque|community celebration|public park|city park|parks department|how we['’]d talk|youth program|family night)\b", re.I)
+_SEG_H_KIDS = re.compile(
+    r"\b(uber)\b.{0,50}\b(kid|kids|teen|teens|child|children|minor|minors|as young as)\b"
+    r"|\b(kid|kids|teen|teens|child|children|minor|minors|as young as)\b.{0,50}\buber\b"
+    r"|\brides for (kids|teens|children)\b"
+    r"|\bgta\s*(vi|6|v)?\b|\bgrand theft auto\b"
+    r"|\b(roblox|fortnite|minecraft|nintendo|playstation|\bxbox\b|switch 2)\b"
+    r"|\bvideo games?\b|\bconsole games?\b"
+    r"|\btiktok\b.{0,40}\b(kid|kids|teen|teens|minor|minors|child|children|parental)\b"
+    r"|\b(kid|kids|teen|teens|minor|minors|child|children)\b.{0,40}\btiktok\b"
+    r"|\bsocial media\b.{0,40}\b(kid|kids|teen|teens|minor|minors|child|children)\b"
+    r"|\bparental controls?\b|\bscreen time\b|\bback-?to-?school\b"
+    r"|\byouth (sports|program|league|soccer|baseball|football|basketball)\b"
+    r"|\b(toys?|toy fair)\b|\bpercy jackson\b"
+    r"|\bas young as \d{1,2}\b|\bkids as young as\b",
+    re.I,
+)
+_SEG_LIFE = re.compile(
+    r"\b(student of the week|students of the week|athlete of the week|athletes of the week|"
+    r"honor roll|principal['’]?s list|dean['’]?s list|"
+    r"birth announcement|welcome[sd]? a (baby|son|daughter)|baby (boy|girl)|"
+    r"weddings?|engagements?|got engaged|anniversar(?:y|ies)|golden anniversary|"
+    r"community milestone)\b",
+    re.I,
+)
 
 def _story_title(it):
     return ((it.get("title") or "") + " " + (it.get("short") or "")).lower()
 
+def _story_key(it):
+    return (str(it.get("id") or "").strip() + "|" + (it.get("title") or "").strip()).lower()
+
+def _first_url(it):
+    if it.get("url"):
+        return it["url"]
+    if it.get("source_url"):
+        return it["source_url"]
+    links = it.get("links") or []
+    if links and isinstance(links, list) and isinstance(links[0], dict):
+        return links[0].get("url") or ""
+    return ""
+
+def _normalize_story(it, desk, extra=None):
+    row = dict(it)
+    row["_desk"] = desk
+    if extra:
+        row.update(extra)
+    if not row.get("url"):
+        row["url"] = _first_url(row)
+    if not (row.get("tldr") or row.get("summary")):
+        row["tldr"] = row.get("one_line") or row.get("short") or row.get("what") or ""
+    return row
+
+def is_lifestyle_story(it):
+    """Newspaper lifestyle items: weddings, births, honor rolls, students/athletes of the week. Not crime, not invented."""
+    T = _story_title(it)
+    return bool(_SEG_LIFE.search(T)) and not _SEG_H_NO.search(T)
+
+def is_family_kids_story(it):
+    """Stories that apply to kids/teens 6–18 and their parents. Family-friendly only; no crime or death stories."""
+    T = _story_title(it)
+    if _SEG_H_NO.search(T):
+        return False
+    if _SEG_H_YES.search(T) or _SEG_H_KIDS.search(T):
+        return True
+    # teen/kid + school/safety, but not a local ISD board vote (those stay in School Boards)
+    if re.search(r"\b(teens?|kids?|children|youth)\b", T) and re.search(r"\b(school|students?|safety)\b", T):
+        if re.search(r"\bisd\b|\bcisd\b|school board|trustees?", T):
+            return False
+        return True
+    return False
+
+def _meme_moves_to_h(it):
+    """Only news-like meme items (e.g. GTA VI is out) move to Family & Kids; joke/trend memes stay in L."""
+    if not is_family_kids_story(it):
+        return False
+    T = _story_title(it)
+    if re.search(r"\b(gta|grand theft auto)\b", T):
+        return True
+    return bool(re.search(r"\b(is out|launches?|released?|premiere[sd]?)\b", T))
+
 def classify_story(it):
     """Best-fit letter for a headline: C local news, D local politics, E school boards, F city hall, G economic development, H family & kids, I statewide.
-    One story, one segment. Never invents a story. Family & Kids is family-friendly only and does not use stories that name kids in a crime or death."""
+    Returns 'LIFE' for newspaper-lifestyle honors. One story, one segment. Never invents a story. Family & Kids is family-friendly only and does not use stories that name kids in a crime or death."""
     T = _story_title(it)
-    if _SEG_H_YES.search(T) and not _SEG_H_NO.search(T):
+    if is_lifestyle_story(it):
+        return "LIFE"
+    if is_family_kids_story(it):
         return "H"
     if re.search(r"texas public schools|\btea\b", T) and not re.search(r"\bisd\b|\bcisd\b", T):
         return "I"
@@ -280,14 +360,29 @@ def classify_story(it):
         return "C"
     return "I"
 
-def assign_segment_stories(rgv, texas):
-    """Split existing RGV + Texas headlines into C–I. Each story is used once. Does not invent items."""
+def assign_segment_stories(rgv, texas, national=None, trending=None, tech=None, memes=None):
+    """Split headlines into C–I plus LIFE. Optional national/trending/tech/meme lists contribute only Family & Kids or Lifestyle items (removed from their original desks). Each story is used once. Does not invent items."""
     buckets = {L: [] for L in "CDEFGHI"}
+    lifestyle = []
+    def place(row, extras=False):
+        letter = classify_story(row)
+        if extras and letter not in ("H", "LIFE"):
+            return
+        if extras and row.get("_desk") == "meme" and letter == "H" and not _meme_moves_to_h(row):
+            return
+        if letter == "LIFE":
+            lifestyle.append(row)
+        else:
+            buckets[letter].append(row)
     for desk, items in (("rgv", rgv or []), ("texas", texas or [])):
         for it in items:
-            row = dict(it)
-            row["_desk"] = desk
-            buckets[classify_story(row)].append(row)
+            place(_normalize_story(it, desk), extras=False)
+    for desk, items in (("national", national or []), ("trending", trending or []), ("tech", tech or [])):
+        for it in items:
+            place(_normalize_story(it, desk), extras=True)
+    for it in memes or []:
+        place(_normalize_story(it, "meme"), extras=True)
+    buckets["LIFE"] = lifestyle
     return buckets
 
 def plus_confirm(html, n):
@@ -1835,8 +1930,6 @@ def studio_html(data, archive_href=None):
         pubs = ""
         return tcard(i["title"], i.get("url", ""), pills=(("VALLEY", "#2a7de1"),) if i.get("valley") else (), meta=i.get("source", "") + ((" · " + dtl(i["published"])) if i.get("published") else ""), tldr=i.get("tldr") or i.get("summary") or "",
                      score=sc_studio(i), conf=conf_text(i) if i.get("confirm") else "", sec_=sec_, ord_=i.get("ord", 0), sc=i.get("score", 0))
-    heads = (thumbhtml + '<div class="src" style="font-weight:800">RGV</div>' + grid([hcard(i, "Headlines: RGV") for i in data["headlines"]["rgv"]], "No RGV headlines loaded.")
-             + '<div class="src" style="margin-top:10px;font-weight:800">TEXAS</div>' + grid([hcard(i, "Headlines: Texas") for i in data["headlines"]["texas"]], "No Texas headlines loaded."))
 
     # ---- chisme
     ch = data.get("chisme") or {}
@@ -1858,13 +1951,25 @@ def studio_html(data, archive_href=None):
               f'Read today: {esc(", ".join(ok_src) or "nothing")}.' + (f' Not available: {esc(", ".join(bad_src))} (login-walled or blocked; skipped, never faked).' if bad_src else "") + '</p>')
     chisme_h = chnote + grid([chcard(c, k) for k, c in enumerate(chi)], "No chisme loaded today: no Valley social post passed the safety filter in the last 72 hours, or the sources could not be read. Nothing is made up to fill this section.")
 
+    # ---- pull Family & Kids / Lifestyle items out of every desk (one story, one home)
+    _meme_flat = []
+    for lv in (data.get("memes") or {}).get("levels") or []:
+        for it in lv.get("items") or []:
+            _meme_flat.append(_normalize_story(it, "meme", {"source": "Meme of the Week · " + (lv.get("level") or ""), "short": it.get("what") or it.get("title") or ""}))
+    seg = assign_segment_stories(data["headlines"]["rgv"], data["headlines"]["texas"],
+                                 national=data.get("nationalDesk"), trending=data.get("trending"),
+                                 tech=(data.get("tech") or {}).get("items"), memes=_meme_flat)
+    _moved = {_story_key(i) for i in (seg.get("H") or []) + (seg.get("LIFE") or [])
+              if i.get("_desk") in ("national", "trending", "tech", "meme")}
+
     # ---- national desk
     def ncard(n, k_):
         valley = f'<p class="ang"><b>Valley angle:</b> {esc(n["valley"])}</p>' if n.get("valley") else ""
         u = n["links"][0]["url"] if n.get("links") else ""
         return tcard(n["title"], u, meta="National Desk", tldr=n.get("summary", ""), riff=n.get("angle", ""), score=sc_studio(n), conf=conf_text(n) if n.get("confirm") else "",
                      extra=valley, sec_="National Desk", ord_=n.get("ord", k_), sc=n.get("score", 0), uid=f"nat-{k_}")
-    nat = grid([ncard(n, k_) for k_, n in enumerate(data["nationalDesk"])], "No National Desk stories loaded.")
+    _nat_keep = [n for n in data["nationalDesk"] if _story_key(n) not in _moved]
+    nat = grid([ncard(n, k_) for k_, n in enumerate(_nat_keep)], "No National Desk stories loaded.")
     # ---- trending news
     def trcard(t, k_):
         c = trend_item_conf(t)
@@ -1872,15 +1977,17 @@ def studio_html(data, archive_href=None):
         when = ((" · " + dtl(t["published"])) if t.get("published") else "")
         return tcard(t["title"], t.get("source_url", ""), pills=(t.get("category", ""),), meta=(t.get("source", "") + when), tldr=t.get("one_line", ""), score=sc_studio(t), conf=c or "",
                      extra=media, sec_="Trending", ord_=t.get("ord", 0), sc=t.get("score", 0))
-    trn = '<p class="mut">What\'s trending around the nation. Separate from the National Desk (no duplicates). Source order: X trends/news, AP/Reuters, Google Trends, YouTube trending.</p>' + grid([trcard(t, k_) for k_, t in enumerate(data.get("trending", []))], "No trending items loaded.")
+    _tr_keep = [t for t in (data.get("trending") or []) if _story_key(t) not in _moved]
+    trn = '<p class="mut">What\'s trending around the nation. Separate from the National Desk (no duplicates). Source order: X trends/news, AP/Reuters, Google Trends, YouTube trending.</p>' + grid([trcard(t, k_) for k_, t in enumerate(_tr_keep)], "No trending items loaded.")
     # ---- tech
     tk = data["tech"]
     def tkcard(t, k_):
         return tcard(t["title"], t.get("source_url", ""), pills=("TECH",), meta=" · ".join(x for x in (t.get("source", ""), t.get("published", "")) if x), tldr=t.get("one_line", ""),
                      badges=f'<span class="sb {"a" if tk["origin"] == "wires" else "t"}" title="{esc(tk["originLabel"])}">{esc(t["basis"])}</span>', conf=t["confirm"] if t.get("confirm") else "",
                      sec_="Tech", ord_=k_, sc=0)
+    _tech_keep = [t for t in tk["items"] if _story_key(t) not in _moved]
     tech_h = (f'<p class="mut"><b>{esc(tk["badge"])}</b> · {esc(tk["originLabel"])}</p>' + (f'<p class="mut">{esc(tk["note"])}</p>' if tk.get("note") else "")
-              + grid([tkcard(t, k_) for k_, t in enumerate(tk["items"])], "No tech items loaded today."))
+              + grid([tkcard(t, k_) for k_, t in enumerate(_tech_keep)], "No tech items loaded today."))
 
     # ---- obituaries: compact cards, the newest 7 days up front, the week before behind one button
     ob = data["obituaries"]
@@ -1933,6 +2040,8 @@ def studio_html(data, archive_href=None):
     mcards = []
     for lv in data["memes"]["levels"]:
         for it in lv["items"]:
+            if _story_key(it) in _moved:
+                continue
             is_motw = it["id"] == data["memes"].get("memeOfTheWeek")
             mcards.append(tcard(it["title"], (it["links"][0]["url"] if it["links"] else ""), pills=((lv["level"], colors.get(lv["level"], "#888")),) + ((("MEME OF THE WEEK", "#c1121f"),) if is_motw else ()), meta=lv["icon"] + " for parents",
                                 tldr=(it["what"] + " " + it["means"]).strip(), conf=conf_text(it) if it.get("confirm") else "",
@@ -1941,10 +2050,9 @@ def studio_html(data, archive_href=None):
 
     # ---- run-of-show blocks A..L: one section per letter; story grids live on the same bar as the timer
     SUBS = {"A": "jingle · cold open · the hour's promise", "B": "family calendar · look-ahead", "C": "top Valley stories · headlines · chisme", "D": "races, candidates and runoffs",
-            "E": "trustees, budgets and board votes", "F": "mayors, councils and city managers", "G": "jobs, projects and deals", "H": "a light, woven-in moment with Jess",
-            "I": "Texas and Texas politics", "J": "national desk · trending · tech", "K": "call-ins and topic submissions", "L": "meme of the week · neighbors · close"}
+            "E": "trustees, budgets and board votes", "F": "mayors, councils and city managers", "G": "jobs, projects and deals", "H": "stories for kids, teens (6–18) and parents",
+            "I": "Texas and Texas politics", "J": "national desk · trending · tech", "K": "call-ins and topic submissions", "L": "meme of the week · close"}
     byL = {r["letter"]: r for r in data.get("rundown") or []}
-    seg = assign_segment_stories(data["headlines"]["rgv"], data["headlines"]["texas"])
     b_cards = []
     for e in data["up_to"] + [dict(x, coming=True) for x in data["up_to_coming"]]:
         dd = datetime.date.fromisoformat(e["date"]).strftime("%a %b %-d")
@@ -1964,16 +2072,16 @@ def studio_html(data, archive_href=None):
         return grid([hcard(i, sec_name) for i in items], empty), (f"{n} stories" if n else "No stories today"), bdg, n
     nav = "".join(f'<a href="#{i}" data-jump="{i}">{t}</a>' for i, t in (("brk", "Breaking"), ("blk-A", "Cold open"), ("blk-B", "Up To"), ("blk-C", "Local News"), ("chisme", "Chisme"),
                                                                        ("blk-D", "Local Politics"), ("blk-E", "School Boards"), ("blk-F", "City Hall"), ("blk-G", "Econ Dev"), ("blk-H", "Family & Kids"), ("blk-I", "Statewide"),
-                                                                       ("blk-J", "National"), ("trending", "Trending"), ("tech", "Tech"), ("obits", "Neighbors"), ("memes", "Meme of the Week"),
+                                                                       ("blk-J", "National"), ("trending", "Trending"), ("tech", "Tech"), ("lifestyle", "Lifestyle"), ("obits", "Neighbors"), ("memes", "Meme of the Week"),
                                                                        ("weather", "Weather"), ("hs", "HS Football"), ("nfl", "NFL"), ("nba", "NBA"), ("mlb", "MLB"), ("used", "Used list")))
     mon = m["mode"] == "monday"
     used_body = ('<ul id="usedul"></ul><p class="mut">Tap the box next to any item when it is used on the show. Marks stay on this device until cleared, so nothing gets repeated. '
                  '"Log to repo" opens a pre-filled GitHub issue (label used-on-show) for the post-show job: it cuts clips from the recording and drafts social teasers for approval. Nothing posts by itself.</p>')
     nh, bh = sc_agg(data["headlines"]["rgv"] + data["headlines"]["texas"])
-    nt_, bt_ = sc_agg(data.get("trending", []))
-    nn_, bn_ = sc_agg(data["nationalDesk"])
-    nm_ = sum(len(lv["items"]) for lv in data["memes"]["levels"])
-    cfm = sum(1 for lv in data["memes"]["levels"] for it in lv["items"] if it.get("confirm"))
+    nt_, bt_ = sc_agg(_tr_keep)
+    nn_, bn_ = sc_agg(_nat_keep)
+    nm_ = len(mcards)
+    cfm = sum(1 for lv in data["memes"]["levels"] for it in lv["items"] if it.get("confirm") and _story_key(it) not in _moved)
     n_nfl = len(data["sports"]["nfl"]["scores"]) + len(data["sports"]["nfl"]["notable"])
     n_nba = len(data["sports"]["nba"]["scores"]) + len(data["sports"]["nba"]["notable"])
     n_hs = len(hs["results"]) + len(hs["next"])
@@ -1995,14 +2103,19 @@ def studio_html(data, archive_href=None):
     g_grid, g_cnt, g_bdg, _ = stories_of("G", "Economic Development")
     h_grid, h_cnt, h_bdg, _ = stories_of("H", "Family & Kids")
     i_grid, i_cnt, i_bdg, _ = stories_of("I", "Statewide")
-    n_tech_cf = sum(1 for x in tk["items"] if x.get("isConfirm"))
+    n_tech_cf = sum(1 for x in _tech_keep if x.get("isConfirm"))
     j_body = (f'<div class="subsec" id="national">{nat}</div>'
               f'<h3 class="subh" id="trending">Trending News</h3>{trn}'
               '<h3 class="subh" id="tech">What\'s Happening in Tech</h3>' + tech_h)
-    j_count = f"{nn_ + nt_ + len(tk['items'])} stories"
+    j_count = f"{nn_ + nt_ + len(_tech_keep)} stories"
     j_badges = bn_ + bt_ + (f'<span class="sb {"a" if tk["origin"] == "wires" else "t"}">{esc(tk["badge"])}</span>' if tk.get("badge") else "") + (f'<span class="cf">{n_tech_cf} CONFIRM</span>' if n_tech_cf else "")
-    l_body = f'<div class="subsec" id="obits">{obit_h}</div><h3 class="subh" id="memes">Meme of the Week</h3>{mem}'
-    l_count = f"{ob_count} · {nm_} memes"
+    life_items = seg.get("LIFE") or []
+    life_extra = (('<h3 class="subh" id="life-honors">Weddings, births &amp; honors</h3>' + grid([hcard(i, "Lifestyle") for i in life_items], "No honors today."))
+                  if life_items else '<p class="mut">No marriages, births, or student honors in today\'s sources.</p>')
+    life_body = f'{life_extra}<div class="subsec" id="obits">{obit_h}</div>'
+    life_count = (f"{len(life_items)} honors · {ob_count}" if life_items else ob_count)
+    l_body = f'<div class="subsec" id="memes">{mem}</div>'
+    l_count = (f"{nm_} memes" if nm_ else "No memes today")
     l_badges = (f'<span class="cf">{cfm} CONFIRM</span>' if cfm else "")
     def maybe(L, *a, **k):
         return blk(L, *a, **k) if L in byL else ""
@@ -2018,6 +2131,7 @@ def studio_html(data, archive_href=None):
         maybe("I", i_grid, count=i_cnt, badges=i_bdg),
         maybe("J", j_body, count=j_count, badges=j_badges),
         maybe("K", "", count=""),
+        sec("lifestyle", "#5c6b7a", "Lifestyle", "marriages · births · neighbors · student honors", life_body, count=life_count),
         maybe("L", l_body, count=l_count, badges=l_badges),
         sec("weather", "#2a7de1", "McAllen / RGV Weather", w["source"], weather, count="7 days", badges=wb),
         sec("hs", "#2a9d8f", "RGV High School Football", hs["round"], hsb, count=f"{n_hs} games"),

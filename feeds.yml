@@ -141,6 +141,26 @@ feeds:
     kind: community
     optional: true
 
+  # ---- lifestyle (students of the week, honor rolls, weddings; polled with the daily fetch)
+  - id: gn-rgv-lifestyle
+    name: Valley lifestyle (student of the week, honor roll, weddings)
+    url: https://news.google.com/rss/search?q=%22student+of+the+week%22+OR+%22athlete+of+the+week%22+OR+%22honor+roll%22+OR+wedding+OR+engagement+(%22Rio+Grande+Valley%22+OR+McAllen+OR+Edinburg+OR+Brownsville+OR+Harlingen+OR+Weslaco)+when:7d&hl=en-US&gl=US&ceid=US:en
+    kind: local
+    aggregator: true
+    limit: 25
+  - id: gn-krgv-lifestyle
+    name: KRGV lifestyle features (via Google News)
+    url: https://news.google.com/rss/search?q=site:krgv.com+(%22student+of+the+week%22+OR+%22athlete+of+the+week%22+OR+%22honor+roll%22+OR+wedding)+when:14d&hl=en-US&gl=US&ceid=US:en
+    kind: local
+    aggregator: true
+    limit: 20
+  - id: gn-valleycentral-lifestyle
+    name: ValleyCentral lifestyle features (via Google News)
+    url: https://news.google.com/rss/search?q=site:valleycentral.com+(%22student+of+the+week%22+OR+%22athlete+of+the+week%22+OR+%22honor+roll%22+OR+wedding)+when:14d&hl=en-US&gl=US&ceid=US:en
+    kind: local
+    aggregator: true
+    limit: 20
+
 # ---- "What's Happening in Tech" fallback wires (NOT polled by the breaking watch; read by tools/tech_wires.py).
 # Used only when no Fast Company Daily issue from the last 48 hours is found in Drew's Gmail (see packet/README.md).
 # status (verified 2026-11-19): all 200 OK, RSS/Atom.

@@ -101,10 +101,10 @@
         "score": 18,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 18: 1 outlet 6 + recency 11.7 (9h old)",
+        "scoreWhy": "Score 18: 1 outlet 6 + recency 11.6 (9h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 11.7,
+          "recency": 11.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -135,10 +135,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 5.4 (23h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 5.3 (23h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.4,
+          "recency": 5.3,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -168,10 +168,10 @@
         "score": 12,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 12: 1 outlet 6 + recency 6 (21h old)",
+        "scoreWhy": "Score 12: 1 outlet 6 + recency 5.9 (21h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.0,
+          "recency": 5.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -265,10 +265,10 @@
             "published": "2026-11-19T13:31:00-06:00"
           }
         ],
-        "score": 11,
+        "score": 10,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.5 (26h old)",
+        "scoreWhy": "Score 10: 1 outlet 6 + recency 4.5 (26h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 4.5,
@@ -298,10 +298,10 @@
             "published": "2026-11-18T18:31:00-06:00"
           }
         ],
-        "score": 8,
+        "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.5 (45h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 1.5 (45h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 1.5,
@@ -335,10 +335,10 @@
         "score": 18,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 18: 1 outlet 6 + recency 11.7 (9h old)",
+        "scoreWhy": "Score 18: 1 outlet 6 + recency 11.6 (9h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 11.7,
+          "recency": 11.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -369,10 +369,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.6 (26h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.5 (26h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 4.6,
+          "recency": 4.5,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -403,10 +403,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 5.1 (24h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 5 (24h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.1,
+          "recency": 5.0,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -442,10 +442,10 @@
         "score": 18,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 18: 1 outlet 6 + recency 11.7 (9h old)",
+        "scoreWhy": "Score 18: 1 outlet 6 + recency 11.6 (9h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 11.7,
+          "recency": 11.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -511,10 +511,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 5.1 (24h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 5 (24h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.1,
+          "recency": 5.0,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -550,10 +550,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.8 (19h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.7 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.8,
+          "recency": 6.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -587,10 +587,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 5 (24h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.9 (24h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.0,
+          "recency": 4.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -1653,13 +1653,13 @@
           "published": "2026-11-20T18:00:00+00:00"
         }
       ],
-      "score": 43,
+      "score": 42,
       "label": "Trending",
       "uncovered": false,
-      "scoreWhy": "Score 43: 1 outlet 6 + recency 16.5 (3h old) + X 20",
+      "scoreWhy": "Score 42: 1 outlet 6 + recency 16.4 (3h old) + X 20",
       "scoreParts": {
         "outlets": 6,
-        "recency": 16.5,
+        "recency": 16.4,
         "x": 20.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -4362,7 +4362,7 @@
     "words": 103,
     "template": "daily"
   },
-  "generatedAt": "2026-11-20T21:16:54+00:00",
+  "generatedAt": "2026-11-20T21:28:27+00:00",
   "sources": [
     {
       "section": "Top headlines: RGV",
