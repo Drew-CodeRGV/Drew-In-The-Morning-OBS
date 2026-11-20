@@ -62,10 +62,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 5 (24h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.7 (25h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.0,
+          "recency": 4.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -98,13 +98,13 @@
             "published": "2026-11-20T06:00:00-06:00"
           }
         ],
-        "score": 20,
+        "score": 19,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 20: 1 outlet 6 + recency 13.8 (6h old)",
+        "scoreWhy": "Score 19: 1 outlet 6 + recency 13.1 (7h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 13.8,
+          "recency": 13.1,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -135,10 +135,10 @@
         "score": 12,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 12: 1 outlet 6 + recency 6.3 (20h old)",
+        "scoreWhy": "Score 12: 1 outlet 6 + recency 6 (21h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.3,
+          "recency": 6.0,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -168,10 +168,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.7 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -198,13 +198,13 @@
             "published": "2026-11-19T11:10:00-06:00"
           }
         ],
-        "score": 11,
+        "score": 10,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.6 (25h old)",
+        "scoreWhy": "Score 10: 1 outlet 6 + recency 4.4 (26h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 4.6,
+          "recency": 4.4,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -235,10 +235,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.6 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -268,10 +268,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 5.3 (23h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 5 (24h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.3,
+          "recency": 5.0,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -301,10 +301,10 @@
         "score": 8,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.8 (42h old)",
+        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.7 (43h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.8,
+          "recency": 1.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -332,13 +332,13 @@
             "published": "2026-11-20T06:00:00-06:00"
           }
         ],
-        "score": 20,
+        "score": 19,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 20: 1 outlet 6 + recency 13.8 (6h old)",
+        "scoreWhy": "Score 19: 1 outlet 6 + recency 13.1 (7h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 13.8,
+          "recency": 13.1,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -369,10 +369,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 5.4 (23h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 5.1 (24h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.4,
+          "recency": 5.1,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -403,10 +403,10 @@
         "score": 12,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 12: 1 outlet 6 + recency 6 (21h old)",
+        "scoreWhy": "Score 12: 1 outlet 6 + recency 5.7 (22h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.0,
+          "recency": 5.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -439,13 +439,13 @@
             "published": "2026-11-20T06:00:00-06:00"
           }
         ],
-        "score": 20,
+        "score": 19,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 20: 1 outlet 6 + recency 13.8 (6h old)",
+        "scoreWhy": "Score 19: 1 outlet 6 + recency 13.1 (7h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 13.8,
+          "recency": 13.1,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -477,10 +477,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.7 (25h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.5 (26h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 4.7,
+          "recency": 4.5,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -511,10 +511,10 @@
         "score": 12,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 12: 1 outlet 6 + recency 6 (21h old)",
+        "scoreWhy": "Score 12: 1 outlet 6 + recency 5.7 (22h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.0,
+          "recency": 5.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -550,10 +550,10 @@
         "score": 14,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 14: 1 outlet 6 + recency 7.9 (16h old)",
+        "scoreWhy": "Score 14: 1 outlet 6 + recency 7.6 (17h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.9,
+          "recency": 7.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -587,10 +587,10 @@
         "score": 12,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 12: 1 outlet 6 + recency 5.8 (21h old)",
+        "scoreWhy": "Score 12: 1 outlet 6 + recency 5.6 (22h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.8,
+          "recency": 5.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -763,14 +763,14 @@
     "note": "McAllen / Rio Grande Valley; NWS Brownsville (BRO) forecast",
     "now": {
       "tempF": 81,
-      "cond": "Clear",
-      "icon": "sun",
-      "at": "2026-11-20T18:00:00+00:00",
+      "cond": "Partly Cloudy",
+      "icon": "partly",
+      "at": "2026-11-20T19:00:00+00:00",
       "source": "KMFE observation"
     },
     "office": "BRO",
     "city": "McAllen",
-    "updated": "2026-11-20T17:45:12+00:00",
+    "updated": "2026-11-20T18:56:04+00:00",
     "days": [
       {
         "date": "2026-11-20",
@@ -778,8 +778,8 @@
         "dateLabel": "Nov 20",
         "hi": 79,
         "lo": 63,
-        "short": "Partly Sunny",
-        "icon": "partly",
+        "short": "Mostly Cloudy",
+        "icon": "cloud",
         "pop": 0,
         "wind": "ENE 6 mph"
       },
@@ -792,61 +792,61 @@
         "short": "Mostly Sunny",
         "icon": "partly",
         "pop": 2,
-        "wind": "SE 5 to 9 mph"
+        "wind": "SE 5 to 10 mph"
       },
       {
         "date": "2026-11-22",
         "label": "Sun",
         "dateLabel": "Nov 22",
-        "hi": 81,
+        "hi": 82,
         "lo": 59,
         "short": "Partly Sunny then Showers And Thunderstorms Likely",
         "icon": "storm",
-        "pop": 75,
+        "pop": 80,
         "wind": "NE 6 mph"
       },
       {
         "date": "2026-11-23",
         "label": "Mon",
         "dateLabel": "Nov 23",
-        "hi": 67,
+        "hi": 69,
         "lo": 57,
-        "short": "Showers And Thunderstorms Likely",
+        "short": "Chance Showers And Thunderstorms then Mostly Cloudy",
         "icon": "storm",
-        "pop": 55,
-        "wind": "N 6 to 12 mph"
+        "pop": 43,
+        "wind": "N 6 to 13 mph"
       },
       {
         "date": "2026-11-24",
         "label": "Tue",
         "dateLabel": "Nov 24",
-        "hi": 68,
-        "lo": 54,
-        "short": "Slight Chance Rain Showers",
-        "icon": "rain",
-        "pop": 19,
+        "hi": 71,
+        "lo": 53,
+        "short": "Mostly Cloudy",
+        "icon": "cloud",
+        "pop": 8,
         "wind": "N 8 mph"
       },
       {
         "date": "2026-11-25",
         "label": "Wed",
         "dateLabel": "Nov 25",
-        "hi": 65,
-        "lo": 51,
+        "hi": 67,
+        "lo": 49,
         "short": "Sunny",
         "icon": "sun",
-        "pop": 3,
-        "wind": "N 6 to 9 mph"
+        "pop": 1,
+        "wind": "N 6 to 10 mph"
       },
       {
         "date": "2026-11-26",
         "label": "Thu",
         "dateLabel": "Nov 26",
         "hi": 68,
-        "lo": 57,
+        "lo": 56,
         "short": "Mostly Sunny",
         "icon": "partly",
-        "pop": 14,
+        "pop": 15,
         "wind": "NE 6 mph"
       }
     ],
@@ -1273,50 +1273,6 @@
   },
   "trending": [
     {
-      "verified": false,
-      "confirm": "X trend only; no news story opened. CONFIRM BEFORE AIR",
-      "print": false,
-      "image_url": "",
-      "image_credit": "",
-      "video_url": "",
-      "links": [],
-      "id": "bts-mama",
-      "title": "BTS fans flood X voting for the MAMA Awards",
-      "category": "music",
-      "one_line": "#VOTEFORBTS, #DAESANGFORBTS and 'OUR CHOICE IS BTS AT MAMA' are top U.S. X trends (about 90,000 posts each).",
-      "suggested_angle": "If your teen's been glued to the phone, they might be voting. ARMY does not sleep.",
-      "source_url": "https://x.com/search?q=%23VOTEFORBTS",
-      "source": "X trends · Nov 20",
-      "short": "BTS fans storm X for MAMA votes",
-      "x": {
-        "posts": 97447,
-        "engagement": 0
-      },
-      "isConfirm": true,
-      "sources": [
-        {
-          "name": "X trends",
-          "domain": "x.com",
-          "url": "https://x.com/search?q=%23VOTEFORBTS",
-          "local": false,
-          "published": "2026-11-20T18:00:00+00:00"
-        }
-      ],
-      "score": 45,
-      "label": "Hot",
-      "uncovered": false,
-      "scoreWhy": "Score 45: 1 outlet 6 + recency 19.5 (0h old) + X 20",
-      "scoreParts": {
-        "outlets": 6,
-        "recency": 19.5,
-        "x": 20.0,
-        "trends": 0.0,
-        "chatter": 0.0
-      },
-      "dupes": 0,
-      "ord": 7
-    },
-    {
       "verified": true,
       "confirm": "",
       "print": true,
@@ -1369,10 +1325,10 @@
       "score": 23,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 23: 3 outlets 18 + recency 4.9 (24h old)",
+      "scoreWhy": "Score 23: 3 outlets 18 + recency 4.6 (25h old)",
       "scoreParts": {
         "outlets": 18,
-        "recency": 4.9,
+        "recency": 4.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1422,10 +1378,10 @@
       "score": 17,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 17: 2 outlets 12 + recency 4.9 (24h old)",
+      "scoreWhy": "Score 17: 2 outlets 12 + recency 4.6 (25h old)",
       "scoreParts": {
         "outlets": 12,
-        "recency": 4.9,
+        "recency": 4.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1520,10 +1476,10 @@
       "score": 11,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 11: 1 outlet 6 + recency 4.9 (24h old)",
+      "scoreWhy": "Score 11: 1 outlet 6 + recency 4.6 (25h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 4.9,
+        "recency": 4.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1576,10 +1532,10 @@
       "score": 37,
       "label": "Trending",
       "uncovered": false,
-      "scoreWhy": "Score 37: 2 outlets 12 + recency 4.9 (24h old) + X 20",
+      "scoreWhy": "Score 37: 2 outlets 12 + recency 4.6 (25h old) + X 20",
       "scoreParts": {
         "outlets": 12,
-        "recency": 4.9,
+        "recency": 4.6,
         "x": 20.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1616,10 +1572,10 @@
       "score": 11,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 11: 1 outlet 6 + recency 4.9 (24h old)",
+      "scoreWhy": "Score 11: 1 outlet 6 + recency 4.6 (25h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 4.9,
+        "recency": 4.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1656,16 +1612,60 @@
       "score": 11,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 11: 1 outlet 6 + recency 4.9 (24h old)",
+      "scoreWhy": "Score 11: 1 outlet 6 + recency 4.6 (25h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 4.9,
+        "recency": 4.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
       },
       "dupes": 0,
       "ord": 6
+    },
+    {
+      "verified": false,
+      "confirm": "X trend only; no news story opened. CONFIRM BEFORE AIR",
+      "print": false,
+      "image_url": "",
+      "image_credit": "",
+      "video_url": "",
+      "links": [],
+      "id": "bts-mama",
+      "title": "BTS fans flood X voting for the MAMA Awards",
+      "category": "music",
+      "one_line": "#VOTEFORBTS, #DAESANGFORBTS and 'OUR CHOICE IS BTS AT MAMA' are top U.S. X trends (about 90,000 posts each).",
+      "suggested_angle": "If your teen's been glued to the phone, they might be voting. ARMY does not sleep.",
+      "source_url": "https://x.com/search?q=%23VOTEFORBTS",
+      "source": "X trends · Nov 20",
+      "short": "BTS fans storm X for MAMA votes",
+      "x": {
+        "posts": 97447,
+        "engagement": 0
+      },
+      "isConfirm": true,
+      "sources": [
+        {
+          "name": "X trends",
+          "domain": "x.com",
+          "url": "https://x.com/search?q=%23VOTEFORBTS",
+          "local": false,
+          "published": "2026-11-20T18:00:00+00:00"
+        }
+      ],
+      "score": 44,
+      "label": "Trending",
+      "uncovered": false,
+      "scoreWhy": "Score 44: 1 outlet 6 + recency 18.5 (1h old) + X 20",
+      "scoreParts": {
+        "outlets": 6,
+        "recency": 18.5,
+        "x": 20.0,
+        "trends": 0.0,
+        "chatter": 0.0
+      },
+      "dupes": 0,
+      "ord": 7
     }
   ],
   "up_to": [
@@ -3337,7 +3337,7 @@
       "signature": false,
       "weave": null,
       "talkingPoints": [
-        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Friday, November 20th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young as 10 (testing in Austin), and what a 10-year-old. It's 81 and clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Friday, November 20th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young as 10 (testing in Austin), and what a 10-year-old. It's 81 and partly cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
         "JINGLE: Drew in the Morning. Your Valley, your news, your morning.",
         "JINGLE: \"Drew in the Morning. Your Valley, your news, your morning.\" (alternates in cold-open.md)",
         "COLD OPEN: read the paragraph the packet builds each morning (card at the top of the studio page; also in the PDF, txt and email, and in obs-data.json under coldOpen). It is one flowing paragraph, about 25 seconds, filled with today's real headlines.",
@@ -4338,8 +4338,8 @@
   "scoring": {
     "merged": 0,
     "items": 27,
-    "hot": 1,
-    "trending": 2,
+    "hot": 0,
+    "trending": 3,
     "active": 24,
     "uncovered": 0,
     "trends": {
@@ -4352,17 +4352,17 @@
     "trendsNote": "Google Trends US-TX 10 + US 10 items, fetched 2026-11-20T03:00:46+00:00 (cache)"
   },
   "coldOpen": {
-    "text": "Good morning, Rio Grande Valley! It's Friday, November 20th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young as 10 (testing in Austin), and what a 10-year-old. It's 81 and clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+    "text": "Good morning, Rio Grande Valley! It's Friday, November 20th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young as 10 (testing in Austin), and what a 10-year-old. It's 81 and partly cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
     "jingle": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [
       "Wake up, RGV. It's Drew in the Morning.",
       "From McAllen to the world, this is Drew in the Morning."
     ],
     "confirm": [],
-    "words": 103,
+    "words": 104,
     "template": "daily"
   },
-  "generatedAt": "2026-11-20T18:28:55+00:00",
+  "generatedAt": "2026-11-20T19:21:49+00:00",
   "sources": [
     {
       "section": "Top headlines: RGV",
@@ -4606,11 +4606,6 @@
     },
     {
       "section": "Trending News",
-      "label": "BTS fans flood X voting for the MAMA Awards",
-      "url": "https://x.com/search?q=%23VOTEFORBTS"
-    },
-    {
-      "section": "Trending News",
       "label": "Fiona the hippo dies at the Cincinnati Zoo after swallowing a visitor's knit hat",
       "url": "https://cincinnatizoo.org/beloved-hippo-fiona-has-passed-away/"
     },
@@ -4668,6 +4663,11 @@
       "section": "Trending News",
       "label": "Jazz snap the Lakers' nine-game win streak; Giannis leads the Heat past his old team",
       "url": "https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/"
+    },
+    {
+      "section": "Trending News",
+      "label": "BTS fans flood X voting for the MAMA Awards",
+      "url": "https://x.com/search?q=%23VOTEFORBTS"
     },
     {
       "section": "Run of show: C",

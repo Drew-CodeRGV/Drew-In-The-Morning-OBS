@@ -74,12 +74,12 @@ function mock(){const msgs={},cl={},items={doc:{v:1,items:{}}},puts=[];let n=0;
  const after=JSON.stringify(await p.evaluate(()=>window.DITM.state()));
  ok(JSON.parse(after).idx===JSON.parse(before).idx&&JSON.parse(after).visible===JSON.parse(before).visible&&!JSON.parse(after).running,'garbage / non-whitelisted input changes nothing '+after);
  ok(await p.evaluate(()=>!document.body.innerHTML.includes('<img src=x')&&!document.querySelector('script[src]')),'no injection into page');
- // ======== B2. logo state (bar off, only the small sun bug bottom-right) ========
+ // ======== B2. logo state (clean screen: bar/guest/caller off, no chyron bug) ========
  const lg=()=>p.evaluate(()=>{const e=document.getElementById('lg'),r=e.getBoundingClientRect();return{on:e.classList.contains('on'),r:[r.left,r.top,r.right,r.bottom],h:r.height,ok:e.complete&&e.naturalWidth>0,bar:document.getElementById('lt').classList.contains('in'),op:getComputedStyle(e).opacity}});
  await p.evaluate(()=>window.DITM.cmd({cmd:'goto',idx:3}));await sleep(900);let lo=await lg();ok(lo.bar&&!lo.on&&+lo.op===0,'topic showing: bar in, logo bug hidden');
  await p.evaluate(()=>window.dispatchEvent(new CustomEvent('ditm',{detail:{cmd:'logo'}})));await sleep(900);lo=await lg();st=await p.evaluate(()=>window.DITM.state());
- ok(!lo.bar&&lo.on&&!st.visible&&st.logo,'logo: bar gone, bug on');ok(lo.ok,'logo image loaded');ok(Math.abs(lo.h-170)<=2,'logo ~170px tall ('+lo.h+')');
- ok(Math.abs(lo.r[2]-1880)<=1&&Math.abs(lo.r[3]-1040)<=1,'logo 40px from the right and bottom ('+lo.r+')');ok(lo.r[0]>1500,'logo clear of the bar area');
+ ok(!lo.bar&&!lo.on&&+lo.op===0&&!st.visible&&st.logo,'logo: clean screen (bar off, chyron bug stays hidden)');
+ const logoShot='/tmp/ditm-logo-mode.png';await p.screenshot({path:logoShot,omitBackground:true});
  for(const c of [{cmd:'next'},{cmd:'prev'},{cmd:'goto',idx:6},{cmd:'show'}]){await p.evaluate(()=>window.DITM.cmd({cmd:'logo'}));await sleep(100);await p.evaluate(c=>window.DITM.cmd(c),c);await sleep(700);lo=await lg();ok(lo.bar&&!lo.on,c.cmd+' brings the bar back and hides the logo');}
  await p.evaluate(()=>window.DITM.cmd({cmd:'logo'}));await sleep(100);await p.evaluate(()=>window.DITM.cmd({cmd:'clear'}));await sleep(700);lo=await lg();st=await p.evaluate(()=>window.DITM.state());ok(!lo.bar&&!lo.on&&!st.logo&&!st.visible,'clear hides both');
  await p.evaluate(()=>window.DITM.cmd({cmd:'logo'}));await p.evaluate(()=>window.DITM.cmd({cmd:'logo'}));st=await p.evaluate(()=>window.DITM.state());ok(st.logo&&!st.visible,'logo twice is harmless');
@@ -205,7 +205,7 @@ function mock(){const msgs={},cl={},items={doc:{v:1,items:{}}},puts=[];let n=0;
  await p.evaluate(()=>{window.DITM.cmd({cmd:'resume'});window.DITM.cmd({cmd:'resume'})});let s2=await p.evaluate(()=>window.DITM.state());ok(Math.abs(s2.elapsedMin-s1b.elapsedMin)<0.05&&!s2.held,'double hold / double resume harmless');
  // logo while auto-advance runs: stays hidden, keeps counting, 'show' brings back the current block
  await p.evaluate(()=>window.DITM.cmd({cmd:'goto',idx:2}));await sleep(300);await p.evaluate(()=>window.DITM.cmd({cmd:'logo'}));st=await p.evaluate(()=>window.DITM.state());ok(st.running&&st.logo&&!st.visible&&st.idx===2,'logo during auto-advance keeps running');
- await p.evaluate(b=>window.__adv((b[3].offset-b[2].offset)*60000+3000),blocks);await sleep(700);st=await p.evaluate(()=>window.DITM.state());lo=await lg();ok(st.idx===3&&st.logo&&!st.visible&&!lo.bar&&lo.on,'advances to block 3 under the logo, bar stays hidden');
+ await p.evaluate(b=>window.__adv((b[3].offset-b[2].offset)*60000+3000),blocks);await sleep(700);st=await p.evaluate(()=>window.DITM.state());lo=await lg();ok(st.idx===3&&st.logo&&!st.visible&&!lo.bar&&!lo.on,'advances to block 3 under logo mode, screen stays clean');
  await p.evaluate(()=>window.DITM.cmd({cmd:'show'}));await sleep(700);st=await p.evaluate(()=>window.DITM.state());lo=await lg();ok(st.idx===3&&st.visible&&!st.logo&&lo.bar&&!lo.on,'show returns to the current block');
  // goto/next/prev while running re-times the show
  await p.evaluate(()=>window.DITM.cmd({cmd:'goto',idx:7}));await sleep(500);st=await p.evaluate(()=>window.DITM.state());ok(st.idx===7&&st.running&&Math.abs(st.elapsedMin-blocks[7].offset)<0.1,'goto while running re-times to block 7');

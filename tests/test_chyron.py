@@ -40,10 +40,17 @@ class ChyronBuild(unittest.TestCase):
         self.assertIn("data:image/png;base64", h)          # logo bug embedded
         self.assertNotIn("id=\"bug\"", h)                  # old logo bug removed from the bar
         self.assertIn("left:30px;bottom:26px", h.replace(" ", ""))   # small title-safe margin (about half the old 60/50)
-        self.assertIn('id="lg"', h)                         # the small sun logo shown by the 'logo' command
+        self.assertIn('id="lg"', h)
+        self.assertIn("#lg{display:none", h.replace(" ", ""))  # logo mode is a clean screen; the OBS scene already has the bug
         self.assertNotIn("id=\"seg\"", h)
         self.assertNotIn("id=\"letter\"", h)
         self.assertIn("background:transparent", h.replace(" ", ""))
+
+    def test_logo_mode_is_a_clean_screen(self):
+        t = self.html
+        self.assertIn("S.cshow=false", t)
+        self.assertIn("never draw the chyron's own bug", t)
+        self.assertNotIn("$('lg').classList.toggle('on',!!S.logo)", t)
 
     def test_bug_asset_published(self):
         from PIL import Image
@@ -141,11 +148,25 @@ class SendToChyron(unittest.TestCase):
             self.assertTrue(v["headline"].startswith("Remembering "))
             self.assertNotRegex((v["headline"] + " " + v["line"]).lower(), r"cancer|died|death|cause|passed away|accident|suicide|overdose|covid")
 
+    def test_every_card_has_a_button(self):
+        # every story/article card on the dashboard (all sections) has a Chyron button
+        cards = len(re.findall(r'<div class="(?:item|ob)\b', self.studio))
+        btns = self.studio.count('class="chysend"')
+        self.assertGreater(cards, 50)
+        self.assertEqual(cards, btns, f"{cards} cards vs {btns} buttons")
+        self.assertIn("function adhocId", open(os.path.join(ROOT, "packet", "build_packet.py")).read())
+
     def test_chyron_only_looks_up_ids(self):
         t = open(os.path.join(ROOT, "companion", "chyron.template.html")).read()
         self.assertIn("ITEM_RX=/^i-[0-9a-f]{10}$/", t)
+        self.assertIn("ADHOC_RX=/^a-[0-9a-f]{10}$/", t)
         self.assertIn("chyron-items.json", t)
-        self.assertNotIn("c.headline", t); self.assertNotIn("c.line", t); self.assertNotIn("c.text", t)   # nothing from the message body is ever displayed
+        # registered i- ids still take words only from the published JSON, never from the message
+        self.assertIn("words come ONLY from chyron-items.json, never from the message", t)
+        # ad-hoc (breaking, etc.) may carry a capped headline/line, shown with textContent
+        self.assertIn("ctext(c.headline,100)", t)
+        self.assertIn("ctext(c.line,118)", t)
+        self.assertNotIn("innerHTML", t)
 
 
 class GuestAndCaller(unittest.TestCase):
@@ -183,10 +204,40 @@ class GuestAndCaller(unittest.TestCase):
             self.assertNotRegex(s, r"ditm-ros-[0-9a-f]{6,}")
 
 
+
+class BroadcastBar(unittest.TestCase):
+    """The sticky top bar is a broadcast control strip on the root studio page, with Guest and Caller always visible."""
+    @classmethod
+    def setUpClass(cls):
+        cls.d = open(os.path.join(ROOT, "packet", "build_packet.py")).read()
+
+    def test_strip_buttons_are_always_in_the_markup(self):
+        for needle in ('id="mc"', 'id="mc-guest"', 'id="mc-caller"', 'id="mc-logo"', 'id="ssbtn"', 'id="chhold"', 'id="chprev"', 'id="chnext"', 'id="chclr"', 'id="mc-pill"', 'id="mc-more"'):
+            self.assertIn(needle, self.d, needle)
+
+    def test_guest_and_caller_are_modals_not_hidden_behind_chy_on(self):
+        self.assertIn('id="g-dlg"', self.d)
+        self.assertIn('id="c-dlg"', self.d)
+        self.assertIn('id="link-dlg"', self.d)
+        self.assertIn("Link this device", self.d)
+        self.assertIn("function needLink", self.d)
+        self.assertNotIn("body.chy-on .gp{display:block}", self.d)
+        # the unlinked state still shows GUEST/CALLER/LOGO; they open the link prompt
+        self.assertIn("openDlg('link-dlg')", self.d)
+        self.assertIn("openDlg('g-dlg')", self.d)
+        self.assertIn("send('logo')", self.d)
+
+    def test_link_prompt_does_not_embed_a_topic(self):
+        self.assertNotRegex(self.d, r"ditm-ros-[0-9a-f]{6,}")
+        self.assertIn("?ctl=", self.d)
+
+    def test_root_url_is_the_studio_dashboard(self):
+        self.assertIn('open(os.path.join(docs, "index.html"), "w").write(studio_html', self.d)
+
 class DashboardLink(unittest.TestCase):
     def test_dashboard_has_hold_and_ntfy(self):
         s = open(os.path.join(ROOT, "packet", "build_packet.py")).read()
-        for needle in ('id="chhold"', 'id="mb-hold"', "https://ntfy.sh", "window.ditmRos", "ditm-chyron-topic-v1"):
+        for needle in ('id="chhold"', 'id="mc-guest"', "https://ntfy.sh", "window.ditmRos", "ditm-chyron-topic-v1"):
             self.assertIn(needle, s)
         self.assertNotRegex(s, r"ditm-ros-[0-9a-f]{6,}")
 

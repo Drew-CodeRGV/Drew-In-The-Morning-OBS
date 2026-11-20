@@ -25,8 +25,8 @@ COLD OPEN (read aloud, about 45 seconds)
   the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the
   National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And
   in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young
-  as 10 (testing in Austin), and what a 10-year-old. It's 81 and clear outside, the coffee's
-  hot, so stick around, this is Drew in the Morning.
+  as 10 (testing in Austin), and what a 10-year-old. It's 81 and partly cloudy outside, the
+  coffee's hot, so stick around, this is Drew in the Morning.
   JINGLE: Drew in the Morning. Your Valley, your news, your morning.
 
 WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min, from the family calendar) · 6 from the week
@@ -46,14 +46,14 @@ WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min, from the family calendar) · 6
     work, private or unsure); 6 qualifying occurrences used. Names never leave this note.
 
 STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README.md). 27
-  stories, 0 duplicate(s) merged, 1 hot, 2 trending, 0 uncovered lead(s). Google Trends US-
+  stories, 0 duplicate(s) merged, 0 hot, 3 trending, 0 uncovered lead(s). Google Trends US-
   TX 10 + US 10 items, fetched 2026-11-20T03:00:46+00:00 (cache).
 
 TOP HEADLINES · RGV FIRST
   - [ACT 11] McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan.
     14 deadline still stands (KRGV · Nov 19)
     https://www.krgv.com/news/mcallen-food-truck-owners-call-for-extension-on-park-closure
-  - [ACT 20] La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and
+  - [ACT 19] La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and
     Paredes elementaries) after losing 10,008 students in a decade (Daily McAllen · Nov 20)
     https://dailymcallen.com/local-news/editions/11-20-2026
   - [ACT 12] SpaceX responds after Cameron County rejects its data center tax break, says
@@ -62,7 +62,7 @@ TOP HEADLINES · RGV FIRST
   - [ACT 13] FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and
     landings a year at Starbase; next session Friday 5:30 PM (ValleyCentral · Nov 19)
     https://www.valleycentral.com/news/local-news/faa-holds-virtual-hearing-on-spacex-proposal-for-more-rocket-launches/
-  - [ACT 11] Rep. Vicente Gonzalez's 'Hands Off Our Boca Chica Beach Act' clears the House
+  - [ACT 10] Rep. Vicente Gonzalez's 'Hands Off Our Boca Chica Beach Act' clears the House
     Natural Resources Committee (ValleyCentral · Nov 19)
     https://www.valleycentral.com/news/local-news/hands-off-our-boca-chica-beach-act-advances/
   - [ACT 13] Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some
@@ -74,7 +74,7 @@ TOP HEADLINES · RGV FIRST
   - [ACT 8] Roma's bridge is now the fastest-growing truck port on the Southwest border
     (imports up 17x since 2019) (Border Report · Nov 18-19)
     https://www.borderreport.com/news/trade/roma-bridge-fastest-growing-for-truck-traffic-on-southwest-border/
-  - [ACT 20] RioPlex says $110 billion in industrial, energy and data center investment is
+  - [ACT 19] RioPlex says $110 billion in industrial, energy and data center investment is
     headed to the Valley (Daily McAllen · Nov 20)
     https://dailymcallen.com/local-news/editions/11-20-2026
   - [ACT 11] Mission approves voluntary drug testing for the mayor and council (mandatory
@@ -83,7 +83,7 @@ TOP HEADLINES · RGV FIRST
   - [ACT 12] Brownsville ISD swears in trustees and elects Denise Garza board president
     (MyRGV · Nov 19)
     https://myrgv.com/local-news/2026/11/19/brownsville-isd-board-elects-denise-garza-as-president/
-  - [ACT 20] Palenque Hidalgo opens today at Payne Arena (360-degree stage, tickets from
+  - [ACT 19] Palenque Hidalgo opens today at Payne Arena (360-degree stage, tickets from
     $20; Tito Double P headlines) (Daily McAllen · Nov 20)
     https://dailymcallen.com/local-news/editions/11-20-2026
   - [ACT 11] USDA confirms the Valley's fifth screwworm case (first in Hidalgo County);
@@ -123,11 +123,6 @@ CHISME · what the Valley is buzzing about · RUMOR · CONFIRM BEFORE AIR · las
       Riff: Have you tried turning your attitude off and on again, Your Honor?
 
 TRENDING NEWS · what's trending around the nation (separate from the National Desk)
-- [HOT 45] BTS fans flood X voting for the MAMA Awards  [music]  [CONFIRM BEFORE AIR: X trend only; no news story opened. CONFIRM BEFORE AIR]
-    SUMMARY: #VOTEFORBTS, #DAESANGFORBTS and 'OUR CHOICE IS BTS AT MAMA' are top U.S. X
-      trends (about 90,000 posts each).
-    RIFF: If your teen's been glued to the phone, they might be voting. ARMY does not sleep.
-    X trends · Nov 20: https://x.com/search?q=%23VOTEFORBTS
 - [ACT 23] Fiona the hippo dies at the Cincinnati Zoo after swallowing a visitor's knit hat  [viral / animals]
     SUMMARY: Nov 19: the zoo said Fiona, 9, died after a hat a visitor tossed was caught by
       a ceiling fan and flung into her habitat; vets tried everything short of surgery.
@@ -174,6 +169,11 @@ TRENDING NEWS · what's trending around the nation (separate from the National D
       137-130 with Giannis at 27-13-9 in his first game against the Bucks.
     RIFF: The three-win Jazz ended the Lakers' run. Any given Wednesday.
     Field Level Media · Nov 19: https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/
+- [TREND 44] BTS fans flood X voting for the MAMA Awards  [music]  [CONFIRM BEFORE AIR: X trend only; no news story opened. CONFIRM BEFORE AIR]
+    SUMMARY: #VOTEFORBTS, #DAESANGFORBTS and 'OUR CHOICE IS BTS AT MAMA' are top U.S. X
+      trends (about 90,000 posts each).
+    RIFF: If your teen's been glued to the phone, they might be voting. ARMY does not sleep.
+    X trends · Nov 20: https://x.com/search?q=%23VOTEFORBTS
 
 THE NATIONAL DESK (smaller; local leads)
 - [ACT 20] WALL STREET'S LONGEST LOSING STREAK SINCE 2024: DOW DROPS 1,100 AS AI STOCKS SLIDE, EVEN WITH ANTHROPIC'S IPO POP
@@ -310,15 +310,15 @@ REMEMBERING OUR NEIGHBORS (read near the close, block L) · 57 obituaries from T
   Source page: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor
 
 WEATHER · McALLEN / RGV (National Weather Service BRO (api.weather.gov))
-  Fri Nov 20  << SHOW DAY Partly Sunny, high 79F / low 63F, rain 0%, wind ENE 6 mph
-  Sat Nov 21  Mostly Sunny, high 83F / low 68F, rain 2%, wind SE 5 to 9 mph
-  Sun Nov 22  Partly Sunny then Showers And Thunderstorms Likely, high 81F / low 59F, rain 75%, wind NE 6 mph
-  Mon Nov 23  Showers And Thunderstorms Likely, high 67F / low 57F, rain 55%, wind N 6 to 12 mph
-  Tue Nov 24  Slight Chance Rain Showers, high 68F / low 54F, rain 19%, wind N 8 mph
-  Wed Nov 25  Sunny, high 65F / low 51F, rain 3%, wind N 6 to 9 mph
-  Thu Nov 26  Mostly Sunny, high 68F / low 57F, rain 14%, wind NE 6 mph
+  Fri Nov 20  << SHOW DAY Mostly Cloudy, high 79F / low 63F, rain 0%, wind ENE 6 mph
+  Sat Nov 21  Mostly Sunny, high 83F / low 68F, rain 2%, wind SE 5 to 10 mph
+  Sun Nov 22  Partly Sunny then Showers And Thunderstorms Likely, high 82F / low 59F, rain 80%, wind NE 6 mph
+  Mon Nov 23  Chance Showers And Thunderstorms then Mostly Cloudy, high 69F / low 57F, rain 43%, wind N 6 to 13 mph
+  Tue Nov 24  Mostly Cloudy, high 71F / low 53F, rain 8%, wind N 8 mph
+  Wed Nov 25  Sunny, high 67F / low 49F, rain 1%, wind N 6 to 10 mph
+  Thu Nov 26  Mostly Sunny, high 68F / low 56F, rain 15%, wind NE 6 mph
   Alerts: none active
-  Updated 2026-11-20T17:45:12+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
+  Updated 2026-11-20T18:56:04+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
   NWS Brownsville office: https://www.weather.gov/bro/
   API: https://api.weather.gov/gridpoints/BRO/49,19/forecast
 
@@ -467,4 +467,4 @@ What your kids might be saying at school this week, and one line on how to bring
 NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-20 18:28 CT.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-20 19:21 CT.
