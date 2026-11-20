@@ -216,17 +216,17 @@ nb(id="A-cold-open", letter="A", title="Cold Open & Jingle", short="Cold Open", 
    follow=[], transitions=["Quick check-in on what I've been up to this week, then we jump into the Valley."], links=[L("Cold open template and jingle (cold-open.md)", "cold-open.md")],
    confirm=["Unconfirmed teased items are listed under the cold open on the studio page"])
 
-nb(id="B-up-to", letter="B", title="What I've Been Up To This Week", short="Up To", subject="Personal touchpoint (2-3 min): public-facing things Drew and Jess did this week, then straight into Local news",
+nb(id="B-up-to", letter="B", title="What I've Been Up To This Week", short="Up To", subject="Light family touchpoint (about 30 seconds, up to 3 min with Jess): school, music, clubs and family fun from Drew's family calendar, then straight into Local news",
    minutes=3, flex=True, trim_to=2, stretch_to=4, jess=False, color="#d1495b",
    headlines=["What I've been up to this week"],
-   chyrons=cy("B", [("What I've Been Up To", "This week · Drew & Jess"), ("This Week", "Talks, conferences & community events")]),
-   talking=["SCRIPT: read the paragraph the packet builds (field up_to_script; it appears on the studio page, PDF, txt, email and in obs-data.json under upTo). 2 to 3 minutes, conversational, then drop into Local news.",
-            "EVENTS: the list under the script (field up_to[]: date, title, type conference/presentation/meeting/appearance, who Drew/Jess, optional public link). Every item is CONFIRM BEFORE AIR: eyeball each one and cut anything you don't want said on air.",
-            "NO EVENTS: if nothing is found the script says so plainly (\"Quiet week on the calendar...\") and the packet notes \"No calendar events found\". Do not make something up.",
-            "PRIVACY (read on air): only public-facing participation: talks, conferences, panels, appearances, community events. Never personal, medical, financial, legal, client-confidential or private 1:1 meetings, and never name private individuals."],
-   follow=["Jess: anything from your week worth a mention (a school event, a community thing)? Ask live; nothing here is pre-filled for her."],
-   transitions=["Okay, enough about me. Let's get into the Valley.", "That's my week. Here's what the Valley's been up to."],
-   links=[], confirm=["Every up_to item: CONFIRM BEFORE AIR (Drew eyeballs the list)", "Calendar is not connected, so events come from email only"])
+   chyrons=cy("B", [("What I've Been Up To", "This week · Drew & Jess"), ("This Week", "School, music, clubs & family fun")]),
+   talking=["SCRIPT: read the paragraph the packet builds from Drew's FAMILY calendar (field up_to_script; it appears on the studio page, PDF, txt, email and in obs-data.json under upTo). About 20 to 40 seconds, light and conversational, then toss to Jess for one question and drop into Local news.",
+            "ITEMS: the list under the script (field up_to[]: date, label, category; on Mondays also up_to_coming[], the next 7 days). Recurring activities are one line each (\"chess club twice\"). Labels are generic: the kids are not named on air unless NAME_KIDS_ON_AIR is flipped to true in family-calendar.yml.",
+            "QUIET WEEK: if nothing qualifies the script says \"Quiet week on the family calendar\" and gives Jess an easy riff prompt. Do not make something up.",
+            "LEFT OFF THE AIR, always: medical or health, personal grooming, bills and money, work admin, support appointments, pick-ups and drop-offs, routine workouts, private reservations and dinners, other people's private parties, birthdays and retirements. When unsure it is left out. No conference or work talk; no Gmail in this block."],
+   follow=["Jess: what was your favorite part of the week? (One easy question, then on to the news.)"],
+   transitions=["Okay, enough about us. Let's get into the Valley.", "That's our week. Here's what the Valley's been up to."],
+   links=[], confirm=[])
 
 _c = OLD["B"]; _hw = OLD["H"]
 nb(id="C-local-news", letter="C", title="Local News", short="Local News", subject="Top Valley stories: the Starbase/SpaceX vote and launch, Overheard in the Valley, whatever broke this morning",
@@ -330,10 +330,13 @@ nb(id="K-listener-line", letter="K", title="Listener Line", short="Listeners", s
 _k = OLD["K"]
 nb(id="L-meme-close", letter="L", title="Meme of the Week & Close", short="Meme+Close", subject="What the kids are talking about (elementary, middle, high school; for parents), then the look-ahead and sign-off with Jess",
    minutes=4, flex=True, trim_to=3, stretch_to=6, jess=True, color="#ff7f50",
-   headlines=_k["headlines"] + _m["headlines"], chyrons=oc("L", ["k1", "k2", "k3", "m2", "m3", "m5"]),
-   talking=_k["talking"] + [_m["talking"][0], _m["talking"][2]],
-   follow=_k["follow"], transitions=["That's the fun stuff. Thanks for spending the hour with us. See you next time.", "Jingle out."],
-   links=_k["links"] + _m["links"], confirm=_k["confirm"] + _m["confirm"])
+   headlines=_k["headlines"] + _m["headlines"] + ["Remembering our neighbors: obituaries from The Monitor"],
+   chyrons=oc("L", ["k1", "k2", "k3", "m2", "m3", "m5"]) + [C("l7", "Remembering Our Neighbors", "Obituaries from The Monitor · Legacy.com")],
+   talking=_k["talking"] + [_m["talking"][0], _m["talking"][2],
+            "REMEMBERING OUR NEIGHBORS (about 45 seconds, after the memes and right before the look-ahead and sign-off, so the hour ends on a human note). Slow down, no music bed, no joke before or after. The names, ages and towns are auto-built each morning from The Monitor's obituaries on Legacy.com (card on the studio page: Remembering Our Neighbors). Read only a handful, then point listeners to the full list on the page.",
+            "NEVER mention how anyone died, and don't add details that aren't in the notice. If you aren't sure how to say a name, skip it or check the link first. If block L is running long, read three names and keep the pointer."],
+   follow=_k["follow"], transitions=["That's the fun stuff. Thanks for spending the hour with us. See you next time.", "Before we go, we want to take a moment to remember some of our neighbors. (Obituary read, then the sign-off.)", "Jingle out."],
+   links=_k["links"] + _m["links"] + [L("Legacy.com: The Monitor obituaries, McAllen", "https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor")], confirm=_k["confirm"] + _m["confirm"] + ["Obituary names and spellings come from Legacy.com; CONFIRM pronunciation before reading"])
 
 B[:] = NB
 assert [b["letter"] for b in B] == list("ABCDEFGHIJKL")

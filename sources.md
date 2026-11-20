@@ -20,6 +20,14 @@ Community posts are leads: confirm elsewhere, or mark them "community chatter, C
 
 - Nov 19, 2026: Reddit was not reachable from the box (block page on www.reddit.com JSON and HTML); use a browser session next run.
 
+## Obituaries (Legacy.com, public page, read by tools/obituaries.py)
+- **The Monitor obituaries, McAllen, TX on Legacy.com**: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor (add `&page=2`, `&page=3` for older pages). Feeds the "Remembering Our Neighbors" section and the respectful read near the close (block L). Each name links to its own Legacy notice, e.g. `https://www.legacy.com/us/obituaries/themonitor/name/<name>-obituary?id=<id>`.
+- Only name, age, city, death date, run date, funeral home and link are kept; no cause of death, ever.
+- Reachability (Nov 19, 2026): HTTP 200 with a browser User-Agent via curl; Python urllib gets a Cloudflare bot challenge (403); repeated pulls can hit HTTP 429 (wait and retry). Pages overlap a little and a Monitor-wide browse page (`https://www.legacy.com/us/obituaries/themonitor/browse`) also exists but lists people outside the McAllen filter, so it is not used.
+
+## Family calendar (block B, private feed)
+- Drew's FAMILY calendar, a published iCloud feed read by `tools/family_calendar.py`. The URL is private and lives only on the box (`/workspace/.ditm-private/family-ical-url`) or in the env var `DITM_FAMILY_ICS_URL`; it is never stored in this repo. Block B uses nothing else (no Gmail).
+
 ## Email newsletters (Drew's Gmail, READ-ONLY through the Gmail connector)
 - **Fast Company Daily** (what's-happening-in-tech section, block J "Tech" sub-segment). Looked up each morning in drew@drewlentz.com first, then drew@politiquera.com (and Outlook if connected): search `(from:fastcompany OR subject:"Fast Company Daily") newer_than:2d`, read the newest issue, take 3 to 5 stories with the link from the email.
 - Status on Nov 19, 2026, 6:25 AM CT: **no Fast Company Daily issue found** in either Gmail account or Outlook (searched `fastcompany`, "Fast Company", the subject, spam/trash included). The only Fast Company mail is Premium subscription receipts from subscriptions@fastcompany.com / care@fastcompany.com (newest Oct 24, 2023). Drew needs to confirm he is subscribed at https://www.fastcompany.com/newsletters (that page bot-blocks the box, so open it in a browser) and which address it goes to. Until an issue arrives the section uses the tech wires and says FALLBACK.

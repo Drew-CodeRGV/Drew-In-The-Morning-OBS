@@ -1,0 +1,29 @@
+# Non-secret settings for tools/family_calendar.py (block B, "What I've Been Up To This Week").
+# The calendar feed URL is NOT here and never goes in the repo: it is read at run time from the env var
+# DITM_FAMILY_ICS_URL or the box file /workspace/.ditm-private/family-ical-url.
+
+# false = on air we say "our daughter's dance class" / "the kids" / just "dance class", never a first name.
+# true  = use the first names from the list below (flip this when Drew wants the kids named on air).
+NAME_KIDS_ON_AIR: false
+
+household: the Lentz house
+
+# Kids whose names show up in calendar titles. `aliases` are other spellings used in titles.
+# `role` is what to call them on air when names are off: "our son", "our daughter", or leave it blank
+# (blank = no kid reference at all, just the activity). Fill it in only if Drew wants it said.
+kids:
+  - name: Fleet
+    role: ""
+  - name: Nola
+    role: ""
+  - name: Isabel
+    aliases: [Bel]
+    role: ""
+
+# Extra words to always exclude (case-insensitive, whole words), on top of the built-in medical, grooming, money,
+# work, support, pick-up/drop-off, workout, reservation and private-party rules in tools/family_calendar.py.
+extra_exclude: []
+
+# Place and school names that are fine to say on air when they appear in a festival/holiday title ("Rayburn Fall Festival").
+# Any other unfamiliar word in such a title makes the label generic ("a school or community event").
+known_places: [Rayburn]

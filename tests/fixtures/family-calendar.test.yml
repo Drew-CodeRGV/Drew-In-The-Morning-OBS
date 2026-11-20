@@ -1,0 +1,11 @@
+# test config: FAKE kids and places only
+NAME_KIDS_ON_AIR: false
+household: the Test house
+kids:
+  - name: Alex
+    role: ""
+  - name: Riley
+    aliases: [Ry]
+    role: ""
+extra_exclude: []
+known_places: [Springfield]

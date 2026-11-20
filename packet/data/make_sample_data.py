@@ -289,25 +289,12 @@ for n in data["nationalDesk"]:
     if n["id"] in PT: n["ptitle"] = PT[n["id"]]
     if n["id"] in PN: n["pfact"], n["pangle"], n["pvalley"] = PN[n["id"]]
 
-# ---- "What I've Been Up To This Week" (block B). Window: Nov 11-18, 2026. NEVER INVENT.
-# Calendar: no Google Calendar tool is connected, so there is no calendar data. Source below is Drew's own sent-mail
-# "Wifistand submissions log" (Gmail, drew@drewlentz.com, read-only) plus public call-for-proposals pages.
-# Excluded on purpose: expert-witness/legal mail, family/school/4-H mail, payments, client threads, press pitches, newsletters.
-UPTO_SRC = "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected"
-data["up_to"] = [
-    {"date": "2026-11-16", "short": "Talk proposal: ResCon New Orleans 2027 (shelter Wi-Fi)", "title": "Sent in a talk proposal to ResCon New Orleans 2027 (Mar 9-11): standing up shelter Wi-Fi in hours", "type": "conference", "who": "Drew",
-     "link": {"label": "ResCon 2027 call for proposals", "url": "https://resconnola.com/2027-call-for-proposals/"}, "source": UPTO_SRC},
-    {"date": "2026-11-16", "short": "Talk proposal: South Atlantic Fire Rescue Expo 2027", "title": "Sent in a talk proposal to the South Atlantic Fire Rescue Expo 2027 (Aug 11-14, Raleigh): fast Wi-Fi for command posts", "type": "conference", "who": "Drew",
-     "link": {"label": "SAFRE 2027 call for presenters", "url": "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/"}, "source": UPTO_SRC},
-    {"date": "2026-11-16", "short": "Talk proposals: IAFC WUI (Austin) + CALNENA 2027", "title": "Sent in talk proposals to the IAFC Wildland-Urban Interface conference (Austin, Mar 23-25) and CALNENA 2027 (Los Angeles, Mar 1-3)", "type": "conference", "who": "Drew", "link": None, "source": UPTO_SRC},
-    {"date": "2026-11-12", "short": "Talk proposal: IAEM-USA Region 6 Symposium 2027", "title": "Sent in a talk proposal to the IAEM-USA Region 6 Symposium 2027: temporary Wi-Fi for EOCs and shelters", "type": "conference", "who": "Drew", "link": None, "source": UPTO_SRC},
-]
-data["up_to_script"] = ("Hey, for the last week, here's what I've been up to. Outside the studio I spent a good chunk of it sending in talk proposals for a handful of 2027 "
-                        "conferences: emergency management, fire and rescue, and 9-1-1 shows, all about getting Wi-Fi up fast when a shelter or a command post "
-                        "has to stand up overnight. Nothing's been accepted yet, so I'll let you know if anybody says yes. Okay, enough about me. Let's get into the Valley.")
-data["up_to_meta"] = {"window": "Nov 11-18, 2026", "calendar": "not connected (no calendar tool available); built from email only",
-                      "note": "Proposals SUBMITTED, not accepted: do not say 'accepted' or 'speaking at'.",
-                      "jess": "Nothing found for Jess (no access to her calendar or mail)."}
+# ---- "What I've Been Up To This Week" (block B). Comes ONLY from Drew's family calendar via tools/family_calendar.py:
+#   python3 tools/family_calendar.py --mode monday --today 2026-11-23 --merge packet/data/packet-2026-11-23.json
+# (the feed URL is private and read from DITM_FAMILY_ICS_URL or /workspace/.ditm-private/family-ical-url; never put it here).
+data["up_to"] = []; data["up_to_coming"] = []
+data["up_to_script"] = ""
+data["up_to_meta"] = {}
 
 json.dump(data, open(os.path.join(H, "packet-2026-11-23.json"), "w"), indent=2, ensure_ascii=False)
 # ---- Nov 19 daily-mode test, built from the same data (clearly marked as a test)

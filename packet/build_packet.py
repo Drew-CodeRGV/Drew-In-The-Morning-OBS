@@ -28,6 +28,10 @@ REPO = "Drew-CodeRGV/Drew-In-The-Morning-OBS"
 # dedupe + trend score (tools/trend_score.py). Optional: the build still works without it.
 sys.path.insert(0, os.path.join(HERE, "..", "tools"))
 try:
+    import obituaries as OB
+except Exception:  # the section then says nothing was loaded
+    OB = None
+try:
     import trend_score as TS
 except Exception:  # pragma: no cover
     TS = None
@@ -143,16 +147,19 @@ def prepare(data, obs_path, do_weather):
     hs = data["sports"]["highSchool"]
     [fix(i) for i in hs["results"] + hs["next"]]
     m["showDate"] = m["date"] if mode == "monday" else m["nextShow"]["date"]
-    prep_up_to(data); prep_trending(data); prep_tech(data); score_stage(data); data["coldOpen"] = build_cold_open(data)
+    prep_up_to(data); prep_trending(data); prep_tech(data); prep_obituaries(data); score_stage(data); data["coldOpen"] = build_cold_open(data)
     for r in data.get("rundown", []):
         if r["letter"] == "A":
             r["talkingPoints"] = ["TODAY'S COLD OPEN (auto-filled, read aloud): " + data["coldOpen"]["text"], "JINGLE: " + data["coldOpen"]["jingle"]] + r["talkingPoints"]
         if r["letter"] == "B":
             ev = upto_lines(data)
-            r["talkingPoints"] = (["READ ALOUD (auto-built from this week's events; CONFIRM BEFORE AIR): " + data["up_to_script"]]
-                                  + ([f"EVENT (CONFIRM BEFORE AIR): {x}" for x in ev] if ev else ["NO CALENDAR EVENTS FOUND this week; the script above says so plainly. Do not make something up."])
+            r["talkingPoints"] = (["READ ALOUD (auto-built from the family calendar, generic wording): " + data["up_to_script"]]
+                                  + ([f"FROM THE CALENDAR: {x}" for x in ev] if ev else ["QUIET WEEK on the family calendar; the script above says so and gives Jess an easy riff. Do not make something up."])
                                   + r["talkingPoints"])
-            r["links"] = [e["link"] for e in data["up_to"] if e.get("link")] + r["links"]
+        if r["letter"] == "L" and data["obituaries"]["script"]:
+            tp = r["talkingPoints"]
+            at = next((i for i, x in enumerate(tp) if x.startswith("REMEMBERING OUR NEIGHBORS")), len(tp) - 1) + 1
+            tp.insert(at, "READ ALOUD, SLOWLY (auto-built from The Monitor's obituaries; CONFIRM name pronunciations): " + data["obituaries"]["script"])
     return data
 
 
@@ -231,29 +238,38 @@ def sc_agg(items):
 
 
 # ---------------------------------------------------------------- What I've Been Up To (block B)
-UPTO_TYPES = ("conference", "presentation", "meeting", "appearance")
 def prep_up_to(data):
-    ev = data.get("up_to") or []
-    for e in ev:
-        e.setdefault("who", "Drew"); e.setdefault("type", "appearance"); e.setdefault("link", None)
-        assert e["type"] in UPTO_TYPES, e["type"]
-        assert e["who"] in ("Drew", "Jess"), e["who"]
-        e["confirm"] = e.get("confirm") or "CONFIRM BEFORE AIR (Drew eyeballs every item; public-facing only)"
-        if e.get("link") and not e["link"].get("url", "").startswith("http"): e["link"] = None
-    data["up_to"] = ev
+    """Block B comes ONLY from the family calendar (tools/family_calendar.py). Items are {date, label, category, count} in generic
+    wording; there are no names, links or CONFIRM tags unless the tool says something is ambiguous."""
+    for k in ("up_to", "up_to_coming"):
+        out = []
+        for e in data.get(k) or []:
+            if not (e.get("label") and e.get("date")):
+                continue
+            e.setdefault("category", "family"); e["count"] = int(e.get("count") or 1)
+            out.append(e)
+        data[k] = out
+    ev, coming = data["up_to"], data["up_to_coming"]
     meta = data.get("up_to_meta") or {}
-    if not ev:
-        data["up_to_script"] = data.get("up_to_script") or "Quiet week on the calendar. Nothing public-facing to report this time, so let's get right into the Valley."
-        meta.setdefault("note", "No calendar events found.")
-    meta["status"] = "found" if ev else "none"
-    meta["banner"] = (f"{len(ev)} item(s) found · CONFIRM BEFORE AIR" if ev else "No calendar events found")
+    if not ev and not coming:
+        data["up_to_script"] = data.get("up_to_script") or "Quiet week on the family calendar. Jess, what's the best thing you did with your free time lately? Okay, let's get into the Valley."
+    meta.setdefault("calendar", "Family calendar (iCloud, published feed)")
+    meta["status"] = "found" if (ev or coming) else "none"
+    n = len(ev) + len(coming)
+    meta["banner"] = (f"{len(ev)} from the week" + (f" + {len(coming)} coming up" if coming else "") if n else "Quiet week on the family calendar")
+    meta.setdefault("internal", "")
     data["up_to_meta"] = meta
+
+def upto_when(e):
+    d = datetime.date.fromisoformat(e["date"])
+    return ({2: "twice", 3: "three times"}.get(e["count"], f"{e['count']} times") if e["count"] > 1 else d.strftime("%a %b %-d"))
 
 def upto_lines(data):
     out = []
     for e in data["up_to"]:
-        d = datetime.date.fromisoformat(e["date"]).strftime("%b %-d")
-        out.append(f'{d} · {e["who"]} · {e["type"]}: {e["title"]}')
+        out.append(f'{e["label"]} · {upto_when(e)}')
+    for e in data.get("up_to_coming", []):
+        out.append(f'COMING UP: {e["label"]} · {upto_when(e)}')
     return out
 
 # ---------------------------------------------------------------- Trending ("Wait, Don't Tell Me")
@@ -300,6 +316,50 @@ def prep_tech(data):
         it["isConfirm"] = bool(it["confirm"])
     t["items"] = t["items"][:5]
     data["tech"] = t
+
+# ---------------------------------------------------------------- Obituaries ("Remembering Our Neighbors", read near the close, block L)
+OBIT_PAGE = "https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor"
+
+def fmt_day(iso):
+    try:
+        d = datetime.date.fromisoformat(iso)
+        return f"{d.strftime('%b')} {d.day}"
+    except Exception:
+        return ""
+
+def prep_obituaries(data):
+    """Normalise data["obituaries"] (the block tools/obituaries.py writes). Only fields that Legacy listed are kept; there is no
+    cause of death anywhere. Adds weekly groups (newest first), the short on-air read and which names it uses."""
+    o = data.get("obituaries")
+    o = o if isinstance(o, dict) else {}
+    seen, items = set(), []
+    for r in o.get("items") or []:
+        url = r.get("url") or ""
+        if not (r.get("name") and url.startswith("https://www.legacy.com/") and r.get("published")) or url in seen:
+            continue
+        seen.add(url)
+        items.append({k: r.get(k) for k in ("id", "name", "age", "city", "died", "published", "funeralHome", "url")})
+    win = o.get("window") or {}
+    to = win.get("to") or (max(r["published"] for r in items) if items else "")
+    start = win.get("from") or (min(r["published"] for r in items) if items else "")
+    groups = OB.week_groups(items, to or None, start or None) if OB and items else []
+    picks = OB.read_picks(items, to or None) if OB and items else []
+    script = OB.read_script(items, to or None) if OB and items else ""
+    data["obituaries"] = {
+        "items": items, "count": len(items), "groups": groups, "script": script, "pickUrls": [r["url"] for r in picks],
+        "window": win, "windowLabel": (OB.span_label(datetime.date.fromisoformat(start), datetime.date.fromisoformat(to)) if OB and start and to else ""),
+        "source": o.get("source") or "Legacy.com · The Monitor (McAllen, TX)", "sourceUrl": o.get("sourceUrl") or OBIT_PAGE, "fetchedAt": o.get("fetchedAt") or "",
+        "note": o.get("note") or "",
+    }
+
+def obit_line(r):
+    """One notice as plain text, only what the notice lists."""
+    bits = [r["name"] + (f", {r['age']}" if r.get("age") else "")]
+    if r.get("city"): bits.append(r["city"])
+    if r.get("died"): bits.append("died " + fmt_day(r["died"]))
+    bits.append("ran " + fmt_day(r["published"]))
+    if r.get("funeralHome"): bits.append(r["funeralHome"])
+    return " · ".join(bits)
 
 def trend_item_conf(t):
     return t.get("confirm") or ("Not independently verified" if not t.get("verified", True) else "")
@@ -387,10 +447,12 @@ def all_urls(data):
     for t in data.get("trending", []):
         add("Trending: Wait, Don't Tell Me", t["title"], t.get("source_url"))
         for l in t.get("links", []): add("Trending: Wait, Don't Tell Me", l["label"], l["url"])
-    for e in data.get("up_to", []):
-        if e.get("link"): add("What I've Been Up To", e["link"]["label"], e["link"]["url"])
     for r in data.get("rundown", []):
         for l in r["links"]: add("Run of show: " + r["letter"], l["label"], l["url"])
+    ob = data.get("obituaries") or {}
+    if ob.get("items"):
+        add("Remembering Our Neighbors", "Legacy.com: The Monitor obituaries, McAllen", ob["sourceUrl"])
+        for r in ob["items"]: add("Remembering Our Neighbors", r["name"], r["url"])
     seen, res = set(), []
     for s, l, u in out:
         if (s, u) in seen: continue
@@ -567,11 +629,13 @@ def print_html(data):
     co = data["coldOpen"]
     coldstrip = f'<div class="co"><b>COLD OPEN</b> {esc(co["text"])} <span class="jg">♪ {esc(co["jingle"])}</span>{(" <span class=cf>CONFIRM</span>") if co["confirm"] else ""}</div>'
     um = data["up_to_meta"]
-    if data["up_to"]:
-        upl = "".join(f'<li><span class="chip" style="background:{"#8e6bbf" if e["who"] == "Jess" else "#e4572e"}">{esc(e["who"][0])}</span>' + (f'<a href="{esc(e["link"]["url"])}">{esc(e.get("short") or e["title"])}</a>' if e.get("link") else esc(e.get("short") or e["title"])) + ' <span class="cf">CONFIRM</span></li>' for e in data["up_to"][:4])
-        upbody = f'<ul class="up">{upl}</ul><div class="src">Proposals sent, none accepted yet. Source: Drew\'s sent mail; no calendar connected.</div>'
+    if data["up_to"] or data["up_to_coming"]:
+        upl = "".join(f'<li><span class="chip" style="background:#d1495b">{esc(e["category"][0].upper())}</span>{esc(e["label"])} <span class="src">{esc(upto_when(e))}</span></li>' for e in data["up_to"][:5])
+        if data["up_to_coming"]:
+            upl += '<li><b>Coming up:</b> ' + esc(", ".join(e["label"] for e in data["up_to_coming"][:3])) + '</li>'
+        upbody = f'<ul class="up">{upl}</ul><div class="src">From Drew\'s family calendar, generic wording.</div>'
     else:
-        upbody = '<div class="wnote"><b>No calendar events found.</b> The script says so plainly and moves on.</div>'
+        upbody = '<div class="wnote"><b>Quiet week on the family calendar.</b> The script says so and moves on.</div>'
     upto = card("upto", "#d1495b", "What I've Been Up To", esc(um["banner"]), upbody)
     trl = "".join(f'<li><span class="cat">{esc(t["category"].split("/")[0])}</span><a href="{esc(t["source_url"])}">{sc_print(t)}<b>{esc(t.get("short") or t["title"])}</b></a>' + (' <span class="cf">CONFIRM</span>' if t.get("isConfirm") else "") + '</li>' for t in [x for x in data.get("trending", []) if x.get("print")][:4])
     tk = [x for x in data["tech"]["items"]][:2]
@@ -626,6 +690,8 @@ def print_html(data):
             mi += f'<div class="mi{" motw" if is_motw else ""}">{body}</div>'
         lvls += f'<div class="lv" style="border-color:{c}"><h3 style="color:{c}">{lv["icon"]} {esc(lv["level"])}</h3>{mi}</div>'
     memes = card("memes", "#ff7f50", "Meme of the Week", "what the kids are talking about", f'{lvls}')
+    ob = data["obituaries"]
+    obit_pdf = (f'Obituaries: {ob["count"]} on studio page · ' if ob["count"] else "")
     foot_src = "Sources: NWS · RGVSports · KRGV · Texas Tribune · ABC · NFL.com · Basketball-Ref · MLB.com · Know Your Meme · full list in sources file"
     chk = data.get("linkCheck")
     chk_s = f" · Links {chk['ok']} ok / {chk['blocked']} bot-blocked / {chk['dead']+chk['unreachable']} bad" if chk else ""
@@ -634,7 +700,7 @@ def print_html(data):
 {clockhtml}
 {coldstrip}
 <div class="grid"><div class="col" style="flex:1">{headlines}{national}{mlbc}</div><div class="col">{weather}{hsc}{pro}</div><div class="col">{trend}{memes}{upto}</div></div>
-<footer><span>{esc(foot_src.replace(" · full list in sources file","") if chk else foot_src)}{esc(chk_s)}</span><span>Clickable links · CONFIRM = verify before air</span></footer>
+<footer><span>{esc(foot_src.replace(" · full list in sources file","") if chk else foot_src)}{esc(chk_s)}</span><span>{obit_pdf}Links clickable · CONFIRM = verify</span></footer>
 </div><script>window.addEventListener('load',function(){{var o=[].slice.call(document.querySelectorAll('.card')).filter(function(c){{var b=c.querySelector('.b');return b.scrollHeight>b.clientHeight+1}}).map(function(c){{return c.dataset.name}});document.body.setAttribute('data-overflow',o.join(','));}});</script></body></html>"""
     return html_
 
@@ -690,9 +756,9 @@ def email_html(data, preview=False):
     coldopen_b = (f'<p style="margin:0 0 6px;font-size:16px;line-height:1.5">{esc(co["text"])}</p><p style="margin:0;background:#fff8e0;border-left:5px solid #f2b705;padding:5px 9px"><b>Jingle:</b> {esc(co["jingle"])}</p>'
                   + (f'<p style="margin:6px 0 0"><b style="color:#c1121f">[CONFIRM BEFORE AIR: {esc("; ".join(co["confirm"]))}]</b> (not part of the spoken text)</p>' if co["confirm"] else ""))
     um = data["up_to_meta"]
-    ev_li = "".join(li(f'<b>{datetime.date.fromisoformat(e["date"]).strftime("%b %-d")}</b> · {esc(e["who"])} · {esc(e["type"])}: ' + (A({"url": e["link"]["url"], "title": e["title"]}) if e.get("link") else esc(e["title"])) + ' <b style="color:#c1121f">[CONFIRM BEFORE AIR]</b>') for e in data["up_to"])
-    upto_b = (f'<p style="margin:0 0 6px">{esc(data["up_to_script"])}</p>' + (f"<ul style='margin:0;padding-left:18px'>{ev_li}</ul>" if ev_li else '<p style="margin:0"><b>No calendar events found.</b></p>')
-              + f'<div style="font-size:12px;color:#66788c;margin-top:4px">{esc(um.get("calendar", ""))}. {esc(um.get("note", ""))} Public-facing items only.</div>')
+    ev_li = "".join(li(f'<b>{esc(e["label"])}</b> · {esc(upto_when(e))}') for e in data["up_to"]) + "".join(li(f'<b>Coming up:</b> {esc(e["label"])} · {esc(upto_when(e))}') for e in data["up_to_coming"])
+    upto_b = (f'<p style="margin:0 0 6px">{esc(data["up_to_script"])}</p>' + (f"<ul style='margin:0;padding-left:18px'>{ev_li}</ul>" if ev_li else '<p style="margin:0"><b>Quiet week on the family calendar.</b></p>')
+              + f'<div style="font-size:12px;color:#66788c;margin-top:4px">{esc(um.get("calendar", ""))}, {esc(um.get("window", ""))}. Family-friendly items only, in generic wording.</div>')
     trend_b = ""
     for t in [x for x in data.get("trending", []) if x.get("print")][:6]:
         c = trend_item_conf(t)
@@ -703,6 +769,16 @@ def email_html(data, preview=False):
         tech_b += (f'<p style="margin:0 0 6px"><b>{A({"url": t["source_url"], "title": t["title"]}) if t.get("source_url") else esc(t["title"])}</b> <span style="background:#3d5a80;color:#fff;font-size:11px;padding:0 5px;border-radius:3px">{esc(t.get("source", "TECH").upper())}</span>'
                    + (f' <b style="color:#c1121f">[CONFIRM BEFORE AIR: {esc(t["confirm"])}]</b>' if t["confirm"] else "") + f'<br>{esc(t["one_line"])}<br><b style="color:#3d5a80">On-air angle:</b> {esc(t["angle"])}</p>')
     tech_b = f'<p style="margin:0 0 6px;font-size:12px;color:#66788c"><b>{esc(data["tech"]["badge"])}</b>. {esc(data["tech"]["originLabel"])}</p>' + (tech_b or '<p style="margin:0">Nothing loaded today.</p>')
+    ob = data["obituaries"]
+    if ob["count"]:
+        obit_b = f'<p style="margin:0 0 6px;font-size:12px;color:#66788c">{ob["count"]} obituaries The Monitor ran on Legacy.com, {esc(ob["windowLabel"])}. Names, ages, towns and funeral homes are only what each notice lists. Read near the close, block L.</p>'
+        obit_b += f'<p style="margin:0 0 8px"><b>On-air read:</b> {esc(ob["script"])}</p>'
+        for g in ob["groups"]:
+            obit_b += f'<p style="margin:8px 0 2px"><b>{esc(g["label"])}</b> ({len(g["items"])})</p><ul style="margin:0;padding-left:18px">' + "".join(
+                f'<li><a href="{esc(r["url"])}" style="color:#0b5cad">{esc(r["name"])}</a>' + esc(obit_line(r)[len(r["name"]):]) + '</li>' for r in g["items"]) + "</ul>"
+        obit_b += f'<p style="margin:8px 0 0;font-size:12px"><a href="{esc(ob["sourceUrl"])}">{esc(ob["source"])}</a></p>'
+    else:
+        obit_b = '<p style="margin:0">No obituaries loaded today. The on-air read is skipped.</p>'
     if m["mode"] == "monday":
         clock_block = f'''<tr><td><table width="100%" cellpadding="0" cellspacing="0" style="border:1.5px solid #1b2430;border-radius:6px;border-collapse:separate"><tr>{clock}</tr></table><div style="{F}font-size:12px;color:#33404f;padding:3px 0">{clock_leg} (★ = signature segment; full 60-minute plan, blocks marked flex can be trimmed or stretched)</div></td></tr>'''
     else:
@@ -722,6 +798,7 @@ def email_html(data, preview=False):
 {sec("Meme of the Week · What the Kids Are Talking About", "#ff7f50", memes)}
 {sec("The National Desk", "#6d597a", nat)}
 {sec("What's Happening in Tech", "#3d5a80", tech_b)}
+{sec("Remembering Our Neighbors", "#5c6b7a", obit_b)}
 {sec("On the Show: Monday's 60-minute plan (times as planned from 8:00; Show Start on the studio page shifts them)" if m["mode"] == "monday" else "Next show: Monday 8 AM rundown (" + esc(ns["label"]) + ")", "#264653", rundown + '<div style="font-size:12px;color:#4a5a6b">Studio page and run of show have notes and links for every block.</div>')}
 <tr><td style="{F}font-size:11px;color:#66788c;padding:10px 0">Every fact is sourced and linked above. CONFIRM BEFORE AIR means verify before saying it on air. Weather: NWS. Scores: sources linked in each section. Not sent automatically unless the Monday routine is approved.</td></tr>
 </table></td></tr></table></body></html>"""
@@ -747,14 +824,12 @@ def txt(data):
     if co["confirm"]: W(wrap("CONFIRM BEFORE AIR (teased, unconfirmed; not part of the spoken text): " + "; ".join(co["confirm"])))
     W()
     um = data["up_to_meta"]
-    W("WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min) · " + um["banner"])
+    W("WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min, from the family calendar) · " + um["banner"])
     W(textwrap.fill(data["up_to_script"], 92, initial_indent="  ", subsequent_indent="  "))
-    if data["up_to"]:
-        for e in data["up_to"]:
-            W(wrap(f"- {upto_lines({'up_to': [e]})[0]}  [CONFIRM BEFORE AIR]"))
-            if e.get("link"): W("    " + e["link"]["label"] + ": " + e["link"]["url"])
-    else: W("  No calendar events found.")
-    W(wrap(f"Window {um.get('window', 'past 7 days')}. Calendar: {um.get('calendar', 'not connected; email only')}. {um.get('note', '')} {um.get('jess', '')} Public-facing items only."))
+    for x in upto_lines(data): W(wrap("- " + x))
+    if not data["up_to"] and not data["up_to_coming"]: W("  Quiet week on the family calendar.")
+    W(wrap(f"Window {um.get('window', 'past 7 days')}" + (f"; coming up {um['comingWindow']}" if um.get("comingWindow") else "") + f". Calendar: {um.get('calendar', '')}. Family-friendly items only, generic wording."))
+    if um.get("internal"): W(wrap("INTERNAL NOTE (not for air): " + um["internal"]))
     W()
     sc = data.get("scoring")
     if sc: W(wrap(f"STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README.md). {sc['items']} stories, {sc['merged']} duplicate(s) merged, {sc['hot']} hot, {sc['trending']} trending, {sc['uncovered']} uncovered lead(s). {sc['trendsNote']}.", "")); W()
@@ -789,6 +864,19 @@ def txt(data):
         if t.get("source_url"): W(f"    Link: {t['source_url']}")
         for l in t.get("links", []): W(f"    {l['label']}: {l['url']}")
     if not tk["items"]: W("  (nothing loaded today)")
+    W()
+    ob = data["obituaries"]
+    W(f"REMEMBERING OUR NEIGHBORS (read near the close, block L) · {ob['count']} obituaries from The Monitor on Legacy.com, {ob['windowLabel']}")
+    if ob["count"]:
+        W(wrap("Only what each notice lists: no cause of death. CONFIRM name pronunciations before reading.", "  "))
+        W(wrap("ON-AIR READ: " + ob["script"], "  "))
+        for g in ob["groups"]:
+            W(f"  {g['label']} ({len(g['items'])})")
+            for r in g["items"]:
+                W("    - " + obit_line(r)); W("      " + r["url"])
+        W(f"  Source page: {ob['sourceUrl']}")
+    else:
+        W("  (no obituaries loaded today; skip the read)")
     W()
     W("WEATHER · McALLEN / RGV (" + w["source"] + ")")
     for d in w["days"][:7]:
@@ -917,6 +1005,7 @@ summary:after{content:'\\25BE';margin-left:auto;font-size:1.2em;padding-left:6px
 .chy{display:inline-block;background:#1b2430;color:#fff;border-radius:6px;padding:2px 8px;margin:2px;font-size:.85rem}.chy b{color:#ffd23f}
 #usedul{margin:0;padding-left:20px}#usedul li{margin-bottom:4px}
 #toast{position:fixed;bottom:calc(18px + var(--sb));left:50%;transform:translateX(-50%);background:#1b2430;color:#fff;padding:8px 16px;border-radius:99px;font-weight:700;opacity:0;transition:.25s;pointer-events:none;z-index:9;max-width:92vw}#toast.on{opacity:1}
+.obl{list-style:none;margin:0 0 8px;padding:0}.obl li{padding:5px 0;border-bottom:1px dashed var(--line)}.obh{margin:10px 0 2px;font-size:1rem}
 footer{padding:10px max(16px,var(--sr)) calc(30px + var(--sb)) max(16px,var(--sl));color:var(--mut);font-size:.8rem}
 @media (max-width:820px){#clockw{margin-left:0;width:100%;text-align:left}.cwx{justify-content:flex-start}}
 @media (pointer:coarse){.cp{min-height:44px;min-width:56px}}
@@ -1201,16 +1290,17 @@ def studio_html(data, archive_href=None):
     # ---- what I've been up to
     um = data["up_to_meta"]
     evs = ""
-    for e in data["up_to"]:
+    for e in data["up_to"] + [dict(x, coming=True) for x in data["up_to_coming"]]:
         d = datetime.date.fromisoformat(e["date"]).strftime("%a %b %-d")
-        lk = f' · {A(e["link"]["url"], e["link"]["label"])}' if e.get("link") else ""
-        evs += (f'<div class="item"><div class="tx"><span class="src">{d}</span> <span class="pill {e["who"].lower()}">{esc(e["who"])}</span> <span class="pill">{esc(e["type"])}</span> {esc(e["title"])}{lk} '
-                f'<span class="cf">CONFIRM BEFORE AIR</span><span class="upill">USED</span></div><div class="acts">{use_btn(UPTO_SEC, e["title"], (e.get("link") or {}).get("url", ""))}</div></div>')
-    if not evs: evs = f'<div class="noev">No calendar events found.</div>'
+        cnt = f' <span class="src">({esc(upto_when(e))})</span>' if e["count"] > 1 else ""
+        evs += (f'<div class="item"><div class="tx"><span class="src">{d}</span> <span class="pill">{esc(e["category"])}</span>{" <span class=pill>coming up</span>" if e.get("coming") else ""} {esc(e["label"])}{cnt}'
+                f'<span class="upill">USED</span></div><div class="acts">{use_btn(UPTO_SEC, e["label"], "")}</div></div>')
+    if not evs: evs = '<div class="noev">Quiet week on the family calendar.</div>'
     upto = (f'<p class="cotext" style="font-size:clamp(1.1rem,1.2vw + .85rem,1.5rem)" id="uptotext">{esc(data["up_to_script"])}</p>' +
-            f'<div class="coact">{CP(data["up_to_script"], "Copy script")}</div><h4 style="margin:10px 0 2px">Events found ({esc(um["banner"])})</h4>{evs}'
-            f'<p class="mut">Window: {esc(um.get("window", "past 7 days"))}. Calendar: {esc(um.get("calendar", "not connected; email only"))}.{(" " + esc(um["note"])) if um.get("note") else ""} {esc(um.get("jess", ""))}</p>'
-            f'<p class="mut">Public-facing only (talks, conferences, panels, appearances, community events). Personal, medical, financial, legal, client and private meetings are excluded, and private individuals are never named.</p>')
+            f'<div class="coact">{CP(data["up_to_script"], "Copy script")}</div><h4 style="margin:10px 0 2px">From the family calendar ({esc(um["banner"])})</h4>{evs}'
+            f'<p class="mut">Window: {esc(um.get("window", "past 7 days"))}{(", coming up " + esc(um["comingWindow"])) if um.get("comingWindow") else ""}. Calendar: {esc(um.get("calendar", ""))}.</p>'
+            f'<p class="mut">Family-friendly only: school events, concerts, games, festivals, clubs and classes, holidays, community events and trips, in generic wording (kids are not named on air; the switch is NAME_KIDS_ON_AIR in family-calendar.yml). Medical, grooming, money, work, support, pick-ups, workouts, reservations and other people\'s parties are always left out.</p>'
+            + (f'<p class="mut"><b>Internal note, not for air:</b> {esc(um["internal"])}</p>' if um.get("internal") else ""))
     # ---- national
     nat = '<div class="sortbox">'
     for k_, n in enumerate(data["nationalDesk"]):
@@ -1246,6 +1336,20 @@ def studio_html(data, archive_href=None):
                    f'<div class="acts">{CP(t["source_url"]) if t.get("source_url") else ""}{use_btn("Tech", t["title"], t.get("source_url", ""))}</div></div>')
     if not tk["items"]: tech_h += '<p class="mut">No tech items loaded today.</p>'
     tech_h += "</div>"
+    ob = data["obituaries"]
+    if ob["count"]:
+        obit_h = f'<p class="mut">{ob["count"]} obituaries The Monitor ran on Legacy.com, {esc(ob["windowLabel"])}. Names, ages, towns and funeral homes are only what each notice lists. Read about 45 seconds near the close (block L), no joke before or after.</p>'
+        obit_h += (f'<p class="cotext" id="obscript">{esc(ob["script"])}</p><div class="coact">{CP(ob["script"], "Copy read")}{use_btn("Remembering Our Neighbors", "Obituary read (block L)", ob["sourceUrl"])}</div>'
+                   '<p class="mut"><span class="cf">CONFIRM</span> name pronunciations before reading. Skip any name you are unsure of. ★ marks the names in the read.</p>')
+        for g in ob["groups"]:
+            obit_h += f'<h3 class="obh">{esc(g["label"])} <span class="mut">({len(g["items"])})</span></h3><ul class="obl">'
+            for r in g["items"]:
+                star = ' <span title="in the on-air read">★</span>' if r["url"] in ob["pickUrls"] else ""
+                obit_h += f'<li>{A(r["url"], r["name"])}{star}<span class="mut">{esc(obit_line(r)[len(r["name"]):])}</span></li>'
+            obit_h += "</ul>"
+        obit_h += f'<div class="item"><div class="tx">{A(ob["sourceUrl"], ob["source"])}</div><div class="acts">{CP(ob["sourceUrl"])}</div></div>'
+    else:
+        obit_h = '<p class="mut">No obituaries loaded today. The on-air read is skipped.</p>'
     cells = "".join(f'<div class="{"mon" if d["date"]==w["monday"] else ""}"><b>{d["label"]} {d["dateLabel"]}</b><br>{icon(d["icon"], 44)}<div class="hi">{d["hi"]}°</div><div class="mut">{d["lo"] if d["lo"] is not None else "–"}°</div><div class="pp">{d["pop"]}% rain</div><div class="mut" style="font-size:.75rem">{esc(d["short"])}</div></div>' for d in w["days"][:7])
     upd = datetime.datetime.fromisoformat(w["updated"].replace("Z", "+00:00")).astimezone(datetime.timezone(datetime.timedelta(hours=-6)))
     alerts = "No active NWS alerts." if w.get("alerts") == [] else ("Alerts: " + ", ".join(w["alerts"]) if w.get("alerts") else "")
@@ -1289,7 +1393,7 @@ def studio_html(data, archive_href=None):
                f'<span class="tr" data-off="{r["offset"]}" data-dur="{r["minutes"]}"{stretch} data-letter="{r["letter"]}" data-name="{esc(r["short"])}" data-color="{r["color"]}"><b>{r["timeRange"]}</b><small></small></span></summary>'
                f'<div class="body"><p class="mut">{esc(r["subject"])}</p>{weave}<h4>Talking points</h4>{lis(r["talkingPoints"])}<h4>Follow-up questions</h4>{lis(r["followUps"]) if r["followUps"] else "<p class=mut>none</p>"}'
                f'<h4>Transition lines</h4>{lis(r["transitions"]) if r["transitions"] else "<p class=mut>none</p>"}{seg}<h4>Chyrons (60 chars max)</h4><p>{chy}</p><h4>Sources</h4>{lks}{conf}</div></details>')
-    nav = "".join(f'<a href="#{i}" data-jump="{i}">{t}</a>' for i, t in (("brk", "Breaking"), ("coldopen", "Cold open"), ("upto", "Up To"), ("rundown", "Rundown"), ("headlines", "Headlines"), ("trending", "Trending"), ("national", "National"), ("tech", "Tech"), ("weather", "Weather"), ("hs", "HS Football"), ("nfl", "NFL"), ("nba", "NBA"), ("mlb", "MLB"), ("memes", "Meme of the Week"), ("used", "Used list")))
+    nav = "".join(f'<a href="#{i}" data-jump="{i}">{t}</a>' for i, t in (("brk", "Breaking"), ("coldopen", "Cold open"), ("upto", "Up To"), ("rundown", "Rundown"), ("headlines", "Headlines"), ("trending", "Trending"), ("national", "National"), ("tech", "Tech"), ("obits", "Neighbors"), ("weather", "Weather"), ("hs", "HS Football"), ("nfl", "NFL"), ("nba", "NBA"), ("mlb", "MLB"), ("memes", "Meme of the Week"), ("used", "Used list")))
     mon = m["mode"] == "monday"
     used_body = ('<ul id="usedul"></ul><p class="mut">Tap the box next to any item when it is used on the show. Marks stay on this device until cleared, so nothing gets repeated. '
                  '"Log to repo" opens a pre-filled GitHub issue (label used-on-show) for the post-show job: it cuts clips from the recording and drafts social teasers for approval. Nothing posts by itself.</p>')
@@ -1306,8 +1410,7 @@ def studio_html(data, archive_href=None):
     body = "".join([
         sec("coldopen", "#f2b705", "Cold Open &amp; Jingle", "read aloud · about 45 seconds", coldopen, wide=True, fg="color:#1b2430", count=f'{co["words"]} words', chip="A",
             badges=(f'<span class="cf">{len(co["confirm"])} CONFIRM</span>' if co["confirm"] else "")),
-        sec("upto", "#d1495b", "What I've Been Up To This Week", esc(um["banner"]), upto, wide=True, count=f'{len(data["up_to"])} event{"" if len(data["up_to"]) == 1 else "s"}', chip="B",
-            badges=('<span class="cf">CONFIRM ALL</span>' if data["up_to"] else "")),
+        sec("upto", "#d1495b", "What I've Been Up To This Week", esc(um["banner"]), upto, wide=True, count=f'{len(data["up_to"]) + len(data["up_to_coming"])} item{"" if len(data["up_to"]) + len(data["up_to_coming"]) == 1 else "s"}', chip="B"),
         sec("rundown", "#264653", "Full 60-Minute Rundown" if mon else "Monday 8 AM rundown (next show)", "tap a block for notes, questions, chyrons and links" if mon else f'next show: {m["nextShow"]["label"]}, 8-9 AM CT · tap a block', f'<div class="rdgrid">{rd}</div>', wide=True,
             count=f'{len(data.get("rundown", []))} blocks · 60 min'),
         sec("headlines", "#e4572e", "Top Headlines · RGV First", esc(m["hlSub"]), heads, count=f"{nh} stories", badges=bh),
@@ -1315,6 +1418,7 @@ def studio_html(data, archive_href=None):
         sec("national", "#6d597a", "The National Desk", "fact · take · Valley angle", nat, count=f"{nn_} stories", badges=bn_, chip="J"),
         sec("tech", "#3d5a80", "What's Happening in Tech", "quick hits · block J, after the National Desk", tech_h, count=f'{len(tk["items"])} items', chip="J",
             badges=(f'<span class="sb {"a" if tk["origin"] == "wires" else "t"}">{esc(tk["badge"])}</span>' + (f'<span class="cf">{sum(1 for x in tk["items"] if x["isConfirm"])} CONFIRM</span>' if any(x["isConfirm"] for x in tk["items"]) else ""))),
+        sec("obits", "#5c6b7a", "Remembering Our Neighbors", "obituaries from The Monitor · block L, before the sign-off", obit_h, count=f'{ob["count"]} obituaries', chip="L"),
         sec("weather", "#2a7de1", "McAllen / RGV Weather", w["source"], weather, count="7 days", badges=wb),
         sec("hs", "#2a9d8f", "RGV High School Football", hs["round"], hsb, count=f"{n_hs} games"),
         sec("nfl", "#264653", esc(sport_title(data["sports"]["nfl"], False).replace("NFL ", "NFL · ", 1)), "scores + notable", sports_nfl, count=f"{n_nfl} items"),
@@ -1367,8 +1471,9 @@ def update_obs(path, data):
     o["coldOpenMeta"] = {"date": m["date"], "template": co["template"], "confirm": co["confirm"], "builtFrom": m["fileStem"], "sample": bool(m.get("sample"))}
     o["jingle"] = {"primary": co["jingle"], "alternates": co["alternates"]}
     o["upTo"] = {"banner": data["up_to_meta"]["banner"], "script": data["up_to_script"], "calendar": data["up_to_meta"].get("calendar", ""), "window": data["up_to_meta"].get("window", ""),
-                 "confirm": "CONFIRM BEFORE AIR: Drew eyeballs every item; public-facing only",
-                 "events": [{"date": e["date"], "title": e["title"], "type": e["type"], "who": e["who"], "link": e.get("link")} for e in data["up_to"]]}
+                 "comingWindow": data["up_to_meta"].get("comingWindow", ""), "source": "family calendar (tools/family_calendar.py), generic wording",
+                 "events": [{"date": e["date"], "label": e["label"], "category": e["category"], "count": e["count"]} for e in data["up_to"]],
+                 "coming": [{"date": e["date"], "label": e["label"], "category": e["category"], "count": e["count"]} for e in data["up_to_coming"]]}
     json.dump(o, open(path, "w"), indent=2, ensure_ascii=False)
     return True
 
@@ -1431,7 +1536,8 @@ def main():
     stem = os.path.join(a.out, data["meta"]["fileStem"])
     urls = all_urls(data)
     if a.check_links:
-        det = check_links(sorted({u["url"] for u in urls if u["url"].startswith("http")}))
+        # individual Legacy notices are not link-checked (dozens of requests to one site that rate-limits); the listing page is
+        det = check_links(sorted({u["url"] for u in urls if u["url"].startswith("http") and u["section"] != "Remembering Our Neighbors" or u["url"] == OBIT_PAGE}))
         cnt = lambda r: sum(1 for v in det.values() if v["result"] == r)
         data["linkCheck"] = {"date": datetime.date.today().isoformat(), "ok": cnt("ok"), "blocked": cnt("blocked-by-site"), "dead": cnt("dead"), "unreachable": cnt("unreachable")}
         data["linkCheckDetail"] = det

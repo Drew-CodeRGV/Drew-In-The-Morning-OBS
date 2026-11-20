@@ -51,26 +51,24 @@ Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close
 
 ---
 ## B · WHAT I'VE BEEN UP TO THIS WEEK (8:02–8:05, 3 min)
-*FLEX: trim to 2 / stretch to 4 min. Personal touchpoint (2-3 min): public-facing things Drew and Jess did this week, then straight into Local news*
+*FLEX: trim to 2 / stretch to 4 min. Light family touchpoint (about 30 seconds, up to 3 min with Jess): school, music, clubs and family fun from Drew's family calendar, then straight into Local news*
 
 **Talking points**
-- SCRIPT: read the paragraph the packet builds (field up_to_script; it appears on the studio page, PDF, txt, email and in obs-data.json under upTo). 2 to 3 minutes, conversational, then drop into Local news.
-- EVENTS: the list under the script (field up_to[]: date, title, type conference/presentation/meeting/appearance, who Drew/Jess, optional public link). Every item is CONFIRM BEFORE AIR: eyeball each one and cut anything you don't want said on air.
-- NO EVENTS: if nothing is found the script says so plainly ("Quiet week on the calendar...") and the packet notes "No calendar events found". Do not make something up.
-- PRIVACY (read on air): only public-facing participation: talks, conferences, panels, appearances, community events. Never personal, medical, financial, legal, client-confidential or private 1:1 meetings, and never name private individuals.
+- SCRIPT: read the paragraph the packet builds from Drew's FAMILY calendar (field up_to_script; it appears on the studio page, PDF, txt, email and in obs-data.json under upTo). About 20 to 40 seconds, light and conversational, then toss to Jess for one question and drop into Local news.
+- ITEMS: the list under the script (field up_to[]: date, label, category; on Mondays also up_to_coming[], the next 7 days). Recurring activities are one line each ("chess club twice"). Labels are generic: the kids are not named on air unless NAME_KIDS_ON_AIR is flipped to true in family-calendar.yml.
+- QUIET WEEK: if nothing qualifies the script says "Quiet week on the family calendar" and gives Jess an easy riff prompt. Do not make something up.
+- LEFT OFF THE AIR, always: medical or health, personal grooming, bills and money, work admin, support appointments, pick-ups and drop-offs, routine workouts, private reservations and dinners, other people's private parties, birthdays and retirements. When unsure it is left out. No conference or work talk; no Gmail in this block.
 
 **Follow-up questions**
-- Jess: anything from your week worth a mention (a school event, a community thing)? Ask live; nothing here is pre-filled for her.
+- Jess: what was your favorite part of the week? (One easy question, then on to the news.)
 
 **Transition lines**
-- "Okay, enough about me. Let's get into the Valley."
-- "That's my week. Here's what the Valley's been up to."
+- "Okay, enough about us. Let's get into the Valley."
+- "That's our week. Here's what the Valley's been up to."
 
 **Chyrons (≤60 chars)**
 - What I've Been Up To / This week · Drew & Jess
-- This Week / Talks, conferences & community events
-
-**CONFIRM BEFORE AIR:** Every up_to item: CONFIRM BEFORE AIR (Drew eyeballs the list); Calendar is not connected, so events come from email only
+- This Week / School, music, clubs & family fun
 
 ---
 ## C · LOCAL NEWS (8:05–8:13, 8 min)
@@ -421,12 +419,15 @@ Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close
 - Mark anything thin as CONFIRM BEFORE AIR (X volume for several trends is low, so popularity is TikTok-side and unverified).
 - Look ahead: Thanksgiving Thu Nov 26 · FAA comments close Dec 7 · Edinburg Night of Lights Parade Dec 4 · Mission/Weslaco runoffs Dec 12 (early voting from Nov 30) · Food Truck Park closes Jan 14, 2027 · Cameron abatement hearing would have been Dec 29 (now off).
 - Jess back in: one thing she's watching this week; favorite moment. Socials: IG/TikTok @drewinthemorning · YouTube @DrewintheMorning · Facebook page. Tease Mon Nov 30, 8 AM CT. Jingle out.
+- REMEMBERING OUR NEIGHBORS (about 45 seconds, after the memes and right before the look-ahead and sign-off, so the hour ends on a human note). Slow down, no music bed, no joke before or after. The names, ages and towns are auto-built each morning from The Monitor's obituaries on Legacy.com (card on the studio page: Remembering Our Neighbors). Read only a handful, then point listeners to the full list on the page.
+- NEVER mention how anyone died, and don't add details that aren't in the notice. If you aren't sure how to say a name, skip it or check the link first. If block L is running long, read three names and keep the pointer.
 
 **Follow-up questions**
 - Ask chat: what's the weirdest thing your kid said this week?
 
 **Transition lines**
 - "That's the fun stuff. Thanks for spending the hour with us. See you next time."
+- "Before we go, we want to take a moment to remember some of our neighbors. (Obituary read, then the sign-off.)"
 - "Jingle out."
 
 **Chyrons (≤60 chars)**
@@ -436,13 +437,15 @@ Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close
 - Coming Up / Thanksgiving · Thu., Nov. 26
 - Runoff Day / Mission and Weslaco · Dec. 12
 - Follow @drewinthemorning / IG · TikTok · YouTube · Facebook
+- Remembering Our Neighbors / Obituaries from The Monitor · Legacy.com
 
 **Sources / links**
 - Know Your Meme: Talk To Me Doja: https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained
 - ABC7: Irvine PD on door kick challenge: https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/
 - Show social calendar (draft): social-calendar.md
+- Legacy.com: The Monitor obituaries, McAllen: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor
 
-**CONFIRM BEFORE AIR:** Meme popularity measured on TikTok; X volume is low; Early-voting dates; ditm@drewlentz.com (seen as the show inbox; CONFIRM BEFORE AIR that it is meant for public submissions)
+**CONFIRM BEFORE AIR:** Meme popularity measured on TikTok; X volume is low; Early-voting dates; ditm@drewlentz.com (seen as the show inbox; CONFIRM BEFORE AIR that it is meant for public submissions); Obituary names and spellings come from Legacy.com; CONFIRM pronunciation before reading
 
 ---
 ### Producer notes
