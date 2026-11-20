@@ -86,13 +86,13 @@ const file=process.argv[2];
  const fails=[]; const ok=(c,m)=>{console.log((c?'PASS ':'FAIL ')+m); if(!c)fails.push(m)};
  {
   const p0=await openHttp(1180,820,IPAD);
-  const t=await p0.evaluate(()=>{const e=document.getElementById('tech');return e?{open:e.open,items:e.querySelectorAll('.item.tech').length,links:[...e.querySelectorAll('.item.tech a[href^="http"]')].length,badge:(e.querySelector('summary').textContent||'').includes('TECH'),nav:!!document.querySelector('nav a[href="#tech"]'),hdr:e.querySelector('summary').getBoundingClientRect().height}:null});
+  const t=await p0.evaluate(()=>{const e=document.getElementById('tech');return e?{open:e.open,items:e.querySelectorAll('.sortbox>.item.trn').length,links:[...e.querySelectorAll('.sortbox>.item.trn>.tx>b a[href^="http"]')].length,badge:(e.querySelector('summary').textContent||'').includes('TECH'),nav:!!document.querySelector('nav a[href="#tech"]'),hdr:e.querySelector('summary').getBoundingClientRect().height}:null});
   ok(!!t,'Tech section exists'); if(t){ ok(!t.open,'Tech section starts collapsed'); ok(t.items>=3&&t.items<=5,'Tech section has 3-5 items ('+t.items+')'); ok(t.links>=t.items,'every Tech item links to its article'); ok(t.badge&&t.nav&&t.hdr>=44,'Tech header badge, nav link and 44px+ target'); }
   const jr=await p0.evaluate(()=>{const j=document.getElementById('blk-J');return j?j.textContent.includes('TECH SUB-SEGMENT')&&j.textContent.includes('quick tech check'):false});
   ok(jr,'Block J (rundown) carries the Tech sub-segment and its segue');
-  const ob=await p0.evaluate(()=>{const e=document.getElementById('obits');if(!e)return null;const L=document.getElementById('blk-L');return {open:e.open,links:[...e.querySelectorAll('.obl a[href^="https://www.legacy.com/"]')].length,lis:e.querySelectorAll('.obl li').length,groups:e.querySelectorAll('.obh').length,nav:!!document.querySelector('nav a[href="#obits"]'),hdr:e.querySelector('summary').getBoundingClientRect().height,script:!!e.querySelector('#obscript'),lread:L?L.textContent.includes('READ ALOUD, SLOWLY')||L.textContent.includes('REMEMBERING OUR NEIGHBORS'):false,cause:/cancer|cause of death/i.test(e.textContent)}});
-  ok(!!ob,'Remembering Our Neighbors section exists'); if(ob){ ok(!ob.open,'Neighbors section starts collapsed'); ok(ob.lis>0&&ob.links===ob.lis,'every neighbor name links to its Legacy obituary ('+ob.links+'/'+ob.lis+')'); ok(ob.groups>=1,'grouped by week ('+ob.groups+' groups)'); ok(ob.nav&&ob.hdr>=44&&ob.script,'Neighbors nav link, 44px+ header and on-air read'); ok(ob.lread,'Block L carries the obituary read'); ok(!ob.cause,'no cause of death text'); }
-  const ut=await p0.evaluate(()=>{const e=document.getElementById('upto');if(!e)return null;return {open:e.open,text:e.textContent,script:(document.getElementById('uptotext')||{}).textContent||''}});
+  const ob=await p0.evaluate(()=>{const e=document.getElementById('obits');if(!e)return null;const L=document.getElementById('blk-L');const all=[...e.querySelectorAll('.ob a')];return {open:e.open,links:all.filter(a=>/^https:\/\/www\.legacy\.com\//.test(a.href)).length,n:all.length,nav:!!document.querySelector('nav a[href="#obits"]'),hdr:e.querySelector('summary').getBoundingClientRect().height,script:!!e.querySelector('#obscript'),lread:L?/neighbors/i.test(L.textContent):false,cause:/cancer|cause of death|died of/i.test(e.textContent)}});
+  ok(!!ob,'Remembering Our Neighbors section exists'); if(ob){ ok(!ob.open,'Neighbors section starts collapsed'); ok(ob.n>0&&ob.links===ob.n,'every neighbor name links to its Legacy obituary ('+ob.links+'/'+ob.n+')'); ok(ob.nav&&ob.hdr>=44&&ob.script,'Neighbors nav link, 44px+ header and on-air read'); ok(ob.lread,'Block L carries the obituary read'); ok(!ob.cause,'no cause of death anywhere in the obituary section'); }
+  const ut=await p0.evaluate(()=>{const e=document.getElementById('blk-B');if(!e)return null;return {open:e.open,text:e.textContent,script:(document.getElementById('uptotext')||{}).textContent||''}});
   ok(!!ut&&!ut.open,'Block B (Up To) starts collapsed'); if(ut){ ok(/family calendar/i.test(ut.text),'Block B is sourced from the family calendar'); ok(!/proposal|conference|gmail|CONFIRM/i.test(ut.script),'Block B script has no conference/Gmail/CONFIRM wording'); }
   await p0.close();
  }
@@ -122,14 +122,14 @@ const file=process.argv[2];
   await p.evaluate(()=>document.querySelector('#blk-C > summary').click());
   await p.reload({waitUntil:'load'});
   ok(await p.evaluate(()=>document.getElementById('headlines').open),'same session: opened section stays open after reload');
-  const rdOpen=await p.evaluate(()=>{const e=document.getElementById('rundown'),c=document.getElementById('blk-C');return [e&&e.open,c&&c.open]}); console.log('rundown/block C open after reload',JSON.stringify(rdOpen));
+  const rdOpen=await p.evaluate(()=>{const c=document.getElementById('blk-C');return [c&&c.open]}); console.log('block C open after reload',JSON.stringify(rdOpen));
   const pg=await b.newPage(); await pg.setViewport({width:1180,height:820}); await pg.goto(base+rel,{waitUntil:'load'});
   ok(await pg.evaluate(()=>[...document.querySelectorAll('details')].every(d=>!d.open)),'fresh tab/session starts fully collapsed'); await pg.close();
   // jump link from nav opens its section
   await p.evaluate(()=>{[...document.querySelectorAll('details')].forEach(d=>d.open=false)});
   const nav=await p.evaluate(()=>[...document.querySelectorAll('nav a')].map(a=>a.getAttribute('href')+'|'+a.textContent).slice(0,3)); console.log('nav',JSON.stringify(nav));
   // sort toggle
-  const firstTitles=()=>p.evaluate(()=>[...document.querySelectorAll('#national .sortbox > details')].map(d=>d.dataset.sc+'/'+d.dataset.ord));
+  const firstTitles=()=>p.evaluate(()=>[...document.querySelectorAll('#national .sortbox > .item')].map(d=>d.dataset.sc+'/'+d.dataset.ord));
   const t1=await firstTitles(); await p.click('#sortbtn'); const t2=await firstTitles(); await p.click('#sortbtn');
   console.log('national order score->editorial',JSON.stringify(t1),JSON.stringify(t2));
   ok(JSON.stringify(t1)!==JSON.stringify(t2)||t1.length<2,'sort button changes order (or <2 items)');
@@ -203,11 +203,11 @@ const file=process.argv[2];
   await p.screenshot({path:`${SHOTS}/v2-${name}-collapsed.png`});
   const sticky=await p.evaluate(()=>{const e=document.getElementById('pin');return getComputedStyle(e).position==='sticky'?e.offsetHeight:9999});
   ok(sticky<=110,`${w}x${h} pinned bar (clock row + timeline) is compact (${sticky}px)`);
-  for(const id of ['headlines','trending','national','memes','rundown']){
+  for(const id of ['headlines','trending','national','memes','blk-C','chisme']){
     await p.evaluate((id)=>{[...document.querySelectorAll('details.sec')].forEach(d=>d.open=false);document.getElementById(id).open=true},id); await delay(150);
     const g=await p.evaluate((id)=>{const d=document.getElementById(id),m=document.querySelector('main'),cs=getComputedStyle(m),mr=m.getBoundingClientRect(),dr=d.getBoundingClientRect();
       const inner=mr.width-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);
-      const L=new Set([...d.querySelectorAll('.body .sortbox>.item,.body .lvgrid>.lvl,.body .rdgrid>details')].map(x=>Math.round(x.getBoundingClientRect().left)));
+      const L=new Set([...d.querySelectorAll('.body .sortbox>.item')].map(x=>Math.round(x.getBoundingClientRect().left)));
       return {frac:dr.width/inner,cols:L.size,sw:document.documentElement.scrollWidth,iw:innerWidth}},id);
     ok(g.frac>=0.98,`${w}x${h} expanded ${id} fills the grid width (${(g.frac*100).toFixed(0)}%)`);
     ok(g.sw<=g.iw,`${w}x${h} expanded ${id} has no horizontal overflow`);
@@ -230,38 +230,86 @@ const file=process.argv[2];
   }
  }
 
- // ---------- t54u: every rundown block is a full-width row; no mid-word breaks; titles never wrap into slivers ----------
- for(const [w,h,ua] of [[390,844,IPHONE],[820,1180,IPAD],[1024,768,IPAD],[1180,820,IPAD],[1440,900,null]]){
-  const p=await openHttp(w,h,ua); await delay(400);
-  await p.evaluate(()=>{document.getElementById('rundown').open=true});await delay(200);
-  await p.evaluate(()=>{const d=document.getElementById('rundown');scrollTo(0,d.getBoundingClientRect().top+scrollY-150)});await delay(300);
-  await p.screenshot({path:`${SHOTS}/v2-${w}-rundown.png`});
-  await p.evaluate(()=>{document.getElementById('national').open=true});await delay(200);
-  const g=await p.evaluate(()=>{const grid=document.querySelector('#rundown .rdgrid'),gr=grid.getBoundingClientRect(),rows=[...grid.querySelectorAll(':scope>details.rd')].map(d=>d.getBoundingClientRect());
-    const lines=(e)=>{const lh=parseFloat(getComputedStyle(e).lineHeight)||parseFloat(getComputedStyle(e).fontSize)*1.25;return e.getBoundingClientRect().height/lh};
-    const rt=[...document.querySelectorAll('#rundown .rd>summary .rtn')].map(e=>({t:e.textContent,l:lines(e)}));
-    const st=[...document.querySelectorAll('details.sec>summary .tn')].map(e=>({t:e.textContent,l:lines(e)}));
-    const nat=[...document.querySelectorAll('#national .sortbox>details.rd')].map(d=>d.getBoundingClientRect());const ngr=document.querySelector('#national .sortbox').getBoundingClientRect();
-    const nt=[...document.querySelectorAll('#national .rd>summary .rtn')].map(e=>({t:e.textContent.slice(0,24),l:lines(e)}));
-    const bad=[...document.querySelectorAll('summary,summary *,.rtn,.tn,.tt')].filter(e=>{const c=getComputedStyle(e);return c.wordBreak==='break-all'||c.overflowWrap==='anywhere'||c.overflowWrap==='break-word'&&e.matches('.rtn,.tn,.tt,summary')}).length;
-    const badges=[...document.querySelectorAll('.cf,.sb,.cnt,.pill,.tag,.upill,.ub')].filter(e=>getComputedStyle(e).whiteSpace!=='nowrap').length;
-    const bw=[...document.querySelectorAll('.cf')].filter(e=>e.offsetWidth>0&&e.getBoundingClientRect().height>parseFloat(getComputedStyle(e).fontSize)*2.2).length;
-    const disp=getComputedStyle(grid).display,rh=[...grid.querySelectorAll(':scope>details.rd>summary')].map(e=>e.getBoundingClientRect().height);const words=[...document.querySelectorAll('#rundown .rd>summary .rtn,details.sec>summary .tn')].filter(e=>{const wc=e.textContent.trim().split(/\s+/).length;return lines(e)>wc+0.2||e.scrollWidth>e.clientWidth+1}).map(e=>e.textContent);
-    const minw=Math.min(...rows.map(r=>r.width/gr.width));
-    return {disp,rh,words,minw,n:rows.length,dfull:Math.max(...rows.map(r=>Math.abs(r.width-gr.width))),lefts:new Set(rows.map(r=>Math.round(r.left))).size,stacked:rows.every((r,i)=>i===0||r.top>=rows[i-1].bottom-1),rt,st,
-      natn:nat.length,natfull:nat.length?Math.max(...nat.map(r=>Math.abs(r.width-ngr.width))):0,natstacked:nat.every((r,i)=>i===0||r.top>=nat[i-1].bottom-1),nt,bad,badges,bw,sw:document.documentElement.scrollWidth,iw:innerWidth}});
-  ok(g.n===12&&g.dfull<=2,`${w}x${h} all ${g.n} rundown blocks A-L are full-width rows (max diff ${g.dfull.toFixed(1)}px)`);
-  ok(g.lefts===1&&g.stacked&&g.minw>=0.95,`${w}x${h} rundown blocks are stacked, never side by side; narrowest card is ${(g.minw*100).toFixed(0)}% of its container`);
-  ok(/^(block|flex)$/.test(g.disp),`${w}x${h} rundown list is display:${g.disp} (no CSS grid columns)`);
-  ok(g.words.length===0,`${w}x${h} no title breaks or overflows mid-word ${JSON.stringify(g.words)}`);
-  if(w>=820){const rr=g.rh.filter(x=>x<56||x>76);ok(rr.length===0,`${w}x${h} collapsed rundown rows are 56-76px tall (${g.rh.map(Math.round).join(',')})`)}
-  const maxL=w<=500?2:1; const over=g.rt.filter(x=>x.l>maxL+0.2);
-  ok(over.length===0,`${w}x${h} rundown block titles take at most ${maxL} line(s) ${JSON.stringify(over)}`);
-  const over2=g.st.filter(x=>x.l>maxL+0.2); ok(over2.length===0,`${w}x${h} section titles take at most ${maxL} line(s) ${JSON.stringify(over2)}`);
-  ok(g.natn===0||(g.natfull<=2&&g.natstacked),`${w}x${h} National Desk story rows are full width and stacked (${g.natn} rows)`);
-  const over3=g.nt.filter(x=>x.l>2.2); ok(over3.length===0,`${w}x${h} National story titles take at most 2 lines ${JSON.stringify(over3)}`);
-  ok(g.bad===0&&g.badges===0&&g.bw===0,`${w}x${h} no break-all/anywhere on titles, every badge is nowrap, CONFIRM badges stay on one line`);
-  ok(g.sw<=g.iw,`${w}x${h} no horizontal overflow with Rundown and National open`);
+ // ---------- t57u-t60u: no Rundown section; A-L are sections; every section opens into Trending-model cards; Chisme; short Obituaries ----------
+ const LET='ABCDEFGHIJKL'.split('');
+ for(const [w,h,ua,tag] of [[390,844,IPHONE,'390'],[820,1180,IPAD,'820'],[1024,768,IPAD,'1024'],[1440,900,null,'1440']]){
+  const p=await openHttp(w,h,ua); await delay(500);
+  const base0=await p.evaluate(()=>({rd:!!document.getElementById('rundown'),txt:/monday 8 ?am rundown/i.test([...document.querySelectorAll('details.sec>summary,nav')].map(e=>e.textContent).join(' ')),nested:document.querySelectorAll('.sec .body details').length}));
+  ok(!base0.rd&&!base0.txt,`${tag} the Monday 8 AM Rundown section is gone`); ok(base0.nested===0,`${tag} no nested expanders inside sections (${base0.nested})`);
+  const order=await p.evaluate(()=>[...document.querySelectorAll('details.sec')].map(d=>d.id));
+  const bl=order.filter(x=>/^blk-/.test(x)).map(x=>x.slice(4)).join('');
+  ok(bl===LET.join(''),`${tag} blocks A-L each have their own section, in order (${bl})`);
+  ok(order.indexOf('chisme')===order.indexOf('headlines')+1,`${tag} Chisme sits right after Top Headlines (${order.slice(order.indexOf('headlines')-1,order.indexOf('headlines')+3)})`);
+  const u=await uniform(p); ok(u.dh<=2&&u.dw<=2,`${tag} all ${u.n} section bars are the same size (dh ${u.dh.toFixed(1)}, dw ${u.dw.toFixed(1)})`); fullbars(u,tag);
+  ok(u.n===order.length&&u.n>=24,`${tag} ${u.n} section bars`);
+  // every timeline segment opens and scrolls to its block
+  for(const L of LET){
+    await p.evaluate(()=>{[...document.querySelectorAll('details.sec')].forEach(d=>d.open=false);scrollTo(0,0)}); await delay(60);
+    await p.evaluate((L)=>document.querySelector('#tl a[data-jump="blk-'+L+'"]').click(),L); await delay(650);
+    const j=await p.evaluate((L)=>{const d=document.getElementById('blk-'+L);const pin=document.getElementById('pin').getBoundingClientRect().bottom;return {open:d.open,top:d.getBoundingClientRect().top-pin,cards:d.querySelectorAll('.sortbox>.item.trn').length,only:[...document.querySelectorAll('details.sec')].filter(x=>x.open).length}},L);
+    ok(j.open&&j.only===1&&j.cards>=3&&j.top>-3&&j.top<h*0.5,`${tag} tapping timeline ${L} opens only block ${L} (${j.cards} cards) and scrolls it into view (top ${Math.round(j.top)}px)`);
+  }
+  // every section's cards use the Trending model and are equal width in their grid
+  const secs=await p.evaluate(()=>[...document.querySelectorAll('details.sec')].map(d=>d.id).filter(x=>x!=='used'&&x!=='obits'));
+  for(const id of secs){
+    await p.evaluate((id)=>{[...document.querySelectorAll('details.sec')].forEach(d=>d.open=false);document.getElementById(id).open=true},id); await delay(120);
+    const g=await p.evaluate((id)=>{const d=document.getElementById(id);const boxes=[...d.querySelectorAll('.body .sortbox')];const kids=boxes.flatMap(b=>[...b.children]).filter(c=>!c.classList.contains('noev'));
+      const bad=kids.filter(c=>!c.classList.contains('item')||!c.classList.contains('trn')||!c.querySelector('.tx>b')).length;
+      const wd=boxes.map(b=>{const ws=[...b.children].filter(c=>!c.classList.contains('noev')).map(c=>c.getBoundingClientRect().width);return ws.length?Math.max(...ws)-Math.min(...ws):0});
+      const order=kids.filter(c=>c.querySelector('.tldr')&&c.querySelector('.ang')).filter(c=>c.querySelector('.tldr').compareDocumentPosition(c.querySelector('.ang'))&Node.DOCUMENT_POSITION_FOLLOWING?false:true).length;
+      const lefts=new Set(kids.map(c=>Math.round(c.getBoundingClientRect().left))).size;
+      const inner=d.querySelector('.body').getBoundingClientRect().width;
+      return {n:kids.length,bad,wd:Math.max(0,...wd),order,lefts,sw:document.documentElement.scrollWidth,iw:innerWidth,fill:d.getBoundingClientRect().width,body:inner}},id);
+    ok(g.n>0,`${tag} ${id}: opens into ${g.n} cards`);
+    ok(g.bad===0,`${tag} ${id}: every item is a Trending-model card (headline + meta + TL;DR + Riff); ${g.bad} are not`);
+    ok(g.wd<=2,`${tag} ${id}: cards in a grid are equal width (spread ${g.wd.toFixed(1)}px)`);
+    ok(g.order===0,`${tag} ${id}: TL;DR always comes before Riff`);
+    ok(g.sw<=g.iw,`${tag} ${id}: no horizontal overflow`);
+    if(w<=500) ok(g.lefts===1,`${tag} ${id}: one column of cards on a phone (${g.lefts})`);
+    else if(g.n>=4&&!['weather','hs','nfl','nba','mlb','memes'].includes(id)) ok(g.lefts>=(w>=1280?3:2),`${tag} ${id}: cards flow in ${g.lefts} columns`);
+  }
+  // card anatomy: Trending News is the model, headlines/national/blocks follow it
+  const an=await p.evaluate(()=>{const o={};for(const id of ['trending','national','tech','headlines','memes']){const c=document.querySelector('#'+id+' .sortbox>.item.trn');const q=(s)=>c.querySelector(s);const kids=[...c.querySelector('.tx').children].map(e=>e.className||e.tagName);
+      o[id]={head:!!q('.tx>b a'),meta:!!q('.src'),tldr:id==='headlines'?null:!!q('.tldr'),riff:id==='headlines'?null:!!q('.ang'),score:!!q('.sb')||id!=='trending'&&id!=='headlines'&&id!=='national'}}return o});
+  for(const id of Object.keys(an)){const a=an[id];ok(a.head&&a.meta&&a.tldr!==false&&a.riff!==false,`${tag} ${id} card has headline, meta line${id==='headlines'?'':', TL;DR and Riff'} ${JSON.stringify(a)}`)}
+  // chisme
+  const cs=await p.evaluate(()=>{const e=document.getElementById('chisme');const cards=[...e.querySelectorAll('.sortbox>.item.trn')];
+    return {sub:e.querySelector('summary small').textContent,title:e.querySelector('.tn').textContent,n:cards.length,links:cards.every(c=>/^https?:/.test((c.querySelector('.tx>b a')||{}).href||'')),
+      badges:cards.map(c=>(c.querySelector('.cf')||c.querySelector('.sb.t')||{}).textContent||'?'),txt:e.textContent,riff:cards.some(c=>c.querySelector('.ang')),plat:cards.every(c=>c.querySelector('.pill')),nav:!!document.querySelector('nav a[href="#chisme"]'),
+      badge:e.querySelector('summary .cf')?e.querySelector('summary .cf').textContent:''}});
+  ok(cs.title==='Chisme'&&cs.sub==='what the Valley is buzzing about',`${tag} Chisme bar: "${cs.title}" / "${cs.sub}"`);
+  ok(cs.n>=4&&cs.n<=10,`${tag} Chisme has ${cs.n} cards (4-10 in the fixture)`); ok(cs.links&&cs.plat&&cs.riff,`${tag} Chisme cards link to the original post, show the platform and carry a Riff`);
+  ok(cs.badges.every(b=>/RUMOR · CONFIRM BEFORE AIR|CONFIRMED · /.test(b))&&cs.badges.some(b=>/RUMOR/.test(b)),`${tag} every Chisme card says RUMOR · CONFIRM BEFORE AIR unless a news outlet confirmed it (${cs.badges.length})`);
+  ok(!/956-|address removed|\bteen\b|Maria Gonzalez/i.test(cs.txt)&&cs.nav&&/RUMOR/.test(cs.badge),`${tag} Chisme shows no phone/address/minor/private-name content; nav link and bar badge present`);
+  // obituaries: newest 7 days by default, week before behind a button
+  const ob0=await p.evaluate(()=>{const e=document.getElementById('obits');return {badge:e.querySelector('summary .cnt').textContent,small:e.querySelector('summary small').textContent}});
+  const m=/^(\d+) this week · (\d+) in 2 weeks$/.exec(ob0.badge); ok(!!m,`${tag} obituaries bar badge reads "${ob0.badge}"`);
+  await p.evaluate(()=>{[...document.querySelectorAll('details.sec')].forEach(d=>d.open=false);document.getElementById('obits').open=true;document.getElementById('obits').scrollIntoView()}); await delay(250);
+  const vis=()=>p.evaluate(()=>{const e=document.getElementById('obits');const v=[...e.querySelectorAll('.ob')].filter(x=>x.offsetParent!==null);const btn=document.getElementById('obmore'),pv=document.getElementById('obprev'),body=e.querySelector('.body');const bs=getComputedStyle(body);
+    const inner=body.getBoundingClientRect().width-parseFloat(bs.paddingLeft)-parseFloat(bs.paddingRight);
+    return {vis:v.length,all:e.querySelectorAll('.ob').length,hidden:pv.hidden,btn:btn.textContent,exp:btn.getAttribute('aria-expanded'),bw:btn.getBoundingClientRect().width,inner,bh:btn.getBoundingClientRect().height,
+      bad:v.filter(x=>x.querySelector('.tldr,.ang,.upill')||/cause|died of|passed from/i.test(x.textContent)).length,stars:e.querySelectorAll('#obnew .obstar').length,
+      fmt:v.every(x=>x.querySelector('a[href^="https://www.legacy.com/"]')&&/\d/.test(x.querySelector('.obm').textContent)),read:((document.getElementById('obscript')||document).querySelector('.tldr')||{}).textContent||'',sw:document.documentElement.scrollWidth,iw:innerWidth}});
+  let o=await vis(); const wk=+m[1],tot=+m[2];
+  ok(o.vis===wk&&o.hidden,`${tag} obituaries show ${o.vis} (the newest 7 days = ${wk}) by default; the previous week is hidden`);
+  ok(o.btn===`Show the previous week (${tot-wk})`&&o.exp==='false',`${tag} button reads "${o.btn}"`);
+  ok(Math.abs(o.bw-o.inner)<=2&&o.bh>=44,`${tag} the button is full width (${Math.round(o.bw)}/${Math.round(o.inner)}px) and 44px+ tall (${Math.round(o.bh)})`);
+  ok(o.bad===0&&o.fmt,`${tag} obituary cards carry only name, age, town, date and link (no TL;DR, Riff or cause of death)`);
+  ok(o.stars===6&&o.read.split(';').length===6,`${tag} the on-air read is still 6 names (${o.stars} starred, ${o.read.split(';').length} in the read)`);
+  await p.click('#obmore'); await delay(200); o=await vis();
+  ok(o.vis===tot&&!o.hidden&&o.exp==='true'&&/^Hide the previous week/.test(o.btn),`${tag} tapping the button expands in place: ${o.vis} of ${tot} shown, "${o.btn}"`);
+  ok(o.sw<=o.iw,`${tag} no horizontal overflow with all obituaries shown`);
+  await p.click('#obmore'); await delay(200); o=await vis(); ok(o.vis===wk&&o.hidden,`${tag} tapping again collapses back to ${o.vis}`);
+  // the section badges never clip (the old phone "3 CONFIRM" cut-off)
+  await p.evaluate(()=>{[...document.querySelectorAll('details.sec')].forEach(d=>d.open=false);scrollTo(0,0)}); await delay(150);
+  const clip=await p.evaluate(()=>[...document.querySelectorAll('details.sec>summary')].flatMap(s=>{const sr=s.getBoundingClientRect(),sm=s.querySelector('.sm');const out=[];if(sm&&sm.scrollWidth>sm.clientWidth+1)out.push(s.parentElement.id+' .sm clipped '+sm.scrollWidth+'>'+sm.clientWidth);
+    [...s.querySelectorAll('.sm>*')].filter(e=>e.offsetWidth>0).forEach(e=>{const r=e.getBoundingClientRect();if(r.right>sr.right-2||r.left<sr.left)out.push(s.parentElement.id+' '+e.textContent+' outside bar')});return out}));
+  ok(clip.length===0,`${tag} no badge or count is clipped on any section bar ${JSON.stringify(clip.slice(0,4))}`);
+  // screenshots
+  if(w===1024){await p.screenshot({path:SHOTS+'/v3-1024-collapsed.png'})}
+  if(w===1440||w===390||w===820){const id=w===820?'blk-J':'blk-C';await p.evaluate((id)=>{[...document.querySelectorAll('details.sec')].forEach(d=>d.open=false);const d=document.getElementById(id);d.open=true;scrollTo(0,d.getBoundingClientRect().top+scrollY-(document.getElementById('pin').offsetHeight+6))},id);await delay(400);
+    await p.screenshot({path:`${SHOTS}/v3-${w}-${id==='blk-C'?'block-C':'block-J'}-expanded.png`})}
+  if(w===1440){for(const id of ['chisme','obits']){await p.evaluate((id)=>{[...document.querySelectorAll('details.sec')].forEach(d=>d.open=false);const d=document.getElementById(id);d.open=true;scrollTo(0,d.getBoundingClientRect().top+scrollY-(document.getElementById('pin').offsetHeight+6))},id);await delay(350);await p.screenshot({path:`${SHOTS}/v3-1440-${id}-expanded.png`})}}
   await p.close();
  }
 
@@ -289,8 +337,8 @@ const file=process.argv[2];
      await p.screenshot({path:`${SHOTS}/v2-${tag}-t23.png`});
      await p.evaluate(()=>scrollTo(0,0));await delay(200);
      await p.evaluate(()=>{document.querySelector('#tl a[data-jump="blk-C"]').click()});await delay(700);
-     const jmp=await p.evaluate(()=>({r:document.getElementById('rundown').open,c:document.getElementById('blk-C').open}));
-     ok(jmp.r&&jmp.c,`${tag} tapping segment C opens Rundown and block C`);
+     const jmp=await p.evaluate(()=>({c:document.getElementById('blk-C').open,top:document.getElementById('blk-C').getBoundingClientRect().top}));
+     ok(jmp.c&&jmp.top<400,`${tag} tapping segment C opens block C and scrolls to it (top ${Math.round(jmp.top)}px)`);
    }
    await p.close();
   }

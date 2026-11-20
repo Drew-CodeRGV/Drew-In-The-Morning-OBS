@@ -72,7 +72,7 @@ Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close
 
 ---
 ## C · LOCAL NEWS (8:05–8:13, 8 min)
-*FLEX: trim to 6 / stretch to 10 min. Top Valley stories: the Starbase/SpaceX vote and launch, Overheard in the Valley, whatever broke this morning*
+*FLEX: trim to 6 / stretch to 10 min. Top Valley stories: the Starbase/SpaceX vote and launch, Overheard in the Valley, Chisme (what the Valley is buzzing about), whatever broke this morning*
 
 **Talking points**
 - THE VOTE: Tue Nov 17, Cameron County commissioners voted 3-2 not to move toward a public hearing on SpaceX's request for a 10-year, 100% tax abatement on a $24B data center and gas power plant. Treviño and Lopez voted for the hearing (it would have been Dec 29). Lopez said "it's dead in the water" but stressed it was a vote about setting up public input, not approving the deal.
@@ -83,6 +83,7 @@ Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close
 - CONTEXT (depth): SpaceX also pledged $220M for Brownsville water projects (Daily McAllen Nov 14) and Brownsville secured another $30M SpaceX deposit (City of Brownsville Nov 17). Ask: is the deal "jobs for infrastructure" and who negotiates it?
 - OVERHEARD IN THE VALLEY: backup verified item, Speer Memorial Library Route 20 bus-stop march/petition (Nov 14; stop reportedly unserviced since ~2017). PREP: pull 2-3 top posts Sunday night from r/RioGrandeValley, r/RGVEvents, r/McAllen (Top, Past Week).
 - WILDCARD: whatever broke this morning. Check KRGV, MyRGV, ValleyCentral first.
+- CHISME (optional, about 30 seconds, only if time allows): see the Chisme section right after Top Headlines on the studio page. Air only what a news outlet has confirmed; otherwise tease it as 'people are talking about...' and say it is unconfirmed. No private people in anything negative, nothing about kids, no addresses or personal details.
 
 **Follow-up questions**
 - Does 'no tax break' mean 'no project'? What does the Valley get for being SpaceX's backyard, and who pays?
@@ -111,7 +112,7 @@ Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close
 - KRGV: Boca Chica Beach resolution: https://www.krgv.com/news/cameron-county-commissioners-pass-resolution-to-protect-public-access-to-boca-chica-beach/
 - r/RioGrandeValley: Speer Library march: https://www.reddit.com/r/RioGrandeValley/comments/1xjnz54/community_march_to_petition_for_the_speer/
 
-**CONFIRM BEFORE AIR:** Dec 9 Starbase hearing date; Jobs figure (MyRGV 5,500 peak construction vs KRGV 500 new); FAA public meeting date; Pull live Reddit top-of-week titles (r/RioGrandeValley, r/RGVEvents, r/McAllen)
+**CONFIRM BEFORE AIR:** Dec 9 Starbase hearing date; Jobs figure (MyRGV 5,500 peak construction vs KRGV 500 new); FAA public meeting date; Pull live Reddit top-of-week titles (r/RioGrandeValley, r/RGVEvents, r/McAllen); Chisme: every item is a rumor until a news outlet confirms it
 
 ---
 ## D · LOCAL POLITICS (8:13–8:19, 6 min)
