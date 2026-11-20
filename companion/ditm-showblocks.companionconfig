@@ -31,7 +31,7 @@
             },
             "feedbacks": [
               {
-                "id": "9b18a680-3dea-4a83-bc8f-eca707667901",
+                "id": "6bae7982-ccf1-49c1-ab0f-ff094eefda4a",
                 "type": "variable_value",
                 "instance_id": "internal",
                 "options": {
@@ -54,7 +54,7 @@
                 "action_sets": {
                   "down": [
                     {
-                      "id": "09719b62-6cff-4c6a-9d2f-dafbd185882d",
+                      "id": "0952a79b-b57a-40bf-aac6-c3e3b5e8a3d3",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -64,7 +64,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "1e34d5ca-bd08-49f8-96de-4a9c709cf9af",
+                      "id": "c59aced0-d693-4591-9b66-352bf0ace72c",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -74,7 +74,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "d905174d-be49-48d9-8b7d-64a8e5362e95",
+                      "id": "ef070a21-9f8a-4b65-bd57-8077a1f46276",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -84,7 +84,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "c9bf91e6-68ae-4c04-9221-13b106bd35c3",
+                      "id": "7f6320f3-a273-433e-b059-91e4e03bbb56",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -94,7 +94,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "181d9475-42e2-42fe-9522-4531e550cbc3",
+                      "id": "f29578ef-14d6-449c-9fd4-83f0c726d4a1",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -104,17 +104,17 @@
                       "delay": 0
                     },
                     {
-                      "id": "b391534a-2650-4ae8-a9a1-85494ff19b4c",
+                      "id": "50ca49c2-c3fe-496b-b76f-52114f3be515",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
                         "name": "ditm_scene",
-                        "value": "Main Host"
+                        "value": "Drew in the Morning"
                       },
                       "delay": 0
                     },
                     {
-                      "id": "a340c6df-631f-4b68-ae78-272c35ced235",
+                      "id": "3d0c9f1c-b8e1-4a73-bcd9-9d28115a0e2d",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -124,7 +124,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "2c9f3fe1-c754-49bd-9bde-33d2353a113d",
+                      "id": "a1da2450-c8f1-4f0d-9667-f8b4aa42dba9",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -134,7 +134,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "e9408b58-372b-48e0-803c-dbd3736c7cf9",
+                      "id": "12ad36fc-5a7e-454a-bc09-2252a1e3ab3b",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -144,7 +144,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "2bee4a10-d3a6-4a40-bb78-72d379f2394a",
+                      "id": "b342992c-f1f4-42fa-8589-8f5fa8533de9",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -154,20 +154,20 @@
                       "delay": 10
                     },
                     {
-                      "id": "af471385-87c4-4175-8ddb-12dd2decb043",
+                      "id": "75f5b28b-a248-457e-b716-e9d3fccf9283",
                       "instance": "obs",
                       "action": "set_current_scene",
                       "options": {
-                        "scene": "Main Host"
+                        "scene": "Drew in the Morning"
                       },
                       "delay": 20
                     },
                     {
-                      "id": "1238b3c4-3406-44f9-9d56-954247d940ae",
+                      "id": "801a81fb-fec1-484d-8b30-585c3370eced",
                       "instance": "obs",
                       "action": "set_source_visibility",
                       "options": {
-                        "scene": "Main Host",
+                        "scene": "Drew in the Morning",
                         "source": "DITM Lower Third",
                         "visible": true
                       },
@@ -197,7 +197,7 @@
             },
             "feedbacks": [
               {
-                "id": "0509e1f7-1ade-4967-a6b4-49c511c2926d",
+                "id": "d6358b46-dd31-4653-acad-aec35524d5d4",
                 "type": "variable_value",
                 "instance_id": "internal",
                 "options": {
@@ -220,7 +220,7 @@
                 "action_sets": {
                   "down": [
                     {
-                      "id": "b2d293db-4223-4149-b38f-9fbd0676801c",
+                      "id": "8f9a1729-4dc6-4edb-9281-bc2037b8e4dc",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -230,7 +230,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "72c1952a-302d-4e3b-a0ac-347e19923338",
+                      "id": "5286b781-344b-4be5-9480-e6a45f631b37",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -240,7 +240,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "ea9ae8f6-d811-49f4-ad7b-70ccae719591",
+                      "id": "d3116036-e5f8-4154-89c3-89960946737a",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -250,7 +250,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "cc87d87d-1a1e-4783-9efd-0599df8bc5c3",
+                      "id": "e2b4ed23-cfb4-4343-972c-26c1c549b25a",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -260,7 +260,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "30b83cbd-c2b1-4c6e-a77a-c2068dde2a3e",
+                      "id": "4062d338-1be7-40ef-a0f1-93df44cbbe01",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -270,17 +270,17 @@
                       "delay": 0
                     },
                     {
-                      "id": "2ff60658-fcdc-4ba1-a7cf-4b7d67aaece5",
+                      "id": "56c048ae-e9e4-4cc3-beff-c3c5ad189d62",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
                         "name": "ditm_scene",
-                        "value": "Main Host"
+                        "value": "Drew in the Morning"
                       },
                       "delay": 0
                     },
                     {
-                      "id": "9e25f643-960a-479a-b7c4-c12c7a6b8837",
+                      "id": "64c223f3-6ace-4803-b4d6-449f9ccce25a",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -290,7 +290,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "c0148377-8423-4500-a6fe-f3336372fa4c",
+                      "id": "70a9abc6-1a25-4717-8bc2-0b93e820cbd1",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -300,7 +300,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "5e477591-22da-48dc-a1fd-27e1aedcc4d0",
+                      "id": "c4e56028-c32d-42e9-875f-5e88476d0970",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -310,7 +310,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "75d47590-1b30-4f64-94f3-7abf9e146936",
+                      "id": "67522865-8fe9-4412-a3fe-649fb23cb7bf",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -320,20 +320,20 @@
                       "delay": 10
                     },
                     {
-                      "id": "32c16522-5fae-48c9-b5ee-37addb155c8f",
+                      "id": "56229dac-e910-4598-bafd-1bed26b91527",
                       "instance": "obs",
                       "action": "set_current_scene",
                       "options": {
-                        "scene": "Main Host"
+                        "scene": "Drew in the Morning"
                       },
                       "delay": 20
                     },
                     {
-                      "id": "289e023f-42d3-4cf0-ac18-f66a1e4c4678",
+                      "id": "2b5635c5-2d8e-4921-b1b0-3b665645cf6f",
                       "instance": "obs",
                       "action": "set_source_visibility",
                       "options": {
-                        "scene": "Main Host",
+                        "scene": "Drew in the Morning",
                         "source": "DITM Lower Third",
                         "visible": true
                       },
@@ -363,7 +363,7 @@
             },
             "feedbacks": [
               {
-                "id": "9ebcc2f4-f9f2-4cc4-8f3f-377323c5d4b9",
+                "id": "3254e492-7933-4785-992b-0b56ae3bd669",
                 "type": "variable_value",
                 "instance_id": "internal",
                 "options": {
@@ -386,7 +386,7 @@
                 "action_sets": {
                   "down": [
                     {
-                      "id": "b81f0ff1-8328-4043-8c13-949d0da1df48",
+                      "id": "14af4ae7-49d6-4b09-ae06-d17ba3261e8e",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -396,7 +396,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "9c1fa0ee-df45-4d7d-ae1c-76de91a464b5",
+                      "id": "04bb51db-3983-466a-8140-673c5793636e",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -406,7 +406,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "bf13a411-9b37-4818-8b92-8428ccd7cf7f",
+                      "id": "a0edce70-b82d-40c2-910c-8478a56fdf97",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -416,7 +416,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "f5639626-3a35-4550-bb0b-1eb8796fa302",
+                      "id": "4038d24a-f270-463b-9a70-2da689fe4d30",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -426,7 +426,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "14228345-e690-43a5-a60a-e41707d8f96b",
+                      "id": "a7bf41c1-2262-4d7e-b031-29115a731c9f",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -436,17 +436,17 @@
                       "delay": 0
                     },
                     {
-                      "id": "6f870f6e-e960-4b11-afe9-40f3f41a30ab",
+                      "id": "2b9819b9-e4c0-43a8-8cdd-16247f0f886b",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
                         "name": "ditm_scene",
-                        "value": "Main Host"
+                        "value": "Drew in the Morning"
                       },
                       "delay": 0
                     },
                     {
-                      "id": "b5799617-8d74-40aa-8421-2bbfd15974b1",
+                      "id": "e28703a3-d08b-4910-b37b-be3d0d1df62c",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -456,7 +456,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "ba956b17-24b8-42b5-8243-9930cce64bf9",
+                      "id": "61d56670-7ebc-4118-a655-0e571e793653",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -466,7 +466,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "fcf63610-a3a4-45f4-9118-51304e81d347",
+                      "id": "02d731e0-372c-4124-ac33-21d59f93696e",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -476,7 +476,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "aa748652-2548-4669-8e38-601369d0f4f9",
+                      "id": "80d7779b-9406-4ca3-8039-cf89c32db8e7",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -486,20 +486,20 @@
                       "delay": 10
                     },
                     {
-                      "id": "492007ab-f0ed-4016-9b50-eeaeab992238",
+                      "id": "1aa6887f-a0b1-48a4-b8ea-af4c34d9ec4a",
                       "instance": "obs",
                       "action": "set_current_scene",
                       "options": {
-                        "scene": "Main Host"
+                        "scene": "Drew in the Morning"
                       },
                       "delay": 20
                     },
                     {
-                      "id": "857f0f23-fa10-4fed-b9a5-c502af2b2a7c",
+                      "id": "5649745b-e3ef-467d-b176-9647f470c433",
                       "instance": "obs",
                       "action": "set_source_visibility",
                       "options": {
-                        "scene": "Main Host",
+                        "scene": "Drew in the Morning",
                         "source": "DITM Lower Third",
                         "visible": true
                       },
@@ -529,7 +529,7 @@
             },
             "feedbacks": [
               {
-                "id": "1b32f360-c893-4552-8cab-0c25ff0a72b4",
+                "id": "2cd011a0-e8a5-41ef-8f90-bd192b479b57",
                 "type": "variable_value",
                 "instance_id": "internal",
                 "options": {
@@ -552,7 +552,7 @@
                 "action_sets": {
                   "down": [
                     {
-                      "id": "fc6a173c-c577-4f16-a0f3-634b5e8befc0",
+                      "id": "97aca205-52aa-4791-ba33-85f6bbd66f6b",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -562,7 +562,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "d9291114-9ad6-4c14-86b7-2d184d6ca51b",
+                      "id": "55e88f02-fa73-4f5f-a2df-b8728ca58a55",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -572,7 +572,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "e42088d7-7c82-46b8-bfcf-34b90a0bb373",
+                      "id": "61f8fa14-0c90-4fde-bf03-ecf170e4e173",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -582,7 +582,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "5fb63cbc-e784-4253-9302-1e83e860179b",
+                      "id": "68a3a7b5-d794-4172-98ce-54fc87f51216",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -592,7 +592,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "339ace13-f3c0-4038-9cb7-dfac3be50af5",
+                      "id": "4b0d1105-6ecc-4e42-b19b-9f053f781cc9",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -602,17 +602,17 @@
                       "delay": 0
                     },
                     {
-                      "id": "02e4b83d-6b51-473b-ae17-cebfd1f0f4ec",
+                      "id": "93511eb5-26e0-4891-95c1-1bda2d1f4d9b",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
                         "name": "ditm_scene",
-                        "value": "Main Host"
+                        "value": "Drew in the Morning"
                       },
                       "delay": 0
                     },
                     {
-                      "id": "add03efc-aa84-4be0-bcaa-a3ca9b34fc7c",
+                      "id": "8ab9470b-077b-49e6-afa0-0b3c32c11025",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -622,7 +622,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "d63d88b8-4696-42c1-a1c9-e8a6d008b47a",
+                      "id": "c7f99966-849d-4e9d-9065-29037b89dd9c",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -632,7 +632,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "dfe663fd-17f7-413b-b184-3b619c3b6959",
+                      "id": "fc65f2cf-7b13-40af-bc35-75aa81f966b6",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -642,7 +642,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "b3c7bb92-1291-4033-afe2-3fd40b0e4b8c",
+                      "id": "1b615846-b921-4362-9ccc-c76af62e9ee9",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -652,20 +652,20 @@
                       "delay": 10
                     },
                     {
-                      "id": "46873843-da88-4fdf-a22f-dcae5625196c",
+                      "id": "f268b9ba-eb39-4e9c-8571-d8bbe6748c1a",
                       "instance": "obs",
                       "action": "set_current_scene",
                       "options": {
-                        "scene": "Main Host"
+                        "scene": "Drew in the Morning"
                       },
                       "delay": 20
                     },
                     {
-                      "id": "83be945f-b549-4454-b064-b038742bb40a",
+                      "id": "66e70582-40a5-4db5-acc2-fcba76637cb7",
                       "instance": "obs",
                       "action": "set_source_visibility",
                       "options": {
-                        "scene": "Main Host",
+                        "scene": "Drew in the Morning",
                         "source": "DITM Lower Third",
                         "visible": true
                       },
@@ -695,7 +695,7 @@
             },
             "feedbacks": [
               {
-                "id": "9355be0e-649e-455d-bb7c-1ebf68ca17ba",
+                "id": "6ab583db-c85d-4d48-827e-1f86e9a89d65",
                 "type": "variable_value",
                 "instance_id": "internal",
                 "options": {
@@ -718,7 +718,7 @@
                 "action_sets": {
                   "down": [
                     {
-                      "id": "4b4b5d39-219f-4b10-95f1-8fd8e8af19a2",
+                      "id": "a12d7689-4690-4a68-946f-608819989178",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -728,7 +728,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "399e7d85-d22e-46fa-8831-d4700e708145",
+                      "id": "7eaac50b-dfd0-41a4-8620-78a8f9abe314",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -738,7 +738,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "09e877f5-5218-4295-8b86-34eca477f29d",
+                      "id": "a1e4286d-ff93-4b61-8950-268f30fc5f17",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -748,7 +748,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "28345ca4-76b8-4b72-a85a-2197995e5ba2",
+                      "id": "7ad49907-eccb-47c6-9d52-03f766061ce6",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -758,7 +758,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "32689084-dd28-4165-adc8-c1b652087e78",
+                      "id": "0fa6c488-d9bf-4ea9-a585-373044acba08",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -768,17 +768,17 @@
                       "delay": 0
                     },
                     {
-                      "id": "083fff53-9fa4-4601-aa91-8a9cc6d01e6b",
+                      "id": "d75ee997-5fc3-4917-bfac-004f5e708498",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
                         "name": "ditm_scene",
-                        "value": "Main Host"
+                        "value": "Drew in the Morning"
                       },
                       "delay": 0
                     },
                     {
-                      "id": "213d2dc7-165f-4a0e-b915-3e883ac6b48c",
+                      "id": "b641e0dd-f6ca-4484-9636-e4c2367f48ec",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -788,7 +788,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "0e66ff00-806b-4ee0-9dd1-7aafb5d4f350",
+                      "id": "8e122bb3-cfb9-4663-821a-cef42401f86a",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -798,7 +798,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "e14e147e-138e-4122-85b3-f13337e4c264",
+                      "id": "9f5507f8-f282-41b7-abc0-126d7d4a66e8",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -808,7 +808,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "9e4070ec-5844-4a6c-82f0-a3d14a9b363f",
+                      "id": "adec15c1-09db-4fc3-97b5-b90ce1ddb687",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -818,20 +818,20 @@
                       "delay": 10
                     },
                     {
-                      "id": "8b8eb4e4-4862-447d-afc1-c6edd3f57716",
+                      "id": "f818b93c-e0e1-416d-904b-ba98dcfba6a5",
                       "instance": "obs",
                       "action": "set_current_scene",
                       "options": {
-                        "scene": "Main Host"
+                        "scene": "Drew in the Morning"
                       },
                       "delay": 20
                     },
                     {
-                      "id": "3dec3363-0e65-4c66-88af-6f5ea50015dd",
+                      "id": "a8d6d39b-2095-404f-ab76-a4de24f12f5d",
                       "instance": "obs",
                       "action": "set_source_visibility",
                       "options": {
-                        "scene": "Main Host",
+                        "scene": "Drew in the Morning",
                         "source": "DITM Lower Third",
                         "visible": true
                       },
@@ -897,7 +897,7 @@
                 "action_sets": {
                   "down": [
                     {
-                      "id": "fa691490-0f2e-4fec-b464-4efe4d9f2aa5",
+                      "id": "5b428b6f-010f-4281-95d7-4ec00e1ad572",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -907,7 +907,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "6d754623-91b3-4680-9da3-9bb396d915da",
+                      "id": "af21af6f-412a-4b29-98af-e7f8d46341f8",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -917,7 +917,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "bc259267-6bc6-4501-8269-859e94d9cccc",
+                      "id": "7a0c4298-e71a-4cb9-b228-7628bc21d7bb",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -927,7 +927,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "5e9e8498-92fe-47b1-870f-53c5bceaf858",
+                      "id": "4fcfead9-7e6f-4381-a071-f775eafdc062",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -937,7 +937,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "20b84cef-aa1b-4225-b888-6c178721ed0f",
+                      "id": "f32bced2-84e0-43c9-96b0-b23b803f094a",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -947,7 +947,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "9e8b25ef-bddc-4483-ae5c-003c78c93021",
+                      "id": "8b31dd2b-43d7-47a6-860f-a6d33fc799be",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -957,7 +957,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "64a4c42b-0d7f-4d2c-8e58-8609a6d3d68e",
+                      "id": "b0116050-80e8-4a61-bb68-345a0e6781e3",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -992,7 +992,7 @@
             },
             "feedbacks": [
               {
-                "id": "6bbd84b8-c8b9-411c-bae6-599919a4964f",
+                "id": "28f2a1a6-a057-4903-8247-19bb878881f8",
                 "type": "variable_value",
                 "instance_id": "internal",
                 "options": {
@@ -1015,7 +1015,7 @@
                 "action_sets": {
                   "down": [
                     {
-                      "id": "d0f7f0d9-1320-4aa4-a468-aa4ca15d6134",
+                      "id": "4f3c69a4-a92f-4fdc-832f-c1fab1a1cade",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1025,7 +1025,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "a5c232a7-af4e-4263-ba76-9374dac3da9b",
+                      "id": "5d5b1c10-e2a9-4ac3-ab60-5f7c573a3c75",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1035,7 +1035,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "b7a15b1c-3988-4bb5-b449-94531c9897e2",
+                      "id": "7520c971-79c1-47ff-8f61-c9cd27618b5b",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1045,7 +1045,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "2fd5a4a2-4fa4-40de-9914-d1e0ff74665e",
+                      "id": "f28d3b37-906c-4928-93b9-dbe14fa13043",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1055,7 +1055,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "c48e077d-459c-461d-b540-80c23a78f3c1",
+                      "id": "16ac6fc6-cf21-490e-893a-4ba4dee6fe1e",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1065,17 +1065,17 @@
                       "delay": 0
                     },
                     {
-                      "id": "49dd9aa3-8248-419b-9e9e-aa646aa58ed3",
+                      "id": "f725fb12-ec8e-4396-b3f3-4855e1f3d3d9",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
                         "name": "ditm_scene",
-                        "value": "Main Host"
+                        "value": "Drew in the Morning"
                       },
                       "delay": 0
                     },
                     {
-                      "id": "da705a0c-4b6a-4ed3-9b13-debb922464b4",
+                      "id": "462dc5f8-eebe-4ab8-aeb4-4a72086e42bd",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1085,7 +1085,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "1f902511-fb0a-44a9-87b9-dc87d3fdd223",
+                      "id": "e8027c49-2f1a-41de-b416-50ae44674c7f",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1095,7 +1095,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "71e9d7a5-2b8d-4008-9d78-24e3e413f533",
+                      "id": "5436e6cd-03d6-421d-a6cb-3574e487384a",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1105,7 +1105,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "54a98ff3-e4d5-4e5e-8cb8-525bab4a5749",
+                      "id": "1a72c92c-5ce8-4ce2-a8a3-c681555d1064",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1115,20 +1115,20 @@
                       "delay": 10
                     },
                     {
-                      "id": "940f5199-6eab-4c60-ac7a-1c15c9a4274b",
+                      "id": "1efd4fec-dc79-4af6-9af0-27bae66c709f",
                       "instance": "obs",
                       "action": "set_current_scene",
                       "options": {
-                        "scene": "Main Host"
+                        "scene": "Drew in the Morning"
                       },
                       "delay": 20
                     },
                     {
-                      "id": "8ea18c57-8e83-4290-b56e-32a5e118fff2",
+                      "id": "cdf688df-5ce4-4ce6-ba6c-026d4c7de253",
                       "instance": "obs",
                       "action": "set_source_visibility",
                       "options": {
-                        "scene": "Main Host",
+                        "scene": "Drew in the Morning",
                         "source": "DITM Lower Third",
                         "visible": true
                       },
@@ -1158,7 +1158,7 @@
             },
             "feedbacks": [
               {
-                "id": "bea421eb-1486-4d84-98e2-3d6e8861fe32",
+                "id": "8306c9a2-9338-4929-8451-5e3836a27c7b",
                 "type": "variable_value",
                 "instance_id": "internal",
                 "options": {
@@ -1181,7 +1181,7 @@
                 "action_sets": {
                   "down": [
                     {
-                      "id": "8743a4e3-545d-43ea-a5bc-4ec108d82cab",
+                      "id": "3c5c64e6-a889-4471-971f-ef85a00c310c",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1191,7 +1191,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "c3de3ea7-ca2d-453a-b6cd-460136ee9a28",
+                      "id": "9966a772-8b13-4e51-8dd0-8ca87aacc589",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1201,7 +1201,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "89004df4-1ce8-4056-be10-f07d61226fbf",
+                      "id": "36c8001b-d248-42a1-9555-a34c78346e6e",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1211,7 +1211,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "d5573cce-84f3-4ce7-99cf-92dfae23cb8e",
+                      "id": "03e441df-0308-4e64-8125-a72bd27e7e03",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1221,7 +1221,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "1c879149-d6d1-426d-9737-6c8683fbdd7e",
+                      "id": "9f77bce0-4bde-4b7d-8e9c-47dde0bd8c19",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1231,17 +1231,17 @@
                       "delay": 0
                     },
                     {
-                      "id": "7d812d15-55ed-4dd9-86e4-a8424ffa2707",
+                      "id": "2ecdc673-0bee-4ec7-b10d-33c416b6e367",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
                         "name": "ditm_scene",
-                        "value": "Main Host"
+                        "value": "Drew in the Morning"
                       },
                       "delay": 0
                     },
                     {
-                      "id": "47893fa3-bedc-4c4e-ae2d-0232203b4897",
+                      "id": "64990c68-ac85-468c-84ac-460d40a2ab2b",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1251,7 +1251,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "d81ee7e7-1487-401b-956a-4313a21fd3ef",
+                      "id": "43b4aa0c-0112-4fe9-9f3d-8daf5d0d5daf",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1261,7 +1261,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "1fbbcc06-0c39-49ab-a662-f6ca2b4c1a91",
+                      "id": "0e8e320c-bd2d-4bb5-b664-7d517e563b14",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1271,7 +1271,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "476dba7c-ef54-496f-896e-3c573a5e4c7a",
+                      "id": "86ea8663-7ec9-4c9f-ad90-865f7295a15c",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1281,20 +1281,20 @@
                       "delay": 10
                     },
                     {
-                      "id": "e95177b9-142e-4b70-919c-9fa55675c4ef",
+                      "id": "844ad358-9cbb-4ac2-a9d5-2154bacd0fa8",
                       "instance": "obs",
                       "action": "set_current_scene",
                       "options": {
-                        "scene": "Main Host"
+                        "scene": "Drew in the Morning"
                       },
                       "delay": 20
                     },
                     {
-                      "id": "4177a2d8-a9df-449d-b43d-1477c098a922",
+                      "id": "d516a589-443f-4ef8-9abf-6574fc599a16",
                       "instance": "obs",
                       "action": "set_source_visibility",
                       "options": {
-                        "scene": "Main Host",
+                        "scene": "Drew in the Morning",
                         "source": "DITM Lower Third",
                         "visible": true
                       },
@@ -1324,7 +1324,7 @@
             },
             "feedbacks": [
               {
-                "id": "daaacf45-d1b1-42ec-9cc7-78861d99c576",
+                "id": "076e677d-4b4e-4944-b53a-86d30897d962",
                 "type": "variable_value",
                 "instance_id": "internal",
                 "options": {
@@ -1347,7 +1347,7 @@
                 "action_sets": {
                   "down": [
                     {
-                      "id": "38d50688-6bee-436b-85a7-c059065e9f84",
+                      "id": "09630363-a2cd-4b05-a1d4-166e9db5df6b",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1357,7 +1357,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "002d9f76-aa69-42fe-82c2-49200505432f",
+                      "id": "4ff2b7b4-9c68-4f81-88ac-3f0bc5183919",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1367,7 +1367,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "8f4473cb-03c1-48cc-96c3-860494a2e0a1",
+                      "id": "23d36375-79ea-4b14-904e-7773df5765a1",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1377,7 +1377,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "cb3ade7d-ed84-4800-812f-1f528fa9e7e9",
+                      "id": "86caf2e2-e3a7-491e-b33e-ef1140d9792a",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1387,7 +1387,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "f33cc09d-91eb-4929-926f-6e483201726b",
+                      "id": "935a1477-20ba-44dd-a01a-8c22ad12567d",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1397,17 +1397,17 @@
                       "delay": 0
                     },
                     {
-                      "id": "02e6148b-48b7-47ee-af31-8683831509c5",
+                      "id": "739eead2-2860-4872-be2c-ed5226f2f272",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
                         "name": "ditm_scene",
-                        "value": "Host + Jess"
+                        "value": "Drew in the Morning"
                       },
                       "delay": 0
                     },
                     {
-                      "id": "4b196877-4a58-4402-a862-2bbe7a171138",
+                      "id": "9241c492-c44b-4cd4-bee3-6e57ca47c5d5",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1417,7 +1417,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "18cbe400-cf96-45fc-a5e4-d2b0793d9542",
+                      "id": "51fbc450-2d1d-4ee6-b7b4-5900e3eaf9bd",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1427,7 +1427,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "de6009db-b566-43e7-b340-631d0a0413a5",
+                      "id": "05dc82ff-c0f9-4064-a5ee-2d8482089896",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1437,7 +1437,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "7c9888d6-6b86-475f-9ce4-84e79abd630f",
+                      "id": "b62c3334-5388-473a-a763-b2804928cc5f",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1447,20 +1447,20 @@
                       "delay": 10
                     },
                     {
-                      "id": "7cf9a70e-e4be-4d61-90e7-8dd69713efa1",
+                      "id": "c9e74ea9-6a75-4ebd-9733-da9423f324fe",
                       "instance": "obs",
                       "action": "set_current_scene",
                       "options": {
-                        "scene": "Host + Jess"
+                        "scene": "Drew in the Morning"
                       },
                       "delay": 20
                     },
                     {
-                      "id": "74fa7340-5988-4891-b56f-81141a708281",
+                      "id": "b0c53b13-dce1-4f42-b9b2-410a89f36765",
                       "instance": "obs",
                       "action": "set_source_visibility",
                       "options": {
-                        "scene": "Main Host",
+                        "scene": "Drew in the Morning",
                         "source": "DITM Lower Third",
                         "visible": true
                       },
@@ -1490,7 +1490,7 @@
             },
             "feedbacks": [
               {
-                "id": "0a8a3a95-fb44-44f5-807e-f04b09d2f346",
+                "id": "7e614d0a-9662-4b29-8bb8-15dc7d16ea97",
                 "type": "variable_value",
                 "instance_id": "internal",
                 "options": {
@@ -1513,7 +1513,7 @@
                 "action_sets": {
                   "down": [
                     {
-                      "id": "0c0a292e-bc98-4bb8-b918-a9e9b96662c7",
+                      "id": "a42cf904-8732-45ac-8fe1-1abe29860b1b",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1523,7 +1523,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "f6529d0b-8c68-4174-b59a-ed8dbd54df89",
+                      "id": "0ee3d791-8c6f-4ea5-9693-befe61d8ff6b",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1533,7 +1533,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "c5ae9989-4a25-4b9d-a4d0-b854250a82aa",
+                      "id": "5a1e8b6c-f221-4e43-813b-8c905cd6447c",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1543,7 +1543,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "a8e30fe4-d7de-4267-a00c-727e4649fa28",
+                      "id": "803680a4-caf9-4d35-9595-d526acaf3bfd",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1553,7 +1553,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "6e1f40be-afd2-4a28-af7d-eb7b603b105b",
+                      "id": "416f276d-d0ff-4607-981d-e0ba94b4a029",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1563,17 +1563,17 @@
                       "delay": 0
                     },
                     {
-                      "id": "184b5188-442e-4e65-aeac-e0a9f9d6c7ff",
+                      "id": "df746984-7aa1-477a-a554-9681b12f4e6e",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
                         "name": "ditm_scene",
-                        "value": "Main Host"
+                        "value": "Drew in the Morning"
                       },
                       "delay": 0
                     },
                     {
-                      "id": "cb2bc703-a629-453a-86a2-3ff46d729467",
+                      "id": "509d68ba-3439-418f-be45-31a138be63b0",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1583,7 +1583,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "41b48c1b-2bb9-451c-a6c0-dfaf9c3ff1c5",
+                      "id": "130e9729-2566-46be-bd9e-594f70bf645f",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1593,7 +1593,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "237018b1-17ad-425c-87fe-d05d25d42dfa",
+                      "id": "a7405c29-5e25-4ad9-ab69-073affbf80dd",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1603,7 +1603,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "e0ad1cc7-daed-4320-bbb3-bf1dc8d20837",
+                      "id": "c8e2ca38-700b-4cb0-8307-1cb0f21a1d91",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1613,20 +1613,20 @@
                       "delay": 10
                     },
                     {
-                      "id": "cd9f29db-2990-41ce-bea3-55fd68b384d8",
+                      "id": "5a81ca8c-ebf1-47a7-b1a8-a89386491f9f",
                       "instance": "obs",
                       "action": "set_current_scene",
                       "options": {
-                        "scene": "Main Host"
+                        "scene": "Drew in the Morning"
                       },
                       "delay": 20
                     },
                     {
-                      "id": "1685408d-4838-4892-99f9-0d4eab4db5d3",
+                      "id": "ae5c9cdc-0bd8-4ee1-808a-bf351c88c364",
                       "instance": "obs",
                       "action": "set_source_visibility",
                       "options": {
-                        "scene": "Main Host",
+                        "scene": "Drew in the Morning",
                         "source": "DITM Lower Third",
                         "visible": true
                       },
@@ -1656,7 +1656,7 @@
             },
             "feedbacks": [
               {
-                "id": "60496854-20fc-47af-9ccd-6aff48e97a74",
+                "id": "c32f05ef-97a9-4861-802c-cdbdbf92a201",
                 "type": "variable_value",
                 "instance_id": "internal",
                 "options": {
@@ -1679,7 +1679,7 @@
                 "action_sets": {
                   "down": [
                     {
-                      "id": "8e90b81d-fdd4-48c9-b562-860fea3a57a2",
+                      "id": "e91efa8a-3799-4988-bd3c-7edd3dff4c88",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1689,7 +1689,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "bc41d1ad-7ac6-421e-877f-cef6e7d98ffd",
+                      "id": "da7394ed-32cd-46fd-8157-0728acb9bae4",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1699,7 +1699,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "fd100147-9a83-4a09-a6da-81c1f1c0a9a0",
+                      "id": "3402fad7-b665-4e0f-926d-bca299238095",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1709,7 +1709,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "36cde416-d96c-4966-a2ab-c3618381acb5",
+                      "id": "7df4dd0e-9048-485d-b65d-4b2c4d42b2bd",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1719,7 +1719,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "29d2ba8c-2fc1-4e3d-a463-c027d0016a99",
+                      "id": "e93eae75-6b58-447b-ac4b-e963311aac65",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1729,17 +1729,17 @@
                       "delay": 0
                     },
                     {
-                      "id": "8bedf007-6c3e-4062-93f0-189257180fa7",
+                      "id": "98bd7ad6-3069-4eb1-8ce9-023af1c01921",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
                         "name": "ditm_scene",
-                        "value": "Main Host"
+                        "value": "Drew in the Morning"
                       },
                       "delay": 0
                     },
                     {
-                      "id": "cc6f113c-c7bb-4e7e-b919-7189ae053f6c",
+                      "id": "88c8115a-ccb7-4ec0-a686-f90f82a87c3f",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1749,7 +1749,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "9a369df5-68e5-48e6-a93c-734c8b514cc6",
+                      "id": "0e590d1b-edfb-4abf-9fd8-f8fcb2588ced",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1759,7 +1759,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "5c8e6497-1cf3-4f3d-be04-0be2ccbd3f82",
+                      "id": "93189a0f-2f85-4994-bd94-56e57167f9f3",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1769,7 +1769,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "aab8820d-f6a7-4a47-990d-65210d4f013f",
+                      "id": "1796a74f-d31b-4a85-b182-17dbbadf50f5",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1779,20 +1779,20 @@
                       "delay": 10
                     },
                     {
-                      "id": "7dae6a37-469a-45e8-a6df-97127a233689",
+                      "id": "c71ea1a5-32fb-4a9a-995b-adb5d89858e8",
                       "instance": "obs",
                       "action": "set_current_scene",
                       "options": {
-                        "scene": "Main Host"
+                        "scene": "Drew in the Morning"
                       },
                       "delay": 20
                     },
                     {
-                      "id": "8d9e1577-f1ac-495b-b6e0-382c34b576a8",
+                      "id": "bc04b360-d700-494d-a7e8-17e2e78cc527",
                       "instance": "obs",
                       "action": "set_source_visibility",
                       "options": {
-                        "scene": "Main Host",
+                        "scene": "Drew in the Morning",
                         "source": "DITM Lower Third",
                         "visible": true
                       },
@@ -1824,7 +1824,7 @@
             },
             "feedbacks": [
               {
-                "id": "2d1cdb29-b50c-4527-bf94-f6300b17e905",
+                "id": "9dc731dc-3c48-4937-ac9b-2e85636c83a5",
                 "type": "variable_value",
                 "instance_id": "internal",
                 "options": {
@@ -1847,7 +1847,7 @@
                 "action_sets": {
                   "down": [
                     {
-                      "id": "5f854f8b-2c65-456e-9945-1dceca62d6ef",
+                      "id": "eb008268-adbd-48d3-9def-409b48300919",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1857,7 +1857,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "a2a15622-b724-45d9-8abd-68d18a60cc43",
+                      "id": "559434ef-984d-4b68-b283-313344d01edb",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1867,7 +1867,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "4bf1ce92-c1c1-4e76-ae01-99bb7f7c0b4b",
+                      "id": "0566d0a2-6fe1-4ecf-be02-2f27654d11fd",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1877,7 +1877,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "9cd6891b-e287-4bc6-b405-683482822cb2",
+                      "id": "0677cb7c-f7fa-433d-93a2-1bf2a5cbd7f7",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1887,7 +1887,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "4588b481-599e-414b-951f-7cda51d1dab5",
+                      "id": "d7ea9f21-608d-491a-b6a3-b2b05d208ef2",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -1897,17 +1897,17 @@
                       "delay": 0
                     },
                     {
-                      "id": "37385c01-e848-4455-ad91-f4ea383a229a",
+                      "id": "0fbc73b4-cedb-4268-a027-8a36a61c33cb",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
                         "name": "ditm_scene",
-                        "value": "Main Host"
+                        "value": "Drew in the Morning"
                       },
                       "delay": 0
                     },
                     {
-                      "id": "fcb9e121-e1f7-4b6d-ac29-1603391c4138",
+                      "id": "6d84bd52-3f8c-4253-8acb-21a5668fb75a",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1917,7 +1917,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "be6ede3b-3600-4355-9301-8de1fec8ff75",
+                      "id": "6b07146a-1a01-49d5-ab42-5e8d64f451ae",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1927,7 +1927,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "e4d32cc3-74f2-4f8e-af06-38a5531bbb47",
+                      "id": "16bfa5a1-a2d1-4e2c-8db8-c6055b9b11e2",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1937,7 +1937,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "43146ba8-d01c-4f85-9a28-20781217c4e9",
+                      "id": "840f7022-f291-4cac-810a-3fe62dc77a85",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -1947,20 +1947,20 @@
                       "delay": 10
                     },
                     {
-                      "id": "8dc147f2-6823-43ba-9eda-8cf738816000",
+                      "id": "29dc9958-951d-4565-8455-ae2bf2ce908d",
                       "instance": "obs",
                       "action": "set_current_scene",
                       "options": {
-                        "scene": "Main Host"
+                        "scene": "Drew in the Morning"
                       },
                       "delay": 20
                     },
                     {
-                      "id": "73460aef-0697-44d2-b2a5-149716e79179",
+                      "id": "6d9d8f03-d77c-41ce-9e85-a6ce3291ab3e",
                       "instance": "obs",
                       "action": "set_source_visibility",
                       "options": {
-                        "scene": "Main Host",
+                        "scene": "Drew in the Morning",
                         "source": "DITM Lower Third",
                         "visible": true
                       },
@@ -1990,7 +1990,7 @@
             },
             "feedbacks": [
               {
-                "id": "ead3a72d-6c63-4fc2-99ae-2c21205af1af",
+                "id": "0f067c6c-d685-43af-8221-4932b21bd061",
                 "type": "variable_value",
                 "instance_id": "internal",
                 "options": {
@@ -2013,7 +2013,7 @@
                 "action_sets": {
                   "down": [
                     {
-                      "id": "3f1b80a1-1d3d-4f44-ac15-c1d06a4dba67",
+                      "id": "68b9d1fe-67da-483c-b7af-2ff5efb744a1",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -2023,7 +2023,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "6e78e480-62bd-47ab-94e1-100534c0b280",
+                      "id": "0fba05a6-4779-4633-92f5-cf4c2a1de0d1",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -2033,7 +2033,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "9b8b50ce-6e04-42a6-8da7-453a3d7160c2",
+                      "id": "c530934b-2581-4389-a140-3fbdcc667815",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -2043,7 +2043,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "6c9aef9a-d87b-40f8-b3d6-851a58e6249f",
+                      "id": "f4835198-d90f-4c05-bc4f-7330df1d2ceb",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -2053,7 +2053,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "7988b984-8b3c-4628-80bb-9e43db20de47",
+                      "id": "06cbe4e5-2703-4003-a9cb-ef7b2d3081a0",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
@@ -2063,17 +2063,17 @@
                       "delay": 0
                     },
                     {
-                      "id": "1609cb47-ca9b-4e77-82d9-e877b812c5e4",
+                      "id": "cdaddc68-1327-4e0f-9698-0c0896c20e64",
                       "instance": "internal",
                       "action": "custom_variable_set_value",
                       "options": {
                         "name": "ditm_scene",
-                        "value": "Host + Jess"
+                        "value": "Drew in the Morning"
                       },
                       "delay": 0
                     },
                     {
-                      "id": "2521d1ae-777a-4eee-89f5-4401775f9ef3",
+                      "id": "c983f018-b231-4b5a-91fc-4696d4106d3d",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -2083,7 +2083,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "ea201025-4991-4d52-b59d-71e5b64f761a",
+                      "id": "7654ca7b-21f0-4be3-a736-d04f3760e0c0",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -2093,7 +2093,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "13bdf4d8-4927-4ae6-bd55-3a029f467ec6",
+                      "id": "e80a4eb9-5ea0-48f5-99aa-2ccf48438e7c",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -2103,7 +2103,7 @@
                       "delay": 10
                     },
                     {
-                      "id": "3f8f8df3-96fa-4ce9-a5af-1143c64d85e9",
+                      "id": "60f2eb75-c1bd-4443-9dce-4ceb42b00520",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -2113,20 +2113,20 @@
                       "delay": 10
                     },
                     {
-                      "id": "022b3b78-7c7f-4bdf-b618-412bf2cfdd3c",
+                      "id": "0805cfbd-8c6b-42f2-a223-056598ae4226",
                       "instance": "obs",
                       "action": "set_current_scene",
                       "options": {
-                        "scene": "Host + Jess"
+                        "scene": "Drew in the Morning"
                       },
                       "delay": 20
                     },
                     {
-                      "id": "4a59cc51-2256-4cef-bd39-71949e79603c",
+                      "id": "5652ff40-6cf0-4ab0-b18b-2d580d0b81c2",
                       "instance": "obs",
                       "action": "set_source_visibility",
                       "options": {
-                        "scene": "Main Host",
+                        "scene": "Drew in the Morning",
                         "source": "DITM Lower Third",
                         "visible": true
                       },
@@ -2163,7 +2163,7 @@
                 "action_sets": {
                   "down": [
                     {
-                      "id": "266c4858-2ad8-4f3a-85f9-b96332c96286",
+                      "id": "9fea43d7-bb53-4b99-b9cc-2ca1370840f4",
                       "instance": "internal",
                       "action": "custom_variable_set_expression",
                       "options": {
@@ -2173,7 +2173,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "d5fb79ce-bbaa-4492-b7c7-509dd9861a77",
+                      "id": "a33c0223-247c-4126-b764-e8b5aaac5664",
                       "instance": "internal",
                       "action": "custom_variable_set_expression",
                       "options": {
@@ -2183,7 +2183,7 @@
                       "delay": 30
                     },
                     {
-                      "id": "e2949a96-eff0-4de6-960c-242b3cdf2f02",
+                      "id": "7412caef-433a-43ed-8cee-8a61f8ed7bd1",
                       "instance": "internal",
                       "action": "custom_variable_set_expression",
                       "options": {
@@ -2193,7 +2193,7 @@
                       "delay": 30
                     },
                     {
-                      "id": "3b398907-ae27-4276-8868-d07390d990c4",
+                      "id": "7b1580c5-b598-4d24-ac4d-b21c5be3460e",
                       "instance": "internal",
                       "action": "custom_variable_set_expression",
                       "options": {
@@ -2203,7 +2203,7 @@
                       "delay": 30
                     },
                     {
-                      "id": "baad5e82-0632-4ea0-94bb-ccd164aaeb18",
+                      "id": "b73b7b64-4529-4957-853c-b41c8a0a115a",
                       "instance": "internal",
                       "action": "custom_variable_set_expression",
                       "options": {
@@ -2213,17 +2213,17 @@
                       "delay": 30
                     },
                     {
-                      "id": "d3bb5415-d5cb-4eb5-8df2-2f7cbf04640e",
+                      "id": "b9e7881d-12bd-4bcf-9deb-86b28d8c4bc6",
                       "instance": "internal",
                       "action": "custom_variable_set_expression",
                       "options": {
                         "name": "ditm_scene",
-                        "expression": "($(internal:custom_ditm_block_index) == 0 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 1 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 2 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 3 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 4 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 5 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 6 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 7 ? \"Host + Jess\" : ($(internal:custom_ditm_block_index) == 8 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 9 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 10 ? \"Main Host\" : \"Host + Jess\")))))))))))"
+                        "expression": "($(internal:custom_ditm_block_index) == 0 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 1 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 2 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 3 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 4 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 5 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 6 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 7 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 8 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 9 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 10 ? \"Drew in the Morning\" : \"Drew in the Morning\")))))))))))"
                       },
                       "delay": 30
                     },
                     {
-                      "id": "ba1da9ff-24e2-46fd-bb89-d50fb098883a",
+                      "id": "d2eb9f27-457f-4b7c-a2b7-2e75591d33b8",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -2233,7 +2233,7 @@
                       "delay": 80
                     },
                     {
-                      "id": "cfbdf6df-2bf2-43de-9e5c-24981ece323b",
+                      "id": "0fc6863f-d101-48ca-aaf0-682e86c0ade5",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -2243,7 +2243,7 @@
                       "delay": 80
                     },
                     {
-                      "id": "63a196f2-1a04-407d-9dbd-3a222214b35c",
+                      "id": "c422bff4-502c-4365-be94-5b19e635baec",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -2253,7 +2253,7 @@
                       "delay": 80
                     },
                     {
-                      "id": "4842b97b-99c4-4777-8452-a23f28f807ac",
+                      "id": "7b571a6e-db10-4e19-85ad-a3a9b94068fa",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -2263,7 +2263,7 @@
                       "delay": 80
                     },
                     {
-                      "id": "1b6aafa2-b1cd-41c4-a7d2-c7ac359cc8b4",
+                      "id": "98e07eed-e451-4626-bc7e-45097bde860d",
                       "instance": "obs",
                       "action": "set_current_scene",
                       "options": {
@@ -2272,11 +2272,11 @@
                       "delay": 100
                     },
                     {
-                      "id": "740aef30-a15f-4569-94fd-cbb81147f6d9",
+                      "id": "7ee8c647-fc97-44fa-9fb7-9eb8fe2a6012",
                       "instance": "obs",
                       "action": "set_source_visibility",
                       "options": {
-                        "scene": "Main Host",
+                        "scene": "Drew in the Morning",
                         "source": "DITM Lower Third",
                         "visible": true
                       },
@@ -2313,7 +2313,7 @@
                 "action_sets": {
                   "down": [
                     {
-                      "id": "7885da82-2676-4262-8c13-553c7e5543c7",
+                      "id": "f5ac7635-d695-4990-8c1f-aaadb71dc463",
                       "instance": "internal",
                       "action": "custom_variable_set_expression",
                       "options": {
@@ -2323,7 +2323,7 @@
                       "delay": 0
                     },
                     {
-                      "id": "33b58808-ba6b-42d7-85f5-54a43bfdff29",
+                      "id": "6fa9b143-23d5-408c-80fd-e64dc004efe7",
                       "instance": "internal",
                       "action": "custom_variable_set_expression",
                       "options": {
@@ -2333,7 +2333,7 @@
                       "delay": 30
                     },
                     {
-                      "id": "c8b21244-4b3b-410a-93a0-178efe6e63ae",
+                      "id": "32b8b669-0edc-4af0-9bcd-b7bad885b06f",
                       "instance": "internal",
                       "action": "custom_variable_set_expression",
                       "options": {
@@ -2343,7 +2343,7 @@
                       "delay": 30
                     },
                     {
-                      "id": "4f0f985a-a25b-4271-9bab-42a48a79486b",
+                      "id": "4f33fa63-1832-4b63-a8aa-64a677c40313",
                       "instance": "internal",
                       "action": "custom_variable_set_expression",
                       "options": {
@@ -2353,7 +2353,7 @@
                       "delay": 30
                     },
                     {
-                      "id": "c8918012-e8c5-406e-b272-114d778d0345",
+                      "id": "f0c38aae-d443-435e-9372-6ffbcb210c32",
                       "instance": "internal",
                       "action": "custom_variable_set_expression",
                       "options": {
@@ -2363,17 +2363,17 @@
                       "delay": 30
                     },
                     {
-                      "id": "8c9648aa-8b69-4bb7-a668-76dcfc85e13b",
+                      "id": "959525cd-bdce-4345-af58-a520be27f0d4",
                       "instance": "internal",
                       "action": "custom_variable_set_expression",
                       "options": {
                         "name": "ditm_scene",
-                        "expression": "($(internal:custom_ditm_block_index) == 0 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 1 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 2 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 3 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 4 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 5 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 6 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 7 ? \"Host + Jess\" : ($(internal:custom_ditm_block_index) == 8 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 9 ? \"Main Host\" : ($(internal:custom_ditm_block_index) == 10 ? \"Main Host\" : \"Host + Jess\")))))))))))"
+                        "expression": "($(internal:custom_ditm_block_index) == 0 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 1 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 2 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 3 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 4 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 5 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 6 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 7 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 8 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 9 ? \"Drew in the Morning\" : ($(internal:custom_ditm_block_index) == 10 ? \"Drew in the Morning\" : \"Drew in the Morning\")))))))))))"
                       },
                       "delay": 30
                     },
                     {
-                      "id": "5c6fd2f4-ba03-4956-a8c8-f193cd8f51b3",
+                      "id": "954844e6-0918-418d-9c81-d7ae7a16c7b4",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -2383,7 +2383,7 @@
                       "delay": 80
                     },
                     {
-                      "id": "eefe2ecc-25ab-4511-ba40-ea097aa88f36",
+                      "id": "61c4476e-6c95-4dd2-8a61-6627d0db4668",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -2393,7 +2393,7 @@
                       "delay": 80
                     },
                     {
-                      "id": "eb4d9539-02ef-405c-91ae-7387ddeec85a",
+                      "id": "098ff11e-aa0a-423e-ab5f-95bf2d797aca",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -2403,7 +2403,7 @@
                       "delay": 80
                     },
                     {
-                      "id": "bd5fcbc6-5d9b-4046-83ea-1ce1e9763e58",
+                      "id": "5f5b951a-4aab-4ab6-8274-1120f0b506e2",
                       "instance": "obs",
                       "action": "set_text",
                       "options": {
@@ -2413,7 +2413,7 @@
                       "delay": 80
                     },
                     {
-                      "id": "5521cb16-13d4-44be-9c8c-9bdca5245e74",
+                      "id": "8c633c1b-ac7d-4734-b1fa-075e955dd7a5",
                       "instance": "obs",
                       "action": "set_current_scene",
                       "options": {
@@ -2422,11 +2422,11 @@
                       "delay": 100
                     },
                     {
-                      "id": "5b70df4f-cca0-4c13-9a20-420d28bc1fbd",
+                      "id": "9e347ba5-3610-4b6e-8b3f-6aad9d2a052a",
                       "instance": "obs",
                       "action": "set_source_visibility",
                       "options": {
-                        "scene": "Main Host",
+                        "scene": "Drew in the Morning",
                         "source": "DITM Lower Third",
                         "visible": true
                       },
@@ -2469,8 +2469,8 @@
       "persistCurrentValue": false
     },
     "ditm_scene": {
-      "description": "Main Host, or Host + Jess when the block has Jess.",
-      "defaultValue": "Main Host",
+      "description": "The Drew in the Morning scene (one scene for every block).",
+      "defaultValue": "Drew in the Morning",
       "persistCurrentValue": false
     }
   },

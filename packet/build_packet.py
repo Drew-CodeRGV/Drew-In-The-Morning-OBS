@@ -1335,7 +1335,7 @@ summary,summary *,.rtn,.tn,.tt,h3,h4{overflow-wrap:normal;word-break:normal;hyph
 
 CHY_JS = r"""
 (function(){var api=window.ditmRos;if(!api)return;var $=function(i){return document.getElementById(i)};
-var LK='ditm-chyron-topic-v1',RX=/^[A-Za-z0-9_-]{6,64}$/,mem=null,CMDS={start:1,stop:1,hold:1,resume:1,next:1,prev:1,goto:1,clear:1,show:1};
+var LK='ditm-chyron-topic-v1',RX=/^[A-Za-z0-9_-]{6,64}$/,mem=null,CMDS={start:1,stop:1,hold:1,resume:1,toggle:1,logo:1,next:1,prev:1,goto:1,clear:1,show:1};
 function gget(){try{return localStorage.getItem(LK)}catch(e){return mem}}function gset(v){mem=v;try{localStorage.setItem(LK,v)}catch(e){}}
 var nq=/[?&]ntfy=(https:\/\/ntfy\.sh|http:\/\/127\.0\.0\.1:\d+)(?:&|$)/.exec((function(){try{return decodeURIComponent(location.search)}catch(e){return''}})()),BASE=nq?nq[1]:'https://ntfy.sh';
 var q=/[?&#]ctl=([A-Za-z0-9_-]{6,64})/.exec(location.search+location.hash);
@@ -1349,7 +1349,7 @@ function ui(){var on=!!topic;if($('chy'))$('chy').hidden=!on;if($('chlink'))$('c
  var h=api.held();['chhold','mb-hold'].forEach(function(i){var b=$(i);if(!b)return;b.textContent=h?'\u25B6 Resume':'\u23F8 Hold';b.classList.toggle('held',h);b.setAttribute('aria-pressed',h?'true':'false')});
  var c=$('chclr');if(c)c.textContent=(last&&last.visible===false)?'Show':'Clear';
  var st=$('chst');if(st){if(!last)st.textContent='waiting for the chyron\u2026';else{var age=Date.now()-last.rx,live=last.running;
-  st.textContent=(last.letter||'?')+' \u00B7 '+(live?(last.held?'HELD':'AUTO'):'MANUAL')+(last.visible===false?' \u00B7 off air':'')+' \u00B7 '+(age>600000?'last heard '+ago(age)+' ago':'synced');st.dataset.state=live?(last.held?'held':'auto'):'manual'}}}
+  st.textContent=(last.letter||'?')+' \u00B7 '+(live?(last.held?'HELD':'AUTO'):'MANUAL')+(last.logo?' \u00B7 logo only':(last.visible===false?' \u00B7 off air':''))+' \u00B7 '+(age>600000?'last heard '+ago(age)+' ago':'synced');st.dataset.state=live?(last.held?'held':'auto'):'manual'}}}
 api.onChange=ui;api.onStart=function(){send('start')};api.onStop=function(){send('stop')};
 function hold(){if(api.held()){api.resume();send('resume')}else{api.hold();send('hold')}}
 ['chhold','mb-hold'].forEach(function(i){var b=$(i);if(b)b.onclick=hold});

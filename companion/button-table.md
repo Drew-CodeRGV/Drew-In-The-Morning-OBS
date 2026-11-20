@@ -23,18 +23,18 @@ Set the custom variables, then send OBS WebSocket v5 `SetInputSettings` (overlay
 
 | Key | Letter | Short | Color | Scene | Chyron (first) | Headline (first) | Title |
 |---|---|---|---|---|---|---|---|
-| 0 | A | Cold Open | `#f2b705` | Main Host | Drew Lentz / Host · Drew in the Morning | Good morning, Rio Grande Valley | Cold Open & Jingle |
-| 1 | B | Up To | `#d1495b` | Main Host | What I've Been Up To / This week · Drew & Jess | What I've been up to this week | What I've Been Up To This Week |
-| 2 | C | Local News | `#e4572e` | Main Host | Cameron County Vote / Abatement hearing denied 3-2 · Nov. 17 | Cameron County rejects SpaceX tax break hearing, 3-2 | Local News |
-| 3 | D | Local Politics | `#2a6f97` | Main Host | TX-15: Bobby Pulido / Defeated De La Cruz · Takes office Jan. 3 | Bobby Pulido defeats Rep. Monica De La Cruz in TX-15 | Local Politics |
-| 4 | E | School Boards | `#2a9d8f` | Main Host | Edinburg CISD Board / New trustees from Nov. 3 election | Edinburg CISD adds new trustees; $3M stop-loss contract on agenda | School Boards |
-| 5 | F | City Hall | `#bc6c25` | Main Host | McAllen City Commission / Fallek won District 5 special · May 2026 | Brownsville names Alan Guard permanent city manager | City Hall |
-| 6 | G | Econ Dev | `#43aa8b` | Main Host | McAllen EDC / State award · Valeo $225M plant | McAllen EDC wins state award for Valeo's $225M plant | Economic Development |
-| 7 | H | Family+Kids | `#8e6bbf` | Host + Jess | How We'd Talk to Our Kids / Open · Honest · No judgment | GTA 6 launches Nov. 19 at midnight; rated M (17+) | Family & Kids (woven in) |
-| 8 | I | Statewide | `#577590` | Main Host | Statewide / Texas news & Texas politics | Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border contracts | Statewide |
-| 9 | J | National | `#6d597a` | Main Host | National Desk / The big stories · and why they matter here | FAA ground stop: legacy network, a router and a long weekend | The National Desk (+ Trending) |
-| 10 | K | Listeners | `#f4a261` | Main Host | Send Us Your Topics / DM @drewinthemorning or email the show | Send us your topics: DM or email | Listener Line |
-| 11 | L | Meme+Close | `#ff7f50` | Host + Jess | Meme of the Week / What your kids might be saying at school | Drew & Jess are watching the feeds so you don't have to | Meme of the Week & Close |
+| 0 | A | Cold Open | `#f2b705` | Drew in the Morning | Drew Lentz / Host · Drew in the Morning | Good morning, Rio Grande Valley | Cold Open & Jingle |
+| 1 | B | Up To | `#d1495b` | Drew in the Morning | What I've Been Up To / This week · Drew & Jess | What I've been up to this week | What I've Been Up To This Week |
+| 2 | C | Local News | `#e4572e` | Drew in the Morning | Cameron County Vote / Abatement hearing denied 3-2 · Nov. 17 | Cameron County rejects SpaceX tax break hearing, 3-2 | Local News |
+| 3 | D | Local Politics | `#2a6f97` | Drew in the Morning | TX-15: Bobby Pulido / Defeated De La Cruz · Takes office Jan. 3 | Bobby Pulido defeats Rep. Monica De La Cruz in TX-15 | Local Politics |
+| 4 | E | School Boards | `#2a9d8f` | Drew in the Morning | Edinburg CISD Board / New trustees from Nov. 3 election | Edinburg CISD adds new trustees; $3M stop-loss contract on agenda | School Boards |
+| 5 | F | City Hall | `#bc6c25` | Drew in the Morning | McAllen City Commission / Fallek won District 5 special · May 2026 | Brownsville names Alan Guard permanent city manager | City Hall |
+| 6 | G | Econ Dev | `#43aa8b` | Drew in the Morning | McAllen EDC / State award · Valeo $225M plant | McAllen EDC wins state award for Valeo's $225M plant | Economic Development |
+| 7 | H | Family+Kids | `#8e6bbf` | Drew in the Morning | How We'd Talk to Our Kids / Open · Honest · No judgment | GTA 6 launches Nov. 19 at midnight; rated M (17+) | Family & Kids (woven in) |
+| 8 | I | Statewide | `#577590` | Drew in the Morning | Statewide / Texas news & Texas politics | Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border contracts | Statewide |
+| 9 | J | National | `#6d597a` | Drew in the Morning | National Desk / The big stories · and why they matter here | FAA ground stop: legacy network, a router and a long weekend | The National Desk (+ Trending) |
+| 10 | K | Listeners | `#f4a261` | Drew in the Morning | Send Us Your Topics / DM @drewinthemorning or email the show | Send us your topics: DM or email | Listener Line |
+| 11 | L | Meme+Close | `#ff7f50` | Drew in the Morning | Meme of the Week / What your kids might be saying at school | Drew & Jess are watching the feeds so you don't have to | Meme of the Week & Close |
 
 ## Variables
 
@@ -64,6 +64,6 @@ Then set `ditm_block`, `ditm_title`, `ditm_headline`, and `ditm_chyron` from tha
 
 Highlight: on each block key, add a feedback that checks `internal:custom_ditm_block_index` equals that key's index, and invert the colors.
 
-OBS source names: `DITM Chyron`, `DITM Headline`, `DITM Segment Title`, `DITM Block Letter`. Optional image `DITM Block Card`. Optional scene item `DITM Lower Third` on Main Host. Scenes: `Main Host` and `Host + Jess`.
+OBS source names: `DITM Chyron`, `DITM Headline`, `DITM Segment Title`, `DITM Block Letter`. Optional image `DITM Block Card`. Optional scene item `DITM Lower Third` on the `Drew in the Morning` scene (the only scene the show uses). The news chyron itself is the browser source `DITM Chyron Web`, driven by obs-browser emit_event (see companion/CHYRON.md).
 
 Do not turn on Read from file for the four DITM text sources. That mode ignores the websocket text.

@@ -31,12 +31,19 @@ def chyron_data(obs: dict) -> dict:
     return {"generated": obs.get("generated", ""), "total": total, "blocks": out}
 
 
-def logo_data_uri() -> str:
+def bug_png() -> bytes:
+    """The small DITM sun logo (white) shown bottom-right by the 'logo' command: cropped to its pixels, 340px tall (shown at 170px)."""
     from PIL import Image
-    im = Image.open(ROOT / "logo" / "ditm_logo_bug.png").convert("RGBA")
-    im.thumbnail((240, 240))
+    im = Image.open(ROOT / "logo" / "DITM_SunLogo_White.png").convert("RGBA")
+    im = im.crop(im.getchannel("A").getbbox())
+    h = 340
+    im = im.resize((round(im.width * h / im.height), h), Image.LANCZOS)
     buf = io.BytesIO(); im.save(buf, "PNG", optimize=True)
-    return "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode()
+    return buf.getvalue()
+
+
+def logo_data_uri() -> str:
+    return "data:image/png;base64," + base64.b64encode(bug_png()).decode()
 
 
 def render(data: dict) -> str:
@@ -51,7 +58,9 @@ def write(out_dir, obs_path=None) -> list[str]:
     out = Path(out_dir); out.mkdir(parents=True, exist_ok=True)
     (out / "chyron.json").write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     (out / "chyron.html").write_text(render(data), encoding="utf-8")
-    return [str(out / "chyron.html"), str(out / "chyron.json")]
+    (out / "assets").mkdir(exist_ok=True)
+    (out / "assets" / "ditm-bug.png").write_bytes(bug_png())   # same image the page embeds; published for reuse
+    return [str(out / "chyron.html"), str(out / "chyron.json"), str(out / "assets" / "ditm-bug.png")]
 
 
 if __name__ == "__main__":

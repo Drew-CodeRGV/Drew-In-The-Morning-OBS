@@ -7,24 +7,25 @@
 @property --acc{syntax:'<color>';inherits:true;initial-value:#3a6ea5}
 html,body{margin:0;padding:0;width:1920px;height:1080px;overflow:hidden;background:transparent}
 body{font-family:Inter,'Noto Sans','Segoe UI','Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
-#lt{position:absolute;left:60px;bottom:50px;width:1440px;display:flex;align-items:stretch;opacity:0;transform:translateY(46px);transition:opacity .45s ease,transform .55s cubic-bezier(.2,.8,.2,1);--acc:#3a6ea5;transition-property:opacity,transform,--acc;}
+#lt{position:absolute;left:30px;bottom:26px;width:1470px;display:flex;align-items:stretch;opacity:0;transform:translateY(60px);transition:opacity .45s ease,transform .55s cubic-bezier(.2,.8,.2,1);--acc:#3a6ea5;transition-property:opacity,transform,--acc;}
 #lt.in{opacity:1;transform:none}
-#bug{flex:none;width:150px;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#07122a 0%,#0d2347 100%);border-radius:14px 0 0 14px;border-top:5px solid var(--acc);box-shadow:0 8px 28px rgba(0,0,0,.45);position:relative;z-index:2;transition:border-color .6s}
-#bug img{width:104px;height:auto;display:block}
-#bar{flex:1 1 auto;min-width:0;position:relative;display:flex;align-items:center;border-radius:0 14px 14px 0;border-top:5px solid var(--acc);overflow:hidden;
+#bar{flex:1 1 auto;min-width:0;position:relative;display:flex;align-items:center;border-radius:14px;border-top:5px solid var(--acc);overflow:hidden;
  background:linear-gradient(95deg,#0b1a36 0%,#10294f 52%,color-mix(in srgb,var(--acc) 62%,#10294f) 135%);box-shadow:0 8px 28px rgba(0,0,0,.45);clip-path:inset(0 100% 0 0);transition:clip-path .7s cubic-bezier(.3,.9,.2,1) .08s}
 #lt.in #bar{clip-path:inset(0 0 0 0)}
 #bar:before{content:"";position:absolute;left:0;right:0;top:0;height:46%;background:linear-gradient(180deg,rgba(255,255,255,.11),rgba(255,255,255,0));pointer-events:none}
-#txt{position:relative;padding:15px 34px 17px 30px;min-width:0;width:100%;box-sizing:border-box;transition:opacity .26s ease,transform .26s ease}
+#txt{position:relative;padding:15px 34px 17px 32px;min-width:0;width:100%;box-sizing:border-box;transition:opacity .26s ease,transform .26s ease}
 #txt.swap{opacity:0;transform:translateY(9px)}
 #kick{font-size:23px;line-height:1.1;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:#ffd23f;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:5px}
 #head{font-size:38px;line-height:1.14;font-weight:800;color:#fff;letter-spacing:-.005em;white-space:nowrap;overflow:hidden}
 #head.two,#sub.two{white-space:normal;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
 #sub{font-size:27px;line-height:1.2;font-weight:500;color:#d6e3f5;margin-top:5px;white-space:nowrap;overflow:hidden}
 #sub:empty,#kick:empty{display:none}
+#lg{position:absolute;right:40px;bottom:40px;height:170px;width:auto;display:block;opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease;pointer-events:none;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}
+#lg.on{opacity:1;transform:none}
 #dbg{position:absolute;right:6px;top:6px;font:14px monospace;color:#0f0;background:rgba(0,0,0,.6);padding:2px 6px;display:none}
 </style></head><body>
-<div id="lt" aria-live="polite"><div id="bug"><img id="logo" alt="Drew in the Morning" src="__LOGO__"></div><div id="bar"><div id="txt"><div id="kick"></div><div id="head"></div><div id="sub"></div></div></div></div>
+<div id="lt" aria-live="polite"><div id="bar"><div id="txt"><div id="kick"></div><div id="head"></div><div id="sub"></div></div></div></div>
+<img id="lg" alt="Drew in the Morning" src="__LOGO__">
 <div id="dbg"></div>
 <script>
 window.DITM_DATA=__DATA__;
@@ -32,10 +33,10 @@ window.DITM_DATA=__DATA__;
 var D=window.DITM_DATA,B=D.blocks,N=B.length,$=function(i){return document.getElementById(i)};
 var Q={};location.search.replace(/^\?/,'').split('&').forEach(function(p){var k=p.split('=');if(k[0])Q[decodeURIComponent(k[0])]=decodeURIComponent(k[1]||'')});
 var TOPIC=/^[A-Za-z0-9_-]{6,64}$/.test(Q.topic||'')?Q.topic:null,BASE=/^(https:\/\/ntfy\.sh|http:\/\/127\.0\.0\.1:\d+)$/.test(Q.ntfy||'')?Q.ntfy:'https://ntfy.sh';
-var KEY='ditm-chyron-state-v1',CMDS={start:1,stop:1,hold:1,resume:1,toggle:1,next:1,prev:1,goto:1,clear:1,show:1};
+var KEY='ditm-chyron-state-v1',CMDS={start:1,stop:1,hold:1,resume:1,toggle:1,logo:1,next:1,prev:1,goto:1,clear:1,show:1};
 /* state: running = auto-advance on the run-of-show clock; held freezes the topic and the clock; idx is the topic shown; visible = lower third on screen */
-var S={running:false,held:false,startAt:0,heldAt:0,holdMs:0,idx:0,visible:false,seq:0};
-try{var o=JSON.parse(localStorage.getItem(KEY)||'null');if(o&&typeof o.idx==='number'){S=o;S.visible=false;if(S.running&&!S.held&&(Date.now()-S.startAt)/60000>=D.total)S.running=false}}catch(e){}
+var S={running:false,held:false,startAt:0,heldAt:0,holdMs:0,idx:0,visible:false,logo:false,seq:0};
+try{var o=JSON.parse(localStorage.getItem(KEY)||'null');if(o&&typeof o.idx==='number'){S=o;S.visible=false;S.logo=false;if(S.running&&!S.held&&(Date.now()-S.startAt)/60000>=D.total)S.running=false}}catch(e){}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
 function ref(){return S.held?S.heldAt:Date.now()}
 function elapsedMin(){return (ref()-S.startAt-S.holdMs)/60000}
@@ -49,21 +50,23 @@ function draw(){var lt=$('lt'),b=B[S.idx];if(!b)return;
  if(S.visible){if(shown===-1){clearTimeout(swapT);paint(b);shown=S.idx;lt.classList.add('in')}
   else if(shown!==S.idx){var t=$('txt');t.classList.add('swap');clearTimeout(swapT);var want=S.idx;swapT=setTimeout(function(){paint(B[want]);shown=want;t.classList.remove('swap')},260)}}
  else if(shown!==-1||lt.classList.contains('in')){lt.classList.remove('in');shown=-1}
+ $('lg').classList.toggle('on',!!S.logo);
  var d=$('dbg');if(Q.debug){d.style.display='block';d.textContent=JSON.stringify(view())}
  publishSoon()}
-function view(){return{running:S.running,held:S.held,idx:S.idx,letter:B[S.idx]&&B[S.idx].letter,visible:S.visible,startAt:S.startAt,heldAt:S.heldAt,holdMs:S.holdMs,elapsedMin:+elapsedMin().toFixed(3)}}
+function view(){return{running:S.running,held:S.held,idx:S.idx,letter:B[S.idx]&&B[S.idx].letter,visible:S.visible,logo:!!S.logo,startAt:S.startAt,heldAt:S.heldAt,holdMs:S.holdMs,elapsedMin:+elapsedMin().toFixed(3)}}
 /* ---- commands (a fixed list; nothing else is ever accepted) ---- */
 function apply(c){var now=Date.now();if(!c||typeof c.cmd!=='string'||!Object.prototype.hasOwnProperty.call(CMDS,c.cmd))return false;var i=(typeof c.idx==='number'&&isFinite(c.idx))?clampI(c.idx):null;
  switch(c.cmd){
-  case 'start':S.running=true;S.held=false;S.holdMs=0;S.heldAt=0;S.startAt=Math.floor(now/60000)*60000;S.idx=0;S.visible=true;break;
+  case 'start':S.running=true;S.held=false;S.holdMs=0;S.heldAt=0;S.startAt=Math.floor(now/60000)*60000;S.idx=0;S.visible=true;S.logo=false;break;
   case 'stop':S.running=false;S.held=false;S.holdMs=0;S.heldAt=0;break;
   case 'hold':if(S.running&&!S.held){S.held=true;S.heldAt=now}break;
   case 'toggle':return apply({cmd:S.held?'resume':'hold'});   /* one Stream Deck key for hold/resume */
   case 'resume':if(S.held){S.holdMs+=now-S.heldAt;S.held=false;S.heldAt=0}break;
-  case 'next':case 'prev':case 'goto':{if(c.cmd==='goto'&&i===null)return false;var to=c.cmd==='goto'?(i===null?S.idx:i):clampI(S.idx+(c.cmd==='next'?1:-1));S.idx=to;S.visible=true;
+  case 'next':case 'prev':case 'goto':{if(c.cmd==='goto'&&i===null)return false;var to=c.cmd==='goto'?(i===null?S.idx:i):clampI(S.idx+(c.cmd==='next'?1:-1));S.idx=to;S.visible=true;S.logo=false;
    if(S.running)S.startAt=ref()-S.holdMs-B[to].offset*60000+1;break}   /* +1ms: land inside the block, not on the boundary */
-  case 'clear':S.visible=false;break;
-  case 'show':S.visible=true;break}
+  case 'clear':S.visible=false;S.logo=false;break;
+  case 'logo':S.visible=false;S.logo=true;break;   /* bar off, only the small DITM sun bug bottom-right; auto-advance keeps running underneath */
+  case 'show':S.visible=true;S.logo=false;break}
  S.seq++;save();draw();return true}
 function tick(){if(!S.running)return;var m=elapsedMin();
  if(m>=D.total){S.running=false;S.held=false;S.visible=false;S.seq++;save();draw();return}
