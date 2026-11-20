@@ -1,7 +1,7 @@
 {
  "v": 1,
  "date": "2026-11-20",
- "generated": "2026-11-20T20:18:42+00:00",
+ "generated": "2026-11-20T21:16:54+00:00",
  "items": {
   "i-dbc5767575": {
    "headline": "La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and Paredes elementaries)…",
@@ -18,11 +18,6 @@
    "line": "GM Eric Trevino promised 'a full week of concerts'; Tito Double P is expected to play two sold-out shows.",
    "kicker": "HEADLINES · RGV"
   },
-  "i-a6e24265f7": {
-   "headline": "SpaceX responds after Cameron County rejects its data center tax break, says its payment plan…",
-   "line": "Commissioners voted 3-2 Tuesday against scheduling a December hearing.",
-   "kicker": "HEADLINES · RGV"
-  },
   "i-4e7b1df097": {
    "headline": "FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and landings a year at…",
    "line": "Residents, environmental activists and an IATA vice president raised beach access, environmental, health…",
@@ -31,6 +26,11 @@
   "i-dafa6846a8": {
    "headline": "Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some at $2.94)",
    "line": "Prices peaked near $4.10 in May and had stayed above $3 since the Iran war began in late February.",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-a6e24265f7": {
+   "headline": "SpaceX responds after Cameron County rejects its data center tax break, says its payment plan…",
+   "line": "Commissioners voted 3-2 Tuesday against scheduling a December hearing.",
    "kicker": "HEADLINES · RGV"
   },
   "i-dc8d935b4f": {
@@ -723,16 +723,6 @@
    "line": "GTA VI launched Nov 19 on PS5 and Xbox Series X; rated M (17+), 212 GB download.",
    "kicker": "MEME OF THE WEEK · HIGH SCHOOL"
   },
-  "i-134b1779ee": {
-   "headline": "A · Cold Open & Jingle",
-   "line": "Jingle, the filled-in cold open, the hour's promise",
-   "kicker": "RUNDOWN"
-  },
-  "i-bd1a5616ab": {
-   "headline": "B · What I've Been Up To This Week",
-   "line": "Light family touchpoint (about 30 seconds, up to 3 min with Jess): school, music, clubs and family fun from Drew's…",
-   "kicker": "RUNDOWN"
-  },
   "i-c235a67304": {
    "headline": "the Rayburn Fall Festival",
    "line": "Sat Nov 14",
@@ -763,55 +753,65 @@
    "line": "Fri Nov 20",
    "kicker": "WHAT I'VE BEEN UP TO"
   },
-  "i-db27bf808e": {
-   "headline": "C · Local News",
-   "line": "Top Valley stories: the Starbase/SpaceX vote and launch, Overheard in the Valley, Chisme (what the Valley is buzzing…",
-   "kicker": "RUNDOWN"
+  "i-5984ad0d5a": {
+   "headline": "Rep. Vicente Gonzalez's 'Hands Off Our Boca Chica Beach Act' clears the House Natural Resources…",
+   "line": "H.R.",
+   "kicker": "LOCAL POLITICS"
   },
-  "i-8253a65b2e": {
-   "headline": "D · Local Politics",
-   "line": "Races, candidates and runoffs: TX-15 (Pulido), the Dec.",
-   "kicker": "RUNDOWN"
+  "i-c761335bd3": {
+   "headline": "La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and Paredes elementaries)…",
+   "line": "Enrollment fell from 29,641 to 19,633 in ten years; the district says it is about $5M short in revenue.",
+   "kicker": "SCHOOL BOARDS"
   },
-  "i-19a64e5f1a": {
-   "headline": "E · School Boards",
-   "line": "Trustees, budgets and board votes: Edinburg CISD, PSJA ISD, McAllen ISD",
-   "kicker": "RUNDOWN"
+  "i-8e40fd1f41": {
+   "headline": "Brownsville ISD swears in trustees and elects Denise Garza board president",
+   "line": "Carlos Elizondo, Frank Ortiz and Garza were reelected; Marisa Franco Leal fills the two years left on the late…",
+   "kicker": "SCHOOL BOARDS"
   },
-  "i-5e95621fc3": {
-   "headline": "F · City Hall",
-   "line": "Mayors, councils and city managers: McAllen, Brownsville, Mission, Pharr; the Zoho park rezoning",
-   "kicker": "RUNDOWN"
+  "i-5671af41f6": {
+   "headline": "Starbase fills a vacant commission seat with Haley Ruvalcaba, wife of a SpaceX IT director",
+   "line": "Ruvalcaba, 36, replaces Lois Wallace, who moved away and hadn't attended since September.",
+   "kicker": "CITY HALL"
   },
-  "i-e791201b0e": {
-   "headline": "G · Economic Development",
-   "line": "Jobs, projects and deals: McAllen EDC, the SpaceX data center abatement, Texas A&M McAllen, power and pipes",
-   "kicker": "RUNDOWN"
+  "i-0272e26d88": {
+   "headline": "Mission approves voluntary drug testing for the mayor and council (mandatory for city attorney and…",
+   "line": "Approved at a special meeting Tuesday.",
+   "kicker": "CITY HALL"
   },
-  "i-8c3c825279": {
-   "headline": "H · Family & Kids (woven in)",
-   "line": "NOT a dedicated segment: a light, woven-in moment with Jess after the local blocks and before state.",
-   "kicker": "RUNDOWN"
+  "i-543ca0556c": {
+   "headline": "McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan. 14 deadline still…",
+   "line": "Vendors met a second time, with Commissioner Michael Fallek and the city attorney, asking the McAllen Chamber of…",
+   "kicker": "CITY HALL"
   },
-  "i-806fd8866b": {
-   "headline": "I · Statewide",
-   "line": "Texas and Texas politics: the packet's Texas items, r/Texas top posts, Austin",
-   "kicker": "RUNDOWN"
+  "i-ad25851d89": {
+   "headline": "RioPlex says $110 billion in industrial, energy and data center investment is headed to the Valley",
+   "line": "UNCONFIRMED · RioPlex Executive Director Mario Reyna estimates the multiplier effect at $40 billion to $80 billion…",
+   "kicker": "ECONOMIC DEVELOPMENT"
   },
-  "i-8ffc6bbf68": {
-   "headline": "J · The National Desk (+ Trending)",
-   "line": "Big national stories with a Valley angle (fact, then take, then 'why it matters here'), plus Trending News (what's…",
-   "kicker": "RUNDOWN"
+  "i-c4a07adc0f": {
+   "headline": "SpaceX responds after Cameron County rejects its data center tax break, says its payment plan…",
+   "line": "Commissioners voted 3-2 Tuesday against scheduling a December hearing.",
+   "kicker": "ECONOMIC DEVELOPMENT"
   },
-  "i-44604d5d20": {
-   "headline": "K · Listener Line",
-   "line": "Call-ins and topic submissions (from submissions.md / call-ins.md); still no phone number",
-   "kicker": "RUNDOWN"
+  "i-0a9d861402": {
+   "headline": "Roma's bridge is now the fastest-growing truck port on the Southwest border (imports up 17x since…",
+   "line": "TAMIU's Daniel Covarrubias: imports went from $42.9M (2019) to $826M (FY2026); 53,808 trucks in the past year, about…",
+   "kicker": "ECONOMIC DEVELOPMENT"
   },
-  "i-b1e998340c": {
-   "headline": "L · Meme of the Week & Close",
-   "line": "What the kids are talking about (elementary, middle, high school; for parents), then the look-ahead and sign-off…",
-   "kicker": "RUNDOWN"
+  "i-57c9e256e0": {
+   "headline": "Palenque Hidalgo opens today at Payne Arena (360-degree stage, tickets from $20; Tito Double P…",
+   "line": "GM Eric Trevino promised 'a full week of concerts'; Tito Double P is expected to play two sold-out shows.",
+   "kicker": "FAMILY & KIDS"
+  },
+  "i-c76705103d": {
+   "headline": "Paxton and the feds agree to keep Texas razor wire at the border for up to 30 years (Del Rio Sector)",
+   "line": "Federal agents can't cut or remove Texas-owned wire on non-federal land within 25 miles of the border in the Del Rio…",
+   "kicker": "STATEWIDE"
+  },
+  "i-5cd8e7e7db": {
+   "headline": "Comptroller Huffines' move to stop taxing cloud, AI and data hosting would cost Texas $18 billion…",
+   "line": "The comptroller's own office projects the state loses $1.9B in FY2027 rising to $4.3B a year by FY2032; local…",
+   "kicker": "STATEWIDE"
   }
  }
 }
