@@ -1012,7 +1012,7 @@ summary:after{content:'\\25BE';margin-left:auto;font-size:1.2em;padding-left:6px
 .item .tx{flex:1 1 auto;min-width:0}.item .tx>a{font-weight:700}.src{color:var(--mut);font-size:.8rem;font-weight:600}
 .acts{display:flex;gap:6px;flex:none;align-items:center}
 .cp{font-size:.74rem;padding:2px 8px;flex:none}.cf{display:inline-block;background:#c1121f;color:#fff;font-size:.7rem;font-weight:900;border-radius:4px;padding:0 5px}
-.gp{display:none;margin:6px 0 0;border:2px solid var(--line);border-radius:12px;background:var(--card)}body.chy-on .gp{display:block}
+.gp{display:contents}
 .gp>summary{cursor:pointer;font-weight:800;padding:10px 14px;min-height:44px;display:flex;align-items:center}
 .gpb{display:flex;gap:14px;flex-wrap:wrap;padding:4px 14px 12px}.gpc{flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:6px}
 .gpc h4{margin:0;font-size:.95rem}.gpc label{display:flex;flex-direction:column;font-size:.72rem;font-weight:700;color:var(--mut);gap:2px}
@@ -1081,7 +1081,7 @@ build();load();setInterval(load,600000);
 var pin=$('pin'),mb=$('minibar');
 function hh2(){document.documentElement.style.setProperty('--hh',(pin?pin.offsetHeight:0)+'px')}hh2();addEventListener('resize',hh2);if(window.ResizeObserver&&pin)new ResizeObserver(hh2).observe(pin);
 /* pinned bar: mirrors the big clock + countdown, and has its own Show Start */
-function mini(){var t=$('cw-time'),n=$('cwnext');if(!mb||!t)return;$('mb-time').textContent=t.textContent.replace(/:\d\d(?= [AP]M)/,'');var x=n?[].map.call(n.children,function(e){return e.style.display==='none'?'':e.textContent}).join(' ').replace(/\s+/g,' ').trim():'';$('mb-next').textContent=x;mb.className=n&&/amber/.test(n.className)?'amber':n&&/red/.test(n.className)?'red':''}
+function mini(){var t=$('cw-time'),n=$('cwnext');if(!mb||!t)return;$('mb-time').textContent=t.textContent.replace(/:\d\d(?= [AP]M)/,'');var x=n?[].map.call(n.children,function(e){return e.style.display==='none'?'':e.textContent}).join(' ').replace(/\s+/g,' ').trim():'';$('mb-next').textContent=x;mb.classList.toggle('amber',!!(n&&/amber/.test(n.className)));mb.classList.toggle('red',!!(n&&/red/.test(n.className)))}
 var ms=$('mb-start');if(ms)ms.onclick=function(){var b=$('ssbtn');if(b)b.click()};
 mini();setInterval(mini,1000);
 })();
@@ -1171,7 +1171,7 @@ summary .sb,summary .cf{border:1px solid rgba(255,255,255,.75)}
 #brkcount{background:var(--chip);min-width:2em;text-align:center;font-size:.8rem}#brkcount.new{background:#c1121f;color:#fff;border-color:#c1121f}#brkcount.warn{background:#f2a900;color:#1b2430;border-color:#b87c00}
 #brkmeta{flex:1 1 160px;font-size:.8rem;font-weight:600}
 .brkrow{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;padding:6px 0;border-top:1px dashed var(--line)}.brkrow a{font-weight:700;flex:1 1 220px;min-width:0}
-.brkrow .src{white-space:nowrap}.brkrow.old{opacity:.78}
+.brkrow .src{white-space:nowrap}.brkrow.old{opacity:.78}.brkrow .chysend{margin-left:auto;flex:none}
 .brkrow .nw{background:#c1121f;color:#fff;font-size:.66rem;font-weight:900;border-radius:4px;padding:0 5px}
 #brkbadge b{display:inline-block;min-width:1.6em;text-align:center;background:var(--ok);color:#fff;border-radius:99px;padding:0 6px;margin-left:6px}#brkbadge.hot b{background:#c1121f}
 .brkmore{margin:4px 0}
@@ -1186,7 +1186,7 @@ summary .sb,summary .cf{border:1px solid rgba(255,255,255,.75)}
 .trn .ang{color:var(--fg)}.trn .ang b{color:var(--acc)}
 .ss{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:4px 0 0}
 .ss button{min-height:44px;min-width:44px;white-space:nowrap}
-#chy{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:4px 0 0}#chy[hidden],.chlink[hidden],#mb-hold[hidden]{display:none}
+#chy{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:0}.chlink[hidden],#mb-hold[hidden]{display:none}
 #chy .chl{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}#chy button,.chlink{min-height:44px;min-width:44px;white-space:nowrap}
 #chst{font-size:.8rem;font-weight:700;color:var(--mut);white-space:nowrap}.chlink{margin-top:4px;font-size:.8rem}
 #ssbtn{background:var(--ok);color:#fff;border-color:var(--ok);padding:4px 16px;font-weight:900}
@@ -1212,16 +1212,60 @@ summary .sb,summary .cf{border:1px solid rgba(255,255,255,.75)}
 @media (max-width:560px){.rd>summary{--trw:6.6rem}.tr{font-size:.95rem}}
 
 /* ---- layout v6: uniform collapsed tiles, full-width multi-column expanded sections, native phone scrolling ---- */
-#pin{position:sticky;top:0;z-index:8;background:var(--bg);border-bottom:3px solid var(--line);padding-bottom:5px}
-#minibar{display:flex;align-items:center;gap:8px 12px;min-height:44px;padding:0 max(12px,var(--sr)) 0 max(16px,var(--sl));padding-top:max(0px,var(--st));font-weight:800;font-variant-numeric:tabular-nums}
-#minibar b{font-size:1.2rem;white-space:nowrap}
-#minibar span{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.85rem;color:var(--mut)}
-#minibar.amber{background:#f2a900;color:#1b2430}#minibar.amber span{color:#1b2430}
-#minibar.red{background:#c1121f;color:#fff}#minibar.red span{color:#fff}
-#minibar a,#minibar button{flex:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;padding:0 12px;font-weight:800;font-size:.85rem;text-decoration:none}
-#minibar a{color:var(--link)}#minibar.red a{color:#fff}
-#mb-hold{border-radius:10px}#mb-hold.held,#chhold.held{background:#f2a900;color:#1b2430;border-color:#f2a900}
-#mb-start{background:var(--ok);color:#fff;border-color:var(--ok);border-radius:10px;padding:0 12px}
+#pin{position:sticky;top:0;z-index:20;background:#0b1017;border-bottom:1px solid #2a3340;padding-bottom:0;color:#f4f6f8}
+#mc{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:max(6px,var(--st)) max(10px,var(--sr)) 8px max(12px,var(--sl));background:#0b1017;color:#f4f6f8}
+.mc-id{display:flex;align-items:center;gap:8px;flex:0 0 auto;min-width:0}
+.mc-id img{height:36px;width:auto;max-width:28vw;background:#fff;border-radius:8px;padding:2px 6px;flex:none}
+.mc-brand{display:flex;flex-direction:column;line-height:1.15;min-width:0}
+.mc-brand b{font-size:.68rem;letter-spacing:.14em;font-weight:900}
+.mc-brand span{font-size:.72rem;color:#9fb0c2;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:28vw}
+.mc-status{display:flex;align-items:center;gap:8px 10px;flex:1 1 220px;min-width:0;flex-wrap:wrap;font-variant-numeric:tabular-nums;font-weight:800}
+#minibar b#mb-time{font-size:1.15rem;white-space:nowrap;color:#fff}
+#minibar span{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.8rem;color:#9fb0c2;font-weight:700}
+#sslive{display:inline;width:auto;min-height:0;color:#7CFFB2;font-size:.8rem}
+#ssind{display:inline;min-width:0;color:#9fb0c2;font-size:.78rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#chst{color:#c5d0da;font-size:.78rem;font-weight:700}
+.mcp{display:inline-flex;align-items:center;justify-content:center;min-height:28px;padding:0 10px;border-radius:99px;font-size:.68rem;font-weight:900;letter-spacing:.1em;border:1px solid transparent}
+.mcp.stand{background:#1a222d;color:#c5d0da;border-color:#3a4656}
+.mcp.live{background:#c1121f;color:#fff}
+.mcp.onair{background:#0b5cad;color:#fff}
+.mcp.held{background:#f2a900;color:#1b2430}
+#minibar.amber #mb-next,#minibar.amber #sslive{color:#f2a900}
+#minibar.red #mb-next,#minibar.red #sslive{color:#ff6b6b}
+#chy.mc-ops,#chy{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:0;flex:1 1 auto}
+.mc-ops button,.mc-ops .chlink,details#mc-more>summary{appearance:none;-webkit-appearance:none;flex:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;padding:0 11px;border-radius:8px;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border:1px solid #3a4656;background:#1a222d;color:#f4f6f8}
+.mc-ops button:hover,details#mc-more>summary:hover{background:#2a3340;color:#fff;border-color:#5a6b7d}
+#ssbtn{background:#1f9d55;color:#fff;border-color:#1f9d55;font-weight:900;padding:0 14px}
+#chhold.held{background:#f2a900;color:#1b2430;border-color:#f2a900}
+#mc-guest{background:#0b5cad;border-color:#0b5cad;color:#fff}
+#mc-caller{background:#c8102e;border-color:#c8102e;color:#fff}
+#mc-logo{background:#2a3340;color:#fff}
+details#mc-more{position:relative;flex:none}
+details#mc-more>summary{list-style:none;cursor:pointer;min-width:44px}
+details#mc-more>summary::-webkit-details-marker{display:none}
+.mc-more-p{position:absolute;right:0;top:calc(100% + 6px);z-index:30;min-width:min(340px,92vw);max-width:92vw;background:#141b24;border:1px solid #3a4656;border-radius:12px;padding:10px;box-shadow:0 12px 40px rgba(0,0,0,.45);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.mc-more-p button,.mc-more-p .btnlike,.mc-more-p a{min-height:44px;min-width:44px}
+#clockw{margin:6px 0 0;text-align:left;background:#0b1017;border:1px solid #3a4656;color:#f4f6f8;width:100%;min-width:0;max-width:100%}
+#clockw #cw-time{font-size:1.4rem;color:#fff}
+header.ident{background:var(--bg);border-bottom:1px solid var(--line);padding:6px max(16px,var(--sr)) 6px max(16px,var(--sl));display:block}
+header.ident .k{font-size:.7rem;letter-spacing:.12em;font-weight:800;color:#b5651d;text-transform:uppercase}
+header.ident .t{font-size:.85rem;color:var(--mut);font-weight:600}
+.toolbar{display:none}
+dialog.dlg{border:0;border-radius:16px;padding:0;width:min(520px,calc(100vw - 24px));max-height:calc(100vh - 24px);background:var(--card);color:var(--fg);box-shadow:0 20px 60px rgba(0,0,0,.4)}
+dialog.dlg::backdrop{background:rgba(8,10,16,.65)}
+.dlg-h{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:14px 16px 8px;font-weight:900}
+.dlg-h h3{margin:0;font-size:1.05rem;letter-spacing:.04em;text-transform:uppercase}
+.dlg-b{padding:8px 16px 16px;display:flex;flex-direction:column;gap:10px}
+.dlg-b label{display:flex;flex-direction:column;gap:4px;font-weight:700;font-size:.8rem}
+.dlg-b input[type=text],.dlg-b input[type=url]{min-height:44px;border:2px solid var(--line);border-radius:10px;padding:0 10px;font:inherit;background:var(--bg);color:var(--fg);width:100%;box-sizing:border-box}
+.dlg-a{display:flex;flex-wrap:wrap;gap:8px}
+.dlg-x{border:0;background:transparent;color:var(--mut);font-size:1.4rem;min-width:44px}
+#c-prev{max-width:120px;max-height:120px;border-radius:8px;object-fit:cover}
+.gp{display:contents}
+#link-dlg p{margin:0 0 8px;line-height:1.45}
+#link-dlg code{font-weight:800}
+@media (max-width:900px){.mc-brand span,#ssind,#chst{max-width:100%}}
+#mb-hold.held,#chhold.held{background:#f2a900;color:#1b2430;border-color:#f2a900}
 .toolbar{display:flex;gap:6px 14px;align-items:center;flex-wrap:wrap;padding:6px max(16px,var(--sr)) 0 max(16px,var(--sl))}
 .toolbar .t{font-size:.82rem;color:var(--mut);font-weight:600;flex:1 1 260px;min-width:0}
 .toolbar .tools{margin:0;flex:0 1 auto}
@@ -1357,32 +1401,37 @@ var nq=/[?&]ntfy=(https:\/\/ntfy\.sh|http:\/\/127\.0\.0\.1:\d+)(?:&|$)/.exec((fu
 var q=/[?&#]ctl=([A-Za-z0-9_-]{6,64})/.exec(location.search+location.hash);
 if(q){gset(q[1]);try{history.replaceState(null,'',location.pathname)}catch(e){}}
 var topic=gget();if(!RX.test(topic||''))topic=null;
-var last=null,vis=true;
-function send(cmd,idx,id,x){if(!topic||!Object.prototype.hasOwnProperty.call(CMDS,cmd))return;var m={k:'cmd',cmd:cmd,at:Date.now(),v:1};if(typeof idx==='number')m.idx=idx;if(cmd==='item'){if(!IDRX.test(id||''))return;m.id=id}
+var last=null,vis=true,ADRX=/^a-[0-9a-f]{10}$/;
+function send(cmd,idx,id,x){if(!topic||!Object.prototype.hasOwnProperty.call(CMDS,cmd))return;var m={k:'cmd',cmd:cmd,at:Date.now(),v:1};if(typeof idx==='number')m.idx=idx;if(cmd==='item'){if(IDRX.test(id||''))m.id=id;else{var h=cap(x&&x.headline,100);if(!h)return;m.headline=h;m.line=cap(x.line,118);m.kicker=cap(x.kicker,44);if(ADRX.test(id||''))m.id=id}}
  if(cmd==='guest'&&x){m.name=cap(x.name,60);m.title=cap(x.title,80);m.blurb=cap(x.blurb,140);if(!m.name)return}
  if(cmd==='caller'&&x){m.name=cap(x.name,60);m.title=cap(x.title,80);m.photo=(x.photo&&httpsOnly(x.photo))||'';if(!m.name)return}
  try{fetch(BASE+'/'+topic,{method:'POST',body:JSON.stringify(m)}).catch(function(){})}catch(e){}}
 function ago(ms){var s=Math.max(0,Math.round(ms/1000));return s<60?s+'s':s<3600?Math.floor(s/60)+'m':Math.floor(s/3600)+'h'}
 var sentId=null,sentAt=0;
 function card(id){return id?document.querySelector('[data-chyid="'+id+'"]'):null}
-function airId(){if(last&&last.item&&IDRX.test(last.item)&&last.rx>sentAt+200)return last.item;if(sentId&&Date.now()-sentAt<4000&&!(last&&last.rx>sentAt+200))return sentId;return(last&&last.item&&IDRX.test(last.item))?last.item:null}
+function isChyId(id){return IDRX.test(id||'')||ADRX.test(id||'')}
+function airId(){if(last&&isChyId(last.item)&&last.rx>sentAt+200)return last.item;if(sentId&&Date.now()-sentAt<4000&&!(last&&last.rx>sentAt+200))return sentId;return(last&&isChyId(last.item))?last.item:null}
 function ui(){var on=!!topic;document.body.classList.toggle('chy-on',on);
+ var pill=$('mc-pill');if(pill){var live=last&&last.running,held=last&&last.held,air=last&&(last.visible||last.logo||last.guest||last.caller);pill.textContent=held?'HELD':(live?'LIVE':(air?'ON AIR':'STANDBY'));pill.className='mcp '+(held?'held':live?'live':air?'onair':'stand')}
  var aid=airId();[].forEach.call(document.querySelectorAll('.onair'),function(e){if(!aid||e.getAttribute('data-chyid')!==aid)e.classList.remove('onair')});
  [].forEach.call(document.querySelectorAll('.chysend'),function(b){var is=!!aid&&b.getAttribute('data-chyid')===aid;b.setAttribute('aria-pressed',is?'true':'false');b.querySelector('.ct').textContent=is?'On air':'Chyron'});
- var ac=card(aid);if(ac)ac.classList.add('onair');if($('chy'))$('chy').hidden=!on;if($('chlink'))$('chlink').hidden=on;if($('mb-hold'))$('mb-hold').hidden=!on;
+ var ac=card(aid);if(ac)ac.classList.add('onair');if($('chlink'))$('chlink').hidden=on;if($('mb-hold'))$('mb-hold').hidden=!on;
  var h=api.held();['chhold','mb-hold'].forEach(function(i){var b=$(i);if(!b)return;b.textContent=h?'\u25B6 Resume':'\u23F8 Hold';b.classList.toggle('held',h);b.setAttribute('aria-pressed',h?'true':'false')});
  var c=$('chclr');if(c)c.textContent=(last&&last.visible===false)?'Show':'Clear';
  var st=$('chst');if(st){if(!last)st.textContent='waiting for the chyron\u2026';else{var age=Date.now()-last.rx,live=last.running;
   var au=aid&&last.item?(card(aid)?card(aid).getAttribute('data-chyh'):'item'):null;
   st.textContent=(au?'audible: '+au:(last.letter||'?'))+' \u00B7 '+(live?(last.held?'HELD':'AUTO'):'MANUAL')+(last.logo?' \u00B7 logo only':(last.visible===false?' \u00B7 off air':''))+(last.guest?' \u00B7 guest: '+last.guest:'')+(last.caller?' \u00B7 on the phone: '+last.caller:'')+' \u00B7 '+(age>600000?'last heard '+ago(age)+' ago':'synced');st.dataset.state=live?(last.held?'held':'auto'):'manual'}}}
 api.onChange=ui;api.onStart=function(){send('start')};api.onStop=function(){send('stop')};
-function hold(){if(api.held()){api.resume();send('resume')}else{api.hold();send('hold')}}
+function openDlg(id){var d=$(id);if(!d)return;if(d.showModal){try{d.showModal()}catch(e){d.setAttribute('open','')}}else d.setAttribute('open','')}
+function closeDlg(id){var d=$(id);if(!d)return;if(d.close){try{d.close()}catch(e){d.removeAttribute('open')}}else d.removeAttribute('open')}
+function needLink(){if(topic)return false;openDlg('link-dlg');return true}
+function hold(){if(needLink())return;if(api.held()){api.resume();send('resume')}else{api.hold();send('hold')}}
 ['chhold','mb-hold'].forEach(function(i){var b=$(i);if(b)b.onclick=hold});
-if($('chprev'))$('chprev').onclick=function(){send('prev')};
+if($('chprev'))$('chprev').onclick=function(){if(needLink())return;send('prev')};
 /* ---- guest + phone caller panels (free text goes out only with the guest / caller commands, length-capped) ---- */
 var FK='ditm-gp-form-v1',FM={};try{FM=JSON.parse(localStorage.getItem(FK)||'{}')||{}}catch(e){}
 ['g-name','g-title','g-blurb','c-name','c-title','c-photo'].forEach(function(i){var e=$(i);if(!e)return;if(typeof FM[i]==='string')e.value=FM[i].slice(0,1000);e.addEventListener('input',function(){FM[i]=e.value;try{localStorage.setItem(FK,JSON.stringify(FM))}catch(x){}})});
-function gv(i,n){return cap($(i)?$(i).value:'',n)}function gmsg(t){if($('gp-msg'))$('gp-msg').textContent=t||''}
+function gv(i,n){return cap($(i)?$(i).value:'',n)}function gmsg(t){['gp-msg','c-msg'].forEach(function(i){if($(i))$(i).textContent=t||''})}
 if($('g-show'))$('g-show').onclick=function(){var n=gv('g-name',60);if(!n){gmsg('Type the guest\u2019s name first.');return}gmsg('');send('guest',undefined,undefined,{name:n,title:gv('g-title',80),blurb:gv('g-blurb',140)})};
 if($('g-hide'))$('g-hide').onclick=function(){gmsg('');send('guest_hide')};
 if($('c-go'))$('c-go').onclick=function(){var n=gv('c-name',60);if(!n){gmsg('Type the caller\u2019s name first.');return}var ph=($('c-photo').value||'').trim();if(ph&&!httpsOnly(ph)){gmsg('The photo link must start with https://');return}gmsg('');send('caller',undefined,undefined,{name:n,title:gv('c-title',80),photo:ph?httpsOnly(ph):''})};
@@ -1397,9 +1446,15 @@ if($('c-file'))$('c-file').onchange=function(){var f=this.files&&this.files[0],u
      if(!ok){up.textContent='The upload did not return a link.';return}$('c-photo').value=u;FM['c-photo']=u;try{localStorage.setItem(FK,JSON.stringify(FM))}catch(e){}
      var pv=$('c-prev');pv.src=prev;pv.hidden=false;up.textContent='Photo ready (ntfy keeps it about 3 hours). Tap Bring caller on.'}).catch(function(e){up.textContent='Upload failed ('+(e&&e.message||'network')+'). Paste an https link instead.'})},'image/jpeg',.85)};
   im.src=r.result};r.readAsDataURL(f)};
-document.addEventListener('click',function(e){var b=e.target&&e.target.closest?e.target.closest('.chysend'):null;if(!b)return;e.preventDefault();var id=b.getAttribute('data-chyid');if(!IDRX.test(id||''))return;sentId=id;sentAt=Date.now();send('item',undefined,id);ui()});if($('chnext'))$('chnext').onclick=function(){send('next')};
-if($('chclr'))$('chclr').onclick=function(){send(last&&last.visible===false?'show':'clear')};
-if($('chlink'))$('chlink').onclick=function(){var v=(prompt('Paste the chyron link code (the part after ctl=)')||'').trim().replace(/^.*ctl=/,'');if(RX.test(v)){gset(v);topic=v;connect();ui()}};
+document.addEventListener('click',function(e){var b=e.target&&e.target.closest?e.target.closest('.chysend'):null;if(!b)return;e.preventDefault();if(needLink())return;var id=b.getAttribute('data-chyid');if(IDRX.test(id||'')){sentId=id;sentAt=Date.now();send('item',undefined,id);ui();return}var h=cap(b.getAttribute('data-chyh'),100);if(!h)return;sentId=ADRX.test(id||'')?id:'';sentAt=Date.now();send('item',undefined,id,{headline:h,line:cap(b.getAttribute('data-chyl'),118),kicker:cap(b.getAttribute('data-chyk'),44)});ui()});if($('chnext'))$('chnext').onclick=function(){if(needLink())return;send('next')};
+if($('chclr'))$('chclr').onclick=function(){if(needLink())return;send(last&&last.visible===false?'show':'clear')};
+function applyLink(v){v=(v||'').trim().replace(/^.*ctl=/,'');if(!RX.test(v))return false;gset(v);topic=v;connect();ui();closeDlg('link-dlg');return true}
+if($('chlink'))$('chlink').onclick=function(){openDlg('link-dlg')};
+if($('link-go'))$('link-go').onclick=function(){if(!applyLink($('link-code')&&$('link-code').value)){var e=$('link-code');if(e)e.placeholder='That code was not recognized'};};
+['link-x','g-x','c-x'].forEach(function(i){if($(i))$(i).onclick=function(){closeDlg({ 'link-x':'link-dlg','g-x':'g-dlg','c-x':'c-dlg'}[i])}});
+if($('mc-guest'))$('mc-guest').onclick=function(){if(needLink())return;openDlg('g-dlg')};
+if($('mc-caller'))$('mc-caller').onclick=function(){if(needLink())return;openDlg('c-dlg')};
+if($('mc-logo'))$('mc-logo').onclick=function(){if(needLink())return;send('logo')};
 function ctDate(ms){return new Intl.DateTimeFormat('en-CA',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(ms))}
 function ctMin(ms){var o={};new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hourCycle:'h23',hour:'2-digit',minute:'2-digit'}).formatToParts(new Date(ms)).forEach(function(p){if(p.type!=='literal')o[p.type]=parseInt(p.value,10)});return (o.hour%24)*60+o.minute}
 /* the chyron owns the truth: mirror its state (running, held, which block) and follow it when it is running */
@@ -1481,6 +1536,8 @@ function feedUrl(){var p=location.pathname,i=p.indexOf('/packets/');return(i>=0?
 function ago(ms){var m=Math.round((Date.now()-ms)/60000);if(m<1)return'just now';if(m<60)return m+'m ago';return Math.floor(m/60)+'h '+(m%60)+'m ago'}
 function safe(u){return/^https?:\/\//i.test(u||'')?u:''}
 function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
+function capBrk(v,n){return String(v||'').replace(/[\u0000-\u001f\u007f-\u009f]+/g,' ').replace(/\s+/g,' ').trim().slice(0,n)}
+function adhocId(title,url){var s=String(title||'')+'|'+String(url||''),h=2166136261;for(var i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return 'a-'+('0000000000'+(h>>>0).toString(16)).slice(-10)}
 function row(i,isNew){var r=el('div','brkrow'+(isNew?'':' old'));
  if(isNew)r.appendChild(el('span','nw','NEW'));
  var lab=el('span','sb '+(i.label==='Hot'?'h':i.label==='Trending'?'t':'a'),(i.level==='alert'?'ALERT ':'')+String(i.label||'').toUpperCase()+' '+i.score);r.appendChild(lab);
@@ -1488,6 +1545,7 @@ function row(i,isNew){var r=el('div','brkrow'+(isNew?'':' old'));
  var u=safe(i.url),a;if(u){a=el('a','',i.title);a.href=u;a.target='_blank';a.rel='noopener noreferrer'}else a=el('span','',i.title);r.appendChild(a);
  var n=(i.sources||[]).length;r.appendChild(el('span','src',(i.source||'')+(n>1?' +'+(n-1)+' more':'')+' \u00B7 '+ago(Date.parse(i.firstSeen)||0)));
  if(i.matches&&i.matches.length)r.appendChild(el('span','src','['+i.matches.slice(0,4).join(', ')+']'));
+ var src=String(i.source||''),ttl=String(i.title||''),un=true; var hid=adhocId(ttl,i.url||''); var btn=el('button','chysend');btn.type='button';btn.setAttribute('data-chyid',hid); btn.setAttribute('data-chyh',capBrk(ttl,100));btn.setAttribute('data-chyl',(un?'UNCONFIRMED \u00B7 ':'')+capBrk(src,104));btn.setAttribute('data-chyk','BREAKING'); btn.setAttribute('aria-label','Send to chyron: '+ttl);btn.appendChild(el('span','ci','\u25B6'));btn.appendChild(el('span','ct','Chyron'));r.appendChild(btn);
  return r}
 function render(){if(!data)return;var items=(data.items||[]),fresh=[],old=[];
  items.forEach(function(i){((Date.parse(i.firstSeen)||0)>built?fresh:old).push(i)});
@@ -1517,7 +1575,8 @@ CHY_UNCONF = "UNCONFIRMED"
 def chy_id(sec, title, url=""):
     return "i-" + hashlib.sha1(f"chy|{sec}|{title}|{url}".encode()).hexdigest()[:10]
 def chy_trim(t, n):
-    t = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", str(t or "")))).strip()
+    t = re.sub(r"https?://\S+", " ", str(t or ""))
+    t = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", t))).strip()
     if len(t) <= n:
         return t
     cut = t[:n - 1].rsplit(" ", 1)[0].rstrip(" ,;:-–—.")
@@ -1527,8 +1586,9 @@ def chy_line(tldr, fallback, unconf=False, n=118):
     body = chy_trim(first or fallback, n - (len(CHY_UNCONF) + 3 if unconf else 0))
     return (CHY_UNCONF + (" · " + body if body else "")) if unconf else body
 def chy_register(sec, title, url, tldr, fallback, unconf=False, kicker=""):
-    cid = chy_id(sec, title, url)
-    CHY_ITEMS[cid] = {"headline": chy_trim(title, 100), "line": chy_line(tldr, fallback, unconf), "kicker": chy_trim((kicker or sec).replace(": ", " · ").upper(), 44)}
+    hl = chy_trim(title, 100) or chy_trim(fallback, 100) or chy_trim(kicker or sec, 44) or "Item"
+    cid = chy_id(sec, title or hl, url)
+    CHY_ITEMS[cid] = {"headline": hl, "line": chy_line(tldr, fallback, unconf), "kicker": chy_trim((kicker or sec).replace(": ", " · ").upper(), 44)}
     return cid
 def chy_btn(cid, title, on=""):
     return (f'<button class="chysend" type="button" data-chyid="{cid}" aria-pressed="false" aria-label="Send to chyron: {esc(title)}" title="Send to the on-air chyron (audible)">'
@@ -1558,10 +1618,12 @@ def studio_html(data, archive_href=None):
         url = it.get("url") or ""
         title = text or it["title"]
         main = A(url, title) if url else esc(title)
-        acts = (CP(url) if url else "") + (use_btn(sec, it["title"], url) if use and sec else "")
-        return (f'<div class="item" data-ord="{it.get("ord", 0)}" data-sc="{it.get("score", 0)}"><div class="tx">{main} <span class="src">{esc(it.get("source",""))}</span>{sc_studio(it)}<span class="upill">USED</span>{conf}</div><div class="acts">{acts}</div></div>')
+        cid = chy_register(sec or "Show", title, url, "", it.get("source", ""), unconf=bool(it.get("confirm")))
+        acts = (CP(url) if url else "") + chy_btn(cid, title) + (use_btn(sec, it["title"], url) if use and sec else "")
+        return (f'<div class="item" data-ord="{it.get("ord", 0)}" data-sc="{it.get("score", 0)}" data-chyid="{cid}" data-chyh="{esc(chy_trim(title, 100))}"><div class="tx">{main} <span class="src">{esc(it.get("source",""))}</span>{sc_studio(it)}<span class="upill">USED</span>{conf}</div><div class="acts">{acts}</div></div>')
     def linkrow(l):
-        return f'<div class="item"><div class="tx">{A(l["url"], l["label"])}</div><div class="acts">{CP(l["url"])}</div></div>'
+        cid = chy_register("Links", l["label"], l["url"], "", l["label"])
+        return f'<div class="item" data-chyid="{cid}" data-chyh="{esc(chy_trim(l["label"], 100))}"><div class="tx">{A(l["url"], l["label"])}</div><div class="acts">{CP(l["url"])}{chy_btn(cid, l["label"])}</div></div>'
     def sec(id_, color, title, sub, body, wide=False, open_=False, fg="", count="", badges="", chip="", tr="", blk=False):
         # every section starts collapsed (open_ is kept only so old calls still work); STUDIO_JS restores the session's state
         chip_h = f'<span class="bl2">{chip}</span>' if chip else ""
@@ -1588,12 +1650,11 @@ def studio_html(data, archive_href=None):
         td = f'<p class="tldr">{esc(tldr)}</p>' if tldr else ""
         rf = f'<p class="ang"><b>{esc(riff_label)}:</b> {riff if riff.startswith("<") else esc(riff)}</p>' if riff else ""
         ct = copy_text or url or (title + (" " + tldr if tldr else ""))
-        cid = ""
-        if use and sec_ and uid != "obscript":   # every story card can go to the chyron; unconfirmed items carry the label in their chyron line
-            fb = chy_fallback if chy_fallback is not None else meta
-            cid = chy_register(sec_, title, url, tldr, fb, unconf=bool(conf) or chy_unconf)
-        acts = CP(ct, "Copy link" if url and not copy_text else "Copy") + (chy_btn(cid, title) if cid else "") + (use_btn(sec_, title, url) if (use and sec_) else "")
-        attrs = (f' data-ord="{ord_}" data-sc="{sc}"' if ord_ is not None else "") + (f' id="{uid}"' if uid else "") + (f' data-chyid="{cid}" data-chyh="{esc(chy_trim(title, 100))}"' if cid else "")
+        fb = chy_fallback if chy_fallback is not None else meta
+        cid = chy_register(sec_ or "Show", title, url, tldr, fb, unconf=bool(conf) or chy_unconf)
+        hl = CHY_ITEMS[cid]["headline"]
+        acts = CP(ct, "Copy link" if url and not copy_text else "Copy") + chy_btn(cid, hl) + (use_btn(sec_, title, url) if (use and sec_) else "")
+        attrs = (f' data-ord="{ord_}" data-sc="{sc}"' if ord_ is not None else "") + (f' id="{uid}"' if uid else "") + f' data-chyid="{cid}" data-chyh="{esc(hl)}"'
         return (f'<div class="item trn tc{(" " + cls) if cls else ""}"{attrs}><div class="tx"><b>{head}</b> {pl}{mt}{score}{badges}<span class="upill">USED</span>{cf}{td}{rf}{extra}</div><div class="acts">{acts}</div></div>')
     def grid(cards, empty=""):
         return '<div class="sortbox">' + ("".join(cards) or f'<p class="mut noev">{esc(empty)}</p>') + "</div>"
@@ -1672,7 +1733,7 @@ def studio_html(data, archive_href=None):
     if ob["count"]:
         obit_h = (f'<p class="mut">Obituaries The Monitor ran on Legacy.com, {esc(ob["windowLabel"])}. Names, ages and towns are only what each notice lists; nothing about how anyone died. ★ marks the {len(ob["pickUrls"])} names in the on-air read.</p>')
         obit_h += tcard(f'On-air read · block L · {len(ob["pickUrls"])} names', "", pills=("OBITUARIES",), meta="about 45 seconds, no joke before or after", tldr=ob["script"], conf="name pronunciations; skip any name you are unsure of",
-                        copy_text=ob["script"], sec_="Remembering Our Neighbors", uid="obscript")
+                        copy_text=ob["script"], sec_="On-air read", uid="obscript")
         obit_h = obit_h.replace('<div class="item trn tc"', '<div class="item trn tc obread"', 1)
         if grps:
             obit_h += f'<h3 class="obh">This week · {esc(grps[0]["label"])} <span class="mut">({n_week})</span></h3><div class="obgrid" id="obnew">{"".join(ocard(r) for r in grps[0]["items"])}</div>'
@@ -1680,7 +1741,7 @@ def studio_html(data, archive_href=None):
             lab = " · ".join(g["label"] for g in grps[1:])
             obit_h += (f'<button class="obmore" id="obmore" type="button" aria-expanded="false" aria-controls="obprev" data-more="Show the previous week ({n_prev})" data-less="Hide the previous week ({n_prev})">Show the previous week ({n_prev})</button>'
                        f'<div id="obprev" class="obprev" hidden><h3 class="obh">The week before · {esc(lab)} <span class="mut">({n_prev})</span></h3><div class="obgrid">{"".join(ocard(r) for g in grps[1:] for r in g["items"])}</div></div>')
-        obit_h += f'<div class="item"><div class="tx">{A(ob["sourceUrl"], ob["source"])}</div><div class="acts">{CP(ob["sourceUrl"])}</div></div>'
+        obit_h += linkrow({"url": ob["sourceUrl"], "label": ob["source"]})
     else:
         obit_h = '<p class="mut">No obituaries loaded today. The on-air read is skipped.</p>'
     ob_count = (f'{n_week} this week · {ob["count"]} in 2 weeks' if n_prev else f'{ob["count"]} this week') if ob["count"] else "0 obituaries"
@@ -1837,23 +1898,50 @@ def studio_html(data, archive_href=None):
               f'<div id="cw-time">--:--:-- --</div><div class="cwd"><span id="cw-dow"></span> · <span id="cw-date"></span></div>'
               f'<div class="cwx"><span id="cw-ico" aria-hidden="true"></span><b id="cw-temp">--°F</b><span id="cw-cond"></span><small id="cw-note">as of build</small></div>'
               f'<div id="cwnext" class="cwn" aria-live="off"><span id="cwn-l">Planned 8:00 AM start</span><i id="cwn-c" style="display:none"></i><span id="cwn-n"></span><b id="cwn-t"></b></div></div>')
-    showstart = (f'<div class="ss"><button id="ssbtn" type="button" data-showdate="{m["showDate"]}" data-showlabel="{datetime.date.fromisoformat(m["showDate"]).strftime("%a %b %-d")}" aria-label="Set show start to now">▶ Show Start</button>'
-                 f'<span id="ssind" aria-live="polite">Planned start 8:00 AM</span><button id="ssreset" type="button" disabled title="Reset to 8:00 AM" aria-label="Reset show start to 8:00 AM">↺ 8:00</button><span id="sslive" aria-live="off"></span></div>'
-                 f'<div id="chy" hidden><b class="chl">Chyron</b><button id="chhold" type="button" aria-pressed="false" title="Hold freezes the current topic and the show clock; Resume carries on and pushes the later topics back">⏸ Hold</button><button id="chprev" type="button">◀ Prev</button><button id="chnext" type="button">Next ▶</button><button id="chclr" type="button">Clear</button><span id="chst" aria-live="polite">waiting…</span></div>'
-                 f'<button id="chlink" type="button" class="chlink" title="Link this page to the OBS chyron (paste the link code once)">Link chyron</button>'
-                 f'<details id="gp" class="gp"><summary>Guest &amp; phone caller</summary><div class="gpb">'
-                 f'<div class="gpc"><h4>Guest on the chyron</h4>'
-                 f'<label>Name<input id="g-name" type="text" maxlength="60" autocomplete="off" placeholder="Guest name"></label>'
-                 f'<label>Title<input id="g-title" type="text" maxlength="80" autocomplete="off" placeholder="Title or role"></label>'
-                 f'<label>Blurb<input id="g-blurb" type="text" maxlength="140" autocomplete="off" placeholder="One line about them"></label>'
-                 f'<div class="gpa"><button id="g-show" type="button">Show guest on chyron</button><button id="g-hide" type="button">Hide</button></div></div>'
-                 f'<div class="gpc"><h4>On the phone</h4>'
-                 f'<label>Name<input id="c-name" type="text" maxlength="60" autocomplete="off" placeholder="Caller name"></label>'
-                 f'<label>Title<input id="c-title" type="text" maxlength="80" autocomplete="off" placeholder="Title or where they are"></label>'
-                 f'<label>Photo link<input id="c-photo" type="url" maxlength="1000" autocomplete="off" placeholder="https://…"></label>'
-                 f'<div class="gpa"><label class="upl">Upload photo<input id="c-file" type="file" accept="image/*"></label><img id="c-prev" alt="" hidden><span id="c-up" class="gpm"></span></div>'
-                 f'<div class="gpa"><button id="c-go" type="button">Bring caller on</button><button id="c-show" type="button">Show</button><button id="c-hide" type="button">Hide caller</button></div></div>'
-                 f'<p id="gp-msg" class="gpm" aria-live="polite"></p></div></details>')
+    showdate = datetime.date.fromisoformat(m["showDate"]).strftime("%a %b %-d")
+    showstart = ""  # controls live in the sticky master-control strip
+    dialogs = (
+        f'<div id="gp">'
+        f'<dialog id="g-dlg" class="dlg" aria-labelledby="g-ttl"><div class="dlg-h"><h3 id="g-ttl">Guest on the chyron</h3><button id="g-x" class="dlg-x" type="button" aria-label="Close">×</button></div><div class="dlg-b">'
+        f'<label>Name<input id="g-name" type="text" maxlength="60" autocomplete="off" placeholder="Guest name"></label>'
+        f'<label>Title<input id="g-title" type="text" maxlength="80" autocomplete="off" placeholder="Title or role"></label>'
+        f'<label>Blurb<input id="g-blurb" type="text" maxlength="140" autocomplete="off" placeholder="One line about them"></label>'
+        f'<div class="dlg-a"><button id="g-show" type="button">Show guest on chyron</button><button id="g-hide" type="button">Hide</button></div>'
+        f'<p id="gp-msg" class="gpm" aria-live="polite"></p></div></dialog>'
+        f'<dialog id="c-dlg" class="dlg" aria-labelledby="c-ttl"><div class="dlg-h"><h3 id="c-ttl">On the phone</h3><button id="c-x" class="dlg-x" type="button" aria-label="Close">×</button></div><div class="dlg-b">'
+        f'<label>Name<input id="c-name" type="text" maxlength="60" autocomplete="off" placeholder="Caller name"></label>'
+        f'<label>Title<input id="c-title" type="text" maxlength="80" autocomplete="off" placeholder="Title or where they are"></label>'
+        f'<label>Photo link<input id="c-photo" type="url" maxlength="1000" autocomplete="off" placeholder="https://…"></label>'
+        f'<div class="dlg-a"><label class="upl">Upload photo<input id="c-file" type="file" accept="image/*"></label><img id="c-prev" alt="" hidden><span id="c-up" class="gpm"></span></div>'
+        f'<div class="dlg-a"><button id="c-go" type="button">Bring caller on</button><button id="c-show" type="button">Show</button><button id="c-hide" type="button">Hide caller</button></div>'
+        f'<p id="c-msg" class="gpm" aria-live="polite"></p></div></dialog>'
+        f'<dialog id="link-dlg" class="dlg" aria-labelledby="link-ttl"><div class="dlg-h"><h3 id="link-ttl">Link this device</h3><button id="link-x" class="dlg-x" type="button" aria-label="Close">×</button></div><div class="dlg-b">'
+        f'<p>This iPad isn\u2019t linked to the studio chyron yet. Open the dashboard once from the control link (the address with <code>?ctl=</code> in it) and this device will remember it. You can also paste the link code here.</p>'
+        f'<label>Link code<input id="link-code" type="text" autocomplete="off" spellcheck="false" placeholder="Paste the link code"></label>'
+        f'<div class="dlg-a"><button id="link-go" type="button">Link</button></div></div></dialog></div>'
+    )
+    mcbar = (
+        f'<div id="mc">'
+        f'<div class="mc-id"><img src="{logo}" alt="Drew in the Morning"><div class="mc-brand"><b>DREW IN THE MORNING</b><span id="mc-sub">{esc(m["dateLabel"])}</span></div></div>'
+        f'<div id="minibar" class="mc-status"><span id="mc-pill" class="mcp stand">STANDBY</span><b id="mb-time">--:--</b>'
+        f'<span id="sslive" aria-live="off"></span><span id="ssind" aria-live="polite">Planned start 8:00 AM</span><span id="chst" aria-live="polite"></span><span id="mb-next"></span></div>'
+        f'<div id="chy" class="mc-ops">'
+        f'<button id="ssbtn" type="button" data-showdate="{m["showDate"]}" data-showlabel="{showdate}" aria-label="Set show start to now">Start</button>'
+        f'<button id="chhold" type="button" aria-pressed="false" title="Hold freezes the current topic and the show clock; Resume carries on and pushes the later topics back">Hold</button>'
+        f'<button id="chprev" type="button">Prev</button><button id="chnext" type="button">Next</button><button id="chclr" type="button">Clear</button>'
+        f'<button id="mc-guest" type="button">Guest</button><button id="mc-caller" type="button">Caller</button><button id="mc-logo" type="button">Logo</button>'
+        f'<details id="mc-more"><summary aria-label="More controls">More</summary><div class="mc-more-p">'
+        f'<button id="theme" type="button" title="Toggle dark/light">Dark / Light</button>'
+        f'<button id="smaller" type="button">A−</button><button id="bigger" type="button">A+</button>'
+        f'<button id="expand" type="button">Expand all</button><button id="collapse" type="button">Collapse all</button>'
+        f'<button id="sortbtn" type="button" title="Order items by trend score or by the original editorial order">Sort: Score</button>'
+        f'<button id="ssreset" type="button" disabled title="Reset to 8:00 AM" aria-label="Reset show start to 8:00 AM">↺ 8:00</button>'
+        f'<button id="chlink" type="button" class="chlink" title="Link this page to the OBS chyron (paste the link code once)">Link chyron</button>'
+        f'<a id="brkbadge" class="btnlike" href="#brk" data-jump="brk" title="Breaking watch: new since this page was built">Breaking <b id="brkb">–</b></a>'
+        f'<a href="#top" data-jump="top" aria-label="Back to top">Top ↑</a>'
+        f'{clockw}'
+        f'</div></details></div></div>'
+    )
     usedbar = (f'<div id="usedbar" data-repo="{REPO}"><span class="ubl">Used today <b id="ucount">0</b></span><span id="ustatus"></span>'
                f'<span class="ubb"><button id="ulog" type="button">Log to repo</button><button id="ucopy" type="button">Copy list</button><button id="uclear" type="button">Clear</button></span></div>')
     brk = (f'<section id="brk" aria-label="Breaking watch" data-built="{esc(data.get("generatedAt", ""))}" data-poll="120"><div class="brkh"><b>Breaking / New since build</b>'
@@ -1861,12 +1949,11 @@ def studio_html(data, archive_href=None):
            f'<div id="brklist" aria-live="polite"></div></section>')
     arch = f'<p><a href="{esc(archive_href)}">All past packets and briefings</a></p>' if archive_href else ""
     chk = data.get("linkCheck")
-    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'self' https://api.weather.gov https://ntfy.sh http://127.0.0.1:*"><title>{esc(m["emailSubject"])} · Studio</title><style>{STUDIO_CSS}{STUDIO_CSS2}</style></head><body>
-<div id="pin"><div id="minibar"><b id="mb-time">--:--</b><span id="mb-next"></span><button id="mb-hold" type="button" hidden aria-label="Hold or resume the chyron and show clock">⏸ Hold</button><button id="mb-start" type="button" aria-label="Set show start to now">▶ Start</button><a href="#top" data-jump="top" aria-label="Back to top">Top ↑</a></div>
+    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data: https:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'self' https://api.weather.gov https://ntfy.sh http://127.0.0.1:*"><title>{esc(m["emailSubject"])} · Studio</title><style>{STUDIO_CSS}{STUDIO_CSS2}</style></head><body>
+<div id="pin">{mcbar}
 <div class="clock pre" id="tl" role="img" aria-label="60 minute show timeline, blocks A to L">{clockbar}<div id="phw"><div id="ph" aria-hidden="true"></div></div></div></div>
-<header id="top"><img src="{logo}" alt="Drew in the Morning"><div class="ht"><div class="k">Studio page · {esc(m["kicker"])} {('<span class="sample">'+esc(m["sampleLabel"])+'</span>') if m.get("sample") else ''}</div><div class="d">{esc(m["dateLabel"])}</div>{showstart}</div>
-{clockw}</header>
-<div class="toolbar"><div class="t">{esc(m["recap"])} · {esc(m["tagline"])}</div><div class="tools"><button id="theme" type="button" title="Toggle dark/light">Dark / Light</button><button id="smaller" type="button">A−</button><button id="bigger" type="button">A+</button><button id="expand" type="button">Expand all</button><button id="collapse" type="button">Collapse all</button><button id="sortbtn" type="button" title="Order items by trend score or by the original editorial order">Sort: Score</button><a id="brkbadge" class="btnlike" href="#brk" data-jump="brk" title="Breaking watch: new since this page was built">Breaking <b id="brkb">–</b></a></div></div>
+{dialogs}
+<header id="top" class="ident"><div class="k">Studio page · {esc(m["kicker"])} {('<span class="sample">'+esc(m["sampleLabel"])+'</span>') if m.get("sample") else ''}</div><div class="t">{esc(m["recap"])} · {esc(m["tagline"])}</div></header>
 {usedbar}
 {brk}
 <nav>{nav}</nav>

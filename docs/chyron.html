@@ -20,8 +20,7 @@ body{font-family:Inter,'Noto Sans','Segoe UI','Helvetica Neue',Arial,sans-serif;
 #head.two,#sub.two{white-space:normal;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
 #sub{font-size:27px;line-height:1.2;font-weight:500;color:#d6e3f5;margin-top:5px;white-space:nowrap;overflow:hidden}
 #sub:empty,#kick:empty{display:none}
-#lg{position:absolute;right:40px;bottom:40px;height:170px;width:auto;display:block;opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease;pointer-events:none;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}
-#lg.on{opacity:1;transform:none}
+#lg{display:none}   /* logo mode is a clean screen: the OBS scene already has the sun logo (Image 2); a second bug here doubled it */
 #call{position:absolute;right:48px;bottom:236px;width:380px;border-radius:14px;overflow:hidden;background:linear-gradient(170deg,#0b1a36,#10294f);box-shadow:0 10px 34px rgba(0,0,0,.55);border-top:5px solid #c1121f;opacity:0;transform:translateX(460px);transition:transform .6s cubic-bezier(.2,.8,.2,1),opacity .4s ease;pointer-events:none}
 #call.on{opacity:1;transform:none}
 #call .hd{display:flex;align-items:center;gap:10px;background:#c1121f;color:#fff;font-weight:900;font-size:22px;letter-spacing:.12em;padding:8px 16px}
@@ -47,15 +46,15 @@ var Q={};location.search.replace(/^\?/,'').split('&').forEach(function(p){var k=
 var TOPIC=/^[A-Za-z0-9_-]{6,64}$/.test(Q.topic||'')?Q.topic:null,BASE=/^(https:\/\/ntfy\.sh|http:\/\/127\.0\.0\.1:\d+)$/.test(Q.ntfy||'')?Q.ntfy:'https://ntfy.sh';
 var KEY='ditm-chyron-state-v1',CMDS={start:1,stop:1,hold:1,resume:1,toggle:1,logo:1,item:1,guest:1,guest_show:1,guest_hide:1,caller:1,caller_show:1,caller_hide:1,caller_toggle:1,next:1,prev:1,goto:1,clear:1,show:1};
 /* state: running = auto-advance on the run-of-show clock; held freezes the topic and the clock; idx is the topic shown; visible = lower third on screen */
-var S={running:false,held:false,startAt:0,heldAt:0,holdMs:0,idx:0,visible:false,logo:false,item:null,gshow:false,gHeld:false,cshow:false,seq:0};
-try{var o=JSON.parse(localStorage.getItem(KEY)||'null');if(o&&typeof o.idx==='number'){S=o;S.visible=false;S.logo=false;S.item=null;S.gshow=false;S.gHeld=false;S.cshow=false;if(S.running&&!S.held&&(Date.now()-S.startAt)/60000>=D.total)S.running=false}}catch(e){}
+var S={running:false,held:false,startAt:0,heldAt:0,holdMs:0,idx:0,visible:false,logo:false,item:null,adhoc:null,gshow:false,gHeld:false,cshow:false,seq:0};
+try{var o=JSON.parse(localStorage.getItem(KEY)||'null');if(o&&typeof o.idx==='number'){S=o;S.visible=false;S.logo=false;S.item=null;S.adhoc=null;S.gshow=false;S.gHeld=false;S.cshow=false;if(S.running&&!S.held&&(Date.now()-S.startAt)/60000>=D.total)S.running=false}}catch(e){}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
 function ref(){return S.held?S.heldAt:Date.now()}
 function elapsedMin(){return (ref()-S.startAt-S.holdMs)/60000}
 function idxAt(m){var k=-1;for(var i=0;i<N;i++)if(B[i].offset<=m+1e-9)k=i;return k}
 function clampI(i){return Math.max(0,Math.min(N-1,i|0))}
 /* ---- audible items: the dashboard sends only an id; the words come from chyron-items.json (published with the packet), never from the network message ---- */
-var ITEMS={},ITEM_RX=/^i-[0-9a-f]{10}$/,itemsAt=0,IURL=/^http:\/\/127\.0\.0\.1:\d+\/chyron-items\.json$/.test(Q.itemsurl||'')?Q.itemsurl:'chyron-items.json';
+var ITEMS={},ITEM_RX=/^i-[0-9a-f]{10}$/,ADHOC_RX=/^a-[0-9a-f]{10}$/,itemsAt=0,IURL=/^http:\/\/127\.0\.0\.1:\d+\/chyron-items\.json$/.test(Q.itemsurl||'')?Q.itemsurl:'chyron-items.json';
 function cl(v,n){return (typeof v==='string')?v.replace(/[\u0000-\u001f]+/g,' ').trim().slice(0,n):''}
 function setItems(j){var m=(j&&typeof j==='object'&&j.items&&typeof j.items==='object')?j.items:null;if(!m)return 0;var o={},n=0;
  Object.keys(m).forEach(function(k){var v=m[k];if(!ITEM_RX.test(k)||!v||typeof v!=='object')return;var h=cl(v.headline,140);if(!h)return;o[k]={headline:h,line:cl(v.line,170),kicker:cl(v.kicker,48)};n++});
@@ -80,33 +79,36 @@ function drawCall(){var el=$('call');if(!el)return;if(C){$('cnm').textContent=C.
 var shown=null,swapT=null;
 function fit(el,max,min,lines){el.classList.remove('two');el.style.fontSize=max+'px';var s=max;while(el.scrollWidth>el.clientWidth+1&&s>min){s-=1;el.style.fontSize=s+'px'}if(el.scrollWidth>el.clientWidth+1){el.classList.add('two')}}
 function paint(b){$('kick').textContent=b.kicker||'';$('head').textContent=b.headline||'';$('sub').textContent=b.sub||'';fit($('head'),38,32);fit($('sub'),27,23);$('lt').style.setProperty('--acc',b.color)}
-function cur(){if(S.gshow&&G)return{key:'g:'+G.name+'|'+G.title+'|'+G.blurb,b:{headline:G.name,kicker:G.title||'GUEST',sub:G.blurb,color:'#2a7de1'}};if(S.item&&ITEMS[S.item]){var t=ITEMS[S.item];return{key:'i:'+S.item,b:{headline:t.headline,sub:t.line,kicker:t.kicker||'ON THE DESK',color:'#e4572e'}}}var b=B[S.idx];return b?{key:'b:'+S.idx,b:b}:null}
+function cur(){if(S.gshow&&G)return{key:'g:'+G.name+'|'+G.title+'|'+G.blurb,b:{headline:G.name,kicker:G.title||'GUEST',sub:G.blurb,color:'#2a7de1'}};if(S.item&&ITEMS[S.item]){var t=ITEMS[S.item];return{key:'i:'+S.item,b:{headline:t.headline,sub:t.line,kicker:t.kicker||'ON THE DESK',color:'#e4572e'}}}if(S.adhoc&&S.adhoc.headline){var a=S.adhoc;return{key:'a:'+(S.item||a.headline),b:{headline:a.headline,sub:a.line||'',kicker:a.kicker||'ON THE DESK',color:'#e4572e'}}}var b=B[S.idx];return b?{key:'b:'+S.idx,b:b}:null}
 function draw(){var lt=$('lt'),c=cur();if(!c)return;
  if(S.visible){if(shown===null){clearTimeout(swapT);paint(c.b);shown=c.key;lt.classList.add('in')}
   else if(shown!==c.key){var t=$('txt');t.classList.add('swap');clearTimeout(swapT);var want=c;swapT=setTimeout(function(){paint(want.b);shown=want.key;t.classList.remove('swap')},260)}}
  else if(shown!==null||lt.classList.contains('in')){lt.classList.remove('in');shown=null}
- $('lg').classList.toggle('on',!!S.logo);drawCall();
+ if($('lg'))$('lg').classList.remove('on');drawCall();   /* never draw the chyron's own bug */
  var d=$('dbg');if(Q.debug){d.style.display='block';d.textContent=JSON.stringify(view())}
  publishSoon()}
-function view(){return{running:S.running,held:S.held,idx:S.idx,letter:B[S.idx]&&B[S.idx].letter,visible:S.visible,logo:!!S.logo,item:S.item&&ITEMS[S.item]?S.item:null,guest:(S.gshow&&G)?G.name:null,caller:(S.cshow&&C)?C.name:null,hasCaller:!!C,hasGuest:!!G,startAt:S.startAt,heldAt:S.heldAt,holdMs:S.holdMs,elapsedMin:+elapsedMin().toFixed(3)}}
+function view(){return{running:S.running,held:S.held,idx:S.idx,letter:B[S.idx]&&B[S.idx].letter,visible:S.visible,logo:!!S.logo,item:(S.item&&ITEMS[S.item])?S.item:((S.adhoc&&ADHOC_RX.test(S.item||''))?S.item:null),guest:(S.gshow&&G)?G.name:null,caller:(S.cshow&&C)?C.name:null,hasCaller:!!C,hasGuest:!!G,startAt:S.startAt,heldAt:S.heldAt,holdMs:S.holdMs,elapsedMin:+elapsedMin().toFixed(3)}}
 /* ---- commands (a fixed list; nothing else is ever accepted) ---- */
 function apply(c,again){var now=Date.now();if(!c||typeof c.cmd!=='string'||!Object.prototype.hasOwnProperty.call(CMDS,c.cmd))return false;var i=(typeof c.idx==='number'&&isFinite(c.idx))?clampI(c.idx):null;
  switch(c.cmd){
-  case 'start':S.running=true;S.held=false;S.holdMs=0;S.heldAt=0;S.startAt=Math.floor(now/60000)*60000;S.idx=0;S.visible=true;S.logo=false;S.item=null;S.gshow=false;S.gHeld=false;break;
+  case 'start':S.running=true;S.held=false;S.holdMs=0;S.heldAt=0;S.startAt=Math.floor(now/60000)*60000;S.idx=0;S.visible=true;S.logo=false;S.item=null;S.adhoc=null;S.gshow=false;S.gHeld=false;break;
   case 'stop':S.running=false;S.held=false;S.holdMs=0;S.heldAt=0;break;
   case 'hold':if(S.running&&!S.held){S.held=true;S.heldAt=now}S.gHeld=false;break;
   case 'toggle':return apply({cmd:S.held?'resume':'hold'});   /* one Stream Deck key for hold/resume */
-  case 'resume':if(S.held){S.holdMs+=now-S.heldAt;S.held=false;S.heldAt=0}S.item=null;S.gshow=false;S.gHeld=false;break;   /* resume also leaves an audible or a guest: back to the scheduled block */
-  case 'next':case 'prev':case 'goto':{if(c.cmd==='goto'&&i===null)return false;var to=c.cmd==='goto'?(i===null?S.idx:i):clampI(S.idx+(c.cmd==='next'?1:-1));S.idx=to;S.visible=true;S.logo=false;S.item=null;S.gshow=false;S.gHeld=false;
+  case 'resume':if(S.held){S.holdMs+=now-S.heldAt;S.held=false;S.heldAt=0}S.item=null;S.adhoc=null;S.gshow=false;S.gHeld=false;break;   /* resume also leaves an audible or a guest: back to the scheduled block */
+  case 'next':case 'prev':case 'goto':{if(c.cmd==='goto'&&i===null)return false;var to=c.cmd==='goto'?(i===null?S.idx:i):clampI(S.idx+(c.cmd==='next'?1:-1));S.idx=to;S.visible=true;S.logo=false;S.item=null;S.adhoc=null;S.gshow=false;S.gHeld=false;
    if(S.running)S.startAt=ref()-S.holdMs-B[to].offset*60000+1;break}   /* +1ms: land inside the block, not on the boundary */
-  case 'clear':S.visible=false;S.logo=false;S.item=null;S.gshow=false;S.gHeld=false;break;
-  case 'logo':S.visible=false;S.logo=true;S.item=null;S.gshow=false;S.gHeld=false;break;   /* bar off, only the small DITM sun bug bottom-right; auto-advance keeps running underneath */
-  case 'item':{var id=c.id;if(typeof id!=='string'||!ITEM_RX.test(id))return false;
-   if(!ITEMS[id]){if(!again&&(loading||Date.now()-itemsAt>15000))loadItems(function(){apply(c,true)});return false}   /* unknown id: ignored (one cache-busted refresh is tried first) */
-   S.item=id;S.gshow=false;S.visible=true;S.logo=false;if(S.running&&!S.held){S.held=true;S.heldAt=now;S.gHeld=false}   /* auto-advance holds so the audible stays up */
+  case 'clear':S.visible=false;S.logo=false;S.item=null;S.adhoc=null;S.gshow=false;S.gHeld=false;break;
+  case 'logo':S.visible=false;S.logo=true;S.item=null;S.adhoc=null;S.gshow=false;S.gHeld=false;S.cshow=false;break;   /* clean screen: hide the bar, guest and caller; the scene logo stays; auto-advance keeps running underneath */
+  case 'item':{var id=c.id;
+   if(typeof id==='string'&&ITEM_RX.test(id)){   /* registered id: words come ONLY from chyron-items.json, never from the message */
+    if(!ITEMS[id]){if(!again&&(loading||Date.now()-itemsAt>15000))loadItems(function(){apply(c,true)});return false}S.item=id;S.adhoc=null}
+   else {var h=ctext(c.headline,100);if(!h)return false;   /* ad-hoc (breaking, or a card with no prebuilt id): capped text, shown with textContent */
+    S.adhoc={headline:h,line:ctext(c.line,118),kicker:ctext(c.kicker,44)};S.item=(typeof id==='string'&&ADHOC_RX.test(id))?id:null}
+   S.gshow=false;S.visible=true;S.logo=false;if(S.running&&!S.held){S.held=true;S.heldAt=now;S.gHeld=false}
    break}
   case 'guest':case 'guest_show':{if(c.cmd==='guest'){var n=ctext(c.name,60);if(!n)return false;G={name:n,title:ctext(c.title,80),blurb:ctext(c.blurb,140)};lset(GKEY,G)}else if(!G)return false;
-   S.gshow=true;S.item=null;S.visible=true;S.logo=false;if(S.running&&!S.held){S.held=true;S.heldAt=now;S.gHeld=true}   /* a guest holds auto-advance, like an audible */
+   S.gshow=true;S.item=null;S.adhoc=null;S.visible=true;S.logo=false;if(S.running&&!S.held){S.held=true;S.heldAt=now;S.gHeld=true}   /* a guest holds auto-advance, like an audible */
    break}
   case 'guest_hide':{if(!S.gshow)return false;S.gshow=false;if(S.held&&S.gHeld){S.holdMs+=now-S.heldAt;S.held=false;S.heldAt=0}S.gHeld=false;S.visible=!!S.running;break}   /* back to the rundown if it is running, else off air */
   case 'caller':{var cn=ctext(c.name,60);if(!cn)return false;C={name:cn,title:ctext(c.title,80),photo:cphoto(c.photo)};lset(CKEY,C);S.cshow=true;break}
@@ -120,7 +122,7 @@ function tick(){if(!S.running)return;var m=elapsedMin();
  var k=idxAt(m);if(k>=0&&k!==S.idx){S.idx=k;S.seq++;save();draw()}}
 setInterval(tick,250);
 /* ---- input (a): obs-browser events, sent by obs-websocket CallVendorRequest vendorName obs-browser requestType emit_event ---- */
-window.addEventListener('ditm',function(e){var d=e&&e.detail;if(typeof d==='string'){try{d=JSON.parse(d)}catch(x){return}}apply(d&&{cmd:d.cmd,idx:d.idx,id:d.id,name:d.name,title:d.title,blurb:d.blurb,photo:d.photo})});
+window.addEventListener('ditm',function(e){var d=e&&e.detail;if(typeof d==='string'){try{d=JSON.parse(d)}catch(x){return}}apply(d&&{cmd:d.cmd,idx:d.idx,id:d.id,name:d.name,title:d.title,blurb:d.blurb,photo:d.photo,headline:d.headline,line:d.line,kicker:d.kicker})});
 /* ---- input (b): ntfy.sh topic over EventSource ---- */
 var lastPub=0,pubT=null,loadSec=Date.now()/1000;
 function publishSoon(){if(!TOPIC)return;clearTimeout(pubT);pubT=setTimeout(publish,150)}
@@ -128,7 +130,7 @@ function publish(){if(!TOPIC)return;var v=view();v.k='state';v.v=1;v.at=Date.now
  try{fetch(BASE+'/'+TOPIC,{method:'POST',body:JSON.stringify(v)}).catch(function(){})}catch(e){}}
 if(TOPIC&&window.EventSource){var es=new EventSource(BASE+'/'+TOPIC+'/sse?since=20s');
  es.onmessage=function(ev){var m;try{m=JSON.parse(ev.data)}catch(e){return}if(!m||m.event!=='message'||!m.message)return;if(m.time&&m.time<loadSec-8)return;
-  var c;try{c=JSON.parse(m.message)}catch(e){return}if(!c||c.k==='state')return;apply({cmd:String(c.cmd),idx:c.idx,id:c.id,name:c.name,title:c.title,blurb:c.blurb,photo:c.photo})}}
+  var c;try{c=JSON.parse(m.message)}catch(e){return}if(!c||c.k==='state')return;apply({cmd:String(c.cmd),idx:c.idx,id:c.id,name:c.name,title:c.title,blurb:c.blurb,photo:c.photo,headline:c.headline,line:c.line,kicker:c.kicker})}}
 setInterval(function(){if(S.running&&Date.now()-lastPub>180000)publish()},30000);
 /* refresh the block text from chyron.json (rebuilt daily) when this page is served over http(s) */
 if(/^https?:/.test(location.protocol)){try{fetch('chyron.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(j){if(j&&j.blocks&&j.blocks.length===N){B=j.blocks;D.total=j.total||D.total;var cc=cur();if(shown!==null&&cc)paint(cc.b)}}).catch(function(){})}catch(e){}}
