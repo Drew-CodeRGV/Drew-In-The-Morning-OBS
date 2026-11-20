@@ -56,7 +56,7 @@ TOP HEADLINES · RGV FIRST
   - [ACT 18] La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and
     Paredes elementaries) after losing 10,008 students in a decade (Daily McAllen · Nov 20)
     https://dailymcallen.com/local-news/editions/11-20-2026
-  - [ACT 12] SpaceX responds after Cameron County rejects its data center tax break, says
+  - [ACT 11] SpaceX responds after Cameron County rejects its data center tax break, says
     its payment plan would have steadied county revenue (MyRGV · Nov 19)
     https://myrgv.com/local-news/2026/11/19/spacex-responds-to-cameron-county-rejection-of-tax-break-application/
   - [ACT 12] FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and
@@ -169,7 +169,7 @@ TRENDING NEWS · what's trending around the nation (separate from the National D
       137-130 with Giannis at 27-13-9 in his first game against the Bucks.
     RIFF: The three-win Jazz ended the Lakers' run. Any given Wednesday.
     Field Level Media · Nov 19: https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/
-- [TREND 44] BTS fans flood X voting for the MAMA Awards  [music]  [CONFIRM BEFORE AIR: X trend only; no news story opened. CONFIRM BEFORE AIR]
+- [TREND 43] BTS fans flood X voting for the MAMA Awards  [music]  [CONFIRM BEFORE AIR: X trend only; no news story opened. CONFIRM BEFORE AIR]
     SUMMARY: #VOTEFORBTS, #DAESANGFORBTS and 'OUR CHOICE IS BTS AT MAMA' are top U.S. X
       trends (about 90,000 posts each).
     RIFF: If your teen's been glued to the phone, they might be voting. ARMY does not sleep.
@@ -318,7 +318,7 @@ WEATHER · McALLEN / RGV (National Weather Service BRO (api.weather.gov))
   Wed Nov 25  Sunny, high 67F / low 49F, rain 1%, wind N 6 to 10 mph
   Thu Nov 26  Mostly Sunny, high 68F / low 56F, rain 15%, wind NE 6 mph
   Alerts: none active
-  Updated 2026-11-20T19:47:24+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
+  Updated 2026-11-20T20:45:15+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
   NWS Brownsville office: https://www.weather.gov/bro/
   API: https://api.weather.gov/gridpoints/BRO/49,19/forecast
 
@@ -467,4 +467,4 @@ What your kids might be saying at school this week, and one line on how to bring
 NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-20 20:18 CT.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-20 21:16 CT.

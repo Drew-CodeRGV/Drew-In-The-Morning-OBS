@@ -237,6 +237,70 @@ def sc_agg(items):
     return len(items), b
 
 
+# ---------------------------------------------------------------- assign existing headlines to rundown blocks D–I (best fit, no duplicates)
+_SEG_H_NO = re.compile(r"\b(murder|homicide|killing|killings|killed|sentenced|wrongful-?death|shooting|rape|assault|suicide|overdose|died|death suit)\b", re.I)
+_SEG_H_YES = re.compile(r"\b(library|holiday parade|parade|festival|thanksgiving celebration|friends['’] thanksgiving|palenque|community celebration|public park|city park|parks department|how we['’]d talk|youth program|family night)\b", re.I)
+
+def _story_title(it):
+    return ((it.get("title") or "") + " " + (it.get("short") or "")).lower()
+
+def classify_story(it):
+    """Best-fit letter for a headline: C local news, D local politics, E school boards, F city hall, G economic development, H family & kids, I statewide.
+    One story, one segment. Never invents a story. Family & Kids is family-friendly only and does not use stories that name kids in a crime or death."""
+    T = _story_title(it)
+    if _SEG_H_YES.search(T) and not _SEG_H_NO.search(T):
+        return "H"
+    if re.search(r"texas public schools|\btea\b", T) and not re.search(r"\bisd\b|\bcisd\b", T):
+        return "I"
+    if re.search(r"\bisd\b|\bcisd\b|school board|trustees?|superintendent|school district|closing (three |more )?campuses|campus clos", T):
+        if re.search(r"\b(jeti|tax break|tax abatement|plant|tesla|factory|\d+ jobs|investment)\b", T):
+            return "G"
+        return "E"
+    if re.search(r"\b(runoffs?|election administrator|elections administrator|ballots?|precinct|congressman-elect|congresswoman-elect|commissioners court)\b", T):
+        return "D"
+    if re.search(r"\b(mayor|council)\b.{0,50}\b(races?|candidates?|runoffs?|campaign)\b", T) or re.search(r"\b(races?|candidates?|runoffs?)\b.{0,50}\b(mayor|council)\b", T):
+        return "D"
+    if re.search(r"\brep(?:resentative|\.)\s", T) and re.search(r"\b(act|bill|committee|legislation)\b", T):
+        return "D"
+    if re.search(r"\b(abbott|paxton|comptroller|legislature|txdmv|gov(?:ernor|\.|-elect)|gerrymander|high courts|razor wire|sen\.?\s+john cornyn|texas republicans|democrats['’] statewide)\b", T):
+        return "I"
+    if re.search(r"\b(city manager|city attorney|councilwoman|councilman|city council)\b", T) and not re.search(r"\b(races?|runoffs?|candidates?)\b", T):
+        return "F"
+    if re.search(r"food truck park", T):
+        return "F"
+    if re.search(r"\b(edc|rioplex|tax break|tax abatement|jeti|data center|industrial|investment|factory|polysilicon|sales tax|retail sales|truck port|health education building)\b", T) or (re.search(r"spacex", T) and re.search(r"\b(tax|abatement|data center|jobs|investment|edc|permit)\b", T)):
+        return "G"
+    if re.search(r"\b(city commission|commission seat|ordinance|rezoning|comprehensive plan)\b", T):
+        return "F"
+    if re.search(r"\b(mayor and council|approves|bans|sworn in)\b", T) and re.search(r"\b(mayor|council|commission|ordinance|city attorney|managers|hens|roosters|barking)\b", T):
+        return "F"
+    if re.search(r"\b(mcallen|mission|pharr|alton|edinburg|weslaco|brownsville|harlingen|starbase)\b.{0,40}\b(bans|approves|ordinance|rezoning|comprehensive plan)\b", T):
+        return "F"
+    if it.get("valley") or it.get("_desk") == "rgv":
+        return "C"
+    return "I"
+
+def assign_segment_stories(rgv, texas):
+    """Split existing RGV + Texas headlines into C–I. Each story is used once. Does not invent items."""
+    buckets = {L: [] for L in "CDEFGHI"}
+    for desk, items in (("rgv", rgv or []), ("texas", texas or [])):
+        for it in items:
+            row = dict(it)
+            row["_desk"] = desk
+            buckets[classify_story(row)].append(row)
+    return buckets
+
+def plus_confirm(html, n):
+    html = html or ""
+    n = int(n or 0)
+    if not n:
+        return html
+    m = re.search(r'(<span class="cf">)(\d+)( CONFIRM</span>)', html)
+    if m:
+        return html[:m.start(2)] + str(int(m.group(2)) + n) + html[m.end(2):]
+    return html + f'<span class="cf">{n} CONFIRM</span>'
+
+
 # ---------------------------------------------------------------- What I've Been Up To (block B)
 def prep_up_to(data):
     """Block B comes ONLY from the family calendar (tools/family_calendar.py). Items are {date, label, category, count} in generic
@@ -1478,13 +1542,14 @@ summary,summary *,.rtn,.tn,.tt,h3,h4{overflow-wrap:normal;word-break:normal;hyph
 .obgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,15rem),1fr));gap:6px;margin:4px 0 8px;align-items:stretch}
 .ob{border:1px solid var(--line);border-radius:8px;background:var(--bg);padding:6px 8px;display:flex;flex-direction:column;gap:2px;min-width:0;overflow:hidden;box-sizing:border-box}
 .ob a{font-weight:800;overflow-wrap:anywhere;word-break:break-word}.ob .obn{min-width:0;display:block}.ob .obm{color:var(--mut);font-size:.82rem}.ob .acts{margin-top:auto;justify-content:flex-end}
+.subh{margin:12px 0 6px;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;font-weight:800;color:var(--mut)}.subsec + .subh,.sortbox + .subh,.obgrid + .subh,.mut + .subh{margin-top:14px}
 .obmore{display:block;width:100%;min-height:48px;margin:6px 0 10px;padding:10px 14px;border:2px dashed var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-weight:800;font-size:.95rem;font-family:inherit;cursor:pointer}
 .obmore:hover,.obmore:focus-visible{border-color:var(--acc);outline:none}
 .obprev[hidden]{display:none}
 .obh{margin:10px 0 2px;font-size:.95rem}
 .tc.chisme{border-left:4px solid #b5179e}
 .tc .cf{white-space:nowrap}
-@media (max-width:560px){.sec>summary .sm:has(.cf) .cnt{display:none}.sec>summary .sm{max-width:11rem}.sec>summary .sm .sb{display:none}#obits>summary .sm{max-width:13.5rem}.sec.blk>summary .sm .cnt{display:none}.sec>summary .sm .tr{min-width:0;font-size:.8rem;margin:0}.sec>summary .sm .tr small{display:none}}
+@media (max-width:560px){.sec>summary .sm:has(.cf) .cnt{display:none}.sec>summary .sm{max-width:11rem}.sec>summary .sm .sb{display:none}#obits>summary .sm{max-width:13.5rem}.sec>summary .sm .tr{min-width:0;font-size:.8rem;margin:0}.sec>summary .sm .tr small{display:none}}
 """
 
 CHY_JS = r"""
@@ -1874,27 +1939,33 @@ def studio_html(data, archive_href=None):
                                 sec_="Meme of the Week: " + lv["level"], cls="meme"))
     mem = f'<p class="mut"><b>{esc(data["memes"]["tagline"])}</b> {esc(data["memes"]["intro"])}</p>' + grid(mcards, "No memes loaded.")
 
-    # ---- run-of-show blocks A..L (each is a section and a timeline target)
+    # ---- run-of-show blocks A..L: one section per letter; story grids live on the same bar as the timer
     SUBS = {"A": "jingle · cold open · the hour's promise", "B": "family calendar · look-ahead", "C": "top Valley stories · headlines · chisme", "D": "races, candidates and runoffs",
             "E": "trustees, budgets and board votes", "F": "mayors, councils and city managers", "G": "jobs, projects and deals", "H": "a light, woven-in moment with Jess",
             "I": "Texas and Texas politics", "J": "national desk · trending · tech", "K": "call-ins and topic submissions", "L": "meme of the week · neighbors · close"}
-    block_secs = {}
-    for r in data.get("rundown", []):
-        L = r["letter"]
-        flex = f'FLEX {r["trimTo"]}-{r["stretchTo"]} min' if r["flex"] else "fixed"
-        cards = [tcard(f'{L} · {r["title"]}', "", pills=("JESS",) if r["jess"] else (), meta=f'{r["minutes"]} min · {flex}', tldr=r["subject"], use=False,
-                       copy_text=f'{L} {r["title"]}: {r["subject"]}', sec_="Rundown", cls="rdcard")]
-        if L == "B":
-            for e in data["up_to"] + [dict(x, coming=True) for x in data["up_to_coming"]]:
-                dd = datetime.date.fromisoformat(e["date"]).strftime("%a %b %-d")
-                cards.append(tcard(e["label"], "", pills=(e["category"],) + (("COMING UP", "#2a7de1"),) if e.get("coming") else (e["category"],),
-                                   meta=dd + (f' · {upto_when(e)}' if e["count"] > 1 else ""), sec_=UPTO_SEC, cls="ev" + (" ahead" if e.get("coming") else "")))
+    byL = {r["letter"]: r for r in data.get("rundown") or []}
+    seg = assign_segment_stories(data["headlines"]["rgv"], data["headlines"]["texas"])
+    b_cards = []
+    for e in data["up_to"] + [dict(x, coming=True) for x in data["up_to_coming"]]:
+        dd = datetime.date.fromisoformat(e["date"]).strftime("%a %b %-d")
+        b_cards.append(tcard(e["label"], "", pills=(e["category"],) + (("COMING UP", "#2a7de1"),) if e.get("coming") else (e["category"],),
+                             meta=dd + (f' · {upto_when(e)}' if e["count"] > 1 else ""), sec_=UPTO_SEC, cls="ev" + (" ahead" if e.get("coming") else "")))
+    def blk(L, body, count="", badges=""):
+        r = byL[L]
         stretch = f' data-stretch="{r["stretchTo"]}"' if r["flex"] and r.get("stretchTo") else ""
         tr = (f'<span class="tr" data-off="{r["offset"]}" data-dur="{r["minutes"]}"{stretch} data-letter="{L}" data-name="{esc(r["short"])}" data-color="{r["color"]}"><b>{r["timeRange"]}</b><small></small></span>')
-        block_secs[L] = sec(f"blk-{L}", r["color"], esc(r["title"]) + (" ★" if r["signature"] else "") + '<span class="tl">LIVE</span>', SUBS.get(L, r["subject"][:60]), grid(cards), count=f'{len(cards)} cards', chip=L, tr=tr, blk=True,
-                            badges=(f'<span class="cf">{len(r["confirm"])} CONFIRM</span>' if r["confirm"] else ""))
-    nav = "".join(f'<a href="#{i}" data-jump="{i}">{t}</a>' for i, t in (("brk", "Breaking"), ("blk-A", "Cold open"), ("blk-B", "Up To"), ("blk-C", "Local News"), ("headlines", "Headlines"), ("chisme", "Chisme"), ("blk-D", "Politics"), ("blk-J", "National"),
-                                                                       ("trending", "Trending"), ("tech", "Tech"), ("obits", "Neighbors"), ("memes", "Meme of the Week"), ("weather", "Weather"), ("hs", "HS Football"), ("nfl", "NFL"), ("nba", "NBA"), ("mlb", "MLB"), ("used", "Used list")))
+        title = esc(r["title"]) + (" ★" if r["signature"] else "") + '<span class="tl">LIVE</span>'
+        sub = esc(r.get("subject") or SUBS.get(L, ""))
+        return sec(f"blk-{L}", r["color"], title, sub, body, count=count, chip=L, tr=tr, blk=True,
+                   badges=plus_confirm(badges, len(r.get("confirm") or [])))
+    def stories_of(L, sec_name, empty="No stories today."):
+        items = seg.get(L) or []
+        n, bdg = sc_agg(items)
+        return grid([hcard(i, sec_name) for i in items], empty), (f"{n} stories" if n else "No stories today"), bdg, n
+    nav = "".join(f'<a href="#{i}" data-jump="{i}">{t}</a>' for i, t in (("brk", "Breaking"), ("blk-A", "Cold open"), ("blk-B", "Up To"), ("blk-C", "Local News"), ("chisme", "Chisme"),
+                                                                       ("blk-D", "Local Politics"), ("blk-E", "School Boards"), ("blk-F", "City Hall"), ("blk-G", "Econ Dev"), ("blk-H", "Family & Kids"), ("blk-I", "Statewide"),
+                                                                       ("blk-J", "National"), ("trending", "Trending"), ("tech", "Tech"), ("obits", "Neighbors"), ("memes", "Meme of the Week"),
+                                                                       ("weather", "Weather"), ("hs", "HS Football"), ("nfl", "NFL"), ("nba", "NBA"), ("mlb", "MLB"), ("used", "Used list")))
     mon = m["mode"] == "monday"
     used_body = ('<ul id="usedul"></ul><p class="mut">Tap the box next to any item when it is used on the show. Marks stay on this device until cleared, so nothing gets repeated. '
                  '"Log to repo" opens a pre-filled GitHub issue (label used-on-show) for the post-show job: it cuts clips from the recording and drafts social teasers for approval. Nothing posts by itself.</p>')
@@ -1909,20 +1980,45 @@ def studio_html(data, archive_href=None):
     wal = w.get("alerts")
     wb = ('<span class="cf">' + str(len(wal)) + ' ALERT' + ('S' if len(wal) != 1 else '') + '</span>') if wal else ""
     n_rumor = sum(1 for c in chi if not c.get("confirmedBy"))
-    B = block_secs
+    # C uses leftover local headlines (stories that belong in D–I have been moved) plus Chisme
+    c_rgv = [i for i in seg["C"] if i.get("_desk") == "rgv"]
+    c_tx = [i for i in seg["C"] if i.get("_desk") == "texas"]
+    heads = (thumbhtml
+             + (('<div class="src" style="font-weight:800">RGV</div>' + grid([hcard(i, "Headlines: RGV") for i in c_rgv], "No RGV headlines loaded.")) if c_rgv or not c_tx else "")
+             + (('<div class="src" style="margin-top:10px;font-weight:800">TEXAS</div>' + grid([hcard(i, "Headlines: Texas") for i in c_tx], "No Texas headlines loaded.")) if c_tx else ""))
+    c_body = f'<div class="subsec" id="headlines">{heads}</div><h3 class="subh" id="chisme">Chisme</h3>{chisme_h}'
+    c_count = f"{len(seg['C']) + len(chi)} stories"
+    c_badges = plus_confirm(sc_agg(seg["C"])[1], 0) + (f'<span class="cf">{n_rumor} RUMOR</span>' if n_rumor else "")
+    d_grid, d_cnt, d_bdg, _ = stories_of("D", "Local Politics")
+    e_grid, e_cnt, e_bdg, _ = stories_of("E", "School Boards")
+    f_grid, f_cnt, f_bdg, _ = stories_of("F", "City Hall")
+    g_grid, g_cnt, g_bdg, _ = stories_of("G", "Economic Development")
+    h_grid, h_cnt, h_bdg, _ = stories_of("H", "Family & Kids")
+    i_grid, i_cnt, i_bdg, _ = stories_of("I", "Statewide")
+    n_tech_cf = sum(1 for x in tk["items"] if x.get("isConfirm"))
+    j_body = (f'<div class="subsec" id="national">{nat}</div>'
+              f'<h3 class="subh" id="trending">Trending News</h3>{trn}'
+              '<h3 class="subh" id="tech">What\'s Happening in Tech</h3>' + tech_h)
+    j_count = f"{nn_ + nt_ + len(tk['items'])} stories"
+    j_badges = bn_ + bt_ + (f'<span class="sb {"a" if tk["origin"] == "wires" else "t"}">{esc(tk["badge"])}</span>' if tk.get("badge") else "") + (f'<span class="cf">{n_tech_cf} CONFIRM</span>' if n_tech_cf else "")
+    l_body = f'<div class="subsec" id="obits">{obit_h}</div><h3 class="subh" id="memes">Meme of the Week</h3>{mem}'
+    l_count = f"{ob_count} · {nm_} memes"
+    l_badges = (f'<span class="cf">{cfm} CONFIRM</span>' if cfm else "")
+    def maybe(L, *a, **k):
+        return blk(L, *a, **k) if L in byL else ""
     body = "".join([
-        B.get("A", ""), B.get("B", ""), B.get("C", ""),
-        sec("headlines", "#e4572e", "Top Headlines · RGV First", esc(m["hlSub"]), heads, count=f"{nh} stories", badges=bh, chip="C"),
-        sec("chisme", "#b5179e", "Chisme", "what the Valley is buzzing about", chisme_h, count=f"{len(chi)} posts", chip="C",
-            badges=(f'<span class="cf">{n_rumor} RUMOR</span>' if n_rumor else "")),
-        B.get("D", ""), B.get("E", ""), B.get("F", ""), B.get("G", ""), B.get("H", ""), B.get("I", ""), B.get("J", ""),
-        sec("national", "#6d597a", "The National Desk · Stories", "fact · take · Valley angle", nat, count=f"{nn_} stories", badges=bn_, chip="J"),
-        sec("trending", "#577590", "Trending News", "what's trending around the nation", trn, count=f"{nt_} items", badges=bt_, chip="J"),
-        sec("tech", "#3d5a80", "What's Happening in Tech", "quick hits · block J, after the National Desk", tech_h, count=f'{len(tk["items"])} items', chip="J",
-            badges=(f'<span class="sb {"a" if tk["origin"] == "wires" else "t"}">{esc(tk["badge"])}</span>' + (f'<span class="cf">{sum(1 for x in tk["items"] if x["isConfirm"])} CONFIRM</span>' if any(x["isConfirm"] for x in tk["items"]) else ""))),
-        B.get("K", ""), B.get("L", ""),
-        sec("obits", "#5c6b7a", "Remembering Our Neighbors", "obituaries from The Monitor · block L, before the sign-off", obit_h, count=ob_count, chip="L"),
-        sec("memes", "#ff7f50", "Meme of the Week · The Memes", "what the kids are talking about · for parents", mem, count=f"{nm_} memes", chip="L", badges=(f'<span class="cf">{cfm} CONFIRM</span>' if cfm else "")),
+        maybe("A", "", count=""),
+        maybe("B", grid(b_cards, "No look-ahead items today."), count=(f"{len(b_cards)} events" if b_cards else "No events")),
+        maybe("C", c_body, count=c_count, badges=c_badges),
+        maybe("D", d_grid, count=d_cnt, badges=d_bdg),
+        maybe("E", e_grid, count=e_cnt, badges=e_bdg),
+        maybe("F", f_grid, count=f_cnt, badges=f_bdg),
+        maybe("G", g_grid, count=g_cnt, badges=g_bdg),
+        maybe("H", h_grid, count=h_cnt, badges=h_bdg),
+        maybe("I", i_grid, count=i_cnt, badges=i_bdg),
+        maybe("J", j_body, count=j_count, badges=j_badges),
+        maybe("K", "", count=""),
+        maybe("L", l_body, count=l_count, badges=l_badges),
         sec("weather", "#2a7de1", "McAllen / RGV Weather", w["source"], weather, count="7 days", badges=wb),
         sec("hs", "#2a9d8f", "RGV High School Football", hs["round"], hsb, count=f"{n_hs} games"),
         sec("nfl", "#264653", esc(sport_title(data["sports"]["nfl"], False).replace("NFL ", "NFL · ", 1)), "scores + notable", sports_nfl, count=f"{n_nfl} items"),

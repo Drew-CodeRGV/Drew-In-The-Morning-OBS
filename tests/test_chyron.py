@@ -273,14 +273,31 @@ class StudioDashboard(unittest.TestCase):
         self.assertIn("CONFIRM BEFORE AIR", self.studio)
 
     def test_keeps_lookahead_rundown_and_news_categories(self):
-        self.assertIn("Rundown", self.studio)
-        self.assertRegex(self.studio, r"A · ")
+        self.assertIn('id="blk-C"', self.studio)
         self.assertIn('id="headlines"', self.studio)
         self.assertIn('id="chisme"', self.studio)
         self.assertIn('id="obits"', self.studio)
-        self.assertIn("family calendar · look-ahead", self.studio)
+        self.assertIn('id="blk-B"', self.studio)
         self.assertIn("Names, ages and towns only.", self.studio)
         self.assertNotIn("nothing about how anyone died", self.studio)
+
+    def test_each_segment_letter_appears_once(self):
+        letters = re.findall(r'<details class="sec blk" id="blk-([A-L])"', self.studio)
+        self.assertEqual(letters, list("ABCDEFGHIJKL"), letters)
+        chips = re.findall(r'<span class="bl2">([A-L])</span>', self.studio)
+        from collections import Counter
+        c = Counter(chips)
+        self.assertEqual(sorted(c), list("ABCDEFGHIJKL"))
+        self.assertTrue(all(v == 1 for v in c.values()), dict(c))
+        # live timer hooks stay on each block header
+        for L in "ABCDEFGHIJKL":
+            self.assertIn(f'data-letter="{L}"', self.studio)
+            self.assertIn(f'id="blk-{L}"', self.studio)
+        # previously empty desk segments now have story cards or an explicit empty line
+        for L in "DEFGHI":
+            self.assertIn(f'id="blk-{L}"', self.studio)
+            self.assertNotIn(f'id="blk-{L}"></', self.studio)
+        self.assertGreater(self.studio.count('class="chysend"'), 50)
 
     def test_search_is_present(self):
         for needle in ('id="q"', 'id="q-x"', 'id="q-n"', 'id="find"', "Search stories and keywords"):
@@ -317,6 +334,54 @@ class StudioDashboard(unittest.TestCase):
     def test_no_topic_in_the_page(self):
         self.assertNotRegex(self.studio, r"ditm-ros-[0-9a-f]{6,}")
         self.assertNotRegex(self.src, r"ditm-ros-[0-9a-f]{6,}")
+
+
+class SegmentRouting(unittest.TestCase):
+    """Existing headlines are assigned to D–I by best fit; one story, one segment; nothing is invented."""
+    def test_today_and_fixture_titles(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("bp", os.path.join(ROOT, "packet", "build_packet.py"))
+        bp = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(bp)
+        cases = [
+            ("La Joya ISD proposes closing three campuses", "E"),
+            ("Brownsville ISD swears in trustees and elects Denise Garza board president", "E"),
+            ("Mission mayor and council races head to Dec. 12 runoffs", "D"),
+            ("Rep. Vicente Gonzalez's 'Hands Off Our Boca Chica Beach Act' clears the House Natural Resources Committee", "D"),
+            ("Mission approves voluntary drug testing for the mayor and council", "F"),
+            ("McAllen Food Truck Park owners ask the Chamber for a six-month extension", "F"),
+            ("RioPlex says $110 billion in industrial, energy and data center investment is headed to the Valley", "G"),
+            ("Roma's bridge is now the fastest-growing truck port on the Southwest border", "G"),
+            ("Palenque Hidalgo opens today at Payne Arena", "H"),
+            ("Von Miller visits McAllen ahead of the Dec. 5 Holiday Parade", "H"),
+            ("Paxton and the feds agree to keep Texas razor wire at the border", "I"),
+            ("Texas public schools lost ~135,000 students this year", "I"),
+            ("Gas drops below $3 a gallon across the Valley", "C"),
+            ("Two charged with murder in Brownsville homicide investigation", "C"),
+            ("Weslaco family waits on appeals court in wrongful-death suit over 17-year-old", "C"),
+            ("Tesla weighs a $3.1B polysilicon plant near Robstown (515 jobs) and asks Tuloso-Midway ISD for a JETI tax break", "G"),
+            ("McAllen city manager: $17.5B in retail sales", "F"),
+        ]
+        for title, want in cases:
+            got = bp.classify_story({"title": title, "valley": want == "C", "_desk": "rgv" if want != "I" else "texas"})
+            self.assertEqual(got, want, title)
+
+    def test_no_duplicates_on_today_packet(self):
+        import importlib.util, json
+        spec = importlib.util.spec_from_file_location("bp", os.path.join(ROOT, "packet", "build_packet.py"))
+        bp = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(bp)
+        path = os.path.join(ROOT, "packet", "data", "packet-2026-11-20.json")
+        if not os.path.exists(path):
+            self.skipTest("today packet missing")
+        d = json.load(open(path))
+        rgv, tx = d["headlines"]["rgv"], d["headlines"]["texas"]
+        b = bp.assign_segment_stories(rgv, tx)
+        used = sum(len(v) for v in b.values())
+        self.assertEqual(used, len(rgv) + len(tx))
+        for L in "DEFGHI":
+            self.assertGreater(len(b[L]), 0, f"{L} empty on today's packet")
+        self.assertIn("No stories today.", open(os.path.join(ROOT, "packet", "build_packet.py")).read())
 
 
 if __name__ == "__main__":
