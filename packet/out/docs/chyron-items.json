@@ -1,13 +1,8 @@
 {
  "v": 1,
  "date": "2026-11-20",
- "generated": "2026-11-20T19:21:49+00:00",
+ "generated": "2026-11-20T20:14:32+00:00",
  "items": {
-  "i-94e5e68464": {
-   "headline": "ValleyCentral: 'Now they'll need to take the bus'",
-   "line": "ValleyCentral: 'Now they'll need to take the bus'",
-   "kicker": "LINKS"
-  },
   "i-dbc5767575": {
    "headline": "La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and Paredes elementaries)…",
    "line": "Enrollment fell from 29,641 to 19,633 in ten years; the district says it is about $5M short in revenue.",
@@ -18,14 +13,14 @@
    "line": "UNCONFIRMED · RioPlex Executive Director Mario Reyna estimates the multiplier effect at $40 billion to $80 billion…",
    "kicker": "HEADLINES · RGV"
   },
-  "i-2461ef9f2a": {
-   "headline": "ValleyCentral: Payne Arena prepares",
-   "line": "ValleyCentral: Payne Arena prepares",
-   "kicker": "LINKS"
-  },
   "i-2b8e4b934f": {
    "headline": "Palenque Hidalgo opens today at Payne Arena (360-degree stage, tickets from $20; Tito Double P…",
    "line": "GM Eric Trevino promised 'a full week of concerts'; Tito Double P is expected to play two sold-out shows.",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-a6e24265f7": {
+   "headline": "SpaceX responds after Cameron County rejects its data center tax break, says its payment plan…",
+   "line": "Commissioners voted 3-2 Tuesday against scheduling a December hearing.",
    "kicker": "HEADLINES · RGV"
   },
   "i-4e7b1df097": {
@@ -37,26 +32,6 @@
    "headline": "Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some at $2.94)",
    "line": "Prices peaked near $4.10 in May and had stayed above $3 since the Iran war began in late February.",
    "kicker": "HEADLINES · RGV"
-  },
-  "i-a6e24265f7": {
-   "headline": "SpaceX responds after Cameron County rejects its data center tax break, says its payment plan…",
-   "line": "Commissioners voted 3-2 Tuesday against scheduling a December hearing.",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-76382b762e": {
-   "headline": "Brownsville ISD swears in trustees and elects Denise Garza board president",
-   "line": "Carlos Elizondo, Frank Ortiz and Garza were reelected; Marisa Franco Leal fills the two years left on the late…",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-adcc440f3f": {
-   "headline": "Mission man sentenced to life without parole for 2018 killings of two women",
-   "line": "Mario Lozano-Lemus, 34, was found guilty of capital murder in the deaths of Irene Ozuna, 45, and Maria Angelita…",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-738c645885": {
-   "headline": "Daily McAllen Nov 20",
-   "line": "Daily McAllen Nov 20",
-   "kicker": "LINKS"
   },
   "i-cdd9d18715": {
    "headline": "McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan. 14 deadline still…",
@@ -73,9 +48,14 @@
    "line": "Approved at a special meeting Tuesday.",
    "kicker": "HEADLINES · RGV"
   },
-  "i-2c22b20c53": {
-   "headline": "USDA confirms the Valley's fifth screwworm case (first in Hidalgo County); Brooks, Hidalgo, Kenedy…",
-   "line": "UNCONFIRMED · Warm-blooded animals need TAHC authorization and inspection to leave the zone.",
+  "i-76382b762e": {
+   "headline": "Brownsville ISD swears in trustees and elects Denise Garza board president",
+   "line": "Carlos Elizondo, Frank Ortiz and Garza were reelected; Marisa Franco Leal fills the two years left on the late…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-adcc440f3f": {
+   "headline": "Mission man sentenced to life without parole for 2018 killings of two women",
+   "line": "Mario Lozano-Lemus, 34, was found guilty of capital murder in the deaths of Irene Ozuna, 45, and Maria Angelita…",
    "kicker": "HEADLINES · RGV"
   },
   "i-e7bd642cb4": {
@@ -83,25 +63,20 @@
    "line": "H.R.",
    "kicker": "HEADLINES · RGV"
   },
+  "i-2c22b20c53": {
+   "headline": "USDA confirms the Valley's fifth screwworm case (first in Hidalgo County); Brooks, Hidalgo, Kenedy…",
+   "line": "UNCONFIRMED · Warm-blooded animals need TAHC authorization and inspection to leave the zone.",
+   "kicker": "HEADLINES · RGV"
+  },
   "i-e27e4b807f": {
    "headline": "Roma's bridge is now the fastest-growing truck port on the Southwest border (imports up 17x since…",
    "line": "TAMIU's Daniel Covarrubias: imports went from $42.9M (2019) to $826M (FY2026); 53,808 trucks in the past year, about…",
    "kicker": "HEADLINES · RGV"
   },
-  "i-caa0da34a7": {
-   "headline": "Texas AG release",
-   "line": "Texas AG release",
-   "kicker": "LINKS"
-  },
   "i-51a13917e9": {
    "headline": "Paxton and the feds agree to keep Texas razor wire at the border for up to 30 years (Del Rio Sector)",
    "line": "Federal agents can't cut or remove Texas-owned wire on non-federal land within 25 miles of the border in the Del Rio…",
    "kicker": "HEADLINES · TEXAS"
-  },
-  "i-36a0d3e167": {
-   "headline": "Comptroller release",
-   "line": "Comptroller release",
-   "kicker": "LINKS"
   },
   "i-e2c9f4e009": {
    "headline": "Comptroller Huffines' move to stop taxing cloud, AI and data hosting would cost Texas $18 billion…",
@@ -123,45 +98,15 @@
    "line": "UNCONFIRMED · An r/texas post shares a headline saying a Texas judge who went viral for berating an IT worker now…",
    "kicker": "CHISME"
   },
-  "i-2f26b9d347": {
-   "headline": "AP: Dow drops 1,100",
-   "line": "AP: Dow drops 1,100",
-   "kicker": "LINKS"
-  },
-  "i-5c4021455f": {
-   "headline": "CNBC: Anthropic IPO fails to lift AI stocks",
-   "line": "CNBC: Anthropic IPO fails to lift AI stocks",
-   "kicker": "LINKS"
-  },
   "i-ade29e0e69": {
    "headline": "Wall Street's longest losing streak since 2024: Dow drops 1,100 as AI stocks slide, even with…",
    "line": "Nov 19: the Dow fell 1,101 points (2.2%), the S&P 500 lost 2% for a sixth straight day and the Nasdaq fell 2.3%…",
    "kicker": "NATIONAL DESK"
   },
-  "i-fbeed13a31": {
-   "headline": "NBC News",
-   "line": "NBC News",
-   "kicker": "LINKS"
-  },
-  "i-94125611ae": {
-   "headline": "AP",
-   "line": "AP",
-   "kicker": "LINKS"
-  },
   "i-920d0782fa": {
    "headline": "White House replaces its national cyber director after a week of outages (flights, Microsoft, banks)",
    "line": "Nov 19: Sean Cairncross is out; Pentagon CIO Kirsten Davies serves as acting national cyber director.",
    "kicker": "NATIONAL DESK"
-  },
-  "i-12654258cc": {
-   "headline": "AP: Senate approves permitting bill",
-   "line": "AP: Senate approves permitting bill",
-   "kicker": "LINKS"
-  },
-  "i-09f423e751": {
-   "headline": "NBC News",
-   "line": "NBC News",
-   "kicker": "LINKS"
   },
   "i-3849e26c2d": {
    "headline": "Senate passes a bipartisan permitting bill that speeds energy projects and makes big data centers…",
@@ -173,45 +118,20 @@
    "line": "UNCONFIRMED · #VOTEFORBTS, #DAESANGFORBTS and 'OUR CHOICE IS BTS AT MAMA' are top U.S.",
    "kicker": "TRENDING"
   },
-  "i-f74faf4283": {
-   "headline": "X: #PercyJackson",
-   "line": "X: #PercyJackson",
-   "kicker": "LINKS"
-  },
   "i-0ae6b85a6f": {
    "headline": "'Percy Jackson and the Olympians' Season 3 premieres today on Disney+ and Hulu",
    "line": "UNCONFIRMED · Season 3 adapts 'The Titan's Curse'; two episodes drop today, then pairs each Friday through Dec.",
    "kicker": "TRENDING"
-  },
-  "i-a0626904c0": {
-   "headline": "KCRA",
-   "line": "KCRA",
-   "kicker": "LINKS"
   },
   "i-da2dce77f0": {
    "headline": "Magnitude 5.1 earthquake shakes Monterey County, California; 'earthquake' trends in Texas and on X",
    "line": "Nov 19, 10:49 p.m.",
    "kicker": "TRENDING"
   },
-  "i-3b29302689": {
-   "headline": "AP",
-   "line": "AP",
-   "kicker": "LINKS"
-  },
-  "i-d789c670d1": {
-   "headline": "BBC",
-   "line": "BBC",
-   "kicker": "LINKS"
-  },
   "i-f37685d76e": {
    "headline": "Fiona the hippo dies at the Cincinnati Zoo after swallowing a visitor's knit hat",
    "line": "Nov 19: the zoo said Fiona, 9, died after a hat a visitor tossed was caught by a ceiling fan and flung into her…",
    "kicker": "TRENDING"
-  },
-  "i-a684131496": {
-   "headline": "BBC",
-   "line": "BBC",
-   "kicker": "LINKS"
   },
   "i-1f9776335b": {
    "headline": "Trump posthumously pardons Pete Rose",
@@ -252,11 +172,6 @@
    "headline": "Traumatized teens sue school, cops after Doritos bag triggers AI gun alert",
    "line": "UNCONFIRMED · Teens are suing a school and police after an AI weapon-detection alert flagged a Doritos bag as a gun…",
    "kicker": "TECH"
-  },
-  "i-5acba76710": {
-   "headline": "On-air read · block L · 6 names",
-   "line": "UNCONFIRMED · We want to take a moment to remember some of our neighbors we lost over the past week.",
-   "kicker": "ON-AIR READ"
   },
   "i-b28db242db": {
    "headline": "Remembering Gregoria Lloyd",
@@ -543,11 +458,6 @@
    "line": "89 · Mission · Nov 7",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-f691eff921": {
-   "headline": "Legacy.com · The Monitor (McAllen, TX)",
-   "line": "Legacy.com · The Monitor (McAllen, TX)",
-   "kicker": "LINKS"
-  },
   "i-d95007f726": {
    "headline": "Fri Nov 20",
    "line": "Mostly Cloudy",
@@ -582,21 +492,6 @@
    "headline": "Thu Nov 26",
    "line": "Mostly Sunny",
    "kicker": "SHOW"
-  },
-  "i-30360f1c5f": {
-   "headline": "NWS forecast page for McAllen",
-   "line": "NWS forecast page for McAllen",
-   "kicker": "LINKS"
-  },
-  "i-41b2ea4732": {
-   "headline": "NWS Brownsville office (BRO)",
-   "line": "NWS Brownsville office (BRO)",
-   "kicker": "LINKS"
-  },
-  "i-eb1133ce5e": {
-   "headline": "NWS API forecast (JSON)",
-   "line": "NWS API forecast (JSON)",
-   "kicker": "LINKS"
   },
   "i-c4ac0ec428": {
    "headline": "6A DI Area: San Antonio Brennan 31, Weslaco High 15",
@@ -728,11 +623,6 @@
    "line": "FootballDB schedule",
    "kicker": "NFL"
   },
-  "i-44115f8a06": {
-   "headline": "Scores: NFL.com scores, Week 10",
-   "line": "NFL.com",
-   "kicker": "SHOW"
-  },
   "i-9e7e29168e": {
    "headline": "MIA 137, MIL 130",
    "line": "Wed Nov 18",
@@ -783,11 +673,6 @@
    "line": "Field Level Media",
    "kicker": "NBA"
   },
-  "i-ab3274b26e": {
-   "headline": "Scores: Field Level Media: Nov 18 NBA roundup",
-   "line": "Field Level Media",
-   "kicker": "SHOW"
-  },
   "i-830fdeb76f": {
    "headline": "Trump posthumously pardons Pete Rose (1990 tax convictions); symbolic, Hall eligibility unchanged",
    "line": "AP · Nov 19",
@@ -803,25 +688,10 @@
    "line": "ESPN tracker",
    "kicker": "MLB"
   },
-  "i-5a45131118": {
-   "headline": "SafeScreens: Roblox parent's guide",
-   "line": "SafeScreens: Roblox parent's guide",
-   "kicker": "LINKS"
-  },
-  "i-87e6807adb": {
-   "headline": "RoStats: Top Roblox games Nov 2026",
-   "line": "RoStats: Top Roblox games Nov 2026",
-   "kicker": "LINKS"
-  },
   "i-f46b5a4c99": {
    "headline": "Roblox: 'Steal An Egg' & 'Throw Food For Animals'",
    "line": "Steal An Egg is Roblox's #1 game (about 1.17M playing); Throw Food For Animals is #2 and up 58% on the week.",
    "kicker": "MEME OF THE WEEK · ELEMENTARY"
-  },
-  "i-ab8271bb84": {
-   "headline": "MadeForMums: parents' guide to slang",
-   "line": "MadeForMums: parents' guide to slang",
-   "kicker": "LINKS"
   },
   "i-700aefcb83": {
    "headline": "'6-7'",
@@ -838,115 +708,30 @@
    "line": "A Halloween trick-or-treat video of a child in a Pennywise mask went viral and became memes mocking him.",
    "kicker": "MEME OF THE WEEK · MIDDLE SCHOOL"
   },
-  "i-9522d066c0": {
-   "headline": "WBBH: Cape Coral incident (Nov 16)",
-   "line": "WBBH: Cape Coral incident (Nov 16)",
-   "kicker": "LINKS"
-  },
-  "i-85f42fe5b2": {
-   "headline": "KOBI: Talent, Oregon (Nov 12)",
-   "line": "KOBI: Talent, Oregon (Nov 12)",
-   "kicker": "LINKS"
-  },
   "i-284d0df0d5": {
    "headline": "The Door Kick Challenge",
    "line": "UNCONFIRMED · A TikTok trend: kick or pound a stranger's front door, film it, run.",
    "kicker": "MEME OF THE WEEK · HIGH SCHOOL"
-  },
-  "i-7957de6c11": {
-   "headline": "Reader's Digest: 24 Gen Alpha slang terms",
-   "line": "Reader's Digest: 24 Gen Alpha slang terms",
-   "kicker": "LINKS"
-  },
-  "i-3b5fe664f0": {
-   "headline": "Hello!: how to respond to bizarre slang",
-   "line": "Hello!: how to respond to bizarre slang",
-   "kicker": "LINKS"
   },
   "i-40f5af0c51": {
    "headline": "Slang: aura, aura farming, cooked",
    "line": "'Aura' = someone's vibe; 'aura farming' = doing things to look cool online; 'cooked' = in trouble.",
    "kicker": "MEME OF THE WEEK · HIGH SCHOOL"
   },
-  "i-c9e30a04de": {
-   "headline": "Independent: UK schools and GTA 6",
-   "line": "Independent: UK schools and GTA 6",
-   "kicker": "LINKS"
-  },
-  "i-a9b0b158ae": {
-   "headline": "DW: GTA VI launches",
-   "line": "DW: GTA VI launches",
-   "kicker": "LINKS"
-  },
   "i-c8ffeb891b": {
    "headline": "GTA 6 is out (launched Nov 19)",
    "line": "GTA VI launched Nov 19 on PS5 and Xbox Series X; rated M (17+), 212 GB download.",
    "kicker": "MEME OF THE WEEK · HIGH SCHOOL"
   },
-  "i-bc1a621696": {
+  "i-134b1779ee": {
    "headline": "A · Cold Open & Jingle",
    "line": "Jingle, the filled-in cold open, the hour's promise",
-   "kicker": "SHOW"
+   "kicker": "RUNDOWN"
   },
-  "i-d0c0193c4c": {
-   "headline": "Cold open · read aloud",
-   "line": "Good morning, Rio Grande Valley!",
-   "kicker": "COLD OPEN"
-  },
-  "i-d2091cfed4": {
-   "headline": "Jingle",
-   "line": "Drew in the Morning.",
-   "kicker": "SHOW"
-  },
-  "i-1e6a5a995f": {
-   "headline": "TODAY'S COLD OPEN (auto-filled, read aloud)",
-   "line": "Good morning, Rio Grande Valley!",
-   "kicker": "SHOW"
-  },
-  "i-79abd16f90": {
-   "headline": "JINGLE",
-   "line": "\"Drew in the Morning.",
-   "kicker": "SHOW"
-  },
-  "i-9189c0d3c6": {
-   "headline": "COLD OPEN",
-   "line": "read the paragraph the packet builds each morning (card at the top of the studio page; also in the PDF, txt and…",
-   "kicker": "SHOW"
-  },
-  "i-9ead610f72": {
-   "headline": "Listener tease at the end of the open",
-   "line": "DMs or ditm@drewlentz.com (CONFIRM BEFORE AIR).",
-   "kicker": "SHOW"
-  },
-  "i-c6408a05f8": {
-   "headline": "Transition lines",
-   "line": "to get in and out",
-   "kicker": "SHOW"
-  },
-  "i-14eb606e55": {
-   "headline": "Segue to B · What I've Been Up To This Week",
-   "line": "jump line",
-   "kicker": "SHOW"
-  },
-  "i-ba472002c7": {
-   "headline": "Chyrons · 60 characters max",
-   "line": "Meme of the Week · What your kids might be saying at school | Drew & Jess Are Watching · The feeds so you don't have…",
-   "kicker": "SHOW"
-  },
-  "i-efb47d4ce6": {
-   "headline": "Confirm before air",
-   "line": "UNCONFIRMED · Meme popularity measured on TikTok; X volume is low; Early-voting dates; ditm@drewlentz.com (seen as…",
-   "kicker": "SHOW"
-  },
-  "i-9ccd5de9a7": {
+  "i-bd1a5616ab": {
    "headline": "B · What I've Been Up To This Week",
    "line": "Light family touchpoint (about 30 seconds, up to 3 min with Jess): school, music, clubs and family fun from Drew's…",
-   "kicker": "SHOW"
-  },
-  "i-a89305b242": {
-   "headline": "On-air script · family week",
-   "line": "Busy week at the Lentz house.",
-   "kicker": "WHAT I'VE BEEN UP TO"
+   "kicker": "RUNDOWN"
   },
   "i-c235a67304": {
    "headline": "the Rayburn Fall Festival",
@@ -978,715 +763,55 @@
    "line": "Fri Nov 20",
    "kicker": "WHAT I'VE BEEN UP TO"
   },
-  "i-de12fecef5": {
-   "headline": "Internal note · not for air",
-   "line": "4 calendar items left off the air (medical, personal, money, work, private or unsure); 6 qualifying occurrences used.",
-   "kicker": "SHOW"
-  },
-  "i-c2fa517d04": {
-   "headline": "READ ALOUD (auto-built from the family calendar, generic wording): Busy week at the Lentz house.",
-   "line": "We had the Rayburn Fall Festival on Saturday, a school picnic on Tuesday, hip hop class on Tuesday, cotillion on…",
-   "kicker": "SHOW"
-  },
-  "i-5f822a1e69": {
-   "headline": "FROM THE CALENDAR",
-   "line": "the region clinic and concert · Fri Nov 20",
-   "kicker": "SHOW"
-  },
-  "i-7fdfe44c19": {
-   "headline": "SCRIPT",
-   "line": "read the paragraph the packet builds from Drew's FAMILY calendar (field up_to_script; it appears on the studio page…",
-   "kicker": "SHOW"
-  },
-  "i-02a8b7e2af": {
-   "headline": "ITEMS",
-   "line": "the list under the script (field up_to[]: date, label, category; on Mondays also up_to_coming[], the next 7 days).",
-   "kicker": "SHOW"
-  },
-  "i-a2dc8ce56d": {
-   "headline": "QUIET WEEK",
-   "line": "if nothing qualifies the script says \"Quiet week on the family calendar\" and gives Jess an easy riff prompt.",
-   "kicker": "SHOW"
-  },
-  "i-514c6e59da": {
-   "headline": "LEFT OFF THE AIR, always",
-   "line": "medical or health, personal grooming, bills and money, work admin, support appointments, pick-ups and drop-offs…",
-   "kicker": "SHOW"
-  },
-  "i-cf41a05505": {
-   "headline": "Follow-up questions",
-   "line": "1 to ask",
-   "kicker": "SHOW"
-  },
-  "i-ff568d321d": {
-   "headline": "Segue to C · Local News",
-   "line": "jump line",
-   "kicker": "SHOW"
-  },
-  "i-95d96ff1c6": {
+  "i-db27bf808e": {
    "headline": "C · Local News",
    "line": "Top Valley stories: the Starbase/SpaceX vote and launch, Overheard in the Valley, Chisme (what the Valley is buzzing…",
-   "kicker": "SHOW"
+   "kicker": "RUNDOWN"
   },
-  "i-60513b0174": {
-   "headline": "THE VOTE",
-   "line": "Tue Nov 17, Cameron County commissioners voted 3-2 not to move toward a public hearing on SpaceX's request for a…",
-   "kicker": "SHOW"
-  },
-  "i-194ae08fda": {
-   "headline": "SPACEX'S OWN WORDS",
-   "line": "the application said that without the abatement it would \"redirect current and/or future investment to other super…",
-   "kicker": "SHOW"
-  },
-  "i-fcf1e8e425": {
-   "headline": "THE STATE SIDE",
-   "line": "TCEQ issued the air permit Nov 16, after Gov.",
-   "kicker": "SHOW"
-  },
-  "i-09cb717e97": {
-   "headline": "THE LAUNCH",
-   "line": "Flight 15 lifted off Fri Nov 13.",
-   "kicker": "SHOW"
-  },
-  "i-b8207779f6": {
-   "headline": "WHO FEELS IT",
-   "line": "FAA review for up to 456 launches / 912 landings a year, comments close Dec 7.",
-   "kicker": "SHOW"
-  },
-  "i-1e9297e51a": {
-   "headline": "CONTEXT (depth)",
-   "line": "SpaceX also pledged $220M for Brownsville water projects (Daily McAllen Nov 14) and Brownsville secured another $30M…",
-   "kicker": "SHOW"
-  },
-  "i-847dc77353": {
-   "headline": "OVERHEARD IN THE VALLEY",
-   "line": "backup verified item, Speer Memorial Library Route 20 bus-stop march/petition (Nov 14; stop reportedly unserviced…",
-   "kicker": "SHOW"
-  },
-  "i-7e334e126f": {
-   "headline": "WILDCARD",
-   "line": "whatever broke this morning.",
-   "kicker": "SHOW"
-  },
-  "i-5e8a939044": {
-   "headline": "CHISME (optional, about 30 seconds, only if time allows): see the Chisme section right after Top…",
-   "line": "CHISME (optional, about 30 seconds, only if time allows): see the Chisme section right after Top Headlines on the…",
-   "kicker": "SHOW"
-  },
-  "i-c640ef215e": {
-   "headline": "Segue to D · Local Politics",
-   "line": "jump line",
-   "kicker": "SHOW"
-  },
-  "i-b10b3181ea": {
-   "headline": "MyRGV: commissioners reject SpaceX bid",
-   "line": "MyRGV: commissioners reject SpaceX bid",
-   "kicker": "LINKS"
-  },
-  "i-daec51400f": {
-   "headline": "KRGV: commissioners reject tax break",
-   "line": "KRGV: commissioners reject tax break",
-   "kicker": "LINKS"
-  },
-  "i-8bd60748a0": {
-   "headline": "Politico: Texas issues air permit",
-   "line": "Politico: Texas issues air permit",
-   "kicker": "LINKS"
-  },
-  "i-61d12254cb": {
-   "headline": "Spaceflight Now: Flight 15",
-   "line": "Spaceflight Now: Flight 15",
-   "kicker": "LINKS"
-  },
-  "i-3270d1822b": {
-   "headline": "Daily McAllen: Starbase says nobody is buying Boca Chica Beach",
-   "line": "Daily McAllen: Starbase says nobody is buying Boca Chica Beach",
-   "kicker": "LINKS"
-  },
-  "i-ec646112df": {
-   "headline": "KRGV: Boca Chica Beach resolution",
-   "line": "KRGV: Boca Chica Beach resolution",
-   "kicker": "LINKS"
-  },
-  "i-72aaf13425": {
-   "headline": "r/RioGrandeValley: Speer Library march",
-   "line": "r/RioGrandeValley: Speer Library march",
-   "kicker": "LINKS"
-  },
-  "i-7b25b350ea": {
-   "headline": "Sources",
-   "line": "3 links",
-   "kicker": "SHOW"
-  },
-  "i-ac5c0d925d": {
+  "i-8253a65b2e": {
    "headline": "D · Local Politics",
    "line": "Races, candidates and runoffs: TX-15 (Pulido), the Dec.",
-   "kicker": "SHOW"
+   "kicker": "RUNDOWN"
   },
-  "i-40a36ee82f": {
-   "headline": "PULIDO",
-   "line": "Democrat Bobby Pulido (Tejano singer, Edinburg native) beat Rep.",
-   "kicker": "SHOW"
-  },
-  "i-84933b1308": {
-   "headline": "HISTORY / CONTEXT (depth)",
-   "line": "Trump carried the district by 18 points in 2024, and Republicans had redrawn Texas maps to gain Valley seats (Texas…",
-   "kicker": "SHOW"
-  },
-  "i-113467acd2": {
-   "headline": "NEXT UP, DEC 12 RUNOFFS",
-   "line": "Mission mayor, Rick Salinas (34.81%) vs.",
-   "kicker": "SHOW"
-  },
-  "i-13fdbae8d6": {
-   "headline": "WHAT TO WATCH",
-   "line": "certified totals; who endorses in the Mission runoff; turnout in a December runoff; what Pulido says about his first…",
-   "kicker": "SHOW"
-  },
-  "i-8ee351cdd7": {
-   "headline": "POLITIQUERA CORNER (optional)",
-   "line": "politiquera.com campaign data; pre-pick one chart from /2026midterms (Mission's Dec 12 runoff is a natural tie-in).",
-   "kicker": "SHOW"
-  },
-  "i-5c92663d22": {
-   "headline": "Segue to E · School Boards",
-   "line": "jump line",
-   "kicker": "SHOW"
-  },
-  "i-1c934fc0b2": {
-   "headline": "Texas Tribune: Pulido beats De La Cruz",
-   "line": "Texas Tribune: Pulido beats De La Cruz",
-   "kicker": "LINKS"
-  },
-  "i-6ac73bbc13": {
-   "headline": "Ballotpedia: Bobby Pulido",
-   "line": "Ballotpedia: Bobby Pulido",
-   "kicker": "LINKS"
-  },
-  "i-455a1a03aa": {
-   "headline": "MyRGV: Mission races to runoff",
-   "line": "MyRGV: Mission races to runoff",
-   "kicker": "LINKS"
-  },
-  "i-5de5272049": {
-   "headline": "KRGV: Mission runoff Dec. 12",
-   "line": "KRGV: Mission runoff Dec. 12",
-   "kicker": "LINKS"
-  },
-  "i-2789daa19d": {
-   "headline": "Hidalgo County runoff page",
-   "line": "Hidalgo County runoff page",
-   "kicker": "LINKS"
-  },
-  "i-5e572015eb": {
-   "headline": "Politiquera",
-   "line": "Politiquera",
-   "kicker": "LINKS"
-  },
-  "i-ebc356010a": {
+  "i-19a64e5f1a": {
    "headline": "E · School Boards",
    "line": "Trustees, budgets and board votes: Edinburg CISD, PSJA ISD, McAllen ISD",
-   "kicker": "SHOW"
+   "kicker": "RUNDOWN"
   },
-  "i-e52fb09330": {
-   "headline": "SCHOOL BOARDS",
-   "line": "Edinburg CISD, Gloria Alonzo unseated incumbent Minga Vela; Sandra Avila won the open seat; Flores and Garcia…",
-   "kicker": "SHOW"
-  },
-  "i-db0eb23ee3": {
-   "headline": "WEAVE-IN",
-   "line": "this is a natural place for a Family & kids moment (screens and AI in class: PSJA's AI guidebook; Texas…",
-   "kicker": "SHOW"
-  },
-  "i-92d402986c": {
-   "headline": "Segue to F · City Hall",
-   "line": "jump line",
-   "kicker": "SHOW"
-  },
-  "i-0db2a6495a": {
-   "headline": "Edinburg Advocate: Edinburg CISD seats new members",
-   "line": "Edinburg Advocate: Edinburg CISD seats new members",
-   "kicker": "LINKS"
-  },
-  "i-a4fb78f16f": {
-   "headline": "PSJA ISD: swears in trustees",
-   "line": "PSJA ISD: swears in trustees",
-   "kicker": "LINKS"
-  },
-  "i-daf22ad322": {
+  "i-5e95621fc3": {
    "headline": "F · City Hall",
    "line": "Mayors, councils and city managers: McAllen, Brownsville, Mission, Pharr; the Zoho park rezoning",
-   "kicker": "SHOW"
+   "kicker": "RUNDOWN"
   },
-  "i-19ec6f1c3d": {
-   "headline": "CITY MANAGERS / MAYORS",
-   "line": "McAllen, Michael Fallek won the District 5 special in May; Isaac Tawil city manager since Sept 2024.",
-   "kicker": "SHOW"
-  },
-  "i-5261d2cd83": {
-   "headline": "OPINION (flag as opinion)",
-   "line": "why do so many Valley cities have a revolving door at the top, and what does it cost residents?",
-   "kicker": "SHOW"
-  },
-  "i-e7fced91e7": {
-   "headline": "ZOHO AND THE PARK (menu item, folded in from the old Zoho block): VERIFIED BACKGROUND: July 24…",
-   "line": "ZOHO AND THE PARK (menu item, folded in from the old Zoho block): VERIFIED BACKGROUND: July 24, 2023, McAllen's…",
-   "kicker": "SHOW"
-  },
-  "i-acf8e3e79c": {
-   "headline": "talking point",
-   "line": "UNCONFIRMED · talking point",
-   "kicker": "SHOW"
-  },
-  "i-2224ac560a": {
-   "headline": "Segue to G · Economic Development",
-   "line": "jump line",
-   "kicker": "SHOW"
-  },
-  "i-f4dc152d44": {
-   "headline": "ValleyCentral: Fallek wins District 5",
-   "line": "ValleyCentral: Fallek wins District 5",
-   "kicker": "LINKS"
-  },
-  "i-c0b9abe2ff": {
-   "headline": "MyRGV: Brownsville names Alan Guard",
-   "line": "MyRGV: Brownsville names Alan Guard",
-   "kicker": "LINKS"
-  },
-  "i-e0bdd0e744": {
-   "headline": "MyRGV 2023: commission rezones park",
-   "line": "MyRGV 2023: commission rezones park",
-   "kicker": "LINKS"
-  },
-  "i-062a08d869": {
-   "headline": "KRGV 2023: commissioners vote to rezone",
-   "line": "KRGV 2023: commissioners vote to rezone",
-   "kicker": "LINKS"
-  },
-  "i-e9d85267d7": {
-   "headline": "Texas Border Business: Echo Hotel",
-   "line": "Texas Border Business: Echo Hotel",
-   "kicker": "LINKS"
-  },
-  "i-2a4d7207bf": {
+  "i-e791201b0e": {
    "headline": "G · Economic Development",
    "line": "Jobs, projects and deals: McAllen EDC, the SpaceX data center abatement, Texas A&M McAllen, power and pipes",
-   "kicker": "SHOW"
+   "kicker": "RUNDOWN"
   },
-  "i-a01a9b6ec0": {
-   "headline": "McAllen EDC won the 2026 Texas EDC award for Valeo's $225M plant (500+ direct jobs projected); a…",
-   "line": "McAllen EDC won the 2026 Texas EDC award for Valeo's $225M plant (500+ direct jobs projected); a new Amazon…",
-   "kicker": "SHOW"
-  },
-  "i-52e620d8cd": {
-   "headline": "Food Truck Park closure moved to Jan 14, 2027; the Chamber waives rent; a vendor: \"all of our…",
-   "line": "Food Truck Park closure moved to Jan 14, 2027; the Chamber waives rent; a vendor: \"all of our savings are going into…",
-   "kicker": "SHOW"
-  },
-  "i-68b11bc5b3": {
-   "headline": "Texas A&M McAllen",
-   "line": "$50M health building; 650+ students (+30%); construction to start Dec 2026.",
-   "kicker": "SHOW"
-  },
-  "i-a55f125a77": {
-   "headline": "Quick hits",
-   "line": "US 281 Edinburg one northbound lane through May 2027; Holiday Parade promo (parade date CONFIRM).",
-   "kicker": "SHOW"
-  },
-  "i-e97b44a30f": {
-   "headline": "STARBASE / SPACEX ITEM (folded in from the old Starbase block): the $24B data center asked for a…",
-   "line": "STARBASE / SPACEX ITEM (folded in from the old Starbase block): the $24B data center asked for a 10-year, 100% tax…",
-   "kicker": "SHOW"
-  },
-  "i-d71a4308d9": {
-   "headline": "MENU (OPEN LOCAL WILDCARD). POWER & PIPES",
-   "line": "Hidalgo County Judge Richard Cortez says the county can't unilaterally block data centers in unincorporated areas…",
-   "kicker": "SHOW"
-  },
-  "i-6424bafe00": {
-   "headline": "Segue to H · Family & Kids (woven in)",
-   "line": "jump line",
-   "kicker": "SHOW"
-  },
-  "i-b5f732e4ff": {
-   "headline": "Daily McAllen Nov 16",
-   "line": "Daily McAllen Nov 16",
-   "kicker": "LINKS"
-  },
-  "i-e375e5aa61": {
-   "headline": "Daily McAllen Nov 17",
-   "line": "Daily McAllen Nov 17",
-   "kicker": "LINKS"
-  },
-  "i-deb928994e": {
-   "headline": "Daily McAllen Nov 18",
-   "line": "Daily McAllen Nov 18",
-   "kicker": "LINKS"
-  },
-  "i-8bc3787bab": {
-   "headline": "The RGV News: Nov 17 brief",
-   "line": "The RGV News: Nov 17 brief",
-   "kicker": "LINKS"
-  },
-  "i-009be6b3fb": {
-   "headline": "Daily McAllen Nov 17 (Cortez on data centers)",
-   "line": "Daily McAllen Nov 17 (Cortez on data centers)",
-   "kicker": "LINKS"
-  },
-  "i-d56712d027": {
+  "i-8c3c825279": {
    "headline": "H · Family & Kids (woven in)",
    "line": "NOT a dedicated segment: a light, woven-in moment with Jess after the local blocks and before state.",
-   "kicker": "SHOW"
+   "kicker": "RUNDOWN"
   },
-  "i-4062e24ec5": {
-   "headline": "WOVEN, NOT A SEGMENT",
-   "line": "Jess joins for a light moment after the local blocks.",
-   "kicker": "SHOW"
-  },
-  "i-d2e0b59a65": {
-   "headline": "CHECK FIRST",
-   "line": "did GTA 6 launch on time Thu Nov 19 (midnight, rated M/17+)?",
-   "kicker": "SHOW"
-  },
-  "i-5ee9a81ee4": {
-   "headline": "Context",
-   "line": "UK schools used prize draws, minibus pickups and home visits to fight skipping; one school's letter said it's fine…",
-   "kicker": "SHOW"
-  },
-  "i-015d29267e": {
-   "headline": "Screen-time and sleep angle; phones off during the school day under Texas HB 1481.",
-   "line": "AI-in-school pointer: PSJA ISD's AI guidebook (Sept 2026) says get teacher permission, cite AI use, fact-check…",
-   "kicker": "SHOW"
-  },
-  "i-2ba51d65a4": {
-   "headline": "TOPIC 1 (~5 min)",
-   "line": "Strangers in the game chat, grooming & sextortion.",
-   "kicker": "SHOW"
-  },
-  "i-ea05464b73": {
-   "headline": "LISTENER STORY MOMENT (~1-2 min)",
-   "line": "invite a listener story or question from DMs/email (first name only, with permission; CONFIRM the sender agreed to…",
-   "kicker": "SHOW"
-  },
-  "i-e1be93aff2": {
-   "headline": "TOPIC 2 (~5 min)",
-   "line": "When a kid is hurting: group-chat cruelty, self-harm warning signs, suicide (988).",
-   "kicker": "SHOW"
-  },
-  "i-f7fb71e73a": {
-   "headline": "TONE",
-   "line": "don't lecture; admit it's hard.",
-   "kicker": "SHOW"
-  },
-  "i-e3544abef4": {
-   "headline": "FUTURE TOPICS (pool)",
-   "line": "early porn exposure (AAP: ~15% first see it under 11) · sharing nudes and deepfakes (Take It Down Act; Texas HB 149)…",
-   "kicker": "SHOW"
-  },
-  "i-4a5cded37e": {
-   "headline": "CLOSE",
-   "line": "\"Send us the question you're afraid to ask: email or DM, you stay anonymous on air.\"",
-   "kicker": "SHOW"
-  },
-  "i-becdcc471a": {
-   "headline": "Segue to I · Statewide",
-   "line": "jump line",
-   "kicker": "SHOW"
-  },
-  "i-1b0ddaf13c": {
-   "headline": "ABC News: parents and GTA 6",
-   "line": "ABC News: parents and GTA 6",
-   "kicker": "LINKS"
-  },
-  "i-cb403a619a": {
-   "headline": "News4 San Antonio: fake Uvalde post",
-   "line": "News4 San Antonio: fake Uvalde post",
-   "kicker": "LINKS"
-  },
-  "i-69dffc14cc": {
-   "headline": "TEA: HB 1481 phone rule",
-   "line": "TEA: HB 1481 phone rule",
-   "kicker": "LINKS"
-  },
-  "i-2ff9b6b142": {
-   "headline": "PSJA ISD AI guidebook",
-   "line": "PSJA ISD AI guidebook",
-   "kicker": "LINKS"
-  },
-  "i-1483076021": {
-   "headline": "FBI: sextortion",
-   "line": "FBI: sextortion",
-   "kicker": "LINKS"
-  },
-  "i-9d21767c49": {
-   "headline": "DHS: Know2Protect sextortion PDF",
-   "line": "DHS: Know2Protect sextortion PDF",
-   "kicker": "LINKS"
-  },
-  "i-6e2a47fcab": {
-   "headline": "NCMEC: Take It Down",
-   "line": "NCMEC: Take It Down",
-   "kicker": "LINKS"
-  },
-  "i-04220c9f70": {
-   "headline": "NIMH: warning signs of suicide",
-   "line": "NIMH: warning signs of suicide",
-   "kicker": "LINKS"
-  },
-  "i-f9e457db28": {
-   "headline": "AAP HealthyChildren: when children and teens self-harm",
-   "line": "AAP HealthyChildren: when children and teens self-harm",
-   "kicker": "LINKS"
-  },
-  "i-6b390241a3": {
+  "i-806fd8866b": {
    "headline": "I · Statewide",
    "line": "Texas and Texas politics: the packet's Texas items, r/Texas top posts, Austin",
-   "kicker": "SHOW"
+   "kicker": "RUNDOWN"
   },
-  "i-7114187df4": {
-   "headline": "TEXAS ITEMS",
-   "line": "use the packet's Texas headlines (listed in the Headlines section; each has a source link): Congress Democrats ask…",
-   "kicker": "SHOW"
-  },
-  "i-f0cae403ff": {
-   "headline": "r/Texas: pull 2-3 top posts (Top, Past Week) that match local and Texas-wide politics…",
-   "line": "r/Texas: pull 2-3 top posts (Top, Past Week) that match local and Texas-wide politics, controversies or kids/digital…",
-   "kicker": "SHOW"
-  },
-  "i-4c1fb89183": {
-   "headline": "BRIDGE FROM LOCAL",
-   "line": "\"This is a Valley story, but Austin is already writing the rules.\" TEXAS GRID: ~98 GW now, ~100 GW more slated by…",
-   "kicker": "SHOW"
-  },
-  "i-c724af0542": {
-   "headline": "Gov.-elect Hinojosa has promised to freeze new data-center development and takes office in January…",
-   "line": "Gov.-elect Hinojosa has promised to freeze new data-center development and takes office in January (details in Block…",
-   "kicker": "SHOW"
-  },
-  "i-8b6d12d973": {
-   "headline": "Segue to J · The National Desk (+ Trending)",
-   "line": "jump line",
-   "kicker": "SHOW"
-  },
-  "i-55f991a8fb": {
-   "headline": "Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border con",
-   "line": "Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border con",
-   "kicker": "LINKS"
-  },
-  "i-6e0e86eb1c": {
-   "headline": "Texas Supreme Court petition over HD 93 special election result",
-   "line": "Texas Supreme Court petition over HD 93 special election result",
-   "kicker": "LINKS"
-  },
-  "i-397e17e175": {
-   "headline": "PUC takes up Aqua Texas rate increase Thursday",
-   "line": "PUC takes up Aqua Texas rate increase Thursday",
-   "kicker": "LINKS"
-  },
-  "i-d7a1c0332f": {
+  "i-8ffc6bbf68": {
    "headline": "J · The National Desk (+ Trending)",
    "line": "Big national stories with a Valley angle (fact, then take, then 'why it matters here'), plus Trending News (what's…",
-   "kicker": "SHOW"
+   "kicker": "RUNDOWN"
   },
-  "i-cf26c64be5": {
-   "headline": "Keep it conversational",
-   "line": "one-line fact, your take (fair, a little spicy), then 'why it matters in the Valley.' Pick 3 of the 5.",
-   "kicker": "SHOW"
-  },
-  "i-e3a26f5d7b": {
-   "headline": "1) FAA GROUND STOP (Fri Nov 13)",
-   "line": "~3:30 p.m.",
-   "kicker": "SHOW"
-  },
-  "i-2c558f8dcd": {
-   "headline": "2) THE MULLIN TESTIMONY (Wed Nov 18)",
-   "line": "UNCONFIRMED · DHS Secretary Markwayne Mullin testified before the House Homeland Security Committee at \"Worldwide…",
-   "kicker": "SHOW"
-  },
-  "i-8ec38c760a": {
-   "headline": "3) SNL (Sat Nov 14, S52E06)",
-   "line": "John Mulaney hosted for the 7th time; Phoebe Bridgers was musical guest (\"Bobby,\" \"Still Standing\").",
-   "kicker": "SHOW"
-  },
-  "i-0a4fc10c87": {
-   "headline": "4) NVIDIA'S JENSEN HUANG RESIGNS (Nov 12)",
-   "line": "Nvidia announced Huang resigned as president, CEO and board member effective immediately; CFO Colette Kress is…",
-   "kicker": "SHOW"
-  },
-  "i-b7b53ef856": {
-   "headline": "5) TEXAS TEN COMMANDMENTS (ABC, Nov 18)",
-   "line": "ABC reports the Democratic midterm sweep has put Texas's classroom Ten Commandments mandate in doubt; the law…",
-   "kicker": "SHOW"
-  },
-  "i-6e1f093e98": {
-   "headline": "TECH SUB-SEGMENT (about 90 seconds inside J, after the National Desk and before Trending; no extra…",
-   "line": "TECH SUB-SEGMENT (about 90 seconds inside J, after the National Desk and before Trending; no extra time added to the…",
-   "kicker": "SHOW"
-  },
-  "i-2518ad498f": {
-   "headline": "TRENDING NEWS (what's trending around the nation)",
-   "line": "open the studio page section \"Trending News\" (6 to 10 items, each with a one-line summary, a suggested riff and a…",
-   "kicker": "SHOW"
-  },
-  "i-d5a142dd9a": {
-   "headline": "Segue to K · Listener Line",
-   "line": "jump line",
-   "kicker": "SHOW"
-  },
-  "i-22b29cca70": {
-   "headline": "FAA: Nationwide Ground Stop Q&A",
-   "line": "FAA: Nationwide Ground Stop Q&A",
-   "kicker": "LINKS"
-  },
-  "i-a856aa6a37": {
-   "headline": "ABC: Mullin grilled, FAA head says 'blame me'",
-   "line": "ABC: Mullin grilled, FAA head says 'blame me'",
-   "kicker": "LINKS"
-  },
-  "i-45a17c0c46": {
-   "headline": "House Homeland Security: Mullin written testimony (PDF)",
-   "line": "House Homeland Security: Mullin written testimony (PDF)",
-   "kicker": "LINKS"
-  },
-  "i-af73e71840": {
-   "headline": "ValleyCentral: Valley airports issue advisories",
-   "line": "ValleyCentral: Valley airports issue advisories",
-   "kicker": "LINKS"
-  },
-  "i-f287fb9ab5": {
-   "headline": "KRGV: Brownsville airport after ground stop",
-   "line": "KRGV: Brownsville airport after ground stop",
-   "kicker": "LINKS"
-  },
-  "i-de65d6d277": {
-   "headline": "YouTube: SNL 'Sister'",
-   "line": "YouTube: SNL 'Sister'",
-   "kicker": "LINKS"
-  },
-  "i-79eb9e52bb": {
-   "headline": "YouTube: SNL 'CIA Meeting' cold open",
-   "line": "YouTube: SNL 'CIA Meeting' cold open",
-   "kicker": "LINKS"
-  },
-  "i-da1e6557fc": {
-   "headline": "EW: SNL recap",
-   "line": "EW: SNL recap",
-   "kicker": "LINKS"
-  },
-  "i-5a42497614": {
-   "headline": "Boston.com: SNL recap",
-   "line": "Boston.com: SNL recap",
-   "kicker": "LINKS"
-  },
-  "i-add89e2fc5": {
-   "headline": "Showbiz411: SNL ratings",
-   "line": "Showbiz411: SNL ratings",
-   "kicker": "LINKS"
-  },
-  "i-b8a2bea53d": {
-   "headline": "Nvidia press release: CEO transition",
-   "line": "Nvidia press release: CEO transition",
-   "kicker": "LINKS"
-  },
-  "i-fb18eddec5": {
-   "headline": "ABC: Ten Commandments in Texas classrooms",
-   "line": "ABC: Ten Commandments in Texas classrooms",
-   "kicker": "LINKS"
-  },
-  "i-ca0f9e385b": {
-   "headline": "Fast Company Daily (Drew's email; the daily refresh pulls it)",
-   "line": "Fast Company Daily (Drew's email; the daily refresh pulls it)",
-   "kicker": "LINKS"
-  },
-  "i-938a40b772": {
+  "i-44604d5d20": {
    "headline": "K · Listener Line",
    "line": "Call-ins and topic submissions (from submissions.md / call-ins.md); still no phone number",
-   "kicker": "SHOW"
+   "kicker": "RUNDOWN"
   },
-  "i-9cf29e29f7": {
-   "headline": "Read 1-2 submissions (first names only; nothing from DMs or email without the sender's OK).",
-   "line": "talking point",
-   "kicker": "SHOW"
-  },
-  "i-9d1b796fd9": {
-   "headline": "How to reach us",
-   "line": "UNCONFIRMED · DMs on @drewinthemorning (Instagram, TikTok), YouTube comments, the Facebook page, and email at…",
-   "kicker": "SHOW"
-  },
-  "i-1bd5790926": {
-   "headline": "No call-in phone number exists, so don't announce one.",
-   "line": "A Restream guest link is UNVERIFIED (Drew to generate one) before inviting live call-ins.",
-   "kicker": "SHOW"
-  },
-  "i-a457ec957a": {
-   "headline": "Listener line #2",
-   "line": "ask for next week's topics.",
-   "kicker": "SHOW"
-  },
-  "i-c5ff7f9aee": {
-   "headline": "Segue to L · Meme of the Week & Close",
-   "line": "jump line",
-   "kicker": "SHOW"
-  },
-  "i-c9f0c0c412": {
+  "i-b1e998340c": {
    "headline": "L · Meme of the Week & Close",
    "line": "What the kids are talking about (elementary, middle, high school; for parents), then the look-ahead and sign-off…",
-   "kicker": "SHOW"
-  },
-  "i-47b07b7087": {
-   "headline": "Use the packet's Meme of the Week card (one fun beat, 3 minutes): explain the meme, what it means…",
-   "line": "Use the packet's Meme of the Week card (one fun beat, 3 minutes): explain the meme, what it means, and one \"how to…",
-   "kicker": "SHOW"
-  },
-  "i-a9fa71be49": {
-   "headline": "Always include one 'what parents should know' line, e.g.",
-   "line": "the Door Kick Challenge is a crime, not a prank (Irvine PD, Nov 12).",
-   "kicker": "SHOW"
-  },
-  "i-4e3ced01bb": {
-   "headline": "Mark anything thin as CONFIRM BEFORE AIR (X volume for several trends is low, so popularity is…",
-   "line": "Mark anything thin as CONFIRM BEFORE AIR (X volume for several trends is low, so popularity is TikTok-side and…",
-   "kicker": "SHOW"
-  },
-  "i-5b24b61384": {
-   "headline": "Look ahead",
-   "line": "Thanksgiving Thu Nov 26 · FAA comments close Dec 7 · Edinburg Night of Lights Parade Dec 4 · Mission/Weslaco runoffs…",
-   "kicker": "SHOW"
-  },
-  "i-2938b67288": {
-   "headline": "Jess back in",
-   "line": "one thing she's watching this week; favorite moment.",
-   "kicker": "SHOW"
-  },
-  "i-1277f6c692": {
-   "headline": "REMEMBERING OUR NEIGHBORS (about 45 seconds, after the memes and right before the look-ahead and…",
-   "line": "REMEMBERING OUR NEIGHBORS (about 45 seconds, after the memes and right before the look-ahead and sign-off, so the…",
-   "kicker": "SHOW"
-  },
-  "i-a5cabc77c6": {
-   "headline": "READ ALOUD, SLOWLY (auto-built from The Monitor's obituaries; CONFIRM name pronunciations): We…",
-   "line": "READ ALOUD, SLOWLY (auto-built from The Monitor's obituaries; CONFIRM name pronunciations): We want to take a moment…",
-   "kicker": "SHOW"
-  },
-  "i-86bd1b6f6b": {
-   "headline": "NEVER mention how anyone died, and don't add details that aren't in the notice.",
-   "line": "If you aren't sure how to say a name, skip it or check the link first.",
-   "kicker": "SHOW"
-  },
-  "i-9159eb4462": {
-   "headline": "Know Your Meme: Talk To Me Doja",
-   "line": "Know Your Meme: Talk To Me Doja",
-   "kicker": "LINKS"
-  },
-  "i-6bb7cb86bc": {
-   "headline": "ABC7: Irvine PD on door kick challenge",
-   "line": "ABC7: Irvine PD on door kick challenge",
-   "kicker": "LINKS"
-  },
-  "i-067b7df097": {
-   "headline": "Legacy.com: The Monitor obituaries, McAllen",
-   "line": "Legacy.com: The Monitor obituaries, McAllen",
-   "kicker": "LINKS"
+   "kicker": "RUNDOWN"
   }
  }
 }

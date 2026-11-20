@@ -242,5 +242,65 @@ class DashboardLink(unittest.TestCase):
         self.assertNotRegex(s, r"ditm-ros-[0-9a-f]{6,}")
 
 
+class StudioDashboard(unittest.TestCase):
+    """sync13: the studio page is stories-by-category plus look-ahead/rundown, with search, no producer-note cards."""
+    @classmethod
+    def setUpClass(cls):
+        import subprocess
+        cls.tmp = tempfile.mkdtemp()
+        subprocess.run([sys.executable, os.path.join(ROOT, "tests", "make_ui_fixture.py"), cls.tmp], check=True, capture_output=True)
+        cls.studio = open(os.path.join(cls.tmp, "out", "DITM-briefing-2026-11-19-studio.html")).read()
+        cls.src = open(os.path.join(ROOT, "packet", "build_packet.py")).read()
+
+    def test_no_producer_note_cards(self):
+        for phrase in (
+            "Follow-up questions",
+            "Transition lines",
+            "Chyrons · 60 characters max",
+            "Confirm before air",
+            "Cold open · read aloud",
+            "On-air script",
+            "Internal note · not for air",
+            "On-air read ·",
+            "READ ALOUD, SLOWLY",
+            "NEVER mention how anyone died",
+            "Jess back in",
+            "Segue to ",
+        ):
+            self.assertNotIn(phrase, self.studio, phrase)
+        self.assertNotRegex(self.studio, r"<b[^>]*>Sources</b>")
+        # individual story badges stay
+        self.assertIn("CONFIRM BEFORE AIR", self.studio)
+
+    def test_keeps_lookahead_rundown_and_news_categories(self):
+        self.assertIn("Rundown", self.studio)
+        self.assertRegex(self.studio, r"A · ")
+        self.assertIn('id="headlines"', self.studio)
+        self.assertIn('id="chisme"', self.studio)
+        self.assertIn('id="obits"', self.studio)
+        self.assertIn("family calendar · look-ahead", self.studio)
+        self.assertIn("Names, ages and towns only.", self.studio)
+        self.assertNotIn("nothing about how anyone died", self.studio)
+
+    def test_search_is_present(self):
+        for needle in ('id="q"', 'id="q-x"', 'id="q-n"', 'id="find"', "Search stories and keywords"):
+            self.assertIn(needle, self.studio, needle)
+        self.assertIn("function applySearch", self.src)
+        self.assertIn("e.key==='/'", self.src)
+        self.assertIn("e.key==='Escape'", self.src)
+        self.assertIn("{SEARCH_JS}", self.src)
+        self.assertIn(".item[hidden],.ob[hidden],.brkrow[hidden]{display:none!important}", self.src)
+
+    def test_every_remaining_card_has_a_chyron_button(self):
+        cards = len(re.findall(r'<div class="(?:item|ob)\b', self.studio))
+        btns = self.studio.count('class="chysend"')
+        self.assertGreater(cards, 50)
+        self.assertEqual(cards, btns, f"{cards} cards vs {btns} buttons")
+
+    def test_no_topic_in_the_page(self):
+        self.assertNotRegex(self.studio, r"ditm-ros-[0-9a-f]{6,}")
+        self.assertNotRegex(self.src, r"ditm-ros-[0-9a-f]{6,}")
+
+
 if __name__ == "__main__":
     unittest.main()

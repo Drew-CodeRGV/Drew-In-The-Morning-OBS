@@ -62,10 +62,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.7 (25h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.5 (26h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 4.7,
+          "recency": 4.5,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -98,13 +98,13 @@
             "published": "2026-11-20T06:00:00-06:00"
           }
         ],
-        "score": 19,
+        "score": 18,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 19: 1 outlet 6 + recency 13.1 (7h old)",
+        "scoreWhy": "Score 18: 1 outlet 6 + recency 12.4 (8h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 13.1,
+          "recency": 12.4,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -135,10 +135,10 @@
         "score": 12,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 12: 1 outlet 6 + recency 6 (21h old)",
+        "scoreWhy": "Score 12: 1 outlet 6 + recency 5.7 (22h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.0,
+          "recency": 5.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -165,13 +165,13 @@
             "published": "2026-11-19T18:21:00-06:00"
           }
         ],
-        "score": 13,
+        "score": 12,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.7 (19h old)",
+        "scoreWhy": "Score 12: 1 outlet 6 + recency 6.3 (20h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.7,
+          "recency": 6.3,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -201,10 +201,10 @@
         "score": 10,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 10: 1 outlet 6 + recency 4.4 (26h old)",
+        "scoreWhy": "Score 10: 1 outlet 6 + recency 4.2 (27h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 4.4,
+          "recency": 4.2,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -232,13 +232,13 @@
             "published": "2026-11-19T18:16:00-06:00"
           }
         ],
-        "score": 13,
+        "score": 12,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.6 (19h old)",
+        "scoreWhy": "Score 12: 1 outlet 6 + recency 6.3 (20h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.6,
+          "recency": 6.3,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -268,10 +268,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 5 (24h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.8 (25h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.0,
+          "recency": 4.8,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -301,10 +301,10 @@
         "score": 8,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.7 (43h old)",
+        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.6 (44h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.7,
+          "recency": 1.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -332,13 +332,13 @@
             "published": "2026-11-20T06:00:00-06:00"
           }
         ],
-        "score": 19,
+        "score": 18,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 19: 1 outlet 6 + recency 13.1 (7h old)",
+        "scoreWhy": "Score 18: 1 outlet 6 + recency 12.4 (8h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 13.1,
+          "recency": 12.4,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -369,10 +369,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 5.1 (24h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.9 (24h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.1,
+          "recency": 4.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -400,13 +400,13 @@
             "published": "2026-11-19T15:30:00-06:00"
           }
         ],
-        "score": 12,
+        "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 12: 1 outlet 6 + recency 5.7 (22h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 5.4 (23h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.7,
+          "recency": 5.4,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -439,13 +439,13 @@
             "published": "2026-11-20T06:00:00-06:00"
           }
         ],
-        "score": 19,
+        "score": 18,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 19: 1 outlet 6 + recency 13.1 (7h old)",
+        "scoreWhy": "Score 18: 1 outlet 6 + recency 12.4 (8h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 13.1,
+          "recency": 12.4,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -474,13 +474,13 @@
             "published": "2026-11-19T11:35:00-06:00"
           }
         ],
-        "score": 11,
+        "score": 10,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.5 (26h old)",
+        "scoreWhy": "Score 10: 1 outlet 6 + recency 4.3 (27h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 4.5,
+          "recency": 4.3,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -508,13 +508,13 @@
             "published": "2026-11-19T15:34:00-06:00"
           }
         ],
-        "score": 12,
+        "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 12: 1 outlet 6 + recency 5.7 (22h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 5.4 (23h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.7,
+          "recency": 5.4,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -547,13 +547,13 @@
             "published": "2026-11-19T20:30:00-06:00"
           }
         ],
-        "score": 14,
+        "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 14: 1 outlet 6 + recency 7.6 (17h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 7.2 (18h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.6,
+          "recency": 7.2,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -584,13 +584,13 @@
             "published": "2026-11-19T15:11:00-06:00"
           }
         ],
-        "score": 12,
+        "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 12: 1 outlet 6 + recency 5.6 (22h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 5.3 (23h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.6,
+          "recency": 5.3,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -763,14 +763,14 @@
     "note": "McAllen / Rio Grande Valley; NWS Brownsville (BRO) forecast",
     "now": {
       "tempF": 81,
-      "cond": "Partly Cloudy",
-      "icon": "partly",
-      "at": "2026-11-20T19:00:00+00:00",
+      "cond": "Mostly Cloudy",
+      "icon": "cloud",
+      "at": "2026-11-20T19:35:00+00:00",
       "source": "KMFE observation"
     },
     "office": "BRO",
     "city": "McAllen",
-    "updated": "2026-11-20T18:56:04+00:00",
+    "updated": "2026-11-20T19:47:24+00:00",
     "days": [
       {
         "date": "2026-11-20",
@@ -1322,13 +1322,13 @@
           "published": "2026-11-19T18:00:00+00:00"
         }
       ],
-      "score": 23,
+      "score": 22,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 23: 3 outlets 18 + recency 4.6 (25h old)",
+      "scoreWhy": "Score 22: 3 outlets 18 + recency 4.4 (26h old)",
       "scoreParts": {
         "outlets": 18,
-        "recency": 4.6,
+        "recency": 4.4,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1375,13 +1375,13 @@
           "published": "2026-11-19T18:00:00+00:00"
         }
       ],
-      "score": 17,
+      "score": 16,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 17: 2 outlets 12 + recency 4.6 (25h old)",
+      "scoreWhy": "Score 16: 2 outlets 12 + recency 4.4 (26h old)",
       "scoreParts": {
         "outlets": 12,
-        "recency": 4.6,
+        "recency": 4.4,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1473,13 +1473,13 @@
           "published": "2026-11-19T18:00:00+00:00"
         }
       ],
-      "score": 11,
+      "score": 10,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 11: 1 outlet 6 + recency 4.6 (25h old)",
+      "scoreWhy": "Score 10: 1 outlet 6 + recency 4.4 (26h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 4.6,
+        "recency": 4.4,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1529,13 +1529,13 @@
           "published": "2026-11-19T18:00:00+00:00"
         }
       ],
-      "score": 37,
+      "score": 36,
       "label": "Trending",
       "uncovered": false,
-      "scoreWhy": "Score 37: 2 outlets 12 + recency 4.6 (25h old) + X 20",
+      "scoreWhy": "Score 36: 2 outlets 12 + recency 4.4 (26h old) + X 20",
       "scoreParts": {
         "outlets": 12,
-        "recency": 4.6,
+        "recency": 4.4,
         "x": 20.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1569,13 +1569,13 @@
           "published": "2026-11-19T18:00:00+00:00"
         }
       ],
-      "score": 11,
+      "score": 10,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 11: 1 outlet 6 + recency 4.6 (25h old)",
+      "scoreWhy": "Score 10: 1 outlet 6 + recency 4.4 (26h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 4.6,
+        "recency": 4.4,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1609,13 +1609,13 @@
           "published": "2026-11-19T18:00:00+00:00"
         }
       ],
-      "score": 11,
+      "score": 10,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 11: 1 outlet 6 + recency 4.6 (25h old)",
+      "scoreWhy": "Score 10: 1 outlet 6 + recency 4.4 (26h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 4.6,
+        "recency": 4.4,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1656,10 +1656,10 @@
       "score": 44,
       "label": "Trending",
       "uncovered": false,
-      "scoreWhy": "Score 44: 1 outlet 6 + recency 18.5 (1h old) + X 20",
+      "scoreWhy": "Score 44: 1 outlet 6 + recency 17.6 (2h old) + X 20",
       "scoreParts": {
         "outlets": 6,
-        "recency": 18.5,
+        "recency": 17.6,
         "x": 20.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -3337,7 +3337,7 @@
       "signature": false,
       "weave": null,
       "talkingPoints": [
-        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Friday, November 20th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young as 10 (testing in Austin), and what a 10-year-old. It's 81 and partly cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Friday, November 20th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young as 10 (testing in Austin), and what a 10-year-old. It's 81 and mostly cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
         "JINGLE: Drew in the Morning. Your Valley, your news, your morning.",
         "JINGLE: \"Drew in the Morning. Your Valley, your news, your morning.\" (alternates in cold-open.md)",
         "COLD OPEN: read the paragraph the packet builds each morning (card at the top of the studio page; also in the PDF, txt and email, and in obs-data.json under coldOpen). It is one flowing paragraph, about 25 seconds, filled with today's real headlines.",
@@ -4352,7 +4352,7 @@
     "trendsNote": "Google Trends US-TX 10 + US 10 items, fetched 2026-11-20T03:00:46+00:00 (cache)"
   },
   "coldOpen": {
-    "text": "Good morning, Rio Grande Valley! It's Friday, November 20th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young as 10 (testing in Austin), and what a 10-year-old. It's 81 and partly cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+    "text": "Good morning, Rio Grande Valley! It's Friday, November 20th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young as 10 (testing in Austin), and what a 10-year-old. It's 81 and mostly cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
     "jingle": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [
       "Wake up, RGV. It's Drew in the Morning.",
@@ -4362,7 +4362,7 @@
     "words": 104,
     "template": "daily"
   },
-  "generatedAt": "2026-11-20T19:21:49+00:00",
+  "generatedAt": "2026-11-20T20:14:32+00:00",
   "sources": [
     {
       "section": "Top headlines: RGV",

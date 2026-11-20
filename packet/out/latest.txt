@@ -25,7 +25,7 @@ COLD OPEN (read aloud, about 45 seconds)
   the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the
   National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And
   in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young
-  as 10 (testing in Austin), and what a 10-year-old. It's 81 and partly cloudy outside, the
+  as 10 (testing in Austin), and what a 10-year-old. It's 81 and mostly cloudy outside, the
   coffee's hot, so stick around, this is Drew in the Morning.
   JINGLE: Drew in the Morning. Your Valley, your news, your morning.
 
@@ -53,19 +53,19 @@ TOP HEADLINES · RGV FIRST
   - [ACT 11] McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan.
     14 deadline still stands (KRGV · Nov 19)
     https://www.krgv.com/news/mcallen-food-truck-owners-call-for-extension-on-park-closure
-  - [ACT 19] La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and
+  - [ACT 18] La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and
     Paredes elementaries) after losing 10,008 students in a decade (Daily McAllen · Nov 20)
     https://dailymcallen.com/local-news/editions/11-20-2026
   - [ACT 12] SpaceX responds after Cameron County rejects its data center tax break, says
     its payment plan would have steadied county revenue (MyRGV · Nov 19)
     https://myrgv.com/local-news/2026/11/19/spacex-responds-to-cameron-county-rejection-of-tax-break-application/
-  - [ACT 13] FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and
+  - [ACT 12] FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and
     landings a year at Starbase; next session Friday 5:30 PM (ValleyCentral · Nov 19)
     https://www.valleycentral.com/news/local-news/faa-holds-virtual-hearing-on-spacex-proposal-for-more-rocket-launches/
   - [ACT 10] Rep. Vicente Gonzalez's 'Hands Off Our Boca Chica Beach Act' clears the House
     Natural Resources Committee (ValleyCentral · Nov 19)
     https://www.valleycentral.com/news/local-news/hands-off-our-boca-chica-beach-act-advances/
-  - [ACT 13] Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some
+  - [ACT 12] Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some
     at $2.94) (ValleyCentral · Nov 19)
     https://www.valleycentral.com/news/local-news/gas-prices-dip-below-3-a-gallon-across-the-valley/
   - [ACT 11] Starbase fills a vacant commission seat with Haley Ruvalcaba, wife of a SpaceX
@@ -74,29 +74,29 @@ TOP HEADLINES · RGV FIRST
   - [ACT 8] Roma's bridge is now the fastest-growing truck port on the Southwest border
     (imports up 17x since 2019) (Border Report · Nov 18-19)
     https://www.borderreport.com/news/trade/roma-bridge-fastest-growing-for-truck-traffic-on-southwest-border/
-  - [ACT 19] RioPlex says $110 billion in industrial, energy and data center investment is
+  - [ACT 18] RioPlex says $110 billion in industrial, energy and data center investment is
     headed to the Valley (Daily McAllen · Nov 20)
     https://dailymcallen.com/local-news/editions/11-20-2026
   - [ACT 11] Mission approves voluntary drug testing for the mayor and council (mandatory
     for city attorney and managers) (MyRGV · Nov 19)
     https://myrgv.com/local-news/2026/11/19/mission-approves-voluntary-drug-testing-for-city-officials/
-  - [ACT 12] Brownsville ISD swears in trustees and elects Denise Garza board president
+  - [ACT 11] Brownsville ISD swears in trustees and elects Denise Garza board president
     (MyRGV · Nov 19)
     https://myrgv.com/local-news/2026/11/19/brownsville-isd-board-elects-denise-garza-as-president/
-  - [ACT 19] Palenque Hidalgo opens today at Payne Arena (360-degree stage, tickets from
+  - [ACT 18] Palenque Hidalgo opens today at Payne Arena (360-degree stage, tickets from
     $20; Tito Double P headlines) (Daily McAllen · Nov 20)
     https://dailymcallen.com/local-news/editions/11-20-2026
-  - [ACT 11] USDA confirms the Valley's fifth screwworm case (first in Hidalgo County);
+  - [ACT 10] USDA confirms the Valley's fifth screwworm case (first in Hidalgo County);
     Brooks, Hidalgo, Kenedy and Willacy under 'Infested Zone 37' rules (MyRGV · Nov 19)
     https://myrgv.com/local-news/2026/11/19/usda-confirms-fifth-case-of-screwworm-in-rio-grande-valley/
-  - [ACT 12] Mission man sentenced to life without parole for 2018 killings of two women
+  - [ACT 11] Mission man sentenced to life without parole for 2018 killings of two women
     (MyRGV · Nov 19)
     https://myrgv.com/local-news/2026/11/19/mission-man-who-killed-two-women-in-2018-sentenced-to-life-without-parole/
   Texas:
-  - [ACT 14] Paxton and the feds agree to keep Texas razor wire at the border for up to 30
+  - [ACT 13] Paxton and the feds agree to keep Texas razor wire at the border for up to 30
     years (Del Rio Sector) (Texas Tribune · Nov 19)
     https://www.texastribune.org/2026/11/19/texas-border-wire-immigration-ken-paxton/
-  - [ACT 12] Comptroller Huffines' move to stop taxing cloud, AI and data hosting would cost
+  - [ACT 11] Comptroller Huffines' move to stop taxing cloud, AI and data hosting would cost
     Texas $18 billion over six years (Texas Tribune · Nov 19)
     https://www.texastribune.org/2026/11/19/texas-comptroller-huffines-data-tax-limit/
   Photo: File photo: Starship (Steve Jurvetson, CC BY 2.0, Wikimedia Commons) https://commons.wikimedia.org/wiki/File:SpaceX_Starship_before_IFT-5.jpg
@@ -123,7 +123,7 @@ CHISME · what the Valley is buzzing about · RUMOR · CONFIRM BEFORE AIR · las
       Riff: Have you tried turning your attitude off and on again, Your Honor?
 
 TRENDING NEWS · what's trending around the nation (separate from the National Desk)
-- [ACT 23] Fiona the hippo dies at the Cincinnati Zoo after swallowing a visitor's knit hat  [viral / animals]
+- [ACT 22] Fiona the hippo dies at the Cincinnati Zoo after swallowing a visitor's knit hat  [viral / animals]
     SUMMARY: Nov 19: the zoo said Fiona, 9, died after a hat a visitor tossed was caught by
       a ceiling fan and flung into her habitat; vets tried everything short of surgery.
     RIFF: The internet's favorite hippo, taken out by a freak hat accident. Hold your hats
@@ -131,7 +131,7 @@ TRENDING NEWS · what's trending around the nation (separate from the National D
     Cincinnati Zoo · Nov 19: https://cincinnatizoo.org/beloved-hippo-fiona-has-passed-away/
     AP: https://apnews.com/article/fiona-hippo-cincinnati-zoo-hat-3d90d10c57698af06e5a7a67bed05608
     BBC: https://www.bbc.com/news/articles/cwz0k3172xzko
-- [ACT 17] Trump posthumously pardons Pete Rose  [sports]
+- [ACT 16] Trump posthumously pardons Pete Rose  [sports]
     SUMMARY: Nov 19: Trump pardoned Rose's 1990 tax convictions; it's symbolic and doesn't
       change Hall of Fame status (MLB lifted his ban in 2025). Trump's post said 4,256 hits
       'in a Season'; it's career.
@@ -146,25 +146,25 @@ TRENDING NEWS · what's trending around the nation (separate from the National D
       books are better (don't tell them we said it).
     TheWrap · X trend: https://www.thewrap.com/creative-content/tv-shows/percy-jackson-season-3-episode-release-schedule/
     X: #PercyJackson: https://x.com/i/trending/2123145814818357459
-- [ACT 11] Texans rout the Colts 26-3 on Thursday Night Football; C.J. Stroud throws 3 TDs  [sports]
+- [ACT 10] Texans rout the Colts 26-3 on Thursday Night Football; C.J. Stroud throws 3 TDs  [sports]
     SUMMARY: Nov 19: Houston beat Indianapolis 26-3 behind three Stroud touchdown passes.
     RIFF: The Texans looked like the Texans again. Cowboys, your turn Sunday against
       Tennessee.
     AP · Nov 19: https://apnews.com/article/texans-colts-score-a10b89e303c92efae4c15b8e9df01534
-- [TREND 37] Magnitude 5.1 earthquake shakes Monterey County, California; 'earthquake' trends in Texas and on X  [news]
+- [TREND 36] Magnitude 5.1 earthquake shakes Monterey County, California; 'earthquake' trends in Texas and on X  [news]
     SUMMARY: Nov 19, 10:49 p.m. PT near Pinnacles, about 21 km NE of Soledad; no immediate
       injuries or damage reported.
     RIFF: Valley earthquake plan: we don't have one, because we don't get them. We get
       hurricanes and screwworm.
     ABC7 SF · Nov 19-20: https://abc7news.com/post/magnitude-51-earthquake-hits-monterey-county-usgs-says/20058336/
     KCRA: https://www.kcra.com/article/magnitude-51-earthquake-strikes-near-pinnacles/74485520
-- [ACT 11] Christie's pulls a Frida Kahlo painting from auction at Mexico's request  [culture]
+- [ACT 10] Christie's pulls a Frida Kahlo painting from auction at Mexico's request  [culture]
     SUMMARY: 'Congreso de los pueblos por la paz' (1952) was withdrawn while Mexico checks
       its provenance; Kahlo's work is a protected artistic monument under Mexican law.
     RIFF: Mexico says 'not so fast' on Frida. Fun one for the Valley: who's been to Casa
       Azul?
     Border Report / AP · Nov 19: https://www.borderreport.com/border-report-tour/border-culture/christies-halts-frida-kahlo-painting-from-auction-at-mexicos-request/
-- [ACT 11] Jazz snap the Lakers' nine-game win streak; Giannis leads the Heat past his old team  [sports]
+- [ACT 10] Jazz snap the Lakers' nine-game win streak; Giannis leads the Heat past his old team  [sports]
     SUMMARY: Nov 18: Utah won 109-97 at L.A. (Keyonte George 30); Miami beat Milwaukee
       137-130 with Giannis at 27-13-9 in his first game against the Bucks.
     RIFF: The three-win Jazz ended the Lakers' run. Any given Wednesday.
@@ -318,7 +318,7 @@ WEATHER · McALLEN / RGV (National Weather Service BRO (api.weather.gov))
   Wed Nov 25  Sunny, high 67F / low 49F, rain 1%, wind N 6 to 10 mph
   Thu Nov 26  Mostly Sunny, high 68F / low 56F, rain 15%, wind NE 6 mph
   Alerts: none active
-  Updated 2026-11-20T18:56:04+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
+  Updated 2026-11-20T19:47:24+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
   NWS Brownsville office: https://www.weather.gov/bro/
   API: https://api.weather.gov/gridpoints/BRO/49,19/forecast
 
@@ -467,4 +467,4 @@ What your kids might be saying at school this week, and one line on how to bring
 NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-20 19:21 CT.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-20 20:14 CT.
