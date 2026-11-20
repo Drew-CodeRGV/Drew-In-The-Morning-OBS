@@ -49,7 +49,7 @@ WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min, from the family calendar) · 5
 
 STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README.md). 44
   stories, 0 duplicate(s) merged, 1 hot, 1 trending, 2 uncovered lead(s). Google Trends US-
-  TX 10 + US 10 items, fetched 2026-11-20T03:00:46+00:00.
+  TX 10 + US 10 items, fetched 2026-11-20T03:00:46+00:00 (cache).
 
 TOP HEADLINES · RGV FIRST
   - [ACT 10] Hidalgo County confirms its first New World screwworm case (a calf); quarantine
@@ -131,7 +131,7 @@ TOP HEADLINES · RGV FIRST
     https://myrgv.com/wire/2026/11/18/republicans-spent-years-remaking-texas-courts-in-their-image-voters-unraveled-it-in-one-election/
   Photo: File photo: Starship (Steve Jurvetson, CC BY 2.0, Wikimedia Commons) https://commons.wikimedia.org/wiki/File:SpaceX_Starship_before_IFT-5.jpg
 
-TRENDING: WAIT, DON'T TELL ME (riff material; separate from the National Desk)
+TRENDING NEWS · what's trending around the nation (separate from the National Desk)
 - [HOT 45] Grand Theft Auto VI is out after a 13-year wait  [gaming]
     SUMMARY: GTA VI launched Nov 19 on PS5 and Xbox Series X; the download is 212 GB, and
       the Miami Heat went all-in on a 'Vice City' tie-in.
@@ -145,9 +145,8 @@ TRENDING: WAIT, DON'T TELL ME (riff material; separate from the National Desk)
     SUMMARY: At the 60th CMA Awards (Nov 18) Ella Langley won Single, Song and Music Video
       of the Year for 'Choosin' Texas'; Taylor Swift performed for the first time in 13
       years and Lainey Wilson hosted.
-    RIFF: Country's biggest night went to a song with Texas in the title. Wait, don't tell
-      me who's spinning it most in the Valley, and does Lainey's 'Somewhere Over Laredo'
-      count as a local song?
+    RIFF: Country's biggest night went to a song with Texas in the title. Who's spinning it
+      most in the Valley, and does Lainey's 'Somewhere Over Laredo' count as a local song?
     Variety · Nov 18: https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/
     USA Today: full winners list: https://www.usatoday.com/story/entertainment/music/2026/11/18/cma-awards-2026-winners-list/92853447007/
     Billboard: winners, updating live: https://www.billboard.com/music/awards/cma-2026-winners-list-1236385046/
@@ -647,5 +646,4 @@ What your kids might be saying at school this week, and one line on how to bring
 NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-19 21:00 CT.
-Links checked 2026-11-19: 111 ok, 9 blocked by the site's bot protection (verified in a browser/search), 0 dead, 1 unreachable.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-19 21:23 CT.

@@ -63,7 +63,7 @@ Natural on-air lines for blending between story types (open format). Use as is o
 28. "Everybody's talking about it in Washington. Here's how it lands in Weslaco."
 
 ## National Desk → Trending
-29. "Okay, that's the news. Here's what the internet is losing its mind over. Wait, don't tell me."
+29. "Okay, that's the news. Here's what's trending around the nation."
 
 ## any block → Listener Line
 30. "We could go all morning on this, but let's hear from you: what are you seeing?"

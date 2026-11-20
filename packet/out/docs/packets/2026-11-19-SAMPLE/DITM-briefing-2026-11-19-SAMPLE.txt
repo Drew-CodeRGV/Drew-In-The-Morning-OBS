@@ -27,86 +27,74 @@ COLD OPEN (read aloud, about 45 seconds)
   runoff. On the National Desk, the FAA's nationwide ground stop and what it means for
   Valley flyers. In Trending, Ella Langley's big night at the CMA Awards. And in How We'd
   Talk to Our Kids, Jess and I take on strangers online and what to say when the group chat
-  turns mean. It's 78 and a slight chance of rain showers outside, the coffee's hot, so
-  stick around, this is Drew in the Morning.
+  turns mean. It's 70 and clear outside, the coffee's hot, so stick around, this is Drew in
+  the Morning.
   JINGLE: Drew in the Morning. Your Valley, your news, your morning.
   CONFIRM BEFORE AIR (teased, unconfirmed; not part of the spoken text): National Desk: FAA
     nationwide ground stop
 
-WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min) · 4 item(s) found · CONFIRM BEFORE AIR
+WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min, from the family calendar) · Quiet week on the family calendar
   Hey, for the last week, here's what I've been up to. Outside the studio I spent a good
   chunk of it sending in talk proposals for a handful of 2027 conferences: emergency
   management, fire and rescue, and 9-1-1 shows, all about getting Wi-Fi up fast when a
   shelter or a command post has to stand up overnight. Nothing's been accepted yet, so I'll
   let you know if anybody says yes. Okay, enough about me. Let's get into the Valley.
-  - Nov 16 · Drew · conference: Sent in a talk proposal to ResCon New Orleans 2027 (Mar
-    9-11): standing up shelter Wi-Fi in hours  [CONFIRM BEFORE AIR]
-    ResCon 2027 call for proposals: https://resconnola.com/2027-call-for-proposals/
-  - Nov 16 · Drew · conference: Sent in a talk proposal to the South Atlantic Fire Rescue
-    Expo 2027 (Aug 11-14, Raleigh): fast Wi-Fi for command posts  [CONFIRM BEFORE AIR]
-    SAFRE 2027 call for presenters: https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/
-  - Nov 16 · Drew · conference: Sent in talk proposals to the IAFC Wildland-Urban Interface
-    conference (Austin, Mar 23-25) and CALNENA 2027 (Los Angeles, Mar 1-3)  [CONFIRM BEFORE
-    AIR]
-  - Nov 12 · Drew · conference: Sent in a talk proposal to the IAEM-USA Region 6 Symposium
-    2027: temporary Wi-Fi for EOCs and shelters  [CONFIRM BEFORE AIR]
+  Quiet week on the family calendar.
   Window Nov 11-18, 2026. Calendar: not connected (no calendar tool available); built from
-    email only. Proposals SUBMITTED, not accepted: do not say 'accepted' or 'speaking at'.
-    Nothing found for Jess (no access to her calendar or mail). Public-facing items only.
+    email only. Family-friendly items only, generic wording.
 
 STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README.md). 27
-  stories, 0 duplicate(s) merged, 0 hot, 5 trending, 0 uncovered lead(s). Google Trends US-
-  TX 10 + US 10 items, fetched 2026-11-19T03:50:26+00:00 (cache).
+  stories, 0 duplicate(s) merged, 0 hot, 3 trending, 0 uncovered lead(s). Google Trends US-
+  TX 10 + US 10 items, fetched 2026-11-20T03:00:46+00:00 (cache).
 
 TOP HEADLINES · RGV FIRST
-  - [ACT 9] Cameron County rejects SpaceX data-center tax break hearing, 3-2 (MyRGV · Nov
+  - [ACT 7] Cameron County rejects SpaceX data-center tax break hearing, 3-2 (MyRGV · Nov
     17)
     https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/
-  - [ACT 9] Texas issues air permit for SpaceX's $24B data center (Politico · Nov 17)
+  - [ACT 7] Texas issues air permit for SpaceX's $24B data center (Politico · Nov 17)
     https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758
   - [ACT 6] Starship Flight 15: ship caught by tower, booster aborts catch (Spaceflight Now
     · Nov 13)
     https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/
   - [ACT 14] Mission mayor and council races head to Dec. 12 runoffs (KRGV)
     https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/
-  - [ACT 17] Texas A&M McAllen to build $50M health education building (Daily McAllen · Nov
+  - [ACT 9] Texas A&M McAllen to build $50M health education building (Daily McAllen · Nov
     18)
     https://dailymcallen.com/local-news/editions/11-18-2026
-  - [ACT 9] McAllen Food Truck Park closure delayed to Jan. 14, 2027 (Daily McAllen · Nov
+  - [ACT 7] McAllen Food Truck Park closure delayed to Jan. 14, 2027 (Daily McAllen · Nov
     17)
     https://dailymcallen.com/local-news/editions/11-17-2026
-  - [ACT 9] Another screwworm case confirmed in Starr County cattle (The RGV News · Nov 17)
+  - [ACT 7] Another screwworm case confirmed in Starr County cattle (The RGV News · Nov 17)
     https://thergvnews.com/reviews/day/2026-11-17
   - [ACT 6] Pharr twin bridge expansion opened Nov. 13 (Good Day Edinburg · Nov 14)
     https://gooddayedinburg.com/local-news/editions/11-14-2026
   - [ACT 6] Grupo Frontera, Edgar Barrera win at Latin Grammys (Good Day Edinburg · Nov 14)
     https://gooddayedinburg.com/local-news/editions/11-14-2026
-  - [ACT 7] PSJA ISD swears in three trustees, elects Quintanilla president (PSJA ISD · Nov
+  - [ACT 6] PSJA ISD swears in three trustees, elects Quintanilla president (PSJA ISD · Nov
     16)
     https://www.psjaisd.us/school-news-details/~board/pharr-san-juan-alamo-isd-news/post/psja-isd-swears-in-three-trustees-elects-new-board-leadership
   Texas:
-  - [ACT 9] Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border
+  - [ACT 7] Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border
     contracts (Texian Partisan · Nov 17)
     https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/
-  - [ACT 9] Texas Supreme Court petition over HD 93 special election result (Texian Partisan
+  - [ACT 7] Texas Supreme Court petition over HD 93 special election result (Texian Partisan
     · Nov 17)
     https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/
-  - [ACT 9] PUC takes up Aqua Texas rate increase Thursday (Texian Partisan · Nov 17)
+  - [ACT 7] PUC takes up Aqua Texas rate increase Thursday (Texian Partisan · Nov 17)
     https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/
   Photo: File photo: Starship (Steve Jurvetson, CC BY 2.0, Wikimedia Commons) https://commons.wikimedia.org/wiki/File:SpaceX_Starship_before_IFT-5.jpg
 
-TRENDING: WAIT, DON'T TELL ME (riff material; separate from the National Desk)
-- [TREND 29] Ella Langley sweeps the CMA Awards with 'Choosin' Texas'  [culture]
+TRENDING NEWS · what's trending around the nation (separate from the National Desk)
+- [ACT 21] Ella Langley sweeps the CMA Awards with 'Choosin' Texas'  [culture]
     SUMMARY: At the 60th CMA Awards (Nov 18) Ella Langley won Single, Song and Music Video
       of the Year for 'Choosin' Texas'; Taylor Swift performed for the first time in 13
       years and Lainey Wilson hosted.
-    RIFF: Country's biggest night went to a song with Texas in the title. Wait, don't tell
-      me who's spinning it most in the Valley, and does Lainey's 'Somewhere Over Laredo'
-      count as a local song?
+    RIFF: Country's biggest night went to a song with Texas in the title. Who's spinning it
+      most in the Valley, and does Lainey's 'Somewhere Over Laredo' count as a local song?
     Variety · Nov 18: https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/
     USA Today: full winners list: https://www.usatoday.com/story/entertainment/music/2026/11/18/cma-awards-2026-winners-list/92853447007/
     Billboard: winners, updating live: https://www.billboard.com/music/awards/cma-2026-winners-list-1236385046/
-- [ACT 17] Musk at DealBook: 'I'm not MAGA'  [politics/tech]
+- [ACT 9] Musk at DealBook: 'I'm not MAGA'  [politics/tech]
     SUMMARY: Speaking by video from China at the NYT DealBook Summit (Nov 18), Elon Musk
       said 'I'm not MAGA' and that he has no extreme political views, after reportedly
       spending about $445M backing Republicans who lost in the midterms.
@@ -114,7 +102,7 @@ TRENDING: WAIT, DON'T TELL ME (riff material; separate from the National Desk)
       endorse the team he bankrolled, and does it change how Cameron County deals with
       SpaceX?
     TechCrunch · Nov 18: https://techcrunch.com/2026/11/18/elon-musk-says-im-not-maga/
-- [ACT 17] A nearly empty quince becomes an all-night stadium party  [viral]
+- [ACT 9] A nearly empty quince becomes an all-night stadium party  [viral]
     SUMMARY: A 15-year-old in Axtla de Terrazas, Mexico saw few guests at her quinceañera;
       the story went viral and thousands filled the town stadium for an all-night
       celebration in the rain (AP, Nov 18).
@@ -122,7 +110,7 @@ TRENDING: WAIT, DON'T TELL ME (riff material; separate from the National Desk)
       been to, and would you show up for a stranger's?
     AP · Nov 18: https://apnews.com/article/mexico-quinceanera-san-luis-potosi-isela-santiago-36f8d9a1f1dd69f05e8a6e92027cbc49
     AP video version: https://apnews.com/video/from-empty-party-to-an-all-night-stadium-bash-a-mexican-teens-15th-birthday-goes-viral-9f0d2688f5894ac1b1e452f9ff73d4dc
-- [TREND 29] Giannis faces the Bucks for the first time as a Heat player  [sports]  [CONFIRM BEFORE AIR: Final margin not independently confirmed; the NBA.com box score shows Heat 128.]
+- [ACT 21] Giannis faces the Bucks for the first time as a Heat player  [sports]  [CONFIRM BEFORE AIR: Final margin not independently confirmed; the NBA.com box score shows Heat 128.]
     SUMMARY: Giannis Antetokounmpo (20 points, 11 rebounds, 9 assists) and the Heat beat the
       1-13 Bucks on Nov 18, his first game against Milwaukee since the offseason trade; he
       called it 'just another game.' He also scored 20 in Monday's 128-110 win over Houston.
@@ -131,12 +119,12 @@ TRENDING: WAIT, DON'T TELL ME (riff material; separate from the National Desk)
     CBS Sports · Nov 18: https://www.cbssports.com/nba/news/giannis-antetokounmpo-set-to-face-bucks-for-first-time-with-heat/
     NBA.com box score (Heat vs Bucks): https://www.nba.com/bucks/game/0022600260-bucks-vs-heat-miami-fl-11-18-2026
     GMA/Reuters: 'just another game': https://www.gmanetwork.com/news/sports/basketball/1009886/nba-giannis-antetokounmpo-downplays-emotions-as-heat-face-bucks/story/
-- [ACT 17] Bezos: Pattinson was picked as Bond just three days before the announcement  [celebrity]
+- [ACT 9] Bezos: Pattinson was picked as Bond just three days before the announcement  [celebrity]
     SUMMARY: Jeff Bezos said Robert Pattinson was chosen as the new James Bond on Fri Nov
       13, after full-costume screen tests with five finalists; Amazon MGM announced it Mon
       Nov 16.
     RIFF: Batman to 007. Who's your Bond, and is it weird that the guy who owns Amazon made
-      the call? Wait, don't tell me you picked Daniel Craig forever.
+      the call? Did you pick Daniel Craig forever?
     AP · Nov 18: https://apnews.com/article/james-bond-jeff-bezos-robert-pattinson-a90f280d9e4fed9c7fd72ab6a4851945
     AP: Pattinson named the seventh Bond: https://apnews.com/article/new-james-bond-4545b257a9924895a69623332db50c97
 - [ACT 20] US and Mexico lose their measles-elimination status  [health]
@@ -147,7 +135,7 @@ TRENDING: WAIT, DON'T TELL ME (riff material; separate from the National Desk)
     AP · Nov 2026: https://apnews.com/article/measles-elimination-status-us-mexico-b6694152aca12e8cf4293d9f50090ec9
     PAHO statement: https://www.paho.org/en/news/17-11-2026-paho-urges-countries-step-efforts-stop-measles-outbreaks-and-move-towards
     AP video: do you need a booster?: https://apnews.com/video/the-u-s-lost-its-measles-elimination-status-do-you-need-a-booster-f98d07c0153a463283e42ea7bc09c86a
-- [ACT 15] Illinois' Andrej Stojakovic drops 46 at Duke  [sports]
+- [ACT 13] Illinois' Andrej Stojakovic drops 46 at Duke  [sports]
     SUMMARY: No. 10 Illinois beat No. 5 Duke 99-78 on Nov 17; Stojakovic (son of Peja)
       scored 46, the most ever by a visiting player at Cameron Indoor, passing Grady
       Wallace's 43 from 1957.
@@ -155,15 +143,15 @@ TRENDING: WAIT, DON'T TELL ME (riff material; separate from the National Desk)
       in the Valley is carrying the family sport?
     AP · Nov 17: https://apnews.com/article/illinois-duke-stojakovic-46-points-c6a4a8aee2f9d7fb676dab9019fe9d83
     ESPN recap: https://www.espn.com/mens-college-basketball/story/_/id/50517287/illinois-andrej-stojakovic-scores-46-points-most-ever-opponent-duke
-- [ACT 15] Pulisic's bicycle kick sends Pochettino off with a 2-0 win  [sports]
+- [ACT 13] Pulisic's bicycle kick sends Pochettino off with a 2-0 win  [sports]
     SUMMARY: The U.S. beat Haiti 2-0 in Cincinnati on Nov 17 in Mauricio Pochettino's last
       match as coach: Christian Pulisic scored with a bicycle kick in the 25th minute and
       Julian Hall added a second in the 43rd.
     RIFF: A bicycle kick as a farewell. The Valley is a soccer region, so who should coach
-      the U.S. next, and wait, don't tell me you want Messi.
+      the U.S. next, and do you want Messi?
     AP · Nov 17: https://apnews.com/article/usmnt-soccer-mauricio-pochettino-farewell-haiti-3fe3610a6d9a0d0fa1ef08fe56f03630
     U.S. Soccer recap: https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-cincinnati-ohio
-- [ACT 17] YouTube trending: Lil Baby's 'Aint Goin' holds #1; teasers for 'Twilight (But Better)' and '3 Body Problem' S2  [viral video]  [CONFIRM BEFORE AIR: Chart comes from a third-party tracker of YouTube's trending list; confirm on youtube.com/feed/trending.]
+- [ACT 9] YouTube trending: Lil Baby's 'Aint Goin' holds #1; teasers for 'Twilight (But Better)' and '3 Body Problem' S2  [viral video]  [CONFIRM BEFORE AIR: Chart comes from a third-party tracker of YouTube's trending list; confirm on youtube.com/feed/trending.]
     SUMMARY: On Nov 18 Lil Baby's 'Aint Goin' official video stayed #1 on YouTube's U.S.
       trending list all day; a 'Twilight (But Better)' teaser, a '3 Body Problem' season 2
       teaser, CaseOh and Markiplier videos also charted.
@@ -258,16 +246,23 @@ THE NATIONAL DESK (smaller; local leads)
     CONFIRM BEFORE AIR: Details of any repeal bill (verify)
     ABC: Democratic wave upends Ten Commandments battle in Texas classrooms: https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010
 
+WHAT'S HAPPENING IN TECH (sub-segment of block J, after the National Desk) [NO TECH ITEMS]
+  No Fast Company Daily issue from the last 48 hours and no tech-wire fallback were loaded.
+  (nothing loaded today)
+
+REMEMBERING OUR NEIGHBORS (read near the close, block L) · 0 obituaries from The Monitor on Legacy.com, 
+  (no obituaries loaded today; skip the read)
+
 WEATHER · McALLEN / RGV (National Weather Service BRO (api.weather.gov))
-  Thu Nov 19  << SHOW DAY Slight Chance Rain Showers, high 78F / low 61F, rain 23%, wind NNE 5 to 8 mph
-  Fri Nov 20  Mostly Sunny, high 80F / low 63F, rain 0%, wind ENE 6 mph
-  Sat Nov 21  Partly Sunny, high 84F / low 68F, rain 2%, wind SE 3 to 9 mph
-  Sun Nov 22  Partly Sunny then Chance Showers And Thunderstorms, high 83F / low 65F, rain 50%, wind ENE 3 to 7 mph
-  Mon Nov 23  Chance Rain Showers, high 75F / low 64F, rain 30%, wind NNE 9 mph
-  Tue Nov 24  Chance Rain Showers, high 74F / low 59F, rain 28%, wind N 8 mph
-  Wed Nov 25  Partly Sunny, high 69F / low --F, rain 10%, wind NNE 7 to 10 mph
+  Fri Nov 20  Mostly Sunny, high 79F / low 63F, rain 0%, wind NE 3 to 7 mph
+  Sat Nov 21  Mostly Sunny, high 85F / low 69F, rain 2%, wind SE 5 to 9 mph
+  Sun Nov 22  Partly Sunny then Chance Showers And Thunderstorms, high 83F / low 60F, rain 66%, wind NE 3 to 7 mph
+  Mon Nov 23  Chance Showers And Thunderstorms, high 70F / low 58F, rain 40%, wind N 6 to 10 mph
+  Tue Nov 24  Slight Chance Rain Showers, high 69F / low 55F, rain 19%, wind N 8 mph
+  Wed Nov 25  Mostly Sunny, high 66F / low 52F, rain 5%, wind N 9 mph
+  Thu Nov 26  Mostly Sunny, high 67F / low --F, rain 9%, wind ENE 7 mph
   Alerts: none active
-  Updated 2026-11-19T03:30:15+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
+  Updated 2026-11-20T02:45:13+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
   NWS Brownsville office: https://www.weather.gov/bro/
   API: https://api.weather.gov/gridpoints/BRO/49,19/forecast
 
@@ -443,4 +438,4 @@ What your kids might be saying at school this week, and one line on how to bring
 NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-18 22:01 CT.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-19 21:22 CT.

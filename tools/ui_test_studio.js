@@ -155,6 +155,75 @@ const file=process.argv[2];
   const p=await b.newPage(); await p.evaluateOnNewDocument(()=>{window.__iv=[];const si=window.setInterval;window.setInterval=function(f,d){window.__iv.push(d);return si.apply(this,arguments)}});
   await p.goto(base+rel,{waitUntil:'load'}); ok((await p.evaluate(()=>window.__iv)).includes(120000),'breaking.json poll runs every 120000 ms (intervals: '+JSON.stringify(await p.evaluate(()=>window.__iv))+')'); await p.close();
  }
+
+ // ---------- layout v6: phone scrolling, uniform tiles, full-width expanded sections, Trending News rename ----------
+ const SHOTS='/workspace/ditm-shots'; fs.mkdirSync(SHOTS,{recursive:true});
+ const IPHONE='Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1';
+ const delay=(ms)=>new Promise(r=>setTimeout(r,ms));
+ const uniform=(p)=>p.evaluate(()=>{const hs=[...document.querySelectorAll('details.sec>summary')].map(x=>x.getBoundingClientRect());const ws=hs.map(r=>r.width),hh=hs.map(r=>r.height);
+   return {n:hs.length,dh:Math.max(...hh)-Math.min(...hh),dw:Math.max(...ws)-Math.min(...ws),h:Math.round(hh[0])}});
+ for(const [w,h] of [[360,740],[390,844],[412,915],[430,932]]){
+  const p=await openHttp(w,h,IPHONE); await delay(500);
+  const r=await p.evaluate(()=>{const cs=getComputedStyle,de=document.documentElement,bd=document.body;
+    const pinned=[...document.querySelectorAll('body *')].filter(e=>{const c=cs(e);return (c.position==='sticky'||c.position==='fixed')&&c.display!=='none'&&e.id!=='toast'&&e.offsetHeight>0});
+    const tg=[...document.querySelectorAll('button,nav a,summary,.clock a,.btnlike')].filter(e=>e.offsetWidth>0&&e.offsetHeight>0&&!e.closest('details:not([open]) .body')&&!e.closest('.body'));
+    const small=tg.filter(e=>Math.min(e.getBoundingClientRect().width,e.getBoundingClientRect().height)<43.5).map(e=>(e.id||e.className||e.tagName)+':'+Math.round(e.getBoundingClientRect().width)+'x'+Math.round(e.getBoundingClientRect().height));
+    return {ovH:[cs(de).overflowY,cs(bd).overflowY],hh:[de.style.height||cs(de).height==='auto',cs(bd).height==='auto'||cs(bd).height===de.getBoundingClientRect().height+'px'],docH:de.scrollHeight,vh:innerHeight,pinned:pinned.map(e=>e.tagName+'#'+e.id+':'+e.offsetHeight),pinnedH:pinned.reduce((a,e)=>a+e.offsetHeight,0),sw:de.scrollWidth,iw:innerWidth,small,
+      hasMini:!!document.getElementById('minibar')&&document.getElementById('minibar').offsetHeight>0,time:cs(de).touchAction}});
+  ok(r.ovH.every(v=>v!=='hidden'&&v!=='clip'),`${w}x${h} html/body do not clip or lock vertical scrolling (${r.ovH})`);
+  ok(r.docH>r.vh*1.5,`${w}x${h} document is taller than the screen (${r.docH} vs ${r.vh}) so it must scroll`);
+  ok(r.pinnedH<=r.vh*0.16,`${w}x${h} pinned (sticky/fixed) chrome is short: ${r.pinnedH}px of ${r.vh}px (${r.pinned})`);
+  ok(r.sw<=r.iw,`${w}x${h} no horizontal overflow (${r.sw}<=${r.iw})`);
+  ok(!/none/.test(r.time),`${w}x${h} touch-action allows scrolling (${r.time})`);
+  ok(r.small.length===0,`${w}x${h} tap targets >= 44px ${r.small.slice(0,6)}`);
+  const drag=async(y0,dy)=>{await p.touchscreen.touchStart(Math.round(w/2),y0);for(let i=1;i<=10;i++)await p.touchscreen.touchMove(Math.round(w/2),y0+Math.round(dy*i/10));await p.touchscreen.touchEnd();await delay(600)};
+  await drag(Math.round(h*0.7),-Math.round(h*0.3));
+  const y1=await p.evaluate(()=>scrollY); ok(y1>100,`${w}x${h} real touch drag scrolls the document (scrollY ${Math.round(y1)})`);
+  await drag(Math.round(h*0.4),Math.round(h*0.15));
+  ok(await p.evaluate((y)=>scrollY<y,y1),`${w}x${h} dragging back scrolls up`);
+  await p.evaluate(()=>scrollTo(0,0)); await delay(100);
+  const u=await uniform(p); ok(u.dh<=2&&u.dw<=2,`${w}x${h} all ${u.n} collapsed section headers are the same size (height diff ${u.dh.toFixed(1)}px, width diff ${u.dw.toFixed(1)}px, ${u.h}px tall)`);
+  const sw0=await p.evaluate(()=>document.querySelector('.clock').scrollWidth>document.querySelector('.clock').clientWidth); ok(sw0,`${w}x${h} A-L block bar swipes sideways`);
+  await p.click('#expand'); await delay(300);
+  const e=await p.evaluate(()=>({sw:document.documentElement.scrollWidth,iw:innerWidth,cols:new Set([...document.querySelectorAll('#headlines .sortbox>.item')].map(x=>Math.round(x.getBoundingClientRect().left))).size}));
+  ok(e.sw<=e.iw,`${w}x${h} no horizontal overflow with everything expanded (${e.sw}<=${e.iw})`); ok(e.cols===1,`${w}x${h} phone shows one column of story cards (${e.cols})`);
+  if(w===390){await p.click('#collapse');await delay(200);await p.screenshot({path:SHOTS+'/phone-390x844-collapsed.png'});
+    await p.evaluate(()=>{const d=document.getElementById('headlines');d.open=true;scrollTo(0,d.getBoundingClientRect().top+scrollY-50)});await delay(300);await p.screenshot({path:SHOTS+'/phone-390x844-headlines-open.png'});}
+  await p.close();
+ }
+ for(const [w,h,ua,name] of [[768,1024,IPAD,'ipad-portrait-768x1024'],[820,1180,IPAD,'ipad-portrait-820x1180'],[1024,768,IPAD,'ipad-landscape-1024x768'],[1180,820,IPAD,'ipad-landscape-1180x820'],[1280,800,null,'macbook-1280x800'],[1440,900,null,'macbook-1440x900']]){
+  const p=await openHttp(w,h,ua); await delay(500);
+  const u=await uniform(p); ok(u.dh<=2&&u.dw<=2,`${w}x${h} all ${u.n} collapsed section headers are the same size (height diff ${u.dh.toFixed(1)}px, width diff ${u.dw.toFixed(1)}px)`);
+  const cols=await p.evaluate(()=>{const m=document.querySelector('main');return new Set([...document.querySelectorAll('details.sec')].map(x=>Math.round(x.getBoundingClientRect().left))).size});
+  await p.screenshot({path:`${SHOTS}/${name}-collapsed.png`});
+  const sticky=await p.evaluate(()=>{const h=document.querySelector('header'),m=document.getElementById('minibar');return (getComputedStyle(h).position==='sticky'?h.offsetHeight:0)+(m&&getComputedStyle(m).display!=='none'?m.offsetHeight:0)});
+  ok(sticky<=Math.max(190,h*0.16)||w<1000&&sticky<=60,`${w}x${h} pinned header is compact (${sticky}px)`);
+  for(const id of ['headlines','trending','national','memes','rundown']){
+    await p.evaluate((id)=>{[...document.querySelectorAll('details.sec')].forEach(d=>d.open=false);document.getElementById(id).open=true},id); await delay(150);
+    const g=await p.evaluate((id)=>{const d=document.getElementById(id),m=document.querySelector('main'),cs=getComputedStyle(m),mr=m.getBoundingClientRect(),dr=d.getBoundingClientRect();
+      const inner=mr.width-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);
+      const L=new Set([...d.querySelectorAll('.body .sortbox>.item,.body .lvgrid>.lvl,.body .rdgrid>details')].map(x=>Math.round(x.getBoundingClientRect().left)));
+      return {frac:dr.width/inner,cols:L.size,sw:document.documentElement.scrollWidth,iw:innerWidth}},id);
+    ok(g.frac>=0.98,`${w}x${h} expanded ${id} fills the grid width (${(g.frac*100).toFixed(0)}%)`);
+    ok(g.sw<=g.iw,`${w}x${h} expanded ${id} has no horizontal overflow`);
+    if(id==='headlines'){ const want=w>=1280?3:w>=700?2:1; ok(g.cols>=want,`${w}x${h} Top Headlines story cards flow in ${g.cols} columns (>= ${want})`); }
+  }
+  await p.evaluate(()=>{[...document.querySelectorAll('details.sec')].forEach(d=>d.open=false);const d=document.getElementById('headlines');d.open=true;scrollTo(0,d.getBoundingClientRect().top+scrollY-(document.querySelector('header').offsetHeight>0&&getComputedStyle(document.querySelector('header')).position==='sticky'?document.querySelector('header').offsetHeight+8:60))});
+  await delay(300); await p.screenshot({path:`${SHOTS}/${name}-headlines-open.png`}); await p.close();
+ }
+ {
+  const p=await openHttp(1440,900,null); await delay(400);
+  const txt=await p.evaluate(()=>document.documentElement.textContent);
+  ok(!/wait,?\s*don['’]t tell me/i.test(txt),'"Wait, Don\'t Tell Me" does not appear anywhere on the studio page');
+  const tr=await p.evaluate(()=>{const e=document.getElementById('trending');return {t:e.querySelector('.tn').textContent,sub:e.querySelector('summary small').textContent,riff:/riff material/i.test(e.querySelector('summary').textContent)}});
+  ok(tr.t==='Trending News'&&/trending around the nation/i.test(tr.sub)&&!tr.riff,`Trending section is "${tr.t}" / "${tr.sub}"`);
+  await p.close();
+  for(const [w,h,name] of [[390,844,'phone'],[820,1180,'ipad'],[1180,820,'ipad-land'],[1440,900,'macbook']]){
+    const q=await openHttp(w,h,w<500?IPHONE:w<1300?IPAD:null); await delay(300);
+    await q.evaluate(()=>{const d=document.getElementById('headlines');d.open=true});await delay(200);
+    await q.screenshot({path:`${SHOTS}/headlines-open-${w}x${h}-full.png`,fullPage:true}); await q.close();
+  }
+ }
  srv.close();
  console.log('FAILS',JSON.stringify(fails));
  console.log('ERRORS',JSON.stringify(errs));

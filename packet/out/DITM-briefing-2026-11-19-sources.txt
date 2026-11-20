@@ -2,184 +2,184 @@ Sources for DITM-briefing-2026-11-19
 
 
 Top headlines: RGV
-  - Hidalgo County confirms its first New World screwworm case (a calf); quarantine zone covers parts of 4 counties: https://www.krgv.com/news/hidalgo-county-confirms-first-new-world-screwworm-case-in-calf/  [ok]
-  - SpaceX got its TCEQ air permit (35 gas turbines, 750 MW) for the Starbase data center a day before Cameron County said no to a tax-break hearing: https://myrgv.com/local-news/2026/11/18/spacex-received-data-center-permit-a-day-before-tax-break-rejection/  [ok]
-  - La Joya ISD uses under 60% of its space, needs $160M+ in repairs and may close more campuses after losing ~8,000 students in a decade: https://www.krgv.com/news/plummeting-enrollment-leaves-la-joya-isd-facing-160m-maintenance-bill-and-possible-closures/  [ok]
-  - McAllen city manager: $17.5B in retail sales (2023, Dallas Fed), ~28% from Mexican shoppers; ~$99M sales tax through Sept 2026: https://texasborderbusiness.com/mcallen-retail-sales-reach-17-5-billion-as-sales-tax-revenues-continue-to-climb/  [ok]
-  - Cameron County Elections Administrator Remi Garza resigns for a Secretary of State job; last day Dec. 14: https://www.krgv.com/news/cameron-county-election-commission-to-appoint-new-administrator-following-garza-s-resignation/  [ok]
-  - Cameron County ballots pulled for Texas's first statewide risk-limiting audit: U.S. Senate, Supreme Court chief justice, county clerk: https://www.krgv.com/news/cameron-county-elections-department-to-review-three-races-as-part-of-first-statewide-audit/  [ok]
-  - Congressman-elect Bobby Pulido hosts a free Friends' Thanksgiving Celebration Mon Nov 23, 11 AM-2 PM, Bert Ogden Arena: https://tejanonation.net/2026/11/18/bobby-pulido-friends-thanksgiving-celebration-edinburg-2026/  [ok]
-  - Weslaco family waits on appeals court in wrongful-death suit over 17-year-old who drank energy drinks; arguments heard Nov 18: https://www.krgv.com/news/weslaco-family-waits-as-appeals-court-reviews-wrongful-death-lawsuit-against-energy-drink-distributor/  [ok]
-  - Edinburg CISD asks families for input after losing ~2,000 students since the pandemic: https://www.krgv.com/news/edinburg-cisd-launches-survey-seeking-input-on-improvement/  [ok]
-  - State Sen. Chuy Hinojosa asks TxDMV to rescind rule requiring proof of legal status to register a vehicle (board meets Dec. 10): https://myrgv.com/local-news/2026/11/18/texas-senator-calls-for-dmv-to-rescind-new-vehicle-registration-legal-status-rule/  [ok]
-  - Pedestrian study ordered for the University Dr. crosswalk near UTRGV after Rep. Terry Canales raised safety concerns: https://www.krgv.com/news/safety-concerns-prompt-pedestrian-study-of-busy-crosswalk-near-utrgv-in-edinburg/  [ok]
-  - Alton starts its first-ever 20-year comprehensive plan ($250K FEMA grant via the GLO); wants resident input: https://www.krgv.com/news/city-of-alton-wants-residents-to-help-shape-first-ever-comprehensive-plan/  [ok]
-  - Mission councilwoman Jessica Ortega sworn in for a fourth term: https://myrgv.com/local-news/2026/11/18/jessica-ortega-sworn-in-after-voters-elect-her-to-fourth-term-with-mission/  [ok]
-  - Mission bans loud dog barking 10 PM-6 AM, caps hens at four, bans roosters: https://dailymcallen.com/local-news/editions/11-19-2026  [ok]
-  - Von Miller visits McAllen ahead of the Dec. 5 Holiday Parade ('Wild Christmas'): https://texasborderbusiness.com/nfl-star-von-miller-receives-warm-welcome-in-mcallen-ahead-of-holiday-parade/  [ok]
-  - Head football coaches at Edinburg North and Port Isabel resign: https://www.valleycentral.com/local-sports/edinburg-north-port-isabel-head-football-coaches-resign/  [blocked-by-site]
-  - Two charged with murder in Brownsville homicide investigation that began with a crash: https://www.krgv.com/news/two-suspects-charged-with-murder-after-brownsville-crash-leads-to-homicide-investigation/  [ok]
-  - Mission mayor and council races head to Dec. 12 runoffs: https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/  [ok]
-  - Texas A&M McAllen to build $50M health education building: https://dailymcallen.com/local-news/editions/11-18-2026  [ok]
-  - McAllen Food Truck Park closure delayed to Jan. 14, 2027: https://dailymcallen.com/local-news/editions/11-17-2026  [ok]
+  - Hidalgo County confirms its first New World screwworm case (a calf); quarantine zone covers parts of 4 counties: https://www.krgv.com/news/hidalgo-county-confirms-first-new-world-screwworm-case-in-calf/
+  - SpaceX got its TCEQ air permit (35 gas turbines, 750 MW) for the Starbase data center a day before Cameron County said no to a tax-break hearing: https://myrgv.com/local-news/2026/11/18/spacex-received-data-center-permit-a-day-before-tax-break-rejection/
+  - La Joya ISD uses under 60% of its space, needs $160M+ in repairs and may close more campuses after losing ~8,000 students in a decade: https://www.krgv.com/news/plummeting-enrollment-leaves-la-joya-isd-facing-160m-maintenance-bill-and-possible-closures/
+  - McAllen city manager: $17.5B in retail sales (2023, Dallas Fed), ~28% from Mexican shoppers; ~$99M sales tax through Sept 2026: https://texasborderbusiness.com/mcallen-retail-sales-reach-17-5-billion-as-sales-tax-revenues-continue-to-climb/
+  - Cameron County Elections Administrator Remi Garza resigns for a Secretary of State job; last day Dec. 14: https://www.krgv.com/news/cameron-county-election-commission-to-appoint-new-administrator-following-garza-s-resignation/
+  - Cameron County ballots pulled for Texas's first statewide risk-limiting audit: U.S. Senate, Supreme Court chief justice, county clerk: https://www.krgv.com/news/cameron-county-elections-department-to-review-three-races-as-part-of-first-statewide-audit/
+  - Congressman-elect Bobby Pulido hosts a free Friends' Thanksgiving Celebration Mon Nov 23, 11 AM-2 PM, Bert Ogden Arena: https://tejanonation.net/2026/11/18/bobby-pulido-friends-thanksgiving-celebration-edinburg-2026/
+  - Weslaco family waits on appeals court in wrongful-death suit over 17-year-old who drank energy drinks; arguments heard Nov 18: https://www.krgv.com/news/weslaco-family-waits-as-appeals-court-reviews-wrongful-death-lawsuit-against-energy-drink-distributor/
+  - Edinburg CISD asks families for input after losing ~2,000 students since the pandemic: https://www.krgv.com/news/edinburg-cisd-launches-survey-seeking-input-on-improvement/
+  - State Sen. Chuy Hinojosa asks TxDMV to rescind rule requiring proof of legal status to register a vehicle (board meets Dec. 10): https://myrgv.com/local-news/2026/11/18/texas-senator-calls-for-dmv-to-rescind-new-vehicle-registration-legal-status-rule/
+  - Pedestrian study ordered for the University Dr. crosswalk near UTRGV after Rep. Terry Canales raised safety concerns: https://www.krgv.com/news/safety-concerns-prompt-pedestrian-study-of-busy-crosswalk-near-utrgv-in-edinburg/
+  - Alton starts its first-ever 20-year comprehensive plan ($250K FEMA grant via the GLO); wants resident input: https://www.krgv.com/news/city-of-alton-wants-residents-to-help-shape-first-ever-comprehensive-plan/
+  - Mission councilwoman Jessica Ortega sworn in for a fourth term: https://myrgv.com/local-news/2026/11/18/jessica-ortega-sworn-in-after-voters-elect-her-to-fourth-term-with-mission/
+  - Mission bans loud dog barking 10 PM-6 AM, caps hens at four, bans roosters: https://dailymcallen.com/local-news/editions/11-19-2026
+  - Von Miller visits McAllen ahead of the Dec. 5 Holiday Parade ('Wild Christmas'): https://texasborderbusiness.com/nfl-star-von-miller-receives-warm-welcome-in-mcallen-ahead-of-holiday-parade/
+  - Head football coaches at Edinburg North and Port Isabel resign: https://www.valleycentral.com/local-sports/edinburg-north-port-isabel-head-football-coaches-resign/
+  - Two charged with murder in Brownsville homicide investigation that began with a crash: https://www.krgv.com/news/two-suspects-charged-with-murder-after-brownsville-crash-leads-to-homicide-investigation/
+  - Mission mayor and council races head to Dec. 12 runoffs: https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/
+  - Texas A&M McAllen to build $50M health education building: https://dailymcallen.com/local-news/editions/11-18-2026
+  - McAllen Food Truck Park closure delayed to Jan. 14, 2027: https://dailymcallen.com/local-news/editions/11-17-2026
 
 Top headlines: Texas
-  - Texas public schools lost ~135,000 students this year, the largest one-year drop in state history (TEA): https://communityimpact.com/central-austin/education/texas-public-schools-lost-135k-students-this-school-year-largest-decline-in-state-history/  [ok]
-  - Tesla weighs a $3.1B polysilicon plant near Robstown (515 jobs by 2032) and asks Tuloso-Midway ISD for a JETI tax break: https://www.kiiitv.com/article/news/local/tesla-plans-31-billion-solar-materials-plant-near-robstown/503-85e31b2e-ab9d-4e9b-b87b-9731c391f939  [ok]
-  - Gov.-elect Gina Hinojosa says she talked border security with Trump; told him Big Bend residents prefer electronic monitoring to a wall: https://www.texastribune.org/2026/11/18/gina-hinojosa-texas-governor-elect-interview/  [ok]
-  - Sen. John Cornyn blocks Trump's late pick (Elliot Gaiser) for a North Texas federal judgeship: not a Texan, not vetted: https://www.texastribune.org/2026/11/18/texas-john-cornyn-trump-judge-gaiser-blocked/  [ok]
-  - How Texas Republicans' 2025 congressional gerrymander fell short (incl. Cuellar's Laredo race): https://www.texastribune.org/2026/11/19/texas-redistricting-2026-midterms-gop-congressional-map/  [ok]
-  - Democrats' statewide sweep reshapes Texas's high courts: https://myrgv.com/wire/2026/11/18/republicans-spent-years-remaking-texas-courts-in-their-image-voters-unraveled-it-in-one-election/  [ok]
+  - Texas public schools lost ~135,000 students this year, the largest one-year drop in state history (TEA): https://communityimpact.com/central-austin/education/texas-public-schools-lost-135k-students-this-school-year-largest-decline-in-state-history/
+  - Tesla weighs a $3.1B polysilicon plant near Robstown (515 jobs by 2032) and asks Tuloso-Midway ISD for a JETI tax break: https://www.kiiitv.com/article/news/local/tesla-plans-31-billion-solar-materials-plant-near-robstown/503-85e31b2e-ab9d-4e9b-b87b-9731c391f939
+  - Gov.-elect Gina Hinojosa says she talked border security with Trump; told him Big Bend residents prefer electronic monitoring to a wall: https://www.texastribune.org/2026/11/18/gina-hinojosa-texas-governor-elect-interview/
+  - Sen. John Cornyn blocks Trump's late pick (Elliot Gaiser) for a North Texas federal judgeship: not a Texan, not vetted: https://www.texastribune.org/2026/11/18/texas-john-cornyn-trump-judge-gaiser-blocked/
+  - How Texas Republicans' 2025 congressional gerrymander fell short (incl. Cuellar's Laredo race): https://www.texastribune.org/2026/11/19/texas-redistricting-2026-midterms-gop-congressional-map/
+  - Democrats' statewide sweep reshapes Texas's high courts: https://myrgv.com/wire/2026/11/18/republicans-spent-years-remaking-texas-courts-in-their-image-voters-unraveled-it-in-one-election/
 
 National Desk
-  - NPR: Trump, Xi and Putin meet: https://www.npr.org/2026/11/18/nx-s1-6040432/trump-xi-and-putin-shenzhen-china-russia-usa  [ok]
-  - CNA: talks with Ukraine, nuclear arms on agenda: https://www.channelnewsasia.com/east-asia/trump-xi-putin-trilateral-talks-apec-shenzhen-6563591  [ok]
-  - NBC/AP: Iran widens Gulf attacks: https://www.nbcnews.com/world/iran/iran-widens-gulf-attacks-targeting-us-air-base-kuwait-sites-bahrain-rcna610128  [ok]
-  - BBC: Kuwait repels first attack in two months: https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o  [ok]
-  - AP: allies push to avert all-out war: https://apnews.com/article/iran-us-kuwait-gulf-attacks-bahrain-b1f0b530cffe951e6fcc1e27b2e1af94  [blocked-by-site]
-  - PBS/AP: Democrats flipped 9 Senate seats: https://www.pbs.org/newshour/politics/democrats-flipped-9-us-senate-seats-the-most-in-almost-70-years  [ok]
-  - NYT: House Dems prepare Trump investigations: https://www.nytimes.com/2026/11/18/us/politics/house-democrats-trump-investigation.html  [blocked-by-site]
-  - BBC: Anthropic raises $81bn: https://www.bbc.com/news/articles/c6742m39xgzxo  [ok]
-  - FAA: Nationwide Ground Stop Q&A: https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers  [ok]
-  - ABC: FAA head says 'blame me': https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960  [ok]
-  - ValleyCentral: Valley airports issue advisories: https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/  [ok]
-  - KRGV: Brownsville airport after ground stop: https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/  [ok]
+  - NPR: Trump, Xi and Putin meet: https://www.npr.org/2026/11/18/nx-s1-6040432/trump-xi-and-putin-shenzhen-china-russia-usa
+  - CNA: talks with Ukraine, nuclear arms on agenda: https://www.channelnewsasia.com/east-asia/trump-xi-putin-trilateral-talks-apec-shenzhen-6563591
+  - NBC/AP: Iran widens Gulf attacks: https://www.nbcnews.com/world/iran/iran-widens-gulf-attacks-targeting-us-air-base-kuwait-sites-bahrain-rcna610128
+  - BBC: Kuwait repels first attack in two months: https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o
+  - AP: allies push to avert all-out war: https://apnews.com/article/iran-us-kuwait-gulf-attacks-bahrain-b1f0b530cffe951e6fcc1e27b2e1af94
+  - PBS/AP: Democrats flipped 9 Senate seats: https://www.pbs.org/newshour/politics/democrats-flipped-9-us-senate-seats-the-most-in-almost-70-years
+  - NYT: House Dems prepare Trump investigations: https://www.nytimes.com/2026/11/18/us/politics/house-democrats-trump-investigation.html
+  - BBC: Anthropic raises $81bn: https://www.bbc.com/news/articles/c6742m39xgzxo
+  - FAA: Nationwide Ground Stop Q&A: https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers
+  - ABC: FAA head says 'blame me': https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960
+  - ValleyCentral: Valley airports issue advisories: https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/
+  - KRGV: Brownsville airport after ground stop: https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/
 
 Weather
-  - NWS forecast page (McAllen): https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23  [ok]
-  - NWS Brownsville office: https://www.weather.gov/bro/  [ok]
-  - NWS API forecast (JSON): https://api.weather.gov/gridpoints/BRO/49,19/forecast  [ok]
+  - NWS forecast page (McAllen): https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
+  - NWS Brownsville office: https://www.weather.gov/bro/
+  - NWS API forecast (JSON): https://api.weather.gov/gridpoints/BRO/49,19/forecast
 
 High school sports
-  - PSJA North 64, Edinburg 10 (6A-II): https://rgvsports.com/rgv-football-playoff-schedule/  [ok]
-  - Harlingen 51, La Joya 50 (6A-I): https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/  [ok]
-  - CC Veterans 59, McAllen Memorial 23 (5A-I): https://dailymcallen.com/local-news/editions/11-14-2026  [ok]
-  - UTRGV falls 48-0 to No. 7 SFA in the home finale (UTRGV 5-6): https://gooddayedinburg.com/local-news/editions/11-15-2026  [ok]
+  - PSJA North 64, Edinburg 10 (6A-II): https://rgvsports.com/rgv-football-playoff-schedule/
+  - Harlingen 51, La Joya 50 (6A-I): https://rgvsports.com/mercedes-outlasts-mission-veterans-in-exciting-clash-bi-district-roundup/
+  - CC Veterans 59, McAllen Memorial 23 (5A-I): https://dailymcallen.com/local-news/editions/11-14-2026
+  - UTRGV falls 48-0 to No. 7 SFA in the home finale (UTRGV 5-6): https://gooddayedinburg.com/local-news/editions/11-15-2026
 
 NFL Week 10
-  - NFL.com scores, Week 10: https://www.nfl.com/schedules/2026/by-week/week-10  [ok]
-  - Burrow threw for 409 and Chase had 231 receiving yards in Cincinnati's 38-18 win over Pittsburgh: https://www.pro-football-reference.com/years/2026/week_10.htm  [blocked-by-site]
-  - Week 11: Colts at Texans Thu Nov 19; Titans at Cowboys Sun Nov 22; Bengals at Commanders Mon Nov 23: https://www.footballdb.com/games/index.html?yr=2026  [ok]
+  - NFL.com scores, Week 10: https://www.nfl.com/schedules/2026/by-week/week-10
+  - Burrow threw for 409 and Chase had 231 receiving yards in Cincinnati's 38-18 win over Pittsburgh: https://www.pro-football-reference.com/years/2026/week_10.htm
+  - Week 11: Colts at Texans Thu Nov 19; Titans at Cowboys Sun Nov 22; Bengals at Commanders Mon Nov 23: https://www.footballdb.com/games/index.html?yr=2026
 
 NBA
-  - Basketball-Reference: Nov 17 scores: https://www.basketball-reference.com/boxscores/  [ok]
-  - Lakers (13-2) have won nine straight; Quentin Grimes scored 47 in the OT win over Charlotte: https://buzzerbeaternews.com/news/nba-scores-last-night-2026-11-17/  [ok]
-  - Spurs are 12-3 despite the loss to Detroit; Magic snapped Boston's six-game win streak Monday: https://www.nba.com/news/starting-5-november-17-2026  [ok]
-  - Texas teams: Rockets lost at Miami 128-110 (Nov 16); Mavericks lost at Boston 131-94 (Nov 15): https://statsnext.com/nba/games/2026-11  [ok]
+  - Basketball-Reference: Nov 17 scores: https://www.basketball-reference.com/boxscores/
+  - Lakers (13-2) have won nine straight; Quentin Grimes scored 47 in the OT win over Charlotte: https://buzzerbeaternews.com/news/nba-scores-last-night-2026-11-17/
+  - Spurs are 12-3 despite the loss to Detroit; Magic snapped Boston's six-game win streak Monday: https://www.nba.com/news/starting-5-november-17-2026
+  - Texas teams: Rockets lost at Miami 128-110 (Nov 16); Mavericks lost at Boston 131-94 (Nov 15): https://statsnext.com/nba/games/2026-11
 
 MLB: OFFSEASON (no scores)
-  - Skubal sweepstakes: Mets, Blue Jays, Dodgers and Padres have met or are set to meet; a deal is expected before the CBA expires Dec. 1 (11:59 PM ET): https://www.mlb.com/news/tarik-skubal-rumors-november-17-free-agent-update  [ok]
-  - Twins agree to 2 years, $55M with Sonny Gray; White Sox land Dustin May (3 yrs, ~$52.5M): https://www.espn.com/mlb/story/_/id/50328768/free-agency-tracker-offseason-trades-moves-2026-2027  [ok]
-  - Mariners get Maikel Garcia from Royals in a six-player trade; Astros are gauging interest in Christian Walker: https://www.mlb.com/news/mlb-rumors-and-2026-27-free-agent-news-november-18  [ok]
+  - Skubal sweepstakes: Mets, Blue Jays, Dodgers and Padres have met or are set to meet; a deal is expected before the CBA expires Dec. 1 (11:59 PM ET): https://www.mlb.com/news/tarik-skubal-rumors-november-17-free-agent-update
+  - Twins agree to 2 years, $55M with Sonny Gray; White Sox land Dustin May (3 yrs, ~$52.5M): https://www.espn.com/mlb/story/_/id/50328768/free-agency-tracker-offseason-trades-moves-2026-2027
+  - Mariners get Maikel Garcia from Royals in a six-player trade; Astros are gauging interest in Christian Walker: https://www.mlb.com/news/mlb-rumors-and-2026-27-free-agent-news-november-18
 
 Meme of the Week: Elementary
-  - RBLXSTAT: Roblox weekly report Nov 9-15: https://rblxstat.com/blog/roblox-weekly-report-2026-11-15  [ok]
-  - SafeScreens: Roblox parent's guide: https://safescreens.us/guides/gaming/roblox-experiences  [ok]
-  - RoStats: Top Roblox games Nov 2026: https://rostats.io/charts/2026-11  [ok]
-  - Reader's Digest: Gen Alpha slang: https://www.rd.com/article/gen-alpha-slang/  [ok]
-  - MadeForMums: parents' guide to slang: https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/  [ok]
+  - RBLXSTAT: Roblox weekly report Nov 9-15: https://rblxstat.com/blog/roblox-weekly-report-2026-11-15
+  - SafeScreens: Roblox parent's guide: https://safescreens.us/guides/gaming/roblox-experiences
+  - RoStats: Top Roblox games Nov 2026: https://rostats.io/charts/2026-11
+  - Reader's Digest: Gen Alpha slang: https://www.rd.com/article/gen-alpha-slang/
+  - MadeForMums: parents' guide to slang: https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/
 
 Meme of the Week: Middle School
-  - Know Your Meme: Talk To Me Doja: https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained  [ok]
-  - Know Your Meme: Pennywide: https://trending.knowyourmeme.com/editorials/guides/what-is-the-pennywide-meme-the-viral-pennywise-house-video-and-memes-explained  [ok]
+  - Know Your Meme: Talk To Me Doja: https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained
+  - Know Your Meme: Pennywide: https://trending.knowyourmeme.com/editorials/guides/what-is-the-pennywide-meme-the-viral-pennywise-house-video-and-memes-explained
 
 Meme of the Week: High School
-  - ABC7: Irvine police warning (Nov 12): https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/  [ok]
-  - WBBH: Cape Coral incident (Nov 16): https://www.gulfcoastnewsnow.com/article/video-door-kick-challenge-cape-coral-florida/74444521  [ok]
-  - KOBI: Talent, Oregon (Nov 12): https://kobi5.com/news/door-kicking-trend-is-growing-locally-five-incidents-reported-in-talent-319588/  [ok]
-  - MadeForMums: 45 Gen Alpha slang words: https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/  [ok]
-  - Reader's Digest: 24 Gen Alpha slang terms: https://www.rd.com/article/gen-alpha-slang/  [ok]
-  - Hello!: how to respond to bizarre slang: https://www.hellomagazine.com/healthandbeauty/mother-and-baby/878329/your-gen-alpha-child-increasingly-bizarre-slang-how-to-respond/  [ok]
-  - ABC News: parents and GTA 6: https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889  [ok]
-  - Independent: UK schools and GTA 6: https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html  [ok]
+  - ABC7: Irvine police warning (Nov 12): https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/
+  - WBBH: Cape Coral incident (Nov 16): https://www.gulfcoastnewsnow.com/article/video-door-kick-challenge-cape-coral-florida/74444521
+  - KOBI: Talent, Oregon (Nov 12): https://kobi5.com/news/door-kicking-trend-is-growing-locally-five-incidents-reported-in-talent-319588/
+  - MadeForMums: 45 Gen Alpha slang words: https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/
+  - Reader's Digest: 24 Gen Alpha slang terms: https://www.rd.com/article/gen-alpha-slang/
+  - Hello!: how to respond to bizarre slang: https://www.hellomagazine.com/healthandbeauty/mother-and-baby/878329/your-gen-alpha-child-increasingly-bizarre-slang-how-to-respond/
+  - ABC News: parents and GTA 6: https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889
+  - Independent: UK schools and GTA 6: https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html
 
-Trending: Wait, Don't Tell Me
-  - Grand Theft Auto VI is out after a 13-year wait: https://www.dw.com/en/grand-theft-auto-vi-launches-to-global-fanfare/a-79986461  [ok]
-  - AP: Heat go all in on 'Vice City' collab: https://apnews.com/article/grand-theft-auto-heat-vice-city-a19fc5a3279c95be5b4f6a7d831be199  [blocked-by-site]
-  - X: #1 US trend 'GTA 6': https://x.com/search?q=GTA%206  [ok]
-  - Ella Langley sweeps the CMA Awards with 'Choosin' Texas': https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/  [ok]
-  - USA Today: full winners list: https://www.usatoday.com/story/entertainment/music/2026/11/18/cma-awards-2026-winners-list/92853447007/  [unreachable]
-  - Billboard: winners, updating live: https://www.billboard.com/music/awards/cma-2026-winners-list-1236385046/  [ok]
-  - Instagram now lets you edit a Story after posting (15-minute window): https://9to5mac.com/2026/11/18/instagram-finally-lets-users-edit-stories-after-publishing-but-theres-a-catch/  [ok]
-  - Cowboys hand defensive play-calling to Mike Pettine: https://www.profootballrumors.com/2026/11/mike-pettine-to-take-over-as-cowboys-defensive-play-caller  [ok]
-  - Musk: his record $446M midterm spending was 'pretty foolish': https://www.bbc.com/news/articles/cm9q8j2z3gg8o  [ok]
-  - Hila Klein addresses husband Ethan Klein's alleged affair: https://www.yahoo.com/entertainment/celebrity/articles/hila-klein-addresses-husband-ethan-060440507.html  [ok]
-  - Giannis faces the Bucks for the first time as a Heat player: https://www.cbssports.com/nba/news/giannis-antetokounmpo-set-to-face-bucks-for-first-time-with-heat/  [ok]
-  - NBA.com box score (Heat vs Bucks): https://www.nba.com/bucks/game/0022600260-bucks-vs-heat-miami-fl-11-18-2026  [ok]
-  - GMA/Reuters: 'just another game': https://www.gmanetwork.com/news/sports/basketball/1009886/nba-giannis-antetokounmpo-downplays-emotions-as-heat-face-bucks/story/  [ok]
-  - YouTube trending: Lil Baby's 'Aint Goin' holds #1; teasers for 'Twilight (But Better)' and '3 Body Problem' S2: https://trendoday.com/youtube/2026/11/18  [ok]
+Trending News
+  - Grand Theft Auto VI is out after a 13-year wait: https://www.dw.com/en/grand-theft-auto-vi-launches-to-global-fanfare/a-79986461
+  - AP: Heat go all in on 'Vice City' collab: https://apnews.com/article/grand-theft-auto-heat-vice-city-a19fc5a3279c95be5b4f6a7d831be199
+  - X: #1 US trend 'GTA 6': https://x.com/search?q=GTA%206
+  - Ella Langley sweeps the CMA Awards with 'Choosin' Texas': https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/
+  - USA Today: full winners list: https://www.usatoday.com/story/entertainment/music/2026/11/18/cma-awards-2026-winners-list/92853447007/
+  - Billboard: winners, updating live: https://www.billboard.com/music/awards/cma-2026-winners-list-1236385046/
+  - Instagram now lets you edit a Story after posting (15-minute window): https://9to5mac.com/2026/11/18/instagram-finally-lets-users-edit-stories-after-publishing-but-theres-a-catch/
+  - Cowboys hand defensive play-calling to Mike Pettine: https://www.profootballrumors.com/2026/11/mike-pettine-to-take-over-as-cowboys-defensive-play-caller
+  - Musk: his record $446M midterm spending was 'pretty foolish': https://www.bbc.com/news/articles/cm9q8j2z3gg8o
+  - Hila Klein addresses husband Ethan Klein's alleged affair: https://www.yahoo.com/entertainment/celebrity/articles/hila-klein-addresses-husband-ethan-060440507.html
+  - Giannis faces the Bucks for the first time as a Heat player: https://www.cbssports.com/nba/news/giannis-antetokounmpo-set-to-face-bucks-for-first-time-with-heat/
+  - NBA.com box score (Heat vs Bucks): https://www.nba.com/bucks/game/0022600260-bucks-vs-heat-miami-fl-11-18-2026
+  - GMA/Reuters: 'just another game': https://www.gmanetwork.com/news/sports/basketball/1009886/nba-giannis-antetokounmpo-downplays-emotions-as-heat-face-bucks/story/
+  - YouTube trending: Lil Baby's 'Aint Goin' holds #1; teasers for 'Twilight (But Better)' and '3 Body Problem' S2: https://trendoday.com/youtube/2026/11/18
 
 Run of show: C
-  - MyRGV: commissioners reject SpaceX bid: https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/  [ok]
-  - KRGV: commissioners reject tax break: https://www.krgv.com/news/cameron-county-commissioners-reject-spacex-data-center-tax-break-request/  [ok]
-  - Politico: Texas issues air permit: https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758  [blocked-by-site]
-  - Spaceflight Now: Flight 15: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/  [ok]
-  - Daily McAllen: Starbase says nobody is buying Boca Chica Beach: https://dailymcallen.com/local-news/editions/11-14-2026  [ok]
-  - KRGV: Boca Chica Beach resolution: https://www.krgv.com/news/cameron-county-commissioners-pass-resolution-to-protect-public-access-to-boca-chica-beach/  [ok]
-  - r/RioGrandeValley: Speer Library march: https://www.reddit.com/r/RioGrandeValley/comments/1xjnz54/community_march_to_petition_for_the_speer/  [ok]
+  - MyRGV: commissioners reject SpaceX bid: https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/
+  - KRGV: commissioners reject tax break: https://www.krgv.com/news/cameron-county-commissioners-reject-spacex-data-center-tax-break-request/
+  - Politico: Texas issues air permit: https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758
+  - Spaceflight Now: Flight 15: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/
+  - Daily McAllen: Starbase says nobody is buying Boca Chica Beach: https://dailymcallen.com/local-news/editions/11-14-2026
+  - KRGV: Boca Chica Beach resolution: https://www.krgv.com/news/cameron-county-commissioners-pass-resolution-to-protect-public-access-to-boca-chica-beach/
+  - r/RioGrandeValley: Speer Library march: https://www.reddit.com/r/RioGrandeValley/comments/1xjnz54/community_march_to_petition_for_the_speer/
 
 Run of show: D
-  - Texas Tribune: Pulido beats De La Cruz: https://www.texastribune.org/2026/11/03/texas-bobby-pulido-monica-de-la-cruz-congress-district-15-elections-2026/  [ok]
-  - Ballotpedia: Bobby Pulido: https://ballotpedia.org/Bobby_Pulido  [ok]
-  - MyRGV: Mission races to runoff: https://myrgv.com/local-news/2026/11/04/not-over-yet-nearly-all-mission-races-heading-to-runoff-elections/  [ok]
-  - KRGV: Mission runoff Dec. 12: https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/  [ok]
-  - Hidalgo County runoff page: https://www.hidalgocounty.us/3526/December-12-2026-Local-Entities-Runoff-E  [ok]
-  - Politiquera: https://politiquera.com/  [ok]
+  - Texas Tribune: Pulido beats De La Cruz: https://www.texastribune.org/2026/11/03/texas-bobby-pulido-monica-de-la-cruz-congress-district-15-elections-2026/
+  - Ballotpedia: Bobby Pulido: https://ballotpedia.org/Bobby_Pulido
+  - MyRGV: Mission races to runoff: https://myrgv.com/local-news/2026/11/04/not-over-yet-nearly-all-mission-races-heading-to-runoff-elections/
+  - KRGV: Mission runoff Dec. 12: https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/
+  - Hidalgo County runoff page: https://www.hidalgocounty.us/3526/December-12-2026-Local-Entities-Runoff-E
+  - Politiquera: https://politiquera.com/
 
 Run of show: E
-  - Edinburg Advocate: Edinburg CISD seats new members: https://theedinburgadvocate.com/2026/11/edinburg-cisd-board-to-seat-new-members-approve-3-million-stop-loss-insurance-contract-at-special-meeting-tuesday-nov-17/  [ok]
-  - PSJA ISD: swears in trustees: https://www.psjaisd.us/school-news-details/~board/pharr-san-juan-alamo-isd-news/post/psja-isd-swears-in-three-trustees-elects-new-board-leadership  [ok]
+  - Edinburg Advocate: Edinburg CISD seats new members: https://theedinburgadvocate.com/2026/11/edinburg-cisd-board-to-seat-new-members-approve-3-million-stop-loss-insurance-contract-at-special-meeting-tuesday-nov-17/
+  - PSJA ISD: swears in trustees: https://www.psjaisd.us/school-news-details/~board/pharr-san-juan-alamo-isd-news/post/psja-isd-swears-in-three-trustees-elects-new-board-leadership
 
 Run of show: F
-  - ValleyCentral: Fallek wins District 5: https://www.valleycentral.com/valleycentrals-local-elections-hq/michael-fallek-officially-declared-winner-in-district-5-city-commission-race/  [blocked-by-site]
-  - MyRGV: Brownsville names Alan Guard: https://myrgv.com/featured/2026/06/17/brownsville-appoints-interim-city-manager-alan-guard-to-permanent-position/  [ok]
-  - MyRGV 2023: commission rezones park: https://myrgv.com/local-news/2023/07/25/despite-protest-mcallen-commission-rezones-park-for-austin-tech-company/  [ok]
-  - KRGV 2023: commissioners vote to rezone: https://www.krgv.com/news/city-of-mcallen-commissioners-vote-to-rezone-disc-golf-course/  [ok]
-  - Texas Border Business: Echo Hotel: https://texasborderbusiness.com/major-investment-in-echo-hotel-property-coming-to-edinburg/  [ok]
+  - ValleyCentral: Fallek wins District 5: https://www.valleycentral.com/valleycentrals-local-elections-hq/michael-fallek-officially-declared-winner-in-district-5-city-commission-race/
+  - MyRGV: Brownsville names Alan Guard: https://myrgv.com/featured/2026/06/17/brownsville-appoints-interim-city-manager-alan-guard-to-permanent-position/
+  - MyRGV 2023: commission rezones park: https://myrgv.com/local-news/2023/07/25/despite-protest-mcallen-commission-rezones-park-for-austin-tech-company/
+  - KRGV 2023: commissioners vote to rezone: https://www.krgv.com/news/city-of-mcallen-commissioners-vote-to-rezone-disc-golf-course/
+  - Texas Border Business: Echo Hotel: https://texasborderbusiness.com/major-investment-in-echo-hotel-property-coming-to-edinburg/
 
 Run of show: G
-  - Daily McAllen Nov 16: https://dailymcallen.com/local-news/editions/11-16-2026  [ok]
-  - Daily McAllen Nov 17: https://dailymcallen.com/local-news/editions/11-17-2026  [ok]
-  - Daily McAllen Nov 18: https://dailymcallen.com/local-news/editions/11-18-2026  [ok]
-  - The RGV News: Nov 17 brief: https://thergvnews.com/reviews/day/2026-11-17  [ok]
+  - Daily McAllen Nov 16: https://dailymcallen.com/local-news/editions/11-16-2026
+  - Daily McAllen Nov 17: https://dailymcallen.com/local-news/editions/11-17-2026
+  - Daily McAllen Nov 18: https://dailymcallen.com/local-news/editions/11-18-2026
+  - The RGV News: Nov 17 brief: https://thergvnews.com/reviews/day/2026-11-17
 
 Run of show: H
-  - ABC News: parents and GTA 6: https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889  [ok]
-  - Independent: UK schools and GTA 6: https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html  [ok]
-  - News4 San Antonio: fake Uvalde post: https://news4sanantonio.com/news/local/fake-instagram-account-claims-uvalde-schools-closed-for-gta-6-release  [ok]
-  - TEA: HB 1481 phone rule: https://tea.texas.gov/taa-letters/implementation-texas-house-bill-1481-student-use-personal-communication-devices-school  [ok]
-  - PSJA ISD AI guidebook: https://www.psjaisd.us/academics/psja-isd-ai-guidebook  [ok]
-  - FBI: sextortion: https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/sextortion  [ok]
-  - DHS: Know2Protect sextortion PDF: https://www.dhs.gov/sites/default/files/2026-08/26_0806_k2p_p2p-t2p-sextortion.pdf  [ok]
-  - NCMEC: Take It Down: https://takeitdown.ncmec.org/  [ok]
-  - NIMH: warning signs of suicide: https://www.nimh.nih.gov/health/publications/warning-signs-of-suicide  [ok]
-  - AAP HealthyChildren: when children and teens self-harm: https://www.healthychildren.org/English/health-issues/conditions/emotional-problems/Pages/when-children-and-teens-self-harm.aspx  [ok]
+  - ABC News: parents and GTA 6: https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889
+  - Independent: UK schools and GTA 6: https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html
+  - News4 San Antonio: fake Uvalde post: https://news4sanantonio.com/news/local/fake-instagram-account-claims-uvalde-schools-closed-for-gta-6-release
+  - TEA: HB 1481 phone rule: https://tea.texas.gov/taa-letters/implementation-texas-house-bill-1481-student-use-personal-communication-devices-school
+  - PSJA ISD AI guidebook: https://www.psjaisd.us/academics/psja-isd-ai-guidebook
+  - FBI: sextortion: https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/sextortion
+  - DHS: Know2Protect sextortion PDF: https://www.dhs.gov/sites/default/files/2026-08/26_0806_k2p_p2p-t2p-sextortion.pdf
+  - NCMEC: Take It Down: https://takeitdown.ncmec.org/
+  - NIMH: warning signs of suicide: https://www.nimh.nih.gov/health/publications/warning-signs-of-suicide
+  - AAP HealthyChildren: when children and teens self-harm: https://www.healthychildren.org/English/health-issues/conditions/emotional-problems/Pages/when-children-and-teens-self-harm.aspx
 
 Run of show: I
-  - Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border con: https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/  [ok]
+  - Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border con: https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/
 
 Run of show: J
-  - FAA: Nationwide Ground Stop Q&A: https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers  [ok]
-  - ABC: Mullin grilled, FAA head says 'blame me': https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960  [ok]
-  - House Homeland Security: Mullin written testimony (PDF): https://homeland.house.gov/wp-content/uploads/2026/11/2026-11-18-HRG-Testimony-Mullin.pdf  [ok]
-  - ValleyCentral: Valley airports issue advisories: https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/  [ok]
-  - KRGV: Brownsville airport after ground stop: https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/  [ok]
-  - YouTube: SNL 'Sister': https://www.youtube.com/watch?v=-X9dxL17t1k  [ok]
-  - YouTube: SNL 'CIA Meeting' cold open: https://www.youtube.com/watch?v=R_8UPhJNrZ4  [ok]
-  - EW: SNL recap: https://ew.com/snl-recap-john-mulaney-hosts-seventh-time-phoebe-bridgers-musical-guest-12253185  [ok]
-  - Boston.com: SNL recap: https://www.boston.com/culture/entertainment/2026/11/15/snl-recap-john-mulaney-2026/  [ok]
-  - Showbiz411: SNL ratings: https://www.showbiz411.com/2026/11/18/john-mulaney-phoebe-bridgers-snl-best-this-season-drops-back-to-season-average-ratings-down-20-from-last-weeks-high  [ok]
-  - Nvidia press release: CEO transition: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx  [ok]
-  - ABC: Ten Commandments in Texas classrooms: https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010  [ok]
-  - Fast Company Daily (Drew's email; the daily refresh pulls it): https://www.fastcompany.com/newsletters  [blocked-by-site]
+  - FAA: Nationwide Ground Stop Q&A: https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers
+  - ABC: Mullin grilled, FAA head says 'blame me': https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960
+  - House Homeland Security: Mullin written testimony (PDF): https://homeland.house.gov/wp-content/uploads/2026/11/2026-11-18-HRG-Testimony-Mullin.pdf
+  - ValleyCentral: Valley airports issue advisories: https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/
+  - KRGV: Brownsville airport after ground stop: https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/
+  - YouTube: SNL 'Sister': https://www.youtube.com/watch?v=-X9dxL17t1k
+  - YouTube: SNL 'CIA Meeting' cold open: https://www.youtube.com/watch?v=R_8UPhJNrZ4
+  - EW: SNL recap: https://ew.com/snl-recap-john-mulaney-hosts-seventh-time-phoebe-bridgers-musical-guest-12253185
+  - Boston.com: SNL recap: https://www.boston.com/culture/entertainment/2026/11/15/snl-recap-john-mulaney-2026/
+  - Showbiz411: SNL ratings: https://www.showbiz411.com/2026/11/18/john-mulaney-phoebe-bridgers-snl-best-this-season-drops-back-to-season-average-ratings-down-20-from-last-weeks-high
+  - Nvidia press release: CEO transition: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx
+  - ABC: Ten Commandments in Texas classrooms: https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010
+  - Fast Company Daily (Drew's email; the daily refresh pulls it): https://www.fastcompany.com/newsletters
 
 Run of show: L
-  - Know Your Meme: Talk To Me Doja: https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained  [ok]
-  - ABC7: Irvine PD on door kick challenge: https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/  [ok]
-  - Legacy.com: The Monitor obituaries, McAllen: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor  [blocked-by-site]
+  - Know Your Meme: Talk To Me Doja: https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained
+  - ABC7: Irvine PD on door kick challenge: https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/
+  - Legacy.com: The Monitor obituaries, McAllen: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor
 
 Remembering Our Neighbors
-  - Legacy.com: The Monitor obituaries, McAllen: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor  [blocked-by-site]
+  - Legacy.com: The Monitor obituaries, McAllen: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor
   - Francisco A. Rodriguez Gomez: https://www.legacy.com/us/obituaries/themonitor/name/francisco-gomez-obituary?id=63017922
   - Anna Maria Gonzales: https://www.legacy.com/us/obituaries/themonitor/name/anna-gonzales-obituary?id=63008804
   - Armando Carrera: https://www.legacy.com/us/obituaries/themonitor/name/armando-carrera-obituary?id=63008783

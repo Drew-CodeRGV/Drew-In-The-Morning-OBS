@@ -51,13 +51,13 @@
             "published": "2026-11-17T18:00:00+00:00"
           }
         ],
-        "score": 9,
+        "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.8 (34h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (57h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 2.8,
+          "recency": 0.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -81,13 +81,13 @@
             "published": "2026-11-17T18:00:00+00:00"
           }
         ],
-        "score": 9,
+        "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.8 (34h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (57h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 2.8,
+          "recency": 0.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -114,7 +114,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0 (130h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0 (153h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.0,
@@ -171,13 +171,13 @@
             "published": "2026-11-18T18:00:00+00:00"
           }
         ],
-        "score": 17,
+        "score": 9,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 17: 1 outlet 6 + recency 11.2 (10h old)",
+        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.9 (33h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 11.2,
+          "recency": 2.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -202,13 +202,13 @@
             "published": "2026-11-17T18:00:00+00:00"
           }
         ],
-        "score": 9,
+        "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.8 (34h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (57h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 2.8,
+          "recency": 0.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -232,13 +232,13 @@
             "published": "2026-11-17T18:00:00+00:00"
           }
         ],
-        "score": 9,
+        "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.8 (34h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (57h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 2.8,
+          "recency": 0.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -265,7 +265,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0 (106h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0 (129h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.0,
@@ -295,7 +295,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0 (106h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0 (129h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.0,
@@ -322,13 +322,13 @@
             "published": "2026-11-16T18:00:00+00:00"
           }
         ],
-        "score": 7,
+        "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (58h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.2 (81h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 0.7,
+          "recency": 0.2,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -352,13 +352,13 @@
             "published": "2026-11-17T18:00:00+00:00"
           }
         ],
-        "score": 9,
+        "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.8 (34h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (57h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 2.8,
+          "recency": 0.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -380,13 +380,13 @@
             "published": "2026-11-17T18:00:00+00:00"
           }
         ],
-        "score": 9,
+        "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.8 (34h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (57h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 2.8,
+          "recency": 0.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -408,13 +408,13 @@
             "published": "2026-11-17T18:00:00+00:00"
           }
         ],
-        "score": 9,
+        "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.8 (34h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.7 (57h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 2.8,
+          "recency": 0.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -762,92 +762,92 @@
     "lon": -98.23,
     "note": "McAllen / Rio Grande Valley; NWS Brownsville (BRO) forecast",
     "now": {
-      "tempF": 68,
+      "tempF": 70,
       "cond": "Clear",
       "icon": "sun",
-      "at": "2026-11-19T03:45:00+00:00",
+      "at": "2026-11-20T02:45:00+00:00",
       "source": "KMFE observation"
     },
     "office": "BRO",
     "city": "McAllen",
-    "updated": "2026-11-19T03:30:15+00:00",
+    "updated": "2026-11-20T02:45:13+00:00",
     "days": [
-      {
-        "date": "2026-11-19",
-        "label": "Thu",
-        "dateLabel": "Nov 19",
-        "hi": 78,
-        "lo": 61,
-        "short": "Slight Chance Rain Showers",
-        "icon": "rain",
-        "pop": 23,
-        "wind": "NNE 5 to 8 mph"
-      },
       {
         "date": "2026-11-20",
         "label": "Fri",
         "dateLabel": "Nov 20",
-        "hi": 80,
+        "hi": 79,
         "lo": 63,
         "short": "Mostly Sunny",
         "icon": "partly",
         "pop": 0,
-        "wind": "ENE 6 mph"
+        "wind": "NE 3 to 7 mph"
       },
       {
         "date": "2026-11-21",
         "label": "Sat",
         "dateLabel": "Nov 21",
-        "hi": 84,
-        "lo": 68,
-        "short": "Partly Sunny",
+        "hi": 85,
+        "lo": 69,
+        "short": "Mostly Sunny",
         "icon": "partly",
         "pop": 2,
-        "wind": "SE 3 to 9 mph"
+        "wind": "SE 5 to 9 mph"
       },
       {
         "date": "2026-11-22",
         "label": "Sun",
         "dateLabel": "Nov 22",
         "hi": 83,
-        "lo": 65,
+        "lo": 60,
         "short": "Partly Sunny then Chance Showers And Thunderstorms",
         "icon": "storm",
-        "pop": 50,
-        "wind": "ENE 3 to 7 mph"
+        "pop": 66,
+        "wind": "NE 3 to 7 mph"
       },
       {
         "date": "2026-11-23",
         "label": "Mon",
         "dateLabel": "Nov 23",
-        "hi": 75,
-        "lo": 64,
-        "short": "Chance Rain Showers",
-        "icon": "rain",
-        "pop": 30,
-        "wind": "NNE 9 mph"
+        "hi": 70,
+        "lo": 58,
+        "short": "Chance Showers And Thunderstorms",
+        "icon": "storm",
+        "pop": 40,
+        "wind": "N 6 to 10 mph"
       },
       {
         "date": "2026-11-24",
         "label": "Tue",
         "dateLabel": "Nov 24",
-        "hi": 74,
-        "lo": 59,
-        "short": "Chance Rain Showers",
+        "hi": 69,
+        "lo": 55,
+        "short": "Slight Chance Rain Showers",
         "icon": "rain",
-        "pop": 28,
+        "pop": 19,
         "wind": "N 8 mph"
       },
       {
         "date": "2026-11-25",
         "label": "Wed",
         "dateLabel": "Nov 25",
-        "hi": 69,
-        "lo": null,
-        "short": "Partly Sunny",
+        "hi": 66,
+        "lo": 52,
+        "short": "Mostly Sunny",
         "icon": "partly",
-        "pop": 10,
-        "wind": "NNE 7 to 10 mph"
+        "pop": 5,
+        "wind": "N 9 mph"
+      },
+      {
+        "date": "2026-11-26",
+        "label": "Thu",
+        "dateLabel": "Nov 26",
+        "hi": 67,
+        "lo": null,
+        "short": "Mostly Sunny",
+        "icon": "partly",
+        "pop": 9,
+        "wind": "ENE 7 mph"
       }
     ],
     "alerts": [],
@@ -1338,7 +1338,7 @@
       "title": "Ella Langley sweeps the CMA Awards with 'Choosin' Texas'",
       "category": "culture",
       "one_line": "At the 60th CMA Awards (Nov 18) Ella Langley won Single, Song and Music Video of the Year for 'Choosin' Texas'; Taylor Swift performed for the first time in 13 years and Lainey Wilson hosted.",
-      "suggested_angle": "Country's biggest night went to a song with Texas in the title. Wait, don't tell me who's spinning it most in the Valley, and does Lainey's 'Somewhere Over Laredo' count as a local song?",
+      "suggested_angle": "Country's biggest night went to a song with Texas in the title. Who's spinning it most in the Valley, and does Lainey's 'Somewhere Over Laredo' count as a local song?",
       "source_url": "https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/",
       "source": "Variety · Nov 18",
       "short": "CMAs: Ella Langley wins 3 for 'Choosin' Texas'; Swift performs",
@@ -1383,13 +1383,13 @@
           "published": "2026-11-18T18:00:00+00:00"
         }
       ],
-      "score": 29,
-      "label": "Trending",
+      "score": 21,
+      "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 29: 3 outlets 18 + recency 11.2 (10h old)",
+      "scoreWhy": "Score 21: 3 outlets 18 + recency 2.9 (33h old)",
       "scoreParts": {
         "outlets": 18,
-        "recency": 11.2,
+        "recency": 2.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1424,13 +1424,13 @@
           "published": "2026-11-18T18:00:00+00:00"
         }
       ],
-      "score": 17,
+      "score": 9,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 17: 1 outlet 6 + recency 11.2 (10h old)",
+      "scoreWhy": "Score 9: 1 outlet 6 + recency 2.9 (33h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 11.2,
+        "recency": 2.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1470,13 +1470,13 @@
           "published": "2026-11-18T18:00:00+00:00"
         }
       ],
-      "score": 17,
+      "score": 9,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 17: 1 outlet 6 + recency 11.2 (10h old)",
+      "scoreWhy": "Score 9: 1 outlet 6 + recency 2.9 (33h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 11.2,
+        "recency": 2.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1534,13 +1534,13 @@
           "published": "2026-11-18T18:00:00+00:00"
         }
       ],
-      "score": 29,
-      "label": "Trending",
+      "score": 21,
+      "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 29: 3 outlets 18 + recency 11.2 (10h old)",
+      "scoreWhy": "Score 21: 3 outlets 18 + recency 2.9 (33h old)",
       "scoreParts": {
         "outlets": 18,
-        "recency": 11.2,
+        "recency": 2.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1553,7 +1553,7 @@
       "title": "Bezos: Pattinson was picked as Bond just three days before the announcement",
       "category": "celebrity",
       "one_line": "Jeff Bezos said Robert Pattinson was chosen as the new James Bond on Fri Nov 13, after full-costume screen tests with five finalists; Amazon MGM announced it Mon Nov 16.",
-      "suggested_angle": "Batman to 007. Who's your Bond, and is it weird that the guy who owns Amazon made the call? Wait, don't tell me you picked Daniel Craig forever.",
+      "suggested_angle": "Batman to 007. Who's your Bond, and is it weird that the guy who owns Amazon made the call? Did you pick Daniel Craig forever?",
       "source_url": "https://apnews.com/article/james-bond-jeff-bezos-robert-pattinson-a90f280d9e4fed9c7fd72ab6a4851945",
       "source": "AP · Nov 18",
       "short": "Bezos: Pattinson picked as Bond 3 days before announcement",
@@ -1580,13 +1580,13 @@
           "published": "2026-11-18T18:00:00+00:00"
         }
       ],
-      "score": 17,
+      "score": 9,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 17: 1 outlet 6 + recency 11.2 (10h old)",
+      "scoreWhy": "Score 9: 1 outlet 6 + recency 2.9 (33h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 11.2,
+        "recency": 2.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1690,13 +1690,13 @@
           "published": "2026-11-17T18:00:00+00:00"
         }
       ],
-      "score": 15,
+      "score": 13,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 15: 2 outlets 12 + recency 2.8 (34h old)",
+      "scoreWhy": "Score 13: 2 outlets 12 + recency 0.7 (57h old)",
       "scoreParts": {
         "outlets": 12,
-        "recency": 2.8,
+        "recency": 0.7,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1709,7 +1709,7 @@
       "title": "Pulisic's bicycle kick sends Pochettino off with a 2-0 win",
       "category": "sports",
       "one_line": "The U.S. beat Haiti 2-0 in Cincinnati on Nov 17 in Mauricio Pochettino's last match as coach: Christian Pulisic scored with a bicycle kick in the 25th minute and Julian Hall added a second in the 43rd.",
-      "suggested_angle": "A bicycle kick as a farewell. The Valley is a soccer region, so who should coach the U.S. next, and wait, don't tell me you want Messi.",
+      "suggested_angle": "A bicycle kick as a farewell. The Valley is a soccer region, so who should coach the U.S. next, and do you want Messi?",
       "source_url": "https://apnews.com/article/usmnt-soccer-mauricio-pochettino-farewell-haiti-3fe3610a6d9a0d0fa1ef08fe56f03630",
       "source": "AP · Nov 17",
       "short": "Pulisic bicycle kick; US beats Haiti 2-0 in Pochettino finale",
@@ -1743,13 +1743,13 @@
           "published": "2026-11-17T18:00:00+00:00"
         }
       ],
-      "score": 15,
+      "score": 13,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 15: 2 outlets 12 + recency 2.8 (34h old)",
+      "scoreWhy": "Score 13: 2 outlets 12 + recency 0.7 (57h old)",
       "scoreParts": {
         "outlets": 12,
-        "recency": 2.8,
+        "recency": 0.7,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1784,13 +1784,13 @@
           "published": "2026-11-18T18:00:00+00:00"
         }
       ],
-      "score": 17,
+      "score": 9,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 17: 1 outlet 6 + recency 11.2 (10h old)",
+      "scoreWhy": "Score 9: 1 outlet 6 + recency 2.9 (33h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 11.2,
+        "recency": 2.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1799,62 +1799,16 @@
       "ord": 8
     }
   ],
-  "up_to": [
-    {
-      "date": "2026-11-16",
-      "short": "Talk proposal: ResCon New Orleans 2027 (shelter Wi-Fi)",
-      "title": "Sent in a talk proposal to ResCon New Orleans 2027 (Mar 9-11): standing up shelter Wi-Fi in hours",
-      "type": "conference",
-      "who": "Drew",
-      "link": {
-        "label": "ResCon 2027 call for proposals",
-        "url": "https://resconnola.com/2027-call-for-proposals/"
-      },
-      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected",
-      "confirm": "CONFIRM BEFORE AIR (Drew eyeballs every item; public-facing only)"
-    },
-    {
-      "date": "2026-11-16",
-      "short": "Talk proposal: South Atlantic Fire Rescue Expo 2027",
-      "title": "Sent in a talk proposal to the South Atlantic Fire Rescue Expo 2027 (Aug 11-14, Raleigh): fast Wi-Fi for command posts",
-      "type": "conference",
-      "who": "Drew",
-      "link": {
-        "label": "SAFRE 2027 call for presenters",
-        "url": "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/"
-      },
-      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected",
-      "confirm": "CONFIRM BEFORE AIR (Drew eyeballs every item; public-facing only)"
-    },
-    {
-      "date": "2026-11-16",
-      "short": "Talk proposals: IAFC WUI (Austin) + CALNENA 2027",
-      "title": "Sent in talk proposals to the IAFC Wildland-Urban Interface conference (Austin, Mar 23-25) and CALNENA 2027 (Los Angeles, Mar 1-3)",
-      "type": "conference",
-      "who": "Drew",
-      "link": null,
-      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected",
-      "confirm": "CONFIRM BEFORE AIR (Drew eyeballs every item; public-facing only)"
-    },
-    {
-      "date": "2026-11-12",
-      "short": "Talk proposal: IAEM-USA Region 6 Symposium 2027",
-      "title": "Sent in a talk proposal to the IAEM-USA Region 6 Symposium 2027: temporary Wi-Fi for EOCs and shelters",
-      "type": "conference",
-      "who": "Drew",
-      "link": null,
-      "source": "Drew's Gmail sent-mail submissions log, Nov 12 and Nov 16 (read-only); no calendar connected",
-      "confirm": "CONFIRM BEFORE AIR (Drew eyeballs every item; public-facing only)"
-    }
-  ],
+  "up_to": [],
   "up_to_script": "Hey, for the last week, here's what I've been up to. Outside the studio I spent a good chunk of it sending in talk proposals for a handful of 2027 conferences: emergency management, fire and rescue, and 9-1-1 shows, all about getting Wi-Fi up fast when a shelter or a command post has to stand up overnight. Nothing's been accepted yet, so I'll let you know if anybody says yes. Okay, enough about me. Let's get into the Valley.",
   "up_to_meta": {
     "window": "Nov 11-18, 2026",
     "calendar": "not connected (no calendar tool available); built from email only",
     "note": "Proposals SUBMITTED, not accepted: do not say 'accepted' or 'speaking at'.",
     "jess": "Nothing found for Jess (no access to her calendar or mail).",
-    "status": "found",
-    "banner": "4 item(s) found · CONFIRM BEFORE AIR"
+    "status": "none",
+    "banner": "Quiet week on the family calendar",
+    "internal": ""
   },
   "showClock": [
     {
@@ -2079,7 +2033,7 @@
       "signature": false,
       "weave": null,
       "talkingPoints": [
-        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the county saying no to SpaceX's tax break, plus Mission heading to a December 12th runoff. On the National Desk, the FAA's nationwide ground stop and what it means for Valley flyers. In Trending, Ella Langley's big night at the CMA Awards. And in How We'd Talk to Our Kids, Jess and I take on strangers online and what to say when the group chat turns mean. It's 78 and a slight chance of rain showers outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the county saying no to SpaceX's tax break, plus Mission heading to a December 12th runoff. On the National Desk, the FAA's nationwide ground stop and what it means for Valley flyers. In Trending, Ella Langley's big night at the CMA Awards. And in How We'd Talk to Our Kids, Jess and I take on strangers online and what to say when the group chat turns mean. It's 70 and clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
         "JINGLE: Drew in the Morning. Your Valley, your news, your morning.",
         "JINGLE: \"Drew in the Morning. Your Valley, your news, your morning.\" (alternates in cold-open.md)",
         "COLD OPEN: read the paragraph the packet builds each morning (card at the top of the studio page; also in the PDF, txt and email, and in obs-data.json under coldOpen). It is one flowing paragraph, about 25 seconds, filled with today's real headlines.",
@@ -2116,7 +2070,7 @@
       "letter": "B",
       "title": "What I've Been Up To This Week",
       "short": "Up To",
-      "subject": "Personal touchpoint (2-3 min): public-facing things Drew and Jess did this week, then straight into Local news",
+      "subject": "Light family touchpoint (about 30 seconds, up to 3 min with Jess): school, music, clubs and family fun from Drew's family calendar, then straight into Local news",
       "timeRange": "8:02–8:05",
       "minutes": 3,
       "offset": 2,
@@ -2128,22 +2082,19 @@
       "signature": false,
       "weave": null,
       "talkingPoints": [
-        "READ ALOUD (auto-built from this week's events; CONFIRM BEFORE AIR): Hey, for the last week, here's what I've been up to. Outside the studio I spent a good chunk of it sending in talk proposals for a handful of 2027 conferences: emergency management, fire and rescue, and 9-1-1 shows, all about getting Wi-Fi up fast when a shelter or a command post has to stand up overnight. Nothing's been accepted yet, so I'll let you know if anybody says yes. Okay, enough about me. Let's get into the Valley.",
-        "EVENT (CONFIRM BEFORE AIR): Nov 16 · Drew · conference: Sent in a talk proposal to ResCon New Orleans 2027 (Mar 9-11): standing up shelter Wi-Fi in hours",
-        "EVENT (CONFIRM BEFORE AIR): Nov 16 · Drew · conference: Sent in a talk proposal to the South Atlantic Fire Rescue Expo 2027 (Aug 11-14, Raleigh): fast Wi-Fi for command posts",
-        "EVENT (CONFIRM BEFORE AIR): Nov 16 · Drew · conference: Sent in talk proposals to the IAFC Wildland-Urban Interface conference (Austin, Mar 23-25) and CALNENA 2027 (Los Angeles, Mar 1-3)",
-        "EVENT (CONFIRM BEFORE AIR): Nov 12 · Drew · conference: Sent in a talk proposal to the IAEM-USA Region 6 Symposium 2027: temporary Wi-Fi for EOCs and shelters",
-        "SCRIPT: read the paragraph the packet builds (field up_to_script; it appears on the studio page, PDF, txt, email and in obs-data.json under upTo). 2 to 3 minutes, conversational, then drop into Local news.",
-        "EVENTS: the list under the script (field up_to[]: date, title, type conference/presentation/meeting/appearance, who Drew/Jess, optional public link). Every item is CONFIRM BEFORE AIR: eyeball each one and cut anything you don't want said on air.",
-        "NO EVENTS: if nothing is found the script says so plainly (\"Quiet week on the calendar...\") and the packet notes \"No calendar events found\". Do not make something up.",
-        "PRIVACY (read on air): only public-facing participation: talks, conferences, panels, appearances, community events. Never personal, medical, financial, legal, client-confidential or private 1:1 meetings, and never name private individuals."
+        "READ ALOUD (auto-built from the family calendar, generic wording): Hey, for the last week, here's what I've been up to. Outside the studio I spent a good chunk of it sending in talk proposals for a handful of 2027 conferences: emergency management, fire and rescue, and 9-1-1 shows, all about getting Wi-Fi up fast when a shelter or a command post has to stand up overnight. Nothing's been accepted yet, so I'll let you know if anybody says yes. Okay, enough about me. Let's get into the Valley.",
+        "QUIET WEEK on the family calendar; the script above says so and gives Jess an easy riff. Do not make something up.",
+        "SCRIPT: read the paragraph the packet builds from Drew's FAMILY calendar (field up_to_script; it appears on the studio page, PDF, txt, email and in obs-data.json under upTo). About 20 to 40 seconds, light and conversational, then toss to Jess for one question and drop into Local news.",
+        "ITEMS: the list under the script (field up_to[]: date, label, category; on Mondays also up_to_coming[], the next 7 days). Recurring activities are one line each (\"chess club twice\"). Labels are generic: the kids are not named on air unless NAME_KIDS_ON_AIR is flipped to true in family-calendar.yml.",
+        "QUIET WEEK: if nothing qualifies the script says \"Quiet week on the family calendar\" and gives Jess an easy riff prompt. Do not make something up.",
+        "LEFT OFF THE AIR, always: medical or health, personal grooming, bills and money, work admin, support appointments, pick-ups and drop-offs, routine workouts, private reservations and dinners, other people's private parties, birthdays and retirements. When unsure it is left out. No conference or work talk; no Gmail in this block."
       ],
       "followUps": [
-        "Jess: anything from your week worth a mention (a school event, a community thing)? Ask live; nothing here is pre-filled for her."
+        "Jess: what was your favorite part of the week? (One easy question, then on to the news.)"
       ],
       "transitions": [
-        "Okay, enough about me. Let's get into the Valley.",
-        "That's my week. Here's what the Valley's been up to."
+        "Okay, enough about us. Let's get into the Valley.",
+        "That's our week. Here's what the Valley's been up to."
       ],
       "segueNext": "That's my week. Here's what the Valley's been up to.",
       "chyrons": [
@@ -2155,23 +2106,11 @@
         {
           "id": "b2",
           "primary": "This Week",
-          "secondary": "Talks, conferences & community events"
+          "secondary": "School, music, clubs & family fun"
         }
       ],
-      "links": [
-        {
-          "label": "ResCon 2027 call for proposals",
-          "url": "https://resconnola.com/2027-call-for-proposals/"
-        },
-        {
-          "label": "SAFRE 2027 call for presenters",
-          "url": "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/"
-        }
-      ],
-      "confirm": [
-        "Every up_to item: CONFIRM BEFORE AIR (Drew eyeballs the list)",
-        "Calendar is not connected, so events come from email only"
-      ]
+      "links": [],
+      "confirm": []
     },
     {
       "letter": "C",
@@ -2780,7 +2719,7 @@
       "letter": "J",
       "title": "The National Desk (+ Trending)",
       "short": "National",
-      "subject": "Big national stories with a Valley angle (fact, then take, then 'why it matters here'), plus Trending: Wait, Don't Tell Me as riff material",
+      "subject": "Big national stories with a Valley angle (fact, then take, then 'why it matters here'), plus Trending News (what's trending around the nation)",
       "timeRange": "8:45–8:53",
       "minutes": 8,
       "offset": 45,
@@ -2798,17 +2737,21 @@
         "3) SNL (Sat Nov 14, S52E06). FACT: John Mulaney hosted for the 7th time; Phoebe Bridgers was musical guest (\"Bobby,\" \"Still Standing\"). Cold open: \"CIA Meeting,\" Mulaney as a CIA officer lecturing Musk, Altman, Thiel, Zuckerberg and Amodei about honey-trap spies after the Jensen Huang scandal, with Bowen Yang returning as Huang; it also jabbed the ground stop and the Outlook outage. Other sketches: \"Sister,\" \"Plane Crash,\" \"Gettin' It Done,\" \"Woodstock,\" \"Kathy,\" and a Central Park carriage ride musical sketch. DID IT LAND: EW: \"easily the best episode of this season\"; Boston.com: \"far and away the best of Season 52\"; ratings 4.45M, down 20% from the prior week (Showbiz411). THE 'SISTER' VIDEO: a pretaped fake elder-care testimonial ad (Jane Wickline as the sister), on SNL's YouTube channel (published Nov 14, 2:59, ~5.8M views when checked Nov 18). CONFIRM BEFORE AIR that 'Sister' is the sister video Drew meant. Last new episode before Thanksgiving; the next is in December (Amanda Seyfried, per EW). ANGLE: it's the rare cold open that skips politics and still lands. VALLEY TIE: the cold open roasted the same ground stop that led HRL, MFE and BRO to issue travel advisories; 'Sister' is a caregiving story, so ask chat who is the 'Sister' in their family.",
         "4) NVIDIA'S JENSEN HUANG RESIGNS (Nov 12). FACT: Nvidia announced Huang resigned as president, CEO and board member effective immediately; CFO Colette Kress is interim CEO; Harvey C. Jones is the first board chair (Nvidia press release). Mainstream reports link it to an alleged affair with a suspected Chinese spy (SNL's cold open built on it); verify the allegations through a reported source before characterizing them. ANGLE: the AI boom's biggest face is gone, and it's still building the chips for every data center on earth. VALLEY TIE: Starbase's $24B data center is exactly that kind of AI compute fight. CONFIRM BEFORE AIR on any allegation detail.",
         "5) TEXAS TEN COMMANDMENTS (ABC, Nov 18). FACT: ABC reports the Democratic midterm sweep has put Texas's classroom Ten Commandments mandate in doubt; the law remains in effect and legal battles are headed to the Supreme Court. ANGLE: whatever you think of it, parents deserve a clear answer about what's on the classroom wall. VALLEY TIE: it applies in every RGV school; ask what your child's classroom has up. CONFIRM BEFORE AIR on details of repeal efforts.",
-        "TRENDING (\"WAIT, DON'T TELL ME\"): open the studio page section \"Trending: Wait, Don't Tell Me\" (6 to 10 items, each with a one-line summary, a suggested riff and a source link; the print packet carries the top 5). Pick 1 to 3: the best riff with a Valley tie, not the most famous story. Format: Drew reacts first (\"wait, don't tell me...\"), Jess adds the angle, one link on screen. Items marked CONFIRM BEFORE AIR are thinly sourced: verify or skip. Never duplicate a National Desk story. THIS WEEK'S SAMPLE BANK: CMA Awards (Ella Langley, \"Choosin' Texas\"), Musk \"I'm not MAGA\" (Starbase tie), the viral Mexican quince stadium party (Valley quince tie), Giannis vs. the Bucks, Pattinson as Bond. (flex: this is riff material inside the National Desk, not a separate block)"
+        "TECH SUB-SEGMENT (about 90 seconds inside J, after the National Desk and before Trending; no extra time added to the hour): open the studio page section \"What's Happening in Tech\". It holds 3 to 5 items from the morning's Fast Company Daily email (the daily refresh reads it from Gmail); if no issue arrived in the last 48 hours the section says so and shows tech-wire items (The Verge, TechCrunch, Ars Technica) marked FALLBACK. Pick 1 or 2 with an RGV or family angle: read the one-liner, say the angle, one link on screen. Items marked CONFIRM BEFORE AIR get verified or skipped. Local stays bigger: skip Tech entirely when the local news runs long.",
+        "TRENDING NEWS (what's trending around the nation): open the studio page section \"Trending News\" (6 to 10 items, each with a one-line summary, a suggested riff and a source link; the print packet carries the top 5). Pick 1 to 3: the best riff with a Valley tie, not the most famous story. Format: Drew reacts first, Jess adds the angle, one link on screen. Items marked CONFIRM BEFORE AIR are thinly sourced: verify or skip. Never duplicate a National Desk story. THIS WEEK'S SAMPLE BANK: CMA Awards (Ella Langley, \"Choosin' Texas\"), Musk \"I'm not MAGA\" (Starbase tie), the viral Mexican quince stadium party (Valley quince tie), Giannis vs. the Bucks, Pattinson as Bond. (flex: this is trending-news material inside the National Desk, not a separate block)"
       ],
       "followUps": [
         "Would you board a flight tomorrow? Be honest.",
         "Should a Cabinet secretary skip the football game after a national outage? Ask chat.",
         "Did SNL's 'Sister' hit you in the gut or are we overthinking it?",
         "'Current FAA flight cuts': none found in the sources checked this week. CONFIRM BEFORE AIR if Drew meant something else.",
-        "Wait, don't tell me: what's the one story you saw this morning that you want us to explain?"
+        "Which tech story this morning will a Valley parent or small-business owner actually feel this week?",
+        "What's the one story you saw this morning that you want us to explain?"
       ],
       "transitions": [
         "Okay, that's the 30,000-foot view. Now, what does it mean at 1,000 feet over the Valley?",
+        "Okay, quick tech check before the internet gets weird: here's what's happening in tech.",
+        "That's tech. Now, what's trending around the nation?",
         "Okay, that's what the internet is losing its mind over this morning. Now it's your turn."
       ],
       "segueNext": "We've talked a lot. Now it's your turn.",
@@ -2845,8 +2788,13 @@
         },
         {
           "id": "j7",
-          "primary": "Wait, Don't Tell Me",
-          "secondary": "What everybody's talking about · pick 1 to 3"
+          "primary": "What's Happening in Tech",
+          "secondary": "Quick hits from Fast Company Daily and the tech wires"
+        },
+        {
+          "id": "j8",
+          "primary": "Trending News",
+          "secondary": "What's trending around the nation · pick 1 to 3"
         }
       ],
       "links": [
@@ -2897,6 +2845,10 @@
         {
           "label": "ABC: Ten Commandments in Texas classrooms",
           "url": "https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010"
+        },
+        {
+          "label": "Fast Company Daily (Drew's email; the daily refresh pulls it)",
+          "url": "https://www.fastcompany.com/newsletters"
         }
       ],
       "confirm": [
@@ -2904,7 +2856,8 @@
         "'Sister video' = SNL 'Sister' sketch (confirm with Drew)",
         "Any allegation details on Jensen Huang",
         "Any current FAA flight cuts (none found)",
-        "Refresh everything Sunday night"
+        "Refresh everything Sunday night",
+        "Tech items: confirm each one against its source link before air (the packet marks the thin ones CONFIRM BEFORE AIR)"
       ]
     },
     {
@@ -2984,13 +2937,16 @@
         "Always include one 'what parents should know' line, e.g. the Door Kick Challenge is a crime, not a prank (Irvine PD, Nov 12).",
         "Mark anything thin as CONFIRM BEFORE AIR (X volume for several trends is low, so popularity is TikTok-side and unverified).",
         "Look ahead: Thanksgiving Thu Nov 26 · FAA comments close Dec 7 · Edinburg Night of Lights Parade Dec 4 · Mission/Weslaco runoffs Dec 12 (early voting from Nov 30) · Food Truck Park closes Jan 14, 2027 · Cameron abatement hearing would have been Dec 29 (now off).",
-        "Jess back in: one thing she's watching this week; favorite moment. Socials: IG/TikTok @drewinthemorning · YouTube @DrewintheMorning · Facebook page. Tease Mon Nov 30, 8 AM CT. Jingle out."
+        "Jess back in: one thing she's watching this week; favorite moment. Socials: IG/TikTok @drewinthemorning · YouTube @DrewintheMorning · Facebook page. Tease Mon Nov 30, 8 AM CT. Jingle out.",
+        "REMEMBERING OUR NEIGHBORS (about 45 seconds, after the memes and right before the look-ahead and sign-off, so the hour ends on a human note). Slow down, no music bed, no joke before or after. The names, ages and towns are auto-built each morning from The Monitor's obituaries on Legacy.com (card on the studio page: Remembering Our Neighbors). Read only a handful, then point listeners to the full list on the page.",
+        "NEVER mention how anyone died, and don't add details that aren't in the notice. If you aren't sure how to say a name, skip it or check the link first. If block L is running long, read three names and keep the pointer."
       ],
       "followUps": [
         "Ask chat: what's the weirdest thing your kid said this week?"
       ],
       "transitions": [
         "That's the fun stuff. Thanks for spending the hour with us. See you next time.",
+        "Before we go, we want to take a moment to remember some of our neighbors. (Obituary read, then the sign-off.)",
         "Jingle out."
       ],
       "segueNext": "",
@@ -3024,6 +2980,11 @@
           "id": "l6",
           "primary": "Follow @drewinthemorning",
           "secondary": "IG · TikTok · YouTube · Facebook"
+        },
+        {
+          "id": "l7",
+          "primary": "Remembering Our Neighbors",
+          "secondary": "Obituaries from The Monitor · Legacy.com"
         }
       ],
       "links": [
@@ -3038,12 +2999,17 @@
         {
           "label": "Show social calendar (draft)",
           "url": "social-calendar.md"
+        },
+        {
+          "label": "Legacy.com: The Monitor obituaries, McAllen",
+          "url": "https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor"
         }
       ],
       "confirm": [
         "Meme popularity measured on TikTok; X volume is low",
         "Early-voting dates",
-        "ditm@drewlentz.com (seen as the show inbox; CONFIRM BEFORE AIR that it is meant for public submissions)"
+        "ditm@drewlentz.com (seen as the show inbox; CONFIRM BEFORE AIR that it is meant for public submissions)",
+        "Obituary names and spellings come from Legacy.com; CONFIRM pronunciation before reading"
       ]
     }
   ],
@@ -3054,27 +3020,49 @@
     "This is a Valley story, but Austin is already writing the rules.",
     "Strip out the politics: what did that story change for somebody at MFE or HRL this week?",
     "Everybody's talking about it in Washington. Here's how it lands in Weslaco.",
-    "Okay, that's the news. Here's what the internet is losing its mind over. Wait, don't tell me.",
+    "Okay, that's the news. Here's what's trending around the nation.",
     "We could go all morning on this, but let's hear from you: what are you seeing?"
   ],
+  "up_to_coming": [],
+  "tech": {
+    "origin": "none",
+    "items": [],
+    "issue": null,
+    "note": "",
+    "badge": "NO TECH ITEMS",
+    "originLabel": "No Fast Company Daily issue from the last 48 hours and no tech-wire fallback were loaded."
+  },
+  "obituaries": {
+    "items": [],
+    "count": 0,
+    "groups": [],
+    "script": "",
+    "pickUrls": [],
+    "window": {},
+    "windowLabel": "",
+    "source": "Legacy.com · The Monitor (McAllen, TX)",
+    "sourceUrl": "https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor",
+    "fetchedAt": "",
+    "note": ""
+  },
   "scoring": {
     "merged": 0,
     "items": 27,
     "hot": 0,
-    "trending": 5,
-    "active": 22,
+    "trending": 3,
+    "active": 24,
     "uncovered": 0,
     "trends": {
       "TX": 10,
       "US": 10,
-      "fetchedAt": "2026-11-19T03:50:26+00:00",
+      "fetchedAt": "2026-11-20T03:00:46+00:00",
       "fromCache": true
     },
     "formula": "score = outlets(6 per distinct outlet, max 30) + recency(20 x 0.5^(age_h/12)) + X(20 x min(1, log10(1+eng+25 posts)/4)) + Google Trends(20 TX / 12 US) + chatter(10 x min(1, log10(1+eng+5 posts)/2.5)); Hot >= 45, Trending >= 27, else Active",
-    "trendsNote": "Google Trends US-TX 10 + US 10 items, fetched 2026-11-19T03:50:26+00:00 (cache)"
+    "trendsNote": "Google Trends US-TX 10 + US 10 items, fetched 2026-11-20T03:00:46+00:00 (cache)"
   },
   "coldOpen": {
-    "text": "Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the county saying no to SpaceX's tax break, plus Mission heading to a December 12th runoff. On the National Desk, the FAA's nationwide ground stop and what it means for Valley flyers. In Trending, Ella Langley's big night at the CMA Awards. And in How We'd Talk to Our Kids, Jess and I take on strangers online and what to say when the group chat turns mean. It's 78 and a slight chance of rain showers outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+    "text": "Good morning, Rio Grande Valley! It's Thursday, November 19th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the county saying no to SpaceX's tax break, plus Mission heading to a December 12th runoff. On the National Desk, the FAA's nationwide ground stop and what it means for Valley flyers. In Trending, Ella Langley's big night at the CMA Awards. And in How We'd Talk to Our Kids, Jess and I take on strangers online and what to say when the group chat turns mean. It's 70 and clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
     "jingle": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [
       "Wake up, RGV. It's Drew in the Morning.",
@@ -3083,10 +3071,10 @@
     "confirm": [
       "National Desk: FAA nationwide ground stop"
     ],
-    "words": 117,
+    "words": 112,
     "template": "daily"
   },
-  "generatedAt": "2026-11-18T22:01:34-06:00",
+  "generatedAt": "2026-11-19T21:22:51-06:00",
   "sources": [
     {
       "section": "Top headlines: RGV",
@@ -3374,119 +3362,99 @@
       "url": "https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "Ella Langley sweeps the CMA Awards with 'Choosin' Texas'",
       "url": "https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "USA Today: full winners list",
       "url": "https://www.usatoday.com/story/entertainment/music/2026/11/18/cma-awards-2026-winners-list/92853447007/"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "Billboard: winners, updating live",
       "url": "https://www.billboard.com/music/awards/cma-2026-winners-list-1236385046/"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "Musk at DealBook: 'I'm not MAGA'",
       "url": "https://techcrunch.com/2026/11/18/elon-musk-says-im-not-maga/"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "A nearly empty quince becomes an all-night stadium party",
       "url": "https://apnews.com/article/mexico-quinceanera-san-luis-potosi-isela-santiago-36f8d9a1f1dd69f05e8a6e92027cbc49"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "AP video version",
       "url": "https://apnews.com/video/from-empty-party-to-an-all-night-stadium-bash-a-mexican-teens-15th-birthday-goes-viral-9f0d2688f5894ac1b1e452f9ff73d4dc"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "Giannis faces the Bucks for the first time as a Heat player",
       "url": "https://www.cbssports.com/nba/news/giannis-antetokounmpo-set-to-face-bucks-for-first-time-with-heat/"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "NBA.com box score (Heat vs Bucks)",
       "url": "https://www.nba.com/bucks/game/0022600260-bucks-vs-heat-miami-fl-11-18-2026"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "GMA/Reuters: 'just another game'",
       "url": "https://www.gmanetwork.com/news/sports/basketball/1009886/nba-giannis-antetokounmpo-downplays-emotions-as-heat-face-bucks/story/"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "Bezos: Pattinson was picked as Bond just three days before the announcement",
       "url": "https://apnews.com/article/james-bond-jeff-bezos-robert-pattinson-a90f280d9e4fed9c7fd72ab6a4851945"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "AP: Pattinson named the seventh Bond",
       "url": "https://apnews.com/article/new-james-bond-4545b257a9924895a69623332db50c97"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "US and Mexico lose their measles-elimination status",
       "url": "https://apnews.com/article/measles-elimination-status-us-mexico-b6694152aca12e8cf4293d9f50090ec9"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "PAHO statement",
       "url": "https://www.paho.org/en/news/17-11-2026-paho-urges-countries-step-efforts-stop-measles-outbreaks-and-move-towards"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "AP video: do you need a booster?",
       "url": "https://apnews.com/video/the-u-s-lost-its-measles-elimination-status-do-you-need-a-booster-f98d07c0153a463283e42ea7bc09c86a"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "Illinois' Andrej Stojakovic drops 46 at Duke",
       "url": "https://apnews.com/article/illinois-duke-stojakovic-46-points-c6a4a8aee2f9d7fb676dab9019fe9d83"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "ESPN recap",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/50517287/illinois-andrej-stojakovic-scores-46-points-most-ever-opponent-duke"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "Pulisic's bicycle kick sends Pochettino off with a 2-0 win",
       "url": "https://apnews.com/article/usmnt-soccer-mauricio-pochettino-farewell-haiti-3fe3610a6d9a0d0fa1ef08fe56f03630"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "U.S. Soccer recap",
       "url": "https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-cincinnati-ohio"
     },
     {
-      "section": "Trending: Wait, Don't Tell Me",
+      "section": "Trending News",
       "label": "YouTube trending: Lil Baby's 'Aint Goin' holds #1; teasers for 'Twilight (But Better)' and '3 Body Problem' S2",
       "url": "https://trendoday.com/youtube/2026/11/18"
-    },
-    {
-      "section": "What I've Been Up To",
-      "label": "ResCon 2027 call for proposals",
-      "url": "https://resconnola.com/2027-call-for-proposals/"
-    },
-    {
-      "section": "What I've Been Up To",
-      "label": "SAFRE 2027 call for presenters",
-      "url": "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/"
-    },
-    {
-      "section": "Run of show: B",
-      "label": "ResCon 2027 call for proposals",
-      "url": "https://resconnola.com/2027-call-for-proposals/"
-    },
-    {
-      "section": "Run of show: B",
-      "label": "SAFRE 2027 call for presenters",
-      "url": "https://www.southatlanticfirerescueexpo.com/2027-south-atlantic-fire-rescue-expo-call-for-presenters/"
     },
     {
       "section": "Run of show: C",
@@ -3724,6 +3692,11 @@
       "url": "https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010"
     },
     {
+      "section": "Run of show: J",
+      "label": "Fast Company Daily (Drew's email; the daily refresh pulls it)",
+      "url": "https://www.fastcompany.com/newsletters"
+    },
+    {
       "section": "Run of show: L",
       "label": "Know Your Meme: Talk To Me Doja",
       "url": "https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained"
@@ -3732,6 +3705,11 @@
       "section": "Run of show: L",
       "label": "ABC7: Irvine PD on door kick challenge",
       "url": "https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/"
+    },
+    {
+      "section": "Run of show: L",
+      "label": "Legacy.com: The Monitor obituaries, McAllen",
+      "url": "https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor"
     }
   ]
 }
