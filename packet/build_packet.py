@@ -272,7 +272,7 @@ def upto_lines(data):
         out.append(f'COMING UP: {e["label"]} · {upto_when(e)}')
     return out
 
-# ---------------------------------------------------------------- Trending ("Wait, Don't Tell Me")
+# ---------------------------------------------------------------- Trending News (what's trending around the nation)
 def prep_trending(data):
     tr = data.get("trending") or []
     for t in tr:
@@ -445,8 +445,8 @@ def all_urls(data):
         for i in lv["items"]:
             for l in i["links"]: add("Meme of the Week: " + lv["level"], l["label"], l["url"])
     for t in data.get("trending", []):
-        add("Trending: Wait, Don't Tell Me", t["title"], t.get("source_url"))
-        for l in t.get("links", []): add("Trending: Wait, Don't Tell Me", l["label"], l["url"])
+        add("Trending News", t["title"], t.get("source_url"))
+        for l in t.get("links", []): add("Trending News", l["label"], l["url"])
     for r in data.get("rundown", []):
         for l in r["links"]: add("Run of show: " + r["letter"], l["label"], l["url"])
     ob = data.get("obituaries") or {}
@@ -642,7 +642,7 @@ def print_html(data):
     if tk:
         trl += '<li><span class="cat">TECH</span>' + ('<span class="sb a">WIRES</span>' if data["tech"]["origin"] == "wires" else "") + " · ".join(f'<a href="{esc(x["source_url"])}"><b>{esc(x.get("short") or x["title"])}</b></a>' if x.get("source_url") else esc(x.get("short") or x["title"]) for x in tk) \
                + (' <span class="cf">CONFIRM</span>' if any(x["isConfirm"] for x in tk) else "") + '</li>'
-    trend = card("trending", "#577590", "Trending: Wait, Don't Tell Me", "riff material", f'<ul class="tr1">{trl}</ul>')
+    trend = card("trending", "#577590", "Trending News", "around the nation", f'<ul class="tr1">{trl}</ul>')
     # weather
     cells = ""
     for dday in w["days"][:7]:
@@ -789,7 +789,7 @@ def email_html(data, preview=False):
 {sec("Cold Open &amp; Jingle", "#f2b705", coldopen_b).replace("color:#ffffff;", "color:#1b2430;", 1)}
 {sec("What I've Been Up To This Week", "#d1495b", upto_b)}
 {sec("Top Headlines · RGV First", "#e4572e", img_html + "<ul style='margin:0;padding-left:18px'>" + rgv + "</ul><b>Texas:</b><ul style='margin:0;padding-left:18px'>" + tx + "</ul>")}
-{sec("Trending: Wait, Don't Tell Me", "#577590", trend_b + '<div style="font-size:12px;color:#66788c">Riff material, separate from the National Desk. The studio page has all of them with links.</div>')}
+{sec("Trending News", "#577590", trend_b + '<div style="font-size:12px;color:#66788c">What\'s trending around the nation, separate from the National Desk. The studio page has all of them with links.</div>')}
 {sec("McAllen / RGV Weather", "#2a7de1", weather)}
 {sec("RGV High School Football", "#2a9d8f", hsb)}
 {sec(esc(sport_title(nfl).replace("NFL ", "NFL · ", 1)), "#264653", nflb)}
@@ -840,7 +840,7 @@ def txt(data):
     for i in data["headlines"]["texas"]:
         W(wrap("- " + sc_txt(i) + i["title"] + f" ({i['source']})")); W("    " + i["url"])
     W("  Photo: " + data["headlines"]["image"]["caption"] + " " + data["headlines"]["image"]["credit_url"]); W()
-    W("TRENDING: WAIT, DON'T TELL ME (riff material; separate from the National Desk)")
+    W("TRENDING NEWS · what's trending around the nation (separate from the National Desk)")
     for t in data.get("trending", []):
         c = trend_item_conf(t)
         W(f"- {sc_txt(t)}{t['title']}  [{t['category']}]" + (f"  [CONFIRM BEFORE AIR: {c}]" if c else ""))
@@ -944,7 +944,7 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,-apple-syst
 a,button,summary{touch-action:manipulation}
 img,svg{max-width:100%;height:auto}
 a{color:var(--link)}
-header{position:sticky;top:0;z-index:6;background:var(--bg);border-bottom:3px solid var(--line);padding:max(8px,var(--st)) max(16px,var(--sr)) 8px max(16px,var(--sl));display:flex;gap:clamp(8px,1.5vw,16px);align-items:center;flex-wrap:wrap}
+header{position:relative;z-index:6;background:var(--bg);border-bottom:3px solid var(--line);padding:max(8px,var(--st)) max(16px,var(--sr)) 8px max(16px,var(--sl));display:flex;gap:clamp(8px,1.5vw,16px);align-items:center;flex-wrap:wrap}
 header>img{height:clamp(44px,6vw,64px);width:auto;max-width:34vw;background:#fff;border-radius:10px;border:2px solid #1b2430;padding:2px 8px;flex:none}
 .ht{flex:1 1 300px;min-width:0}.ht .k{font-size:clamp(.66rem,.5vw + .5rem,.78rem);letter-spacing:.14em;font-weight:800;color:#b5651d;text-transform:uppercase}
 .ht .d{font-size:clamp(1.3rem,2.4vw + .5rem,2rem);font-weight:900;line-height:1.05}.ht .t{font-size:clamp(.74rem,.6vw + .55rem,.9rem);color:var(--mut);font-weight:600}
@@ -959,7 +959,7 @@ button:active{transform:scale(.97)}
 .cwd{font-size:clamp(.74rem,.6vw + .5rem,.88rem);font-weight:700}
 .cwx{font-size:clamp(.82rem,.6vw + .6rem,.98rem);font-weight:800;margin-top:3px;display:flex;gap:6px;justify-content:flex-end;align-items:baseline;flex-wrap:wrap}
 .cwx small{color:var(--mut);font-weight:600;font-size:.72rem}#cw-ico{font-size:1.1em}#cw-cond{font-weight:600;font-size:.82em;color:var(--mut)}
-#usedbar{position:sticky;top:var(--hh);z-index:5;background:var(--chip);border-bottom:2px solid var(--line);padding:6px max(16px,var(--sr)) 6px max(16px,var(--sl));display:flex;align-items:center;gap:8px 12px;flex-wrap:wrap}
+#usedbar{background:var(--chip);border-bottom:2px solid var(--line);padding:6px max(16px,var(--sr)) 6px max(16px,var(--sl));display:flex;align-items:center;gap:8px 12px;flex-wrap:wrap}
 #usedbar .ubl{font-weight:800}#usedbar .ubl b{display:inline-block;min-width:1.6em;text-align:center;background:var(--ok);color:#fff;border-radius:99px;padding:0 8px}
 #ustatus{color:var(--mut);font-size:.8rem;font-weight:600;flex:1 1 160px}
 #usedbar .ubb{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap}
@@ -968,10 +968,8 @@ nav{display:flex;gap:6px;flex-wrap:wrap;padding:8px max(16px,var(--sr)) 8px max(
 nav a{background:var(--chip);border-radius:99px;padding:8px 14px;min-height:44px;display:inline-flex;align-items:center;font-weight:700;font-size:.85rem;text-decoration:none;color:var(--fg);border:1px solid var(--line)}
 .clock{display:flex;margin:6px max(16px,var(--sr)) 6px max(16px,var(--sl));height:52px;border-radius:10px;overflow:hidden;border:2px solid var(--line)}
 .clock a{display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-weight:900;text-decoration:none;border-right:1px solid rgba(255,255,255,.6);font-size:clamp(.85rem,1vw + .4rem,1.15rem);line-height:1;min-width:0}.clock a small{font-size:clamp(.55rem,.5vw + .35rem,.7rem);font-weight:700;opacity:.95}
-main{padding:6px max(16px,var(--sr)) calc(40px + var(--sb)) max(16px,var(--sl));display:grid;grid-template-columns:minmax(0,1fr);gap:12px;align-items:start}
-@media (min-width:1000px){main{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (min-width:1360px){main{grid-template-columns:repeat(3,minmax(0,1fr))}}
-details{background:var(--card);border:2px solid var(--line);border-radius:12px;overflow:hidden;min-width:0}details.wide{grid-column:1/-1}
+main{padding:6px max(16px,var(--sr)) calc(40px + var(--sb)) max(16px,var(--sl));display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr));gap:12px;align-items:stretch}
+details{background:var(--card);border:2px solid var(--line);border-radius:12px;overflow:hidden;min-width:0}
 summary{cursor:pointer;list-style:none;padding:8px 12px;min-height:48px;color:#fff;font-weight:900;letter-spacing:.05em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;gap:4px 10px;flex-wrap:wrap;font-size:clamp(.92rem,.8vw + .65rem,1.15rem)}
 summary::-webkit-details-marker{display:none}summary small{font-weight:600;text-transform:none;letter-spacing:0;opacity:.95;font-size:.78em}
 summary:after{content:'\\25BE';margin-left:auto;font-size:1.2em;padding-left:6px}details:not([open])>summary:after{content:'\\25B8'}
@@ -991,13 +989,13 @@ summary:after{content:'\\25BE';margin-left:auto;font-size:1.2em;padding-left:6px
 .uhead{display:flex;align-items:center;gap:10px;justify-content:space-between;margin:0 0 6px;font-weight:800;border-bottom:1px dashed var(--line);padding-bottom:6px}
 .wk{display:grid;grid-template-columns:repeat(auto-fit,minmax(88px,1fr));gap:6px;text-align:center}.wk div{border:2px solid var(--line);border-radius:10px;padding:4px;min-width:0}.wk .mon{background:#fff3c4;border-color:#f2a900;color:#1b2430}
 .hi{font-size:1.25rem;font-weight:900}.mut{color:var(--mut)}.pp{color:#2a7de1;font-weight:800}
-.scores{columns:2 150px;column-gap:20px;margin:0;padding:0;list-style:none}.scores li,.scores .item{break-inside:avoid;padding:1px 0}
+.scores{columns:3 210px;column-gap:20px;margin:0;padding:0;list-style:none}.scores li,.scores .item{break-inside:avoid;padding:1px 0}
 .lvl{border-left:6px solid;padding-left:10px;margin:8px 0}.lvl h3{margin:0 0 4px;text-transform:uppercase;letter-spacing:.05em;font-size:clamp(.9rem,.6vw + .7rem,1.05rem)}
 .motw{background:#fff1e8;color:#1b2430;border:2px dashed #e4572e;border-radius:10px;padding:4px 8px}.motw a{color:#0b5cad}
 .tag{background:#e4572e;color:#fff;font-weight:900;font-size:.7rem;padding:1px 6px;border-radius:4px}
 .mbox{margin:0 0 10px}.mbox.used{border-radius:10px;padding:4px 6px}
 .rdgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;align-items:start}
-@media (min-width:1000px){.rdgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.rdgrid>details[open]{grid-column:1/-1}}
+@media (min-width:600px){.rdgrid{grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr))}.rdgrid>details[open]{grid-column:1/-1}}
 .rd{border:2px solid var(--line);border-radius:10px;margin:6px 0;background:var(--card)}.rdgrid>.rd{margin:0}.rd>summary{border-radius:0;min-height:60px}
 .rd .bl{display:inline-flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;border-radius:10px;background:rgba(255,255,255,.25);font-size:1.6rem;font-weight:900;margin-right:8px;flex:none;letter-spacing:0}
 .rd .rt{display:flex;align-items:center;min-width:0;flex:1 1 220px}
@@ -1007,9 +1005,8 @@ summary:after{content:'\\25BE';margin-left:auto;font-size:1.2em;padding-left:6px
 #toast{position:fixed;bottom:calc(18px + var(--sb));left:50%;transform:translateX(-50%);background:#1b2430;color:#fff;padding:8px 16px;border-radius:99px;font-weight:700;opacity:0;transition:.25s;pointer-events:none;z-index:9;max-width:92vw}#toast.on{opacity:1}
 .obl{list-style:none;margin:0 0 8px;padding:0}.obl li{padding:5px 0;border-bottom:1px dashed var(--line)}.obh{margin:10px 0 2px;font-size:1rem}
 footer{padding:10px max(16px,var(--sr)) calc(30px + var(--sb)) max(16px,var(--sl));color:var(--mut);font-size:.8rem}
-@media (max-width:820px){#clockw{margin-left:0;width:100%;text-align:left}.cwx{justify-content:flex-start}}
 @media (pointer:coarse){.cp{min-height:44px;min-width:56px}}
-@media print{header,#usedbar{position:static}.cp,.use,#clockw,#usedbar,.tools{display:none}}
+@media print{#minibar{display:none}header,#usedbar{position:static}.cp,.use,#clockw,#usedbar,.tools{display:none}}
 """
 CLOCK_JS = r"""
 (function(){var w=document.getElementById('clockw');if(!w)return;var TZ='America/Chicago';
@@ -1033,7 +1030,11 @@ get(OBS).then(function(j){var p=j.properties,c=p&&p.temperature&&p.temperature.v
 .catch(function(){return get(HR).then(function(j){var q=j.properties.periods[0],f=q.temperature;if(q.temperatureUnit==='C')f=Math.round(f*9/5+32);ok(f,q.shortForecast,j.properties.updateTime||q.startTime,'NWS hourly forecast');w.dataset.state='hourly'})})
 .catch(function(){w.dataset.state=live?'stale':'build';if(!live)build();else $('cw-note').textContent=$('cw-note').textContent.replace(/ \(stale\)$/,'')+' (stale)'})}
 build();load();setInterval(load,600000);
-var hd=document.querySelector('header');function hh2(){document.documentElement.style.setProperty('--hh',hd.offsetHeight+'px')}hh2();addEventListener('resize',hh2);if(window.ResizeObserver)new ResizeObserver(hh2).observe(hd);
+var hd=document.querySelector('header'),mb=$('minibar');
+function hh2(){var h=getComputedStyle(hd).position==='sticky'?hd.offsetHeight:(mb&&getComputedStyle(mb).display!=='none'?mb.offsetHeight:0);document.documentElement.style.setProperty('--hh',h+'px')}hh2();addEventListener('resize',hh2);if(window.ResizeObserver)new ResizeObserver(hh2).observe(hd);
+/* slim sticky mini clock on phones/tablets: mirrors the big clock so the header itself can scroll away */
+function mini(){var t=$('cw-time'),n=$('cwnext');if(!mb||!t)return;$('mb-time').textContent=t.textContent.replace(/:\d\d(?= [AP]M)/,'');var x=n?(n.textContent||'').replace(/\s+/g,' ').trim():'';$('mb-next').textContent=x;mb.className=n&&/amber/.test(n.className)?'amber':n&&/red/.test(n.className)?'red':''}
+mini();setInterval(mini,1000);
 })();
 """
 STUDIO_JS = r"""
@@ -1055,7 +1056,8 @@ var OK='ditm-open-v1',opn={},sm={get:function(k){try{return sessionStorage.getIt
 try{opn=JSON.parse(sm.get(OK)||'{}')||{}}catch(e){opn={}}
 var DET=[].slice.call(document.querySelectorAll('details[id]'));
 DET.forEach(function(d){if(opn[d.id])d.open=true});
-DET.forEach(function(d){d.addEventListener('toggle',function(){if(d.open)opn[d.id]=1;else delete opn[d.id];sm.set(OK,JSON.stringify(opn))})});
+var lastTap=0;document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('summary'))lastTap=Date.now()},true);
+DET.forEach(function(d){d.addEventListener('toggle',function(){if(d.open)opn[d.id]=1;else delete opn[d.id];sm.set(OK,JSON.stringify(opn));if(d.open&&Date.now()-lastTap<500&&d.classList.contains('sec')){lastTap=0;setTimeout(function(){d.scrollIntoView({behavior:'smooth',block:'start'})},30)}})});
 function setAll(v){[].forEach.call(document.querySelectorAll('details'),function(d){d.open=v})}
 $('expand').onclick=function(){setAll(true)};
 $('collapse').onclick=function(){setAll(false)};
@@ -1156,6 +1158,87 @@ summary .sb,summary .cf{border:1px solid rgba(255,255,255,.75)}
 @media (max-width:820px){.cwn{justify-content:flex-start}}
 .weave{background:var(--chip);border-radius:8px;padding:4px 8px;font-weight:700;font-size:.9rem}
 @media (max-width:560px){.rd>summary{--trw:6.6rem}.tr{font-size:.95rem}}
+
+/* ---- layout v6: uniform collapsed tiles, full-width multi-column expanded sections, native phone scrolling ---- */
+#minibar{display:none}
+.toolbar{display:flex;gap:6px 14px;align-items:center;flex-wrap:wrap;padding:6px max(16px,var(--sr)) 0 max(16px,var(--sl))}
+.toolbar .t{font-size:.82rem;color:var(--mut);font-weight:600;flex:1 1 260px;min-width:0}
+.toolbar .tools{margin:0;flex:0 1 auto}
+.ht .d{font-size:clamp(1.25rem,1.8vw + .6rem,1.9rem)}
+.ht{flex:1 1 280px}
+@media (min-width:1000px){
+ header{position:sticky;top:0;flex-wrap:nowrap}
+ #clockw{flex:0 0 auto}
+ .ss{margin:2px 0 0}
+}
+@media (max-width:999px){
+ #minibar{display:flex;position:sticky;top:0;z-index:8;align-items:center;gap:8px;min-height:44px;padding:4px max(12px,var(--sr)) 4px max(12px,var(--sl));padding-top:max(4px,var(--st));background:var(--bg);border-bottom:3px solid var(--line);font-weight:800;font-variant-numeric:tabular-nums}
+ #minibar b{font-size:1.15rem;white-space:nowrap}
+ #minibar span{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.8rem;color:var(--mut)}
+ #minibar.amber{background:#f2a900;color:#1b2430}#minibar.amber span{color:#1b2430}
+ #minibar.red{background:#c1121f;color:#fff}#minibar.red span{color:#fff}
+ #minibar a{flex:none;display:inline-flex;align-items:center;min-height:44px;padding:0 10px;font-weight:800;font-size:.85rem;text-decoration:none;color:var(--link)}
+ #clockw{margin-left:0;width:100%;min-width:0;text-align:left;display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:12px;align-items:center}
+ #cw-time{grid-row:1/3;font-size:clamp(1.5rem,6vw,2rem)}.cwd{text-align:right}.cwx{justify-content:flex-end;margin-top:0}.cwn{grid-column:1/-1}
+ .ss{flex-wrap:wrap}
+}
+@media (max-width:560px){
+ header{padding-top:8px;gap:8px}
+ header>img{height:40px}
+ .ht{flex:1 1 150px}.ht .k{letter-spacing:.08em}
+ #ssind{min-width:0;white-space:normal;flex:1 1 140px;font-size:.85rem}
+ .toolbar{padding-top:4px}.toolbar .t{display:none}
+ .toolbar .tools{width:100%;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain}.toolbar .tools::-webkit-scrollbar{display:none}.toolbar .tools>*{flex:none}
+ #ustatus{display:none}#usedbar{padding-top:4px;padding-bottom:4px}
+ #brkmeta{flex:1 1 0;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#brk{padding:2px 12px}
+ nav{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain}
+ nav::-webkit-scrollbar,.clock::-webkit-scrollbar{display:none}
+ nav a{flex:none}
+ #usedbar .ubb{margin-left:0;width:100%}#usedbar .ubb>*{flex:1 1 auto}
+ #brk .brkh button{flex:none}
+ #toast{max-width:calc(100vw - 24px)}
+}
+.clock{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain}
+.clock a{flex:0 0 auto;min-width:44px}
+/* uniform collapsed tiles: same box for every section, whatever its content */
+details.sec{align-self:stretch}
+details.sec[open]{grid-column:1/-1}
+.sec>summary{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr) auto;grid-template-rows:auto auto;align-items:center;gap:1px 0;height:var(--sumh,4.1rem);min-height:var(--sumh,4.1rem);padding:6px 12px;overflow:hidden;flex-wrap:nowrap;letter-spacing:.03em}
+.sec>summary .st,.sec>summary .tt{display:contents}
+.sec>summary .bl2{grid-column:1;grid-row:1/3;margin:0;min-width:2.2rem;height:2.2rem}
+.sec>summary .tn{grid-column:2/4;grid-row:1;margin-left:10px;padding-right:1.6rem;font-size:clamp(.9rem,.5vw + .78rem,1.08rem);line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;align-self:end}
+.sec>summary .tt small{grid-column:2;grid-row:2;margin:0 0 0 10px;display:block;font-size:.76rem;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;align-self:start}
+.sec>summary:after{position:absolute;right:12px;top:7px;margin:0;padding:0;line-height:1}
+.sec>summary .sm{grid-column:3;grid-row:2;margin:0 0 0 10px;flex-wrap:nowrap;white-space:nowrap;max-width:15rem;overflow:hidden;align-self:start;gap:4px;justify-content:flex-start}
+.sec>summary .sm .sb,.sec>summary .sm .cf,.sec>summary .sm .cnt{margin:0;white-space:nowrap;flex:none}
+.sec>summary .sm .cnt{flex:none}
+@media (max-width:560px){.sec>summary .sm{max-width:8.5rem}.sec>summary .sm .sb:nth-child(n+3){display:none}}
+.sec>.body{padding:12px clamp(12px,1.6vw,20px) 16px}
+/* expanded sections fill the row; their content flows in 2-4 columns instead of one tall list */
+.sec .sortbox{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:10px;align-items:stretch}
+.sec .sortbox>.item{border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--bg);flex-direction:column;align-items:stretch;gap:6px}
+.sec .sortbox>.item>.acts{margin-top:auto;justify-content:flex-end}
+.sec .sortbox>.item:last-child{border:1px solid var(--line)}
+.sec .sortbox>.item.used{background:rgba(31,157,85,.14)}
+.sec .sortbox>.noev{grid-column:1/-1}
+/* National Desk story cards (nested details) inside the multi-column grid */
+.sec .sortbox>details.rd{margin:0;align-self:stretch}
+.sec .sortbox>details.rd[open]{grid-column:1/-1}
+.sec .sortbox>details.rd>summary{display:flex;flex-wrap:wrap;align-content:space-between;align-items:center;gap:4px 8px;height:6.6rem;min-height:6.6rem;padding:8px 12px;overflow:hidden}
+.sec .sortbox>details.rd[open]>summary{height:auto;min-height:6.6rem}
+.sec .sortbox>details.rd>summary .rt{flex:1 1 100%;min-width:0}
+.sec .sortbox>details.rd>summary .tt{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;font-size:.95rem;line-height:1.25;letter-spacing:.02em}
+.sec .sortbox>details.rd[open]>summary .tt{-webkit-line-clamp:unset;display:block}
+.sec .sortbox>details.rd>summary .tt small{display:none}
+.sec .sortbox>details.rd>summary .src,.sec .sortbox>details.rd>summary .sm .src{color:rgba(255,255,255,.88)}
+.sec .sortbox>details.rd>summary .sm{margin:0;justify-content:flex-start;flex:1 1 auto;min-width:0}
+.sec .sortbox>details.rd>summary:after{margin-left:auto}
+.thumbrow{display:flex;gap:12px;align-items:center;margin:0 0 10px}.thumbrow img{width:140px;max-width:35%;border-radius:8px;flex:none}
+.lvgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:4px 18px;align-items:start}
+.obl{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:0 22px}
+.rd[open] .body{columns:2 340px;column-gap:26px}
+.rd h4{break-after:avoid;break-inside:avoid}.rd .body>.item,.rd .body>.chy{break-inside:avoid}
+.cotext,#uptotext{max-width:75ch}
 """
 
 SHOW_JS = r"""
@@ -1272,12 +1355,13 @@ def studio_html(data, archive_href=None):
         # every section starts collapsed (open_ is kept only so old calls still work); STUDIO_JS restores the session's state
         chip_h = f'<span class="bl2">{chip}</span>' if chip else ""
         cnt_h = f'<span class="cnt" id="cnt-{id_}">{esc(count)}</span>' if count != "" else ""
-        return (f'<details class="sec{" wide" if wide else ""}" id="{id_}"><summary style="background:{color};{fg}"><span class="st">{chip_h}<span class="tt">{title}<small>{sub}</small></span></span>'
+        ptitle = html.unescape(re.sub(r"<[^>]+>", "", title))
+        return (f'<details class="sec" id="{id_}"><summary style="background:{color};{fg}" title="{esc(ptitle)}"><span class="st">{chip_h}<span class="tt"><span class="tn">{title}</span><small>{sub}</small></span></span>'
                 f'<span class="sm">{cnt_h}{badges}</span></summary><div class="body">{body}</div></details>')
     clock = data.get("showClock", [])
     clockbar = "".join(f'<a href="#blk-{c["letter"]}" data-jump="blk-{c["letter"]}" style="width:{c["minutes"]/60*100:.3f}%;background:{c["color"]}" title="{esc(c["title"])} · {c["timeRange"]}">{c["letter"]}{"★" if c["signature"] else ""}<small>{c["minutes"]}m</small></a>' for c in clock)
     thumb = data["headlines"].get("image")
-    thumbhtml = f'<img src="{b64(asset(thumb["file"]), "image/jpeg")}" alt="Starship file photo" style="float:right;width:160px;max-width:40%;border-radius:8px;margin:0 0 6px 10px"><div class="src" style="clear:both">{esc(thumb["caption"])} · {A(thumb["credit_url"], "source")}</div>' if thumb else ""
+    thumbhtml = f'<div class="thumbrow"><img src="{b64(asset(thumb["file"]), "image/jpeg")}" alt="Starship file photo"><div class="src">{esc(thumb["caption"])} · {A(thumb["credit_url"], "source")}</div></div>' if thumb else ""
     heads = (thumbhtml + '<div class="sortbox">' + "".join(item(i, sec="Headlines: RGV") for i in data["headlines"]["rgv"]) + '</div><div class="src" style="margin-top:6px;font-weight:800">TEXAS</div><div class="sortbox">'
              + "".join(item(i, sec="Headlines: Texas") for i in data["headlines"]["texas"]) + '</div>')
     # ---- cold open
@@ -1297,7 +1381,7 @@ def studio_html(data, archive_href=None):
                 f'<span class="upill">USED</span></div><div class="acts">{use_btn(UPTO_SEC, e["label"], "")}</div></div>')
     if not evs: evs = '<div class="noev">Quiet week on the family calendar.</div>'
     upto = (f'<p class="cotext" style="font-size:clamp(1.1rem,1.2vw + .85rem,1.5rem)" id="uptotext">{esc(data["up_to_script"])}</p>' +
-            f'<div class="coact">{CP(data["up_to_script"], "Copy script")}</div><h4 style="margin:10px 0 2px">From the family calendar ({esc(um["banner"])})</h4>{evs}'
+            f'<div class="coact">{CP(data["up_to_script"], "Copy script")}</div><h4 style="margin:10px 0 2px">From the family calendar ({esc(um["banner"])})</h4><div class="sortbox">{evs}</div>'
             f'<p class="mut">Window: {esc(um.get("window", "past 7 days"))}{(", coming up " + esc(um["comingWindow"])) if um.get("comingWindow") else ""}. Calendar: {esc(um.get("calendar", ""))}.</p>'
             f'<p class="mut">Family-friendly only: school events, concerts, games, festivals, clubs and classes, holidays, community events and trips, in generic wording (kids are not named on air; the switch is NAME_KIDS_ON_AIR in family-calendar.yml). Medical, grooming, money, work, support, pick-ups, workouts, reservations and other people\'s parties are always left out.</p>'
             + (f'<p class="mut"><b>Internal note, not for air:</b> {esc(um["internal"])}</p>' if um.get("internal") else ""))
@@ -1311,7 +1395,7 @@ def studio_html(data, archive_href=None):
                 f'<p><b>Fact:</b> {esc(n["summary"])}{conf}</p><p><b style="color:#b07dd6">Our take:</b> {esc(n["angle"])}</p><p><b style="color:#5aa9e6">Why it matters in the Valley:</b> {esc(n["valley"])}</p><p class="mut">{esc(n.get("detail",""))}</p>{lks}</div></details>')
     nat += "</div>"
     # ---- trending
-    trn = '<p class="mut">What everybody is talking about, for the "wait, don\'t tell me" riff. Separate from the National Desk (no duplicates). Source order: X trends/news, AP/Reuters, Google Trends, YouTube trending.</p>'
+    trn = '<p class="mut">What\'s trending around the nation. Separate from the National Desk (no duplicates). Source order: X trends/news, AP/Reuters, Google Trends, YouTube trending.</p>'
     trn += '<div class="sortbox">'
     for t in data.get("trending", []):
         c = trend_item_conf(t)
@@ -1367,6 +1451,7 @@ def studio_html(data, archive_href=None):
     sports_mlb = f'<p><i>{esc(mlb["note"])}</i></p>' + "".join(item(n, sec="MLB") for n in mlb["notable"])
     colors = {"Elementary": "#2a9d8f", "Middle School": "#8e6bbf", "High School": "#e76f51"}
     mem = f'<p><b>{esc(data["memes"]["tagline"])}</b><br>{esc(data["memes"]["intro"])}</p>'
+    mem += '<div class="lvgrid">'
     for lv in data["memes"]["levels"]:
         c = colors.get(lv["level"], "#888")
         mem += f'<div class="lvl" style="border-color:{c}"><h3 style="color:{c}">{lv["icon"]} {esc(lv["level"])}</h3>'
@@ -1378,6 +1463,7 @@ def studio_html(data, archive_href=None):
                     f'{use_btn("Meme of the Week: " + lv["level"], it["title"], it["links"][0]["url"] if it["links"] else "")}</div>'
                     f'<p>{conf} {esc(it["what"])} <i>{esc(it["means"])}</i><br><b>How to bring it up:</b> {esc(it["tip"])}</p>{lks}</div>')
         mem += "</div>"
+    mem += "</div>"
     rd = ""
     for r in data.get("rundown", []):
         chy = "".join(f'<span class="chy"><b>{esc(c["primary"])}</b> · {esc(c["secondary"])}</span>' for c in r["chyrons"])
@@ -1410,11 +1496,11 @@ def studio_html(data, archive_href=None):
     body = "".join([
         sec("coldopen", "#f2b705", "Cold Open &amp; Jingle", "read aloud · about 45 seconds", coldopen, wide=True, fg="color:#1b2430", count=f'{co["words"]} words', chip="A",
             badges=(f'<span class="cf">{len(co["confirm"])} CONFIRM</span>' if co["confirm"] else "")),
-        sec("upto", "#d1495b", "What I've Been Up To This Week", esc(um["banner"]), upto, wide=True, count=f'{len(data["up_to"]) + len(data["up_to_coming"])} item{"" if len(data["up_to"]) + len(data["up_to_coming"]) == 1 else "s"}', chip="B"),
-        sec("rundown", "#264653", "Full 60-Minute Rundown" if mon else "Monday 8 AM rundown (next show)", "tap a block for notes, questions, chyrons and links" if mon else f'next show: {m["nextShow"]["label"]}, 8-9 AM CT · tap a block', f'<div class="rdgrid">{rd}</div>', wide=True,
+        sec("upto", "#d1495b", "What I've Been Up To", "this week · " + esc(um["banner"]), upto, wide=True, count=f'{len(data["up_to"]) + len(data["up_to_coming"])} item{"" if len(data["up_to"]) + len(data["up_to_coming"]) == 1 else "s"}', chip="B"),
+        sec("rundown", "#264653", "Full 60-Minute Rundown" if mon else "Monday 8 AM Rundown", "tap a block for notes, questions, chyrons and links" if mon else f'next show: {m["nextShow"]["label"]}, 8-9 AM CT · tap a block', f'<div class="rdgrid">{rd}</div>', wide=True,
             count=f'{len(data.get("rundown", []))} blocks · 60 min'),
         sec("headlines", "#e4572e", "Top Headlines · RGV First", esc(m["hlSub"]), heads, count=f"{nh} stories", badges=bh),
-        sec("trending", "#577590", "Trending: Wait, Don't Tell Me", "riff material · not the National Desk", trn, count=f"{nt_} items", badges=bt_, chip="J"),
+        sec("trending", "#577590", "Trending News", "what's trending around the nation", trn, count=f"{nt_} items", badges=bt_, chip="J"),
         sec("national", "#6d597a", "The National Desk", "fact · take · Valley angle", nat, count=f"{nn_} stories", badges=bn_, chip="J"),
         sec("tech", "#3d5a80", "What's Happening in Tech", "quick hits · block J, after the National Desk", tech_h, count=f'{len(tk["items"])} items', chip="J",
             badges=(f'<span class="sb {"a" if tk["origin"] == "wires" else "t"}">{esc(tk["badge"])}</span>' + (f'<span class="cf">{sum(1 for x in tk["items"] if x["isConfirm"])} CONFIRM</span>' if any(x["isConfirm"] for x in tk["items"]) else ""))),
@@ -1423,10 +1509,10 @@ def studio_html(data, archive_href=None):
         sec("hs", "#2a9d8f", "RGV High School Football", hs["round"], hsb, count=f"{n_hs} games"),
         sec("nfl", "#264653", esc(sport_title(data["sports"]["nfl"], False).replace("NFL ", "NFL · ", 1)), "scores + notable", sports_nfl, count=f"{n_nfl} items"),
         sec("nba", "#c1121f", "NBA", esc((data["sports"]["nba"].get("window", "") + " + Texas teams").strip(" +")), sports_nba, count=f"{n_nba} items"),
-        sec("mlb", "#003f88", "MLB · Offseason (no scores)", "hot stove", sports_mlb, count=f'{len(mlb["notable"])} items'),
-        sec("memes", "#ff7f50", "Meme of the Week · What the Kids Are Talking About", "for parents", mem, wide=True, count=f"{nm_} memes", chip="L",
+        sec("mlb", "#003f88", "MLB · Offseason", "no scores · hot stove", sports_mlb, count=f'{len(mlb["notable"])} items'),
+        sec("memes", "#ff7f50", "Meme of the Week", "what the kids are talking about · for parents", mem, wide=True, count=f"{nm_} memes", chip="L",
             badges=(f'<span class="cf">{cfm} CONFIRM</span>' if cfm else "")),
-        sec("used", "#1f9d55", "Used on Show · running list", "no repeats", used_body, wide=True, count="0 used")])
+        sec("used", "#1f9d55", "Used on Show", "running list · no repeats", used_body, wide=True, count="0 used")])
     segs = "".join(f"<li>{esc(s)}</li>" for s in data.get("segues", []))
     nowc = w.get("now") or {}
     bt = nowc.get("tempF"); bsrc = nowc.get("source", "forecast")
@@ -1450,9 +1536,10 @@ def studio_html(data, archive_href=None):
     arch = f'<p><a href="{esc(archive_href)}">All past packets and briefings</a></p>' if archive_href else ""
     chk = data.get("linkCheck")
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'self' https://api.weather.gov"><title>{esc(m["emailSubject"])} · Studio</title><style>{STUDIO_CSS}{STUDIO_CSS2}</style></head><body>
-<header id="top"><img src="{logo}" alt="Drew in the Morning"><div class="ht"><div class="k">Studio page · {esc(m["kicker"])} {('<span class="sample">'+esc(m["sampleLabel"])+'</span>') if m.get("sample") else ''}</div><div class="d">{esc(m["dateLabel"])}</div>{showstart}<div class="t">{esc(m["recap"])} · {esc(m["tagline"])}</div>
-<div class="tools"><button id="theme" type="button" title="Toggle dark/light">Dark / Light</button><button id="smaller" type="button">A−</button><button id="bigger" type="button">A+</button><button id="expand" type="button">Expand all</button><button id="collapse" type="button">Collapse all</button><button id="sortbtn" type="button" title="Order items by trend score or by the original editorial order">Sort: Score</button><a id="brkbadge" class="btnlike" href="#brk" data-jump="brk" title="Breaking watch: new since this page was built">Breaking <b id="brkb">–</b></a></div></div>
+<div id="minibar" aria-hidden="true"><b id="mb-time">--:--</b><span id="mb-next"></span><a href="#top" data-jump="top" aria-label="Back to top">Top ↑</a></div>
+<header id="top"><img src="{logo}" alt="Drew in the Morning"><div class="ht"><div class="k">Studio page · {esc(m["kicker"])} {('<span class="sample">'+esc(m["sampleLabel"])+'</span>') if m.get("sample") else ''}</div><div class="d">{esc(m["dateLabel"])}</div>{showstart}</div>
 {clockw}</header>
+<div class="toolbar"><div class="t">{esc(m["recap"])} · {esc(m["tagline"])}</div><div class="tools"><button id="theme" type="button" title="Toggle dark/light">Dark / Light</button><button id="smaller" type="button">A−</button><button id="bigger" type="button">A+</button><button id="expand" type="button">Expand all</button><button id="collapse" type="button">Collapse all</button><button id="sortbtn" type="button" title="Order items by trend score or by the original editorial order">Sort: Score</button><a id="brkbadge" class="btnlike" href="#brk" data-jump="brk" title="Breaking watch: new since this page was built">Breaking <b id="brkb">–</b></a></div></div>
 {usedbar}
 {brk}
 <nav>{nav}</nav><div class="clock" aria-label="60 minute show clock">{clockbar}</div>

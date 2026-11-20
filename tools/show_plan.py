@@ -102,17 +102,17 @@ blk(id="G-metro-desk", letter="G", title="McAllen Metro Desk: Economic Developme
     links=[L("Daily McAllen Nov 16","https://dailymcallen.com/local-news/editions/11-16-2026"),L("Daily McAllen Nov 17","https://dailymcallen.com/local-news/editions/11-17-2026"),L("Daily McAllen Nov 18","https://dailymcallen.com/local-news/editions/11-18-2026"),L("The RGV News: Nov 17 brief","https://thergvnews.com/reviews/day/2026-11-17")],
     confirm=["McAllen Holiday Parade date"])
 
-blk(id="H-open-format", letter="H", title="Wait, Don't Tell Me: Trending + Open Story", subject="Trending slot: viral, celebrity, culture and sports stories a well-informed host should know (pick 1 to 3 with a Valley riff), or an open local wildcard: Power & Pipes, Overheard in the Valley, Politiquera",
+blk(id="H-open-format", letter="H", title="Trending News + Open Story", subject="Trending slot: viral, celebrity, culture and sports stories a well-informed host should know (pick 1 to 3 with a Valley riff), or an open local wildcard: Power & Pipes, Overheard in the Valley, Politiquera",
     minutes=3, flex=True, trim_to=0, stretch_to=6, color="#577590",
     headlines=["Hidalgo County can't block data centers outside city limits","Speer Library bus stop march and petition"],
-    chyrons=[C("h0","Wait, Don't Tell Me","What everybody's talking about · pick 1 to 3"),C("h1","Judge Richard Cortez","Hidalgo County Judge · Citizens League"),C("h2","Texas Power Grid","~98 GW now · ~100 GW more by 2027"),C("h3","Overheard in the Valley","From r/RioGrandeValley"),C("h4","Politiquera Corner","politiquera.com"),C("h5","Drew Lentz","Wireless Engineer · The Wireless Nerd")],
-    talking=["TRENDING (\"WAIT, DON'T TELL ME\"): open the studio page section \"Trending: Wait, Don't Tell Me\" (6 to 10 items, each with a one-line summary, a suggested riff and a source link; the print packet carries the top 5). Pick 1 to 3: the best riff with a Valley tie, not the most famous story. Format: Drew reacts first (\"wait, don't tell me...\"), Jess adds the angle, one link on screen. Items marked CONFIRM BEFORE AIR are thinly sourced: verify or skip. Never duplicate a National Desk story. THIS WEEK'S SAMPLE BANK: CMA Awards (Ella Langley, \"Choosin' Texas\"), Musk \"I'm not MAGA\" (Starbase tie), the viral Mexican quince stadium party (Valley quince tie), Giannis vs. the Bucks, Pattinson as Bond.",
+    chyrons=[C("h0","Trending News","What's trending around the nation · pick 1 to 3"),C("h1","Judge Richard Cortez","Hidalgo County Judge · Citizens League"),C("h2","Texas Power Grid","~98 GW now · ~100 GW more by 2027"),C("h3","Overheard in the Valley","From r/RioGrandeValley"),C("h4","Politiquera Corner","politiquera.com"),C("h5","Drew Lentz","Wireless Engineer · The Wireless Nerd")],
+    talking=["TRENDING NEWS (what's trending around the nation): open the studio page section \"Trending News\" (6 to 10 items, each with a one-line summary, a suggested riff and a source link; the print packet carries the top 5). Pick 1 to 3: the best riff with a Valley tie, not the most famous story. Format: Drew reacts first, Jess adds the angle, one link on screen. Items marked CONFIRM BEFORE AIR are thinly sourced: verify or skip. Never duplicate a National Desk story. THIS WEEK'S SAMPLE BANK: CMA Awards (Ella Langley, \"Choosin' Texas\"), Musk \"I'm not MAGA\" (Starbase tie), the viral Mexican quince stadium party (Valley quince tie), Giannis vs. the Bucks, Pattinson as Bond.",
              "MENU (OPEN LOCAL WILDCARD). POWER & PIPES: Hidalgo County Judge Richard Cortez says the county can't unilaterally block data centers in unincorporated areas but can negotiate; Texas grid ~98 GW with ~100 GW more slated by end of 2027. Drew's wheelhouse: satellites eyeing space compute (Broadband Breakfast Nov 18) and the AT&T/AST SpaceMobile handoff test.",
              "OVERHEARD IN THE VALLEY: backup verified item, Speer Memorial Library Route 20 bus-stop march/petition (Nov 14; stop reportedly unserviced since ~2017). PREP: pull 2-3 top posts Sunday night from r/RioGrandeValley, r/RGVEvents, r/McAllen (Top, Past Week).",
              "POLITIQUERA CORNER: politiquera.com campaign data; pre-pick one chart from /2026midterms (Mission's Dec 12 runoff is a natural tie-in). No data was pulled for this sample.",
              "WILDCARD: whatever broke this morning. Check KRGV, MyRGV, ValleyCentral first."],
-    follow=["Wait, don't tell me: what's the one story you saw this morning that you want us to explain?","If you could attach one condition to a data center in the Valley (jobs, water, power or internet), which?"],
-    transitions=["Okay, that's what the internet is losing its mind over this morning. Now the big national stories, and why they land in the Valley.","Both sides said they're for the Valley. Let's find out what 'for the Valley' costs and who's paying."],
+    follow=["What's the one story you saw this morning that you want us to explain?","If you could attach one condition to a data center in the Valley (jobs, water, power or internet), which?"],
+    transitions=["Okay, that's what's trending around the nation this morning. Now the big national stories, and why they land in the Valley.","Both sides said they're for the Valley. Let's find out what 'for the Valley' costs and who's paying."],
     links=[L("Daily McAllen Nov 17 (Cortez on data centers)","https://dailymcallen.com/local-news/editions/11-17-2026"),L("r/RioGrandeValley: Speer Library march","https://www.reddit.com/r/RioGrandeValley/comments/1xjnz54/community_march_to_petition_for_the_speer/"),L("Politiquera","https://politiquera.com/")],
     confirm=["Pull live Reddit top-of-week titles","Choose the Politiquera data point"])
 
@@ -307,14 +307,14 @@ TECH_TALK = ("TECH SUB-SEGMENT (about 90 seconds inside J, after the National De
              "Items marked CONFIRM BEFORE AIR get verified or skipped. Local stays bigger: skip Tech entirely when the local news runs long.")
 TECH_FOLLOW = "Which tech story this morning will a Valley parent or small-business owner actually feel this week?"
 TECH_IN = "Okay, quick tech check before the internet gets weird: here's what's happening in tech."
-TECH_OUT = "That's tech. Now, what is everybody losing their mind over? Wait, don't tell me."
+TECH_OUT = "That's tech. Now, what's trending around the nation?"
 TECH_LINKS = [{"label": "Fast Company Daily (Drew's email; the daily refresh pulls it)", "url": "https://www.fastcompany.com/newsletters"}]
 _n = OLD["I"]
-nb(id="J-national-desk", letter="J", title="The National Desk (+ Trending)", short="National", subject="Big national stories with a Valley angle (fact, then take, then 'why it matters here'), plus Trending: Wait, Don't Tell Me as riff material",
+nb(id="J-national-desk", letter="J", title="The National Desk (+ Trending)", short="National", subject="Big national stories with a Valley angle (fact, then take, then 'why it matters here'), plus Trending News (what's trending around the nation)",
    minutes=8, flex=True, trim_to=6, stretch_to=10, color="#6d597a",
-   headlines=_n["headlines"] + ["Tech: 'What's Happening in Tech', pick 1 or 2 quick hits", "Trending: pick 1 to 3 'wait, don't tell me' stories"],
+   headlines=_n["headlines"] + ["Tech: 'What's Happening in Tech', pick 1 or 2 quick hits", "Trending News: pick 1 to 3 stories"],
    chyrons=oc("J", ["i1", "i2", "i3", "i4", "i5", "i6"]) + [C("j7", "What's Happening in Tech", "Quick hits from Fast Company Daily and the tech wires")] + [C("j8", c["primary"], c["secondary"]) for c in oc("J", ["h0"])],
-   talking=_n["talking"] + [TECH_TALK, _hw["talking"][0] + " (flex: this is riff material inside the National Desk, not a separate block)"],
+   talking=_n["talking"] + [TECH_TALK, _hw["talking"][0] + " (flex: this is trending-news material inside the National Desk, not a separate block)"],
    follow=_n["follow"] + [TECH_FOLLOW] + _hw["follow"][:1],
    transitions=["Okay, that's the 30,000-foot view. Now, what does it mean at 1,000 feet over the Valley?", TECH_IN, TECH_OUT, "Okay, that's what the internet is losing its mind over this morning. Now it's your turn."],
    links=_n["links"] + TECH_LINKS, confirm=_n["confirm"] + ["Tech items: confirm each one against its source link before air (the packet marks the thin ones CONFIRM BEFORE AIR)"])
@@ -374,7 +374,7 @@ JUMPS = [  # menu jumps: Drew can move through the blocks in any order
  ("Statewide","Local Politics","This is a Valley story, but Austin is already writing the rules."),
  ("National Desk","any local block","Strip out the politics: what did that story change for somebody at MFE or HRL this week?"),
  ("National Desk","any local block","Everybody's talking about it in Washington. Here's how it lands in Weslaco."),
- ("National Desk","Trending","Okay, that's the news. Here's what the internet is losing its mind over. Wait, don't tell me."),
+ ("National Desk","Trending","Okay, that's the news. Here's what's trending around the nation."),
  ("any block","Listener Line","We could go all morning on this, but let's hear from you: what are you seeing?"),
  ("any block","Meme of the Week","Let's lighten up and see what the kids are saying."),
  ("Meme of the Week","Family & Kids","That's the fun stuff. Now the part other parents skip."),

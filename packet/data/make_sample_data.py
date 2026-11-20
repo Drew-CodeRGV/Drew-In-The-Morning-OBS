@@ -191,14 +191,14 @@ data = {
 }
 
 
-# ---- trending ("Wait, Don't Tell Me") + cold-open teasers (research as of Nov 18, 2026)
+# ---- trending news + cold-open teasers (research as of Nov 18, 2026)
 def T(id, title, cat, one, angle, url, source, short, teaser, verified=True, confirm="", print_=False, links=None, image_url="", image_credit="", video_url=""):
     return {"id": id, "title": title, "category": cat, "one_line": one, "suggested_angle": angle, "source_url": url, "source": source, "short": short,
             "teaser": teaser, "verified": verified, "confirm": confirm, "print": print_, "links": links or [], "image_url": image_url, "image_credit": image_credit, "video_url": video_url}
 data["trending"] = [
  T("cma", "Ella Langley sweeps the CMA Awards with 'Choosin' Texas'", "culture",
    "At the 60th CMA Awards (Nov 18) Ella Langley won Single, Song and Music Video of the Year for 'Choosin' Texas'; Taylor Swift performed for the first time in 13 years and Lainey Wilson hosted.",
-   "Country's biggest night went to a song with Texas in the title. Wait, don't tell me who's spinning it most in the Valley, and does Lainey's 'Somewhere Over Laredo' count as a local song?",
+   "Country's biggest night went to a song with Texas in the title. Who's spinning it most in the Valley, and does Lainey's 'Somewhere Over Laredo' count as a local song?",
    "https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/", "Variety · Nov 18", "CMAs: Ella Langley wins 3 for 'Choosin' Texas'; Swift performs",
    "Ella Langley's big night at the CMA Awards", print_=True,
    links=[L("USA Today: full winners list", "https://www.usatoday.com/story/entertainment/music/2026/11/18/cma-awards-2026-winners-list/92853447007/"), L("Billboard: winners, updating live", "https://www.billboard.com/music/awards/cma-2026-winners-list-1236385046/")]),
@@ -222,7 +222,7 @@ data["trending"] = [
    confirm="Final margin not independently confirmed; the NBA.com box score shows Heat 128."),
  T("bond", "Bezos: Pattinson was picked as Bond just three days before the announcement", "celebrity",
    "Jeff Bezos said Robert Pattinson was chosen as the new James Bond on Fri Nov 13, after full-costume screen tests with five finalists; Amazon MGM announced it Mon Nov 16.",
-   "Batman to 007. Who's your Bond, and is it weird that the guy who owns Amazon made the call? Wait, don't tell me you picked Daniel Craig forever.",
+   "Batman to 007. Who's your Bond, and is it weird that the guy who owns Amazon made the call? Did you pick Daniel Craig forever?",
    "https://apnews.com/article/james-bond-jeff-bezos-robert-pattinson-a90f280d9e4fed9c7fd72ab6a4851945", "AP · Nov 18", "Bezos: Pattinson picked as Bond 3 days before announcement",
    "Robert Pattinson becoming James Bond", print_=True,
    links=[L("AP: Pattinson named the seventh Bond", "https://apnews.com/article/new-james-bond-4545b257a9924895a69623332db50c97")]),
@@ -240,7 +240,7 @@ data["trending"] = [
    links=[L("ESPN recap", "https://www.espn.com/mens-college-basketball/story/_/id/50517287/illinois-andrej-stojakovic-scores-46-points-most-ever-opponent-duke")]),
  T("usmnt", "Pulisic's bicycle kick sends Pochettino off with a 2-0 win", "sports",
    "The U.S. beat Haiti 2-0 in Cincinnati on Nov 17 in Mauricio Pochettino's last match as coach: Christian Pulisic scored with a bicycle kick in the 25th minute and Julian Hall added a second in the 43rd.",
-   "A bicycle kick as a farewell. The Valley is a soccer region, so who should coach the U.S. next, and wait, don't tell me you want Messi.",
+   "A bicycle kick as a farewell. The Valley is a soccer region, so who should coach the U.S. next, and do you want Messi?",
    "https://apnews.com/article/usmnt-soccer-mauricio-pochettino-farewell-haiti-3fe3610a6d9a0d0fa1ef08fe56f03630", "AP · Nov 17", "Pulisic bicycle kick; US beats Haiti 2-0 in Pochettino finale",
    "Pulisic's bicycle kick in Pochettino's farewell",
    links=[L("U.S. Soccer recap", "https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-cincinnati-ohio")]),

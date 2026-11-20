@@ -329,7 +329,7 @@ Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close
 
 ---
 ## J · THE NATIONAL DESK (+ TRENDING) (8:45–8:53, 8 min)
-*FLEX: trim to 6 / stretch to 10 min. Big national stories with a Valley angle (fact, then take, then 'why it matters here'), plus Trending: Wait, Don't Tell Me as riff material*
+*FLEX: trim to 6 / stretch to 10 min. Big national stories with a Valley angle (fact, then take, then 'why it matters here'), plus Trending News (what's trending around the nation)*
 
 **Talking points**
 - Keep it conversational: one-line fact, your take (fair, a little spicy), then 'why it matters in the Valley.' Pick 3 of the 5. Local stays the star.
@@ -339,7 +339,7 @@ Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close
 - 4) NVIDIA'S JENSEN HUANG RESIGNS (Nov 12). FACT: Nvidia announced Huang resigned as president, CEO and board member effective immediately; CFO Colette Kress is interim CEO; Harvey C. Jones is the first board chair (Nvidia press release). Mainstream reports link it to an alleged affair with a suspected Chinese spy (SNL's cold open built on it); verify the allegations through a reported source before characterizing them. ANGLE: the AI boom's biggest face is gone, and it's still building the chips for every data center on earth. VALLEY TIE: Starbase's $24B data center is exactly that kind of AI compute fight. CONFIRM BEFORE AIR on any allegation detail.
 - 5) TEXAS TEN COMMANDMENTS (ABC, Nov 18). FACT: ABC reports the Democratic midterm sweep has put Texas's classroom Ten Commandments mandate in doubt; the law remains in effect and legal battles are headed to the Supreme Court. ANGLE: whatever you think of it, parents deserve a clear answer about what's on the classroom wall. VALLEY TIE: it applies in every RGV school; ask what your child's classroom has up. CONFIRM BEFORE AIR on details of repeal efforts.
 - TECH SUB-SEGMENT (about 90 seconds inside J, after the National Desk and before Trending; no extra time added to the hour): open the studio page section "What's Happening in Tech". It holds 3 to 5 items from the morning's Fast Company Daily email (the daily refresh reads it from Gmail); if no issue arrived in the last 48 hours the section says so and shows tech-wire items (The Verge, TechCrunch, Ars Technica) marked FALLBACK. Pick 1 or 2 with an RGV or family angle: read the one-liner, say the angle, one link on screen. Items marked CONFIRM BEFORE AIR get verified or skipped. Local stays bigger: skip Tech entirely when the local news runs long.
-- TRENDING ("WAIT, DON'T TELL ME"): open the studio page section "Trending: Wait, Don't Tell Me" (6 to 10 items, each with a one-line summary, a suggested riff and a source link; the print packet carries the top 5). Pick 1 to 3: the best riff with a Valley tie, not the most famous story. Format: Drew reacts first ("wait, don't tell me..."), Jess adds the angle, one link on screen. Items marked CONFIRM BEFORE AIR are thinly sourced: verify or skip. Never duplicate a National Desk story. THIS WEEK'S SAMPLE BANK: CMA Awards (Ella Langley, "Choosin' Texas"), Musk "I'm not MAGA" (Starbase tie), the viral Mexican quince stadium party (Valley quince tie), Giannis vs. the Bucks, Pattinson as Bond. (flex: this is riff material inside the National Desk, not a separate block)
+- TRENDING NEWS (what's trending around the nation): open the studio page section "Trending News" (6 to 10 items, each with a one-line summary, a suggested riff and a source link; the print packet carries the top 5). Pick 1 to 3: the best riff with a Valley tie, not the most famous story. Format: Drew reacts first, Jess adds the angle, one link on screen. Items marked CONFIRM BEFORE AIR are thinly sourced: verify or skip. Never duplicate a National Desk story. THIS WEEK'S SAMPLE BANK: CMA Awards (Ella Langley, "Choosin' Texas"), Musk "I'm not MAGA" (Starbase tie), the viral Mexican quince stadium party (Valley quince tie), Giannis vs. the Bucks, Pattinson as Bond. (flex: this is trending-news material inside the National Desk, not a separate block)
 
 **Follow-up questions**
 - Would you board a flight tomorrow? Be honest.
@@ -347,12 +347,12 @@ Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close
 - Did SNL's 'Sister' hit you in the gut or are we overthinking it?
 - 'Current FAA flight cuts': none found in the sources checked this week. CONFIRM BEFORE AIR if Drew meant something else.
 - Which tech story this morning will a Valley parent or small-business owner actually feel this week?
-- Wait, don't tell me: what's the one story you saw this morning that you want us to explain?
+- What's the one story you saw this morning that you want us to explain?
 
 **Transition lines**
 - "Okay, that's the 30,000-foot view. Now, what does it mean at 1,000 feet over the Valley?"
 - "Okay, quick tech check before the internet gets weird: here's what's happening in tech."
-- "That's tech. Now, what is everybody losing their mind over? Wait, don't tell me."
+- "That's tech. Now, what's trending around the nation?"
 - "Okay, that's what the internet is losing its mind over this morning. Now it's your turn."
 
 **Chyrons (≤60 chars)**
@@ -363,7 +363,7 @@ Host: Drew Lentz · Jess: recurring guest (Family & Kids, Block H, and the close
 - SNL: John Mulaney Hosts / Phoebe Bridgers · Nov. 14 · 7th time hosting
 - SNL: The 'Sister' Sketch / Pretaped elder-care ad · 5.8M YouTube views
 - What's Happening in Tech / Quick hits from Fast Company Daily and the tech wires
-- Wait, Don't Tell Me / What everybody's talking about · pick 1 to 3
+- Trending News / What's trending around the nation · pick 1 to 3
 
 **Sources / links**
 - FAA: Nationwide Ground Stop Q&A: https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers
