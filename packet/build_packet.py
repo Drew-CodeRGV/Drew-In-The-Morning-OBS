@@ -16,7 +16,7 @@ Outputs (out/DITM-packet-<date>[-SAMPLE].*):
     -sources.txt     every source URL grouped by section
 Nothing is ever sent or posted by this script.
 """
-import argparse, base64, concurrent.futures, datetime, html, json, os, re, shutil, subprocess, sys, textwrap, urllib.request, urllib.error
+import argparse, base64, concurrent.futures, datetime, hashlib, html, json, os, re, shutil, subprocess, sys, textwrap, urllib.parse, urllib.request, urllib.error
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 esc = lambda s: html.escape(str(s), quote=True)
@@ -235,6 +235,161 @@ def sc_agg(items):
     b = (f'<span class="sb h">{hot} HOT</span>' if hot else "") + (f'<span class="sb t">{trd} TREND</span>' if trd else "") + \
         (f'<span class="sb u">{unc} UNCOVERED</span>' if unc else "") + (f'<span class="cf">{cf} CONFIRM</span>' if cf else "")
     return len(items), b
+
+
+# ---------------------------------------------------------------- rolling 7-day news window (studio dashboard only; never invents items)
+WEEK_DAYS = 7
+
+def norm_story_url(url):
+    """Canonical URL for dedupe and remove-ids: host lowercased, no www, no trailing slash, no tracking params."""
+    u = (url or "").strip()
+    if not u:
+        return ""
+    try:
+        p = urllib.parse.urlparse(u)
+        q = [(k, v) for k, v in urllib.parse.parse_qsl(p.query, keep_blank_values=True)
+             if not k.lower().startswith("utm_") and k.lower() not in ("fbclid", "gclid", "ocid", "mc_cid", "mc_eid")]
+        path = (p.path or "").rstrip("/")
+        netloc = (p.netloc or "").lower()
+        if netloc.startswith("www."):
+            netloc = netloc[4:]
+        return urllib.parse.urlunparse(((p.scheme or "https").lower(), netloc, path, "", urllib.parse.urlencode(q), ""))
+    except Exception:
+        return u.rstrip("/").lower()
+
+def norm_story_headline(title):
+    return re.sub(r"\s+", " ", (title or "").casefold()).strip()
+
+def _story_url(it):
+    if it.get("url"):
+        return it["url"]
+    if it.get("source_url"):
+        return it["source_url"]
+    links = it.get("links") or []
+    if links and isinstance(links, list) and isinstance(links[0], dict):
+        return links[0].get("url") or ""
+    return ""
+
+def story_dedupe_key(it):
+    u = norm_story_url(_story_url(it))
+    if u:
+        return ("u", u)
+    t = norm_story_headline(it.get("title") or it.get("headline") or it.get("short") or "")
+    return ("t", t)
+
+def story_remove_id(it):
+    """Stable across days and rebuilds: r- + sha1 of URL or normalized headline."""
+    kind, val = story_dedupe_key(it)
+    if not val:
+        val = "empty"
+    return "r-" + hashlib.sha1(f"{kind}:{val}".encode("utf-8")).hexdigest()[:16]
+
+def story_when(it, packet_date=None):
+    raw = it.get("published") or ""
+    if raw:
+        try:
+            dt = datetime.datetime.fromisoformat(str(raw).replace("Z", "+00:00"))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=datetime.timezone(datetime.timedelta(hours=-6)))
+            return dt.astimezone(datetime.timezone(datetime.timedelta(hours=-6)))
+        except Exception:
+            pass
+    if packet_date:
+        if isinstance(packet_date, str):
+            packet_date = datetime.date.fromisoformat(packet_date[:10])
+        return datetime.datetime(packet_date.year, packet_date.month, packet_date.day, 12, 0, tzinfo=datetime.timezone(datetime.timedelta(hours=-6)))
+    return None
+
+def story_date_tag(it, packet_date=None):
+    when = story_when(it, packet_date)
+    return when.strftime("%b %-d") if when else ""
+
+def _packet_file_for_day(root, day):
+    iso = day.isoformat() if hasattr(day, "isoformat") else str(day)
+    for path in (
+        os.path.join(root, "packet", "data", f"packet-{iso}.json"),
+        os.path.join(root, "packet", "out", f"DITM-briefing-{iso}.json"),
+    ):
+        if os.path.isfile(path) and "SAMPLE" not in os.path.basename(path):
+            return path
+    return None
+
+def extract_news_lists(pkt):
+    """News desks only (not obits, memes, sports, weather, or the family calendar)."""
+    hl = pkt.get("headlines") or {}
+    tech = pkt.get("tech") or {}
+    items = tech.get("items") if isinstance(tech, dict) else (tech or [])
+    ch = pkt.get("chisme") or {}
+    return {
+        "rgv": list(hl.get("rgv") or []),
+        "texas": list(hl.get("texas") or []),
+        "national": list(pkt.get("nationalDesk") or []),
+        "trending": list(pkt.get("trending") or []),
+        "tech": list(items or []),
+        "chisme": list(ch.get("items") or []),
+    }
+
+def merge_week_news(data, root, today, days=WEEK_DAYS):
+    """Merge news story items from today plus the prior (days-1) days of packets already on disk.
+    Dedupes by URL / normalized headline (keeps the newest copy). Drops stories older than the window.
+    Does not invent items and does not mutate `data`. Missing days are listed in the result."""
+    if isinstance(today, str):
+        today = datetime.date.fromisoformat(today[:10])
+    start = today - datetime.timedelta(days=days - 1)
+    found, missing, paths = [], [], []
+    for i in range(days):
+        day = today - datetime.timedelta(days=i)
+        path = _packet_file_for_day(root, day)
+        if path:
+            found.append(day)
+            paths.append((day, path))
+        else:
+            missing.append(day)
+    buckets = {k: [] for k in ("rgv", "texas", "national", "trending", "tech", "chisme")}
+    seen = {k: set() for k in buckets}
+
+    def add(kind, it, packet_date):
+        if not isinstance(it, dict):
+            return
+        if not (it.get("title") or it.get("headline") or it.get("short")):
+            return
+        when = story_when(it, packet_date)
+        if when and when.date() < start:
+            return
+        key = story_dedupe_key(it)
+        if not key[1] or key in seen[kind]:
+            return
+        row = dict(it)
+        row["_packet_date"] = packet_date.isoformat() if hasattr(packet_date, "isoformat") else str(packet_date)
+        row["_date_tag"] = story_date_tag(it, packet_date)
+        row["_when"] = int(when.timestamp()) if when else 0
+        row["_rmid"] = story_remove_id(it)
+        buckets[kind].append(row)
+        seen[kind].add(key)
+
+    # Newest first so an older packet cannot replace today's copy of the same story.
+    today_lists = extract_news_lists(data or {})
+    if today not in found:
+        found.insert(0, today)
+    for kind, items in today_lists.items():
+        for it in items:
+            add(kind, it, today)
+    for day, path in paths:
+        if day == today:
+            continue
+        try:
+            with open(path, encoding="utf-8") as fh:
+                pkt = json.load(fh)
+        except Exception:
+            if day not in missing:
+                missing.append(day)
+            continue
+        for kind, items in extract_news_lists(pkt).items():
+            for it in items:
+                add(kind, it, day)
+    for kind in buckets:
+        buckets[kind].sort(key=lambda r: (r.get("_when") or 0, r.get("title") or ""), reverse=True)
+    return {**buckets, "found": found, "missing": missing, "window": (start, today)}
 
 
 # ---------------------------------------------------------------- assign existing headlines to rundown blocks D–I (best fit, no duplicates)
@@ -1272,11 +1427,14 @@ $('expand').onclick=function(){setAll(true)};
 $('collapse').onclick=function(){setAll(false)};
 if(location.hash.length>1){var hh=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(hh){var hp=hh.closest('details.sec');if(hp)hp.open=true;if(hh.tagName==='DETAILS')hh.open=true}}
 /* ---- order items by trend score (default) or editorial order ---- */
-var SORT=sm.get('ditm-sort')||'score';
+var SORT=sm.get('ditm-sort')||'when';
 function sortAll(){[].forEach.call(document.querySelectorAll('.sortbox'),function(b){var k=[].slice.call(b.children).filter(function(c){return c.dataset.ord!==undefined});
- k.sort(function(a,c){return SORT==='ord'?(a.dataset.ord-c.dataset.ord):((c.dataset.sc-a.dataset.sc)||(a.dataset.ord-c.dataset.ord))});k.forEach(function(c){b.appendChild(c)})});
- $('sortbtn').textContent='Sort: '+(SORT==='ord'?'Editorial':'Score')}
-$('sortbtn').onclick=function(){SORT=SORT==='ord'?'score':'ord';sm.set('ditm-sort',SORT);sortAll()};
+ k.sort(function(a,c){var aw=+(a.dataset.when||0),cw=+(c.dataset.when||0);
+  if(SORT==='ord')return a.dataset.ord-c.dataset.ord;
+  if(SORT==='score')return (c.dataset.sc-a.dataset.sc)||(cw-aw)||(a.dataset.ord-c.dataset.ord);
+  return (cw-aw)||(c.dataset.sc-a.dataset.sc)||(a.dataset.ord-c.dataset.ord)});k.forEach(function(c){b.appendChild(c)})});
+ $('sortbtn').textContent='Sort: '+(SORT==='ord'?'Editorial':SORT==='score'?'Score':'Newest')}
+$('sortbtn').onclick=function(){SORT=SORT==='when'?'score':SORT==='score'?'ord':'when';sm.set('ditm-sort',SORT);sortAll()};
 sortAll();
 function copy(u,msg){function fb(){var a=document.createElement('textarea');a.value=u;a.setAttribute('readonly','');a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{a.setSelectionRange(0,99999);document.execCommand('copy');toast(msg||'Link copied')}catch(e){toast('Copy failed: long-press the link instead')}a.remove()}
 if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(u).then(function(){toast(msg||'Link copied')},fb)}else fb()}
@@ -1358,6 +1516,7 @@ function applySearch(){
   var hit=0, total=0;
   cards().forEach(function(el){
     unmark(el);
+    if(el.classList.contains('rm-hide')){el.hidden=true;return;}
     total++;
     var ok=!q||hay(el).indexOf(q)!==-1;
     el.hidden=!ok;
@@ -1365,7 +1524,7 @@ function applySearch(){
   });
   document.querySelectorAll('details.sec, #brk').forEach(function(d){
     var n=0;
-    d.querySelectorAll('.item, .ob, .brkrow').forEach(function(c){if(!c.hidden)n++;});
+    d.querySelectorAll('.item, .ob, .brkrow').forEach(function(c){if(!c.hidden&&!c.classList.contains('rm-hide'))n++;});
     var empty=!!q&&n===0;
     d.classList.toggle('q-empty',empty);
     if(q&&n)d.open=true;
@@ -1391,6 +1550,7 @@ if(window.MutationObserver){
   var obs=new MutationObserver(function(){if((qel.value||'').trim())applySearch();});
   var brk=document.getElementById('brklist'); if(brk)obs.observe(brk,{childList:true,subtree:true});
 }
+window.ditmSearch=applySearch;
 })();
 """
 STUDIO_CSS2 = """
@@ -1495,7 +1655,7 @@ nav a.q-empty{display:none}
 #mc-guest{background:#0b5cad;border-color:#0b5cad;color:#fff}
 #mc-caller{background:#c8102e;border-color:#c8102e;color:#fff}
 #mc-logo{background:#2a3340;color:#fff}
-details#mc-more{position:relative;flex:none}
+details#mc-more{position:relative;flex:none;z-index:40;overflow:visible;background:transparent;border:none;min-width:0}
 details#mc-more>summary{list-style:none;cursor:pointer;min-width:44px}
 details#mc-more>summary::-webkit-details-marker{display:none}
 .mc-more-p{position:absolute;right:0;top:calc(100% + 6px);z-index:30;min-width:min(340px,92vw);max-width:92vw;background:#141b24;border:1px solid #3a4656;border-radius:12px;padding:10px;box-shadow:0 12px 40px rgba(0,0,0,.45);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
@@ -1588,6 +1748,14 @@ details.sec[open]{grid-column:1/-1}
 /* expanded sections fill the row; even-height story cards in a responsive grid */
 .sec .sortbox{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:8px;align-items:stretch}
 .sec .sortbox>.item{border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--bg);display:flex;flex-direction:column;align-items:stretch;gap:5px;min-width:0;min-height:100%;overflow:hidden;box-sizing:border-box}
+.sec .sortbox>.item[data-rmid]{position:relative;padding-top:8px;padding-right:48px}
+.rmx{position:absolute;top:2px;right:2px;min-width:44px;min-height:44px;padding:0;border:0;border-radius:8px;background:transparent;color:#c8102e;font-size:22px;font-weight:900;line-height:1;cursor:pointer;z-index:2;font-family:inherit}
+.rmx:hover,.rmx:focus-visible{background:#c8102e;color:#fff;outline:none}
+.item.rm-hide{display:none!important}
+body.show-rm .item.rm-gone{opacity:.6;outline:1px dashed var(--line)}
+.dtg{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--mut);border:1px solid var(--line);border-radius:999px;padding:0 7px;line-height:1.7;white-space:nowrap}
+#toast.rmtoast{pointer-events:auto}
+#toast .undobtn{margin-left:8px;min-height:44px;min-width:44px;padding:0 12px;border:0;border-radius:999px;background:#fff;color:#1b2430;font:inherit;font-weight:800;cursor:pointer}
 .sec .sortbox>.item>.tx{min-width:0;overflow:hidden;display:flex;flex-direction:column;gap:4px;flex:1 1 auto}
 .sec .sortbox>.item>.acts{margin-top:auto;justify-content:flex-end;flex-wrap:wrap;gap:6px;flex:none}
 .sec .sortbox>.item>.acts button{flex:none;max-width:100%}
@@ -1653,7 +1821,7 @@ summary,summary *,.rtn,.tn,.tt,h3,h4{overflow-wrap:normal;word-break:normal;hyph
 
 CHY_JS = r"""
 (function(){var api=window.ditmRos;if(!api)return;var $=function(i){return document.getElementById(i)};
-var LK='ditm-chyron-topic-v1',RX=/^[A-Za-z0-9_-]{6,64}$/,mem=null,CMDS={start:1,stop:1,hold:1,resume:1,toggle:1,logo:1,item:1,guest:1,guest_hide:1,caller:1,caller_show:1,caller_hide:1,next:1,prev:1,goto:1,clear:1,show:1},IDRX=/^i-[0-9a-f]{10}$/;
+var LK='ditm-chyron-topic-v1',RX=/^[A-Za-z0-9_-]{6,64}$/,mem=null,CMDS={start:1,stop:1,hold:1,resume:1,toggle:1,logo:1,item:1,guest:1,guest_hide:1,caller:1,caller_show:1,caller_hide:1,next:1,prev:1,goto:1,clear:1,show:1,remove:1,restore:1},IDRX=/^i-[0-9a-f]{10}$/,RMID=/^r-[0-9a-f]{8,32}$/;
 function cap(v,n){return(typeof v==='string')?v.replace(/[\u0000-\u001f\u007f-\u009f]+/g,' ').replace(/\s+/g,' ').trim().slice(0,n):''}
 function httpsOnly(u){try{var x=new URL(u);return(x.protocol==='https:'&&x.hostname&&!x.username)?x.href:''}catch(e){return ''}}
 function gget(){try{return localStorage.getItem(LK)}catch(e){return mem}}function gset(v){mem=v;try{localStorage.setItem(LK,v)}catch(e){}}
@@ -1663,6 +1831,7 @@ if(q){gset(q[1]);try{history.replaceState(null,'',location.pathname)}catch(e){}}
 var topic=gget();if(!RX.test(topic||''))topic=null;
 var last=null,vis=true,ADRX=/^a-[0-9a-f]{10}$/;
 function send(cmd,idx,id,x){if(!topic||!Object.prototype.hasOwnProperty.call(CMDS,cmd))return;var m={k:'cmd',cmd:cmd,at:Date.now(),v:1};if(typeof idx==='number')m.idx=idx;if(cmd==='item'){if(IDRX.test(id||''))m.id=id;else{var h=cap(x&&x.headline,100);if(!h)return;m.headline=h;m.line=cap(x.line,118);m.kicker=cap(x.kicker,44);if(ADRX.test(id||''))m.id=id}}
+ if((cmd==='remove'||cmd==='restore')&&id){if(!(RMID.test(id)||id==='*'))return;m.id=id}
  if(cmd==='guest'&&x){m.name=cap(x.name,60);m.title=cap(x.title,80);m.blurb=cap(x.blurb,140);if(!m.name)return}
  if(cmd==='caller'&&x){m.name=cap(x.name,60);m.title=cap(x.title,80);m.photo=(x.photo&&httpsOnly(x.photo))||'';if(!m.name)return}
  try{fetch(BASE+'/'+topic,{method:'POST',body:JSON.stringify(m)}).catch(function(){})}catch(e){}}
@@ -1726,12 +1895,53 @@ function onState(st){var rx=Date.now();st.rx=rx;if(last&&(last.at||0)>(st.at||0)
 var es=null;function connect(){if(es){try{es.close()}catch(e){}es=null}if(!topic||!window.EventSource)return;
  es=new EventSource(BASE+'/'+topic+'/sse?since=6h');
  es.onmessage=function(ev){var m;try{m=JSON.parse(ev.data)}catch(e){return}if(!m||m.event!=='message'||!m.message)return;var c;try{c=JSON.parse(m.message)}catch(e){return}
-  if(c&&c.k==='state'&&typeof c.at==='number')onState(c)};
+  if(c&&c.k==='state'&&typeof c.at==='number')onState(c);
+  if(c&&c.k==='cmd'&&(c.cmd==='remove'||c.cmd==='restore')&&window.ditmRemove)window.ditmRemove.apply(c)};
  es.onerror=function(){var st=$('chst');if(st&&!last)st.textContent='connecting\u2026'}}
 connect();ui();setInterval(ui,5000);
 window.ditmChy={send:send,linked:function(){return !!topic},state:function(){return last}};
 })();
 """
+REMOVE_JS = r"""
+(function(){
+var RK='ditm-removed-v1',$=function(i){return document.getElementById(i)},mem={};
+var store={get:function(k){try{var v=localStorage.getItem(k);return v===null?(mem[k]===undefined?null:mem[k]):v}catch(e){return mem[k]===undefined?null:mem[k]}},
+ set:function(k,v){mem[k]=v;try{localStorage.setItem(k,v)}catch(e){}}};
+var removed={};try{removed=JSON.parse(store.get(RK)||'{}')||{}}catch(e){removed={}}
+function ids(){return Object.keys(removed)}
+function save(){store.set(RK,JSON.stringify(removed))}
+function sendCmd(cmd,id){if(window.ditmChy&&window.ditmChy.send)window.ditmChy.send(cmd,undefined,id)}
+function showUndo(id){var e=$('toast');if(!e)return;e.innerHTML='Removed \u00B7 <button type="button" id="rm-undo" class="undobtn">Undo</button>';e.className='on rmtoast';
+ clearTimeout(showUndo.t);var undone=false;var b=$('rm-undo');if(b)b.onclick=function(){undone=true;restore(id,false);e.className='';e.textContent=''};
+ showUndo.t=setTimeout(function(){if(!undone){e.className='';e.textContent=''}},6000)}
+function recount(){document.querySelectorAll('details.sec').forEach(function(sec){var all=sec.querySelectorAll('.item[data-rmid]');if(!all.length)return;
+ var n=sec.querySelectorAll('.item[data-rmid]:not(.rm-hide)').length;var cnt=sec.querySelector('summary .cnt');
+ if(cnt&&/stor(y|ies)/i.test(cnt.textContent||''))cnt.textContent=n?(n+' stor'+(n===1?'y':'ies')):'No stories today'})}
+function paintMore(){var n=ids().length,b=$('rm-show'),r=$('rm-restore');
+ if(b)b.textContent=(document.body.classList.contains('show-rm')?'Hide removed':'Show removed')+' ('+n+')';
+ if(r)r.disabled=!n}
+function applyAll(){var show=document.body.classList.contains('show-rm');
+ document.querySelectorAll('.item[data-rmid]').forEach(function(el){var id=el.getAttribute('data-rmid'),gone=!!removed[id];
+  el.classList.toggle('rm-hide',gone&&!show);el.classList.toggle('rm-gone',gone);
+  var b=el.querySelector('.rmx');if(b){b.setAttribute('aria-label',gone?'Restore story':'Remove story');b.setAttribute('title',gone?'Restore story':'Remove story')}});
+ recount();paintMore();if(window.ditmSearch)window.ditmSearch()}
+function hide(id,undo){removed[id]=Date.now();save();applyAll();if(undo)showUndo(id);sendCmd('remove',id)}
+function restore(id,sync){delete removed[id];save();applyAll();if(sync!==false)sendCmd('restore',id)}
+function restoreAll(){if(!ids().length)return;removed={};save();applyAll();sendCmd('restore','*')}
+document.addEventListener('click',function(e){var b=e.target&&e.target.closest&&e.target.closest('.rmx');if(!b)return;
+ e.preventDefault();e.stopPropagation();var el=b.closest('.item'),id=el&&el.getAttribute('data-rmid');if(!id)return;
+ if(removed[id])restore(id);else hide(id,true)},true);
+if($('rm-show'))$('rm-show').onclick=function(){document.body.classList.toggle('show-rm');applyAll()};
+if($('rm-restore'))$('rm-restore').onclick=function(){restoreAll()};
+window.ditmRemove={apply:function(c){if(!c||!c.cmd)return;var id=c.id||'';
+  if(c.cmd==='restore'&&id==='*'){removed={};save();applyAll();return}
+  if(!/^r-[0-9a-f]{8,32}$/.test(id))return;
+  if(c.cmd==='remove'){removed[id]=c.at||Date.now();save();applyAll()}
+  if(c.cmd==='restore'){delete removed[id];save();applyAll()}}};
+applyAll();
+})();
+"""
+
 SHOW_JS = r"""
 (function(){var b=document.getElementById('ssbtn');if(!b)return;
 var SD=b.dataset.showdate,KEY='ditm-showstart-v1:'+SD,PLAN=480,mem={},$=function(i){return document.getElementById(i)};
@@ -1912,12 +2122,13 @@ def studio_html(data, archive_href=None):
     thumbhtml = f'<div class="thumbrow"><img src="{b64(asset(thumb["file"]), "image/jpeg")}" alt="Starship file photo"><div class="src">{esc(thumb["caption"])} · {A(thumb["credit_url"], "source")}</div></div>' if thumb else ""
     # ================= v3 body: every section is a full-width bar that opens into Trending-model cards =================
     TZC = datetime.timezone(datetime.timedelta(hours=-6))
-    def tcard(title, url="", pills=(), meta="", tldr="", riff="", riff_label="Riff", score="", conf="", extra="", sec_="", ord_=None, sc=0, copy_text="", use=True, uid="", cls="", badges="", chy_unconf=False, chy_fallback=None):
+    def tcard(title, url="", pills=(), meta="", tldr="", riff="", riff_label="Riff", score="", conf="", extra="", sec_="", ord_=None, sc=0, copy_text="", use=True, uid="", cls="", badges="", chy_unconf=False, chy_fallback=None, rmid="", when=0, date_tag=""):
         """THE card (Trending News model): headline, meta line (source / date / score / badges), TL;DR, Riff, then link + copy + used.
         Any field that has no data is left out cleanly; nothing is invented to fill a slot."""
         head = A(url, title) if url else esc(title)
         pl = "".join(f'<span class="pill"{(" style=background:" + c) if c else ""}>{esc(p)}</span>' for p, c in ((x if isinstance(x, tuple) else (x, "")) for x in pills if x))
         cf = ' <span class="cf">CONFIRM BEFORE AIR</span>' if conf else ""
+        tag = f'<span class="dtg">{esc(date_tag)}</span>' if date_tag else ""
         mt = f'<span class="src">{esc(meta)}</span>' if meta else ""
         summary = tldr or (conf or "")
         td = f'<p class="tldr">{esc(summary)}</p>' if summary else ""
@@ -1930,8 +2141,9 @@ def studio_html(data, archive_href=None):
         acts = CP(ct, "Copy link" if url and not copy_text else "Copy") + chy_btn(cid, hl) + (use_btn(sec_, title, url) if (use and sec_) else "")
         pills_txt = " ".join((x[0] if isinstance(x, tuple) else x) for x in pills if x)
         hay = " ".join(x for x in (title, meta, tldr, riff_txt, conf, sec_, pills_txt) if x)
-        attrs = (f' data-ord="{ord_}" data-sc="{sc}"' if ord_ is not None else "") + (f' id="{uid}"' if uid else "") + f' data-chyid="{cid}" data-chyh="{esc(hl)}" data-q="{esc(hay)}"'
-        return (f'<div class="item trn tc{(" " + cls) if cls else ""}"{attrs}><div class="tx"><b class="hd">{head}</b><div class="meta">{pl}{mt}{score}{badges}<span class="upill">USED</span>{cf}</div>{td}{rf}{extra}</div><div class="acts">{acts}</div></div>')
+        attrs = (f' data-ord="{ord_}" data-sc="{sc}"' if ord_ is not None else "") + (f' id="{uid}"' if uid else "") + (f' data-rmid="{esc(rmid)}"' if rmid else "") + (f' data-when="{int(when)}"' if when else "") + f' data-chyid="{cid}" data-chyh="{esc(hl)}" data-q="{esc(hay)}"'
+        rmx = (f'<button type="button" class="rmx" data-rmid="{esc(rmid)}" aria-label="Remove story" title="Remove story">×</button>' if rmid else "")
+        return (f'<div class="item trn tc{(" " + cls) if cls else ""}"{attrs}>{rmx}<div class="tx"><b class="hd">{head}</b><div class="meta">{pl}{tag}{mt}{score}{badges}<span class="upill">USED</span>{cf}</div>{td}{rf}{extra}</div><div class="acts">{acts}</div></div>')
     def grid(cards, empty=""):
         return '<div class="sortbox">' + ("".join(cards) or f'<p class="mut noev">{esc(empty)}</p>') + "</div>"
     def lks_of(links):
@@ -1943,14 +2155,27 @@ def studio_html(data, archive_href=None):
             return ""
 
     # ---- top headlines (RGV first, then Texas)
+    def news_bits(i):
+        pkt_day = i.get("_packet_date") or ((data.get("meta") or {}).get("date"))
+        when = i.get("_when") or 0
+        if not when:
+            dt = story_when(i, pkt_day)
+            when = int(dt.timestamp()) if dt else 0
+        return dict(rmid=i.get("_rmid") or story_remove_id(i), when=when, date_tag=i.get("_date_tag") or story_date_tag(i, pkt_day))
     def hcard(i, sec_):
         pubs = ""
-        return tcard(i["title"], i.get("url", ""), pills=(("VALLEY", "#2a7de1"),) if i.get("valley") else (), meta=i.get("source", "") + ((" · " + dtl(i["published"])) if i.get("published") else ""), tldr=i.get("tldr") or i.get("summary") or "",
-                     score=sc_studio(i), conf=conf_text(i) if i.get("confirm") else "", sec_=sec_, ord_=i.get("ord", 0), sc=i.get("score", 0))
+        return tcard(i["title"], i.get("url", "") or _story_url(i), pills=(("VALLEY", "#2a7de1"),) if i.get("valley") else (), meta=i.get("source", "") + ((" · " + dtl(i["published"])) if i.get("published") else ""), tldr=i.get("tldr") or i.get("summary") or i.get("short") or "",
+                     score=sc_studio(i), conf=conf_text(i) if i.get("confirm") else "", sec_=sec_, ord_=i.get("ord", 0), sc=i.get("score", 0), **news_bits(i))
+
+    # ---- rolling 7-day news window (today + prior packets on disk; email/print still use today's data only)
+    week = merge_week_news(data, os.path.join(HERE, ".."), data["meta"]["date"])
+    data["_week"] = {"found": [d.isoformat() for d in week["found"]], "missing": [d.isoformat() for d in week["missing"]],
+                     "window": [week["window"][0].isoformat(), week["window"][1].isoformat()],
+                     "counts": {k: len(week[k]) for k in ("rgv", "texas", "national", "trending", "tech", "chisme")}}
 
     # ---- chisme
     ch = data.get("chisme") or {}
-    chi = ch.get("items") or []
+    chi = week["chisme"]
     def chcard(c, k):
         mt = c.get("metrics") or {}
         eng = c.get("engagement")
@@ -1958,8 +2183,8 @@ def studio_html(data, archive_href=None):
         cb = c.get("confirmedBy")
         badge = (f'<span class="sb t" title="{esc(cb["url"])}">CONFIRMED · {esc(cb["outlet"])}</span>' if cb else f'<span class="cf">{esc(c.get("badge") or CHISME_BADGE)}</span>')
         when = dtl(c.get("published", ""))
-        return tcard(c["title"], c["url"], pills=(c.get("platform", ""), c.get("source", "")), meta=when, tldr=c.get("tldr", ""), riff=c.get("riff", ""), score=score, badges=badge,
-                     sec_="Chisme", ord_=k, sc=eng or 0, cls="chisme", chy_unconf=not c.get("confirmedBy"), chy_fallback=" · ".join(x for x in (c.get("platform", ""), when) if x))
+        return tcard(c["title"], c.get("url") or _story_url(c), pills=(c.get("platform", ""), c.get("source", "")), meta=when, tldr=c.get("tldr", ""), riff=c.get("riff", ""), score=score, badges=badge,
+                     sec_="Chisme", ord_=k, sc=eng or 0, cls="chisme", chy_unconf=not c.get("confirmedBy"), chy_fallback=" · ".join(x for x in (c.get("platform", ""), when) if x), **news_bits(c))
     src_status = ch.get("sources") or {}
     ok_src = [f'{k.split(":")[0]} {v["items"]}' for k, v in src_status.items() if v.get("ok")]
     bad_src = sorted({k.split(":")[0].split("/")[0].replace("r", "reddit", 1) if k.startswith("r/") else k.split(":")[0] for k, v in src_status.items() if not v.get("ok")})
@@ -1973,9 +2198,9 @@ def studio_html(data, archive_href=None):
     for lv in (data.get("memes") or {}).get("levels") or []:
         for it in lv.get("items") or []:
             _meme_flat.append(_normalize_story(it, "meme", {"source": "Meme of the Week · " + (lv.get("level") or ""), "short": it.get("what") or it.get("title") or ""}))
-    seg = assign_segment_stories(data["headlines"]["rgv"], data["headlines"]["texas"],
-                                 national=data.get("nationalDesk"), trending=data.get("trending"),
-                                 tech=(data.get("tech") or {}).get("items"), memes=_meme_flat)
+    seg = assign_segment_stories(week["rgv"], week["texas"],
+                                 national=week["national"], trending=week["trending"],
+                                 tech=week["tech"], memes=_meme_flat)
     _moved = {_story_key(i) for i in (seg.get("H") or []) + (seg.get("LIFE") or [])
               if i.get("_desk") in ("national", "trending", "tech", "meme")}
 
@@ -1984,25 +2209,25 @@ def studio_html(data, archive_href=None):
         valley = f'<p class="ang"><b>Valley angle:</b> {esc(n["valley"])}</p>' if n.get("valley") else ""
         u = n["links"][0]["url"] if n.get("links") else ""
         return tcard(n["title"], u, meta="National Desk", tldr=n.get("summary", ""), riff=n.get("angle", ""), score=sc_studio(n), conf=conf_text(n) if n.get("confirm") else "",
-                     extra=valley, sec_="National Desk", ord_=n.get("ord", k_), sc=n.get("score", 0), uid=f"nat-{k_}")
-    _nat_keep = [n for n in data["nationalDesk"] if _story_key(n) not in _moved]
+                     extra=valley, sec_="National Desk", ord_=n.get("ord", k_), sc=n.get("score", 0), uid=f"nat-{k_}", **news_bits(n))
+    _nat_keep = [n for n in week["national"] if _story_key(n) not in _moved]
     nat = grid([ncard(n, k_) for k_, n in enumerate(_nat_keep)], "No National Desk stories loaded.")
     # ---- trending news
     def trcard(t, k_):
         c = trend_item_conf(t)
         media = f'<div class="src">Video: {A(t["video_url"], "watch")}{(" · credit: " + esc(t["image_credit"])) if t.get("image_credit") else ""}</div>' if t.get("video_url") else ""
         when = ((" · " + dtl(t["published"])) if t.get("published") else "")
-        return tcard(t["title"], t.get("source_url", ""), pills=(t.get("category", ""),), meta=(t.get("source", "") + when), tldr=t.get("one_line", ""), score=sc_studio(t), conf=c or "",
-                     extra=media, sec_="Trending", ord_=t.get("ord", 0), sc=t.get("score", 0))
-    _tr_keep = [t for t in (data.get("trending") or []) if _story_key(t) not in _moved]
+        return tcard(t["title"], t.get("source_url", "") or _story_url(t), pills=(t.get("category", ""),), meta=(t.get("source", "") + when), tldr=t.get("one_line", "") or t.get("short") or "", score=sc_studio(t), conf=c or "",
+                     extra=media, sec_="Trending", ord_=t.get("ord", 0), sc=t.get("score", 0), **news_bits(t))
+    _tr_keep = [t for t in week["trending"] if _story_key(t) not in _moved]
     trn = '<p class="mut">What\'s trending around the nation. Separate from the National Desk (no duplicates). Source order: X trends/news, AP/Reuters, Google Trends, YouTube trending.</p>' + grid([trcard(t, k_) for k_, t in enumerate(_tr_keep)], "No trending items loaded.")
     # ---- tech
     tk = data["tech"]
     def tkcard(t, k_):
-        return tcard(t["title"], t.get("source_url", ""), pills=("TECH",), meta=" · ".join(x for x in (t.get("source", ""), t.get("published", "")) if x), tldr=t.get("one_line", ""),
-                     badges=f'<span class="sb {"a" if tk["origin"] == "wires" else "t"}" title="{esc(tk["originLabel"])}">{esc(t["basis"])}</span>', conf=t["confirm"] if t.get("confirm") else "",
-                     sec_="Tech", ord_=k_, sc=0)
-    _tech_keep = [t for t in tk["items"] if _story_key(t) not in _moved]
+        return tcard(t["title"], t.get("source_url", "") or _story_url(t), pills=("TECH",), meta=" · ".join(x for x in (t.get("source", ""), t.get("published", "")) if x), tldr=t.get("one_line", "") or t.get("short") or "",
+                     badges=f'<span class="sb {"a" if tk["origin"] == "wires" else "t"}" title="{esc(tk["originLabel"])}">{esc(t.get("basis") or tk.get("badge") or "")}</span>', conf=t["confirm"] if t.get("confirm") else "",
+                     sec_="Tech", ord_=k_, sc=0, **news_bits(t))
+    _tech_keep = [t for t in week["tech"] if _story_key(t) not in _moved]
     tech_h = (f'<p class="mut"><b>{esc(tk["badge"])}</b> · {esc(tk["originLabel"])}</p>' + (f'<p class="mut">{esc(tk["note"])}</p>' if tk.get("note") else "")
               + grid([tkcard(t, k_) for k_, t in enumerate(_tech_keep)], "No tech items loaded today."))
 
@@ -2211,6 +2436,7 @@ def studio_html(data, archive_href=None):
         f'<button id="expand" type="button">Expand all</button><button id="collapse" type="button">Collapse all</button>'
         f'<button id="sortbtn" type="button" title="Order items by trend score or by the original editorial order">Sort: Score</button>'
         f'<button id="ssreset" type="button" title="Stop the show and reset to 0:00" aria-label="Stop the show and reset to 0:00" aria-haspopup="dialog" aria-controls="stop-dlg">Stop &amp; reset</button>'
+        f'<button id="rm-show" type="button">Show removed (0)</button><button id="rm-restore" type="button">Restore all</button>'
         f'<button id="chlink" type="button" class="chlink" title="Link this page to the OBS chyron (paste the link code once)">Link chyron</button>'
         f'<a id="brkbadge" class="btnlike" href="#brk" data-jump="brk" title="Breaking watch: new since this page was built">Breaking <b id="brkb">–</b></a>'
         f'<a href="#top" data-jump="top" aria-label="Back to top">Top ↑</a>'
@@ -2235,7 +2461,7 @@ def studio_html(data, archive_href=None):
 <nav>{nav}</nav>
 <main>{body}</main>
 <footer>{arch}<b>Jump segues (menu):</b><ul>{segs}</ul>Every item links to its source and opens in a new tab; Copy link puts the URL on your clipboard for sharing on screen. CONFIRM BEFORE AIR = verify first. No trackers, no external scripts or fonts. The only network request is the header clock's weather lookup (api.weather.gov); the page works offline (the clock then shows the build-time temperature, and links need internet). Show Start times are computed in the page from each block's offset and length.{(" Links checked "+chk["date"]+": "+str(chk["ok"])+" ok, "+str(chk["blocked"])+" bot-blocked, "+str(chk["dead"])+" dead.") if chk else ""}</footer>
-<div id="toast" role="status"></div><script>{STUDIO_JS}</script><script>{SEARCH_JS}</script><script>{SHOW_JS}</script><script>{CHY_JS}</script><script>{CLOCK_JS}</script><script>{BRK_JS}</script></body></html>"""
+<div id="toast" role="status"></div><script>{STUDIO_JS}</script><script>{SEARCH_JS}</script><script>{SHOW_JS}</script><script>{CHY_JS}</script><script>{REMOVE_JS}</script><script>{CLOCK_JS}</script><script>{BRK_JS}</script></body></html>"""
 
 
 # ---------------------------------------------------------------- render
