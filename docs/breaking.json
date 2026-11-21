@@ -1,14 +1,14 @@
 {
  "version": 1,
- "generatedAt": "2026-11-21T15:11:49+00:00",
+ "generatedAt": "2026-11-21T17:00:29+00:00",
  "window_hours": 24,
  "bootstrap": false,
  "note": "Public headlines and links only. Everything here is a lead: CONFIRM BEFORE AIR.",
  "counts": {
   "alert": 1,
-  "watch": 12,
-  "stories": 149,
-  "new": 124
+  "watch": 13,
+  "stories": 137,
+  "new": 14
  },
  "feeds": {
   "ok": 16,
@@ -33,7 +33,7 @@
    ],
    "published": "2026-11-20T23:52:58+00:00",
    "firstSeen": "2026-11-21T15:11:49+00:00",
-   "score": 14,
+   "score": 13,
    "label": "Active",
    "uncovered": false,
    "level": "alert",
@@ -43,7 +43,30 @@
     "fire",
     "Harlingen"
    ],
-   "why": "Score 14: 1 outlet 6 + recency 8.3 (15h old)"
+   "why": "Score 13: 1 outlet 6 + recency 7.4 (17h old)"
+  },
+  {
+   "id": "926f15ba652a",
+   "title": "Live coverage: SpaceX to launch intelligence-gathering satellites for the National Reconnaissance Office",
+   "url": "https://spaceflightnow.com/2026/11/21/live-coverage-spacex-to-launch-intelligence-gathering-satellites-for-the-national-reconnaissance-office-3/",
+   "source": "Spaceflight Now (Starbase / SpaceX)",
+   "sources": [
+    {
+     "name": "Spaceflight Now (Starbase / SpaceX)",
+     "url": "https://spaceflightnow.com/2026/11/21/live-coverage-spacex-to-launch-intelligence-gathering-satellites-for-the-national-reconnaissance-office-3/"
+    }
+   ],
+   "published": "2026-11-21T16:50:51+00:00",
+   "firstSeen": "2026-11-21T17:00:29+00:00",
+   "score": 26,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Mission",
+    "SpaceX"
+   ],
+   "why": "Score 26: 1 outlet 6 + recency 19.8 (0h old)"
   },
   {
    "id": "2075cc3f964f",
@@ -58,7 +81,7 @@
    ],
    "published": "2026-11-21T06:13:41+00:00",
    "firstSeen": "2026-11-21T15:11:49+00:00",
-   "score": 18,
+   "score": 17,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -67,7 +90,7 @@
     "Hidalgo",
     "screwworm"
    ],
-   "why": "Score 18: 1 outlet 6 + recency 11.9 (9h old)"
+   "why": "Score 17: 1 outlet 6 + recency 10.7 (11h old)"
   },
   {
    "id": "caaf6cf0e150",
@@ -82,7 +105,7 @@
    ],
    "published": "2026-11-21T01:52:06+00:00",
    "firstSeen": "2026-11-21T15:11:49+00:00",
-   "score": 15,
+   "score": 14,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -90,7 +113,7 @@
     "Edinburg",
     "screwworm"
    ],
-   "why": "Score 15: 1 outlet 6 + recency 9.3 (13h old)"
+   "why": "Score 14: 1 outlet 6 + recency 8.3 (15h old)"
   },
   {
    "id": "d25df015f8a7",
@@ -105,14 +128,14 @@
    ],
    "published": "2026-11-21T00:43:28+00:00",
    "firstSeen": "2026-11-21T15:11:49+00:00",
-   "score": 15,
+   "score": 14,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
    "matches": [
     "UTRGV"
    ],
-   "why": "Score 15: 1 outlet 6 + recency 8.7 (14h old)"
+   "why": "Score 14: 1 outlet 6 + recency 7.8 (16h old)"
   },
   {
    "id": "8fe8558b3607",
@@ -127,7 +150,7 @@
    ],
    "published": "2026-11-20T23:51:12+00:00",
    "firstSeen": "2026-11-21T15:11:49+00:00",
-   "score": 14,
+   "score": 13,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -136,7 +159,7 @@
     "Rio Grande Valley",
     "UTRGV"
    ],
-   "why": "Score 14: 1 outlet 6 + recency 8.2 (15h old)"
+   "why": "Score 13: 1 outlet 6 + recency 7.4 (17h old)"
   },
   {
    "id": "7a1e318eba6c",
@@ -181,7 +204,7 @@
    "matches": [
     "data center"
    ],
-   "why": "Score 11: 1 outlet 6 + recency 5.3 (23h old)"
+   "why": "Score 11: 1 outlet 6 + recency 4.8 (25h old)"
   },
   {
    "id": "aa4a08b50dc6",
@@ -270,7 +293,7 @@
    "matches": [
     "commissioners court"
    ],
-   "why": "Score 10: 1 outlet 6 + recency 3.9 (28h old)"
+   "why": "Score 10: 1 outlet 6 + recency 3.5 (30h old)"
   },
   {
    "id": "f57e1ff0d2b8",
