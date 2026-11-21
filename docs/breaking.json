@@ -1,14 +1,14 @@
 {
  "version": 1,
- "generatedAt": "2026-11-21T17:00:29+00:00",
+ "generatedAt": "2026-11-21T22:10:16+00:00",
  "window_hours": 24,
  "bootstrap": false,
  "note": "Public headlines and links only. Everything here is a lead: CONFIRM BEFORE AIR.",
  "counts": {
-  "alert": 1,
-  "watch": 13,
-  "stories": 137,
-  "new": 14
+  "alert": 2,
+  "watch": 7,
+  "stories": 150,
+  "new": 46
  },
  "feeds": {
   "ok": 16,
@@ -20,6 +20,29 @@
   "US": 10
  },
  "items": [
+  {
+   "id": "120da1872c41",
+   "title": "Brownsville mother opposes proposed 35-year plea deal in son’s deadly stabbing",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPeXZzRnN4QTl0YnlSSE9maGlocXJKU0J2UmlvNEx3bHp6NEtWclgwMkd0YW1zcEh6UlRYWFlNSWNQcjBueFNVQ2w3WXB0b2NoVE5EYUZuaVdjLTY1c1o1S2p5Mks1VWJRcTI1aDd2dERsaXpkenFrWkRsME5NTXB4Y21yYmlRLTRaYlVoMjhGY2wtQmJ5U2dDSVN3QkMtTWhQX2U5VEVhOTRsV2M?oc=5",
+   "source": "KRGV",
+   "sources": [
+    {
+     "name": "KRGV",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPeXZzRnN4QTl0YnlSSE9maGlocXJKU0J2UmlvNEx3bHp6NEtWclgwMkd0YW1zcEh6UlRYWFlNSWNQcjBueFNVQ2w3WXB0b2NoVE5EYUZuaVdjLTY1c1o1S2p5Mks1VWJRcTI1aDd2dERsaXpkenFrWkRsME5NTXB4Y21yYmlRLTRaYlVoMjhGY2wtQmJ5U2dDSVN3QkMtTWhQX2U5VEVhOTRsV2M?oc=5"
+    }
+   ],
+   "published": "2026-11-21T01:00:29+00:00",
+   "firstSeen": "2026-11-21T22:10:16+00:00",
+   "score": 12,
+   "label": "Active",
+   "uncovered": false,
+   "level": "alert",
+   "matches": [
+    "Brownsville",
+    "stabbing"
+   ],
+   "why": "Score 12: 1 outlet 6 + recency 5.9 (21h old)"
+  },
   {
    "id": "99125dfabc0b",
    "title": "Barricaded suspect sets self on fire before being taken into custody in Cameron County",
@@ -33,7 +56,7 @@
    ],
    "published": "2026-11-20T23:52:58+00:00",
    "firstSeen": "2026-11-21T15:11:49+00:00",
-   "score": 13,
+   "score": 12,
    "label": "Active",
    "uncovered": false,
    "level": "alert",
@@ -43,7 +66,55 @@
     "fire",
     "Harlingen"
    ],
-   "why": "Score 13: 1 outlet 6 + recency 7.4 (17h old)"
+   "why": "Score 12: 1 outlet 6 + recency 5.5 (22h old)"
+  },
+  {
+   "id": "8e09a27ec4b3",
+   "title": "Latest News and Headlines in the Rio Grande Valley",
+   "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE96MGt6MnBVS3NhazZ5UnMxelZDZVItR2ZIQnVtWEMxaWxLUDlzMmkzTjZfOS05eWF5NEVjZWdPYw?oc=5",
+   "source": "KRGV",
+   "sources": [
+    {
+     "name": "KRGV",
+     "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9ONXdrV0pkM0V1M1p6ZnF4TkJYWmpaeUQ2TWhveEE3aHlLSGVvX0NTRTQ5MjFZa0ZKUDFMMkowdjJ0TWFyWjdlLQ?oc=5"
+    },
+    {
+     "name": "KRGV",
+     "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE96MGt6MnBVS3NhazZ5UnMxelZDZVItR2ZIQnVtWEMxaWxLUDlzMmkzTjZfOS05eWF5NEVjZWdPYw?oc=5"
+    }
+   ],
+   "published": "2026-11-21T09:44:41+00:00",
+   "firstSeen": "2026-11-21T22:10:16+00:00",
+   "score": 22,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Rio Grande Valley"
+   ],
+   "why": "Score 22: 2 outlets 12 + recency 9.8 (12h old)"
+  },
+  {
+   "id": "f704d6b9806f",
+   "title": "Meta gives away 500 turkeys as it faces scrutiny over Northeast El Paso data center",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPazBVSERqRmpwLXA4RTNzOWJsc1ZWbHhTVUh1RmQtMUNUMjFwenR5UG9zTURHWFBCMnBlRmJnTFdUd3g0bHlONW5fdFR6Z1RCenBZdHhRQlNmRXZQdjc3TnczTnZxaVdTanNCNmFUSGpDVmJncWI1ZDNlaGljNmRXaXlzeWNOVWh2OVE1bEZNY3JqQ3J1UXluUWJfSzNQQnY2UTBoREFuQmhEbVkxOENndFR1dWtaaHNsVGRTTFNYcVlQYzcyWkhqX1JB?oc=5",
+   "source": "KDBC",
+   "sources": [
+    {
+     "name": "KDBC",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPazBVSERqRmpwLXA4RTNzOWJsc1ZWbHhTVUh1RmQtMUNUMjFwenR5UG9zTURHWFBCMnBlRmJnTFdUd3g0bHlONW5fdFR6Z1RCenBZdHhRQlNmRXZQdjc3TnczTnZxaVdTanNCNmFUSGpDVmJncWI1ZDNlaGljNmRXaXlzeWNOVWh2OVE1bEZNY3JqQ3J1UXluUWJfSzNQQnY2UTBoREFuQmhEbVkxOENndFR1dWtaaHNsVGRTTFNYcVlQYzcyWkhqX1JB?oc=5"
+    }
+   ],
+   "published": "2026-11-20T23:34:02+00:00",
+   "firstSeen": "2026-11-21T22:10:16+00:00",
+   "score": 11,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "data center"
+   ],
+   "why": "Score 11: 1 outlet 6 + recency 5.4 (23h old)"
   },
   {
    "id": "926f15ba652a",
@@ -58,7 +129,7 @@
    ],
    "published": "2026-11-21T16:50:51+00:00",
    "firstSeen": "2026-11-21T17:00:29+00:00",
-   "score": 26,
+   "score": 21,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -66,7 +137,7 @@
     "Mission",
     "SpaceX"
    ],
-   "why": "Score 26: 1 outlet 6 + recency 19.8 (0h old)"
+   "why": "Score 21: 1 outlet 6 + recency 14.7 (5h old)"
   },
   {
    "id": "2075cc3f964f",
@@ -81,7 +152,7 @@
    ],
    "published": "2026-11-21T06:13:41+00:00",
    "firstSeen": "2026-11-21T15:11:49+00:00",
-   "score": 17,
+   "score": 14,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -90,7 +161,7 @@
     "Hidalgo",
     "screwworm"
    ],
-   "why": "Score 17: 1 outlet 6 + recency 10.7 (11h old)"
+   "why": "Score 14: 1 outlet 6 + recency 8 (16h old)"
   },
   {
    "id": "caaf6cf0e150",
@@ -105,7 +176,7 @@
    ],
    "published": "2026-11-21T01:52:06+00:00",
    "firstSeen": "2026-11-21T15:11:49+00:00",
-   "score": 14,
+   "score": 12,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -113,7 +184,7 @@
     "Edinburg",
     "screwworm"
    ],
-   "why": "Score 14: 1 outlet 6 + recency 8.3 (15h old)"
+   "why": "Score 12: 1 outlet 6 + recency 6.2 (20h old)"
   },
   {
    "id": "d25df015f8a7",
@@ -128,14 +199,14 @@
    ],
    "published": "2026-11-21T00:43:28+00:00",
    "firstSeen": "2026-11-21T15:11:49+00:00",
-   "score": 14,
+   "score": 12,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
    "matches": [
     "UTRGV"
    ],
-   "why": "Score 14: 1 outlet 6 + recency 7.8 (16h old)"
+   "why": "Score 12: 1 outlet 6 + recency 5.8 (21h old)"
   },
   {
    "id": "8fe8558b3607",
@@ -150,7 +221,7 @@
    ],
    "published": "2026-11-20T23:51:12+00:00",
    "firstSeen": "2026-11-21T15:11:49+00:00",
-   "score": 13,
+   "score": 12,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -159,187 +230,7 @@
     "Rio Grande Valley",
     "UTRGV"
    ],
-   "why": "Score 13: 1 outlet 6 + recency 7.4 (17h old)"
-  },
-  {
-   "id": "7a1e318eba6c",
-   "title": "Starship Flight 15 catch: Ship returned to Starbase",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaHJkSFNnX1dRVnFiUEJkR19Mc3ZuUHpvUU1iVnZhSGVfZ1dTTFJDTnJuU3ktZjB3X2tjYWVMV1RjTmZoVl9lT3E2eUtacXVtRkJDd1ZleEJ1aWdmX094dGk2eDdVN1U0NzdNcWNEMmpxYzRBcmpYZzJDZVR1QVFRRUV0c29LNU0?oc=5",
-   "source": "NeoTeo",
-   "sources": [
-    {
-     "name": "NeoTeo",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaHJkSFNnX1dRVnFiUEJkR19Mc3ZuUHpvUU1iVnZhSGVfZ1dTTFJDTnJuU3ktZjB3X2tjYWVMV1RjTmZoVl9lT3E2eUtacXVtRkJDd1ZleEJ1aWdmX094dGk2eDdVN1U0NzdNcWNEMmpxYzRBcmpYZzJDZVR1QVFRRUV0c29LNU0?oc=5"
-    }
-   ],
-   "published": "2026-11-20T16:15:51+00:00",
-   "firstSeen": "2026-11-20T18:08:50+00:00",
-   "score": 11,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "Starbase",
-    "Starship"
-   ],
-   "why": "Score 11: 1 outlet 6 + recency 5.3 (23h old)"
-  },
-  {
-   "id": "54c5294d4c77",
-   "title": "“We need to be compensated”: Texas Tech chair pushed Fermi data center company for lucrative deals, despite university ties",
-   "url": "https://feeds.texastribune.org/link/16799/17536360/texas-tech-cody-campbell-board-fermi-data-center-matador",
-   "source": "Texas Tribune",
-   "sources": [
-    {
-     "name": "Texas Tribune",
-     "url": "https://feeds.texastribune.org/link/16799/17536360/texas-tech-cody-campbell-board-fermi-data-center-matador"
-    }
-   ],
-   "published": "2026-11-20T16:18:32+00:00",
-   "firstSeen": "2026-11-20T18:08:50+00:00",
-   "score": 11,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "data center"
-   ],
-   "why": "Score 11: 1 outlet 6 + recency 4.8 (25h old)"
-  },
-  {
-   "id": "aa4a08b50dc6",
-   "title": "SpaceX's Cursor weighs phasing out Chinese AI models over geopolitical risk, CNBC reports",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNeWlDTVU0ZkVnYWE3bk1yYkRRUUdLTV9YNFBQam8wYjRheXdjUnRqTFBjOWJPU0k4WmdydmZyU0hvQ0RnckFXSnVEQ2VTQy1YU1hzRDBMY1ktbnVqVUwyZ1ktaVdrSXUzS2hWeVlJanE1QXZwQW5uT0I5YjlDcWhDUS1wN0JOSVpTTU5qTGRzZjRQZEFKMEhVX2gtTlNDTENCWThBNFlqTUt1ZnA1ZjZZWEdSbTctTWR1VWxqSFBKb1d2RWFQd0I2MTlHbzBLakR5NzdwMA?oc=5",
-   "source": "Reuters",
-   "sources": [
-    {
-     "name": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNeWlDTVU0ZkVnYWE3bk1yYkRRUUdLTV9YNFBQam8wYjRheXdjUnRqTFBjOWJPU0k4WmdydmZyU0hvQ0RnckFXSnVEQ2VTQy1YU1hzRDBMY1ktbnVqVUwyZ1ktaVdrSXUzS2hWeVlJanE1QXZwQW5uT0I5YjlDcWhDUS1wN0JOSVpTTU5qTGRzZjRQZEFKMEhVX2gtTlNDTENCWThBNFlqTUt1ZnA1ZjZZWEdSbTctTWR1VWxqSFBKb1d2RWFQd0I2MTlHbzBLakR5NzdwMA?oc=5"
-    }
-   ],
-   "published": "2026-11-20T15:00:50+00:00",
-   "firstSeen": "2026-11-20T18:08:50+00:00",
-   "score": 23,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "SpaceX"
-   ],
-   "why": "Score 23: 1 outlet 6 + recency 16.7 (3h old)"
-  },
-  {
-   "id": "6b1065d092e7",
-   "title": "I got to tour SpaceX's Starfactory facility in Starbase, Texas, and what I saw blew my mind",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQUkZ3QmQ1Zng0RTllYUpjLVpjRHNYTXR3R3FXNjM4c2xyR1ZfaWotUXFZcDNveElwN3Z0dFU4dGtOd0xiaHlZVXE2TjlfOGtjcjNsQjhGb0l0ZFNvN082WjJSUHMzeDhRdWxsMWtWTnItNjJmcVRINU0zcWMtVjVaTkN4OF9YbVlGTFV0NDN2U3A0czhRVmlDb203VkczRk8yRW42WXdETEF0am1vMTdMekZRenBpZEgwZGZKbUI4a0p3cDVZb1p1ZlZjZXEtdFhlTjNMcUZOZ1Q4TjIxOXY2X1RR?oc=5",
-   "source": "Space",
-   "sources": [
-    {
-     "name": "Space",
-     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQUkZ3QmQ1Zng0RTllYUpjLVpjRHNYTXR3R3FXNjM4c2xyR1ZfaWotUXFZcDNveElwN3Z0dFU4dGtOd0xiaHlZVXE2TjlfOGtjcjNsQjhGb0l0ZFNvN082WjJSUHMzeDhRdWxsMWtWTnItNjJmcVRINU0zcWMtVjVaTkN4OF9YbVlGTFV0NDN2U3A0czhRVmlDb203VkczRk8yRW42WXdETEF0am1vMTdMekZRenBpZEgwZGZKbUI4a0p3cDVZb1p1ZlZjZXEtdFhlTjNMcUZOZ1Q4TjIxOXY2X1RR?oc=5"
-    }
-   ],
-   "published": "2026-11-20T13:00:00+00:00",
-   "firstSeen": "2026-11-20T18:08:50+00:00",
-   "score": 21,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "SpaceX",
-    "Starbase"
-   ],
-   "why": "Score 21: 1 outlet 6 + recency 14.9 (5h old)"
-  },
-  {
-   "id": "b0ba25b1e5d3",
-   "title": "New World Screwworm Facility Reaches Construction Milestone",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUTNiaG5Va1gzdlh5ZUdxWDMwbzhBSDZabkRLdU01aXhUVUFmVGZCSkVWdVVVSTMzZTBwM0VaRklRVHRYTkl3aml2MHpfb0d1N1pDZHFOa1JWUjlKQkZsYzBrTVJYNEVPb04zY25rcnNGMXpWeThYZjI2VFp0NUpXOTlfUUs2M243VDNrMDJ1c2FWZnIzNjVoQzkyNNIBoAFBVV95cUxNVG5ObmhhajF5eGtQR1Z6WlZzblZDMFZWRVdjNUdYaXh1T2N3OXg5S19qZDVibjZYSm5GQWNmeVU5ZklXMVhCT1ZmYndxNkZZdDRjY0Jfd2h0VVJ3Tl9VVlI1MV9rTll4YlV3QTR5Z251N3VlY1lyc0FpTkFjVDlfbmtZM0lMZnlsTFl4RFdZdUdtQzluSXpIbXFfOWpDVFFI?oc=5",
-   "source": "Army.mil",
-   "sources": [
-    {
-     "name": "Army.mil",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUTNiaG5Va1gzdlh5ZUdxWDMwbzhBSDZabkRLdU01aXhUVUFmVGZCSkVWdVVVSTMzZTBwM0VaRklRVHRYTkl3aml2MHpfb0d1N1pDZHFOa1JWUjlKQkZsYzBrTVJYNEVPb04zY25rcnNGMXpWeThYZjI2VFp0NUpXOTlfUUs2M243VDNrMDJ1c2FWZnIzNjVoQzkyNNIBoAFBVV95cUxNVG5ObmhhajF5eGtQR1Z6WlZzblZDMFZWRVdjNUdYaXh1T2N3OXg5S19qZDVibjZYSm5GQWNmeVU5ZklXMVhCT1ZmYndxNkZZdDRjY0Jfd2h0VVJ3Tl9VVlI1MV9rTll4YlV3QTR5Z251N3VlY1lyc0FpTkFjVDlfbmtZM0lMZnlsTFl4RFdZdUdtQzluSXpIbXFfOWpDVFFI?oc=5"
-    }
-   ],
-   "published": "2026-11-20T12:42:10+00:00",
-   "firstSeen": "2026-11-20T18:08:50+00:00",
-   "score": 21,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "screwworm"
-   ],
-   "why": "Score 21: 1 outlet 6 + recency 14.6 (5h old)"
-  },
-  {
-   "id": "18b9a84ca81c",
-   "title": "Tarrant County Republicans, stung by defeat, are soul-searching and finger-pointing",
-   "url": "https://feeds.texastribune.org/link/16799/17536120/texas-tarrant-county-republicans-future-matt-krause",
-   "source": "Texas Tribune",
-   "sources": [
-    {
-     "name": "Texas Tribune",
-     "url": "https://feeds.texastribune.org/link/16799/17536120/texas-tarrant-county-republicans-future-matt-krause"
-    }
-   ],
-   "published": "2026-11-20T11:00:00+00:00",
-   "firstSeen": "2026-11-20T18:08:50+00:00",
-   "score": 10,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "commissioners court"
-   ],
-   "why": "Score 10: 1 outlet 6 + recency 3.5 (30h old)"
-  },
-  {
-   "id": "f57e1ff0d2b8",
-   "title": "Parts of Brooks and Kenedy counties placed under screwworm quarantine after larvae found in Hidalgo County",
-   "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPQVFUNmxRRnpwNW5rcXZuM2FYVk11VzVNb184WmxmMHhSb3RNcWpYQVBEck1SZVpPVnhRdF9mSEdZcGRaelVtdzNFU0Jqcm1uLVZhYUtYQW56clFnVWZLRkxuMHYzMUhqaEtnbVd6UDNPNnhDdHNKeXRqSlJtVVV0U2pIX2hhdmFHdzdBMkF5cVlnQXFWUW0xV1AwRUdLVktoYzFpZ19Gd0FNN3doYS10TElEQmFiVjZEZ0Izc0RHN1N6SW5BeUdIeERBemZBX3ZxeUk5UnNfbE1pOGRKUEF1Vi1hb3VobjBiVk9IbV9ROXBaVTlDaF81YWJ2Q2d6N2ZtSS1xRjFLcVdqb201?oc=5",
-   "source": "KRIS 6 News Corpus Christi",
-   "sources": [
-    {
-     "name": "KRIS 6 News Corpus Christi",
-     "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPQVFUNmxRRnpwNW5rcXZuM2FYVk11VzVNb184WmxmMHhSb3RNcWpYQVBEck1SZVpPVnhRdF9mSEdZcGRaelVtdzNFU0Jqcm1uLVZhYUtYQW56clFnVWZLRkxuMHYzMUhqaEtnbVd6UDNPNnhDdHNKeXRqSlJtVVV0U2pIX2hhdmFHdzdBMkF5cVlnQXFWUW0xV1AwRUdLVktoYzFpZ19Gd0FNN3doYS10TElEQmFiVjZEZ0Izc0RHN1N6SW5BeUdIeERBemZBX3ZxeUk5UnNfbE1pOGRKUEF1Vi1hb3VobjBiVk9IbV9ROXBaVTlDaF81YWJ2Q2d6N2ZtSS1xRjFLcVdqb201?oc=5"
-    }
-   ],
-   "published": "2026-11-20T02:41:36+00:00",
-   "firstSeen": "2026-11-20T18:08:50+00:00",
-   "score": 14,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "Hidalgo",
-    "Hidalgo County",
-    "screwworm"
-   ],
-   "why": "Score 14: 1 outlet 6 + recency 8.2 (15h old)"
-  },
-  {
-   "id": "ba4af0f2a3ff",
-   "title": "Music: Bruckner Symphony No. 7 by UTRGV Symphony Orchestra",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1Ia3Q0WUU0cGFPSHoyZlh2bmhaMDQ2eVdjTTQ2clB6NFZqVnNVM1lkbmh2WnlRbXhSZllFemtQQmJodENiemgwakxfd09YbzdNczdTTlBkbl9KbWlhM0o4MGNfTUNkSTY3bTJ3?oc=5",
-   "source": "dailymcallen.com",
-   "sources": [
-    {
-     "name": "dailymcallen.com",
-     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1Ia3Q0WUU0cGFPSHoyZlh2bmhaMDQ2eVdjTTQ2clB6NFZqVnNVM1lkbmh2WnlRbXhSZllFemtQQmJodENiemgwakxfd09YbzdNczdTTlBkbl9KbWlhM0o4MGNfTUNkSTY3bTJ3?oc=5"
-    }
-   ],
-   "published": "2026-11-19T12:00:15+00:00",
-   "firstSeen": "2026-11-20T18:08:50+00:00",
-   "score": 10,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "UTRGV"
-   ],
-   "why": "Score 10: 1 outlet 6 + recency 3.5 (30h old)"
+   "why": "Score 12: 1 outlet 6 + recency 5.5 (22h old)"
   }
  ]
 }
