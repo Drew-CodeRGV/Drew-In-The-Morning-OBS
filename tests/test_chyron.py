@@ -337,6 +337,15 @@ class StudioDashboard(unittest.TestCase):
         self.assertNotRegex(self.src, r"ditm-ros-[0-9a-f]{6,}")
 
 
+
+    def test_news_cards_have_a_date_tag_and_remove_button(self):
+        self.assertIn('class="rmx"', self.studio)
+        self.assertIn('aria-label="Remove story"', self.studio)
+        self.assertIn('class="dtg"', self.studio)
+        self.assertIn('id="rm-show"', self.studio)
+        # memes and weather are not news stories, so they must not all get a remove button
+        self.assertIn('id="ssstop"', self.studio)
+
     def test_lifestyle_holds_obits_and_l_is_memes_only(self):
         import re
         life = re.search(r'<details class="sec" id="lifestyle"[^>]*>.*?</details>', self.studio, re.S)
@@ -424,6 +433,7 @@ class SegmentRouting(unittest.TestCase):
         for it in tech + memes + (d.get("trending") or []):
             if "uber" in (it.get("title") or "").lower() or "gta" in (it.get("title") or "").lower() or "grand theft auto" in (it.get("title") or "").lower():
                 self.assertIn(bp._story_key(it), hkeys)
+
 
 
 class ShowStopReset(unittest.TestCase):

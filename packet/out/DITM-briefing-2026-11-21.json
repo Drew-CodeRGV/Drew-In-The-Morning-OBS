@@ -54,13 +54,13 @@
             "published": "2026-11-20T17:39:00-06:00"
           }
         ],
-        "score": 16,
+        "score": 15,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 16: 1 outlet 6 + recency 9.7 (12h old)",
+        "scoreWhy": "Score 15: 1 outlet 6 + recency 9.1 (14h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 9.7,
+          "recency": 9.1,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -95,10 +95,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.5 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.5,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -125,13 +125,13 @@
             "published": "2026-11-20T18:00:00-06:00"
           }
         ],
-        "score": 16,
+        "score": 15,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 16: 1 outlet 6 + recency 9.9 (12h old)",
+        "scoreWhy": "Score 15: 1 outlet 6 + recency 9.2 (13h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 9.9,
+          "recency": 9.2,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -166,10 +166,10 @@
         "score": 12,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 12: 1 outlet 6 + recency 6.3 (20h old)",
+        "scoreWhy": "Score 12: 1 outlet 6 + recency 5.8 (21h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.3,
+          "recency": 5.8,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -204,10 +204,10 @@
         "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.5 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 6.5,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -239,13 +239,13 @@
             "published": "2026-11-20T18:00:00-06:00"
           }
         ],
-        "score": 16,
+        "score": 15,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 16: 1 outlet 6 + recency 9.9 (12h old)",
+        "scoreWhy": "Score 15: 1 outlet 6 + recency 9.2 (13h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 9.9,
+          "recency": 9.2,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -272,13 +272,13 @@
             "published": "2026-11-21T06:00:00-06:00"
           }
         ],
-        "score": 26,
+        "score": 24,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 26: 1 outlet 6 + recency 19.9 (0h old)",
+        "scoreWhy": "Score 24: 1 outlet 6 + recency 18.5 (1h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 19.9,
+          "recency": 18.5,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -315,10 +315,10 @@
         "score": 8,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.8 (42h old)",
+        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.7 (43h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.8,
+          "recency": 1.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -355,10 +355,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 5 (24h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.6 (25h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.0,
+          "recency": 4.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -390,10 +390,10 @@
         "score": 8,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 2.3 (38h old)",
+        "scoreWhy": "Score 8: 1 outlet 6 + recency 2.1 (39h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 2.3,
+          "recency": 2.1,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -421,13 +421,13 @@
             "published": "2026-11-19T18:21:00-06:00"
           }
         ],
-        "score": 9,
+        "score": 8,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.5 (36h old)",
+        "scoreWhy": "Score 8: 1 outlet 6 + recency 2.4 (37h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 2.5,
+          "recency": 2.4,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -458,10 +458,10 @@
         "score": 8,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.7 (43h old)",
+        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.6 (44h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.7,
+          "recency": 1.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -490,13 +490,13 @@
             "published": "2026-11-19T18:16:00-06:00"
           }
         ],
-        "score": 9,
+        "score": 8,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.5 (36h old)",
+        "scoreWhy": "Score 8: 1 outlet 6 + recency 2.3 (37h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 2.5,
+          "recency": 2.3,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -527,10 +527,10 @@
         "score": 8,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.9 (41h old)",
+        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.8 (42h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.9,
+          "recency": 1.8,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -561,7 +561,7 @@
         "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.6 (60h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.6 (61h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.6,
@@ -596,10 +596,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 5 (24h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.6 (25h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.0,
+          "recency": 4.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -630,10 +630,10 @@
         "score": 8,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.9 (40h old)",
+        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.8 (42h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.9,
+          "recency": 1.8,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -664,10 +664,10 @@
         "score": 8,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 2.2 (39h old)",
+        "scoreWhy": "Score 8: 1 outlet 6 + recency 2 (40h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 2.2,
+          "recency": 2.0,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -703,10 +703,10 @@
         "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 5 (24h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.6 (25h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.0,
+          "recency": 4.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -738,10 +738,10 @@
         "score": 8,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.7 (43h old)",
+        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.6 (44h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.7,
+          "recency": 1.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -770,13 +770,13 @@
             "published": "2026-11-20T14:01:00-06:00"
           }
         ],
-        "score": 14,
+        "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 14: 1 outlet 6 + recency 7.9 (16h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 7.3 (17h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.9,
+          "recency": 7.3,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -806,10 +806,10 @@
         "score": 14,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 14: 1 outlet 6 + recency 8.3 (15h old)",
+        "scoreWhy": "Score 14: 1 outlet 6 + recency 7.7 (17h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 8.3,
+          "recency": 7.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -844,10 +844,10 @@
         "score": 15,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 15: 1 outlet 6 + recency 9.2 (13h old)",
+        "scoreWhy": "Score 15: 1 outlet 6 + recency 8.6 (15h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 9.2,
+          "recency": 8.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -883,7 +883,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.4 (66h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.4 (67h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.4,
@@ -921,10 +921,10 @@
         "score": 9,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.9 (34h old)",
+        "scoreWhy": "Score 9: 1 outlet 6 + recency 2.7 (35h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 2.9,
+          "recency": 2.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -959,10 +959,10 @@
         "score": 8,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 8: 1 outlet 6 + recency 2.1 (39h old)",
+        "scoreWhy": "Score 8: 1 outlet 6 + recency 2 (40h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 2.1,
+          "recency": 2.0,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -1178,15 +1178,15 @@
     "lon": -98.23,
     "note": "McAllen / Rio Grande Valley; NWS Brownsville (BRO) forecast",
     "now": {
-      "tempF": 66,
-      "cond": "Mostly Clear",
-      "icon": "partly",
-      "at": "2026-11-21T11:40:00+00:00",
+      "tempF": 67,
+      "cond": "Clear",
+      "icon": "sun",
+      "at": "2026-11-21T12:53:00+00:00",
       "source": "KMFE observation"
     },
     "office": "BRO",
     "city": "McAllen",
-    "updated": "2026-11-21T11:18:12+00:00",
+    "updated": "2026-11-21T13:00:13+00:00",
     "days": [
       {
         "date": "2026-11-21",
@@ -1259,10 +1259,10 @@
         "label": "Fri",
         "dateLabel": "Nov 27",
         "hi": 72,
-        "lo": null,
+        "lo": 53,
         "short": "Slight Chance Rain Showers",
         "icon": "rain",
-        "pop": 20,
+        "pop": 21,
         "wind": "SE 8 mph"
       }
     ],
@@ -1743,10 +1743,10 @@
       "score": 19,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 19: 2 outlets 12 + recency 7 (18h old)",
+      "scoreWhy": "Score 19: 2 outlets 12 + recency 6.5 (19h old)",
       "scoreParts": {
         "outlets": 12,
-        "recency": 7.0,
+        "recency": 6.5,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1793,10 +1793,10 @@
       "score": 14,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 14: 2 outlets 12 + recency 1.8 (42h old)",
+      "scoreWhy": "Score 14: 2 outlets 12 + recency 1.6 (43h old)",
       "scoreParts": {
         "outlets": 12,
-        "recency": 1.8,
+        "recency": 1.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1843,10 +1843,10 @@
       "score": 19,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 19: 2 outlets 12 + recency 7 (18h old)",
+      "scoreWhy": "Score 19: 2 outlets 12 + recency 6.5 (19h old)",
       "scoreParts": {
         "outlets": 12,
-        "recency": 7.0,
+        "recency": 6.5,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1907,10 +1907,10 @@
       "score": 20,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 20: 3 outlets 18 + recency 1.8 (42h old)",
+      "scoreWhy": "Score 20: 3 outlets 18 + recency 1.6 (43h old)",
       "scoreParts": {
         "outlets": 18,
-        "recency": 1.8,
+        "recency": 1.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1960,10 +1960,10 @@
       "score": 14,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 14: 2 outlets 12 + recency 1.8 (42h old)",
+      "scoreWhy": "Score 14: 2 outlets 12 + recency 1.6 (43h old)",
       "scoreParts": {
         "outlets": 12,
-        "recency": 1.8,
+        "recency": 1.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -2073,10 +2073,10 @@
       "score": 34,
       "label": "Trending",
       "uncovered": false,
-      "scoreWhy": "Score 34: 2 outlets 12 + recency 1.8 (42h old) + X 20",
+      "scoreWhy": "Score 34: 2 outlets 12 + recency 1.6 (43h old) + X 20",
       "scoreParts": {
         "outlets": 12,
-        "recency": 1.8,
+        "recency": 1.6,
         "x": 20.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -2113,10 +2113,10 @@
       "score": 8,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 8: 1 outlet 6 + recency 1.8 (42h old)",
+      "scoreWhy": "Score 8: 1 outlet 6 + recency 1.6 (43h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 1.8,
+        "recency": 1.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -2153,10 +2153,10 @@
       "score": 8,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 8: 1 outlet 6 + recency 1.8 (42h old)",
+      "scoreWhy": "Score 8: 1 outlet 6 + recency 1.6 (43h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 1.8,
+        "recency": 1.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -2197,10 +2197,10 @@
       "score": 33,
       "label": "Trending",
       "uncovered": false,
-      "scoreWhy": "Score 33: 1 outlet 6 + recency 7 (18h old) + X 20",
+      "scoreWhy": "Score 33: 1 outlet 6 + recency 6.5 (19h old) + X 20",
       "scoreParts": {
         "outlets": 6,
-        "recency": 7.0,
+        "recency": 6.5,
         "x": 20.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -4152,7 +4152,7 @@
       "signature": false,
       "weave": null,
       "talkingPoints": [
-        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Saturday, November 21st, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the La Joya ISD student-search investigation, plus the food truck park fight in McAllen. On the National Desk, the President's press conference. In Trending, the Rockets in Denver. And in How We'd Talk to Our Kids, Jess and I take on Student searches at school: what La Joya ISD's HOPE Academy review means, and what a 14-year-old. It's 66 and mostly clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Saturday, November 21st, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the La Joya ISD student-search investigation, plus the food truck park fight in McAllen. On the National Desk, the President's press conference. In Trending, the Rockets in Denver. And in How We'd Talk to Our Kids, Jess and I take on Student searches at school: what La Joya ISD's HOPE Academy review means, and what a 14-year-old. It's 67 and clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
         "JINGLE: Drew in the Morning. Your Valley, your news, your morning.",
         "JINGLE: \"Drew in the Morning. Your Valley, your news, your morning.\" (alternates in cold-open.md)",
         "COLD OPEN: read the paragraph the packet builds each morning (card at the top of the studio page; also in the PDF, txt and email, and in obs-data.json under coldOpen). It is one flowing paragraph, about 25 seconds, filled with today's real headlines.",
@@ -5166,522 +5166,17 @@
     "trendsNote": "Google Trends US-TX 10 + US 10 items, fetched 2026-11-20T03:00:46+00:00 (cache)"
   },
   "coldOpen": {
-    "text": "Good morning, Rio Grande Valley! It's Saturday, November 21st, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the La Joya ISD student-search investigation, plus the food truck park fight in McAllen. On the National Desk, the President's press conference. In Trending, the Rockets in Denver. And in How We'd Talk to Our Kids, Jess and I take on Student searches at school: what La Joya ISD's HOPE Academy review means, and what a 14-year-old. It's 66 and mostly clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+    "text": "Good morning, Rio Grande Valley! It's Saturday, November 21st, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the La Joya ISD student-search investigation, plus the food truck park fight in McAllen. On the National Desk, the President's press conference. In Trending, the Rockets in Denver. And in How We'd Talk to Our Kids, Jess and I take on Student searches at school: what La Joya ISD's HOPE Academy review means, and what a 14-year-old. It's 67 and clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
     "jingle": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [
       "Wake up, RGV. It's Drew in the Morning.",
       "From McAllen to the world, this is Drew in the Morning."
     ],
     "confirm": [],
-    "words": 103,
+    "words": 102,
     "template": "daily"
   },
-  "linkCheck": {
-    "date": "2026-11-21",
-    "ok": 100,
-    "blocked": 23,
-    "dead": 0,
-    "unreachable": 1
-  },
-  "linkCheckDetail": {
-    "https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://abc7news.com/post/magnitude-51-earthquake-hits-monterey-county-usgs-says/20058336/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://api.weather.gov/gridpoints/BRO/49,19/forecast": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://apnews.com/article/denmark-greenland-us-security-arctic-north-atlantic-a392abbba5c2f1bccbbb372e3d38769d": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://apnews.com/article/fact-check-trump-news-conference-white-house-40161bd1f52182498102889abd61eec6": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://apnews.com/article/fiona-hippo-cincinnati-zoo-hat-3d90d10c57698af06e5a7a67bed05608": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://apnews.com/article/measles-elimination-status-us-mexico-b6694152aca12e8cf4293d9f50090ec9": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://apnews.com/article/pete-rose-pardon-trump-baseball-14f398d4c657ccf55cb8a77cc7e60915": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://apnews.com/article/rockets-nuggets-score-jokic-sengun-a9d60efb065f73d0dceb667f301ff5c9": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://apnews.com/article/stocks-markets-ai-us-anthropic-206c84045137824feabe052a29ff6140": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://apnews.com/article/texans-colts-score-a10b89e303c92efae4c15b8e9df01534": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://apnews.com/article/trump-putin-us-russia-friend-961f5a5b381dc7555c7bedfdd20581d8": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://ballotpedia.org/Bobby_Pulido": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://btxtoday.com/texas-lng-export-extension-litigation-2026/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://cincinnatizoo.org/beloved-hippo-fiona-has-passed-away/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://crypto.news/trump-to-host-dinner-for-top-185-trump-holders-on-nov-22/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://dailymcallen.com/local-news/editions/11-14-2026": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://dailymcallen.com/local-news/editions/11-16-2026": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://dailymcallen.com/local-news/editions/11-17-2026": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://dailymcallen.com/local-news/editions/11-18-2026": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://dailymcallen.com/local-news/editions/11-20-2026": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://dailymcallen.com/local-news/editions/11-21-2026": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://ew.com/snl-recap-john-mulaney-hosts-seventh-time-phoebe-bridgers-musical-guest-12253185": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://gooddayedinburg.com/local-news/editions/11-15-2026": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://homeland.house.gov/wp-content/uploads/2026/11/2026-11-18-HRG-Testimony-Mullin.pdf": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://kobi5.com/news/door-kicking-trend-is-growing-locally-five-incidents-reported-in-talent-319588/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/featured/2026/06/17/brownsville-appoints-interim-city-manager-alan-guard-to-permanent-position/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2023/07/25/despite-protest-mcallen-commission-rezones-park-for-austin-tech-company/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2026/11/04/not-over-yet-nearly-all-mission-races-heading-to-runoff-elections/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2026/11/19/brownsville-isd-board-elects-denise-garza-as-president/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2026/11/19/mission-approves-voluntary-drug-testing-for-city-officials/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2026/11/19/spacex-responds-to-cameron-county-rejection-of-tax-break-application/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2026/11/19/usda-confirms-fifth-case-of-screwworm-in-rio-grande-valley/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2026/11/20/future-of-state-takeover-of-la-joya-isd-in-question/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://news4sanantonio.com/news/local/fake-instagram-account-claims-uvalde-schools-closed-for-gta-6-release": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://politiquera.com/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://rblxstat.com/blog/roblox-weekly-report-2026-11-15": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://rostats.io/charts/2026-11": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://safescreens.us/guides/gaming/roblox-experiences": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://takeitdown.ncmec.org/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://tea.texas.gov/taa-letters/implementation-texas-house-bill-1481-student-use-personal-communication-devices-school": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://texasborderbusiness.com/major-investment-in-echo-hotel-property-coming-to-edinburg/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://theedinburgadvocate.com/2026/11/edinburg-cisd-board-to-seat-new-members-approve-3-million-stop-loss-insurance-contract-at-special-meeting-tuesday-nov-17/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://thergvnews.com/reviews/day/2026-11-17": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://trending.knowyourmeme.com/editorials/guides/what-is-the-pennywide-meme-the-viral-pennywise-house-video-and-memes-explained": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://variety.com/2026/tv/news/yellowjackets-final-season-4-release-date-1236839026/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.bbc.com/news/articles/cwz0k3172xzko": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.bbc.com/news/articles/cx1l0pm7l9jmo": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.borderreport.com/border-report-tour/border-crime/federal-cartel-indictment-ties-10-defendants-to-crash-that-killed-8-migrants/": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.borderreport.com/border-report-tour/border-culture/christies-halts-frida-kahlo-painting-from-auction-at-mexicos-request/": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.borderreport.com/news/trade/roma-bridge-fastest-growing-for-truck-traffic-on-southwest-border/": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.boston.com/culture/entertainment/2026/11/15/snl-recap-john-mulaney-2026/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.cdc.gov/media/releases/2026/loss-of-usmeasles-elimination-status.html": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-stocks-selloff.html": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.dhs.gov/sites/default/files/2026-08/26_0806_k2p_p2p-t2p-sextortion.pdf": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.dw.com/en/grand-theft-auto-vi-launches-to-global-fanfare/a-79986461": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.espn.com/mlb/story/_/id/50328768/free-agency-tracker-offseason-trades-moves-2026-2027": {
-      "status": 202,
-      "result": "ok"
-    },
-    "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.fastcompany.com/newsletters": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/sextortion": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.footballdb.com/games/index.html?yr=2026": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.ft.com/content/0cb87e56-2b97-4c91-bfa7-a7ab616fd58e": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.gulfcoastnewsnow.com/article/video-door-kick-challenge-cape-coral-florida/74444521": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.healthychildren.org/English/health-issues/conditions/emotional-problems/Pages/when-children-and-teens-self-harm.aspx": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.hellomagazine.com/healthandbeauty/mother-and-baby/878329/your-gen-alpha-child-increasingly-bizarre-slang-how-to-respond/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.hidalgocounty.us/3526/December-12-2026-Local-Entities-Runoff-E": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.houstonpublicmedia.org/articles/news/politics/2026/11/18/567502/texas-secretary-of-state-launches-audit-of-u-s-senate-election/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.kcra.com/article/magnitude-51-earthquake-strikes-near-pinnacles/74485520": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/cameron-county-commissioners-pass-resolution-to-protect-public-access-to-boca-chica-beach/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/cameron-county-commissioners-reject-spacex-data-center-tax-break-request/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/city-of-mcallen-commissioners-vote-to-rezone-disc-golf-course/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/it-s-not-safe-brownsville-neighborhood-deals-with-heavy-traffic-from-new-carpool-lot/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/la-joya-isd-investigating-excessive-student-searches-at-hope-academy-4-employees-on-leave/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/mcallen-food-truck-owners-call-for-extension-on-park-closure": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.mlb.com/news/tarik-skubal-rumors-november-17-free-agent-update": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.nba.com/game/hou-vs-den-0022600050": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.nfl.com/schedules/2026/by-week/week-10": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.nimh.nih.gov/health/publications/warning-signs-of-suicide": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.psjaisd.us/academics/psja-isd-ai-guidebook": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.psjaisd.us/school-news-details/~board/pharr-san-juan-alamo-isd-news/post/psja-isd-swears-in-three-trustees-elects-new-board-leadership": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.rd.com/article/gen-alpha-slang/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.reddit.com/r/RioGrandeValley/comments/1xjnz54/community_march_to_petition_for_the_speer/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.reddit.com/r/RioGrandeValley/comments/1y1uoy6/parking_info_in_downtown_brownsville/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.reddit.com/r/texas/comments/1y11s3i/elon_musk_i_think_things_will_be_fine_in_texas/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.reddit.com/r/texas/comments/1y1877l/democrats_plan_to_govern_like_texas_is_still_red/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.rgvsports.com/rgv-football-playoff-schedule/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.showbiz411.com/2026/11/18/john-mulaney-phoebe-bridgers-snl-best-this-season-drops-back-to-season-average-ratings-down-20-from-last-weeks-high": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.texastribune.org/2026/11/03/texas-bobby-pulido-monica-de-la-cruz-congress-district-15-elections-2026/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.texastribune.org/2026/11/19/texas-border-wire-immigration-ken-paxton/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.texastribune.org/2026/11/19/texas-comptroller-huffines-data-tax-limit/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.texastribune.org/2026/11/20/death-star-bill-texas-supreme-court/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.texastribune.org/2026/11/20/ercot-texas-electric-grid-ceo-contract/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.thedanishparliament.dk/en/news/2026/11/the-danish-parliament-approves-agreement-on-defence-of-greenland": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.thewrap.com/creative-content/tv-shows/percy-jackson-season-3-episode-release-schedule/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/19/yellowjackets-season-4-release-date-cast-watch/92825429007/": {
-      "status": 402,
-      "result": "unreachable"
-    },
-    "https://www.utrgv.edu/newsroom/2026/11/20/utrgv-and-va-partnership.htm": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.valleycentral.com/news/local-news/faa-holds-virtual-hearing-on-spacex-proposal-for-more-rocket-launches/": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.valleycentral.com/news/local-news/gas-prices-dip-below-3-a-gallon-across-the-valley/": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.valleycentral.com/news/local-news/hands-off-our-boca-chica-beach-act-advances/": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.valleycentral.com/news/local-news/mission-sets-special-meeting-to-review-overnight-barking-ordinance/amp/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.valleycentral.com/news/local-news/starbase-selects-new-city-commissioner/": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.valleycentral.com/valleycentrals-local-elections-hq/michael-fallek-officially-declared-winner-in-district-5-city-commission-race/": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.weather.gov/bro/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.youtube.com/watch?v=-X9dxL17t1k": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.youtube.com/watch?v=R_8UPhJNrZ4": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://x.com/i/trending/2123145814818357459": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://x.com/search?q=%23VOTEFORBTS": {
-      "status": 200,
-      "result": "ok"
-    }
-  },
-  "generatedAt": "2026-11-21T06:06:07-06:00",
+  "generatedAt": "2026-11-21T13:22:19+00:00",
   "sources": [
     {
       "section": "Top headlines: RGV",
