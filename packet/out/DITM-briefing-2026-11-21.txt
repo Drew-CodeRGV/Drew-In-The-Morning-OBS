@@ -1,0 +1,539 @@
+============================================================================================
+DREW IN THE MORNING
+DAILY BRIEFING · Saturday, November 21, 2026 · updated 6 AM CT
+The weekend
+Drew & Jess are watching the feeds so you don't have to
+============================================================================================
+
+NEXT SHOW: MONDAY, NOVEMBER 23, 8:00-9:00 AM CT · Monday 8 AM rundown (this briefing is the story bank for it)
+  8:00–8:02   A  Cold Open & Jingle (2 min)
+  8:02–8:05   B  What I've Been Up To This Week (3 min, FLEX 2-4)
+  8:05–8:13   C  Local News (8 min, FLEX 6-10)
+  8:13–8:19   D  Local Politics (6 min, FLEX 4-8)
+  8:19–8:24   E  School Boards (5 min, FLEX 3-7)
+  8:24–8:29   F  City Hall (5 min, FLEX 3-7)
+  8:29–8:35   G  Economic Development (6 min, FLEX 4-8)
+  8:35–8:41   H  Family & Kids (woven in) (6 min, FLEX 3-10, Jess) *
+  8:41–8:45   I  Statewide (4 min, FLEX 2-6)
+  8:45–8:53   J  The National Desk (+ Trending) (8 min, FLEX 6-10)
+  8:53–8:56   K  Listener Line (3 min, FLEX 2-4)
+  8:56–9:00   L  Meme of the Week & Close (4 min, FLEX 3-6, Jess)
+
+COLD OPEN (read aloud, about 45 seconds)
+  Good morning, Rio Grande Valley! It's Saturday, November 21st, and this is your Drew in
+  the Morning daily briefing. Today: the local stories everyone's talking about, starting
+  with the La Joya ISD student-search investigation, plus the food truck park fight in
+  McAllen. On the National Desk, the President's press conference. In Trending, the Rockets
+  in Denver. And in How We'd Talk to Our Kids, Jess and I take on Student searches at
+  school: what La Joya ISD's HOPE Academy review means, and what a 14-year-old. It's 66 and
+  mostly clear outside, the coffee's hot, so stick around, this is Drew in the Morning.
+  JINGLE: Drew in the Morning. Your Valley, your news, your morning.
+
+WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min, from the family calendar) · 5 from the week
+  Busy week at the Lentz house. We had a school picnic on Tuesday, hip hop class on Tuesday,
+  cotillion on Wednesday, tap class on Wednesday, and the region clinic and concert on
+  Friday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.
+  - a school picnic · Tue Nov 17
+  - hip hop class · Tue Nov 17
+  - cotillion · Wed Nov 18
+  - tap class · Wed Nov 18
+  - the region clinic and concert · Fri Nov 20
+  Window Nov 15–21, 2026. Calendar: Family calendar (iCloud, published feed). Family-
+    friendly items only, generic wording.
+  INTERNAL NOTE (not for air): 2 calendar items left off the air (medical, personal, money,
+    work, private or unsure); 5 qualifying occurrences used. Names never leave this note.
+
+STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README.md). 40
+  stories, 0 duplicate(s) merged, 0 hot, 3 trending, 0 uncovered lead(s). Google Trends US-
+  TX 10 + US 10 items, fetched 2026-11-20T03:00:46+00:00 (cache).
+
+TOP HEADLINES · RGV FIRST
+  - [ACT 16] La Joya ISD investigating 'excessive' student searches at HOPE Academy; 4
+    employees on leave and reported to TEA (KRGV · Nov 20)
+    https://www.krgv.com/news/la-joya-isd-investigating-excessive-student-searches-at-hope-academy-4-employees-on-leave/
+  - [ACT 13] Future of the state takeover of La Joya ISD in question as Gov.-elect Hinojosa
+    vows to return local control (MyRGV · Nov 20)
+    https://myrgv.com/local-news/2026/11/20/future-of-state-takeover-of-la-joya-isd-in-question/
+  - [ACT 16] 'It's not safe': Brownsville's Pinewood neighbors say a new carpool lot and
+    SpaceX charter buses jam their streets (KRGV · Nov 20)
+    https://www.krgv.com/news/it-s-not-safe-brownsville-neighborhood-deals-with-heavy-traffic-from-new-carpool-lot/
+  - [ACT 12] Texas LNG asks for more time on its federal export authorization at the Port of
+    Brownsville, citing litigation (BTX Today · Nov 20)
+    https://btxtoday.com/texas-lng-export-extension-litigation-2026/
+  - [ACT 13] UTRGV and the VA sign agreements to bring UT Health RGV specialists into VA
+    clinics for South Texas veterans (UTRGV · Nov 20)
+    https://www.utrgv.edu/newsroom/2026/11/20/utrgv-and-va-partnership.htm
+  - [ACT 16] Mission sets a special meeting to review its overnight dog-barking rule; city
+    says there's no three-minute limit (ValleyCentral · Nov 20)
+    https://www.valleycentral.com/news/local-news/mission-sets-special-meeting-to-review-overnight-barking-ordinance/amp/
+  - [ACT 26] STC president at the Workforce Summit: South Texas has a skills gap, not a
+    worker gap (Daily McAllen · Nov 21)
+    https://dailymcallen.com/local-news/editions/11-21-2026
+  - [ACT 8] McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan.
+    14 deadline still stands (KRGV · Nov 19)
+    https://www.krgv.com/news/mcallen-food-truck-owners-call-for-extension-on-park-closure
+  - [ACT 11] La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and
+    Paredes elementaries) after losing 10,008 students in a decade (Daily McAllen · Nov 20)
+    https://dailymcallen.com/local-news/editions/11-20-2026
+  - [ACT 8] SpaceX responds after Cameron County rejects its data center tax break, says its
+    payment plan would have steadied county revenue (MyRGV · Nov 19)
+    https://myrgv.com/local-news/2026/11/19/spacex-responds-to-cameron-county-rejection-of-tax-break-application/
+  - [ACT 9] FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and
+    landings a year at Starbase; next session Friday 5:30 PM (ValleyCentral · Nov 19)
+    https://www.valleycentral.com/news/local-news/faa-holds-virtual-hearing-on-spacex-proposal-for-more-rocket-launches/
+  - [ACT 8] Rep. Vicente Gonzalez's 'Hands Off Our Boca Chica Beach Act' clears the House
+    Natural Resources Committee (ValleyCentral · Nov 19)
+    https://www.valleycentral.com/news/local-news/hands-off-our-boca-chica-beach-act-advances/
+  - [ACT 9] Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some at
+    $2.94) (ValleyCentral · Nov 19)
+    https://www.valleycentral.com/news/local-news/gas-prices-dip-below-3-a-gallon-across-the-valley/
+  - [ACT 8] Starbase fills a vacant commission seat with Haley Ruvalcaba, wife of a SpaceX
+    IT director (ValleyCentral · Nov 19)
+    https://www.valleycentral.com/news/local-news/starbase-selects-new-city-commissioner/
+  - [ACT 7] Roma's bridge is now the fastest-growing truck port on the Southwest border
+    (imports up 17x since 2019) (Border Report · Nov 18-19)
+    https://www.borderreport.com/news/trade/roma-bridge-fastest-growing-for-truck-traffic-on-southwest-border/
+  - [ACT 11] RioPlex says $110 billion in industrial, energy and data center investment is
+    headed to the Valley (Daily McAllen · Nov 20)
+    https://dailymcallen.com/local-news/editions/11-20-2026
+  - [ACT 8] Mission approves voluntary drug testing for the mayor and council (mandatory for
+    city attorney and managers) (MyRGV · Nov 19)
+    https://myrgv.com/local-news/2026/11/19/mission-approves-voluntary-drug-testing-for-city-officials/
+  - [ACT 8] Brownsville ISD swears in trustees and elects Denise Garza board president
+    (MyRGV · Nov 19)
+    https://myrgv.com/local-news/2026/11/19/brownsville-isd-board-elects-denise-garza-as-president/
+  - [ACT 11] Palenque Hidalgo opens today at Payne Arena (360-degree stage, tickets from
+    $20; Tito Double P headlines) (Daily McAllen · Nov 20)
+    https://dailymcallen.com/local-news/editions/11-20-2026
+  - [ACT 8] USDA confirms the Valley's fifth screwworm case (first in Hidalgo County);
+    Brooks, Hidalgo, Kenedy and Willacy under 'Infested Zone 37' rules (MyRGV · Nov 19)
+    https://myrgv.com/local-news/2026/11/19/usda-confirms-fifth-case-of-screwworm-in-rio-grande-valley/
+  Texas:
+  - [ACT 14] ERCOT CEO Pablo Vegas gets a contract extension worth up to $4.1M next year,
+    angering Lt. Gov. Dan Patrick (Texas Tribune · Nov 20)
+    https://www.texastribune.org/2026/11/20/ercot-texas-electric-grid-ceo-contract/
+  - [ACT 14] Texas Supreme Court leaves the 'Death Star' law limiting city ordinances
+    intact; Democrats plan a repeal push in January (Texas Tribune · Nov 20)
+    https://www.texastribune.org/2026/11/20/death-star-bill-texas-supreme-court/
+  - [ACT 15] Federal cartel indictment ties 10 defendants to a Texas crash that killed 8
+    migrants (Border Report · Nov 20)
+    https://www.borderreport.com/border-report-tour/border-crime/federal-cartel-indictment-ties-10-defendants-to-crash-that-killed-8-migrants/
+  - [ACT 6] Texas Secretary of State launches the first audit of a U.S. Senate race under
+    the 2021 law (Talarico beat Paxton) (Houston Public Media · Nov 18)
+    https://www.houstonpublicmedia.org/articles/news/politics/2026/11/18/567502/texas-secretary-of-state-launches-audit-of-u-s-senate-election/
+  - [ACT 9] Paxton and the feds agree to keep Texas razor wire at the border for up to 30
+    years (Del Rio Sector) (Texas Tribune · Nov 19)
+    https://www.texastribune.org/2026/11/19/texas-border-wire-immigration-ken-paxton/
+  - [ACT 8] Comptroller Huffines' move to stop taxing cloud, AI and data hosting would cost
+    Texas $18 billion over six years (Texas Tribune · Nov 19)
+    https://www.texastribune.org/2026/11/19/texas-comptroller-huffines-data-tax-limit/
+  Photo: File photo: Starship (Steve Jurvetson, CC BY 2.0, Wikimedia Commons) https://commons.wikimedia.org/wiki/File:SpaceX_Starship_before_IFT-5.jpg
+
+CHISME · what the Valley is buzzing about · RUMOR · CONFIRM BEFORE AIR · last 72 hours
+  - Democrats Plan to Govern Like Texas Is Still Red (reddit · r/texas) [RUMOR · CONFIRM
+    BEFORE AIR]
+    https://www.reddit.com/r/texas/comments/1y1877l/democrats_plan_to_govern_like_texas_is_still_red/
+      TL;DR: A top r/texas post shares a story on how Texas Democrats plan to govern after
+    the election.
+      Riff: Blue team, red playbook? Texas politics never gets boring.
+  - Elon Musk: things will be fine in Texas under Democratic leadership (reddit · r/texas)
+    [RUMOR · CONFIRM BEFORE AIR]
+    https://www.reddit.com/r/texas/comments/1y11s3i/elon_musk_i_think_things_will_be_fine_in_texas/
+      TL;DR: A post shares a quote attributed to Elon Musk saying things will be fine in
+    Texas under Democratic leadership.
+      Riff: Elon making peace with the new governor. Starbase is listening.
+  - Parking info in downtown Brownsville (reddit · r/RioGrandeValley) [RUMOR · CONFIRM
+    BEFORE AIR]
+    https://www.reddit.com/r/RioGrandeValley/comments/1y1uoy6/parking_info_in_downtown_brownsville/
+      TL;DR: A user asks where to park in downtown Brownsville.
+      Riff: The eternal Valley question: where do I park?
+
+TRENDING NEWS · what's trending around the nation (separate from the National Desk)
+- [ACT 19] Jokic's big second half sends the Nuggets past the Rockets 133-124 in the NBA Cup  [sports]
+    SUMMARY: Nov 20: Denver improved to 2-0 in Emirates NBA Cup play.
+    RIFF: Houston hung with the champ-level Nuggets for a half. Texas basketball check-in.
+    AP · Nov 20: https://apnews.com/article/rockets-nuggets-score-jokic-sengun-a9d60efb065f73d0dceb667f301ff5c9
+    NBA.com: https://www.nba.com/game/hou-vs-den-0022600050
+- [ACT 14] 'Yellowjackets' final season premieres on Paramount+  [TV]
+    SUMMARY: Season 4, the show's last, premiered Friday, Nov. 20 on Paramount+ with
+      Showtime.
+    RIFF: Jess, are we watching? Not one for the 10-year-old.
+    USA Today · Nov 19: https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/19/yellowjackets-season-4-release-date-cast-watch/92825429007/
+    Variety: https://variety.com/2026/tv/news/yellowjackets-final-season-4-release-date-1236839026/
+- [ACT 19] Trump hosts a dinner Sunday for top $TRUMP memecoin holders  [politics / crypto]  [CONFIRM BEFORE AIR: Details from crypto press; FT also reports]
+    SUMMARY: The Nov. 22 dinner at Trump National Golf Club is for the top 185 holders
+      ranked on time-weighted holdings; Democrats call it a conflict of interest.
+    RIFF: Buy a meme coin, get a steak with the President. What a time.
+    crypto.news · Nov 20: https://crypto.news/trump-to-host-dinner-for-top-185-trump-holders-on-nov-22/
+    FT: https://www.ft.com/content/0cb87e56-2b97-4c91-bfa7-a7ab616fd58e
+- [ACT 20] Fiona the hippo dies at the Cincinnati Zoo after swallowing a visitor's knit hat  [viral / animals]
+    SUMMARY: Nov 19: the zoo said Fiona, 9, died after a hat a visitor tossed was caught by
+      a ceiling fan and flung into her habitat; vets tried everything short of surgery.
+    RIFF: The internet's favorite hippo, taken out by a freak hat accident. Hold your hats
+      at the zoo, folks. Keep it gentle; kids loved her.
+    Cincinnati Zoo · Nov 19: https://cincinnatizoo.org/beloved-hippo-fiona-has-passed-away/
+    AP: https://apnews.com/article/fiona-hippo-cincinnati-zoo-hat-3d90d10c57698af06e5a7a67bed05608
+    BBC: https://www.bbc.com/news/articles/cwz0k3172xzko
+- [ACT 14] Trump posthumously pardons Pete Rose  [sports]
+    SUMMARY: Nov 19: Trump pardoned Rose's 1990 tax convictions; it's symbolic and doesn't
+      change Hall of Fame status (MLB lifted his ban in 2025). Trump's post said 4,256 hits
+      'in a Season'; it's career.
+    RIFF: Pardoned for taxes, not for betting. And 4,256 hits in one season would be 26 a
+      game. Somebody fact-check the President's box score.
+    AP · Nov 19: https://apnews.com/article/pete-rose-pardon-trump-baseball-14f398d4c657ccf55cb8a77cc7e60915
+    BBC: https://www.bbc.com/news/articles/cx1l0pm7l9jmo
+- [TREND 40] 'Percy Jackson and the Olympians' Season 3 premieres today on Disney+ and Hulu  [TV / kids]  [CONFIRM BEFORE AIR: Schedule from TheWrap headline and X summaries; confirm on Disney+]
+    SUMMARY: Season 3 adapts 'The Titan's Curse'; two episodes drop today, then pairs each
+      Friday through Dec. 11. #PercyJackson is trending on X.
+    RIFF: Your 10-year-old already knows. Family-movie-night pick for the weekend, and the
+      books are better (don't tell them we said it).
+    TheWrap · X trend: https://www.thewrap.com/creative-content/tv-shows/percy-jackson-season-3-episode-release-schedule/
+    X: #PercyJackson: https://x.com/i/trending/2123145814818357459
+- [TREND 34] Magnitude 5.1 earthquake shakes Monterey County, California; 'earthquake' trends in Texas and on X  [news]
+    SUMMARY: Nov 19, 10:49 p.m. PT near Pinnacles, about 21 km NE of Soledad; no immediate
+      injuries or damage reported.
+    RIFF: Valley earthquake plan: we don't have one, because we don't get them. We get
+      hurricanes and screwworm.
+    ABC7 SF · Nov 19-20: https://abc7news.com/post/magnitude-51-earthquake-hits-monterey-county-usgs-says/20058336/
+    KCRA: https://www.kcra.com/article/magnitude-51-earthquake-strikes-near-pinnacles/74485520
+- [ACT 8] Christie's pulls a Frida Kahlo painting from auction at Mexico's request  [culture]
+    SUMMARY: 'Congreso de los pueblos por la paz' (1952) was withdrawn while Mexico checks
+      its provenance; Kahlo's work is a protected artistic monument under Mexican law.
+    RIFF: Mexico says 'not so fast' on Frida. Fun one for the Valley: who's been to Casa
+      Azul?
+    Border Report / AP · Nov 19: https://www.borderreport.com/border-report-tour/border-culture/christies-halts-frida-kahlo-painting-from-auction-at-mexicos-request/
+- [ACT 8] Jazz snap the Lakers' nine-game win streak; Giannis leads the Heat past his old team  [sports]
+    SUMMARY: Nov 18: Utah won 109-97 at L.A. (Keyonte George 30); Miami beat Milwaukee
+      137-130 with Giannis at 27-13-9 in his first game against the Bucks.
+    RIFF: The three-win Jazz ended the Lakers' run. Any given Wednesday.
+    Field Level Media · Nov 19: https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/
+- [TREND 33] BTS fans flood X voting for the MAMA Awards  [music]  [CONFIRM BEFORE AIR: X trend only; no news story opened. CONFIRM BEFORE AIR]
+    SUMMARY: #VOTEFORBTS, #DAESANGFORBTS and 'OUR CHOICE IS BTS AT MAMA' are top U.S. X
+      trends (about 90,000 posts each).
+    RIFF: If your teen's been glued to the phone, they might be voting. ARMY does not sleep.
+    X trends · Nov 20: https://x.com/search?q=%23VOTEFORBTS
+
+THE NATIONAL DESK (smaller; local leads)
+- [ACT 14] TRUMP'S POST-ASIA-TRIP NEWS CONFERENCE: DEFENDS CALLING PUTIN A FRIEND, TOUTS DEALS; AP FACT-CHECKS THE CLAIMS
+    FACT: Nov 20: at the White House, Trump praised his meetings with Xi and Putin and
+      touted trade deals; AP said he 'can't speak' to whether Putin is a friend to the U.S.
+      and published a fact check of false and misleading claims.
+    OUR TAKE: (Opinion) Crime is 'through the roof' and also 'the best stats in history,' in
+      the same answer. Pick one, Mr. President.
+    WHY IT MATTERS IN THE VALLEY: Trade deals and tariffs flow through Valley bridges; Roma
+      and Pharr feel every China and Mexico headline.
+    AP: Trump on Putin: https://apnews.com/article/trump-putin-us-russia-friend-961f5a5b381dc7555c7bedfdd20581d8
+    AP Fact Focus: https://apnews.com/article/fact-check-trump-news-conference-white-house-40161bd1f52182498102889abd61eec6
+- [ACT 20] THE U.S. (AND MEXICO) LOSE MEASLES ELIMINATION STATUS AFTER 26 YEARS
+    FACT: Nov 17: PAHO determined sustained measles transmission for over a year cost the
+      U.S. its elimination status, first earned in 2000; CDC issued a joint statement.
+    OUR TAKE: (Opinion) We beat measles in 2000 and gave it back. Check your kids' shot
+      records before the holidays.
+    WHY IT MATTERS IN THE VALLEY: Mexico lost its status too, and Valley families cross for
+      Thanksgiving and Christmas. Ask your pediatrician about MMR.
+    AP: https://apnews.com/article/measles-elimination-status-us-mexico-b6694152aca12e8cf4293d9f50090ec9
+    CDC statement: https://www.cdc.gov/media/releases/2026/loss-of-usmeasles-elimination-status.html
+- [ACT 20] DENMARK'S PARLIAMENT UNANIMOUSLY APPROVES THE GREENLAND DEFENSE PACT WITH THE U.S.
+    FACT: Nov 19: the Folketing approved the Greenland-Denmark-U.S. security agreement
+      expanding the U.S. military presence; Trump then claimed the U.S. 'acquired'
+      Greenland.
+    OUR TAKE: (Opinion) We didn't buy Greenland, we got a bigger lease. Still, the art of
+      the deal is working on Denmark.
+    WHY IT MATTERS IN THE VALLEY: Arctic bases and missile defense mean more Pentagon space
+      money, the same pot Starbase competes for.
+    CONFIRM BEFORE AIR: Trump 'acquired' quote is from X news summaries; confirm wording
+    AP: https://apnews.com/article/denmark-greenland-us-security-arctic-north-atlantic-a392abbba5c2f1bccbbb372e3d38769d
+    Danish Parliament: https://www.thedanishparliament.dk/en/news/2026/11/the-danish-parliament-approves-agreement-on-defence-of-greenland
+- [ACT 20] WALL STREET'S LONGEST LOSING STREAK SINCE 2024: DOW DROPS 1,100 AS AI STOCKS SLIDE, EVEN WITH ANTHROPIC'S IPO POP
+    FACT: Nov 19: the Dow fell 1,101 points (2.2%), the S&P 500 lost 2% for a sixth straight
+      day and the Nasdaq fell 2.3%; Anthropic closed up 17% in its debut but didn't lift AI
+      stocks.
+    OUR TAKE: (Opinion) The biggest IPO ever and the market still went down. When the
+      party's best guest can't save the party, check your 401(k) and don't panic-sell.
+    WHY IT MATTERS IN THE VALLEY: The data-center money the Valley is chasing (SpaceX,
+      RioPlex's $110B) depends on investors still loving AI.
+    AP: Dow drops 1,100: https://apnews.com/article/stocks-markets-ai-us-anthropic-206c84045137824feabe052a29ff6140
+    CNBC: Anthropic IPO fails to lift AI stocks: https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-stocks-selloff.html
+
+WHAT'S HAPPENING IN TECH (sub-segment of block J, after the National Desk) [FALLBACK: TECH WIRES]
+  FALLBACK: tech wires (The Verge, TechCrunch, Ars Technica). No Fast Company Daily issue
+    from the last 48 hours was found in Gmail.
+- Google says it will shut off Google Assistant on smart speakers next year  (The Verge)  [CONFIRM BEFORE AIR: Headline only from the wire feed; read the article before air]
+    SUMMARY: Headline from The Verge's feed (Nov 20): Google plans to shut off Assistant on
+      smart speakers next year.
+    ON-AIR ANGLE: If the kitchen Nest Mini is your kid's homework helper, start planning.
+    Link: https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down
+- Bending Spoons buys Mailchimp for $3.68B  (TechCrunch)  [CONFIRM BEFORE AIR: Headline only from the wire feed; read the article before air]
+    SUMMARY: Headline from TechCrunch's feed (Nov 20): Bending Spoons is buying Mailchimp
+      for $3.68 billion.
+    ON-AIR ANGLE: Every Valley small business newsletter runs on Mailchimp. Watch your bill.
+    Link: https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/
+- Trump threatens a 'tremendous tax' for moving AI data centers outside the US  (The Verge)  [CONFIRM BEFORE AIR: Headline only from the wire feed; read the article before air]
+    SUMMARY: Headline from The Verge's feed (Nov 20): Trump threatened a big tax on moving
+      AI data centers abroad.
+    ON-AIR ANGLE: More pressure to build data centers here, which is exactly the SpaceX and
+      RioPlex fight in the Valley.
+    Link: https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax
+- Valve says it might have to raise the price of supply-limited Steam Machines  (Ars Technica)  [CONFIRM BEFORE AIR: Headline only from the wire feed; read the article before air]
+    SUMMARY: Headline from Ars Technica's feed (Nov 20): Valve says Steam Machine prices
+      could go up because supply is limited.
+    ON-AIR ANGLE: Christmas list alert for the 14-year-old gamer.
+    Link: https://arstechnica.com/gaming/2026/11/valve-says-it-might-have-to-raise-the-price-of-supply-limited-steam-machines/
+
+REMEMBERING OUR NEIGHBORS (read near the close, block L) · 71 obituaries from The Monitor on Legacy.com, Nov 8–21
+  Only what each notice lists: no cause of death. CONFIRM name pronunciations before
+    reading.
+  ON-AIR READ: We want to take a moment to remember some of our neighbors we lost over the
+    past week. Anna Segundo, 74, of Mission; Dalia Cortinas, 81, of Mission; Ernestina
+    Torres, 75, of Edinburg; Henry Coy Stevens, 83, of Mission; Jose Arturo Sanchez, 69, of
+    Donna; Jose Peralta, 62, of Mission. Our thoughts are with their families and friends.
+    You'll find these and more in The Monitor's obituaries on Legacy dot com.
+  Nov 15–21 (40)
+    - Anna Segundo, 74 · Mission · died Oct 25 · ran Nov 21 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/anna-segundo-obituary?id=63034403
+    - Dalia Cortinas, 81 · Mission · died Oct 28 · ran Nov 21 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/dalia-cortinas-obituary?id=63034410
+    - Ernestina Torres, 75 · Edinburg · died Nov 20 · ran Nov 21 · Ceballos-Diaz Funeral Home of Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/ernestina-torres-obituary?id=63034399
+    - Henry Coy Stevens, 83 · Mission · died Nov 10 · ran Nov 21 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/henry-stevens-obituary?id=63034416
+    - Jose Arturo Sanchez, 69 · Donna · died Nov 13 · ran Nov 21 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/jose-sanchez-obituary?id=63034419
+    - Jose Peralta, 62 · Mission · died Oct 25 · ran Nov 21 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/jose-peralta-obituary?id=63034407
+    - Phillip Liupakka, 64 · Mission · died Nov 4 · ran Nov 21 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/phillip-liupakka-obituary?id=63034411
+    - Ramona Gonzalez, 84 · Mission · died Nov 2 · ran Nov 21 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/ramona-gonzalez-obituary?id=63034415
+    - San Juanita Villarreal, 53 · Mission · died Nov 4 · ran Nov 21 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/san-villarreal-obituary?id=63034412
+    - Sergio Rodriguez Vasquez, 59 · McAllen · died Oct 22 · ran Nov 21 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/sergio-vasquez-obituary?id=63034405
+    - Servando Rivera Martinez, 73 · Edinburg · died Nov 18 · ran Nov 21 · Memorial Funeral Home of Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/servando-martinez-obituary?id=63034402
+    - Sonia Maydee Faz De Garza, 73 · McAllen · died Nov 18 · ran Nov 21
+      https://www.legacy.com/us/obituaries/themonitor/name/sonia-garza-obituary?id=63034396
+    - Tomas Raya Sr., 83 · Alton · died Oct 20 · ran Nov 21 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/tomas-raya-obituary?id=63034409
+    - William (Bill) Theriault, 66 · Edinburg · died Nov 19 · ran Nov 21 · Memorial Funeral Home - Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/william-theriault-obituary?id=63034397
+    - Gregoria Lloyd, 90 · Alamo · died Nov 18 · ran Nov 20 · Memorial Funeral Home - San Juan
+      https://www.legacy.com/us/obituaries/themonitor/name/gregoria-lloyd-obituary?id=63025610
+    - Guadalupe Valdez Gamboa, 78 · died Nov 15 · ran Nov 20 · Family Funeral Home - Donna
+      https://www.legacy.com/us/obituaries/themonitor/name/guadalupe-gamboa-obituary?id=63025611
+    - Marco Antonio Capetillo Hernandez, 67 · Weslaco · died Nov 14 · ran Nov 20
+      https://www.legacy.com/us/obituaries/themonitor/name/marco-hernandez-obituary?id=63025608
+    - Pedro Ybarra, 46 · died Nov 18 · ran Nov 20 · Salinas Funeral Home - Weslaco
+      https://www.legacy.com/us/obituaries/themonitor/name/pedro-ybarra-obituary?id=63025607
+    - Francisco A. Rodriguez Gomez, 83 · Pharr · died Nov 17 · ran Nov 19 · Eternal Light Funeral Home of Elsa, Texas
+      https://www.legacy.com/us/obituaries/themonitor/name/francisco-gomez-obituary?id=63017922
+    - Glenn Edward Richards, 65 · Edinburg · died Nov 11 · ran Nov 19
+      https://www.legacy.com/us/obituaries/themonitor/name/glenn-richards-obituary?id=63017920
+    - Anna Maria Gonzales, 71 · died Nov 14 · ran Nov 18 · Aurora Funeral Home - Sam Houston
+      https://www.legacy.com/us/obituaries/themonitor/name/anna-gonzales-obituary?id=63008804
+    - Armando Carrera, 81 · Mission · died Nov 11 · ran Nov 18 · Ric Brown Family Funeral Home - at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/armando-carrera-obituary?id=63008783
+    - Cynthia (Cindy) Roberts, 72 · died Oct 4 · ran Nov 18
+      https://www.legacy.com/us/obituaries/themonitor/name/cynthia-roberts-obituary?id=63008803
+    - Daniel Garza, 94 · Mission · died Nov 9 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/daniel-garza-obituary?id=63008787
+    - Federico Fonseca, 81 · Pharr · died Oct 25 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/federico-fonseca-obituary?id=63008790
+    - Gerardo Alvarez, 51 · Mission · died Nov 1 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/gerardo-alvarez-obituary?id=63008799
+    - Gonzalo Lerma Ortiz, 86 · Edinburg · died Nov 12 · ran Nov 18 · Memorial Funeral Home - Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/gonzalo-ortiz-obituary?id=63008780
+    - Janluca Amor Acosta · Mission · died Oct 27 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/janluca-acosta-obituary?id=63008798
+    - John T. Hudson, 71 · died Nov 16 · ran Nov 18 · Darling-Mouser Funeral Home
+      https://www.legacy.com/us/obituaries/themonitor/name/john-hudson-obituary?id=63008807
+    - Jose Elizondo, 53 · Sullivan City · died Oct 23 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/jose-elizondo-obituary?id=63008800
+    - Maria Santos Gomez, 100 · Mission · died Nov 3 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/maria-gomez-obituary?id=63008792
+    - Richard Vogelsang, 80 · Palmview · died Nov 1 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/richard-vogelsang-obituary?id=63008796
+    - Salvador Raya Sr., 91 · died Nov 7 · ran Nov 18 · Ric Brown Family Funeral Home - Mission
+      https://www.legacy.com/us/obituaries/themonitor/name/salvador-raya-obituary?id=63008786
+    - Victoria M. Kraft, 78 · Edinburg · died Nov 15 · ran Nov 18 · Memorial Funeral Home - Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/victoria-kraft-obituary?id=63008808
+    - Angel Jose Desiga, 62 · La Feria · died Nov 12 · ran Nov 17 · Salinas Funeral Home - Weslaco
+      https://www.legacy.com/us/obituaries/themonitor/name/angel-desiga-obituary?id=62998832
+    - Francisa R. Cruz, 99 · Edcouch · died Nov 14 · ran Nov 17
+      https://www.legacy.com/us/obituaries/themonitor/name/francisa-cruz-obituary?id=62998833
+    - Maria De Jesus Castillo, 74 · Donna · died Nov 14 · ran Nov 17 · Family Funeral Home of Donna
+      https://www.legacy.com/us/obituaries/themonitor/name/maria-castillo-obituary?id=62998836
+    - Diana Cavazos Hinojosa · died Nov 7 · ran Nov 16 · Kreidler Funeral Home, Inc.
+      https://www.legacy.com/us/obituaries/themonitor/name/diana-hinojosa-obituary?id=62989640
+    - Gregorio Castellanos, 77 · Weslaco · died Nov 4 · ran Nov 16 · McCaleb Funeral Home
+      https://www.legacy.com/us/obituaries/themonitor/name/gregorio-castellanos-obituary?id=62989645
+    - Ray Dell McClaugherty, 86 · Hargill · died Nov 11 · ran Nov 16 · Memorial Funeral Home - Edinburg
+      https://www.legacy.com/us/obituaries/themonitor/name/ray-mcclaugherty-obituary?id=62989641
+  Plus 31 from the week before: on the studio page, under 'Show the previous week'.
+  Source page: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor
+
+WEATHER · McALLEN / RGV (National Weather Service BRO (api.weather.gov))
+  Sat Nov 21  << SHOW DAY Partly Sunny, high 83F / low 69F, rain 2%, wind SE 5 to 10 mph
+  Sun Nov 22  Mostly Cloudy then Showers And Thunderstorms Likely, high 83F / low 59F, rain 94%, wind SE 5 mph
+  Mon Nov 23  Showers And Thunderstorms Likely, high 67F / low 56F, rain 63%, wind N 6 to 13 mph
+  Tue Nov 24  Mostly Cloudy, high 68F / low 53F, rain 14%, wind N 8 mph
+  Wed Nov 25  Mostly Sunny, high 67F / low 50F, rain 1%, wind NNE 6 to 10 mph
+  Thu Nov 26  Mostly Sunny, high 69F / low 54F, rain 15%, wind NE 5 mph
+  Fri Nov 27  Slight Chance Rain Showers, high 72F / low --F, rain 20%, wind SE 8 mph
+  Alerts: none active
+  Updated 2026-11-21T11:18:12+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
+  NWS Brownsville office: https://www.weather.gov/bro/
+  API: https://api.weather.gov/gridpoints/BRO/49,19/forecast
+
+RGV HIGH SCHOOL FOOTBALL · Area round: Thu and Fri results in; Sat 3 PM SA Sotomayor at Edinburg Vela · latest results
+  - 6A DI Area: SA Harlan 34, Harlingen High 3
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+  - 6A DII Area: PSJA North 46, SA Warren 15
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+  - 5A DI Area: Smithson Valley 63, McAllen Rowe 6
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+  - 2A DII Area: La Villa 54, Chilton 28
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+  - 6A DI Area: San Antonio Brennan 31, Weslaco High 15
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+  - 5A DI Area: Boerne Champion 72, McAllen High 14 (in Laredo)
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+  - 5A DII Area: Boerne 41, Mercedes 7
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+  - 5A DII Area: Alamo Heights 56, Sharyland High 0
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+  Upcoming games:
+    - Sat 3 PM: SA Sotomayor at Edinburg Vela (6A DII area)
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+    - Advancing: PSJA North and La Villa
+      https://www.rgvsports.com/rgv-football-playoff-schedule/
+  College: UTRGV falls 48-0 to No. 7 SFA in the home finale (UTRGV 5-6)  https://gooddayedinburg.com/local-news/editions/11-15-2026
+
+NFL · WEEK 11 (TNF) + WEEK 10  (scores: https://www.nfl.com/schedules/2026/by-week/week-10)
+  Thu Nov 19: HOU 26, IND 3 (TNF)
+  Thu Nov 12: WAS 24, NYG 21
+  Sun Nov 15: DET 35, NE 10 (Munich)
+  Sun Nov 15: KC 35, ATL 13
+  Sun Nov 15: CLE 27, HOU 24
+  Sun Nov 15: MIN 30, GB 10
+  Sun Nov 15: IND 24, MIA 22
+  Sun Nov 15: CAR 20, NO 17
+  Sun Nov 15: BUF 31, NYJ 12
+  Sun Nov 15: JAX 40, TEN 23
+  Sun Nov 15: LAR 34, ARI 6
+  Sun Nov 15: SEA 21, LV 13
+  Sun Nov 15: SF 46, DAL 40
+  Sun Nov 15: CIN 38, PIT 18 (SNF)
+  Mon Nov 16: LAC 23, BAL 20 (MNF)
+  - Texans 26, Colts 3: C.J. Stroud throws 3 TDs on Thursday Night Football
+    https://apnews.com/article/texans-colts-score-a10b89e303c92efae4c15b8e9df01534
+  - Week 11: Colts at Texans Thu Nov 19; Titans at Cowboys Sun Nov 22; Bengals at Commanders
+    Mon Nov 23
+    https://www.footballdb.com/games/index.html?yr=2026
+
+NBA  (scores: https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/)
+  Wed Nov 18: MIA 137, MIL 130
+  Wed Nov 18: UTA 109, LAL 97
+  Wed Nov 18: ATL 117, OKC 112
+  Wed Nov 18: DEN 105, BOS 101
+  Wed Nov 18: MEM 124, CLE 121
+  Texas teams, Fri Nov 20: DEN 133, HOU 124 (NBA Cup)
+  Texas teams, Wed Nov 18: HOU 119, IND 104
+  Texas teams, Wed Nov 18: DAL 116, GSW 94
+  - Giannis (27-13-9) leads Miami past Milwaukee in his first game vs. the Bucks; Heat win
+    6th straight, Bucks lose 11th straight
+    https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/
+  - Jazz snap the Lakers' 9-game win streak; Thunder lose first home game (Hawks 117-112)
+    https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/
+  - Texas teams: Rockets win at Indiana 119-104 (Durant 21); Cooper Flagg 33 as Mavs beat
+    Warriors 116-94
+    https://fieldlevelmedia.com/nba/nba-roundup-giannis-antetokounmpo-paces-heat-in-first-game-vs-bucks/
+
+MLB · OFFSEASON (no scores in November; news instead)
+  MLB is in the offseason in November, so this card shows news instead of scores. The
+    Brewers are 2026 World Series champions.
+  - Trump posthumously pardons Pete Rose (1990 tax convictions); symbolic, Hall eligibility
+    unchanged
+    https://apnews.com/article/pete-rose-pardon-trump-baseball-14f398d4c657ccf55cb8a77cc7e60915
+  - Skubal sweepstakes: Mets, Blue Jays, Dodgers and Padres have met or are set to meet; a
+    deal is expected before the CBA expires Dec. 1 (11:59 PM ET)
+    https://www.mlb.com/news/tarik-skubal-rumors-november-17-free-agent-update
+  - Twins agree to 2 years, $55M with Sonny Gray; White Sox land Dustin May (3 yrs, ~$52.5M)
+    https://www.espn.com/mlb/story/_/id/50328768/free-agency-tracker-offseason-trades-moves-2026-2027
+
+MEME OF THE WEEK · WHAT THE KIDS ARE TALKING ABOUT
+Drew & Jess are watching the feeds so you don't have to
+What your kids might be saying at school this week, and one line on how to bring it up.
+
+  ELEMENTARY
+  - Roblox: 'Steal An Egg' & 'Throw Food For Animals'
+      What: Steal An Egg is Roblox's #1 game (about 1.17M playing); Throw Food For Animals
+        is #2 and up 58% on the week.
+      Means: Pet-collecting games where other players can take your eggs; paid boosts are
+        optional.
+      How to bring it up: Ask 'who's stealing your eggs?' Set chat to friends-only and a
+        spending limit.
+      RBLXSTAT: Roblox weekly report Nov 9-15: https://rblxstat.com/blog/roblox-weekly-report-2026-11-15
+      SafeScreens: Roblox parent's guide: https://safescreens.us/guides/gaming/roblox-experiences
+      RoStats: Top Roblox games Nov 2026: https://rostats.io/charts/2026-11
+  - '6-7'
+      What: A catchphrase kids yell for laughs, often with a hands-weighing gesture.
+      Means: No fixed meaning; some link it to LaMelo Ball (6'7"). Already being mocked as
+        overused.
+      How to bring it up: Laugh and ask them to show you the gesture; it's meant to confuse
+        adults.
+      Reader's Digest: Gen Alpha slang: https://www.rd.com/article/gen-alpha-slang/
+      MadeForMums: parents' guide to slang: https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/
+
+  MIDDLE SCHOOL
+  - 'Talk To Me Doja' (Meme of the Week)  [MEME OF THE WEEK]
+      What: A TikTok dance trend copying a dance from the anime 'Yamada-kun and the Seven
+        Witches' set to Doja Cat's 'Like That' (started Nov 7).
+      Means: Kids film their own version next to the anime clip.
+      How to bring it up: Ask 'show me the dance?' Check the anime's rating before streaming
+        it.
+      CONFIRM BEFORE AIR: Popularity is TikTok-side; X shows only ~38 posts in 7 days
+      Know Your Meme: Talk To Me Doja: https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained
+  - 'Pennywide' meme
+      What: A Halloween trick-or-treat video of a child in a Pennywise mask went viral and
+        became memes mocking him.
+      Means: A cruelty meme aimed at a real kid, remixed into brainrot edits.
+      How to bring it up: Ask 'would you laugh if that was your cousin?' It's a natural
+        bridge to the bullying talk.
+      Know Your Meme: Pennywide: https://trending.knowyourmeme.com/editorials/guides/what-is-the-pennywide-meme-the-viral-pennywise-house-video-and-memes-explained
+
+  HIGH SCHOOL
+  - The Door Kick Challenge
+      What: A TikTok trend: kick or pound a stranger's front door, film it, run.
+      Means: Police say it can mean vandalism, trespass or burglary charges, and a scared
+        homeowner may react.
+      How to bring it up: It's a crime, not a prank; Irvine PD says parents can be held
+        accountable. Ask what they'd do if friends filmed it.
+      CONFIRM BEFORE AIR: No RGV incident found; X shows only ~39 posts in 7 days
+      ABC7: Irvine police warning (Nov 12): https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/
+      WBBH: Cape Coral incident (Nov 16): https://www.gulfcoastnewsnow.com/article/video-door-kick-challenge-cape-coral-florida/74444521
+      KOBI: Talent, Oregon (Nov 12): https://kobi5.com/news/door-kicking-trend-is-growing-locally-five-incidents-reported-in-talent-319588/
+  - Slang: aura, aura farming, cooked
+      What: 'Aura' = someone's vibe; 'aura farming' = doing things to look cool online;
+        'cooked' = in trouble.
+      Means: Words to question: 'huzz,' 'bop,' 'big back' can objectify or mock women and
+        bodies.
+      How to bring it up: Be curious, not corrective: ask what a word means. Terms burn out
+        fast.
+      MadeForMums: 45 Gen Alpha slang words: https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/
+      Reader's Digest: 24 Gen Alpha slang terms: https://www.rd.com/article/gen-alpha-slang/
+      Hello!: how to respond to bizarre slang: https://www.hellomagazine.com/healthandbeauty/mother-and-baby/878329/your-gen-alpha-child-increasingly-bizarre-slang-how-to-respond/
+  - GTA 6 is out (launched Nov 19)
+      What: GTA VI launched Nov 19 on PS5 and Xbox Series X; rated M (17+), 212 GB download.
+      Means: Late nights and possible skipped school; some UK schools set attendance prizes.
+      How to bring it up: Is 17+ a rule or a suggestion at your house? (Jess has more on
+        this in Block C.)
+      ABC News: parents and GTA 6: https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889
+      Independent: UK schools and GTA 6: https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html
+      DW: GTA VI launches: https://www.dw.com/en/grand-theft-auto-vi-launches-to-global-fanfare/a-79986461
+
+NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
+
+============================================================================================
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-21 06:06 CT.
+Links checked 2026-11-21: 100 ok, 23 blocked by the site's bot protection (verified in a browser/search), 0 dead, 1 unreachable.

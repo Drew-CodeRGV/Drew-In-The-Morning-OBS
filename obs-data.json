@@ -1561,7 +1561,7 @@
     "caption": "We want YOUR voice on Monday's show. Got a topic, a story, or the hard parenting question you're afraid to ask? DM us, email, or ask for a live guest link. Anonymous is fine. #RGV #McAllen #DrewInTheMorning"
   },
   "schemaNotes": "v4 (Nov 18): 12 blocks A-L (new B = What I've Been Up To, family & kids woven into H, Starbase/Zoho/trending folded into other blocks). Segments carry offsetMinutes from the planned 8:00 start. coldOpen, jingle and upTo are filled by packet/build_packet.py on every build.",
-  "coldOpen": "Good morning, Rio Grande Valley! It's Friday, November 20th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the food truck park fight in McAllen, plus La Joya ISD's school closure plan. On the National Desk, the Dow dropping eleven hundred points. In Trending, Fiona the hippo. And in How We'd Talk to Our Kids, Jess and I take on Uber Kids: ride-hailing for kids as young as 10 (testing in Austin), and what a 10-year-old. It's 63 and clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+  "coldOpen": "Good morning, Rio Grande Valley! It's Saturday, November 21st, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with the La Joya ISD student-search investigation, plus the food truck park fight in McAllen. On the National Desk, the President's press conference. In Trending, the Rockets in Denver. And in How We'd Talk to Our Kids, Jess and I take on Student searches at school: what La Joya ISD's HOPE Academy review means, and what a 14-year-old. It's 66 and mostly clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
   "jingle": {
     "primary": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [
@@ -1570,19 +1570,13 @@
     ]
   },
   "upTo": {
-    "banner": "6 from the week",
-    "script": "Busy week at the Lentz house. We had the Rayburn Fall Festival on Saturday, a school picnic on Tuesday, hip hop class on Tuesday, cotillion on Wednesday, tap class on Wednesday, and the region clinic and concert on Friday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.",
+    "banner": "5 from the week",
+    "script": "Busy week at the Lentz house. We had a school picnic on Tuesday, hip hop class on Tuesday, cotillion on Wednesday, tap class on Wednesday, and the region clinic and concert on Friday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.",
     "calendar": "Family calendar (iCloud, published feed)",
-    "window": "Nov 14–20, 2026",
+    "window": "Nov 15–21, 2026",
     "comingWindow": "",
     "source": "family calendar (tools/family_calendar.py), generic wording",
     "events": [
-      {
-        "date": "2026-11-14",
-        "label": "the Rayburn Fall Festival",
-        "category": "school event",
-        "count": 1
-      },
       {
         "date": "2026-11-17",
         "label": "a school picnic",
@@ -1617,10 +1611,10 @@
     "coming": []
   },
   "coldOpenMeta": {
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "template": "daily",
     "confirm": [],
-    "builtFrom": "DITM-briefing-2026-11-20",
+    "builtFrom": "DITM-briefing-2026-11-21",
     "sample": false
   }
 }

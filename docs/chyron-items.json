@@ -1,46 +1,51 @@
 {
  "v": 1,
- "date": "2026-11-20",
- "generated": "2026-11-20T21:45:35+00:00",
+ "date": "2026-11-21",
+ "generated": "2026-11-21T06:06:07-06:00",
  "items": {
-  "i-5845aaceb2": {
-   "headline": "Gina Hinojosa tells sheriffs she will not cut Abbott's border security grants",
-   "line": "UNCONFIRMED · A top r/texas post shares a story headlined: Gina Hinojosa tells sheriffs she will not cut Abbott's…",
+  "i-46b94c2690": {
+   "headline": "Democrats Plan to Govern Like Texas Is Still Red",
+   "line": "UNCONFIRMED · A top r/texas post shares a story on how Texas Democrats plan to govern after the election.",
    "kicker": "CHISME"
   },
-  "i-6afdeacc2f": {
-   "headline": "Bill introduced to allow patients with menstrual cramps to qualify for medical marijuana",
-   "line": "UNCONFIRMED · An r/texas post shares a headline saying a bill was introduced to let patients with menstrual cramps…",
+  "i-6351fe2ec0": {
+   "headline": "Elon Musk: things will be fine in Texas under Democratic leadership",
+   "line": "UNCONFIRMED · A post shares a quote attributed to Elon Musk saying things will be fine in Texas under Democratic…",
    "kicker": "CHISME"
   },
-  "i-b9ededa4b4": {
-   "headline": "\"Pompous\" Texas Judge Finally Faces Discipline After Going Viral For Berating IT Worker Trying To…",
-   "line": "UNCONFIRMED · An r/texas post shares a headline saying a Texas judge who went viral for berating an IT worker now…",
+  "i-641e51568b": {
+   "headline": "Parking info in downtown Brownsville",
+   "line": "UNCONFIRMED · A user asks where to park in downtown Brownsville.",
    "kicker": "CHISME"
+  },
+  "i-93f5d3b1fe": {
+   "headline": "The U.S. (and Mexico) lose measles elimination status after 26 years",
+   "line": "Nov 17: PAHO determined sustained measles transmission for over a year cost the U.S.",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-b1d208eb50": {
+   "headline": "Denmark's parliament unanimously approves the Greenland defense pact with the U.S.",
+   "line": "UNCONFIRMED · Nov 19: the Folketing approved the Greenland-Denmark-U.S.",
+   "kicker": "NATIONAL DESK"
   },
   "i-ade29e0e69": {
    "headline": "Wall Street's longest losing streak since 2024: Dow drops 1,100 as AI stocks slide, even with…",
    "line": "Nov 19: the Dow fell 1,101 points (2.2%), the S&P 500 lost 2% for a sixth straight day and the Nasdaq fell 2.3%…",
    "kicker": "NATIONAL DESK"
   },
-  "i-920d0782fa": {
-   "headline": "White House replaces its national cyber director after a week of outages (flights, Microsoft, banks)",
-   "line": "Nov 19: Sean Cairncross is out; Pentagon CIO Kirsten Davies serves as acting national cyber director.",
+  "i-73fe5d5488": {
+   "headline": "Trump's post-Asia-trip news conference: defends calling Putin a friend, touts deals; AP…",
+   "line": "Nov 20: at the White House, Trump praised his meetings with Xi and Putin and touted trade deals; AP said he 'can't…",
    "kicker": "NATIONAL DESK"
-  },
-  "i-3849e26c2d": {
-   "headline": "Senate passes a bipartisan permitting bill that speeds energy projects and makes big data centers…",
-   "line": "UNCONFIRMED · Nov 19: the Senate passed the American Affordability and Jobs Act 62-33; it speeds permits for power…",
-   "kicker": "NATIONAL DESK"
-  },
-  "i-5ab285951c": {
-   "headline": "BTS fans flood X voting for the MAMA Awards",
-   "line": "UNCONFIRMED · #VOTEFORBTS, #DAESANGFORBTS and 'OUR CHOICE IS BTS AT MAMA' are top U.S.",
-   "kicker": "TRENDING"
   },
   "i-da2dce77f0": {
    "headline": "Magnitude 5.1 earthquake shakes Monterey County, California; 'earthquake' trends in Texas and on X",
    "line": "Nov 19, 10:49 p.m.",
+   "kicker": "TRENDING"
+  },
+  "i-5ab285951c": {
+   "headline": "BTS fans flood X voting for the MAMA Awards",
+   "line": "UNCONFIRMED · #VOTEFORBTS, #DAESANGFORBTS and 'OUR CHOICE IS BTS AT MAMA' are top U.S.",
    "kicker": "TRENDING"
   },
   "i-f37685d76e": {
@@ -48,14 +53,24 @@
    "line": "Nov 19: the zoo said Fiona, 9, died after a hat a visitor tossed was caught by a ceiling fan and flung into her…",
    "kicker": "TRENDING"
   },
+  "i-b83e7af33c": {
+   "headline": "Jokic's big second half sends the Nuggets past the Rockets 133-124 in the NBA Cup",
+   "line": "Nov 20: Denver improved to 2-0 in Emirates NBA Cup play.",
+   "kicker": "TRENDING"
+  },
+  "i-ac881f96ca": {
+   "headline": "Trump hosts a dinner Sunday for top $TRUMP memecoin holders",
+   "line": "UNCONFIRMED · The Nov.",
+   "kicker": "TRENDING"
+  },
+  "i-43c7ec571b": {
+   "headline": "'Yellowjackets' final season premieres on Paramount+",
+   "line": "Season 4, the show's last, premiered Friday, Nov.",
+   "kicker": "TRENDING"
+  },
   "i-1f9776335b": {
    "headline": "Trump posthumously pardons Pete Rose",
    "line": "Nov 19: Trump pardoned Rose's 1990 tax convictions; it's symbolic and doesn't change Hall of Fame status (MLB lifted…",
-   "kicker": "TRENDING"
-  },
-  "i-525452c56f": {
-   "headline": "Texans rout the Colts 26-3 on Thursday Night Football; C.J. Stroud throws 3 TDs",
-   "line": "Nov 19: Houston beat Indianapolis 26-3 behind three Stroud touchdown passes.",
    "kicker": "TRENDING"
   },
   "i-2aa1d1b21a": {
@@ -68,15 +83,95 @@
    "line": "Nov 18: Utah won 109-97 at L.A.",
    "kicker": "TRENDING"
   },
-  "i-4088b37ccc": {
-   "headline": "Elon Musk says SpaceX has a plan to eliminate cell phone dead zones",
-   "line": "UNCONFIRMED · Musk says SpaceX finished designing a miniature rooftop cell tower to fix indoor dead zones where…",
+  "i-b3fcfe59ac": {
+   "headline": "Google says it will shut off Google Assistant on smart speakers next year",
+   "line": "UNCONFIRMED · Headline from The Verge's feed (Nov 20): Google plans to shut off Assistant on smart speakers next year.",
    "kicker": "TECH"
   },
-  "i-3981c5029a": {
-   "headline": "Apple may be developing its own AI agent that runs your Mac",
-   "line": "A job listing (spotted by Bloomberg) seeks a manager for an 'AI agent that can use a computer': browsing, working…",
+  "i-a1d59649da": {
+   "headline": "Bending Spoons buys Mailchimp for $3.68B",
+   "line": "UNCONFIRMED · Headline from TechCrunch's feed (Nov 20): Bending Spoons is buying Mailchimp for $3.68 billion.",
    "kicker": "TECH"
+  },
+  "i-86afb2fa72": {
+   "headline": "Trump threatens a 'tremendous tax' for moving AI data centers outside the US",
+   "line": "UNCONFIRMED · Headline from The Verge's feed (Nov 20): Trump threatened a big tax on moving AI data centers abroad.",
+   "kicker": "TECH"
+  },
+  "i-34310b65da": {
+   "headline": "Valve says it might have to raise the price of supply-limited Steam Machines",
+   "line": "UNCONFIRMED · Headline from Ars Technica's feed (Nov 20): Valve says Steam Machine prices could go up because supply…",
+   "kicker": "TECH"
+  },
+  "i-c46e203224": {
+   "headline": "Remembering Anna Segundo",
+   "line": "74 · Mission · Nov 21",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-edccecabe1": {
+   "headline": "Remembering Dalia Cortinas",
+   "line": "81 · Mission · Nov 21",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-719fecaa94": {
+   "headline": "Remembering Ernestina Torres",
+   "line": "75 · Edinburg · Nov 21",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-40d1f33902": {
+   "headline": "Remembering Henry Coy Stevens",
+   "line": "83 · Mission · Nov 21",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-ec73b61931": {
+   "headline": "Remembering Jose Arturo Sanchez",
+   "line": "69 · Donna · Nov 21",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-a75f2c495a": {
+   "headline": "Remembering Jose Peralta",
+   "line": "62 · Mission · Nov 21",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-f9bfb8b95f": {
+   "headline": "Remembering Phillip Liupakka",
+   "line": "64 · Mission · Nov 21",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-68e8f915b1": {
+   "headline": "Remembering Ramona Gonzalez",
+   "line": "84 · Mission · Nov 21",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-4dddd8e9a3": {
+   "headline": "Remembering San Juanita Villarreal",
+   "line": "53 · Mission · Nov 21",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-8b07a8a403": {
+   "headline": "Remembering Sergio Rodriguez Vasquez",
+   "line": "59 · McAllen · Nov 21",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-4af1278826": {
+   "headline": "Remembering Servando Rivera Martinez",
+   "line": "73 · Edinburg · Nov 21",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-193d07d927": {
+   "headline": "Remembering Sonia Maydee Faz De Garza",
+   "line": "73 · McAllen · Nov 21",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-f716c5655f": {
+   "headline": "Remembering Tomas Raya Sr.",
+   "line": "83 · Alton · Nov 21",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-bba57d1a65": {
+   "headline": "Remembering William (Bill) Theriault",
+   "line": "66 · Edinburg · Nov 21",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-b28db242db": {
    "headline": "Remembering Gregoria Lloyd",
@@ -101,6 +196,11 @@
   "i-d6cbe3b74b": {
    "headline": "Remembering Francisco A. Rodriguez Gomez",
    "line": "83 · Pharr · Nov 19",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-85f78d07fb": {
+   "headline": "Remembering Glenn Edward Richards",
+   "line": "65 · Edinburg · Nov 19",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-0f77d205aa": {
@@ -173,6 +273,21 @@
    "line": "78 · Edinburg · Nov 18",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
+  "i-f81f756587": {
+   "headline": "Remembering Angel Jose Desiga",
+   "line": "62 · La Feria · Nov 17",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-f13ddd5fbb": {
+   "headline": "Remembering Francisa R. Cruz",
+   "line": "99 · Edcouch · Nov 17",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-840a452369": {
+   "headline": "Remembering Maria De Jesus Castillo",
+   "line": "74 · Donna · Nov 17",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
   "i-9d15b56b4e": {
    "headline": "Remembering Diana Cavazos Hinojosa",
    "line": "Nov 16",
@@ -206,6 +321,11 @@
   "i-b666375746": {
    "headline": "Remembering Guadalupe Sauceda",
    "line": "89 · Nov 14",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-8c41911e90": {
+   "headline": "Remembering John Wood",
+   "line": "79 · Brownsville · Nov 14",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-a116446c44": {
@@ -338,49 +458,19 @@
    "line": "50 · Nov 9",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-3669e96597": {
-   "headline": "Remembering Bernardino Sanchez Hidalgo",
-   "line": "87 · Donna · Nov 7",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-22ea165aa1": {
-   "headline": "Remembering Carlos Javier Garcia",
-   "line": "55 · Nov 7",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-0251069d6a": {
-   "headline": "Remembering Francis Lally Howard",
-   "line": "74 · Nov 7",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-709124d7e5": {
-   "headline": "Remembering Guadalupe R. Cantu",
-   "line": "78 · Mission · Nov 7",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-8eb000e21a": {
-   "headline": "Remembering Maria De Los Angeles Cantu de Martinez (Martinez)",
-   "line": "89 · Mission · Nov 7",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-d95007f726": {
-   "headline": "Fri Nov 20",
-   "line": "Mostly Cloudy",
-   "kicker": "SHOW"
-  },
   "i-90d93139c1": {
    "headline": "Sat Nov 21",
-   "line": "Mostly Sunny",
+   "line": "Partly Sunny",
    "kicker": "SHOW"
   },
   "i-68d5fd442c": {
    "headline": "Sun Nov 22",
-   "line": "Partly Sunny then Showers And Thunderstorms Likely",
+   "line": "Mostly Cloudy then Showers And Thunderstorms Likely",
    "kicker": "SHOW"
   },
   "i-b93eeebb9d": {
    "headline": "Mon Nov 23",
-   "line": "Chance Showers And Thunderstorms then Mostly Cloudy",
+   "line": "Showers And Thunderstorms Likely",
    "kicker": "SHOW"
   },
   "i-251b25dd91": {
@@ -390,13 +480,38 @@
   },
   "i-fa71ff7727": {
    "headline": "Wed Nov 25",
-   "line": "Sunny",
+   "line": "Mostly Sunny",
    "kicker": "SHOW"
   },
   "i-ce9e2d9808": {
    "headline": "Thu Nov 26",
    "line": "Mostly Sunny",
    "kicker": "SHOW"
+  },
+  "i-7a4795866a": {
+   "headline": "Fri Nov 27",
+   "line": "Slight Chance Rain Showers",
+   "kicker": "SHOW"
+  },
+  "i-93f450b5d9": {
+   "headline": "6A DI Area: SA Harlan 34, Harlingen High 3",
+   "line": "RGVSports · Nov 20",
+   "kicker": "HS FOOTBALL"
+  },
+  "i-799a5019bd": {
+   "headline": "6A DII Area: PSJA North 46, SA Warren 15",
+   "line": "RGVSports · Nov 20",
+   "kicker": "HS FOOTBALL"
+  },
+  "i-2ff0bfa3eb": {
+   "headline": "5A DI Area: Smithson Valley 63, McAllen Rowe 6",
+   "line": "RGVSports · Nov 20",
+   "kicker": "HS FOOTBALL"
+  },
+  "i-6b36000604": {
+   "headline": "2A DII Area: La Villa 54, Chilton 28",
+   "line": "RGVSports · Nov 20",
+   "kicker": "HS FOOTBALL"
   },
   "i-c4ac0ec428": {
    "headline": "6A DI Area: San Antonio Brennan 31, Weslaco High 15",
@@ -418,23 +533,13 @@
    "line": "RGVSports · Nov 19",
    "kicker": "HS FOOTBALL"
   },
-  "i-0192cc7417": {
-   "headline": "Fri 7 PM: Harlingen vs. SA Harlan (Buccaneer Stadium, Corpus Christi)",
+  "i-b6967a2a2b": {
+   "headline": "Sat 3 PM: SA Sotomayor at Edinburg Vela (6A DII area)",
    "line": "RGVSports",
    "kicker": "HS FOOTBALL"
   },
-  "i-19635cb4fa": {
-   "headline": "Fri 7 PM: PSJA North vs. SA Warren (Alice)",
-   "line": "RGVSports",
-   "kicker": "HS FOOTBALL"
-  },
-  "i-144887f434": {
-   "headline": "Fri 7 PM: McAllen Rowe vs. Smithson Valley (Cabaniss, Corpus Christi)",
-   "line": "RGVSports",
-   "kicker": "HS FOOTBALL"
-  },
-  "i-679a9dd2cc": {
-   "headline": "Fri 7 PM: La Villa vs. Chilton (Somerset); Sat 3 PM: SA Sotomayor at Edinburg Vela",
+  "i-50e3581e21": {
+   "headline": "Advancing: PSJA North and La Villa",
    "line": "RGVSports",
    "kicker": "HS FOOTBALL"
   },
@@ -553,6 +658,11 @@
    "line": "Wed Nov 18",
    "kicker": "SHOW"
   },
+  "i-197f366b5e": {
+   "headline": "DEN 133, HOU 124 (NBA Cup)",
+   "line": "Fri Nov 20",
+   "kicker": "SHOW"
+  },
   "i-009f31f792": {
    "headline": "HOU 119, IND 104",
    "line": "Wed Nov 18",
@@ -623,11 +733,6 @@
    "line": "'Aura' = someone's vibe; 'aura farming' = doing things to look cool online; 'cooked' = in trouble.",
    "kicker": "MEME OF THE WEEK · HIGH SCHOOL"
   },
-  "i-c235a67304": {
-   "headline": "the Rayburn Fall Festival",
-   "line": "Sat Nov 14",
-   "kicker": "WHAT I'VE BEEN UP TO"
-  },
   "i-8be7626624": {
    "headline": "a school picnic",
    "line": "Tue Nov 17",
@@ -653,6 +758,31 @@
    "line": "Fri Nov 20",
    "kicker": "WHAT I'VE BEEN UP TO"
   },
+  "i-f9760bee54": {
+   "headline": "STC president at the Workforce Summit: South Texas has a skills gap, not a worker gap",
+   "line": "At STC's sixth annual Workforce Summit, President Ricardo Solis said the challenge is skills, not a shortage of…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-56fe330247": {
+   "headline": "'It's not safe': Brownsville's Pinewood neighbors say a new carpool lot and SpaceX charter buses…",
+   "line": "Residents near Paredes Line Road and Pineda Boulevard say traffic from a new carpool lot, with cars and buses…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-cae1d74ec0": {
+   "headline": "Mission sets a special meeting to review its overnight dog-barking rule; city says there's no…",
+   "line": "Commissioners will review Ordinance No.",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-6baff195f6": {
+   "headline": "UTRGV and the VA sign agreements to bring UT Health RGV specialists into VA clinics for South…",
+   "line": "At a signing Nov.",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-88ee9267d7": {
+   "headline": "Texas LNG asks for more time on its federal export authorization at the Port of Brownsville…",
+   "line": "Texas LNG requested an extension on the timeline of its export authorization, citing prolonged litigation and…",
+   "kicker": "HEADLINES · RGV"
+  },
   "i-4e7b1df097": {
    "headline": "FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and landings a year at…",
    "line": "Residents, environmental activists and an IATA vice president raised beach access, environmental, health…",
@@ -661,11 +791,6 @@
   "i-dafa6846a8": {
    "headline": "Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some at $2.94)",
    "line": "Prices peaked near $4.10 in May and had stayed above $3 since the Iran war began in late February.",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-adcc440f3f": {
-   "headline": "Mission man sentenced to life without parole for 2018 killings of two women",
-   "line": "Mario Lozano-Lemus, 34, was found guilty of capital murder in the deaths of Irene Ozuna, 45, and Maria Angelita…",
    "kicker": "HEADLINES · RGV"
   },
   "i-2c22b20c53": {
@@ -677,6 +802,16 @@
    "headline": "Rep. Vicente Gonzalez's 'Hands Off Our Boca Chica Beach Act' clears the House Natural Resources…",
    "line": "H.R.",
    "kicker": "LOCAL POLITICS"
+  },
+  "i-544de900d5": {
+   "headline": "La Joya ISD investigating 'excessive' student searches at HOPE Academy; 4 employees on leave and…",
+   "line": "The district says a review of arrival search protocols at HOPE Academy, its disciplinary alternative campus, found…",
+   "kicker": "SCHOOL BOARDS"
+  },
+  "i-808302e743": {
+   "headline": "Future of the state takeover of La Joya ISD in question as Gov.-elect Hinojosa vows to return…",
+   "line": "After TEA's appointed Beaumont ISD superintendent resigned, Gov.-elect Gina Hinojosa said she will begin returning…",
+   "kicker": "SCHOOL BOARDS"
   },
   "i-c761335bd3": {
    "headline": "La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and Paredes elementaries)…",
@@ -728,20 +863,25 @@
    "line": "UNCONFIRMED · Season 3 adapts 'The Titan's Curse'; two episodes drop today, then pairs each Friday through Dec.",
    "kicker": "FAMILY & KIDS"
   },
-  "i-71d291ca62": {
-   "headline": "Uber tests rides for kids as young as 10, with extra pay for drivers",
-   "line": "'Uber Kids' quietly launched in Austin, Nashville and Madison, Wis., extending Uber's teen service (13-17) to…",
-   "kicker": "FAMILY & KIDS"
-  },
-  "i-2db9a31d7e": {
-   "headline": "Traumatized teens sue school, cops after Doritos bag triggers AI gun alert",
-   "line": "UNCONFIRMED · Teens are suing a school and police after an AI weapon-detection alert flagged a Doritos bag as a gun…",
-   "kicker": "FAMILY & KIDS"
-  },
   "i-9304c72c98": {
    "headline": "GTA 6 is out (launched Nov 19)",
    "line": "GTA VI launched Nov 19 on PS5 and Xbox Series X; rated M (17+), 212 GB download.",
    "kicker": "FAMILY & KIDS"
+  },
+  "i-4e3826ad7d": {
+   "headline": "Federal cartel indictment ties 10 defendants to a Texas crash that killed 8 migrants",
+   "line": "Prosecutors name two brothers as leaders of La Nueva Familia Michoacana in a case with charges including drug, human…",
+   "kicker": "STATEWIDE"
+  },
+  "i-6396c02b85": {
+   "headline": "ERCOT CEO Pablo Vegas gets a contract extension worth up to $4.1M next year, angering Lt. Gov. Dan…",
+   "line": "The extension, on hold for months after Patrick criticized the payouts, was finalized weeks after Patrick lost…",
+   "kicker": "STATEWIDE"
+  },
+  "i-8a0fdfdaf4": {
+   "headline": "Texas Supreme Court leaves the 'Death Star' law limiting city ordinances intact; Democrats plan a…",
+   "line": "The court declined to hear a challenge to the law that bars localities from rules going further than state law, on…",
+   "kicker": "STATEWIDE"
   },
   "i-c76705103d": {
    "headline": "Paxton and the feds agree to keep Texas razor wire at the border for up to 30 years (Del Rio Sector)",
@@ -751,6 +891,11 @@
   "i-5cd8e7e7db": {
    "headline": "Comptroller Huffines' move to stop taxing cloud, AI and data hosting would cost Texas $18 billion…",
    "line": "The comptroller's own office projects the state loses $1.9B in FY2027 rising to $4.3B a year by FY2032; local…",
+   "kicker": "STATEWIDE"
+  },
+  "i-b8de5ae917": {
+   "headline": "Texas Secretary of State launches the first audit of a U.S. Senate race under the 2021 law…",
+   "line": "UNCONFIRMED · The Secretary of State began two audits of the Nov.",
    "kicker": "STATEWIDE"
   }
  }
