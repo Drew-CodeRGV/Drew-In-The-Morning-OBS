@@ -1,14 +1,14 @@
 {
  "version": 1,
- "generatedAt": "2026-11-21T22:10:16+00:00",
+ "generatedAt": "2026-11-22T11:02:16+00:00",
  "window_hours": 24,
  "bootstrap": false,
  "note": "Public headlines and links only. Everything here is a lead: CONFIRM BEFORE AIR.",
  "counts": {
   "alert": 2,
-  "watch": 7,
-  "stories": 150,
-  "new": 46
+  "watch": 8,
+  "stories": 126,
+  "new": 59
  },
  "feeds": {
   "ok": 16,
@@ -56,7 +56,7 @@
    ],
    "published": "2026-11-20T23:52:58+00:00",
    "firstSeen": "2026-11-21T15:11:49+00:00",
-   "score": 12,
+   "score": 9,
    "label": "Active",
    "uncovered": false,
    "level": "alert",
@@ -66,46 +66,64 @@
     "fire",
     "Harlingen"
    ],
-   "why": "Score 12: 1 outlet 6 + recency 5.5 (22h old)"
+   "why": "Score 9: 1 outlet 6 + recency 2.6 (35h old)"
+  },
+  {
+   "id": "82937534f7b7",
+   "title": "UTRGV: \"An Evening of Chopin - Music and Dance\"",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE91b2l6WGt5OFpDbUt3T1ZQcEhPZ1Q1TzQwTzl5b3ktYi1abnZDUG1IOGhTa0gxM18xaHQzVW0yZXMydnAxNHFVZ1c5MlBvN2lnbTNaNkhnZ3RBclFyVkI0b1FEVXhfWWFkZ2RN?oc=5",
+   "source": "dailymcallen.com",
+   "sources": [
+    {
+     "name": "dailymcallen.com",
+     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE91b2l6WGt5OFpDbUt3T1ZQcEhPZ1Q1TzQwTzl5b3ktYi1abnZDUG1IOGhTa0gxM18xaHQzVW0yZXMydnAxNHFVZ1c5MlBvN2lnbTNaNkhnZ3RBclFyVkI0b1FEVXhfWWFkZ2RN?oc=5"
+    }
+   ],
+   "published": "2026-11-21T15:18:21+00:00",
+   "firstSeen": "2026-11-22T11:02:16+00:00",
+   "score": 12,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "UTRGV"
+   ],
+   "why": "Score 12: 1 outlet 6 + recency 6.4 (20h old)"
   },
   {
    "id": "8e09a27ec4b3",
-   "title": "Latest News and Headlines in the Rio Grande Valley",
-   "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE96MGt6MnBVS3NhazZ5UnMxelZDZVItR2ZIQnVtWEMxaWxLUDlzMmkzTjZfOS05eWF5NEVjZWdPYw?oc=5",
+   "title": "KRGV CHANNEL 5 NEWS - The Rio Grande Valley's News Channel",
+   "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9ONXdrV0pkM0V1M1p6ZnF4TkJYWmpaeUQ2TWhveEE3aHlLSGVvX0NTRTQ5MjFZa0ZKUDFMMkowdjJ0TWFyWjdlLQ?oc=5",
    "source": "KRGV",
    "sources": [
     {
      "name": "KRGV",
      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9ONXdrV0pkM0V1M1p6ZnF4TkJYWmpaeUQ2TWhveEE3aHlLSGVvX0NTRTQ5MjFZa0ZKUDFMMkowdjJ0TWFyWjdlLQ?oc=5"
-    },
-    {
-     "name": "KRGV",
-     "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE96MGt6MnBVS3NhazZ5UnMxelZDZVItR2ZIQnVtWEMxaWxLUDlzMmkzTjZfOS05eWF5NEVjZWdPYw?oc=5"
     }
    ],
-   "published": "2026-11-21T09:44:41+00:00",
+   "published": "2026-11-22T08:17:59+00:00",
    "firstSeen": "2026-11-21T22:10:16+00:00",
-   "score": 22,
+   "score": 23,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
    "matches": [
     "Rio Grande Valley"
    ],
-   "why": "Score 22: 2 outlets 12 + recency 9.8 (12h old)"
+   "why": "Score 23: 1 outlet 6 + recency 17.1 (3h old)"
   },
   {
    "id": "f704d6b9806f",
    "title": "Meta gives away 500 turkeys as it faces scrutiny over Northeast El Paso data center",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPazBVSERqRmpwLXA4RTNzOWJsc1ZWbHhTVUh1RmQtMUNUMjFwenR5UG9zTURHWFBCMnBlRmJnTFdUd3g0bHlONW5fdFR6Z1RCenBZdHhRQlNmRXZQdjc3TnczTnZxaVdTanNCNmFUSGpDVmJncWI1ZDNlaGljNmRXaXlzeWNOVWh2OVE1bEZNY3JqQ3J1UXluUWJfSzNQQnY2UTBoREFuQmhEbVkxOENndFR1dWtaaHNsVGRTTFNYcVlQYzcyWkhqX1JB?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZTBxWnZibkpkYjNCVGs3YlpiWVJBTWpNY2dEZ20tWldRYlVBQXQ2Qm9FNkxiRDFIMUd4dE9CUldaNFZwNHFrUFU1blFSV0ZTZHprUnd6NVVDR2NFTUdCZnEyQlRvVDhSdWVkQ3FrOUNuZ2dTN05XRjd1eVlXQXY2ei05c2hXaHRoVlhIZTdKYnplc3NRcmR5c2k0TXM5R1ZqWG9RblZ6VVdMWDBWXzdMOWpUVkJxSlU?oc=5",
    "source": "KDBC",
    "sources": [
     {
      "name": "KDBC",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPazBVSERqRmpwLXA4RTNzOWJsc1ZWbHhTVUh1RmQtMUNUMjFwenR5UG9zTURHWFBCMnBlRmJnTFdUd3g0bHlONW5fdFR6Z1RCenBZdHhRQlNmRXZQdjc3TnczTnZxaVdTanNCNmFUSGpDVmJncWI1ZDNlaGljNmRXaXlzeWNOVWh2OVE1bEZNY3JqQ3J1UXluUWJfSzNQQnY2UTBoREFuQmhEbVkxOENndFR1dWtaaHNsVGRTTFNYcVlQYzcyWkhqX1JB?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZTBxWnZibkpkYjNCVGs3YlpiWVJBTWpNY2dEZ20tWldRYlVBQXQ2Qm9FNkxiRDFIMUd4dE9CUldaNFZwNHFrUFU1blFSV0ZTZHprUnd6NVVDR2NFTUdCZnEyQlRvVDhSdWVkQ3FrOUNuZ2dTN05XRjd1eVlXQXY2ei05c2hXaHRoVlhIZTdKYnplc3NRcmR5c2k0TXM5R1ZqWG9RblZ6VVdMWDBWXzdMOWpUVkJxSlU?oc=5"
     }
    ],
-   "published": "2026-11-20T23:34:02+00:00",
+   "published": "2026-11-21T11:37:18+00:00",
    "firstSeen": "2026-11-21T22:10:16+00:00",
    "score": 11,
    "label": "Active",
@@ -114,7 +132,7 @@
    "matches": [
     "data center"
    ],
-   "why": "Score 11: 1 outlet 6 + recency 5.4 (23h old)"
+   "why": "Score 11: 1 outlet 6 + recency 5.2 (23h old)"
   },
   {
    "id": "926f15ba652a",
@@ -129,7 +147,7 @@
    ],
    "published": "2026-11-21T16:50:51+00:00",
    "firstSeen": "2026-11-21T17:00:29+00:00",
-   "score": 21,
+   "score": 13,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -137,7 +155,7 @@
     "Mission",
     "SpaceX"
    ],
-   "why": "Score 21: 1 outlet 6 + recency 14.7 (5h old)"
+   "why": "Score 13: 1 outlet 6 + recency 7 (18h old)"
   },
   {
    "id": "2075cc3f964f",
@@ -152,7 +170,7 @@
    ],
    "published": "2026-11-21T06:13:41+00:00",
    "firstSeen": "2026-11-21T15:11:49+00:00",
-   "score": 14,
+   "score": 10,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -161,7 +179,7 @@
     "Hidalgo",
     "screwworm"
    ],
-   "why": "Score 14: 1 outlet 6 + recency 8 (16h old)"
+   "why": "Score 10: 1 outlet 6 + recency 3.8 (29h old)"
   },
   {
    "id": "caaf6cf0e150",
@@ -176,7 +194,7 @@
    ],
    "published": "2026-11-21T01:52:06+00:00",
    "firstSeen": "2026-11-21T15:11:49+00:00",
-   "score": 12,
+   "score": 9,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -184,29 +202,35 @@
     "Edinburg",
     "screwworm"
    ],
-   "why": "Score 12: 1 outlet 6 + recency 6.2 (20h old)"
+   "why": "Score 9: 1 outlet 6 + recency 2.9 (33h old)"
   },
   {
    "id": "d25df015f8a7",
-   "title": "UTRGV, VA Partner to Expand Veteran Specialty Care",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRGE0TzlWdVdsUldtbGdRMkcyTE9DRXNIN1lkNnRKY2Y2QVN2d1VHbVJoVlQwcVlfQ0dZMEJ4N1R1WHFmelFMWldONThsYVd0aGFMaG1rTXV6U0pyeGdMell6N2NYWHZkMnB2U2c3TC1GX0RaSWJlVmFyTEttZ3BBR083TmcwcGV3YjhvSUhwMWhSVDBLdzRqS0g0c29CcGM?oc=5",
-   "source": "Wisevoter",
+   "title": "UTRGV, Harlingen VA partner to expand specialty care for Rio Grande Valley veterans",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQODJoR3FDSkU4SHRmbEFEREI5a19LX25OTVNtZlQ3Sk9BNGNVb21ndHBoVkJScFhwWGhqUTdGSm1xMUhOYkwwNzU1RlRjSVI2Wm5PaWVsNXVqNHVFWTVFbUR0NnRHempJZG8tc0dWX0RWamRQakpEczdSSm9NYzhmQy1aYTB1Zk5uUER3Ql9Ob0V4V0dkSnFZYm1ucDhraUtEMFJrYk41NkFKRnp5aERsOQ?oc=5",
+   "source": "KRGV",
    "sources": [
+    {
+     "name": "KRGV",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQODJoR3FDSkU4SHRmbEFEREI5a19LX25OTVNtZlQ3Sk9BNGNVb21ndHBoVkJScFhwWGhqUTdGSm1xMUhOYkwwNzU1RlRjSVI2Wm5PaWVsNXVqNHVFWTVFbUR0NnRHempJZG8tc0dWX0RWamRQakpEczdSSm9NYzhmQy1aYTB1Zk5uUER3Ql9Ob0V4V0dkSnFZYm1ucDhraUtEMFJrYk41NkFKRnp5aERsOQ?oc=5"
+    },
     {
      "name": "Wisevoter",
      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRGE0TzlWdVdsUldtbGdRMkcyTE9DRXNIN1lkNnRKY2Y2QVN2d1VHbVJoVlQwcVlfQ0dZMEJ4N1R1WHFmelFMWldONThsYVd0aGFMaG1rTXV6U0pyeGdMell6N2NYWHZkMnB2U2c3TC1GX0RaSWJlVmFyTEttZ3BBR083TmcwcGV3YjhvSUhwMWhSVDBLdzRqS0g0c29CcGM?oc=5"
     }
    ],
-   "published": "2026-11-21T00:43:28+00:00",
+   "published": "2026-11-21T23:42:19+00:00",
    "firstSeen": "2026-11-21T15:11:49+00:00",
-   "score": 12,
+   "score": 22,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
    "matches": [
+    "Harlingen",
+    "Rio Grande Valley",
     "UTRGV"
    ],
-   "why": "Score 12: 1 outlet 6 + recency 5.8 (21h old)"
+   "why": "Score 22: 2 outlets 12 + recency 10.4 (11h old)"
   },
   {
    "id": "8fe8558b3607",
@@ -221,7 +245,7 @@
    ],
    "published": "2026-11-20T23:51:12+00:00",
    "firstSeen": "2026-11-21T15:11:49+00:00",
-   "score": 12,
+   "score": 9,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -230,7 +254,7 @@
     "Rio Grande Valley",
     "UTRGV"
    ],
-   "why": "Score 12: 1 outlet 6 + recency 5.5 (22h old)"
+   "why": "Score 9: 1 outlet 6 + recency 2.6 (35h old)"
   }
  ]
 }
