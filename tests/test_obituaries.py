@@ -185,7 +185,8 @@ class Packet(unittest.TestCase):
         self.assertIn('id="obits"', studio)
         self.assertNotIn('<details class="sec blk" id="blk-L" open', studio)  # collapsed (no `open`)
         self.assertIn("Jane Q. Sample", studio); self.assertIn("Nov 13\u201319", studio)
-        self.assertNotIn("cancer", studio.lower())
+        obits = studio[studio.index('id="obits"'):studio.index('id="memes"')]
+        self.assertNotIn("cancer", obits.lower())  # obituaries only; a news headline may use the word
         email = bp.email_html(d, True)
         self.assertIn("Remembering Our Neighbors", email)
         newest = d["obituaries"]["groups"][0]["items"]; older = [r for g in d["obituaries"]["groups"][1:] for r in g["items"]]

@@ -1,11 +1,31 @@
 {
  "v": 1,
- "date": "2026-11-21",
- "generated": "2026-11-21T13:22:19+00:00",
+ "date": "2026-11-22",
+ "generated": "2026-11-22T06:09:45-06:00",
  "items": {
+  "i-b33b15585c": {
+   "headline": "Austin man deported to Mexico is a U.S. citizen, feds say",
+   "line": "UNCONFIRMED · A post shares a report that feds say an Austin man who was deported to Mexico is a U.S.",
+   "kicker": "CHISME"
+  },
+  "i-5c60700035": {
+   "headline": "Saturday fun",
+   "line": "UNCONFIRMED · A small r/Brownsville thread asks what to do on a Saturday.",
+   "kicker": "CHISME"
+  },
+  "i-b4ac98952a": {
+   "headline": "ERCOT CEO's $29M contract is back on. Texas' next governor isn't thrilled.",
+   "line": "UNCONFIRMED · r/texas is buzzing over the ERCOT CEO's contract being back on and the next governor's displeasure.",
+   "kicker": "CHISME"
+  },
   "i-641e51568b": {
    "headline": "Parking info in downtown Brownsville",
    "line": "UNCONFIRMED · A user asks where to park in downtown Brownsville.",
+   "kicker": "CHISME"
+  },
+  "i-bc3715ff40": {
+   "headline": "In apparent first, South Texas county rejects tax break for SpaceX data center",
+   "line": "Still the top r/RioGrandeValley post of the week: a report that Cameron County rejected SpaceX's data center tax…",
    "kicker": "CHISME"
   },
   "i-46b94c2690": {
@@ -32,6 +52,31 @@
    "headline": "Gina Hinojosa tells sheriffs she will not cut Abbott's border security grants",
    "line": "UNCONFIRMED · A top r/texas post shares a story headlined: Gina Hinojosa tells sheriffs she will not cut Abbott's…",
    "kicker": "CHISME"
+  },
+  "i-21a0e57779": {
+   "headline": "Trump orders federal contractors to clear congressional inquiries with the White House",
+   "line": "Nov 20 (late Friday): an executive order directs contractors and subcontractors to consult the administration on…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-f014fd1593": {
+   "headline": "The AI boom's bad week: Nasdaq drops 10%, its worst week since March 2020; Anthropic slides back…",
+   "line": "Nov 21: NPR reports the Nasdaq fell 10% for the week and Anthropic, up 17% on its debut, slumped more than 8% Friday…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-5f6d044d27": {
+   "headline": "Storms on both coasts threaten Thanksgiving travel; San Francisco's mayor asks people not to…",
+   "line": "Nov 21: San Francisco Mayor Daniel Lurie urged residents to avoid nonessential travel as extreme tides and rain are…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-18b072267a": {
+   "headline": "Mexico captures 'El Chapo Isidro,' one of the FBI's 10 most wanted; firefight in Sinaloa leaves 11…",
+   "line": "Nov 21: Mexican forces captured Fausto Isidro Meza Flores in Guasave, Sinaloa, and flew him to Mexico City; the…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-a0f04f1466": {
+   "headline": "Judge gives final approval to Bayer's Roundup cancer settlement, up to $7.25 billion",
+   "line": "Nov 20: a Missouri judge approved the nationwide settlement; people diagnosed with non-Hodgkin lymphoma could…",
+   "kicker": "NATIONAL DESK"
   },
   "i-ade29e0e69": {
    "headline": "Wall Street's longest losing streak since 2024: Dow drops 1,100 as AI stocks slide, even with…",
@@ -87,6 +132,46 @@
    "headline": "Anthropic's record IPO: $81B raised, shares priced at $83",
    "line": "Anthropic priced shares at $83 (above the $70-78 range), raising about $81B and valuing it near $1.5T; trading…",
    "kicker": "NATIONAL DESK"
+  },
+  "i-1d8ad3cf77": {
+   "headline": "Victor Wembanyama drops 50 points and 19 rebounds as the Spurs rout the Pelicans 114-91",
+   "line": "Nov 21: Wembanyama scored 32 in the first half and added five blocks and four steals; the Spurs are 14-3.",
+   "kicker": "TRENDING"
+  },
+  "i-84995aabbb": {
+   "headline": "Rayados beat Pumas 2-0 to grab the last direct Liguilla spot",
+   "line": "Nov 21: Luca Orellano scored twice (74', 90+2') as Monterrey finished sixth with 27 points; 'Monterrey' trended on X.",
+   "kicker": "TRENDING"
+  },
+  "i-b2965cf166": {
+   "headline": "Paris Hilton presses Congress on the stalled DEFIANCE Act against sexually explicit deepfakes",
+   "line": "UNCONFIRMED · Nov 21: the bipartisan bill, which would give victims of explicit deepfakes a way to sue, passed the…",
+   "kicker": "TRENDING"
+  },
+  "i-99e4b4f418": {
+   "headline": "Miley Cyrus marries drummer Maxx Morando in Palm Springs",
+   "line": "UNCONFIRMED · Nov 21: sources confirmed to PEOPLE the pop star, 33, and the Liily drummer, 28, wed poolside; mom…",
+   "kicker": "TRENDING"
+  },
+  "i-729f1705c9": {
+   "headline": "Max Verstappen wins the Las Vegas Grand Prix ahead of Lando Norris and Oscar Piastri",
+   "line": "Nov 21: Verstappen won in Vegas for the third time in four years; #LasVegasGP was a top U.S.",
+   "kicker": "TRENDING"
+  },
+  "i-090cd30852": {
+   "headline": "Cambridge Dictionary's 2026 Word of the Year: 'human'",
+   "line": "UNCONFIRMED · Cambridge picked 'human' (2025's word was 'parasocial'), in a year of AI everywhere.",
+   "kicker": "TRENDING"
+  },
+  "i-d817a2bedd": {
+   "headline": "BTS wins five MAMA Awards, including Artist and Album of the Year; Cortis takes Song of the Year",
+   "line": "Nov 21: at Kyocera Dome Osaka, BTS won Album of the Year for 'Arirang' and Artist of the Year; the group sent a…",
+   "kicker": "TRENDING"
+  },
+  "i-82db02aa6a": {
+   "headline": "'Michael,' the first $1 billion biopic, won't be submitted for the 2027 BAFTAs",
+   "line": "Nov 20: Variety reports the filmmakers chose not to submit, taking Jaafar Jackson and Colman Domingo out of the…",
+   "kicker": "TRENDING"
   },
   "i-1f9776335b": {
    "headline": "Trump posthumously pardons Pete Rose",
@@ -173,6 +258,26 @@
    "line": "After allowing 46 points and 584 yards to the 49ers, the 4-6 Cowboys moved play-calling from DC Christian Parker to…",
    "kicker": "TRENDING"
   },
+  "i-fe03d2c010": {
+   "headline": "The FBI and USDA were reportedly hacked",
+   "line": "UNCONFIRMED · Reports Friday said hackers hit the FBI's National Crime Information Center, which police use for…",
+   "kicker": "TECH"
+  },
+  "i-b03c278cfb": {
+   "headline": "Signal restricts mobile screenshots, citing the 'existential threat' of AI surveillance",
+   "line": "UNCONFIRMED · Signal is limiting screenshots in its Android and iOS apps; president Meredith Whittaker says OS-level…",
+   "kicker": "TECH"
+  },
+  "i-b3e629b143": {
+   "headline": "Meta reconsiders its 2030 net-zero goal amid record emissions from AI data centers",
+   "line": "UNCONFIRMED · Meta's Nov.",
+   "kicker": "TECH"
+  },
+  "i-10e4a7ab1c": {
+   "headline": "Google rolls out a new search homepage with AI chat history and no search button",
+   "line": "UNCONFIRMED · The desktop Google.com redesign, confirmed by search VP Robby Stein, adds buttons for image…",
+   "kicker": "TECH"
+  },
   "i-34310b65da": {
    "headline": "Valve says it might have to raise the price of supply-limited Steam Machines",
    "line": "UNCONFIRMED · Headline from Ars Technica's feed (Nov 20): Valve says Steam Machine prices could go up because supply…",
@@ -233,11 +338,6 @@
    "line": "81 · Mission · Nov 21",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-719fecaa94": {
-   "headline": "Remembering Ernestina Torres",
-   "line": "75 · Edinburg · Nov 21",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
   "i-40d1f33902": {
    "headline": "Remembering Henry Coy Stevens",
    "line": "83 · Mission · Nov 21",
@@ -255,7 +355,7 @@
   },
   "i-f9bfb8b95f": {
    "headline": "Remembering Phillip Liupakka",
-   "line": "64 · Mission · Nov 21",
+   "line": "64 · Nov 21",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-68e8f915b1": {
@@ -323,6 +423,11 @@
    "line": "65 · Edinburg · Nov 19",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
+  "i-d2d88ce93d": {
+   "headline": "Remembering Anna Leah Cantu",
+   "line": "43 · Edinburg · Nov 18",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
   "i-0f77d205aa": {
    "headline": "Remembering Anna Maria Gonzales",
    "line": "71 · Nov 18",
@@ -341,6 +446,11 @@
   "i-bfa9fb98df": {
    "headline": "Remembering Daniel Garza",
    "line": "94 · Mission · Nov 18",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-6db7f0fd55": {
+   "headline": "Remembering Dora Luz Rodriguez",
+   "line": "80 · Nov 18",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-a5ab83df74": {
@@ -373,6 +483,11 @@
    "line": "53 · Sullivan City · Nov 18",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
+  "i-58fe3d9192": {
+   "headline": "Remembering Lilia G. Lizcano",
+   "line": "89 · Edinburg · Nov 18",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
   "i-b0555043c1": {
    "headline": "Remembering Maria Santos Gomez",
    "line": "100 · Mission · Nov 18",
@@ -403,14 +518,9 @@
    "line": "99 · Edcouch · Nov 17",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-840a452369": {
-   "headline": "Remembering Maria De Jesus Castillo",
-   "line": "74 · Donna · Nov 17",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-9d15b56b4e": {
-   "headline": "Remembering Diana Cavazos Hinojosa",
-   "line": "Nov 16",
+  "i-038efbe708": {
+   "headline": "Remembering Dolores Maria Garcia",
+   "line": "93 · Donna · Nov 16",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-a943f92dbe": {
@@ -423,14 +533,14 @@
    "line": "86 · Hargill · Nov 16",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-f22333b57f": {
-   "headline": "Remembering Alfredo Gonzalez",
-   "line": "76 · Pharr · Nov 14",
+  "i-0b711c86ae": {
+   "headline": "Remembering Benito Jimenez Cantu",
+   "line": "80 · Pharr · Nov 14",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-2b2d1f993b": {
-   "headline": "Remembering Alicia Navarro",
-   "line": "66 · Nov 14",
+  "i-51ea8fa6ee": {
+   "headline": "Remembering Eloisa Huitron",
+   "line": "91 · Nov 14",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-74553f88d3": {
@@ -443,6 +553,16 @@
    "line": "89 · Nov 14",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
+  "i-b2d2ee72f3": {
+   "headline": "Remembering Humberto Solis",
+   "line": "73 · Nov 14",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-b386b69fde": {
+   "headline": "Remembering Jesus Cervantes",
+   "line": "67 · Nov 14",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
   "i-8c41911e90": {
    "headline": "Remembering John Wood",
    "line": "79 · Brownsville · Nov 14",
@@ -451,16 +571,6 @@
   "i-a116446c44": {
    "headline": "Remembering Joseph Anthony Allen",
    "line": "65 · Nov 14",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-d01881e0ca": {
-   "headline": "Remembering Maximiliano Torres",
-   "line": "17 · Nov 14",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-c5afa5aae8": {
-   "headline": "Remembering Peter James Graves",
-   "line": "82 · Nov 14",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-d2e4d5cfc7": {
@@ -518,6 +628,11 @@
    "line": "91 · Nov 11",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
+  "i-455c83a62a": {
+   "headline": "Remembering Gregoria B. Eureste",
+   "line": "73 · Gregoria B Eureste Edinburg · Nov 11",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
   "i-bc1cbeb14c": {
    "headline": "Remembering Ignacia Alfaro",
    "line": "86 · Pharr · Nov 11",
@@ -526,6 +641,21 @@
   "i-660e3b6c51": {
    "headline": "Remembering Jose Olivo Hinojosa",
    "line": "86 · Mission · Nov 11",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-a054457588": {
+   "headline": "Remembering Josefina Salinas",
+   "line": "92 · Nov 11",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-222c02a265": {
+   "headline": "Remembering Leticia Mejia",
+   "line": "60 · Mission · Nov 11",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-0069f0e725": {
+   "headline": "Remembering Luis Segura",
+   "line": "77 · Nov 11",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-3eb9c3d0ba": {
@@ -548,14 +678,29 @@
    "line": "67 · Edinburg · Nov 11",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
+  "i-fb43555dc5": {
+   "headline": "Remembering Senovio Arevalo",
+   "line": "90 · Mission · Nov 11",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
   "i-f68402a9ce": {
    "headline": "Remembering Susana A. Perez",
    "line": "76 · Nov 11",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
+  "i-819d96610b": {
+   "headline": "Remembering Teresa Amelia Lopez Vazquez",
+   "line": "60 · Alamo · Nov 11",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
   "i-1a64248b65": {
    "headline": "Remembering Tomas Alonzo Jr.",
    "line": "86 · San Juan · Nov 11",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-0c5d774553": {
+   "headline": "Remembering Arnulfo Mercado",
+   "line": "71 · San Juan · Nov 10",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-b9510369c2": {
@@ -568,9 +713,29 @@
    "line": "73 · Weslaco · Nov 10",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
+  "i-229e9ccaf3": {
+   "headline": "Remembering Maria J. Charo",
+   "line": "87 · Edinburg · Nov 10",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-bfc63488b7": {
+   "headline": "Remembering Benita Guerra",
+   "line": "84 · San Juan · Nov 9",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-ea9f21b601": {
+   "headline": "Remembering Daisy M. Chapa",
+   "line": "68 · Edinburg · Nov 9",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
   "i-adcb8398e5": {
    "headline": "Remembering Elsa Maricela Basaldua",
    "line": "62 · Wesalco · Nov 9",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-85383c049c": {
+   "headline": "Remembering Eva Dardanella Guerra Cárdenas",
+   "line": "McAllen · Nov 9",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-93932212e3": {
@@ -578,29 +743,24 @@
    "line": "50 · Nov 9",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-90d93139c1": {
-   "headline": "Sat Nov 21",
-   "line": "Partly Sunny",
-   "kicker": "SHOW"
-  },
   "i-68d5fd442c": {
    "headline": "Sun Nov 22",
-   "line": "Mostly Cloudy then Showers And Thunderstorms Likely",
+   "line": "Partly Sunny then Chance Showers And Thunderstorms",
    "kicker": "SHOW"
   },
   "i-b93eeebb9d": {
    "headline": "Mon Nov 23",
-   "line": "Showers And Thunderstorms Likely",
+   "line": "Rain Showers Likely",
    "kicker": "SHOW"
   },
   "i-251b25dd91": {
    "headline": "Tue Nov 24",
-   "line": "Mostly Cloudy",
+   "line": "Chance Rain Showers",
    "kicker": "SHOW"
   },
   "i-fa71ff7727": {
    "headline": "Wed Nov 25",
-   "line": "Mostly Sunny",
+   "line": "Sunny",
    "kicker": "SHOW"
   },
   "i-ce9e2d9808": {
@@ -610,8 +770,18 @@
   },
   "i-7a4795866a": {
    "headline": "Fri Nov 27",
-   "line": "Slight Chance Rain Showers",
+   "line": "Chance Rain Showers",
    "kicker": "SHOW"
+  },
+  "i-cccc7ba157": {
+   "headline": "Sat Nov 28",
+   "line": "Mostly Sunny",
+   "kicker": "SHOW"
+  },
+  "i-01bbfde42d": {
+   "headline": "6A DII Area: Edinburg Vela 17, SA Sotomayor 7 (Vela 11-1, 11 straight wins)",
+   "line": "RGVSports · Nov 21",
+   "kicker": "HS FOOTBALL"
   },
   "i-93f450b5d9": {
    "headline": "6A DI Area: SA Harlan 34, Harlingen High 3",
@@ -653,13 +823,18 @@
    "line": "RGVSports · Nov 19",
    "kicker": "HS FOOTBALL"
   },
-  "i-b6967a2a2b": {
-   "headline": "Sat 3 PM: SA Sotomayor at Edinburg Vela (6A DII area)",
+  "i-4bcc983b9e": {
+   "headline": "6A DII Region IV semifinal: Edinburg Vela vs. Austin Westlake (11-1); details TBA",
    "line": "RGVSports",
    "kicker": "HS FOOTBALL"
   },
-  "i-50e3581e21": {
-   "headline": "Advancing: PSJA North and La Villa",
+  "i-a193580ede": {
+   "headline": "2A DII Region IV semifinal: La Villa (11-1) vs. Falls City (9-3); first regional semi in program…",
+   "line": "RGVSports",
+   "kicker": "HS FOOTBALL"
+  },
+  "i-c17b10b883": {
+   "headline": "PSJA North also alive in 6A DII Region IV; opponent and site TBA (confirm on RGVSports)",
    "line": "RGVSports",
    "kicker": "HS FOOTBALL"
   },
@@ -743,39 +918,34 @@
    "line": "Mon Nov 16",
    "kicker": "SHOW"
   },
+  "i-94a5e2112d": {
+   "headline": "Today: Titans (1-8) at Cowboys (4-6), noon CT, AT&T Stadium, FOX",
+   "line": "DallasCowboys.com · Nov 20",
+   "kicker": "NFL"
+  },
+  "i-8d80d9451e": {
+   "headline": "Tonight: Vikings vs. 49ers in Mexico City on Sunday Night Football (7:20 PM CT, NBC); Texans…",
+   "line": "NFL.com",
+   "kicker": "NFL"
+  },
   "i-79bbd95496": {
    "headline": "Texans 26, Colts 3: C.J. Stroud throws 3 TDs on Thursday Night Football",
    "line": "AP · Nov 19",
    "kicker": "NFL"
   },
-  "i-a89a39c802": {
-   "headline": "Week 11: Colts at Texans Thu Nov 19; Titans at Cowboys Sun Nov 22; Bengals at Commanders Mon Nov 23",
-   "line": "FootballDB schedule",
-   "kicker": "NFL"
-  },
-  "i-9e7e29168e": {
-   "headline": "MIA 137, MIL 130",
-   "line": "Wed Nov 18",
+  "i-fd8c618fa8": {
+   "headline": "SAS 114, NOP 91",
+   "line": "Sat Nov 21",
    "kicker": "SHOW"
   },
-  "i-c22932e333": {
-   "headline": "UTA 109, LAL 97",
-   "line": "Wed Nov 18",
+  "i-399b98334f": {
+   "headline": "DAL 110, LAC 100",
+   "line": "Sat Nov 21",
    "kicker": "SHOW"
   },
-  "i-700b145dfa": {
-   "headline": "ATL 117, OKC 112",
-   "line": "Wed Nov 18",
-   "kicker": "SHOW"
-  },
-  "i-6edfae522f": {
-   "headline": "DEN 105, BOS 101",
-   "line": "Wed Nov 18",
-   "kicker": "SHOW"
-  },
-  "i-81fc9c3a81": {
-   "headline": "MEM 124, CLE 121",
-   "line": "Wed Nov 18",
+  "i-936bdcfaef": {
+   "headline": "MIN 104, MEM 95",
+   "line": "Sat Nov 21",
    "kicker": "SHOW"
   },
   "i-197f366b5e": {
@@ -783,44 +953,34 @@
    "line": "Fri Nov 20",
    "kicker": "SHOW"
   },
-  "i-009f31f792": {
-   "headline": "HOU 119, IND 104",
-   "line": "Wed Nov 18",
-   "kicker": "SHOW"
-  },
-  "i-c8e96eb54b": {
-   "headline": "DAL 116, GSW 94",
-   "line": "Wed Nov 18",
-   "kicker": "SHOW"
-  },
-  "i-3df4ebc891": {
-   "headline": "Giannis (27-13-9) leads Miami past Milwaukee in his first game vs. the Bucks; Heat win 6th…",
-   "line": "Field Level Media",
+  "i-dbff668618": {
+   "headline": "Wembanyama: 50 points, 19 rebounds, 5 blocks as the Spurs (14-3) rout New Orleans",
+   "line": "ESPN/AP · Nov 21",
    "kicker": "NBA"
   },
-  "i-2f3e01d3bb": {
-   "headline": "Jazz snap the Lakers' 9-game win streak; Thunder lose first home game (Hawks 117-112)",
-   "line": "Field Level Media",
+  "i-d2ec78107b": {
+   "headline": "Kyrie Irving 25, Cooper Flagg 22 as Dallas (9-7) closes on an 11-0 run to beat the Clippers",
+   "line": "NBA.com/AP · Nov 21",
    "kicker": "NBA"
   },
-  "i-a371d84a69": {
-   "headline": "Texas teams: Rockets win at Indiana 119-104 (Durant 21); Cooper Flagg 33 as Mavs beat Warriors…",
-   "line": "Field Level Media",
+  "i-63e2325869": {
+   "headline": "Rockets fall 133-124 at Denver in the NBA Cup despite Sengun's triple-double (28-11-10)",
+   "line": "NBA.com · Nov 21",
    "kicker": "NBA"
   },
-  "i-830fdeb76f": {
-   "headline": "Trump posthumously pardons Pete Rose (1990 tax convictions); symbolic, Hall eligibility unchanged",
-   "line": "AP · Nov 19",
+  "i-14111bee30": {
+   "headline": "Mets reportedly offer Tarik Skubal a nine-year deal worth nearly $400 million",
+   "line": "MLB.com · Nov 21",
    "kicker": "MLB"
   },
-  "i-b39772e663": {
-   "headline": "Skubal sweepstakes: Mets, Blue Jays, Dodgers and Padres have met or are set to meet; a deal is…",
-   "line": "MLB.com",
+  "i-00d8d9a7e5": {
+   "headline": "Mets lock up OF A.J. Ewing, 22, with an eight-year extension through 2035",
+   "line": "MLB.com · Nov 21",
    "kicker": "MLB"
   },
-  "i-e35f8b0d06": {
-   "headline": "Twins agree to 2 years, $55M with Sonny Gray; White Sox land Dustin May (3 yrs, ~$52.5M)",
-   "line": "ESPN tracker",
+  "i-e296e450a4": {
+   "headline": "Non-tender deadline: Astros let OF Taylor Trammell go; Cardinals non-tender Nolan Gorman; Yankees…",
+   "line": "CBS Sports transactions",
    "kicker": "MLB"
   },
   "i-f46b5a4c99": {
@@ -878,9 +1038,34 @@
    "line": "Fri Nov 20",
    "kicker": "WHAT I'VE BEEN UP TO"
   },
+  "i-36c43d56e5": {
+   "headline": "Catholic Diocese of Brownsville adds a parish-wide collection for Catholic Charities RGV as…",
+   "line": "For the first time every parish is taking a second collection this weekend that goes entirely to Catholic Charities…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-1e70ae8b29": {
+   "headline": "Pharr mother speaks out after ICE detains her U.S.-citizen son at an Alamo construction site",
+   "line": "Surveillance video shows three masked ICE agents pulling 40-year-old U.S.",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-7520ddfbbf": {
+   "headline": "Federal judge in McAllen dismisses Donna family's lawsuit over the January ICE raid at their home",
+   "line": "In an order signed Nov.",
+   "kicker": "HEADLINES · RGV"
+  },
   "i-f9760bee54": {
    "headline": "STC president at the Workforce Summit: South Texas has a skills gap, not a worker gap",
    "line": "At STC's sixth annual Workforce Summit, President Ricardo Solis said the challenge is skills, not a shortage of…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-941546bd06": {
+   "headline": "Mission police investigate a deadly head-on crash at 3 Mile Line Road and Maria Street",
+   "line": "One person died and three were hospitalized in the Friday-evening two-vehicle crash shortly before 8 p.m., police…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-9f2fd06d20": {
+   "headline": "Soldier home from a 10-month Middle East deployment surprises his 5th-grade daughter at IDEA Rio…",
+   "line": "Army Reserve Sgt.",
    "kicker": "HEADLINES · RGV"
   },
   "i-cae1d74ec0": {
@@ -893,6 +1078,11 @@
    "line": "Residents near Paredes Line Road and Pineda Boulevard say traffic from a new carpool lot, with cars and buses…",
    "kicker": "HEADLINES · RGV"
   },
+  "i-e82bba7855": {
+   "headline": "RGV Startup Week returns April 26-30, 2027, announced at a Global Entrepreneurship Week event in…",
+   "line": "Five days of free talks, pitch opportunities, workshops and networking for startups and small businesses; the…",
+   "kicker": "HEADLINES · RGV"
+  },
   "i-6baff195f6": {
    "headline": "UTRGV and the VA sign agreements to bring UT Health RGV specialists into VA clinics for South…",
    "line": "At a signing Nov.",
@@ -901,6 +1091,11 @@
   "i-88ee9267d7": {
    "headline": "Texas LNG asks for more time on its federal export authorization at the Port of Brownsville…",
    "line": "Texas LNG requested an extension on the timeline of its export authorization, citing prolonged litigation and…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-47954bfebb": {
+   "headline": "South Padre Island approves $621,372 for parking improvements at the Water Sports Park",
+   "line": "UNCONFIRMED · The island approved $621,372 for parking improvements at its Water Sports Park.",
    "kicker": "HEADLINES · RGV"
   },
   "i-4e7b1df097": {
@@ -978,11 +1173,6 @@
    "line": "After TEA's appointed Beaumont ISD superintendent resigned, Gov.-elect Gina Hinojosa said she will begin returning…",
    "kicker": "SCHOOL BOARDS"
   },
-  "i-c761335bd3": {
-   "headline": "La Joya ISD proposes closing three campuses (Cesar Chavez Middle, Perez and Paredes elementaries)…",
-   "line": "Enrollment fell from 29,641 to 19,633 in ten years; the district says it is about $5M short in revenue.",
-   "kicker": "SCHOOL BOARDS"
-  },
   "i-8e40fd1f41": {
    "headline": "Brownsville ISD swears in trustees and elects Denise Garza board president",
    "line": "Carlos Elizondo, Frank Ortiz and Garza were reelected; Marisa Franco Leal fills the two years left on the late…",
@@ -1038,6 +1228,11 @@
    "line": "McAllen: $17.5B retail, 28% from Mexican shoppers",
    "kicker": "CITY HALL"
   },
+  "i-ad25851d89": {
+   "headline": "RioPlex says $110 billion in industrial, energy and data center investment is headed to the Valley",
+   "line": "UNCONFIRMED · RioPlex Executive Director Mario Reyna estimates the multiplier effect at $40 billion to $80 billion…",
+   "kicker": "ECONOMIC DEVELOPMENT"
+  },
   "i-c4a07adc0f": {
    "headline": "SpaceX responds after Cameron County rejects its data center tax break, says its payment plan…",
    "line": "Commissioners voted 3-2 Tuesday against scheduling a December hearing.",
@@ -1083,6 +1278,11 @@
    "line": "GTA VI launched Nov 19 on PS5 and Xbox Series X; the download is 212 GB, and the Miami Heat went all-in on a 'Vice…",
    "kicker": "FAMILY & KIDS"
   },
+  "i-8490c25e6f": {
+   "headline": "Grand Theft Auto VI is finally here",
+   "line": "UNCONFIRMED · The Verge's weekly Installer column calls GTA VI the game of the year and says it has finally arrived.",
+   "kicker": "FAMILY & KIDS"
+  },
   "i-71d291ca62": {
    "headline": "Uber tests rides for kids as young as 10, with extra pay for drivers",
    "line": "'Uber Kids' quietly launched in Austin, Nashville and Madison, Wis., extending Uber's teen service (13-17) to…",
@@ -1103,6 +1303,21 @@
    "line": "Sen.",
    "kicker": "STATEWIDE"
   },
+  "i-5efb14eef7": {
+   "headline": "Texas Sports Academy, tied to AI-driven Alpha School, is the biggest recipient of Texas' new…",
+   "line": "Students at Texas Sports Academy, which schedules two hours of academics a day, have received $6.5 million in…",
+   "kicker": "STATEWIDE"
+  },
+  "i-dfbe94b47e": {
+   "headline": "Paxton drops suits against two Texas doctors over transgender care as he prepares to leave office",
+   "line": "Brett Cooper and May Lau were among three doctors Paxton accused of violating the 2023 ban on gender-transition care…",
+   "kicker": "STATEWIDE"
+  },
+  "i-f42933d53d": {
+   "headline": "State drops its lawsuit against Latino voting group Jolt Initiative",
+   "line": "AG Ken Paxton's office dropped the suit, which followed unsubstantiated claims by a Fox News host that Texas groups…",
+   "kicker": "STATEWIDE"
+  },
   "i-4e3826ad7d": {
    "headline": "Federal cartel indictment ties 10 defendants to a Texas crash that killed 8 migrants",
    "line": "Prosecutors name two brothers as leaders of La Nueva Familia Michoacana in a case with charges including drug, human…",
@@ -1116,6 +1331,11 @@
   "i-6396c02b85": {
    "headline": "ERCOT CEO Pablo Vegas gets a contract extension worth up to $4.1M next year, angering Lt. Gov. Dan…",
    "line": "The extension, on hold for months after Patrick criticized the payouts, was finalized weeks after Patrick lost…",
+   "kicker": "STATEWIDE"
+  },
+  "i-7e6fdbec84": {
+   "headline": "A Texas police department got $100K after a single immigration arrest under the 287(g) program",
+   "line": "The 287(g) immigration enforcement program funnels millions in federal dollars to local law enforcement with few…",
    "kicker": "STATEWIDE"
   },
   "i-c76705103d": {
