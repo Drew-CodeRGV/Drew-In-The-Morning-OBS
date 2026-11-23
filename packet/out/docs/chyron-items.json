@@ -1,7 +1,7 @@
 {
  "v": 1,
  "date": "2026-11-23",
- "generated": "2026-11-23T22:33:17+00:00",
+ "generated": "2026-11-23T23:33:04+00:00",
  "items": {
   "i-63abb29ce5": {
    "headline": "Democrats flip control of Texas State Board of Education for first time in more than 30 years",
@@ -11,6 +11,21 @@
   "i-6078bde15f": {
    "headline": "McAllen: Natural Grocers sets December 16 opening date for new South 10th Street store",
    "line": "UNCONFIRMED · RGV.me says Natural Grocers will open its new South 10th Street store in McAllen on Dec.",
+   "kicker": "CHISME"
+  },
+  "i-5c60700035": {
+   "headline": "Saturday fun",
+   "line": "UNCONFIRMED · A small r/Brownsville thread asks what to do on a Saturday.",
+   "kicker": "CHISME"
+  },
+  "i-641e51568b": {
+   "headline": "Parking info in downtown Brownsville",
+   "line": "UNCONFIRMED · A user asks where to park in downtown Brownsville.",
+   "kicker": "CHISME"
+  },
+  "i-b9ededa4b4": {
+   "headline": "\"Pompous\" Texas Judge Finally Faces Discipline After Going Viral For Berating IT Worker Trying To…",
+   "line": "UNCONFIRMED · An r/texas post shares a headline saying a Texas judge who went viral for berating an IT worker now…",
    "kicker": "CHISME"
   },
   "i-338b902709": {
@@ -28,19 +43,9 @@
    "line": "UNCONFIRMED · A post shares a report that feds say an Austin man who was deported to Mexico is a U.S.",
    "kicker": "CHISME"
   },
-  "i-5c60700035": {
-   "headline": "Saturday fun",
-   "line": "UNCONFIRMED · A small r/Brownsville thread asks what to do on a Saturday.",
-   "kicker": "CHISME"
-  },
   "i-b4ac98952a": {
    "headline": "ERCOT CEO's $29M contract is back on. Texas' next governor isn't thrilled.",
    "line": "UNCONFIRMED · r/texas is buzzing over the ERCOT CEO's contract being back on and the next governor's displeasure.",
-   "kicker": "CHISME"
-  },
-  "i-641e51568b": {
-   "headline": "Parking info in downtown Brownsville",
-   "line": "UNCONFIRMED · A user asks where to park in downtown Brownsville.",
    "kicker": "CHISME"
   },
   "i-bc3715ff40": {
@@ -63,69 +68,14 @@
    "line": "UNCONFIRMED · An r/texas post shares a headline saying a bill was introduced to let patients with menstrual cramps…",
    "kicker": "CHISME"
   },
-  "i-b9ededa4b4": {
-   "headline": "\"Pompous\" Texas Judge Finally Faces Discipline After Going Viral For Berating IT Worker Trying To…",
-   "line": "UNCONFIRMED · An r/texas post shares a headline saying a Texas judge who went viral for berating an IT worker now…",
-   "kicker": "CHISME"
-  },
   "i-5845aaceb2": {
    "headline": "Gina Hinojosa tells sheriffs she will not cut Abbott's border security grants",
    "line": "UNCONFIRMED · A top r/texas post shares a story headlined: Gina Hinojosa tells sheriffs she will not cut Abbott's…",
    "kicker": "CHISME"
   },
-  "i-cb3165de95": {
-   "headline": "Voters oust some sheriffs who signed 287(g) pacts with ICE",
-   "line": "AP reports several sheriffs who signed agreements to help federal immigration enforcement lost their elections…",
-   "kicker": "NATIONAL DESK"
-  },
-  "i-2196211db6": {
-   "headline": "Ukraine says naval drones sank Russian corvette Merkury at a base in Libya",
-   "line": "Nov 22-23: Ukraine's SBU said seven naval drones launched from a mothership hit two Russian vessels at Benghazi…",
-   "kicker": "NATIONAL DESK"
-  },
-  "i-23cd1d856a": {
-   "headline": "Trump vows to work with Democrats to cap credit card interest at 10%",
-   "line": "Trump said he will work with Democrats, including Sen.",
-   "kicker": "NATIONAL DESK"
-  },
-  "i-18b072267a": {
-   "headline": "Mexico captures 'El Chapo Isidro,' one of the FBI's 10 most wanted; firefight in Sinaloa leaves 11…",
-   "line": "Nov 21: Mexican forces captured Fausto Isidro Meza Flores in Guasave, Sinaloa, and flew him to Mexico City; the…",
-   "kicker": "NATIONAL DESK"
-  },
-  "i-6b0c04a180": {
-   "headline": "COP31 climate talks in Turkey end with no deal",
-   "line": "Nov 22: the UN climate summit in Antalya closed after two weeks and two days of overtime without a final pact…",
-   "kicker": "NATIONAL DESK"
-  },
-  "i-21a0e57779": {
-   "headline": "Trump orders federal contractors to clear congressional inquiries with the White House",
-   "line": "Nov 20 (late Friday): an executive order directs contractors and subcontractors to consult the administration on…",
-   "kicker": "NATIONAL DESK"
-  },
-  "i-f014fd1593": {
-   "headline": "The AI boom's bad week: Nasdaq drops 10%, its worst week since March 2020; Anthropic slides back…",
-   "line": "Nov 21: NPR reports the Nasdaq fell 10% for the week and Anthropic, up 17% on its debut, slumped more than 8% Friday…",
-   "kicker": "NATIONAL DESK"
-  },
-  "i-5f6d044d27": {
-   "headline": "Storms on both coasts threaten Thanksgiving travel; San Francisco's mayor asks people not to…",
-   "line": "Nov 21: San Francisco Mayor Daniel Lurie urged residents to avoid nonessential travel as extreme tides and rain are…",
-   "kicker": "NATIONAL DESK"
-  },
   "i-a0f04f1466": {
    "headline": "Judge gives final approval to Bayer's Roundup cancer settlement, up to $7.25 billion",
    "line": "Nov 20: a Missouri judge approved the nationwide settlement; people diagnosed with non-Hodgkin lymphoma could…",
-   "kicker": "NATIONAL DESK"
-  },
-  "i-ade29e0e69": {
-   "headline": "Wall Street's longest losing streak since 2024: Dow drops 1,100 as AI stocks slide, even with…",
-   "line": "Nov 19: the Dow fell 1,101 points (2.2%), the S&P 500 lost 2% for a sixth straight day and the Nasdaq fell 2.3%…",
-   "kicker": "NATIONAL DESK"
-  },
-  "i-73fe5d5488": {
-   "headline": "Trump's post-Asia-trip news conference: defends calling Putin a friend, touts deals; AP…",
-   "line": "Nov 20: at the White House, Trump praised his meetings with Xi and Putin and touted trade deals; AP said he 'can't…",
    "kicker": "NATIONAL DESK"
   },
   "i-93f5d3b1fe": {
@@ -133,19 +83,9 @@
    "line": "Nov 17: PAHO determined sustained measles transmission for over a year cost the U.S.",
    "kicker": "NATIONAL DESK"
   },
-  "i-b1d208eb50": {
-   "headline": "Denmark's parliament unanimously approves the Greenland defense pact with the U.S.",
-   "line": "UNCONFIRMED · Nov 19: the Folketing approved the Greenland-Denmark-U.S.",
-   "kicker": "NATIONAL DESK"
-  },
-  "i-920d0782fa": {
-   "headline": "White House replaces its national cyber director after a week of outages (flights, Microsoft, banks)",
-   "line": "Nov 19: Sean Cairncross is out; Pentagon CIO Kirsten Davies serves as acting national cyber director.",
-   "kicker": "NATIONAL DESK"
-  },
-  "i-3849e26c2d": {
-   "headline": "Senate passes a bipartisan permitting bill that speeds energy projects and makes big data centers…",
-   "line": "UNCONFIRMED · Nov 19: the Senate passed the American Affordability and Jobs Act 62-33; it speeds permits for power…",
+  "i-ade29e0e69": {
+   "headline": "Wall Street's longest losing streak since 2024: Dow drops 1,100 as AI stocks slide, even with…",
+   "line": "Nov 19: the Dow fell 1,101 points (2.2%), the S&P 500 lost 2% for a sixth straight day and the Nasdaq fell 2.3%…",
    "kicker": "NATIONAL DESK"
   },
   "i-ae0f40a51b": {
@@ -153,19 +93,59 @@
    "line": "UNCONFIRMED · Nov 19: Xi hosted Trump and Putin for unprecedented trilateral talks on the APEC sidelines in…",
    "kicker": "NATIONAL DESK"
   },
-  "i-f9af39ead5": {
-   "headline": "Iran targets a U.S. air base in Kuwait and sites in Bahrain",
-   "line": "Nov 18: Iran fired drones at Ali Al Salem Air Base in Kuwait and at Bahrain after a U.S.",
+  "i-6b0c04a180": {
+   "headline": "COP31 climate talks in Turkey end with no deal",
+   "line": "Nov 22: the UN climate summit in Antalya closed after two weeks and two days of overtime without a final pact…",
    "kicker": "NATIONAL DESK"
   },
-  "i-2bff428fdd": {
-   "headline": "FAA nationwide ground stop",
-   "line": "UNCONFIRMED · Nov 13: FAA grounded all U.S.",
+  "i-23cd1d856a": {
+   "headline": "Trump vows to work with Democrats to cap credit card interest at 10%",
+   "line": "Trump said he will work with Democrats, including Sen.",
    "kicker": "NATIONAL DESK"
   },
-  "i-d614a34ae8": {
-   "headline": "Democrats flip a 9th Senate seat, their biggest midterm gain since 1958",
-   "line": "Mary Peltola beat Sen.",
+  "i-2196211db6": {
+   "headline": "Ukraine says naval drones sank Russian corvette Merkury at a base in Libya",
+   "line": "Nov 22-23: Ukraine's SBU said seven naval drones launched from a mothership hit two Russian vessels at Benghazi…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-cb3165de95": {
+   "headline": "Voters oust some sheriffs who signed 287(g) pacts with ICE",
+   "line": "AP reports several sheriffs who signed agreements to help federal immigration enforcement lost their elections…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-5f6d044d27": {
+   "headline": "Storms on both coasts threaten Thanksgiving travel; San Francisco's mayor asks people not to…",
+   "line": "Nov 21: San Francisco Mayor Daniel Lurie urged residents to avoid nonessential travel as extreme tides and rain are…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-f014fd1593": {
+   "headline": "The AI boom's bad week: Nasdaq drops 10%, its worst week since March 2020; Anthropic slides back…",
+   "line": "Nov 21: NPR reports the Nasdaq fell 10% for the week and Anthropic, up 17% on its debut, slumped more than 8% Friday…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-21a0e57779": {
+   "headline": "Trump orders federal contractors to clear congressional inquiries with the White House",
+   "line": "Nov 20 (late Friday): an executive order directs contractors and subcontractors to consult the administration on…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-b1d208eb50": {
+   "headline": "Denmark's parliament unanimously approves the Greenland defense pact with the U.S.",
+   "line": "UNCONFIRMED · Nov 19: the Folketing approved the Greenland-Denmark-U.S.",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-73fe5d5488": {
+   "headline": "Trump's post-Asia-trip news conference: defends calling Putin a friend, touts deals; AP…",
+   "line": "Nov 20: at the White House, Trump praised his meetings with Xi and Putin and touted trade deals; AP said he 'can't…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-3849e26c2d": {
+   "headline": "Senate passes a bipartisan permitting bill that speeds energy projects and makes big data centers…",
+   "line": "UNCONFIRMED · Nov 19: the Senate passed the American Affordability and Jobs Act 62-33; it speeds permits for power…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-920d0782fa": {
+   "headline": "White House replaces its national cyber director after a week of outages (flights, Microsoft, banks)",
+   "line": "Nov 19: Sean Cairncross is out; Pentagon CIO Kirsten Davies serves as acting national cyber director.",
    "kicker": "NATIONAL DESK"
   },
   "i-9e252504ad": {
@@ -173,74 +153,29 @@
    "line": "Anthropic priced shares at $83 (above the $70-78 range), raising about $81B and valuing it near $1.5T; trading…",
    "kicker": "NATIONAL DESK"
   },
-  "i-1d8ad3cf77": {
-   "headline": "Victor Wembanyama drops 50 points and 19 rebounds as the Spurs rout the Pelicans 114-91",
-   "line": "Nov 21: Wembanyama scored 32 in the first half and added five blocks and four steals; the Spurs are 14-3.",
-   "kicker": "TRENDING"
+  "i-d614a34ae8": {
+   "headline": "Democrats flip a 9th Senate seat, their biggest midterm gain since 1958",
+   "line": "Mary Peltola beat Sen.",
+   "kicker": "NATIONAL DESK"
   },
-  "i-9ad4635d64": {
-   "headline": "Thanksgiving dinner for 10 costs $58.63, up 6%; turkey up 10%",
-   "line": "American Farm Bureau's 41st survey: $5.86 a person; a 16-lb turkey averages $23.68 ($1.48/lb), still below the 2022…",
-   "kicker": "TRENDING"
+  "i-2bff428fdd": {
+   "headline": "FAA nationwide ground stop",
+   "line": "UNCONFIRMED · Nov 13: FAA grounded all U.S.",
+   "kicker": "NATIONAL DESK"
   },
-  "i-c71529a70d": {
-   "headline": "LSU QB Sam Leavitt calls Neyland Stadium an 'insane atmosphere' after Tennessee's 27-13 win",
-   "line": "UNCONFIRMED · A trending Google search Monday morning; Leavitt praised the Knoxville crowd after the Vols beat LSU.",
-   "kicker": "TRENDING"
+  "i-f9af39ead5": {
+   "headline": "Iran targets a U.S. air base in Kuwait and sites in Bahrain",
+   "line": "Nov 18: Iran fired drones at Ali Al Salem Air Base in Kuwait and at Bahrain after a U.S.",
+   "kicker": "NATIONAL DESK"
   },
-  "i-40b16e5207": {
-   "headline": "Delta automation glitch delays 1,100-plus Atlanta flights days before Thanksgiving",
-   "line": "Nov 22: a weight-and-balance system outage hit Delta's Atlanta hub for hours; FlightAware showed 1,169 delays there…",
-   "kicker": "TRENDING"
+  "i-18b072267a": {
+   "headline": "Mexico captures 'El Chapo Isidro,' one of the FBI's 10 most wanted; firefight in Sinaloa leaves 11…",
+   "line": "Nov 21: Mexican forces captured Fausto Isidro Meza Flores in Guasave, Sinaloa, and flew him to Mexico City; the…",
+   "kicker": "NATIONAL DESK"
   },
-  "i-30e88f52af": {
-   "headline": "Dak Prescott accounts for 5 TDs as the Cowboys roll the Titans 51-30",
-   "line": "Nov 22: Prescott threw four TDs and ran for one, going 28-of-33 for 325 yards with no interceptions.",
-   "kicker": "TRENDING"
-  },
-  "i-989fc55d20": {
-   "headline": "49ers rout the Vikings 35-10 in Mexico City",
-   "line": "Nov 22: Brock Purdy threw three TDs as San Francisco (9-1) took control of the NFC's top seed; RT Colton McKivitz…",
-   "kicker": "TRENDING"
-  },
-  "i-6b36ea9df1": {
-   "headline": "'Sunrise on the Reaping' cast guide: young Haymitch, Effie and Snow",
-   "line": "UNCONFIRMED · Trending in Texas on Google; EW's guide lists Joseph Zada as young Haymitch for the Hunger Games…",
-   "kicker": "TRENDING"
-  },
-  "i-84995aabbb": {
-   "headline": "Rayados beat Pumas 2-0 to grab the last direct Liguilla spot",
-   "line": "Nov 21: Luca Orellano scored twice (74', 90+2') as Monterrey finished sixth with 27 points; 'Monterrey' trended on X.",
-   "kicker": "TRENDING"
-  },
-  "i-b2965cf166": {
-   "headline": "Paris Hilton presses Congress on the stalled DEFIANCE Act against sexually explicit deepfakes",
-   "line": "UNCONFIRMED · Nov 21: the bipartisan bill, which would give victims of explicit deepfakes a way to sue, passed the…",
-   "kicker": "TRENDING"
-  },
-  "i-99e4b4f418": {
-   "headline": "Miley Cyrus marries drummer Maxx Morando in Palm Springs",
-   "line": "UNCONFIRMED · Nov 21: sources confirmed to PEOPLE the pop star, 33, and the Liily drummer, 28, wed poolside; mom…",
-   "kicker": "TRENDING"
-  },
-  "i-729f1705c9": {
-   "headline": "Max Verstappen wins the Las Vegas Grand Prix ahead of Lando Norris and Oscar Piastri",
-   "line": "Nov 21: Verstappen won in Vegas for the third time in four years; #LasVegasGP was a top U.S.",
-   "kicker": "TRENDING"
-  },
-  "i-090cd30852": {
-   "headline": "Cambridge Dictionary's 2026 Word of the Year: 'human'",
-   "line": "UNCONFIRMED · Cambridge picked 'human' (2025's word was 'parasocial'), in a year of AI everywhere.",
-   "kicker": "TRENDING"
-  },
-  "i-d817a2bedd": {
-   "headline": "BTS wins five MAMA Awards, including Artist and Album of the Year; Cortis takes Song of the Year",
-   "line": "Nov 21: at Kyocera Dome Osaka, BTS won Album of the Year for 'Arirang' and Artist of the Year; the group sent a…",
-   "kicker": "TRENDING"
-  },
-  "i-82db02aa6a": {
-   "headline": "'Michael,' the first $1 billion biopic, won't be submitted for the 2027 BAFTAs",
-   "line": "Nov 20: Variety reports the filmmakers chose not to submit, taking Jaafar Jackson and Colman Domingo out of the…",
+  "i-5ab285951c": {
+   "headline": "BTS fans flood X voting for the MAMA Awards",
+   "line": "UNCONFIRMED · #VOTEFORBTS, #DAESANGFORBTS and 'OUR CHOICE IS BTS AT MAMA' are top U.S.",
    "kicker": "TRENDING"
   },
   "i-1f9776335b": {
@@ -248,14 +183,34 @@
    "line": "Nov 19: Trump pardoned Rose's 1990 tax convictions; it's symbolic and doesn't change Hall of Fame status (MLB lifted…",
    "kicker": "TRENDING"
   },
-  "i-ac881f96ca": {
-   "headline": "Trump hosts a dinner Sunday for top $TRUMP memecoin holders",
-   "line": "UNCONFIRMED · The Nov.",
+  "i-21ff8abe07": {
+   "headline": "Ella Langley sweeps the CMA Awards with 'Choosin' Texas'",
+   "line": "At the 60th CMA Awards (Nov 18) Ella Langley won Single, Song and Music Video of the Year for 'Choosin' Texas'…",
    "kicker": "TRENDING"
   },
-  "i-da2dce77f0": {
-   "headline": "Magnitude 5.1 earthquake shakes Monterey County, California; 'earthquake' trends in Texas and on X",
-   "line": "Nov 19, 10:49 p.m.",
+  "i-6b36ea9df1": {
+   "headline": "'Sunrise on the Reaping' cast guide: young Haymitch, Effie and Snow",
+   "line": "UNCONFIRMED · Trending in Texas on Google; EW's guide lists Joseph Zada as young Haymitch for the Hunger Games…",
+   "kicker": "TRENDING"
+  },
+  "i-40b16e5207": {
+   "headline": "Delta automation glitch delays 1,100-plus Atlanta flights days before Thanksgiving",
+   "line": "Nov 22: a weight-and-balance system outage hit Delta's Atlanta hub for hours; FlightAware showed 1,169 delays there…",
+   "kicker": "TRENDING"
+  },
+  "i-c71529a70d": {
+   "headline": "LSU QB Sam Leavitt calls Neyland Stadium an 'insane atmosphere' after Tennessee's 27-13 win",
+   "line": "UNCONFIRMED · A trending Google search Monday morning; Leavitt praised the Knoxville crowd after the Vols beat LSU.",
+   "kicker": "TRENDING"
+  },
+  "i-9ad4635d64": {
+   "headline": "Thanksgiving dinner for 10 costs $58.63, up 6%; turkey up 10%",
+   "line": "American Farm Bureau's 41st survey: $5.86 a person; a 16-lb turkey averages $23.68 ($1.48/lb), still below the 2022…",
+   "kicker": "TRENDING"
+  },
+  "i-82db02aa6a": {
+   "headline": "'Michael,' the first $1 billion biopic, won't be submitted for the 2027 BAFTAs",
+   "line": "Nov 20: Variety reports the filmmakers chose not to submit, taking Jaafar Jackson and Colman Domingo out of the…",
    "kicker": "TRENDING"
   },
   "i-b83e7af33c": {
@@ -263,54 +218,9 @@
    "line": "Nov 20: Denver improved to 2-0 in Emirates NBA Cup play.",
    "kicker": "TRENDING"
   },
-  "i-f26c4b0ba9": {
-   "headline": "Jazz snap the Lakers' nine-game win streak; Giannis leads the Heat past his old team",
-   "line": "Nov 18: Utah won 109-97 at L.A.",
-   "kicker": "TRENDING"
-  },
-  "i-f37685d76e": {
-   "headline": "Fiona the hippo dies at the Cincinnati Zoo after swallowing a visitor's knit hat",
-   "line": "Nov 19: the zoo said Fiona, 9, died after a hat a visitor tossed was caught by a ceiling fan and flung into her…",
-   "kicker": "TRENDING"
-  },
-  "i-2aa1d1b21a": {
-   "headline": "Christie's pulls a Frida Kahlo painting from auction at Mexico's request",
-   "line": "'Congreso de los pueblos por la paz' (1952) was withdrawn while Mexico checks its provenance; Kahlo's work is a…",
-   "kicker": "TRENDING"
-  },
-  "i-5ab285951c": {
-   "headline": "BTS fans flood X voting for the MAMA Awards",
-   "line": "UNCONFIRMED · #VOTEFORBTS, #DAESANGFORBTS and 'OUR CHOICE IS BTS AT MAMA' are top U.S.",
-   "kicker": "TRENDING"
-  },
-  "i-43c7ec571b": {
-   "headline": "'Yellowjackets' final season premieres on Paramount+",
-   "line": "Season 4, the show's last, premiered Friday, Nov.",
-   "kicker": "TRENDING"
-  },
   "i-525452c56f": {
    "headline": "Texans rout the Colts 26-3 on Thursday Night Football; C.J. Stroud throws 3 TDs",
    "line": "Nov 19: Houston beat Indianapolis 26-3 behind three Stroud touchdown passes.",
-   "kicker": "TRENDING"
-  },
-  "i-259c398bde": {
-   "headline": "YouTube trending: Lil Baby's 'Aint Goin' holds #1; teasers for 'Twilight (But Better)' and '3 Body…",
-   "line": "UNCONFIRMED · On Nov 18 Lil Baby's 'Aint Goin' official video stayed #1 on YouTube's U.S.",
-   "kicker": "TRENDING"
-  },
-  "i-d6fcc76339": {
-   "headline": "Musk: his record $446M midterm spending was 'pretty foolish'",
-   "line": "At the DealBook Summit, Elon Musk, the cycle's top individual donor (much of it in Texas), called the spending…",
-   "kicker": "TRENDING"
-  },
-  "i-5a12a935f9": {
-   "headline": "Instagram now lets you edit a Story after posting (15-minute window)",
-   "line": "Instagram head Adam Mosseri confirmed users can edit a published Story (text, stickers, music) for 15 minutes.",
-   "kicker": "TRENDING"
-  },
-  "i-6c4182acb5": {
-   "headline": "Hila Klein addresses husband Ethan Klein's alleged affair",
-   "line": "UNCONFIRMED · h3h3 co-host Hila Klein publicly addressed her husband Ethan's alleged affair: 'My whole entire life…",
    "kicker": "TRENDING"
   },
   "i-804c020205": {
@@ -318,9 +228,84 @@
    "line": "UNCONFIRMED · Giannis Antetokounmpo (20 points, 11 rebounds, 9 assists) and the Heat beat the 1-13 Bucks on Nov 18…",
    "kicker": "TRENDING"
   },
-  "i-21ff8abe07": {
-   "headline": "Ella Langley sweeps the CMA Awards with 'Choosin' Texas'",
-   "line": "At the 60th CMA Awards (Nov 18) Ella Langley won Single, Song and Music Video of the Year for 'Choosin' Texas'…",
+  "i-259c398bde": {
+   "headline": "YouTube trending: Lil Baby's 'Aint Goin' holds #1; teasers for 'Twilight (But Better)' and '3 Body…",
+   "line": "UNCONFIRMED · On Nov 18 Lil Baby's 'Aint Goin' official video stayed #1 on YouTube's U.S.",
+   "kicker": "TRENDING"
+  },
+  "i-989fc55d20": {
+   "headline": "49ers rout the Vikings 35-10 in Mexico City",
+   "line": "Nov 22: Brock Purdy threw three TDs as San Francisco (9-1) took control of the NFC's top seed; RT Colton McKivitz…",
+   "kicker": "TRENDING"
+  },
+  "i-30e88f52af": {
+   "headline": "Dak Prescott accounts for 5 TDs as the Cowboys roll the Titans 51-30",
+   "line": "Nov 22: Prescott threw four TDs and ran for one, going 28-of-33 for 325 yards with no interceptions.",
+   "kicker": "TRENDING"
+  },
+  "i-1d8ad3cf77": {
+   "headline": "Victor Wembanyama drops 50 points and 19 rebounds as the Spurs rout the Pelicans 114-91",
+   "line": "Nov 21: Wembanyama scored 32 in the first half and added five blocks and four steals; the Spurs are 14-3.",
+   "kicker": "TRENDING"
+  },
+  "i-d817a2bedd": {
+   "headline": "BTS wins five MAMA Awards, including Artist and Album of the Year; Cortis takes Song of the Year",
+   "line": "Nov 21: at Kyocera Dome Osaka, BTS won Album of the Year for 'Arirang' and Artist of the Year; the group sent a…",
+   "kicker": "TRENDING"
+  },
+  "i-090cd30852": {
+   "headline": "Cambridge Dictionary's 2026 Word of the Year: 'human'",
+   "line": "UNCONFIRMED · Cambridge picked 'human' (2025's word was 'parasocial'), in a year of AI everywhere.",
+   "kicker": "TRENDING"
+  },
+  "i-729f1705c9": {
+   "headline": "Max Verstappen wins the Las Vegas Grand Prix ahead of Lando Norris and Oscar Piastri",
+   "line": "Nov 21: Verstappen won in Vegas for the third time in four years; #LasVegasGP was a top U.S.",
+   "kicker": "TRENDING"
+  },
+  "i-99e4b4f418": {
+   "headline": "Miley Cyrus marries drummer Maxx Morando in Palm Springs",
+   "line": "UNCONFIRMED · Nov 21: sources confirmed to PEOPLE the pop star, 33, and the Liily drummer, 28, wed poolside; mom…",
+   "kicker": "TRENDING"
+  },
+  "i-b2965cf166": {
+   "headline": "Paris Hilton presses Congress on the stalled DEFIANCE Act against sexually explicit deepfakes",
+   "line": "UNCONFIRMED · Nov 21: the bipartisan bill, which would give victims of explicit deepfakes a way to sue, passed the…",
+   "kicker": "TRENDING"
+  },
+  "i-84995aabbb": {
+   "headline": "Rayados beat Pumas 2-0 to grab the last direct Liguilla spot",
+   "line": "Nov 21: Luca Orellano scored twice (74', 90+2') as Monterrey finished sixth with 27 points; 'Monterrey' trended on X.",
+   "kicker": "TRENDING"
+  },
+  "i-43c7ec571b": {
+   "headline": "'Yellowjackets' final season premieres on Paramount+",
+   "line": "Season 4, the show's last, premiered Friday, Nov.",
+   "kicker": "TRENDING"
+  },
+  "i-2aa1d1b21a": {
+   "headline": "Christie's pulls a Frida Kahlo painting from auction at Mexico's request",
+   "line": "'Congreso de los pueblos por la paz' (1952) was withdrawn while Mexico checks its provenance; Kahlo's work is a…",
+   "kicker": "TRENDING"
+  },
+  "i-f37685d76e": {
+   "headline": "Fiona the hippo dies at the Cincinnati Zoo after swallowing a visitor's knit hat",
+   "line": "Nov 19: the zoo said Fiona, 9, died after a hat a visitor tossed was caught by a ceiling fan and flung into her…",
+   "kicker": "TRENDING"
+  },
+  "i-f26c4b0ba9": {
+   "headline": "Jazz snap the Lakers' nine-game win streak; Giannis leads the Heat past his old team",
+   "line": "Nov 18: Utah won 109-97 at L.A.",
+   "kicker": "TRENDING"
+  },
+  "i-da2dce77f0": {
+   "headline": "Magnitude 5.1 earthquake shakes Monterey County, California; 'earthquake' trends in Texas and on X",
+   "line": "Nov 19, 10:49 p.m.",
+   "kicker": "TRENDING"
+  },
+  "i-ac881f96ca": {
+   "headline": "Trump hosts a dinner Sunday for top $TRUMP memecoin holders",
+   "line": "UNCONFIRMED · The Nov.",
    "kicker": "TRENDING"
   },
   "i-2ebf5b0a9b": {
@@ -328,34 +313,24 @@
    "line": "After allowing 46 points and 584 yards to the 49ers, the 4-6 Cowboys moved play-calling from DC Christian Parker to…",
    "kicker": "TRENDING"
   },
+  "i-6c4182acb5": {
+   "headline": "Hila Klein addresses husband Ethan Klein's alleged affair",
+   "line": "UNCONFIRMED · h3h3 co-host Hila Klein publicly addressed her husband Ethan's alleged affair: 'My whole entire life…",
+   "kicker": "TRENDING"
+  },
+  "i-5a12a935f9": {
+   "headline": "Instagram now lets you edit a Story after posting (15-minute window)",
+   "line": "Instagram head Adam Mosseri confirmed users can edit a published Story (text, stickers, music) for 15 minutes.",
+   "kicker": "TRENDING"
+  },
+  "i-d6fcc76339": {
+   "headline": "Musk: his record $446M midterm spending was 'pretty foolish'",
+   "line": "At the DealBook Summit, Elon Musk, the cycle's top individual donor (much of it in Texas), called the spending…",
+   "kicker": "TRENDING"
+  },
   "i-1672c2c5f8": {
    "headline": "Why data centers are at the center of the Big Tech backlash",
    "line": "UNCONFIRMED · Headline: TechCrunch looks at why data centers have become the focus of public pushback against Big…",
-   "kicker": "TECH"
-  },
-  "i-6355183f27": {
-   "headline": "The best apps to make new friends right now",
-   "line": "UNCONFIRMED · Headline: TechCrunch rounds up apps that promise to help people make new friends.",
-   "kicker": "TECH"
-  },
-  "i-34ddc587bd": {
-   "headline": "Meta Muse can do your Black Friday shopping at Walmart",
-   "line": "UNCONFIRMED · Headline: Meta's Muse AI can shop Walmart for you through Walmart's agent gateway, timed for Black…",
-   "kicker": "TECH"
-  },
-  "i-d9c6b8306a": {
-   "headline": "Binding of Isaac developer removes AI music from Repentance Plus",
-   "line": "UNCONFIRMED · Headline: the game's developer removed AI-generated music from the Repentance Plus expansion.",
-   "kicker": "TECH"
-  },
-  "i-fe03d2c010": {
-   "headline": "The FBI and USDA were reportedly hacked",
-   "line": "UNCONFIRMED · Reports Friday said hackers hit the FBI's National Crime Information Center, which police use for…",
-   "kicker": "TECH"
-  },
-  "i-b03c278cfb": {
-   "headline": "Signal restricts mobile screenshots, citing the 'existential threat' of AI surveillance",
-   "line": "UNCONFIRMED · Signal is limiting screenshots in its Android and iOS apps; president Meredith Whittaker says OS-level…",
    "kicker": "TECH"
   },
   "i-b3e629b143": {
@@ -363,24 +338,9 @@
    "line": "UNCONFIRMED · Meta's Nov.",
    "kicker": "TECH"
   },
-  "i-10e4a7ab1c": {
-   "headline": "Google rolls out a new search homepage with AI chat history and no search button",
-   "line": "UNCONFIRMED · The desktop Google.com redesign, confirmed by search VP Robby Stein, adds buttons for image…",
-   "kicker": "TECH"
-  },
-  "i-34310b65da": {
-   "headline": "Valve says it might have to raise the price of supply-limited Steam Machines",
-   "line": "UNCONFIRMED · Headline from Ars Technica's feed (Nov 20): Valve says Steam Machine prices could go up because supply…",
-   "kicker": "TECH"
-  },
-  "i-86afb2fa72": {
-   "headline": "Trump threatens a 'tremendous tax' for moving AI data centers outside the US",
-   "line": "UNCONFIRMED · Headline from The Verge's feed (Nov 20): Trump threatened a big tax on moving AI data centers abroad.",
-   "kicker": "TECH"
-  },
-  "i-b3fcfe59ac": {
-   "headline": "Google says it will shut off Google Assistant on smart speakers next year",
-   "line": "UNCONFIRMED · Headline from The Verge's feed (Nov 20): Google plans to shut off Assistant on smart speakers next year.",
+  "i-fe03d2c010": {
+   "headline": "The FBI and USDA were reportedly hacked",
+   "line": "UNCONFIRMED · Reports Friday said hackers hit the FBI's National Crime Information Center, which police use for…",
    "kicker": "TECH"
   },
   "i-a1d59649da": {
@@ -388,9 +348,49 @@
    "line": "UNCONFIRMED · Headline from TechCrunch's feed (Nov 20): Bending Spoons is buying Mailchimp for $3.68 billion.",
    "kicker": "TECH"
   },
-  "i-4088b37ccc": {
-   "headline": "Elon Musk says SpaceX has a plan to eliminate cell phone dead zones",
-   "line": "UNCONFIRMED · Musk says SpaceX finished designing a miniature rooftop cell tower to fix indoor dead zones where…",
+  "i-86afb2fa72": {
+   "headline": "Trump threatens a 'tremendous tax' for moving AI data centers outside the US",
+   "line": "UNCONFIRMED · Headline from The Verge's feed (Nov 20): Trump threatened a big tax on moving AI data centers abroad.",
+   "kicker": "TECH"
+  },
+  "i-bbc97ae6c5": {
+   "headline": "Anthropic prices IPO at $83 a share, above projected range",
+   "line": "UNCONFIRMED · The long-awaited IPO reportedly prices at $83 a share, above the projected range, valuing the company…",
+   "kicker": "TECH"
+  },
+  "i-d9c6b8306a": {
+   "headline": "Binding of Isaac developer removes AI music from Repentance Plus",
+   "line": "UNCONFIRMED · Headline: the game's developer removed AI-generated music from the Repentance Plus expansion.",
+   "kicker": "TECH"
+  },
+  "i-34ddc587bd": {
+   "headline": "Meta Muse can do your Black Friday shopping at Walmart",
+   "line": "UNCONFIRMED · Headline: Meta's Muse AI can shop Walmart for you through Walmart's agent gateway, timed for Black…",
+   "kicker": "TECH"
+  },
+  "i-6355183f27": {
+   "headline": "The best apps to make new friends right now",
+   "line": "UNCONFIRMED · Headline: TechCrunch rounds up apps that promise to help people make new friends.",
+   "kicker": "TECH"
+  },
+  "i-10e4a7ab1c": {
+   "headline": "Google rolls out a new search homepage with AI chat history and no search button",
+   "line": "UNCONFIRMED · The desktop Google.com redesign, confirmed by search VP Robby Stein, adds buttons for image…",
+   "kicker": "TECH"
+  },
+  "i-b03c278cfb": {
+   "headline": "Signal restricts mobile screenshots, citing the 'existential threat' of AI surveillance",
+   "line": "UNCONFIRMED · Signal is limiting screenshots in its Android and iOS apps; president Meredith Whittaker says OS-level…",
+   "kicker": "TECH"
+  },
+  "i-b3fcfe59ac": {
+   "headline": "Google says it will shut off Google Assistant on smart speakers next year",
+   "line": "UNCONFIRMED · Headline from The Verge's feed (Nov 20): Google plans to shut off Assistant on smart speakers next year.",
+   "kicker": "TECH"
+  },
+  "i-34310b65da": {
+   "headline": "Valve says it might have to raise the price of supply-limited Steam Machines",
+   "line": "UNCONFIRMED · Headline from Ars Technica's feed (Nov 20): Valve says Steam Machine prices could go up because supply…",
    "kicker": "TECH"
   },
   "i-3981c5029a": {
@@ -398,14 +398,9 @@
    "line": "A job listing (spotted by Bloomberg) seeks a manager for an 'AI agent that can use a computer': browsing, working…",
    "kicker": "TECH"
   },
-  "i-0a2821b6be": {
-   "headline": "The nation's largest school districts consider ditching Google Search",
-   "line": "UNCONFIRMED · New York, Los Angeles and Chicago schools are weighing Google alternatives after Google said it will…",
-   "kicker": "TECH"
-  },
-  "i-587bf86941": {
-   "headline": "Instagram now lets you edit your stories after you post them",
-   "line": "You can now edit the text, music, stickers and drawings on a Story for up to 15 minutes after sharing, without…",
+  "i-4088b37ccc": {
+   "headline": "Elon Musk says SpaceX has a plan to eliminate cell phone dead zones",
+   "line": "UNCONFIRMED · Musk says SpaceX finished designing a miniature rooftop cell tower to fix indoor dead zones where…",
    "kicker": "TECH"
   },
   "i-6736ed53b9": {
@@ -413,9 +408,14 @@
    "line": "UNCONFIRMED · Ars Technica explainer: when everything goes down, don't assume it's a cyberattack.",
    "kicker": "TECH"
   },
-  "i-bbc97ae6c5": {
-   "headline": "Anthropic prices IPO at $83 a share, above projected range",
-   "line": "UNCONFIRMED · The long-awaited IPO reportedly prices at $83 a share, above the projected range, valuing the company…",
+  "i-587bf86941": {
+   "headline": "Instagram now lets you edit your stories after you post them",
+   "line": "You can now edit the text, music, stickers and drawings on a Story for up to 15 minutes after sharing, without…",
+   "kicker": "TECH"
+  },
+  "i-0a2821b6be": {
+   "headline": "The nation's largest school districts consider ditching Google Search",
+   "line": "UNCONFIRMED · New York, Los Angeles and Chicago schools are weighing Google alternatives after Google said it will…",
    "kicker": "TECH"
   },
   "i-070fa49917": {
@@ -1108,6 +1108,31 @@
    "line": "The City of Edinburg delivered 1,000 turkeys and 1,000 food baskets through its annual Edinburg Cares food drive…",
    "kicker": "HEADLINES · RGV"
   },
+  "i-36c43d56e5": {
+   "headline": "Catholic Diocese of Brownsville adds a parish-wide collection for Catholic Charities RGV as…",
+   "line": "For the first time every parish is taking a second collection this weekend that goes entirely to Catholic Charities…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-9f2fd06d20": {
+   "headline": "Soldier home from a 10-month Middle East deployment surprises his 5th-grade daughter at IDEA Rio…",
+   "line": "Army Reserve Sgt.",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-47954bfebb": {
+   "headline": "South Padre Island approves $621,372 for parking improvements at the Water Sports Park",
+   "line": "UNCONFIRMED · The island approved $621,372 for parking improvements at its Water Sports Park.",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-4e7b1df097": {
+   "headline": "FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and landings a year at…",
+   "line": "Residents, environmental activists and an IATA vice president raised beach access, environmental, health…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-7565e4203d": {
+   "headline": "Head football coaches at Edinburg North and Port Isabel resign",
+   "line": "UNCONFIRMED · Edinburg North, Port Isabel head coaches resign",
+   "kicker": "HEADLINES · RGV"
+  },
   "i-e4deaddae4": {
    "headline": "Commentary: Debating tablets in the classroom",
    "line": "UNCONFIRMED · An opinion column in The Monitor weighs the case for and against tablets in classrooms (headline read…",
@@ -1116,11 +1141,6 @@
   "i-4f935d0bc0": {
    "headline": "Starship Flight 17's Super Heavy (Booster 24) starts cryogenic testing at Starbase's Massey's site",
    "line": "UNCONFIRMED · Space-fan outlets report Booster 24, the Super Heavy expected for Starship Flight 17, began cryogenic…",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-36c43d56e5": {
-   "headline": "Catholic Diocese of Brownsville adds a parish-wide collection for Catholic Charities RGV as…",
-   "line": "For the first time every parish is taking a second collection this weekend that goes entirely to Catholic Charities…",
    "kicker": "HEADLINES · RGV"
   },
   "i-1e70ae8b29": {
@@ -1138,24 +1158,14 @@
    "line": "At STC's sixth annual Workforce Summit, President Ricardo Solis said the challenge is skills, not a shortage of…",
    "kicker": "HEADLINES · RGV"
   },
-  "i-941546bd06": {
-   "headline": "Mission police investigate a deadly head-on crash at 3 Mile Line Road and Maria Street",
-   "line": "One person died and three were hospitalized in the Friday-evening two-vehicle crash shortly before 8 p.m., police…",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-9f2fd06d20": {
-   "headline": "Soldier home from a 10-month Middle East deployment surprises his 5th-grade daughter at IDEA Rio…",
-   "line": "Army Reserve Sgt.",
+  "i-56fe330247": {
+   "headline": "'It's not safe': Brownsville's Pinewood neighbors say a new carpool lot and SpaceX charter buses…",
+   "line": "Residents near Paredes Line Road and Pineda Boulevard say traffic from a new carpool lot, with cars and buses…",
    "kicker": "HEADLINES · RGV"
   },
   "i-cae1d74ec0": {
    "headline": "Mission sets a special meeting to review its overnight dog-barking rule; city says there's no…",
    "line": "Commissioners will review Ordinance No.",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-56fe330247": {
-   "headline": "'It's not safe': Brownsville's Pinewood neighbors say a new carpool lot and SpaceX charter buses…",
-   "line": "Residents near Paredes Line Road and Pineda Boulevard say traffic from a new carpool lot, with cars and buses…",
    "kicker": "HEADLINES · RGV"
   },
   "i-e82bba7855": {
@@ -1173,49 +1183,19 @@
    "line": "Texas LNG requested an extension on the timeline of its export authorization, citing prolonged litigation and…",
    "kicker": "HEADLINES · RGV"
   },
-  "i-47954bfebb": {
-   "headline": "South Padre Island approves $621,372 for parking improvements at the Water Sports Park",
-   "line": "UNCONFIRMED · The island approved $621,372 for parking improvements at its Water Sports Park.",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-4e7b1df097": {
-   "headline": "FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and landings a year at…",
-   "line": "Residents, environmental activists and an IATA vice president raised beach access, environmental, health…",
-   "kicker": "HEADLINES · RGV"
-  },
   "i-dafa6846a8": {
    "headline": "Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some at $2.94)",
    "line": "Prices peaked near $4.10 in May and had stayed above $3 since the Iran war began in late February.",
    "kicker": "HEADLINES · RGV"
   },
-  "i-adcc440f3f": {
-   "headline": "Mission man sentenced to life without parole for 2018 killings of two women",
-   "line": "Mario Lozano-Lemus, 34, was found guilty of capital murder in the deaths of Irene Ozuna, 45, and Maria Angelita…",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-5fcd22953a": {
-   "headline": "Weslaco family waits on appeals court in wrongful-death suit over 17-year-old who drank energy…",
-   "line": "Weslaco energy-drink death suit goes to appeals court",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-739004c92a": {
-   "headline": "Two charged with murder in Brownsville homicide investigation that began with a crash",
-   "line": "KRGV · Nov 18",
+  "i-d774e0a7b4": {
+   "headline": "Brownsville Mayor John Cowen elected chair of the Texas Border Coalition",
+   "line": "Cowen succeeds Hudspeth County Judge Joanna MacKenzie, who is leaving her county post for the private sector.",
    "kicker": "HEADLINES · RGV"
   },
   "i-bbe31a6bdc": {
    "headline": "Pedestrian study ordered for the University Dr. crosswalk near UTRGV after Rep. Terry Canales…",
    "line": "Study of risky UTRGV crosswalk after Canales complaint",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-7565e4203d": {
-   "headline": "Head football coaches at Edinburg North and Port Isabel resign",
-   "line": "UNCONFIRMED · Edinburg North, Port Isabel head coaches resign",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-d774e0a7b4": {
-   "headline": "Brownsville Mayor John Cowen elected chair of the Texas Border Coalition",
-   "line": "Cowen succeeds Hudspeth County Judge Joanna MacKenzie, who is leaving her county post for the private sector.",
    "kicker": "HEADLINES · RGV"
   },
   "i-2c22b20c53": {
@@ -1228,9 +1208,29 @@
    "line": "UNCONFIRMED · Hidalgo Co.",
    "kicker": "HEADLINES · RGV"
   },
-  "i-617c834d86": {
-   "headline": "Mission mayor and council races head to Dec. 12 runoffs",
-   "line": "Mission mayor, council races go to Dec 12 runoffs",
+  "i-941546bd06": {
+   "headline": "Mission police investigate a deadly head-on crash at 3 Mile Line Road and Maria Street",
+   "line": "One person died and three were hospitalized in the Friday-evening two-vehicle crash shortly before 8 p.m., police…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-adcc440f3f": {
+   "headline": "Mission man sentenced to life without parole for 2018 killings of two women",
+   "line": "Mario Lozano-Lemus, 34, was found guilty of capital murder in the deaths of Irene Ozuna, 45, and Maria Angelita…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-739004c92a": {
+   "headline": "Two charged with murder in Brownsville homicide investigation that began with a crash",
+   "line": "KRGV · Nov 18",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-5fcd22953a": {
+   "headline": "Weslaco family waits on appeals court in wrongful-death suit over 17-year-old who drank energy…",
+   "line": "Weslaco energy-drink death suit goes to appeals court",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-a1f7fb3dc1": {
+   "headline": "Cameron County Elections Administrator Remi Garza resigns for a Secretary of State job; last day…",
+   "line": "Cameron Co.",
    "kicker": "LOCAL POLITICS"
   },
   "i-47ec499640": {
@@ -1238,15 +1238,25 @@
    "line": "Cameron Co.",
    "kicker": "LOCAL POLITICS"
   },
-  "i-a1f7fb3dc1": {
-   "headline": "Cameron County Elections Administrator Remi Garza resigns for a Secretary of State job; last day…",
-   "line": "Cameron Co.",
+  "i-617c834d86": {
+   "headline": "Mission mayor and council races head to Dec. 12 runoffs",
+   "line": "Mission mayor, council races go to Dec 12 runoffs",
    "kicker": "LOCAL POLITICS"
   },
   "i-5984ad0d5a": {
    "headline": "Rep. Vicente Gonzalez's 'Hands Off Our Boca Chica Beach Act' clears the House Natural Resources…",
    "line": "H.R.",
    "kicker": "LOCAL POLITICS"
+  },
+  "i-9db87db3cc": {
+   "headline": "Edinburg CISD asks families for input after losing ~2,000 students since the pandemic",
+   "line": "Edinburg CISD survey after losing ~2,000 students",
+   "kicker": "SCHOOL BOARDS"
+  },
+  "i-65815fbb7a": {
+   "headline": "La Joya ISD uses under 60% of its space, needs $160M+ in repairs and may close more campuses after…",
+   "line": "La Joya ISD: $160M repairs, half-empty schools, closures weighed",
+   "kicker": "SCHOOL BOARDS"
   },
   "i-544de900d5": {
    "headline": "La Joya ISD investigating 'excessive' student searches at HOPE Academy; 4 employees on leave and…",
@@ -1263,15 +1273,20 @@
    "line": "Carlos Elizondo, Frank Ortiz and Garza were reelected; Marisa Franco Leal fills the two years left on the late…",
    "kicker": "SCHOOL BOARDS"
   },
-  "i-9db87db3cc": {
-   "headline": "Edinburg CISD asks families for input after losing ~2,000 students since the pandemic",
-   "line": "Edinburg CISD survey after losing ~2,000 students",
-   "kicker": "SCHOOL BOARDS"
+  "i-543ca0556c": {
+   "headline": "McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan. 14 deadline still…",
+   "line": "Vendors met a second time, with Commissioner Michael Fallek and the city attorney, asking the McAllen Chamber of…",
+   "kicker": "CITY HALL"
   },
-  "i-65815fbb7a": {
-   "headline": "La Joya ISD uses under 60% of its space, needs $160M+ in repairs and may close more campuses after…",
-   "line": "La Joya ISD: $160M repairs, half-empty schools, closures weighed",
-   "kicker": "SCHOOL BOARDS"
+  "i-1d211f27e6": {
+   "headline": "Alton starts its first-ever 20-year comprehensive plan ($250K FEMA grant via the GLO); wants…",
+   "line": "Alton's first comprehensive plan wants resident input",
+   "kicker": "CITY HALL"
+  },
+  "i-aa8672d845": {
+   "headline": "McAllen Food Truck Park closure delayed to Jan. 14, 2027",
+   "line": "Food Truck Park closure moved to Jan 14, 2027",
+   "kicker": "CITY HALL"
   },
   "i-0272e26d88": {
    "headline": "Mission approves voluntary drug testing for the mayor and council (mandatory for city attorney and…",
@@ -1283,29 +1298,14 @@
    "line": "Ruvalcaba, 36, replaces Lois Wallace, who moved away and hadn't attended since September.",
    "kicker": "CITY HALL"
   },
-  "i-543ca0556c": {
-   "headline": "McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan. 14 deadline still…",
-   "line": "Vendors met a second time, with Commissioner Michael Fallek and the city attorney, asking the McAllen Chamber of…",
-   "kicker": "CITY HALL"
-  },
-  "i-8132f29b46": {
-   "headline": "Mission councilwoman Jessica Ortega sworn in for a fourth term",
-   "line": "Mission's Jessica Ortega sworn in for 4th term",
-   "kicker": "CITY HALL"
-  },
   "i-28d1ffa3ad": {
    "headline": "Mission bans loud dog barking 10 PM-6 AM, caps hens at four, bans roosters",
    "line": "Mission: no loud barking 10 PM-6 AM; 4-hen cap",
    "kicker": "CITY HALL"
   },
-  "i-aa8672d845": {
-   "headline": "McAllen Food Truck Park closure delayed to Jan. 14, 2027",
-   "line": "Food Truck Park closure moved to Jan 14, 2027",
-   "kicker": "CITY HALL"
-  },
-  "i-1d211f27e6": {
-   "headline": "Alton starts its first-ever 20-year comprehensive plan ($250K FEMA grant via the GLO); wants…",
-   "line": "Alton's first comprehensive plan wants resident input",
+  "i-8132f29b46": {
+   "headline": "Mission councilwoman Jessica Ortega sworn in for a fourth term",
+   "line": "Mission's Jessica Ortega sworn in for 4th term",
    "kicker": "CITY HALL"
   },
   "i-eef405752c": {
@@ -1323,14 +1323,14 @@
    "line": "Commissioners voted 3-2 Tuesday against scheduling a December hearing.",
    "kicker": "ECONOMIC DEVELOPMENT"
   },
-  "i-744e720258": {
-   "headline": "Texas A&M McAllen to build $50M health education building",
-   "line": "Texas A&M McAllen: $50M health building, starts Dec",
-   "kicker": "ECONOMIC DEVELOPMENT"
-  },
   "i-0a9d861402": {
    "headline": "Roma's bridge is now the fastest-growing truck port on the Southwest border (imports up 17x since…",
    "line": "TAMIU's Daniel Covarrubias: imports went from $42.9M (2019) to $826M (FY2026); 53,808 trucks in the past year, about…",
+   "kicker": "ECONOMIC DEVELOPMENT"
+  },
+  "i-744e720258": {
+   "headline": "Texas A&M McAllen to build $50M health education building",
+   "line": "Texas A&M McAllen: $50M health building, starts Dec",
    "kicker": "ECONOMIC DEVELOPMENT"
   },
   "i-4d529028bb": {
@@ -1342,11 +1342,6 @@
    "headline": "Tesla weighs a $3.1B polysilicon plant near Robstown (515 jobs by 2032) and asks Tuloso-Midway ISD…",
    "line": "Tesla eyes $3.1B Robstown plant, seeks school tax break",
    "kicker": "ECONOMIC DEVELOPMENT"
-  },
-  "i-600a5a1cab": {
-   "headline": "Von Miller visits McAllen ahead of the Dec. 5 Holiday Parade ('Wild Christmas')",
-   "line": "Von Miller in McAllen; Holiday Parade Dec 5",
-   "kicker": "FAMILY & KIDS"
   },
   "i-a296686d60": {
    "headline": "Congressman-elect Bobby Pulido hosts a free Friends' Thanksgiving Celebration Mon Nov 23, 11 AM-2…",
@@ -1363,14 +1358,14 @@
    "line": "GTA VI launched Nov 19 on PS5 and Xbox Series X; the download is 212 GB, and the Miami Heat went all-in on a 'Vice…",
    "kicker": "FAMILY & KIDS"
   },
+  "i-600a5a1cab": {
+   "headline": "Von Miller visits McAllen ahead of the Dec. 5 Holiday Parade ('Wild Christmas')",
+   "line": "Von Miller in McAllen; Holiday Parade Dec 5",
+   "kicker": "FAMILY & KIDS"
+  },
   "i-8490c25e6f": {
    "headline": "Grand Theft Auto VI is finally here",
    "line": "UNCONFIRMED · The Verge's weekly Installer column calls GTA VI the game of the year and says it has finally arrived.",
-   "kicker": "FAMILY & KIDS"
-  },
-  "i-71d291ca62": {
-   "headline": "Uber tests rides for kids as young as 10, with extra pay for drivers",
-   "line": "'Uber Kids' quietly launched in Austin, Nashville and Madison, Wis., extending Uber's teen service (13-17) to…",
    "kicker": "FAMILY & KIDS"
   },
   "i-2db9a31d7e": {
@@ -1378,19 +1373,44 @@
    "line": "UNCONFIRMED · Teens are suing a school and police after an AI weapon-detection alert flagged a Doritos bag as a gun…",
    "kicker": "FAMILY & KIDS"
   },
+  "i-71d291ca62": {
+   "headline": "Uber tests rides for kids as young as 10, with extra pay for drivers",
+   "line": "'Uber Kids' quietly launched in Austin, Nashville and Madison, Wis., extending Uber's teen service (13-17) to…",
+   "kicker": "FAMILY & KIDS"
+  },
   "i-9304c72c98": {
    "headline": "GTA 6 is out (launched Nov 19)",
    "line": "GTA VI launched Nov 19 on PS5 and Xbox Series X; rated M (17+), 212 GB download.",
    "kicker": "FAMILY & KIDS"
+  },
+  "i-5efb14eef7": {
+   "headline": "Texas Sports Academy, tied to AI-driven Alpha School, is the biggest recipient of Texas' new…",
+   "line": "Students at Texas Sports Academy, which schedules two hours of academics a day, have received $6.5 million in…",
+   "kicker": "STATEWIDE"
+  },
+  "i-6396c02b85": {
+   "headline": "ERCOT CEO Pablo Vegas gets a contract extension worth up to $4.1M next year, angering Lt. Gov. Dan…",
+   "line": "The extension, on hold for months after Patrick criticized the payouts, was finalized weeks after Patrick lost…",
+   "kicker": "STATEWIDE"
+  },
+  "i-c76705103d": {
+   "headline": "Paxton and the feds agree to keep Texas razor wire at the border for up to 30 years (Del Rio Sector)",
+   "line": "Federal agents can't cut or remove Texas-owned wire on non-federal land within 25 miles of the border in the Del Rio…",
+   "kicker": "STATEWIDE"
+  },
+  "i-5cd8e7e7db": {
+   "headline": "Comptroller Huffines' move to stop taxing cloud, AI and data hosting would cost Texas $18 billion…",
+   "line": "The comptroller's own office projects the state loses $1.9B in FY2027 rising to $4.3B a year by FY2032; local…",
+   "kicker": "STATEWIDE"
   },
   "i-199385e138": {
    "headline": "State Sen. Chuy Hinojosa asks TxDMV to rescind rule requiring proof of legal status to register a…",
    "line": "Sen.",
    "kicker": "STATEWIDE"
   },
-  "i-5efb14eef7": {
-   "headline": "Texas Sports Academy, tied to AI-driven Alpha School, is the biggest recipient of Texas' new…",
-   "line": "Students at Texas Sports Academy, which schedules two hours of academics a day, have received $6.5 million in…",
+  "i-521a50eb01": {
+   "headline": "Texas public schools lost ~135,000 students this year, the largest one-year drop in state history…",
+   "line": "Texas schools lose ~135K students, a record drop",
    "kicker": "STATEWIDE"
   },
   "i-dfbe94b47e": {
@@ -1418,39 +1438,14 @@
    "line": "The court declined to hear a challenge to the law that bars localities from rules going further than state law, on…",
    "kicker": "STATEWIDE"
   },
-  "i-6396c02b85": {
-   "headline": "ERCOT CEO Pablo Vegas gets a contract extension worth up to $4.1M next year, angering Lt. Gov. Dan…",
-   "line": "The extension, on hold for months after Patrick criticized the payouts, was finalized weeks after Patrick lost…",
-   "kicker": "STATEWIDE"
-  },
   "i-7e6fdbec84": {
    "headline": "A Texas police department got $100K after a single immigration arrest under the 287(g) program",
    "line": "The 287(g) immigration enforcement program funnels millions in federal dollars to local law enforcement with few…",
    "kicker": "STATEWIDE"
   },
-  "i-c76705103d": {
-   "headline": "Paxton and the feds agree to keep Texas razor wire at the border for up to 30 years (Del Rio Sector)",
-   "line": "Federal agents can't cut or remove Texas-owned wire on non-federal land within 25 miles of the border in the Del Rio…",
-   "kicker": "STATEWIDE"
-  },
-  "i-5cd8e7e7db": {
-   "headline": "Comptroller Huffines' move to stop taxing cloud, AI and data hosting would cost Texas $18 billion…",
-   "line": "The comptroller's own office projects the state loses $1.9B in FY2027 rising to $4.3B a year by FY2032; local…",
-   "kicker": "STATEWIDE"
-  },
-  "i-521a50eb01": {
-   "headline": "Texas public schools lost ~135,000 students this year, the largest one-year drop in state history…",
-   "line": "Texas schools lose ~135K students, a record drop",
-   "kicker": "STATEWIDE"
-  },
-  "i-a94d6f691c": {
-   "headline": "Sen. John Cornyn blocks Trump's late pick (Elliot Gaiser) for a North Texas federal judgeship: not…",
-   "line": "Cornyn blocks Trump judicial pick before Dems take Senate",
-   "kicker": "STATEWIDE"
-  },
-  "i-c440c8ec8b": {
-   "headline": "How Texas Republicans' 2025 congressional gerrymander fell short (incl. Cuellar's Laredo race)",
-   "line": "Why the GOP's 2025 Texas map fell short",
+  "i-87e93f392c": {
+   "headline": "Democrats' statewide sweep reshapes Texas's high courts",
+   "line": "Blue wave reshapes Texas's top courts",
    "kicker": "STATEWIDE"
   },
   "i-f16b917bbb": {
@@ -1458,9 +1453,14 @@
    "line": "Hinojosa talked border with Trump; monitoring over wall",
    "kicker": "STATEWIDE"
   },
-  "i-87e93f392c": {
-   "headline": "Democrats' statewide sweep reshapes Texas's high courts",
-   "line": "Blue wave reshapes Texas's top courts",
+  "i-c440c8ec8b": {
+   "headline": "How Texas Republicans' 2025 congressional gerrymander fell short (incl. Cuellar's Laredo race)",
+   "line": "Why the GOP's 2025 Texas map fell short",
+   "kicker": "STATEWIDE"
+  },
+  "i-a94d6f691c": {
+   "headline": "Sen. John Cornyn blocks Trump's late pick (Elliot Gaiser) for a North Texas federal judgeship: not…",
+   "line": "Cornyn blocks Trump judicial pick before Dems take Senate",
    "kicker": "STATEWIDE"
   },
   "i-b8de5ae917": {

@@ -57,10 +57,10 @@
         "score": 10,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 10: 1 outlet 6 + recency 4.5 (26h old)",
+        "scoreWhy": "Score 10: 1 outlet 6 + recency 4.2 (27h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 4.5,
+          "recency": 4.2,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -95,7 +95,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.1 (101h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.1 (102h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.1,
@@ -129,10 +129,10 @@
         "score": 10,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 10: 1 outlet 6 + recency 4.1 (28h old)",
+        "scoreWhy": "Score 10: 1 outlet 6 + recency 3.8 (29h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 4.1,
+          "recency": 3.8,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -168,10 +168,10 @@
         "score": 10,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 10: 1 outlet 6 + recency 3.8 (29h old)",
+        "scoreWhy": "Score 10: 1 outlet 6 + recency 3.6 (30h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 3.8,
+          "recency": 3.6,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -202,7 +202,7 @@
         "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 7: 1 outlet 6 + recency 1.1 (50h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 1.1 (51h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 1.1,
@@ -235,7 +235,7 @@
         "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 7: 1 outlet 6 + recency 1 (52h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 1 (53h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 1.0,
@@ -270,7 +270,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.1 (96h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.1 (97h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.1,
@@ -303,10 +303,10 @@
         "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 7: 1 outlet 6 + recency 1.3 (48h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 1.2 (49h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.3,
+          "recency": 1.2,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -336,7 +336,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.3 (74h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.3 (75h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.3,
@@ -370,7 +370,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.3 (71h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.3 (72h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.3,
@@ -403,7 +403,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.4 (69h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.4 (70h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.4,
@@ -441,7 +441,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.2 (77h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.2 (78h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.2,
@@ -475,7 +475,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.4 (68h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.4 (69h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.4,
@@ -510,7 +510,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.2 (79h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.2 (80h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.2,
@@ -544,7 +544,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.1 (94h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.1 (95h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.1,
@@ -579,7 +579,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.2 (83h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.2 (84h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.2,
@@ -614,7 +614,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.1 (101h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.1 (102h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.1,
@@ -649,7 +649,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.4 (67h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.4 (68h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.4,
@@ -687,10 +687,10 @@
         "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 7: 1 outlet 6 + recency 1.2 (49h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 1.1 (50h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.2,
+          "recency": 1.1,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -720,7 +720,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.4 (66h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.4 (67h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.4,
@@ -753,10 +753,10 @@
         "score": 7,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 7: 1 outlet 6 + recency 1 (52h old)",
+        "scoreWhy": "Score 7: 1 outlet 6 + recency 0.9 (53h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 1.0,
+          "recency": 0.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -786,7 +786,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.2 (84h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.2 (85h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.2,
@@ -819,7 +819,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.3 (75h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.3 (76h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.3,
@@ -852,7 +852,7 @@
         "score": 6,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.3 (74h old)",
+        "scoreWhy": "Score 6: 1 outlet 6 + recency 0.3 (75h old)",
         "scoreParts": {
           "outlets": 6,
           "recency": 0.3,
@@ -1114,7 +1114,7 @@
     },
     "office": "BRO",
     "city": "McAllen",
-    "updated": "2026-11-23T21:45:14+00:00",
+    "updated": "2026-11-23T22:45:13+00:00",
     "days": [
       {
         "date": "2026-11-23",
@@ -1125,7 +1125,7 @@
         "short": "Partly Sunny",
         "icon": "partly",
         "pop": 27,
-        "wind": "N 8 mph"
+        "wind": "N 7 mph"
       },
       {
         "date": "2026-11-24",
@@ -1659,10 +1659,10 @@
       "score": 10,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 10: 1 outlet 6 + recency 3.8 (29h old)",
+      "scoreWhy": "Score 10: 1 outlet 6 + recency 3.6 (30h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 3.8,
+        "recency": 3.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1697,10 +1697,10 @@
       "score": 7,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 7: 1 outlet 6 + recency 1 (53h old)",
+      "scoreWhy": "Score 7: 1 outlet 6 + recency 0.9 (54h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 1.0,
+        "recency": 0.9,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1735,10 +1735,10 @@
       "score": 10,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 10: 1 outlet 6 + recency 3.8 (29h old)",
+      "scoreWhy": "Score 10: 1 outlet 6 + recency 3.6 (30h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 3.8,
+        "recency": 3.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1811,10 +1811,10 @@
       "score": 10,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 10: 1 outlet 6 + recency 3.8 (29h old)",
+      "scoreWhy": "Score 10: 1 outlet 6 + recency 3.6 (30h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 3.8,
+        "recency": 3.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1849,10 +1849,10 @@
       "score": 10,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 10: 1 outlet 6 + recency 3.8 (29h old)",
+      "scoreWhy": "Score 10: 1 outlet 6 + recency 3.6 (30h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 3.8,
+        "recency": 3.6,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -5121,7 +5121,7 @@
     "words": 109,
     "template": "monday"
   },
-  "generatedAt": "2026-11-23T22:33:17+00:00",
+  "generatedAt": "2026-11-23T23:33:04+00:00",
   "sources": [
     {
       "section": "Top headlines: RGV",
