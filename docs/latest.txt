@@ -1,11 +1,11 @@
 ============================================================================================
 DREW IN THE MORNING
-DAILY BRIEFING · Sunday, November 22, 2026 · updated 6 AM CT
-The weekend
+MONDAY SHOW PACKET · Monday, November 23, 2026 · 8:00 AM CT show · Live from McAllen, Texas
+Week of Nov 16-22 and the weekend of Nov 21-22
 Drew & Jess are watching the feeds so you don't have to
 ============================================================================================
 
-NEXT SHOW: MONDAY, NOVEMBER 23, 8:00-9:00 AM CT · Monday 8 AM rundown (this briefing is the story bank for it)
+SHOW CLOCK (60 minutes; FLEX = can trim/stretch; * = signature segment)
   8:00–8:02   A  Cold Open & Jingle (2 min)
   8:02–8:05   B  What I've Been Up To This Week (3 min, FLEX 2-4)
   8:05–8:13   C  Local News (8 min, FLEX 6-10)
@@ -20,166 +20,221 @@ NEXT SHOW: MONDAY, NOVEMBER 23, 8:00-9:00 AM CT · Monday 8 AM rundown (this bri
   8:56–9:00   L  Meme of the Week & Close (4 min, FLEX 3-6, Jess)
 
 COLD OPEN (read aloud, about 45 seconds)
-  Good morning, Rio Grande Valley! It's Sunday, November 22nd, and this is your Drew in the
-  Morning daily briefing. Today: the local stories everyone's talking about, starting with
-  the Pharr family whose U.S.-citizen son was detained by ICE, plus SpaceX firing back at
-  Cameron County. On the National Desk, the capture of El Chapo Isidro. In Trending, Wemby's
-  50-point night. And in How We'd Talk to Our Kids, Jess and I take on Explicit deepfakes
-  and 'nudify' apps: Paris Hilton is pushing Congress on the stalled DEFIANCE Act (NPR. It's
-  68 and fog outside, the coffee's hot, so stick around, this is Drew in the Morning.
+  Good morning, Rio Grande Valley! It's Monday, November 23rd, and you're listening to Drew
+  in the Morning with Drew and Jess. Coming up this hour, the local stories everyone's
+  talking about, starting with Edinburg's 1,000-turkey handoff, plus the Pharr family whose
+  U.S.-citizen son was detained by ICE. On the National Desk, Ukraine's drone strike in
+  Libya. In Trending, the Cowboys' 51-point Sunday. And in How We'd Talk to Our Kids, Jess
+  and I take on Kindness: NPR (Nov 23) reports on a Sesame Workshop parents survey about
+  families worrying the world. It's 65 and a chance of rain showers then mostly cloudy
+  outside, the coffee's hot, so stick around, this is Drew in the Morning.
   JINGLE: Drew in the Morning. Your Valley, your news, your morning.
 
-WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min, from the family calendar) · 5 from the week
+WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min, from the family calendar) · 5 from the week + 3 coming up
   Busy week at the Lentz house. We had a school picnic on Tuesday, hip hop class on Tuesday,
   cotillion on Wednesday, tap class on Wednesday, and the region clinic and concert on
-  Friday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.
+  Friday. Coming up this week: chess club twice, hip hop class on Tuesday, and tap class on
+  Wednesday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.
   - a school picnic · Tue Nov 17
   - hip hop class · Tue Nov 17
   - cotillion · Wed Nov 18
   - tap class · Wed Nov 18
   - the region clinic and concert · Fri Nov 20
-  Window Nov 16–22, 2026. Calendar: Family calendar (iCloud, published feed). Family-
-    friendly items only, generic wording.
+  - COMING UP: chess club · twice
+  - COMING UP: hip hop class · Tue Nov 24
+  - COMING UP: tap class · Wed Nov 25
+  Window Nov 16–22, 2026; coming up Nov 23–29, 2026. Calendar: Family calendar (iCloud,
+    published feed). Family-friendly items only, generic wording.
   INTERNAL NOTE (not for air): 2 calendar items left off the air (medical, personal, money,
-    work, private or unsure); 5 qualifying occurrences used. Names never leave this note.
+    work, private or unsure); 9 qualifying occurrences used. Names never leave this note.
 
-STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README.md). 32
+STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README.md). 36
   stories, 0 duplicate(s) merged, 0 hot, 0 trending, 0 uncovered lead(s). Google Trends not
   available (no fetch, no fresh cache): trends signal = 0.
 
 TOP HEADLINES · RGV FIRST
-  - [ACT 14] Pharr mother speaks out after ICE detains her U.S.-citizen son at an Alamo
+  - [ACT 14] Edinburg Cares food drive delivers 1,000 turkeys and 1,000 food baskets to
+    local families (ValleyCentral · Nov 22)
+    https://www.valleycentral.com/community/they-always-bring-us-our-little-turkey-edinburg-food-drive-delivers-1000-turkeys-to-local-families/
+  - [ACT 6] Brownsville Mayor John Cowen elected chair of the Texas Border Coalition (RGV
+    Business Journal · Nov 19)
+    https://www.rgvbusinessjournal.com/news/19/11/2026/brownsville-mayor-john-cowen-elected-chair-of-texas-border-coalition/
+  - [ACT 13] Commentary: Debating tablets in the classroom (MyRGV (The Monitor) · Nov 22)
+    https://myrgv.com/opinion/commentary/2026/11/22/commentary-debating-tablets-in-the-classroom/
+  - [ACT 13] Starship Flight 17's Super Heavy (Booster 24) starts cryogenic testing at
+    Starbase's Massey's site (Starlust · Nov 22)
+    https://starlust.org/watch-starship-super-heavy-boosters-cryogenic-tests-underway-in-full-swing-at-starbase/
+  - [ACT 8] Pharr mother speaks out after ICE detains her U.S.-citizen son at an Alamo
     construction site (KRGV · Nov 21)
     https://www.krgv.com/news/this-shouldn-t-be-happening-pharr-mother-speaks-out-after-ice-detains-u-s-citizen-son
-  - [ACT 13] Federal judge in McAllen dismisses Donna family's lawsuit over the January ICE
+  - [ACT 8] Federal judge in McAllen dismisses Donna family's lawsuit over the January ICE
     raid at their home (KRGV · Nov 21)
     https://www.krgv.com/news/federal-judge-dismisses-donna-family-s-lawsuit-over-ice-home-raid
-  - [ACT 7] SpaceX responds after Cameron County rejects its data center tax break, says its
+  - [ACT 6] SpaceX responds after Cameron County rejects its data center tax break, says its
     payment plan would have steadied county revenue (MyRGV · Nov 19)
     https://myrgv.com/local-news/2026/11/19/spacex-responds-to-cameron-county-rejection-of-tax-break-application/
-  - [ACT 15] Catholic Diocese of Brownsville adds a parish-wide collection for Catholic
+  - [ACT 8] Catholic Diocese of Brownsville adds a parish-wide collection for Catholic
     Charities RGV as requests for help double (KRGV · Nov 21)
     https://www.krgv.com/news/catholic-diocese-of-brownsville-expands-holiday-collections-to-support-catholic-charities-rgv
-  - [ACT 8] RGV Startup Week returns April 26-30, 2027, announced at a Global
+  - [ACT 6] RGV Startup Week returns April 26-30, 2027, announced at a Global
     Entrepreneurship Week event in Brownsville (BTX Today · Nov 20)
     https://btxtoday.com/rgv-startup-week-2027-announced-brownsville-2026/
-  - [ACT 8] La Joya ISD investigating 'excessive' student searches at HOPE Academy; 4
+  - [ACT 7] La Joya ISD investigating 'excessive' student searches at HOPE Academy; 4
     employees on leave and reported to TEA (KRGV · Nov 20)
     https://www.krgv.com/news/la-joya-isd-investigating-excessive-student-searches-at-hope-academy-4-employees-on-leave/
-  - [ACT 9] Soldier home from a 10-month Middle East deployment surprises his 5th-grade
+  - [ACT 7] Soldier home from a 10-month Middle East deployment surprises his 5th-grade
     daughter at IDEA Rio Grande City (KRGV · Nov 20)
     https://www.krgv.com/news/soldier-returns-from-10-month-deployment-to-surprise-daughter-at-idea-rio-grande-city
-  - [ACT 8] Future of the state takeover of La Joya ISD in question as Gov.-elect Hinojosa
+  - [ACT 6] Future of the state takeover of La Joya ISD in question as Gov.-elect Hinojosa
     vows to return local control (MyRGV · Nov 20)
     https://myrgv.com/local-news/2026/11/20/future-of-state-takeover-of-la-joya-isd-in-question/
-  - [ACT 9] Mission police investigate a deadly head-on crash at 3 Mile Line Road and Maria
+  - [ACT 7] Mission police investigate a deadly head-on crash at 3 Mile Line Road and Maria
     Street (KRGV · Nov 20)
     https://www.krgv.com/news/mission-police-investigating-deadly-head-on-collision
-  - [ACT 8] South Padre Island approves $621,372 for parking improvements at the Water
+  - [ACT 6] South Padre Island approves $621,372 for parking improvements at the Water
     Sports Park (BTX Today · Nov 20)
     https://btxtoday.com/south-padre-island-water-sports-park-parking-2026/
-  - [ACT 7] FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and
+  - [ACT 6] FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and
     landings a year at Starbase; next session Friday 5:30 PM (ValleyCentral · Nov 19)
     https://www.valleycentral.com/news/local-news/faa-holds-virtual-hearing-on-spacex-proposal-for-more-rocket-launches/
-  - [ACT 7] RioPlex says $110 billion in industrial, energy and data center investment is
+  - [ACT 6] RioPlex says $110 billion in industrial, energy and data center investment is
     headed to the Valley (Daily McAllen · Nov 20)
     https://dailymcallen.com/local-news/editions/11-20-2026
   - [ACT 6] USDA confirms the Valley's fifth screwworm case (first in Hidalgo County);
     Brooks, Hidalgo, Kenedy and Willacy under 'Infested Zone 37' rules (MyRGV · Nov 19)
     https://myrgv.com/local-news/2026/11/19/usda-confirms-fifth-case-of-screwworm-in-rio-grande-valley/
   Texas:
-  - [ACT 15] Texas Sports Academy, tied to AI-driven Alpha School, is the biggest recipient
+  - [ACT 7] Texas drops abortion-pill lawsuits against out-of-state medical providers (Texas
+    Tribune · Nov 20)
+    https://www.texastribune.org/2026/11/20/texas-paxton-abortion-pill-lawsuits-dropped-california-delaware/
+  - [ACT 8] Texas Sports Academy, tied to AI-driven Alpha School, is the biggest recipient
     of Texas' new school vouchers (Texas Tribune · Nov 21)
     https://www.texastribune.org/2026/11/21/texas-school-vouchers-alpha-sports-academy-ai/
-  - [ACT 9] State drops its lawsuit against Latino voting group Jolt Initiative (Texas
+  - [ACT 7] State drops its lawsuit against Latino voting group Jolt Initiative (Texas
     Tribune · Nov 20)
     https://www.texastribune.org/2026/11/20/texas-attorney-general-ken-paxton-jolt-initiaitive/
-  - [ACT 13] Paxton drops suits against two Texas doctors over transgender care as he
+  - [ACT 8] Paxton drops suits against two Texas doctors over transgender care as he
     prepares to leave office (Texas Tribune · Nov 21)
     https://www.texastribune.org/2026/11/21/texas-ken-paxton-lawsuit-dropped-brett-cooper-transgender-care-sb-14/
-  - [ACT 7] A Texas police department got $100K after a single immigration arrest under the
+  - [ACT 6] A Texas police department got $100K after a single immigration arrest under the
     287(g) program (Texas Tribune · Nov 20)
     https://www.texastribune.org/2026/11/20/texas-287g-immigration-police-department-money/
-  - [ACT 8] ERCOT CEO Pablo Vegas gets a contract extension worth up to $4.1M next year,
+  - [ACT 6] ERCOT CEO Pablo Vegas gets a contract extension worth up to $4.1M next year,
     angering Lt. Gov. Dan Patrick (Texas Tribune · Nov 20)
     https://www.texastribune.org/2026/11/20/ercot-texas-electric-grid-ceo-contract/
-  - [ACT 8] Texas Supreme Court leaves the 'Death Star' law limiting city ordinances intact;
+  - [ACT 7] Texas Supreme Court leaves the 'Death Star' law limiting city ordinances intact;
     Democrats plan a repeal push in January (Texas Tribune · Nov 20)
     https://www.texastribune.org/2026/11/20/death-star-bill-texas-supreme-court/
   Photo: File photo: Starship (Steve Jurvetson, CC BY 2.0, Wikimedia Commons) https://commons.wikimedia.org/wiki/File:SpaceX_Starship_before_IFT-5.jpg
 
 CHISME · what the Valley is buzzing about · RUMOR · CONFIRM BEFORE AIR · last 72 hours
   - In apparent first, South Texas county rejects tax break for SpaceX data center (reddit ·
-    r/RioGrandeValley) [CONFIRMED by MyRGV]
+    r/RioGrandeValley) [RUMOR · CONFIRM BEFORE AIR]
     https://www.reddit.com/r/RioGrandeValley/comments/1y1bkcw/in_apparent_first_south_texas_county_rejects_tax/
-      TL;DR: Still the top r/RioGrandeValley post of the week: a report that Cameron County
-    rejected SpaceX's data center tax break.
-      Riff: Day three and the Valley is still bragging about telling a rocket company no.
-  - ERCOT CEO's $29M contract is back on. Texas' next governor isn't thrilled. (reddit ·
-    r/texas) [RUMOR · CONFIRM BEFORE AIR]
-    https://www.reddit.com/r/texas/comments/1y22m4l/ercot_ceos_29m_contract_is_back_on_texas_next/
-      TL;DR: r/texas is buzzing over the ERCOT CEO's contract being back on and the next
-    governor's displeasure.
-      Riff: Keep the lights on and we'll talk about the paycheck later.
-  - Austin man deported to Mexico is a U.S. citizen, feds say (reddit · r/texas) [RUMOR ·
-    CONFIRM BEFORE AIR]
-    https://www.reddit.com/r/texas/comments/1y26nmo/austin_man_deported_to_mexico_is_a_us_citizen/
-      TL;DR: A post shares a report that feds say an Austin man who was deported to Mexico
-    is a U.S. citizen.
-      Riff: Carry your birth certificate? In the Valley, people already joke about that.
-    It's not funny anymore.
-  - Saturday fun (reddit · r/Brownsville) [RUMOR · CONFIRM BEFORE AIR]
-    https://www.reddit.com/r/Brownsville/comments/1y22slv/saturday_fun/
-      TL;DR: A small r/Brownsville thread asks what to do on a Saturday.
-      Riff: Brownsville, call the show. We have answers.
+      TL;DR: Still the top r/RioGrandeValley post: a report that a South Texas county
+    rejected a SpaceX data center tax break.
+      Riff: The county said no to Elon. Somebody frame the minutes.
+  - Democrats flip control of Texas State Board of Education for first time in more than 30
+    years (reddit · r/texas) [RUMOR · CONFIRM BEFORE AIR]
+    https://www.reddit.com/r/texas/comments/1y3a153/democrats_flip_control_of_texas_state_board_of/
+      TL;DR: A r/texas post shares a report that Democrats now control the State Board of
+    Education for the first time in more than 30 years.
+      Riff: Textbook fights just changed teams. Parents, start reading the curriculum memos.
+  - Muslim organizer sues Gov. Greg Abbott over canceled Eid event at Texas waterpark
+    (reddit · r/texas) [RUMOR · CONFIRM BEFORE AIR]
+    https://www.reddit.com/r/texas/comments/1y2rov3/muslim_organizer_sues_gov_greg_abbott_over/
+      TL;DR: A r/texas post shares a story about an event organizer suing Gov. Abbott after
+    an Eid event at a Texas waterpark was canceled.
+      Riff: A lawsuit over a waterpark booking. Texas really does everything bigger.
+  - McAllen: Natural Grocers sets December 16 opening date for new South 10th Street store
+    (facebook · RGV.me) [RUMOR · CONFIRM BEFORE AIR]
+    https://www.facebook.com/RGV.ME/posts/pfbid05Qt7FanCA78xzQH87tezmZX7gyQuCuJZSgThgXo7tmz2o4C9uqNpULzxbKNGQCzpl
+      TL;DR: RGV.me says Natural Grocers will open its new South 10th Street store in
+    McAllen on Dec. 16.
+      Riff: Kale is coming to 10th Street. Jess, I'll see you in the bulk-nuts aisle.
+  - If someone was pretending to be from the Valley, what would be a dead giveaway that they
+    weren't? (reddit · r/RioGrandeValley) [RUMOR · CONFIRM BEFORE AIR]
+    https://www.reddit.com/r/RioGrandeValley/comments/1y2eq0x/if_someone_was_pretending_to_be_from_the_valley/
+      TL;DR: A r/RioGrandeValley thread with 164 comments asks what would expose a fake
+    Valley local.
+      Riff: If you call it a 'shopping cart' and not a 'basket,' we already know. Call in
+    with yours.
 
 TRENDING NEWS · what's trending around the nation (separate from the National Desk)
-- [ACT 13] Victor Wembanyama drops 50 points and 19 rebounds as the Spurs rout the Pelicans 114-91  [sports]
+- [ACT 13] Dak Prescott accounts for 5 TDs as the Cowboys roll the Titans 51-30  [sports]
+    SUMMARY: Nov 22: Prescott threw four TDs and ran for one, going 28-of-33 for 325 yards
+      with no interceptions.
+    RIFF: Fifty-one points. Valley Cowboys fans are insufferable again, and it's only
+      Monday.
+    AP · Nov 22: https://apnews.com/article/cowboys-titans-score-c94c416b2ad811b36b3525eb596c4041
+- [ACT 8] Victor Wembanyama drops 50 points and 19 rebounds as the Spurs rout the Pelicans 114-91  [sports]
     SUMMARY: Nov 21: Wembanyama scored 32 in the first half and added five blocks and four
       steals; the Spurs are 14-3.
     RIFF: Fifty and nineteen. The Valley's 'home' NBA team has a cheat code.
     ESPN/AP · Nov 21: https://www.espn.com/nba/game/_/gameId/401910027
-- [ACT 13] Miley Cyrus marries drummer Maxx Morando in Palm Springs  [celebrity]  [CONFIRM BEFORE AIR: Sourced to PEOPLE's unnamed sources; say 'PEOPLE reports']
-    SUMMARY: Nov 21: sources confirmed to PEOPLE the pop star, 33, and the Liily drummer,
-      28, wed poolside; mom Tish and sister Noah attended.
-    RIFF: Jess, rate the poolside wedding. Drew's still recovering from 'Wrecking Ball.'
-    PEOPLE · Nov 21: https://people.com/miley-cyrus-marries-maxx-morando-11877139
-- [ACT 19] Max Verstappen wins the Las Vegas Grand Prix ahead of Lando Norris and Oscar Piastri  [sports]
-    SUMMARY: Nov 21: Verstappen won in Vegas for the third time in four years; #LasVegasGP
-      was a top U.S. trend on X Sunday morning.
-    RIFF: Racing down the Strip at 2 a.m. our time. Who stayed up?
-    Formula1.com · Nov 21: https://www.formula1.com/en/latest/article/verstappen-wins-exhilarating-las-vegas-grand-prix-from-norris-and-piastri.2eeBWqekZdir9mdDVK9YVX
-    X trend #LasVegasGP: https://x.com/search?q=%23LasVegasGP
-- [ACT 19] Rayados beat Pumas 2-0 to grab the last direct Liguilla spot  [sports]
-    SUMMARY: Nov 21: Luca Orellano scored twice (74', 90+2') as Monterrey finished sixth
-      with 27 points; 'Monterrey' trended on X.
-    RIFF: Half the Valley bleeds Rayados blue. Liguilla road trip?
-    AP (Spanish) via Reading Eagle · Nov 21: https://www.readingeagle.com/2026/11/21/monterrey-se-impone-2-0-a-pumas-y-asegura-el-ltimo-pasaje-a-la-liguilla-en-mxico/
-    Rayados.com: https://www.rayados.com/es/noticias/21688/con-doblete-de-luca-orellano-vencen-rayados-a-pumas-y-entran-a-liguilla
-- [ACT 13] BTS wins five MAMA Awards, including Artist and Album of the Year; Cortis takes Song of the Year  [music]
-    SUMMARY: Nov 21: at Kyocera Dome Osaka, BTS won Album of the Year for 'Arirang' and
-      Artist of the Year; the group sent a video message from its world tour.
-    RIFF: ARMY voted, ARMY delivered. The 14-year-old already knew.
-    Yonhap · Nov 21: https://en.yna.co.kr/view/AEN20261121001851315
-- [ACT 14] 'Michael,' the first $1 billion biopic, won't be submitted for the 2027 BAFTAs  [movies]
-    SUMMARY: Nov 20: Variety reports the filmmakers chose not to submit, taking Jaafar
-      Jackson and Colman Domingo out of the running.
-    RIFF: A billion dollars and they skip the British Oscars? Somebody knows something about
-      the reviews.
-    Variety · Nov 20: https://variety.com/2026/film/awards/michael-biopic-bafta-awards-2027-not-submitted-1236954593/
-    Deadline: https://deadline.com/2026/11/michael-jackson-biopic-michael-skipping-baftas-1237230863/
-- [ACT 13] Cambridge Dictionary's 2026 Word of the Year: 'human'  [culture]  [CONFIRM BEFORE AIR: NPR commentary piece; confirm with Cambridge's announcement before air]
-    SUMMARY: Cambridge picked 'human' (2025's word was 'parasocial'), in a year of AI
-      everywhere.
-    RIFF: Word of the year is 'human.' Ours is 'screwworm.'
-    NPR · Nov 21: https://www.npr.org/2026/11/21/nx-s1-6041585/perspective-defining-human
-- [ACT 13] Paris Hilton presses Congress on the stalled DEFIANCE Act against sexually explicit deepfakes  [celebrity]  [CONFIRM BEFORE AIR: Only the NPR+ episode summary is public; keep to the summary]
-    SUMMARY: Nov 21: the bipartisan bill, which would give victims of explicit deepfakes a
-      way to sue, passed the Senate but stalled; Hilton spoke to NPR's Consider This.
-    RIFF: Not funny, but important: this is what kids are dealing with now.
-    NPR · Nov 21: https://www.npr.org/2026/11/21/nx-s1-6047789/paris-hilton-is-sounding-the-alarm-on-sexually-explicit-deepfakes-npr
+- [ACT 13] Delta automation glitch delays 1,100-plus Atlanta flights days before Thanksgiving  [travel]
+    SUMMARY: Nov 22: a weight-and-balance system outage hit Delta's Atlanta hub for hours;
+      FlightAware showed 1,169 delays there by late afternoon, about 70% tied to the glitch.
+    RIFF: If you're connecting through Atlanta this week, pack snacks and patience.
+    USA TODAY · Nov 22: https://www.usatoday.com/story/travel/airline-news/2026/11/22/glitch-delays-delta-flights-atlanta/92913206007/
+- [ACT 14] Thanksgiving dinner for 10 costs $58.63, up 6%; turkey up 10%  [culture]
+    SUMMARY: American Farm Bureau's 41st survey: $5.86 a person; a 16-lb turkey averages
+      $23.68 ($1.48/lb), still below the 2022 record of $64.05.
+    RIFF: Jess, are we hosting or are we bringing a side? Because the side is cheaper.
+    American Farm Bureau · Nov 2026: https://www.fb.org/news-release/cost-of-thanksgiving-dinner-increases-remains-below-2022-record-high
+- [ACT 13] 49ers rout the Vikings 35-10 in Mexico City  [sports]
+    SUMMARY: Nov 22: Brock Purdy threw three TDs as San Francisco (9-1) took control of the
+      NFC's top seed; RT Colton McKivitz was carted off with a serious leg injury.
+    RIFF: An NFL game in Mexico City and the Valley watched it like a home game.
+    The Guardian/agencies · Nov 22: https://www.theguardian.com/sport/2026/nov/22/nfl-roundup-sunday-football-scores
+- [ACT 13] LSU QB Sam Leavitt calls Neyland Stadium an 'insane atmosphere' after Tennessee's 27-13 win  [sports]  [CONFIRM BEFORE AIR: Score from secondary outlets; CONFIRM BEFORE AIR]
+    SUMMARY: A trending Google search Monday morning; Leavitt praised the Knoxville crowd
+      after the Vols beat LSU.
+    RIFF: A QB complimenting the other team's stadium after losing. That's growth.
+    Sports Illustrated · Nov 22: https://www.si.com/college/tennessee/football/lsu-qb-sam-leavitt-shares-eye-catching-neyland-stadium-comment-following-tennessee-s-win-01m81wj9ck9c
+- [ACT 14] 'Sunrise on the Reaping' cast guide: young Haymitch, Effie and Snow  [entertainment]  [CONFIRM BEFORE AIR: Cast-guide date not confirmed; CONFIRM BEFORE AIR]
+    SUMMARY: Trending in Texas on Google; EW's guide lists Joseph Zada as young Haymitch for
+      the Hunger Games prequel.
+    RIFF: The 14-year-old has opinions about this casting. Ask them. Then duck.
+    Entertainment Weekly: https://ew.com/sunrise-on-the-reaping-cast-and-character-guide-12263469
 
 THE NATIONAL DESK (smaller; local leads)
+- [ACT 20] UKRAINE SAYS NAVAL DRONES SANK RUSSIAN CORVETTE MERKURY AT A BASE IN LIBYA
+    FACT: Nov 22-23: Ukraine's SBU said seven naval drones launched from a mothership hit
+      two Russian vessels at Benghazi, sinking the Merkury, one of Russia's newest warships;
+      Zelenskyy released drone video.
+    OUR TAKE: (Opinion) The war just went to North Africa. Drones from a mothership, a
+      thousand-plus miles from the Black Sea.
+    WHY IT MATTERS IN THE VALLEY: Drone warfare is the defense-tech boom the Valley's EDCs
+      keep pitching for; watch where those contracts land.
+    The Guardian: https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya
+    AP: https://apnews.com/article/ukraine-russia-zelenskyy-warship-attack-libya-c382f8eb06dca7d87e89bc6c18ba7d61
+- [ACT 14] TRUMP VOWS TO WORK WITH DEMOCRATS TO CAP CREDIT CARD INTEREST AT 10%
+    FACT: Trump said he will work with Democrats, including Sen. Elizabeth Warren, on a 10%
+      cap on credit card interest rates; credit union and bank groups pushed back.
+    OUR TAKE: (Opinion) Trump and Warren on the same side of anything is a Thanksgiving
+      miracle.
+    WHY IT MATTERS IN THE VALLEY: Valley households carry holiday balances at 25%-plus APR;
+      a 10% cap would be real money, if it ever passes.
+    AP: https://apnews.com/article/trump-credit-cards-interest-rates-warren-banks-098a69b520e520e535eebe595cd0c64a
+- [ACT 14] VOTERS OUST SOME SHERIFFS WHO SIGNED 287(G) PACTS WITH ICE
+    FACT: AP reports several sheriffs who signed agreements to help federal immigration
+      enforcement lost their elections, including races in North Carolina, Maryland and
+      Wisconsin.
+    OUR TAKE: (Opinion) The ballot box just weighed in on local cops doing ICE's job.
+    WHY IT MATTERS IN THE VALLEY: Texas is paying departments to sign 287(g) deals (Texas
+      Tribune, Nov 20). Which Valley sheriffs and PDs signed?
+    AP: https://apnews.com/article/immigration-sheriffs-elections-ice-agreements-0bca2d5add91614df4cbe1b92df8f5e4
+- [ACT 20] COP31 CLIMATE TALKS IN TURKEY END WITH NO DEAL
+    FACT: Nov 22: the UN climate summit in Antalya closed after two weeks and two days of
+      overtime without a final pact; fossil-fuel language was the main sticking point, and
+      Guterres called it deeply disappointing.
+    OUR TAKE: (Opinion) Two weeks, two overtime days, zero deal. Sounds like a city council
+      budget workshop.
+    WHY IT MATTERS IN THE VALLEY: The Valley lives with the heat, the hurricanes and the
+      water fights with Mexico either way.
+    UN News: https://news.un.org/en/story/2026/11/1168855
+    BBC: https://www.bbc.com/news/articles/cqwy06zrd26lo
 - [ACT 20] MEXICO CAPTURES 'EL CHAPO ISIDRO,' ONE OF THE FBI'S 10 MOST WANTED; FIREFIGHT IN SINALOA LEAVES 11 DEAD
     FACT: Nov 21: Mexican forces captured Fausto Isidro Meza Flores in Guasave, Sinaloa, and
       flew him to Mexico City; the Defense Ministry said seven alleged cartel gunmen and
@@ -190,77 +245,35 @@ THE NATIONAL DESK (smaller; local leads)
       watch for travel warnings before Thanksgiving trips south.
     NPR/AP: https://www.npr.org/2026/11/21/nx-s1-6049672/cartel-boss-el-chapo-isidro-detained
     KRGV (AP): https://www.krgv.com/news/11-killed-in-burst-of-violence-in-northern-mexico-after-capture-of-cartel-leader
-- [ACT 20] TRUMP ORDERS FEDERAL CONTRACTORS TO CLEAR CONGRESSIONAL INQUIRIES WITH THE WHITE HOUSE
-    FACT: Nov 20 (late Friday): an executive order directs contractors and subcontractors to
-      consult the administration on requests from Congress and withhold communications it
-      deems privileged, or risk losing contracts.
-    OUR TAKE: (Opinion) Getting ahead of the new Congress's subpoenas before they're even
-      sworn in. Bold.
-    WHY IT MATTERS IN THE VALLEY: SpaceX, border-wall builders and Valley defense
-      contractors all answer to federal contracts.
-    NPR/AP: https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress
-    White House order: https://www.whitehouse.gov/presidential-actions/2026/11/protecting-the-executives-privileges-and-enhancing-efficiencies-in-federal-contracting/
-- [ACT 14] STORMS ON BOTH COASTS THREATEN THANKSGIVING TRAVEL; SAN FRANCISCO'S MAYOR ASKS PEOPLE NOT TO TRAVEL UNLESS ESSENTIAL
-    FACT: Nov 21: San Francisco Mayor Daniel Lurie urged residents to avoid nonessential
-      travel as extreme tides and rain are expected Monday-Wednesday; a storm moving up the
-      East Coast could also cause delays.
-    OUR TAKE: Nothing says 'grateful' like sleeping at a gate in Atlanta.
-    WHY IT MATTERS IN THE VALLEY: Flying out of MFE, BRO or HRL this week? Check your
-      connections in SFO and the East Coast hubs.
-    NPR: https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino
-- [ACT 14] THE AI BOOM'S BAD WEEK: NASDAQ DROPS 10%, ITS WORST WEEK SINCE MARCH 2020; ANTHROPIC SLIDES BACK TO ITS IPO PRICE
-    FACT: Nov 21: NPR reports the Nasdaq fell 10% for the week and Anthropic, up 17% on its
-      debut, slumped more than 8% Friday to close near its IPO price.
-    OUR TAKE: (Opinion) Everybody's 401(k) found out what 'AI bubble' means this week.
-    WHY IT MATTERS IN THE VALLEY: The data centers being pitched for Cameron County are part
-      of the same AI money.
-    NPR: https://www.npr.org/2026/11/21/nx-s1-6048729/ai-stock-markets-anthropic-nvidia
-- [ACT 14] JUDGE GIVES FINAL APPROVAL TO BAYER'S ROUNDUP CANCER SETTLEMENT, UP TO $7.25 BILLION
-    FACT: Nov 20: a Missouri judge approved the nationwide settlement; people diagnosed with
-      non-Hodgkin lymphoma could receive $10,000 to $165,000 depending on exposure.
-    OUR TAKE: Check the garage shelf.
-    WHY IT MATTERS IN THE VALLEY: Farmworkers and growers in the Valley used glyphosate for
-      decades; payouts depend on agricultural exposure.
-    NPR: https://www.npr.org/2026/11/21/nx-s1-6049684/roundup-bayer-hodgkins-settlement
 
 WHAT'S HAPPENING IN TECH (sub-segment of block J, after the National Desk) [FALLBACK: TECH WIRES]
   FALLBACK: tech wires (The Verge, TechCrunch, Ars Technica). No Fast Company Daily issue
     from the last 48 hours was found in Gmail.
-- The FBI and USDA were reportedly hacked  (The Verge)  [CONFIRM BEFORE AIR: Read the opening paragraphs only; details are from CNN, NBC and Reuters reports]
-    SUMMARY: Reports Friday said hackers hit the FBI's National Crime Information Center,
-      which police use for warrants and missing persons, and a USDA payments database; Trump
-      confirmed the FBI hack to Fox News.
-    ON-AIR ANGLE: The USDA system sits next to animal-disease research, the same agency
-      fighting screwworm in the Valley right now.
-    Link: https://www.theverge.com/tech/1039543/fbi-usda-hacked
-    TechCrunch: Trump says hack 'not good': https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/
-- Signal restricts mobile screenshots, citing the 'existential threat' of AI surveillance  (TechCrunch)  [CONFIRM BEFORE AIR: Read the opening paragraphs only]
-    SUMMARY: Signal is limiting screenshots in its Android and iOS apps; president Meredith
-      Whittaker says OS-level AI agents that scan screens undermine its privacy guarantees.
-    ON-AIR ANGLE: Your phone's AI assistant reads your screen. Good talk to have with the
-      14-year-old about who sees their chats.
-    Link: https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/
-- Google rolls out a new search homepage with AI chat history and no search button  (Ars Technica)  [CONFIRM BEFORE AIR: Read the opening paragraphs only]
-    SUMMARY: The desktop Google.com redesign, confirmed by search VP Robby Stein, adds
-      buttons for image generation, file analysis and Gemini brainstorming and drops the
-      dedicated search button.
-    ON-AIR ANGLE: Grandma's going to be hunting for that button all Thanksgiving.
-    Link: https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/
-- Meta reconsiders its 2030 net-zero goal amid record emissions from AI data centers  (Ars Technica)  [CONFIRM BEFORE AIR: Read the opening paragraphs only]
-    SUMMARY: Meta's Nov. 19 sustainability report says it is 're-evaluating' its 2030 goals
-      after a record percentage jump in greenhouse emissions tied to AI data center
-      buildout.
-    ON-AIR ANGLE: This is the real cost of the data centers being pitched for Cameron
-      County.
-    Link: https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/
-- Grand Theft Auto VI is finally here  (The Verge)  [CONFIRM BEFORE AIR: CONFIRM BEFORE AIR: only the column's headline and teaser were readable; confirm release date and rating]
-    SUMMARY: The Verge's weekly Installer column calls GTA VI the game of the year and says
-      it has finally arrived.
-    ON-AIR ANGLE: It's rated M. If the 10-year-old is asking for it for Christmas, that's a
-      conversation.
-    Link: https://www.theverge.com/tech/1039433/gta-vi-alfred-6-clockwisetv-installer
+- Meta Muse can do your Black Friday shopping at Walmart  (The Verge)  [CONFIRM BEFORE AIR: Headline only read; CONFIRM BEFORE AIR]
+    SUMMARY: Headline: Meta's Muse AI can shop Walmart for you through Walmart's agent
+      gateway, timed for Black Friday.
+    ON-AIR ANGLE: Would you let an AI fill your Black Friday cart? Jess says absolutely not.
+    Link: https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday
+- Why data centers are at the center of the Big Tech backlash  (TechCrunch)  [CONFIRM BEFORE AIR: Headline only read; CONFIRM BEFORE AIR]
+    SUMMARY: Headline: TechCrunch looks at why data centers have become the focus of public
+      pushback against Big Tech.
+    ON-AIR ANGLE: We just watched a South Texas county say no to a SpaceX data center tax
+      break. The Valley is in this story.
+    Link: https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/
+- Binding of Isaac developer removes AI music from Repentance Plus  (The Verge)  [CONFIRM BEFORE AIR: Headline only read; CONFIRM BEFORE AIR]
+    SUMMARY: Headline: the game's developer removed AI-generated music from the Repentance
+      Plus expansion.
+    ON-AIR ANGLE: Gamers just won one against AI. Ask the 14-year-old if they can hear the
+      difference.
+    Link: https://www.theverge.com/games/1039770/binding-of-isaac-ai-music
+- The best apps to make new friends right now  (TechCrunch)  [CONFIRM BEFORE AIR: Headline only read; CONFIRM BEFORE AIR]
+    SUMMARY: Headline: TechCrunch rounds up apps that promise to help people make new
+      friends.
+    ON-AIR ANGLE: Grown-ups need friend apps now. Our kids just yell '6-7' at each other and
+      they're set.
+    Link: https://techcrunch.com/2026/11/22/as-people-look-for-ways-to-make-new-friends-here-are-the-apps-promising-to-help/
 
-REMEMBERING OUR NEIGHBORS (read near the close, block L) · 83 obituaries from The Monitor on Legacy.com, Nov 9–22
+REMEMBERING OUR NEIGHBORS (read near the close, block L) · 81 obituaries from The Monitor on Legacy.com, Nov 10–23
   Only what each notice lists: no cause of death. CONFIRM name pronunciations before
     reading.
   ON-AIR READ: We want to take a moment to remember some of our neighbors we lost over the
@@ -268,7 +281,11 @@ REMEMBERING OUR NEIGHBORS (read near the close, block L) · 83 obituaries from T
     Stevens, 83, of Mission; Jose Arturo Sanchez, 69, of Donna; Jose Peralta, 62, of
     Mission; Ramona Gonzalez, 84, of Mission. Our thoughts are with their families and
     friends. You'll find these and more in The Monitor's obituaries on Legacy dot com.
-  Nov 16–22 (41)
+  Nov 17–23 (37)
+    - Hector Daniel Delgado Arizpe, 21 · died Nov 19 · ran Nov 23 · Rivera at Hillcrest Funerals and Cremations
+      https://www.legacy.com/us/obituaries/themonitor/name/hector-arizpe-obituary?id=63040964
+    - Ramona B. Gonzalez, 96 · died Nov 20 · ran Nov 23 · Rivera at Hillcrest Funerals and Cremations
+      https://www.legacy.com/us/obituaries/themonitor/name/ramona-gonzalez-obituary?id=63040965
     - Anna Segundo, 74 · Mission · died Oct 25 · ran Nov 21 · Brown Family Funeral Home at the Expressway of Mission
       https://www.legacy.com/us/obituaries/themonitor/name/anna-segundo-obituary?id=63034403
     - Dalia Cortinas, 81 · Mission · died Oct 28 · ran Nov 21 · Brown Family Funeral Home at the Expressway of Mission
@@ -307,8 +324,6 @@ REMEMBERING OUR NEIGHBORS (read near the close, block L) · 83 obituaries from T
       https://www.legacy.com/us/obituaries/themonitor/name/francisco-gomez-obituary?id=63017922
     - Glenn Edward Richards, 65 · Edinburg · died Nov 11 · ran Nov 19
       https://www.legacy.com/us/obituaries/themonitor/name/glenn-richards-obituary?id=63017920
-    - Anna Leah Cantu, 43 · Edinburg · died Nov 10 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
-      https://www.legacy.com/us/obituaries/themonitor/name/anna-cantu-obituary?id=63008789
     - Anna Maria Gonzales, 71 · died Nov 14 · ran Nov 18 · Aurora Funeral Home - Sam Houston
       https://www.legacy.com/us/obituaries/themonitor/name/anna-gonzales-obituary?id=63008804
     - Armando Carrera, 81 · Mission · died Nov 11 · ran Nov 18 · Ric Brown Family Funeral Home - at the Expressway of Mission
@@ -317,8 +332,6 @@ REMEMBERING OUR NEIGHBORS (read near the close, block L) · 83 obituaries from T
       https://www.legacy.com/us/obituaries/themonitor/name/cynthia-roberts-obituary?id=63008803
     - Daniel Garza, 94 · Mission · died Nov 9 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
       https://www.legacy.com/us/obituaries/themonitor/name/daniel-garza-obituary?id=63008787
-    - Dora Luz Rodriguez, 80 · died Nov 15 · ran Nov 18 · Rivera at Hillcrest Funerals and Cremations
-      https://www.legacy.com/us/obituaries/themonitor/name/dora-rodriguez-obituary?id=63008802
     - Federico Fonseca, 81 · Pharr · died Oct 25 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
       https://www.legacy.com/us/obituaries/themonitor/name/federico-fonseca-obituary?id=63008790
     - Gerardo Alvarez, 51 · Mission · died Nov 1 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
@@ -331,8 +344,6 @@ REMEMBERING OUR NEIGHBORS (read near the close, block L) · 83 obituaries from T
       https://www.legacy.com/us/obituaries/themonitor/name/john-hudson-obituary?id=63008807
     - Jose Elizondo, 53 · Sullivan City · died Oct 23 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
       https://www.legacy.com/us/obituaries/themonitor/name/jose-elizondo-obituary?id=63008800
-    - Lilia G. Lizcano, 89 · Edinburg · died Nov 15 · ran Nov 18 · Memorial Funeral Home - Edinburg
-      https://www.legacy.com/us/obituaries/themonitor/name/lilia-lizcano-obituary?id=63008805
     - Maria Santos Gomez, 100 · Mission · died Nov 3 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
       https://www.legacy.com/us/obituaries/themonitor/name/maria-gomez-obituary?id=63008792
     - Richard Vogelsang, 80 · Palmview · died Nov 1 · ran Nov 18 · Brown Family Funeral Home at the Expressway of Mission
@@ -345,29 +356,23 @@ REMEMBERING OUR NEIGHBORS (read near the close, block L) · 83 obituaries from T
       https://www.legacy.com/us/obituaries/themonitor/name/angel-desiga-obituary?id=62998832
     - Francisa R. Cruz, 99 · Edcouch · died Nov 14 · ran Nov 17
       https://www.legacy.com/us/obituaries/themonitor/name/francisa-cruz-obituary?id=62998833
-    - Dolores Maria Garcia, 93 · Donna · died Nov 13 · ran Nov 16 · Hawkins Funeral Home of Donna
-      https://www.legacy.com/us/obituaries/themonitor/name/dolores-garcia-obituary?id=62989642
-    - Gregorio Castellanos, 77 · Weslaco · died Nov 4 · ran Nov 16 · McCaleb Funeral Home
-      https://www.legacy.com/us/obituaries/themonitor/name/gregorio-castellanos-obituary?id=62989645
-    - Ray Dell McClaugherty, 86 · Hargill · died Nov 11 · ran Nov 16 · Memorial Funeral Home - Edinburg
-      https://www.legacy.com/us/obituaries/themonitor/name/ray-mcclaugherty-obituary?id=62989641
-  Plus 42 from the week before: on the studio page, under 'Show the previous week'.
+  Plus 44 from the week before: on the studio page, under 'Show the previous week'.
   Source page: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor
 
 WEATHER · McALLEN / RGV (National Weather Service BRO (api.weather.gov))
-  Sun Nov 22  << SHOW DAY Partly Sunny then Chance Showers And Thunderstorms, high 84F / low 58F, rain 81%, wind SW 3 to 7 mph
-  Mon Nov 23  Rain Showers Likely, high 66F / low 54F, rain 64%, wind N 7 to 13 mph
-  Tue Nov 24  Chance Rain Showers, high 63F / low 48F, rain 34%, wind NNW 12 mph
-  Wed Nov 25  Sunny, high 62F / low 46F, rain 1%, wind N 2 to 12 mph
-  Thu Nov 26  Mostly Sunny, high 65F / low 51F, rain 24%, wind NE 6 mph
-  Fri Nov 27  Chance Rain Showers, high 65F / low 50F, rain 32%, wind N 5 to 8 mph
-  Sat Nov 28  Mostly Sunny, high 69F / low --F, rain 12%, wind NNW 6 mph
+  Mon Nov 23  << SHOW DAY Chance Rain Showers then Mostly Cloudy, high 65F / low 54F, rain 33%, wind NNW 7 to 13 mph
+  Tue Nov 24  Rain Showers, high 60F / low 45F, rain 79%, wind NNW 9 to 13 mph
+  Wed Nov 25  Sunny, high 62F / low 43F, rain 0%, wind N 6 to 12 mph
+  Thu Nov 26  Mostly Sunny, high 64F / low 49F, rain 12%, wind NNE 1 to 6 mph
+  Fri Nov 27  Slight Chance Rain Showers then Mostly Cloudy, high 66F / low 52F, rain 15%, wind N 3 mph
+  Sat Nov 28  Mostly Sunny, high 75F / low 58F, rain 1%, wind S 2 to 6 mph
+  Sun Nov 29  Sunny, high 81F / low --F, rain 0%, wind SSE 6 to 9 mph
   Alerts: none active
-  Updated 2026-11-22T11:45:12+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
+  Updated 2026-11-23T11:45:14+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
   NWS Brownsville office: https://www.weather.gov/bro/
   API: https://api.weather.gov/gridpoints/BRO/49,19/forecast
 
-RGV HIGH SCHOOL FOOTBALL · Area round complete; regional semifinals Thanksgiving week (Vela, PSJA North, La Villa alive) · latest results
+RGV HIGH SCHOOL FOOTBALL · Regional semifinals Friday, Nov. 27: Vela, PSJA North and La Villa alive · latest results
   - 6A DII Area: Edinburg Vela 17, SA Sotomayor 7 (Vela 11-1, 11 straight wins)
       https://rgvsports.com/still-rolling-sabercats-earn-11th-straight-win-advance-to-third-round/
   - 6A DI Area: SA Harlan 34, Harlingen High 3
@@ -397,29 +402,23 @@ RGV HIGH SCHOOL FOOTBALL · Area round complete; regional semifinals Thanksgivin
       https://www.rgvsports.com/rgv-football-playoff-schedule/
   College: UTRGV falls 48-0 to No. 7 SFA in the home finale (UTRGV 5-6)  https://gooddayedinburg.com/local-news/editions/11-15-2026
 
-NFL · WEEK 11 TODAY · WEEK 10 RESULTS  (scores: https://www.nfl.com/schedules/2026/by-week/week-10)
+NFL · WEEK 11 RESULTS · THANKSGIVING GAMES THURSDAY  (scores: https://www.theguardian.com/sport/2026/nov/22/nfl-roundup-sunday-football-scores)
   Thu Nov 19: HOU 26, IND 3 (TNF)
-  Thu Nov 12: WAS 24, NYG 21
-  Sun Nov 15: DET 35, NE 10 (Munich)
-  Sun Nov 15: KC 35, ATL 13
-  Sun Nov 15: CLE 27, HOU 24
-  Sun Nov 15: MIN 30, GB 10
-  Sun Nov 15: IND 24, MIA 22
-  Sun Nov 15: CAR 20, NO 17
-  Sun Nov 15: BUF 31, NYJ 12
-  Sun Nov 15: JAX 40, TEN 23
-  Sun Nov 15: LAR 34, ARI 6
-  Sun Nov 15: SEA 21, LV 13
-  Sun Nov 15: SF 46, DAL 40
-  Sun Nov 15: CIN 38, PIT 18 (SNF)
-  Mon Nov 16: LAC 23, BAL 20 (MNF)
-  - Today: Titans (1-8) at Cowboys (4-6), noon CT, AT&T Stadium, FOX
-    https://www.dallascowboys.com/news/cowboys-titans-how-to-watch-listen-stream-in-week-11
-  - Tonight: Vikings vs. 49ers in Mexico City on Sunday Night Football (7:20 PM CT, NBC);
-    Texans already played (beat Colts 26-3 Thursday)
-    https://www.nfl.com/news/nfl-how-to-watch-week-11-nfl-games-schedule-mexico-city-game-details-and-more
-  - Texans 26, Colts 3: C.J. Stroud throws 3 TDs on Thursday Night Football
-    https://apnews.com/article/texans-colts-score-a10b89e303c92efae4c15b8e9df01534
+  Sun Nov 22: DAL 51, TEN 30
+  Sun Nov 22: SF 35, MIN 10 (Mexico City)
+  Sun Nov 22: BUF 26, MIA 9
+  Sun Nov 22: KC 34, ARI 7
+  Sun Nov 22: DET 31, TB 21
+  Sun Nov 22: PHI 19, PIT 16
+  Sun Nov 22: DEN 38, LV 24
+  Sun Nov 22: NYG 23, JAX 18
+  Sun Nov 22: CAR 35, BAL 33
+  Sun Nov 22: CHI 21, NO 13
+  Sun Nov 22: NYJ 27, LAC 24
+  - Dak Prescott: 5 TDs, 28-of-33, 325 yards as Dallas hangs 51 on Tennessee
+    https://apnews.com/article/cowboys-titans-score-c94c416b2ad811b36b3525eb596c4041
+  - Thanksgiving: Bears at Lions; Chiefs at Bills Thursday night
+    https://www.theguardian.com/sport/2026/nov/22/nfl-roundup-sunday-football-scores
 
 NBA  (scores: https://www.espn.com/nba/scoreboard)
   Sat Nov 21: SAS 114, NOP 91
@@ -518,8 +517,8 @@ What your kids might be saying at school this week, and one line on how to bring
       Independent: UK schools and GTA 6: https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html
       DW: GTA VI launches: https://www.dw.com/en/grand-theft-auto-vi-launches-to-global-fanfare/a-79986461
 
-NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
+ON THE SHOW: see run-of-show-monday.md (12 blocks A-L, 60 minutes) and the studio page for notes, follow-up questions and links.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-22 06:09 CT.
-Links checked 2026-11-22: 112 ok, 6 blocked by the site's bot protection (verified in a browser/search), 0 dead, 0 unreachable.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-23 06:15 CT.
+Links checked 2026-11-23: 105 ok, 10 blocked by the site's bot protection (verified in a browser/search), 0 dead, 2 unreachable.

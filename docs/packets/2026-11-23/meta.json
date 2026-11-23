@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-23",
+  "mode": "monday",
+  "sample": false,
+  "label": "Monday, November 23, 2026 \u00b7 Monday Show Packet",
+  "kind": "Monday show packet",
+  "files": {
+    "studio": "index.html",
+    "pdf": "DITM-packet-2026-11-23.pdf",
+    "txt": "DITM-packet-2026-11-23.txt",
+    "email": "DITM-packet-2026-11-23-email-preview.html"
+  },
+  "built": "2026-11-23T06:15:57-06:00"
+}
