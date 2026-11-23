@@ -375,6 +375,387 @@ def story_synopsis(it, limit=SYNOPSIS_LIMIT):
     return trim_synopsis(text, limit)
 
 
+HOOK_LIMIT = 120
+
+# Tone labels allowed in hooks even when they are not in the source text.
+HOOK_TONE_WORDS = frozenset("developing big one rumor confirm before air".split())
+HOOK_FUNCTION_WORDS = frozenset("""
+    a an the and or but of to in on for at by from with as into over after before
+    out up down off than that this these those its their his her our your my
+    is are was were be been being has have had do does did not no nor so if
+    it they them we us you he she who whom which what when where why how
+    about across after against along among around before behind below beneath
+    beside between beyond during except inside near since through toward under
+    until upon without within also just still already very more most less
+    can could may might must will would shall should
+""".split())
+
+_SERIOUS_RE = re.compile(
+    r"\b(dies?|died|deadly|dead|death|deaths|killed|killing|killings|murder(?:ed|s)?|homicide|"
+    r"fatal(?:ly|ities)?|obituar(?:y|ies)|funeral|massacre|disaster|"
+    r"drowned|drowning|suicide|overdose|shot dead|shooting death|"
+    r"wrongful-?death|body found|bodies found)\b",
+    re.I,
+)
+_FEEL_RE = re.compile(
+    r"\b(celebrat\w*|rescued|reopens?|reopened|"
+    r"donation|donat(?:ed|es|ing)|food baskets?|food drive|scholarship|"
+    r"honor(?:ed|s|ee)?\b|saved\b|graduates?|volunteers?|"
+    r"cares food drive|parish-wide collection|second collection|"
+    r"charities|charity|"
+    r"surprises? (?:his|her|their|a))\b",
+    re.I,
+)
+_LOCAL_RE = re.compile(
+    r"\b(RGV|Rio Grande Valley|McAllen|Edinburg|Mission|Pharr|Brownsville|"
+    r"Harlingen|Weslaco|San Juan|Alamo|Donna|Mercedes|Hidalgo|Palmview|"
+    r"Cameron County|Starr County|Willacy|South Padre|Starbase|Boca Chica|"
+    r"ValleyCentral|Rio Grande Valley|the Valley|La Feria|Los Fresnos|Port Isabel)\b",
+    re.I,
+)
+_SURPRISE_RE = re.compile(
+    r"\b(first time|first-ever|for the first time|set a record|broke a record|"
+    r"record (?:high|low|number|turnout)|unexpected|upset|"
+    r"rare|historic|never before)\b",
+    re.I,
+)
+_SPORTS_RE = re.compile(
+    r"\b(football|soccer|baseball|basketball|volleyball|playoff|championship|"
+    r"coach|\bNFL\b|\bNBA\b|\bMLB\b|\bUIL\b|scoreboard)\b",
+    re.I,
+)
+_FOOD_RE = re.compile(
+    r"\b(foods?\b|turkeys\b|(?<!in )turkey(?: dinner| prices| costs| averages)?\b|tacos?\b|"
+    r"restaurant|bbq|barbecue|chef|bakery|baskets?)\b",
+    re.I,
+)
+_WEATHER_EXT_RE = re.compile(
+    r"\b((record|extreme|catastrophic|major)\s+)?(hurricane|tornado|flood(?:ing)?|"
+    r"heat wave|hard freeze|wildfire|tropical storm|hail storm|drought)\b",
+    re.I,
+)
+_VIRAL_RE = re.compile(r"\b(viral|trending|goes viral|tiktok|youtube trending)\b", re.I)
+_NUMBER_RE = re.compile(
+    r"\b\d{1,3}(?:,\d{3})+(?:\.\d+)?\b"
+    r"|\b\d+(?:\.\d+)?\s*(?:million|billion|percent|%|turkeys?|baskets?|"
+    r"years?|hours?|dollars?)\b"
+    r"|\b\$\d",
+    re.I,
+)
+_KID_NAME_RE = re.compile(
+    r"\b((?:son|daughter|child|kid|teen|student|girl|boy|minor)\s+(?:named\s+)?)([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\b"
+    r"|\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?),\s*(1[0-7]|[1-9])\b"
+)
+_RUMOR_PREFIX = "RUMOR · CONFIRM BEFORE AIR"
+
+
+def hook_source_text(it):
+    if not isinstance(it, dict):
+        return ""
+    parts = []
+    for key in ("title", "headline", "tldr", "summary", "one_line", "description",
+                "short", "teaser", "hook", "angle", "valley", "source"):
+        val = _plain_text(it.get(key) or "")
+        if val:
+            parts.append(val)
+    return " ".join(parts)
+
+
+def hook_fact_tokens(text):
+    """Word-level fact tokens (numbers, names, content words)."""
+    return [t for t in re.findall(r"[A-Za-z0-9][A-Za-z0-9$%']*", text or "") if t]
+
+
+def hook_content_tokens(text):
+    out = []
+    for tok in hook_fact_tokens(text):
+        low = tok.lower().replace("'", "")
+        if low in HOOK_FUNCTION_WORDS or low in HOOK_TONE_WORDS:
+            continue
+        if low in {"confirm", "before", "air", "rumor"}:
+            continue
+        out.append(low)
+    return out
+
+
+def hook_tokens_from_source(it):
+    return set(hook_content_tokens(hook_source_text(it)))
+
+
+def hook_is_factual(hook, it):
+    """Every content token in hook is already in the story fields or an allowed tone label."""
+    src = hook_tokens_from_source(it) | {w.lower() for w in HOOK_TONE_WORDS}
+    return all(tok in src for tok in hook_content_tokens(hook))
+
+
+def is_tragedy_story(it):
+    if not isinstance(it, dict):
+        return False
+    if (it.get("_desk") or "") in ("obit", "obituaries") or it.get("obit"):
+        return True
+    blob = hook_source_text(it)
+    # "Death Star" is a Texas preemption-law nickname, not a fatality story
+    blob = re.sub(r"death[ -]?star", " ", blob, flags=re.I)
+    return bool(_SERIOUS_RE.search(blob))
+
+
+def is_feel_good_story(it):
+    if is_tragedy_story(it):
+        return False
+    return bool(_FEEL_RE.search(hook_source_text(it)))
+
+
+def is_chisme_story(it):
+    if not isinstance(it, dict):
+        return False
+    desk = str(it.get("_desk") or it.get("desk") or "")
+    badge = str(it.get("badge") or "")
+    return desk.lower() == "chisme" or "RUMOR" in badge
+
+
+def is_lifestyle_or_obit(it):
+    desk = str((it or {}).get("_desk") or "")
+    return desk in ("lifestyle", "LIFE", "obit", "obituaries") or bool((it or {}).get("obit"))
+
+
+def _clip_hook(text, limit=HOOK_LIMIT):
+    text = re.sub(r"\s+", " ", text or "").strip(" \t\n\r-–—,;:")
+    if len(text) <= limit:
+        return text
+    cut = text[:limit].rstrip()
+    if " " in cut:
+        cut = cut.rsplit(" ", 1)[0]
+    return cut.rstrip(" ,;:–—-")
+
+
+def _sentences(text):
+    text = re.sub(r"\s+", " ", text or "").strip()
+    if not text:
+        return []
+    parts = re.split(r"(?<=[.!?])\s+", text)
+    out = []
+    for p in parts:
+        p = p.strip()
+        if p:
+            out.append(p)
+    return out or ([text] if text else [])
+
+
+def _concreteness(s):
+    n = 1 if _NUMBER_RE.search(s) else 0
+    p = 1 if _LOCAL_RE.search(s) else 0
+    L = len(s)
+    sweet = 1 if 40 <= L <= 110 else (0 if L < 24 else 0)
+    return (n + p + sweet, n, p, -abs(72 - L))
+
+
+def _best_clause(it):
+    title = _plain_text(it.get("title") or it.get("headline") or "")
+    syn = ""
+    try:
+        syn = story_synopsis(it) or ""
+    except Exception:
+        syn = _plain_text(it.get("tldr") or it.get("summary") or it.get("one_line") or "")
+    if title and len(title) <= HOOK_LIMIT:
+        return title
+    # Title is long: only use a synopsis sentence if it shares the story's focus
+    # and is more concrete; otherwise clip the title. Never switch to a side fact.
+    title_toks = set(hook_content_tokens(title))
+    related = []
+    for sent in _sentences(syn):
+        sent = sent.rstrip(" .")
+        if not sent or _is_title_echo(sent, title):
+            continue
+        if len(title_toks & set(hook_content_tokens(sent))) >= 2 and _NUMBER_RE.search(sent):
+            related.append(sent)
+    if related:
+        return max(related, key=_concreteness)
+    return title  # clipped later by _clip_hook
+
+
+def _redact_kid_names(text, it):
+    kids = False
+    try:
+        kids = bool(is_family_kids_story(it))
+    except Exception:
+        kids = False
+    desk = str(it.get("_desk") or it.get("desk") or "")
+    if "family" in desk.lower():
+        kids = True
+    if not kids and not it.get("kids"):
+        return text
+
+    def repl(m):
+        if m.group(1):
+            return m.group(1).strip()
+        return "a child"
+
+    return _KID_NAME_RE.sub(repl, text)
+
+
+def _apply_rumor_prefix(core, limit=HOOK_LIMIT):
+    core = re.sub(r"^(RUMOR|UNCONFIRMED)(?:\s*·\s*CONFIRM BEFORE AIR)?[\s:—-]*", "", core, flags=re.I).strip()
+    room = limit - len(_RUMOR_PREFIX) - 3
+    core = _clip_hook(core, max(20, room))
+    return _clip_hook(f"{_RUMOR_PREFIX} — {core}", limit)
+
+
+def derive_story_hook(it, limit=HOOK_LIMIT):
+    """Build a hook using only words already on the story, plus allowed tone labels."""
+    if not isinstance(it, dict):
+        return ""
+    core = _best_clause(it)
+    if not core:
+        return ""
+    core = _redact_kid_names(core, it)
+    if is_chisme_story(it):
+        hook = _apply_rumor_prefix(core, limit)
+    elif is_tragedy_story(it):
+        prefix = "Developing: "
+        if re.match(r"^(Developing|Big one)\b", core, re.I):
+            hook = _clip_hook(core, limit)
+        else:
+            hook = _clip_hook(prefix + core, limit)
+    else:
+        hook = _clip_hook(core, limit)
+    hook = _redact_kid_names(hook, it)
+    # If a derived hook somehow introduced a new fact word, fall back to a clipped title.
+    if hook and not hook_is_factual(hook, it):
+        title = _plain_text(it.get("title") or it.get("headline") or "")
+        title = _redact_kid_names(title, it)
+        if is_chisme_story(it):
+            hook = _apply_rumor_prefix(title, limit)
+        elif is_tragedy_story(it) and title:
+            hook = _clip_hook("Developing: " + title, limit)
+        else:
+            hook = _clip_hook(title, limit)
+        if hook and not hook_is_factual(hook, it):
+            # last resort: title alone (always source)
+            hook = _clip_hook(title, limit)
+    return hook
+
+
+def story_hook(it, limit=HOOK_LIMIT):
+    """Packet `hook` if present, else a derived hook. Never invents facts."""
+    if not isinstance(it, dict):
+        return ""
+    raw = _plain_text(it.get("hook") or "")
+    if raw:
+        raw = _redact_kid_names(raw, it)
+        if is_chisme_story(it) and not raw.upper().startswith("RUMOR"):
+            raw = _apply_rumor_prefix(raw, limit)
+        else:
+            raw = _clip_hook(raw, limit)
+        if raw:
+            return raw
+    return derive_story_hook(it, limit)
+
+
+def derive_story_energy(it):
+    if not isinstance(it, dict):
+        return 2
+    if is_lifestyle_or_obit(it):
+        return 3 if is_feel_good_story(it) else 2
+    blob = hook_source_text(it)
+    desk = str(it.get("_desk") or "")
+    n = 2
+    if desk == "rgv" or it.get("valley") or _LOCAL_RE.search(blob):
+        n += 1
+    if _SURPRISE_RE.search(blob):
+        n += 1
+    if is_feel_good_story(it):
+        n += 1
+    if _NUMBER_RE.search(blob):
+        n += 1
+    if _SPORTS_RE.search(blob):
+        n += 1
+    if _FOOD_RE.search(blob):
+        n += 1
+    if _WEATHER_EXT_RE.search(blob):
+        n += 1
+    if _VIRAL_RE.search(blob) or desk == "trending":
+        n += 1
+    if is_tragedy_story(it):
+        n = min(n, 2)
+    return max(1, min(5, n))
+
+
+def story_energy(it):
+    """Integer 1–5. Packet field wins when it is a valid int."""
+    if isinstance(it, dict) and it.get("energy") is not None and it.get("energy") != "":
+        try:
+            return max(1, min(5, int(it["energy"])))
+        except (TypeError, ValueError):
+            pass
+    return derive_story_energy(it)
+
+
+def energy_badge(it):
+    """Return (label, kind) or ('', '')."""
+    if is_tragedy_story(it):
+        return "", ""
+    en = story_energy(it)
+    if is_feel_good_story(it) and en >= 3:
+        return "⭐ FEEL-GOOD", "feel"
+    if en >= 5:
+        return "🔥 HOT", "hot"
+    if en >= 4:
+        return "⚡ BIG", "big"
+    return "", ""
+
+
+def energy_badge_html(it):
+    label, kind = energy_badge(it)
+    if not label:
+        return ""
+    return f'<span class="ebadge eb-{esc(kind)}">{label}</span>'
+
+
+def punch_card(it, cls="", badges=""):
+    """Hook, energy score, badge and lead/top classes for a studio news card."""
+    extra = [c for c in (cls,) if c]
+    if it.get("_topen"):
+        extra.append("topen")
+    if it.get("_lead"):
+        extra.append("lead-day")
+    if is_tragedy_story(it):
+        extra.append("serious")
+    return dict(hook=story_hook(it), energy=story_energy(it),
+                badges=energy_badge_html(it) + (badges or ""), cls=" ".join(extra))
+
+
+def energy_sort_key(it):
+    return (-story_energy(it), -(it.get("_when") or 0), (it.get("title") or ""))
+
+
+def sort_stories_by_energy(items):
+    return sorted(items or [], key=energy_sort_key)
+
+
+def pick_lead_story(items, show_date=""):
+    """Single top story of the day: highest energy, not chisme; today first, then the week."""
+    pool = [i for i in (items or []) if i and not is_chisme_story(i)]
+    if not pool:
+        return None
+    today = []
+    if show_date:
+        for i in pool:
+            if str(i.get("_packet_date") or "") == str(show_date):
+                today.append(i)
+            else:
+                pub = str(i.get("published") or "")
+                if pub.startswith(str(show_date)):
+                    today.append(i)
+    use = today or pool
+
+    def lead_key(it):
+        local = 1 if (it.get("_desk") == "rgv" or it.get("valley") or _LOCAL_RE.search(hook_source_text(it))) else 0
+        feel = 1 if is_feel_good_story(it) else 0
+        return (-story_energy(it), -feel, -local, -(it.get("_when") or 0), it.get("title") or "")
+
+    return sorted(use, key=lead_key)[0]
+
+
 def _meta_content(html_text, names):
     """Read a meta content= value for any of the given property/name tokens."""
     for name in names:
@@ -1186,8 +1567,8 @@ def email_html(data, preview=False):
     clock = "".join(f'<td style="background:{c["color"]};color:#fff;{F}font-size:12px;font-weight:bold;text-align:center;padding:5px 0" width="{max(c["minutes"]/60*100,3):.1f}%" title="{esc(c["title"])}">{c["letter"]}{"★" if c["signature"] else ""}</td>' for c in data.get("showClock", []))
     ns = m["nextShow"]
     clock_leg = " · ".join(f'<b>{c["letter"]}</b> {esc(c["short"])} {c["start"]}' for c in data.get("showClock", []))
-    rgv = "".join(li(sc_email(i) + A(i, i["title"]) + f' <span style="color:#66788c;font-size:12px">{esc(i["source"])}</span>') for i in data["headlines"]["rgv"])
-    tx = "".join(li(sc_email(i) + A(i) + f' <span style="color:#66788c;font-size:12px">{esc(i["source"])}</span>') for i in data["headlines"]["texas"])
+    rgv = "".join(li(sc_email(i) + A(i, i["title"]) + (f'<br><b>{esc(story_hook(i))}</b>' if story_hook(i) else "") + f' <span style="color:#66788c;font-size:12px">{esc(i["source"])}</span>') for i in data["headlines"]["rgv"])
+    tx = "".join(li(sc_email(i) + A(i) + (f'<br><b>{esc(story_hook(i))}</b>' if story_hook(i) else "") + f' <span style="color:#66788c;font-size:12px">{esc(i["source"])}</span>') for i in data["headlines"]["texas"])
     img_html = f'<img src="{thumb_src}" width="160" align="right" style="border-radius:6px;margin:0 0 6px 10px" alt="Starship"><div style="font-size:11px;color:#66788c;clear:both">{esc(thumb["caption"])}</div>' if thumb else ""
     nat = ""
     for n in data["nationalDesk"]:
@@ -1316,9 +1697,13 @@ def txt(data):
     W("TOP HEADLINES · RGV FIRST")
     for i in data["headlines"]["rgv"]:
         W(wrap("- " + sc_txt(i) + i["title"] + f" ({i['source']})" + (f" +{len(i['sources']) - 1} more source(s)" if len(i.get("sources") or []) > 1 else ""))); W("    " + i["url"])
+        h = story_hook(i)
+        if h: W(wrap("    HOOK: " + h))
     W("  Texas:")
     for i in data["headlines"]["texas"]:
         W(wrap("- " + sc_txt(i) + i["title"] + f" ({i['source']})")); W("    " + i["url"])
+        h = story_hook(i)
+        if h: W(wrap("    HOOK: " + h))
     W("  Photo: " + data["headlines"]["image"]["caption"] + " " + data["headlines"]["image"]["credit_url"]); W()
     W(f"CHISME · what the Valley is buzzing about · {CHISME_BADGE} · last 72 hours")
     for c in data["chisme"]["items"]:
@@ -1568,14 +1953,15 @@ $('expand').onclick=function(){setAll(true)};
 $('collapse').onclick=function(){setAll(false)};
 if(location.hash.length>1){var hh=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(hh){var hp=hh.closest('details.sec');if(hp)hp.open=true;if(hh.tagName==='DETAILS')hh.open=true}}
 /* ---- order items by trend score (default) or editorial order ---- */
-var SORT=sm.get('ditm-sort')||'when';
+var SORT=sm.get('ditm-sort')||'energy';
 function sortAll(){[].forEach.call(document.querySelectorAll('.sortbox'),function(b){var k=[].slice.call(b.children).filter(function(c){return c.dataset.ord!==undefined});
- k.sort(function(a,c){var aw=+(a.dataset.when||0),cw=+(c.dataset.when||0);
+ k.sort(function(a,c){var aw=+(a.dataset.when||0),cw=+(c.dataset.when||0),ae=+(a.dataset.en||0),ce=+(c.dataset.en||0);
   if(SORT==='ord')return a.dataset.ord-c.dataset.ord;
   if(SORT==='score')return (c.dataset.sc-a.dataset.sc)||(cw-aw)||(a.dataset.ord-c.dataset.ord);
-  return (cw-aw)||(c.dataset.sc-a.dataset.sc)||(a.dataset.ord-c.dataset.ord)});k.forEach(function(c){b.appendChild(c)})});
- $('sortbtn').textContent='Sort: '+(SORT==='ord'?'Editorial':SORT==='score'?'Score':'Newest')}
-$('sortbtn').onclick=function(){SORT=SORT==='when'?'score':SORT==='score'?'ord':'when';sm.set('ditm-sort',SORT);sortAll()};
+  if(SORT==='when')return (cw-aw)||(ce-ae)||(c.dataset.sc-a.dataset.sc)||(a.dataset.ord-c.dataset.ord);
+  return (ce-ae)||(cw-aw)||(c.dataset.sc-a.dataset.sc)||(a.dataset.ord-c.dataset.ord)});k.forEach(function(c){b.appendChild(c)})});
+ $('sortbtn').textContent='Sort: '+(SORT==='ord'?'Editorial':SORT==='score'?'Score':SORT==='when'?'Newest':'Energy')}
+$('sortbtn').onclick=function(){SORT=SORT==='energy'?'when':SORT==='when'?'score':SORT==='score'?'ord':'energy';sm.set('ditm-sort',SORT);sortAll()};
 sortAll();
 function copy(u,msg){function fb(){var a=document.createElement('textarea');a.value=u;a.setAttribute('readonly','');a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{a.setSelectionRange(0,99999);document.execCommand('copy');toast(msg||'Link copied')}catch(e){toast('Copy failed: long-press the link instead')}a.remove()}
 if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(u).then(function(){toast(msg||'Link copied')},fb)}else fb()}
@@ -2050,6 +2436,20 @@ body.show-post #post-show{display:block}
 .sec .item.trn .pill{margin-right:4px}
 .sec .item.trn .tx{min-width:0}
 .sec .item.trn .tx>b.hd,.sec .item.trn .tx>b.hd a{display:block;overflow:visible;overflow-wrap:anywhere;word-break:break-word;white-space:normal;font-size:1em;line-height:1.28;margin:0}
+.hook{display:block;margin:0 0 .3rem;font-weight:800;font-size:1.02em;line-height:1.28;color:var(--fg);letter-spacing:-.01em}
+.item.serious .hook{font-weight:800}
+.ebadge{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.04em;border-radius:4px;padding:1px 6px;margin:0 4px 0 0;white-space:nowrap;vertical-align:middle}
+.eb-hot{background:#c1121f;color:#fff}.eb-big{background:#e85d04;color:#fff}.eb-feel{background:#2a9d8f;color:#fff}
+.item.topen{border-color:#e85d04;box-shadow:inset 5px 0 0 #e85d04,0 1px 0 rgba(232,93,4,.2)}
+.item.lead-day{border-color:#c1121f;box-shadow:inset 5px 0 0 #c1121f,0 0 0 2px rgba(193,18,31,.18)}
+#lead.leadbox{background:linear-gradient(180deg,#fff6e8,#ffe8cc);border:2px solid #e85d04;border-radius:12px;padding:12px 16px;margin:0 0 14px}
+#lead .leadk{margin:0 0 .35rem;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#9a3412}
+#lead .hook{font-size:1.15rem;margin:0 0 .35rem}
+#lead .leadhd{margin:0 0 .2rem;font-size:1.05rem;font-weight:800;line-height:1.3}
+#lead .leadmeta{margin:0;color:var(--mut);font-size:.85rem}
+body.dark #lead.leadbox{background:linear-gradient(180deg,#3a2410,#2a1a0c);border-color:#e85d04;color:#f4f6f8}
+body.dark #lead .leadk{color:#fdba74}
+#post-show .ps-hook{font-weight:800;margin:0 0 .35rem}
 .sec .item.trn .tx .meta{display:flex;flex-wrap:wrap;align-items:center;gap:2px 6px;min-width:0;color:var(--mut);font-size:.82rem;font-weight:600}
 .sec .item.trn .tx .meta .src{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
 .sec .item.trn .tx .ang ul,.sec .item.trn .tx .ang ol{margin:2px 0 0;padding-left:18px}
@@ -2285,14 +2685,16 @@ function trimAt(s,n){
   return (c||s.slice(0,n-1))+'…';
 }
 function confirmTag(s){return s&&s.confirm?' (CONFIRM BEFORE AIR)':'';}
+function hookOrTitle(s){return (s.hook&&String(s.hook).trim())||s.title||'';}
 function draftX(s){
   var src=s.source?(' — '+s.source):'';
-  var core='"'+s.title+'"'+src+confirmTag(s);
+  var core='"'+hookOrTitle(s)+'"'+src+confirmTag(s);
   if(s.url&&core.length+1+s.url.length<=280)return core+' '+s.url;
   return trimAt(core,280);
 }
 function draftCaption(s){
-  var parts=[s.title];
+  var parts=[hookOrTitle(s)];
+  if(s.title&&s.hook&&s.title!==s.hook)parts.push(s.title);
   if(s.synopsis)parts.push(s.synopsis);
   if(s.source)parts.push('Source: '+s.source);
   if(s.url)parts.push(s.url);
@@ -2301,24 +2703,24 @@ function draftCaption(s){
   return parts.join(' ');
 }
 function draftLinkedIn(s){
-  var line=s.title+(s.synopsis?(' — '+s.synopsis):'')+(s.source?(' ('+s.source+')'):'')+confirmTag(s);
+  var line=hookOrTitle(s)+(s.synopsis?(' — '+s.synopsis):'')+(s.source?(' ('+s.source+')'):'')+confirmTag(s);
   return trimAt(line,400);
 }
 function recapX(items, dateLabel){
   var lines=['Drew in the Morning'+(dateLabel?(' · '+dateLabel):'')+':'];
-  items.forEach(function(s){if(lines.join('\n').length>220)return; lines.push('• '+s.title);});
+  items.forEach(function(s){if(lines.join('\n').length>220)return; lines.push('• '+hookOrTitle(s));});
   var t=lines.join('\n');
   return trimAt(t,280);
 }
 function recapCaption(items, dateLabel){
   var parts=['Highlights from Drew in the Morning'+(dateLabel?(' on '+dateLabel):'')+'.'];
-  items.forEach(function(s){parts.push('• '+s.title+(s.source?(' ('+s.source+')'):''));});
+  items.forEach(function(s){parts.push('• '+hookOrTitle(s)+(s.source?(' ('+s.source+')'):''));});
   parts.push('Draft only — nothing has been posted.');
   return parts.join('\n');
 }
 function recapLinkedIn(items, dateLabel){
   var parts=['What we talked about on Drew in the Morning'+(dateLabel?(' ('+dateLabel+')'):'')+'.'];
-  items.forEach(function(s){parts.push(s.title+'.');});
+  items.forEach(function(s){parts.push(hookOrTitle(s)+'.');});
   return parts.join(' ');
 }
 function guests(){
@@ -2335,6 +2737,7 @@ function copy(text, btn){
 }
 function row(s, drafts){
   var h='<article class="ps-story'+(s.confirm?' confirm':'')+(s.rumor?' rumor':'')+'">';
+  if(s.hook)h+='<p class="ps-hook">'+esc(s.hook)+'</p>';
   h+='<h3>'+(s.url?('<a href="'+s.url.replace(/"/g,'&quot;')+'" target="_blank" rel="noopener noreferrer">'):'')+esc(s.title)+(s.url?'</a>':'')+'</h3>';
   h+='<p class="ps-meta">'+esc([s.desk,s.source,s.date].filter(Boolean).join(' · '));
   if(s.confirm)h+=' <span class="cf">CONFIRM BEFORE AIR</span>';
@@ -2790,6 +3193,8 @@ def catalog_entry(it, desk):
         "rumor": rumor,
         "chisme": rumor or desk.lower() == "chisme",
         "kids": bool(kids),
+        "hook": story_hook(it),
+        "energy": story_energy(it),
     }
 
 def build_story_catalog(week, seg):
@@ -2885,7 +3290,7 @@ def studio_html(data, archive_href=None):
     thumbhtml = f'<div class="thumbrow"><img src="{b64(asset(thumb["file"]), "image/jpeg")}" alt="Starship file photo" loading="lazy" decoding="async"><div class="src">{esc(thumb["caption"])} · {A(thumb["credit_url"], "source")}</div></div>' if thumb else ""
     # ================= v3 body: every section is a full-width bar that opens into Trending-model cards =================
     TZC = datetime.timezone(datetime.timedelta(hours=-6))
-    def tcard(title, url="", pills=(), meta="", tldr="", riff="", riff_label="Riff", score="", conf="", extra="", sec_="", ord_=None, sc=0, copy_text="", use=True, uid="", cls="", badges="", chy_unconf=False, chy_fallback=None, rmid="", when=0, date_tag=""):
+    def tcard(title, url="", pills=(), meta="", tldr="", riff="", riff_label="Riff", score="", conf="", extra="", sec_="", ord_=None, sc=0, copy_text="", use=True, uid="", cls="", badges="", chy_unconf=False, chy_fallback=None, rmid="", when=0, date_tag="", hook="", energy=0):
         """THE card (Trending News model): headline, meta line (source / date / score / badges), TL;DR, Riff, then link + copy + used.
         Any field that has no data is left out cleanly; nothing is invented to fill a slot."""
         head = A(url, title) if url else esc(title)
@@ -2903,10 +3308,11 @@ def studio_html(data, archive_href=None):
         hl = CHY_ITEMS[cid]["headline"]
         acts = CP(ct, "Copy link" if url and not copy_text else "Copy") + chy_btn(cid, hl) + (use_btn(sec_, title, url, rmid) if (use and sec_) else "")
         pills_txt = " ".join((x[0] if isinstance(x, tuple) else x) for x in pills if x)
-        hay = " ".join(x for x in (title, meta, tldr, riff_txt, conf, sec_, pills_txt) if x)
-        attrs = (f' data-ord="{ord_}" data-sc="{sc}"' if ord_ is not None else "") + (f' id="{uid}"' if uid else "") + (f' data-rmid="{esc(rmid)}"' if rmid else "") + (f' data-when="{int(when)}"' if when else "") + f' data-chyid="{cid}" data-chyh="{esc(hl)}" data-q="{esc(hay)}"'
+        hay = " ".join(x for x in (hook, title, meta, tldr, riff_txt, conf, sec_, pills_txt) if x)
+        attrs = (f' data-ord="{ord_}" data-sc="{sc}" data-en="{int(energy or 0)}"' if ord_ is not None else "") + (f' id="{uid}"' if uid else "") + (f' data-rmid="{esc(rmid)}"' if rmid else "") + (f' data-when="{int(when)}"' if when else "") + f' data-chyid="{cid}" data-chyh="{esc(hl)}" data-q="{esc(hay)}"'
         rmx = (f'<button type="button" class="rmx" data-rmid="{esc(rmid)}" aria-label="Remove story" title="Remove story">×</button>' if rmid else "")
-        return (f'<div class="item trn tc{(" " + cls) if cls else ""}"{attrs}>{rmx}<div class="tx"><b class="hd">{head}</b><div class="meta">{pl}{tag}{mt}{score}{badges}<span class="upill">USED</span><span class="apill">AIRED</span><span class="xpill">EXPIRED</span> <button type="button" class="sd-restore">Restore</button>{cf}</div>{td}{rf}{extra}</div><div class="acts">{acts}</div></div>')
+        hk = f'<p class="hook">{esc(hook)}</p>' if hook and hook.strip().lower()!=title.strip().lower() else ""
+        return (f'<div class="item trn tc{(" " + cls) if cls else ""}"{attrs}>{rmx}<div class="tx">{hk}<b class="hd">{head}</b><div class="meta">{pl}{tag}{mt}{score}{badges}<span class="upill">USED</span><span class="apill">AIRED</span><span class="xpill">EXPIRED</span> <button type="button" class="sd-restore">Restore</button>{cf}</div>{td}{rf}{extra}</div><div class="acts">{acts}</div></div>')
     def grid(cards, empty=""):
         return '<div class="sortbox">' + ("".join(cards) or f'<p class="mut noev">{esc(empty)}</p>') + "</div>"
     def lks_of(links):
@@ -2928,7 +3334,7 @@ def studio_html(data, archive_href=None):
     def hcard(i, sec_):
         pubs = ""
         return tcard(i["title"], i.get("url", "") or _story_url(i), pills=(("VALLEY", "#2a7de1"),) if i.get("valley") else (), meta=i.get("source", "") + ((" · " + dtl(i["published"])) if i.get("published") else ""), tldr=story_synopsis(i),
-                     score=sc_studio(i), conf=conf_text(i) if i.get("confirm") else "", sec_=sec_, ord_=i.get("ord", 0), sc=i.get("score", 0), **news_bits(i))
+                     score=sc_studio(i), conf=conf_text(i) if i.get("confirm") else "", sec_=sec_, ord_=i.get("ord", 0), sc=i.get("score", 0), **punch_card(i), **news_bits(i))
 
     # ---- rolling 7-day news window (today + prior packets on disk; email/print still use today's data only)
     week = merge_week_news(data, os.path.join(HERE, ".."), data["meta"]["date"])
@@ -2940,6 +3346,7 @@ def studio_html(data, archive_href=None):
 
     # ---- chisme
     ch = data.get("chisme") or {}
+    week["chisme"] = sort_stories_by_energy(week.get("chisme") or [])
     chi = week["chisme"]
     def chcard(c, k):
         mt = c.get("metrics") or {}
@@ -2948,8 +3355,8 @@ def studio_html(data, archive_href=None):
         cb = c.get("confirmedBy")
         badge = (f'<span class="sb t" title="{esc(cb["url"])}">CONFIRMED · {esc(cb["outlet"])}</span>' if cb else f'<span class="cf">{esc(c.get("badge") or CHISME_BADGE)}</span>')
         when = dtl(c.get("published", ""))
-        return tcard(c["title"], c.get("url") or _story_url(c), pills=(c.get("platform", ""), c.get("source", "")), meta=when, tldr=story_synopsis(c), riff=c.get("riff", ""), score=score, badges=badge,
-                     sec_="Chisme", ord_=k, sc=eng or 0, cls="chisme", chy_unconf=not c.get("confirmedBy"), chy_fallback=" · ".join(x for x in (c.get("platform", ""), when) if x), **news_bits(c))
+        return tcard(c["title"], c.get("url") or _story_url(c), pills=(c.get("platform", ""), c.get("source", "")), meta=when, tldr=story_synopsis(c), riff=c.get("riff", ""), score=score,
+                     sec_="Chisme", ord_=k, sc=eng or 0, chy_unconf=not c.get("confirmedBy"), chy_fallback=" · ".join(x for x in (c.get("platform", ""), when) if x), **punch_card(c, cls="chisme", badges=badge), **news_bits(c))
     src_status = ch.get("sources") or {}
     ok_src = [f'{k.split(":")[0]} {v["items"]}' for k, v in src_status.items() if v.get("ok")]
     bad_src = sorted({k.split(":")[0].split("/")[0].replace("r", "reddit", 1) if k.startswith("r/") else k.split(":")[0] for k, v in src_status.items() if not v.get("ok")})
@@ -2967,6 +3374,10 @@ def studio_html(data, archive_href=None):
                                  national=week["national"], trending=week["trending"],
                                  tech=week["tech"], memes=_meme_flat)
     global STORY_CATALOG
+    for _L in "CDEFGHI":
+        seg[_L] = sort_stories_by_energy(seg.get(_L) or [])
+        if seg[_L]:
+            seg[_L][0]["_topen"] = True
     STORY_CATALOG = build_story_catalog(week, seg)
     data["_story_catalog"] = STORY_CATALOG
     _moved = {_story_key(i) for i in (seg.get("H") or []) + (seg.get("LIFE") or [])
@@ -2977,25 +3388,35 @@ def studio_html(data, archive_href=None):
         valley = f'<p class="ang"><b>Valley angle:</b> {esc(n["valley"])}</p>' if n.get("valley") else ""
         u = n["links"][0]["url"] if n.get("links") else ""
         return tcard(n["title"], u, meta="National Desk", tldr=story_synopsis(n), riff=n.get("angle", ""), score=sc_studio(n), conf=conf_text(n) if n.get("confirm") else "",
-                     extra=valley, sec_="National Desk", ord_=n.get("ord", k_), sc=n.get("score", 0), uid=f"nat-{k_}", **news_bits(n))
-    _nat_keep = [n for n in week["national"] if _story_key(n) not in _moved]
-    nat = grid([ncard(n, k_) for k_, n in enumerate(_nat_keep)], "No National Desk stories loaded.")
+                     extra=valley, sec_="National Desk", ord_=n.get("ord", k_), sc=n.get("score", 0), uid=f"nat-{k_}", **punch_card(n), **news_bits(n))
+    _nat_keep = sort_stories_by_energy([n for n in week["national"] if _story_key(n) not in _moved])
+    if _nat_keep:
+        _nat_keep[0]["_topen"] = True
     # ---- trending news
     def trcard(t, k_):
         c = trend_item_conf(t)
         media = f'<div class="src">Video: {A(t["video_url"], "watch")}{(" · credit: " + esc(t["image_credit"])) if t.get("image_credit") else ""}</div>' if t.get("video_url") else ""
         when = ((" · " + dtl(t["published"])) if t.get("published") else "")
         return tcard(t["title"], t.get("source_url", "") or _story_url(t), pills=(t.get("category", ""),), meta=(t.get("source", "") + when), tldr=story_synopsis(t), score=sc_studio(t), conf=c or "",
-                     extra=media, sec_="Trending", ord_=t.get("ord", 0), sc=t.get("score", 0), **news_bits(t))
-    _tr_keep = [t for t in week["trending"] if _story_key(t) not in _moved]
-    trn = '<p class="mut">What\'s trending around the nation. Separate from the National Desk (no duplicates). Source order: X trends/news, AP/Reuters, Google Trends, YouTube trending.</p>' + grid([trcard(t, k_) for k_, t in enumerate(_tr_keep)], "No trending items loaded.")
+                     extra=media, sec_="Trending", ord_=t.get("ord", 0), sc=t.get("score", 0), **punch_card(t), **news_bits(t))
+    _tr_keep = sort_stories_by_energy([t for t in week["trending"] if _story_key(t) not in _moved])
+    if _tr_keep:
+        _tr_keep[0]["_topen"] = True
     # ---- tech
     tk = data["tech"]
     def tkcard(t, k_):
         return tcard(t["title"], t.get("source_url", "") or _story_url(t), pills=("TECH",), meta=" · ".join(x for x in (t.get("source", ""), t.get("published", "")) if x), tldr=story_synopsis(t),
-                     badges=f'<span class="sb {"a" if tk["origin"] == "wires" else "t"}" title="{esc(tk["originLabel"])}">{esc(t.get("basis") or tk.get("badge") or "")}</span>', conf=t["confirm"] if t.get("confirm") else "",
-                     sec_="Tech", ord_=k_, sc=0, **news_bits(t))
-    _tech_keep = [t for t in week["tech"] if _story_key(t) not in _moved]
+                     conf=t["confirm"] if t.get("confirm") else "",
+                     sec_="Tech", ord_=k_, sc=0, **punch_card(t, badges=f'<span class="sb {"a" if tk["origin"] == "wires" else "t"}" title="{esc(tk["originLabel"])}">{esc(t.get("basis") or tk.get("badge") or "")}</span>'), **news_bits(t))
+    _tech_keep = sort_stories_by_energy([t for t in week["tech"] if _story_key(t) not in _moved])
+    if _tech_keep:
+        _tech_keep[0]["_topen"] = True
+    _lead_pool = [i for _L in "CDEFGHI" for i in (seg.get(_L) or [])] + list(_nat_keep) + list(_tr_keep) + list(_tech_keep)
+    _lead_it = pick_lead_story(_lead_pool, (data.get("meta") or {}).get("date") or "")
+    if _lead_it:
+        _lead_it["_lead"] = True
+    nat = grid([ncard(n, k_) for k_, n in enumerate(_nat_keep)], "No National Desk stories loaded.")
+    trn = '<p class="mut">What\'s trending around the nation. Separate from the National Desk (no duplicates). Source order: X trends/news, AP/Reuters, Google Trends, YouTube trending.</p>' + grid([trcard(t, k_) for k_, t in enumerate(_tr_keep)], "No trending items loaded.")
     tech_h = (f'<p class="mut"><b>{esc(tk["badge"])}</b> · {esc(tk["originLabel"])}</p>' + (f'<p class="mut">{esc(tk["note"])}</p>' if tk.get("note") else "")
               + grid([tkcard(t, k_) for k_, t in enumerate(_tech_keep)], "No tech items loaded today."))
 
@@ -3080,7 +3501,7 @@ def studio_html(data, archive_href=None):
         items = seg.get(L) or []
         n, bdg = sc_agg(items)
         return grid([hcard(i, sec_name) for i in items], empty), (f"{n} stories" if n else "No stories today"), bdg, n
-    nav = "".join(f'<a href="#{i}" data-jump="{i}">{t}</a>' for i, t in (("brk", "Breaking"), ("blk-A", "Cold open"), ("blk-B", "Up To"), ("blk-C", "Local News"), ("chisme", "Chisme"),
+    nav = "".join(f'<a href="#{i}" data-jump="{i}">{t}</a>' for i, t in (("brk", "Breaking"), ("lead", "Lead"), ("blk-A", "Cold open"), ("blk-B", "Up To"), ("blk-C", "Local News"), ("chisme", "Chisme"),
                                                                        ("blk-D", "Local Politics"), ("blk-E", "School Boards"), ("blk-F", "City Hall"), ("blk-G", "Econ Dev"), ("blk-H", "Family & Kids"), ("blk-I", "Statewide"),
                                                                        ("blk-J", "National"), ("trending", "Trending"), ("tech", "Tech"), ("lifestyle", "Lifestyle"), ("obits", "Neighbors"), ("memes", "Meme of the Week"),
                                                                        ("weather", "Weather"), ("hs", "HS Football"), ("nfl", "NFL"), ("nba", "NBA"), ("mlb", "MLB"), ("used", "Used list"), ("aired", "Aired"), ("expired", "Expired"), ("post-show", "Post-show")))
@@ -3129,7 +3550,26 @@ def studio_html(data, archive_href=None):
     l_badges = (f'<span class="cf">{cfm} CONFIRM</span>' if cfm else "")
     def maybe(L, *a, **k):
         return blk(L, *a, **k) if L in byL else ""
-    body = "".join([
+    def lead_banner(it):
+        if not it:
+            return ""
+        hook = story_hook(it)
+        title = it.get("title") or ""
+        url = it.get("url") or _story_url(it) or ""
+        desk = it.get("_desk") or ""
+        desk_l = {"rgv": "Local News", "texas": "Statewide", "national": "National", "trending": "Trending", "tech": "Tech"}.get(desk, desk.replace("_", " ").title() if desk else "")
+        src = it.get("source") or ""
+        tag = it.get("_date_tag") or ""
+        badge = energy_badge_html(it)
+        head = A(url, title) if url else esc(title)
+        same = hook and hook.strip().lower()==title.strip().lower()
+        hook_h = (f'<p class="hook">{esc(hook)}</p>' if hook and not same else "")
+        return (f'<div id="lead" class="leadbox"><p class="leadk">Lead with this {badge}</p>'
+                f'{hook_h}'
+                f'<p class="leadhd">{head}</p>'
+                f'<p class="leadmeta">{esc(" · ".join(x for x in (desk_l, src, tag) if x))}</p></div>')
+    body = lead_banner(_lead_it) + "".join([
+
         maybe("A", "", count=""),
         maybe("B", grid(b_cards, "No look-ahead items today."), count=(f"{len(b_cards)} events" if b_cards else "No events")),
         maybe("C", c_body, count=c_count, badges=c_badges),
@@ -3207,7 +3647,7 @@ def studio_html(data, archive_href=None):
         f'<button id="theme" type="button" title="Toggle dark/light">Dark / Light</button>'
         f'<button id="smaller" type="button">A−</button><button id="bigger" type="button">A+</button>'
         f'<button id="expand" type="button">Expand all</button><button id="collapse" type="button">Collapse all</button>'
-        f'<button id="sortbtn" type="button" title="Order items by trend score or by the original editorial order">Sort: Score</button>'
+        f'<button id="sortbtn" type="button" title="Order items by energy, newest, trend score, or editorial order">Sort: Energy</button>'
         f'<button id="ssreset" type="button" title="Stop the show and reset to 0:00" aria-label="Stop the show and reset to 0:00" aria-haspopup="dialog" aria-controls="stop-dlg">Stop &amp; reset</button>'
         f'<button id="rm-show" type="button">Show removed (0)</button><button id="rm-restore" type="button">Restore all</button><button id="ps-open" type="button">Post-show recap</button>'
         f'<button id="chlink" type="button" class="chlink" title="Link this page to the OBS chyron (paste the link code once)">Link chyron</button>'
