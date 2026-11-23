@@ -236,8 +236,9 @@ def tldr_of(r: dict) -> str:
     t = re.sub(r"\s+", " ", html_mod.unescape(re.sub(r"<[^>]+>", " ", r.get("text") or ""))).strip()
     if not t:
         return ""
-    cut = t[:220]
-    if len(t) > 220:
+    # 400 matches the studio synopsis cap (2–3 sentences). Never invent; only the post's own text.
+    cut = t[:400]
+    if len(t) > 400:
         cut = cut.rsplit(" ", 1)[0] + "…"
     return redact(cut)
 

@@ -35,7 +35,7 @@ try:
     import trend_score as TS
 except Exception:  # pragma: no cover
     TS = None
-OPTS = {"fetch_trends": False, "score": True}
+OPTS = {"fetch_trends": False, "score": True, "enrich_synopses": False}
 
 # ---------------------------------------------------------------- weather
 def fetch_json(url):
@@ -303,6 +303,147 @@ def story_when(it, packet_date=None):
 def story_date_tag(it, packet_date=None):
     when = story_when(it, packet_date)
     return when.strftime("%b %-d") if when else ""
+
+# Studio synopsis: 2–3 sentences, ~250–400 characters, from real article text only. Never invent.
+SYNOPSIS_LIMIT = 400
+_SYNOPSIS_FIELDS = ("tldr", "summary", "description", "dek", "excerpt", "one_line", "text", "body", "what", "_fetched_desc")
+
+
+def _plain_text(t):
+    t = re.sub(r"<[^>]+>", " ", str(t or ""))
+    return re.sub(r"\s+", " ", html.unescape(t)).strip()
+
+
+def _norm_cmp(t):
+    return re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()
+
+
+def _is_title_echo(text, title):
+    """True when the text is just the headline (or a shorter rewrite), not a synopsis."""
+    a, b = _norm_cmp(text), _norm_cmp(title)
+    if not a:
+        return True
+    if not b:
+        return False
+    if a == b:
+        return True
+    if a in b and len(a) <= len(b) + 10:
+        return True
+    if b in a and len(a) <= len(b) + 10:
+        return True
+    return False
+
+
+def trim_synopsis(text, limit=SYNOPSIS_LIMIT):
+    """Keep up to 3 sentences or `limit` characters, breaking at a sentence or word."""
+    text = _plain_text(text)
+    if not text or len(text) <= limit:
+        return text
+    sents = re.split(r"(?<=[.!?])\s+", text)
+    out = []
+    for sent in sents:
+        if not sent:
+            continue
+        nxt = (" ".join(out + [sent])).strip()
+        if len(nxt) <= limit and len(out) < 3:
+            out.append(sent)
+            continue
+        break
+    if out and (len(" ".join(out)) >= min(180, limit // 2) or len(sents) <= 3):
+        return " ".join(out)
+    cut = text[:limit].rsplit(" ", 1)[0].rstrip(" ,;:-–—")
+    return (cut or text[:limit]) + "…"
+
+
+def story_synopsis(it, limit=SYNOPSIS_LIMIT):
+    """Best real synopsis already on the item. Empty if only a headline exists. Never invents."""
+    if not isinstance(it, dict):
+        return ""
+    title = _plain_text(it.get("title") or it.get("headline") or "")
+    cands = []
+    for key in _SYNOPSIS_FIELDS:
+        val = _plain_text(it.get(key) or "")
+        if val and not _is_title_echo(val, title):
+            cands.append(val)
+    for key in ("short", "teaser"):
+        val = _plain_text(it.get(key) or "")
+        if val and len(val) >= 80 and not _is_title_echo(val, title):
+            cands.append(val)
+    if not cands:
+        return ""
+    text = max(cands, key=len)
+    return trim_synopsis(text, limit)
+
+
+def _meta_content(html_text, names):
+    """Read a meta content= value for any of the given property/name tokens."""
+    for name in names:
+        name_re = re.escape(name)
+        pats = (
+            rf'<meta\b[^>]+(?:property|name)=["\']{name_re}["\'][^>]*?content=["\']([^"\']+)["\']',
+            rf'<meta\b[^>]+content=["\']([^"\']+)["\'][^>]*?(?:property|name)=["\']{name_re}["\']',
+        )
+        for pat in pats:
+            m = re.search(pat, html_text, re.I)
+            if m:
+                val = _plain_text(m.group(1))
+                if val:
+                    return val
+    return ""
+
+
+def fetch_story_description(url, timeout=8):
+    """Read-only public fetch of og:description / meta description. Empty on failure. Never invents."""
+    if not str(url or "").startswith("https://"):
+        return ""
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8",
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            if getattr(r, "status", 200) >= 400:
+                return ""
+            raw = r.read(200_000)
+    except Exception:
+        return ""
+    try:
+        body = raw.decode("utf-8", "replace")
+    except Exception:
+        return ""
+    desc = _meta_content(body, ("og:description", "twitter:description", "description"))
+    return desc
+
+
+def enrich_synopses(items, fetch=fetch_story_description, min_len=250, limit=SYNOPSIS_LIMIT):
+    """Fill short synopses from a public page description. Mutates items in place. Soft-fails."""
+    jobs = []
+    for it in items or []:
+        if not isinstance(it, dict):
+            continue
+        have = story_synopsis(it, limit)
+        if len(have) >= min_len:
+            continue
+        url = it.get("url") or it.get("source_url") or _story_url(it)
+        if str(url).startswith("https://"):
+            jobs.append((it, url, have))
+    if not jobs:
+        return 0
+    filled = 0
+
+    def one(job):
+        it, url, have = job
+        desc = fetch(url) or ""
+        return it, have, desc
+
+    workers = min(6, len(jobs))
+    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
+        for it, have, desc in pool.map(one, jobs):
+            desc = _plain_text(desc)
+            if desc and len(desc) > len(have) and not _is_title_echo(desc, it.get("title") or it.get("headline") or ""):
+                it["_fetched_desc"] = desc
+                filled += 1
+    return filled
 
 def _packet_file_for_day(root, day):
     iso = day.isoformat() if hasattr(day, "isoformat") else str(day)
@@ -1746,7 +1887,7 @@ details.sec[open]{grid-column:1/-1}
 @media (max-width:560px){.sec>summary .tn{font-size:.84rem;letter-spacing:0}.sec>summary .sm{max-width:8.5rem}.sec>summary .sm .sb:nth-child(n+3){display:none}}
 .sec>.body{padding:8px clamp(8px,1.2vw,12px) 10px}
 /* expanded sections fill the row; even-height story cards in a responsive grid */
-.sec .sortbox{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:8px;align-items:stretch}
+.sec .sortbox{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:8px;align-items:stretch}
 .sec .sortbox>.item{border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--bg);display:flex;flex-direction:column;align-items:stretch;gap:5px;min-width:0;min-height:100%;overflow:hidden;box-sizing:border-box}
 .sec .sortbox>.item[data-rmid]{position:relative;padding-top:8px;padding-right:48px}
 .rmx{position:absolute;top:2px;right:2px;min-width:44px;min-height:44px;padding:0;border:0;border-radius:8px;background:transparent;color:#c8102e;font-size:22px;font-weight:900;line-height:1;cursor:pointer;z-index:2;font-family:inherit}
@@ -1797,12 +1938,16 @@ summary,summary *,.rtn,.tn,.tt,h3,h4{overflow-wrap:normal;word-break:normal;hyph
 .sec>summary .sm .tr{flex:none;min-width:6.4rem;margin:0 0 0 4px;color:#fff;font-size:.95rem}
 .sec>summary .sm .tr small{min-height:0;font-size:.68rem;white-space:nowrap}
 .sec .sortbox>.item.trn{gap:4px}
-.sec .sortbox .tldr,.sec .sortbox .ang{margin:0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;line-height:1.25;max-width:100%}
+.sec .sortbox .ang{margin:0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;line-height:1.25;max-width:100%}
+.sec .sortbox .tldr{margin:0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:12;overflow:hidden;line-height:1.35;max-width:100%;overflow-wrap:anywhere}
+.sec .sortbox .item.tldr-open .tldr{display:block;-webkit-line-clamp:unset;overflow:visible}
+.tldr-exp{align-self:flex-start;margin:0;min-height:44px;min-width:44px;padding:0 10px;border:0;border-radius:8px;background:transparent;color:var(--acc,#2a7de1);font:inherit;font-size:.82rem;font-weight:800;cursor:pointer}
+.tldr-exp:hover,.tldr-exp:focus-visible{text-decoration:underline;outline:none}
 .sec .sortbox .tc .wico{margin-top:4px;flex:none}
 .sec .sortbox>.noev{grid-column:1/-1;margin:2px 0}
 .sec .item.trn .pill{margin-right:4px}
 .sec .item.trn .tx{min-width:0}
-.sec .item.trn .tx>b.hd,.sec .item.trn .tx>b.hd a{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;overflow-wrap:anywhere;word-break:break-word;font-size:1em;line-height:1.22;margin:0}
+.sec .item.trn .tx>b.hd,.sec .item.trn .tx>b.hd a{display:block;overflow:visible;overflow-wrap:anywhere;word-break:break-word;white-space:normal;font-size:1em;line-height:1.28;margin:0}
 .sec .item.trn .tx .meta{display:flex;flex-wrap:wrap;align-items:center;gap:2px 6px;min-width:0;color:var(--mut);font-size:.82rem;font-weight:600}
 .sec .item.trn .tx .meta .src{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
 .sec .item.trn .tx .ang ul,.sec .item.trn .tx .ang ol{margin:2px 0 0;padding-left:18px}
@@ -1817,6 +1962,33 @@ summary,summary *,.rtn,.tn,.tt,h3,h4{overflow-wrap:normal;word-break:normal;hyph
 .tc.chisme{border-left:4px solid #b5179e}
 .tc .cf{white-space:nowrap}
 @media (max-width:560px){.sec>summary .sm:has(.cf) .cnt{display:none}.sec>summary .sm{max-width:11rem}.sec>summary .sm .sb{display:none}#obits>summary .sm{max-width:13.5rem}.sec>summary .sm .tr{min-width:0;font-size:.8rem;margin:0}.sec>summary .sm .tr small{display:none}}
+"""
+
+TLDR_JS = r"""
+(function(){
+function needs(el){return el && el.scrollHeight>el.clientHeight+2}
+function paint(){
+  document.querySelectorAll('.item.trn .tldr').forEach(function(p){
+    if(p.dataset.expInit)return;
+    if(!needs(p))return;
+    p.dataset.expInit='1';
+    var b=document.createElement('button');
+    b.type='button';b.className='tldr-exp';b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Show full synopsis');
+    b.textContent='More';
+    b.addEventListener('click',function(e){
+      e.preventDefault();e.stopPropagation();
+      var item=p.closest('.item'); if(!item)return;
+      var open=item.classList.toggle('tldr-open');
+      b.setAttribute('aria-expanded',open?'true':'false');
+      b.setAttribute('aria-label',open?'Hide extra synopsis':'Show full synopsis');
+      b.textContent=open?'Less':'More';
+    });
+    p.insertAdjacentElement('afterend',b);
+  });
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',paint);else paint();
+window.ditmTldr={paint:paint};
+})();
 """
 
 CHY_JS = r"""
@@ -2130,7 +2302,7 @@ def studio_html(data, archive_href=None):
         cf = ' <span class="cf">CONFIRM BEFORE AIR</span>' if conf else ""
         tag = f'<span class="dtg">{esc(date_tag)}</span>' if date_tag else ""
         mt = f'<span class="src">{esc(meta)}</span>' if meta else ""
-        summary = tldr or (conf or "")
+        summary = tldr or ""
         td = f'<p class="tldr">{esc(summary)}</p>' if summary else ""
         riff_txt = re.sub(r"<[^>]+>", " ", riff) if riff.startswith("<") else riff
         rf = f'<p class="ang"><b>{esc(riff_label)}:</b> {esc(riff_txt)}</p>' if riff_txt.strip() else ""
@@ -2164,7 +2336,7 @@ def studio_html(data, archive_href=None):
         return dict(rmid=i.get("_rmid") or story_remove_id(i), when=when, date_tag=i.get("_date_tag") or story_date_tag(i, pkt_day))
     def hcard(i, sec_):
         pubs = ""
-        return tcard(i["title"], i.get("url", "") or _story_url(i), pills=(("VALLEY", "#2a7de1"),) if i.get("valley") else (), meta=i.get("source", "") + ((" · " + dtl(i["published"])) if i.get("published") else ""), tldr=i.get("tldr") or i.get("summary") or i.get("short") or "",
+        return tcard(i["title"], i.get("url", "") or _story_url(i), pills=(("VALLEY", "#2a7de1"),) if i.get("valley") else (), meta=i.get("source", "") + ((" · " + dtl(i["published"])) if i.get("published") else ""), tldr=story_synopsis(i),
                      score=sc_studio(i), conf=conf_text(i) if i.get("confirm") else "", sec_=sec_, ord_=i.get("ord", 0), sc=i.get("score", 0), **news_bits(i))
 
     # ---- rolling 7-day news window (today + prior packets on disk; email/print still use today's data only)
@@ -2172,6 +2344,8 @@ def studio_html(data, archive_href=None):
     data["_week"] = {"found": [d.isoformat() for d in week["found"]], "missing": [d.isoformat() for d in week["missing"]],
                      "window": [week["window"][0].isoformat(), week["window"][1].isoformat()],
                      "counts": {k: len(week[k]) for k in ("rgv", "texas", "national", "trending", "tech", "chisme")}}
+    if OPTS.get("enrich_synopses"):
+        enrich_synopses([it for k in ("rgv", "texas", "national", "trending", "tech", "chisme") for it in (week.get(k) or [])])
 
     # ---- chisme
     ch = data.get("chisme") or {}
@@ -2183,7 +2357,7 @@ def studio_html(data, archive_href=None):
         cb = c.get("confirmedBy")
         badge = (f'<span class="sb t" title="{esc(cb["url"])}">CONFIRMED · {esc(cb["outlet"])}</span>' if cb else f'<span class="cf">{esc(c.get("badge") or CHISME_BADGE)}</span>')
         when = dtl(c.get("published", ""))
-        return tcard(c["title"], c.get("url") or _story_url(c), pills=(c.get("platform", ""), c.get("source", "")), meta=when, tldr=c.get("tldr", ""), riff=c.get("riff", ""), score=score, badges=badge,
+        return tcard(c["title"], c.get("url") or _story_url(c), pills=(c.get("platform", ""), c.get("source", "")), meta=when, tldr=story_synopsis(c), riff=c.get("riff", ""), score=score, badges=badge,
                      sec_="Chisme", ord_=k, sc=eng or 0, cls="chisme", chy_unconf=not c.get("confirmedBy"), chy_fallback=" · ".join(x for x in (c.get("platform", ""), when) if x), **news_bits(c))
     src_status = ch.get("sources") or {}
     ok_src = [f'{k.split(":")[0]} {v["items"]}' for k, v in src_status.items() if v.get("ok")]
@@ -2208,7 +2382,7 @@ def studio_html(data, archive_href=None):
     def ncard(n, k_):
         valley = f'<p class="ang"><b>Valley angle:</b> {esc(n["valley"])}</p>' if n.get("valley") else ""
         u = n["links"][0]["url"] if n.get("links") else ""
-        return tcard(n["title"], u, meta="National Desk", tldr=n.get("summary", ""), riff=n.get("angle", ""), score=sc_studio(n), conf=conf_text(n) if n.get("confirm") else "",
+        return tcard(n["title"], u, meta="National Desk", tldr=story_synopsis(n), riff=n.get("angle", ""), score=sc_studio(n), conf=conf_text(n) if n.get("confirm") else "",
                      extra=valley, sec_="National Desk", ord_=n.get("ord", k_), sc=n.get("score", 0), uid=f"nat-{k_}", **news_bits(n))
     _nat_keep = [n for n in week["national"] if _story_key(n) not in _moved]
     nat = grid([ncard(n, k_) for k_, n in enumerate(_nat_keep)], "No National Desk stories loaded.")
@@ -2217,14 +2391,14 @@ def studio_html(data, archive_href=None):
         c = trend_item_conf(t)
         media = f'<div class="src">Video: {A(t["video_url"], "watch")}{(" · credit: " + esc(t["image_credit"])) if t.get("image_credit") else ""}</div>' if t.get("video_url") else ""
         when = ((" · " + dtl(t["published"])) if t.get("published") else "")
-        return tcard(t["title"], t.get("source_url", "") or _story_url(t), pills=(t.get("category", ""),), meta=(t.get("source", "") + when), tldr=t.get("one_line", "") or t.get("short") or "", score=sc_studio(t), conf=c or "",
+        return tcard(t["title"], t.get("source_url", "") or _story_url(t), pills=(t.get("category", ""),), meta=(t.get("source", "") + when), tldr=story_synopsis(t), score=sc_studio(t), conf=c or "",
                      extra=media, sec_="Trending", ord_=t.get("ord", 0), sc=t.get("score", 0), **news_bits(t))
     _tr_keep = [t for t in week["trending"] if _story_key(t) not in _moved]
     trn = '<p class="mut">What\'s trending around the nation. Separate from the National Desk (no duplicates). Source order: X trends/news, AP/Reuters, Google Trends, YouTube trending.</p>' + grid([trcard(t, k_) for k_, t in enumerate(_tr_keep)], "No trending items loaded.")
     # ---- tech
     tk = data["tech"]
     def tkcard(t, k_):
-        return tcard(t["title"], t.get("source_url", "") or _story_url(t), pills=("TECH",), meta=" · ".join(x for x in (t.get("source", ""), t.get("published", "")) if x), tldr=t.get("one_line", "") or t.get("short") or "",
+        return tcard(t["title"], t.get("source_url", "") or _story_url(t), pills=("TECH",), meta=" · ".join(x for x in (t.get("source", ""), t.get("published", "")) if x), tldr=story_synopsis(t),
                      badges=f'<span class="sb {"a" if tk["origin"] == "wires" else "t"}" title="{esc(tk["originLabel"])}">{esc(t.get("basis") or tk.get("badge") or "")}</span>', conf=t["confirm"] if t.get("confirm") else "",
                      sec_="Tech", ord_=k_, sc=0, **news_bits(t))
     _tech_keep = [t for t in week["tech"] if _story_key(t) not in _moved]
@@ -2461,7 +2635,7 @@ def studio_html(data, archive_href=None):
 <nav>{nav}</nav>
 <main>{body}</main>
 <footer>{arch}<b>Jump segues (menu):</b><ul>{segs}</ul>Every item links to its source and opens in a new tab; Copy link puts the URL on your clipboard for sharing on screen. CONFIRM BEFORE AIR = verify first. No trackers, no external scripts or fonts. The only network request is the header clock's weather lookup (api.weather.gov); the page works offline (the clock then shows the build-time temperature, and links need internet). Show Start times are computed in the page from each block's offset and length.{(" Links checked "+chk["date"]+": "+str(chk["ok"])+" ok, "+str(chk["blocked"])+" bot-blocked, "+str(chk["dead"])+" dead.") if chk else ""}</footer>
-<div id="toast" role="status"></div><script>{STUDIO_JS}</script><script>{SEARCH_JS}</script><script>{SHOW_JS}</script><script>{CHY_JS}</script><script>{REMOVE_JS}</script><script>{CLOCK_JS}</script><script>{BRK_JS}</script></body></html>"""
+<div id="toast" role="status"></div><script>{STUDIO_JS}</script><script>{SEARCH_JS}</script><script>{SHOW_JS}</script><script>{CHY_JS}</script><script>{REMOVE_JS}</script><script>{TLDR_JS}</script><script>{CLOCK_JS}</script><script>{BRK_JS}</script></body></html>"""
 
 
 # ---------------------------------------------------------------- render
@@ -2540,8 +2714,9 @@ def main():
     ap.add_argument("--force-latest", action="store_true", help="let a SAMPLE/test build replace the latest-* copies and docs/index.html")
     ap.add_argument("--fetch-trends", action="store_true", help="fetch Google Trends (US-TX + US) for the trend score and cache it in data/trends-cache.json (else use the cache if < 36 h old)")
     ap.add_argument("--no-score", action="store_true", help="skip dedupe + trend score + badges + sorting")
+    ap.add_argument("--enrich-synopses", action="store_true", help="re-fetch public og:description/meta description for stories whose synopsis is short (read-only; soft-fail)")
     a = ap.parse_args()
-    OPTS["fetch_trends"] = a.fetch_trends; OPTS["score"] = not a.no_score
+    OPTS["fetch_trends"] = a.fetch_trends; OPTS["score"] = not a.no_score; OPTS["enrich_synopses"] = a.enrich_synopses
     os.makedirs(a.out, exist_ok=True)
     data = prepare(json.load(open(a.data)), a.obs_data, a.refresh_weather)
     stem = os.path.join(a.out, data["meta"]["fileStem"])
