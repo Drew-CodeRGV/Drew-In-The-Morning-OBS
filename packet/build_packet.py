@@ -1562,7 +1562,7 @@ try{opn=JSON.parse(sm.get(OK)||'{}')||{}}catch(e){opn={}}
 var DET=[].slice.call(document.querySelectorAll('details[id]'));
 DET.forEach(function(d){if(opn[d.id])d.open=true});
 var lastTap=0;document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('summary'))lastTap=Date.now()},true);
-DET.forEach(function(d){d.addEventListener('toggle',function(){if(d.open)opn[d.id]=1;else delete opn[d.id];sm.set(OK,JSON.stringify(opn));if(d.open&&Date.now()-lastTap<500&&d.classList.contains('sec')){lastTap=0;setTimeout(function(){d.scrollIntoView({behavior:'smooth',block:'start'})},30)}})});
+DET.forEach(function(d){d.addEventListener('toggle',function(){if(window.ditmSearchOpening)return;if(d.open)opn[d.id]=1;else delete opn[d.id];sm.set(OK,JSON.stringify(opn));if(d.open&&Date.now()-lastTap<500&&d.classList.contains('sec')){lastTap=0;setTimeout(function(){d.scrollIntoView({behavior:'smooth',block:'start'})},30)}})});
 function setAll(v){[].forEach.call(document.querySelectorAll('details'),function(d){d.open=v})}
 $('expand').onclick=function(){setAll(true)};
 $('collapse').onclick=function(){setAll(false)};
@@ -1617,7 +1617,29 @@ SEARCH_JS = r"""
 (function(){
 var qel=document.getElementById('q'), clr=document.getElementById('q-x'), cnt=document.getElementById('q-n');
 if(!qel)return;
-function cards(){return document.querySelectorAll('.item, .ob, .brkrow');}
+var list=[], secs=[], savedOpen=null, tmr=0, pending='', raf=0, hlraf=0;
+function isParkedSec(d){return d&&(d.id==='aired'||d.id==='expired')}
+function cardsNow(){return document.querySelectorAll('.item, .ob, .brkrow')}
+function indexOne(el){
+  var sec=el.closest('details.sec, #brk');
+  var st='';
+  if(sec){
+    var sum=sec.querySelector(':scope > summary');
+    var tn=sum&&sum.querySelector('.tn, .brkh b');
+    var sm=sum&&sum.querySelector('.tt small');
+    st=((tn&&tn.textContent)||'')+' '+((sm&&sm.textContent)||'');
+  }
+  el._qhay=((el.getAttribute('data-q')||'')+' '+st).toLowerCase();
+  if(!el._qhay.trim()){
+    el._qhay=(el.getAttribute('data-q')||'').toLowerCase();
+  }
+  return {el:el, hay:el._qhay, sec:sec, box:el.querySelector('.tx, .obn, .obm')||el};
+}
+function indexAll(){
+  list=[];
+  cardsNow().forEach(function(el){list.push(indexOne(el));});
+  secs=[].slice.call(document.querySelectorAll('details.sec, #brk'));
+}
 function unmark(root){
   root.querySelectorAll('mark.qhit').forEach(function(m){
     var p=m.parentNode; if(!p)return;
@@ -1645,53 +1667,109 @@ function mark(root,q){
     n.parentNode.replaceChild(frag,n);
   });
 }
-function hay(el){
-  var sec=el.closest('details.sec, #brk');
-  var st='';
-  if(sec){var tn=sec.querySelector('.tn, .brkh b'); var sm=sec.querySelector('.tt small'); st=((tn&&tn.textContent)||'')+' '+((sm&&sm.textContent)||'');}
-  return ((el.getAttribute('data-q')||'')+' '+(el.textContent||'')+' '+st).toLowerCase();
+function snapshotOpen(){
+  if(savedOpen)return;
+  savedOpen={};
+  secs.forEach(function(d){if(d.id)savedOpen[d.id]=!!d.open;});
 }
-function applySearch(){
-  var raw=(qel.value||'').trim(), q=raw.toLowerCase();
+function restoreOpen(){
+  if(!savedOpen)return;
+  window.ditmSearchOpening=true;
+  secs.forEach(function(d){if(d.id&&Object.prototype.hasOwnProperty.call(savedOpen,d.id)&&d.open!==savedOpen[d.id])d.open=savedOpen[d.id];});
+  window.ditmSearchOpening=false;
+  savedOpen=null;
+}
+function applySearch(qraw){
+  var raw=(qraw!==undefined?qraw:(qel.value||'')).trim(), q=raw.toLowerCase();
   if(clr)clr.hidden=!raw;
-  var hit=0, total=0;
-  cards().forEach(function(el){
-    unmark(el);
-    if(el.classList.contains('rm-hide')){el.hidden=true;return;}
-    total++;
-    var ok=!q||hay(el).indexOf(q)!==-1;
-    el.hidden=!ok;
-    if(ok){hit++; if(q){var box=el.querySelector('.tx, .obn, .obm')||el; mark(box,raw);}}
+  if(!list.length)indexAll();
+  if(!q){
+    list.forEach(function(c){
+      unmark(c.el);
+      if(c.el.classList.contains('rm-hide'))c.el.hidden=true;
+      else c.el.hidden=false;
+    });
+    secs.forEach(function(d){
+      d.classList.remove('q-empty');
+      var nav=d.id&&document.querySelector('nav a[href="#'+d.id+'"]');
+      if(nav)nav.classList.remove('q-empty');
+    });
+    restoreOpen();
+    if(cnt)cnt.textContent='';
+    return;
+  }
+  snapshotOpen();
+  var hit=0;
+  list.forEach(function(c){
+    unmark(c.el);
+    if(c.el.classList.contains('rm-hide')){c.el.hidden=true;c._ok=false;return;}
+    var parked=isParkedSec(c.sec);
+    if(parked&&c.sec&&!c.sec.open){c.el.hidden=true;c._ok=false;return;}
+    var hay=c.hay||c.el._qhay||(c.el.getAttribute('data-q')||'').toLowerCase();
+    var ok=hay.indexOf(q)!==-1;
+    c.el.hidden=!ok;
+    c._ok=ok;
+    if(ok)hit++;
   });
-  document.querySelectorAll('details.sec, #brk').forEach(function(d){
+  window.ditmSearchOpening=true;
+  secs.forEach(function(d){
     var n=0;
-    d.querySelectorAll('.item, .ob, .brkrow').forEach(function(c){if(!c.hidden&&!c.classList.contains('rm-hide'))n++;});
-    var empty=!!q&&n===0;
+    list.forEach(function(c){if(c.sec===d&&c._ok)n++;});
+    var empty=n===0;
     d.classList.toggle('q-empty',empty);
-    if(q&&n)d.open=true;
-    var id=d.id, nav=id&&document.querySelector('nav a[href="#'+id+'"]');
+    if(n&&!isParkedSec(d)&&!d.open)d.open=true;
+    var nav=d.id&&document.querySelector('nav a[href="#'+d.id+'"]');
     if(nav)nav.classList.toggle('q-empty',empty);
   });
-  if(cnt)cnt.textContent=q?(hit?hit+' match'+(hit===1?'':'es'):'No matches'):'';
+  window.ditmSearchOpening=false;
+  if(cnt)cnt.textContent=hit?(hit+' match'+(hit===1?'':'es')):'No matches';
+  if(hlraf)cancelAnimationFrame(hlraf);
+  hlraf=requestAnimationFrame(function(){
+    hlraf=0;
+    list.forEach(function(c){if(c._ok&&!c.el.hidden)mark(c.box||c.el,raw);});
+  });
 }
-qel.addEventListener('input',applySearch);
-qel.addEventListener('search',applySearch);
-if(clr)clr.addEventListener('click',function(){qel.value='';applySearch();qel.focus();});
+function schedule(){
+  pending=qel.value||'';
+  if(tmr)clearTimeout(tmr);
+  if(!pending.trim()){if(raf)cancelAnimationFrame(raf);applySearch('');return;}
+  tmr=setTimeout(function(){
+    tmr=0;
+    if(raf)cancelAnimationFrame(raf);
+    raf=requestAnimationFrame(function(){raf=0;applySearch(pending);});
+  },120);
+}
+indexAll();
+qel.addEventListener('input',schedule);
+qel.addEventListener('search',schedule);
+if(clr)clr.addEventListener('click',function(){qel.value='';applySearch('');qel.focus();});
 document.addEventListener('keydown',function(e){
   if(e.key==='/'&&!e.ctrlKey&&!e.metaKey&&!e.altKey){
     var t=e.target; if(t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'||t.isContentEditable||(t.closest&&t.closest('dialog'))))return;
     e.preventDefault(); qel.focus(); qel.select(); return;
   }
   if(e.key==='Escape'&&(document.activeElement===qel||(qel.value||'').trim())){
-    if((qel.value||'').trim()){e.preventDefault(); qel.value=''; applySearch(); qel.focus();}
+    if((qel.value||'').trim()){e.preventDefault(); qel.value=''; applySearch(''); qel.focus();}
     else {qel.blur();}
   }
 });
 if(window.MutationObserver){
-  var obs=new MutationObserver(function(){if((qel.value||'').trim())applySearch();});
-  var brk=document.getElementById('brklist'); if(brk)obs.observe(brk,{childList:true,subtree:true});
+  var brk=document.getElementById('brklist'), busy=false;
+  if(brk){
+    var obs=new MutationObserver(function(){
+      if(busy)return;
+      busy=true;
+      requestAnimationFrame(function(){
+        indexAll();
+        if((qel.value||'').trim())applySearch();
+        busy=false;
+      });
+    });
+    obs.observe(brk,{childList:true,subtree:false});
+  }
 }
-window.ditmSearch=applySearch;
+window.ditmSearch=function(){applySearch();};
+window.ditmSearchIndex=indexAll;
 })();
 """
 STUDIO_CSS2 = """
@@ -1888,7 +1966,7 @@ details.sec[open]{grid-column:1/-1}
 .sec>.body{padding:8px clamp(8px,1.2vw,12px) 10px}
 /* expanded sections fill the row; even-height story cards in a responsive grid */
 .sec .sortbox{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:8px;align-items:stretch}
-.sec .sortbox>.item{border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--bg);display:flex;flex-direction:column;align-items:stretch;gap:5px;min-width:0;min-height:100%;overflow:hidden;box-sizing:border-box}
+.sec .sortbox>.item{border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--bg);display:flex;flex-direction:column;align-items:stretch;gap:5px;min-width:0;min-height:100%;overflow:hidden;box-sizing:border-box;content-visibility:auto;contain-intrinsic-size:auto 240px}
 .sec .sortbox>.item[data-rmid]{position:relative;padding-top:8px;padding-right:48px}
 .rmx{position:absolute;top:2px;right:2px;min-width:44px;min-height:44px;padding:0;border:0;border-radius:8px;background:transparent;color:#c8102e;font-size:22px;font-weight:900;line-height:1;cursor:pointer;z-index:2;font-family:inherit}
 .rmx:hover,.rmx:focus-visible{background:#c8102e;color:#fff;outline:none}
@@ -1902,6 +1980,11 @@ body.show-rm .item.rm-gone{opacity:.6;outline:1px dashed var(--line)}
 .sec .sortbox>.item>.acts button{flex:none;max-width:100%}
 .sec .sortbox>.item:last-child{border:1px solid var(--line)}
 .sec .sortbox>.item.used{background:rgba(31,157,85,.14)}
+.sec .sortbox>.item.aired,.sec .sortbox>.item.expired{opacity:.78}
+.apill,.xpill{display:none;font-size:.68rem;font-weight:900;border-radius:4px;padding:0 5px;margin-left:4px;color:#fff;letter-spacing:.04em}
+.item.aired .apill,.aired>.tx .apill{display:inline-block;background:#1f9d55}
+.item.expired .xpill,.expired>.tx .xpill{display:inline-block;background:#5c6b7a}
+.ob{content-visibility:auto;contain-intrinsic-size:auto 88px}
 .sec .sortbox>.noev{grid-column:1/-1}
 /* nested story rows (National Desk): full-width rows like the rundown blocks, never side-by-side tiles */
 .sec .sortbox>details.rd{margin:0}
@@ -1943,6 +2026,25 @@ summary,summary *,.rtn,.tn,.tt,h3,h4{overflow-wrap:normal;word-break:normal;hyph
 .sec .sortbox .item.tldr-open .tldr{display:block;-webkit-line-clamp:unset;overflow:visible}
 .tldr-exp{align-self:flex-start;margin:0;min-height:44px;min-width:44px;padding:0 10px;border:0;border-radius:8px;background:transparent;color:var(--acc,#2a7de1);font:inherit;font-size:.82rem;font-weight:800;cursor:pointer}
 .tldr-exp:hover,.tldr-exp:focus-visible{text-decoration:underline;outline:none}
+#showdone{background:#1f9d55;color:#fff;border-color:#167a40}
+#aired,#expired{scroll-margin-top:16rem}
+body.show-post #pin,body.show-post header.ident,body.show-post #usedbar,body.show-post #brk,body.show-post nav,body.show-post main,body.show-post footer,body.show-post #toast{display:none!important}
+#post-show{display:none;max-width:52rem;margin:0 auto;padding:16px max(16px,var(--sl)) 48px;background:var(--bg);color:var(--fg)}
+body.show-post #post-show{display:block}
+#post-show .ps-top{display:block;border:0;background:transparent;padding:0;position:static}
+#post-show .ps-k{margin:0 0 .2rem;font-size:.75rem;letter-spacing:.12em;font-weight:800;color:#b5651d;text-transform:uppercase}
+#post-show .ps-top h1{margin:.15rem 0 .2rem;font-size:clamp(1.6rem,3vw + 1rem,2.2rem);line-height:1.15;letter-spacing:-.02em}
+#post-show .ps-date{font-weight:800;font-size:1.15rem;margin:0 0 .6rem}
+#post-show .ps-top .mut{max-width:42rem}
+.ps-acts{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 20px}
+.ps-acts button{min-height:44px;padding:0 14px;border-radius:8px;font:inherit;font-weight:800;cursor:pointer}
+.ps-story{border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;margin:0 0 12px;background:var(--card)}
+.ps-story h3{margin:0 0 4px;font-size:1.05rem}.ps-meta{margin:0 0 6px;color:var(--mut)}
+.ps-syn{margin:0 0 8px;line-height:1.4}.ps-d{margin:0 0 10px}.ps-d pre{white-space:pre-wrap;margin:6px 0 0;padding:8px;border-radius:8px;background:var(--bg);border:1px solid var(--line);font:inherit}
+.ps-dl{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.ps-copy{min-height:44px;min-width:44px;padding:0 12px;font:inherit;font-weight:800;cursor:pointer}
+.item:not(.aired):not(.expired) .sd-restore{display:none}.item.aired .sd-restore,.item.expired .sd-restore{display:inline-flex}.sd-restore{min-height:44px;min-width:44px;padding:0 10px;font:inherit;font-weight:800;cursor:pointer}
+@media print{body.show-post #pin,body.show-post nav{display:none!important}#post-show{display:block!important;max-width:none} .ps-acts,.ps-copy,.sd-restore{display:none!important}}
+
 .sec .sortbox .tc .wico{margin-top:4px;flex:none}
 .sec .sortbox>.noev{grid-column:1/-1;margin:2px 0}
 .sec .item.trn .pill{margin-right:4px}
@@ -1964,36 +2066,438 @@ summary,summary *,.rtn,.tn,.tt,h3,h4{overflow-wrap:normal;word-break:normal;hyph
 @media (max-width:560px){.sec>summary .sm:has(.cf) .cnt{display:none}.sec>summary .sm{max-width:11rem}.sec>summary .sm .sb{display:none}#obits>summary .sm{max-width:13.5rem}.sec>summary .sm .tr{min-width:0;font-size:.8rem;margin:0}.sec>summary .sm .tr small{display:none}}
 """
 
+SHOWDONE_JS = r"""
+(function(){
+var AK='ditm-aired-v1', EK='ditm-expired-v1', $=function(i){return document.getElementById(i)}, mem={};
+var store={get:function(k){try{var v=localStorage.getItem(k);return v===null?(mem[k]===undefined?null:mem[k]):v}catch(e){return mem[k]===undefined?null:mem[k]}},
+ set:function(k,v){mem[k]=v;try{localStorage.setItem(k,v)}catch(e){}}};
+var aired={}, expired={};
+try{aired=JSON.parse(store.get(AK)||'{}')||{}}catch(e){aired={}}
+try{expired=JSON.parse(store.get(EK)||'{}')||{}}catch(e){expired={}}
+function save(){store.set(AK,JSON.stringify(aired));store.set(EK,JSON.stringify(expired))}
+function sendCmd(cmd,id){if(window.ditmChy&&window.ditmChy.send)window.ditmChy.send(cmd,undefined,id)}
+function newsCards(){return [].slice.call(document.querySelectorAll('.item[data-rmid]'))}
+function rememberHome(el){
+  if(el._home)return;
+  el._home={parent:el.parentNode, next:el.nextSibling};
+}
+function unpark(el){
+  var h=el._home; if(!h||!h.parent)return;
+  if(h.next&&h.next.parentNode===h.parent)h.parent.insertBefore(el,h.next);
+  else h.parent.appendChild(el);
+}
+function toastUndo(html){
+  var e=$('toast'); if(!e)return;
+  e.innerHTML=html; e.className='on rmtoast';
+  clearTimeout(toastUndo.t);
+  toastUndo.t=setTimeout(function(){if(e.className.indexOf('rmtoast')!==-1){e.className='';e.textContent='';}},8000);
+}
+function setUsePressed(el,on){
+  var b=el.querySelector('.use');
+  if(b){b.setAttribute('aria-pressed',on?'true':'false');}
+}
+function paint(){
+  var ab=$('aired-box'), xb=$('expired-box');
+  newsCards().forEach(function(el){
+    rememberHome(el);
+    var id=el.getAttribute('data-rmid');
+    var isA=!!aired[id], isX=!!expired[id]&&!isA;
+    el.classList.toggle('aired',isA);
+    el.classList.toggle('expired',isX);
+    el.classList.toggle('used',isA||el.classList.contains('used')&&!isX);
+    if(isA)el.classList.add('used');
+    if(isX)el.classList.remove('used');
+    setUsePressed(el,isA);
+    if(isA&&ab)ab.appendChild(el);
+    else if(isX&&xb)xb.appendChild(el);
+    else unpark(el);
+  });
+  var na=ab?ab.querySelectorAll('.item[data-rmid]').length:0;
+  var nx=xb?xb.querySelectorAll('.item[data-rmid]').length:0;
+  var ca=$('cnt-aired'), cx=$('cnt-expired');
+  if(ca)ca.textContent=na?(na+' aired'):'None yet';
+  if(cx)cx.textContent=nx?(nx+' expired'):'None yet';
+  var sb=$('showdone');
+  if(sb)sb.setAttribute('data-n', String(newsCards().filter(function(el){var id=el.getAttribute('data-rmid');return !aired[id]&&!expired[id];}).length));
+  if(window.ditmSearchIndex)window.ditmSearchIndex();
+  if(window.ditmSearch)window.ditmSearch();
+}
+function markAired(id,sync){
+  if(!id)return;
+  delete expired[id];
+  aired[id]=Date.now();
+  save();
+  if(sync!==false)sendCmd('aired',id);
+}
+function markUnaired(id,sync){
+  if(!id)return;
+  delete aired[id];
+  save();
+  if(sync!==false)sendCmd('unaired',id);
+}
+function markExpired(id,sync){
+  if(!id)return;
+  if(aired[id])return;
+  expired[id]=Date.now();
+  save();
+  if(sync!==false)sendCmd('expire',id);
+}
+function markUnexpired(id,sync){
+  if(!id)return;
+  delete expired[id];
+  save();
+  if(sync!==false)sendCmd('unexpire',id);
+}
+function restoreOne(id,sync){
+  var wasA=!!aired[id], wasX=!!expired[id];
+  delete aired[id]; delete expired[id];
+  save();
+  if(sync!==false){
+    if(wasA)sendCmd('unaired',id);
+    if(wasX)sendCmd('unexpire',id);
+  }
+  paint();
+}
+function listedFresh(){
+  return newsCards().filter(function(el){
+    var id=el.getAttribute('data-rmid');
+    return id&&!aired[id]&&!expired[id]&&!el.classList.contains('rm-hide');
+  });
+}
+function showDone(){
+  var snap={aired:JSON.parse(JSON.stringify(aired)), expired:JSON.parse(JSON.stringify(expired))};
+  var fresh=listedFresh();
+  var ticks=[], rest=[];
+  fresh.forEach(function(el){
+    var id=el.getAttribute('data-rmid');
+    var on=el.querySelector('.use')&&el.querySelector('.use').getAttribute('aria-pressed')==='true';
+    if(on||aired[id])ticks.push(id); else rest.push(id);
+  });
+  // already-ticked earlier in the show (in aired) stay aired; this pass also airs ticks still in fresh (pressed)
+  ticks.forEach(function(id){aired[id]=aired[id]||Date.now(); delete expired[id];});
+  rest.forEach(function(id){if(!aired[id])expired[id]=Date.now();});
+  save();
+  ticks.forEach(function(id){sendCmd('aired',id);});
+  if(rest.length)sendCmd('expire','*');
+  paint();
+  var na=Object.keys(aired).length, nx=Object.keys(expired).length;
+  var msg='Show\'s done \u00B7 '+na+' aired, '+nx+' expired \u00B7 <button type="button" id="sd-undo" class="undobtn">Undo</button> <button type="button" id="sd-recap" class="undobtn">Post-show recap</button>';
+  toastUndo(msg);
+  var undone=false;
+  if($('sd-undo'))$('sd-undo').onclick=function(){
+    if(undone)return; undone=true;
+    aired=snap.aired; expired=snap.expired; save();
+    ticks.forEach(function(id){sendCmd('unaired',id);});
+    rest.forEach(function(id){sendCmd('unexpire',id);});
+    paint();
+    var e=$('toast'); if(e){e.className='';e.textContent='Undone'; setTimeout(function(){e.textContent='';},1600);}
+  };
+  if($('sd-recap'))$('sd-recap').onclick=function(){if(window.ditmPostShow)window.ditmPostShow.open();};
+  if(window.ditmPostShow)window.ditmPostShow.open();
+}
+function openDlg(){var d=$('done-dlg');if(!d)return;if(d.showModal){try{d.showModal()}catch(e){d.setAttribute('open','')}}else d.setAttribute('open','')}
+function closeDlg(){var d=$('done-dlg');if(!d)return;if(d.close){try{d.close()}catch(e){d.removeAttribute('open')}}else d.removeAttribute('open')}
+if($('showdone'))$('showdone').onclick=function(){openDlg()};
+if($('done-go'))$('done-go').onclick=function(){closeDlg();showDone();};
+if($('done-no'))$('done-no').onclick=function(){closeDlg()};
+if($('done-x'))$('done-x').onclick=function(){closeDlg()};
+if($('done-dlg'))$('done-dlg').addEventListener('cancel',function(e){e.preventDefault();closeDlg();});
+document.addEventListener('click',function(e){
+  var u=e.target&&e.target.closest&&e.target.closest('.use');
+  if(u){
+    var el=u.closest('.item'), id=el&&el.getAttribute('data-rmid');
+    if(!id)return;
+    setTimeout(function(){
+      var on=u.getAttribute('aria-pressed')==='true';
+      if(on){markAired(id); if(expired[id]){delete expired[id]; save(); sendCmd('unexpire',id);} }
+      else {markUnaired(id);}
+      paint();
+    },0);
+    return;
+  }
+  var rst=e.target&&e.target.closest&&e.target.closest('.sd-restore');
+  if(rst){
+    e.preventDefault();e.stopPropagation();
+    var el=rst.closest('.item'), id=el&&el.getAttribute('data-rmid');
+    if(id)restoreOne(id);
+  }
+}, false);
+window.ditmShowDone={
+  apply:function(c){
+    if(!c||!c.cmd)return;
+    var id=c.id||'';
+    if(c.cmd==='expire'&&id==='*'){
+      listedFresh().forEach(function(el){
+        var i=el.getAttribute('data-rmid');
+        var on=el.querySelector('.use')&&el.querySelector('.use').getAttribute('aria-pressed')==='true';
+        if(i&&!on&&!aired[i])expired[i]=c.at||Date.now();
+      });
+      save();paint();return;
+    }
+    if(c.cmd==='unexpire'&&id==='*'){expired={};save();paint();return;}
+    if(!/^r-[0-9a-f]{8,32}$/.test(id))return;
+    if(c.cmd==='aired'){aired[id]=c.at||Date.now();delete expired[id];save();paint();}
+    if(c.cmd==='unaired'){delete aired[id];save();paint();}
+    if(c.cmd==='expire'){if(!aired[id]){expired[id]=c.at||Date.now();save();paint();}}
+    if(c.cmd==='unexpire'){delete expired[id];save();paint();}
+  },
+  paint:paint,
+  aired:function(){return Object.keys(aired);},
+  expired:function(){return Object.keys(expired);}
+};
+newsCards().forEach(rememberHome);
+paint();
+})();
+"""
+
+POSTSHOW_JS = r"""
+(function(){
+var $=function(i){return document.getElementById(i)};
+function readJSON(k, fb){try{var v=JSON.parse(localStorage.getItem(k)||'');return v&&typeof v==='object'?v:(fb||{})}catch(e){return fb||{}}}
+function stories(){
+  if(window.DITM_STORIES&&window.DITM_STORIES.length)return window.DITM_STORIES;
+  var el=$('ditm-stories');
+  if(!el)return [];
+  try{return JSON.parse(el.textContent||'[]')||[]}catch(e){return []}
+}
+function byId(){var m={}; stories().forEach(function(s){if(s&&s.id)m[s.id]=s;}); return m;}
+function showDate(){
+  var d=(window.DITM_SHOW&&window.DITM_SHOW.date)||document.body.getAttribute('data-showdate')||($('ssbtn')&&$('ssbtn').getAttribute('data-showdate'))||'';
+  return d;
+}
+function showLabel(){
+  var d=showDate();
+  if(!d)return '';
+  try{var x=new Date(d+'T12:00:00-06:00');
+    return x.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric',timeZone:'America/Chicago'});
+  }catch(e){return d;}
+}
+function skipSocial(s){
+  if(!s)return true;
+  if(s.rumor||s.chisme||(s.badge&&/rumor/i.test(s.badge)))return true;
+  if(s.kids||(s.desk&&/family/i.test(s.desk)))return true;
+  return false;
+}
+function trimAt(s,n){
+  s=String(s||'').replace(/\s+/g,' ').trim();
+  if(s.length<=n)return s;
+  var c=s.slice(0,n-1).replace(/\s+\S*$/,'').replace(/[ ,;:\-–—]+$/,'');
+  return (c||s.slice(0,n-1))+'…';
+}
+function confirmTag(s){return s&&s.confirm?' (CONFIRM BEFORE AIR)':'';}
+function draftX(s){
+  var src=s.source?(' — '+s.source):'';
+  var core='"'+s.title+'"'+src+confirmTag(s);
+  if(s.url&&core.length+1+s.url.length<=280)return core+' '+s.url;
+  return trimAt(core,280);
+}
+function draftCaption(s){
+  var parts=[s.title];
+  if(s.synopsis)parts.push(s.synopsis);
+  if(s.source)parts.push('Source: '+s.source);
+  if(s.url)parts.push(s.url);
+  if(s.confirm)parts.push('CONFIRM BEFORE AIR.');
+  parts.push('From Drew in the Morning in McAllen.');
+  return parts.join(' ');
+}
+function draftLinkedIn(s){
+  var line=s.title+(s.synopsis?(' — '+s.synopsis):'')+(s.source?(' ('+s.source+')'):'')+confirmTag(s);
+  return trimAt(line,400);
+}
+function recapX(items, dateLabel){
+  var lines=['Drew in the Morning'+(dateLabel?(' · '+dateLabel):'')+':'];
+  items.forEach(function(s){if(lines.join('\n').length>220)return; lines.push('• '+s.title);});
+  var t=lines.join('\n');
+  return trimAt(t,280);
+}
+function recapCaption(items, dateLabel){
+  var parts=['Highlights from Drew in the Morning'+(dateLabel?(' on '+dateLabel):'')+'.'];
+  items.forEach(function(s){parts.push('• '+s.title+(s.source?(' ('+s.source+')'):''));});
+  parts.push('Draft only — nothing has been posted.');
+  return parts.join('\n');
+}
+function recapLinkedIn(items, dateLabel){
+  var parts=['What we talked about on Drew in the Morning'+(dateLabel?(' ('+dateLabel+')'):'')+'.'];
+  items.forEach(function(s){parts.push(s.title+'.');});
+  return parts.join(' ');
+}
+function guests(){
+  var fm=readJSON('ditm-gp-form-v1',{});
+  var out=[];
+  if(fm['g-name'])out.push({kind:'guest',name:fm['g-name'],title:fm['g-title']||'',blurb:fm['g-blurb']||''});
+  if(fm['c-name'])out.push({kind:'caller',name:fm['c-name'],title:fm['c-title']||''});
+  return out;
+}
+function copy(text, btn){
+  function done(){if(btn){var o=btn.textContent;btn.textContent='Copied';setTimeout(function(){btn.textContent=o;},1200);}}
+  function fb(){var a=document.createElement('textarea');a.value=text;a.setAttribute('readonly','');a.style.cssText='position:fixed;opacity:0';document.body.appendChild(a);a.select();try{document.execCommand('copy');done()}catch(e){}a.remove();}
+  if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(text).then(done,fb);else fb();
+}
+function row(s, drafts){
+  var h='<article class="ps-story'+(s.confirm?' confirm':'')+(s.rumor?' rumor':'')+'">';
+  h+='<h3>'+(s.url?('<a href="'+s.url.replace(/"/g,'&quot;')+'" target="_blank" rel="noopener noreferrer">'):'')+esc(s.title)+(s.url?'</a>':'')+'</h3>';
+  h+='<p class="ps-meta">'+esc([s.desk,s.source,s.date].filter(Boolean).join(' · '));
+  if(s.confirm)h+=' <span class="cf">CONFIRM BEFORE AIR</span>';
+  if(s.rumor)h+=' <span class="cf">RUMOR · CONFIRM BEFORE AIR</span>';
+  h+='</p>';
+  if(s.synopsis)h+='<p class="ps-syn">'+esc(s.synopsis)+'</p>';
+  if(drafts&&!skipSocial(s)){
+    h+='<div class="ps-drafts"><h4>Social drafts (not posted)</h4>';
+    [['X',draftX(s)],['Instagram / Facebook',draftCaption(s)],['LinkedIn',draftLinkedIn(s)]].forEach(function(pair){
+      h+='<div class="ps-d"><div class="ps-dl"><b>'+pair[0]+'</b> <span>'+pair[1].length+(pair[0]==='X'?'/280':'')+'</span> <button type="button" class="ps-copy" data-copy="'+encodeURIComponent(pair[1])+'">Copy</button></div><pre>'+esc(pair[1])+'</pre></div>';
+    });
+    h+='</div>';
+  }else if(drafts){
+    h+='<p class="mut">No social draft: '+(s.rumor||s.chisme?'chisme / rumor':'story involves kids or the Family &amp; Kids desk')+'.</p>';
+  }
+  h+='</article>';
+  return h;
+}
+function esc(t){return String(t||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function render(root){
+  if(!root)return;
+  var map=byId(), aired=readJSON('ditm-aired-v1',{}), expired=readJSON('ditm-expired-v1',{});
+  var airedIds=Object.keys(aired).sort(function(a,b){return (aired[b]||0)-(aired[a]||0);});
+  var items=airedIds.map(function(id){return map[id];}).filter(Boolean);
+  var missing=airedIds.filter(function(id){return !map[id];}).length;
+  var social=items.filter(function(s){return !skipSocial(s);});
+  var dateLabel=showLabel();
+  var peeps=guests();
+  var desks={};
+  items.forEach(function(s){if(s.desk)desks[s.desk]=(desks[s.desk]||0)+1;});
+  var segs=Object.keys(desks);
+  var html='<header class="ps-top"><p class="ps-k">Post-show recap</p><h1>Drew in the Morning</h1><p class="ps-date">'+esc(dateLabel||'Show day')+'</p>';
+  html+='<p class="mut">Built on this device from the stories you marked Aired. Drafts only — nothing is posted. Facts come from the packet; nothing is invented.</p>';
+  html+='<p class="ps-acts"><button type="button" id="ps-print">Print / Save PDF</button> <button type="button" id="ps-json">Download aired.json</button>';
+  if($('post-show')&&document.body.classList.contains('show-post'))html+=' <button type="button" id="ps-back">Back to the board</button>';
+  html+='</p></header>';
+  html+='<section class="ps-hl"><h2>Highlights</h2>';
+  if(!items.length)html+='<p>No stories are marked Aired yet. Tick stories on the board, then press Show\'s done.</p>';
+  else{
+    html+='<p>'+items.length+' stor'+(items.length===1?'y':'ies')+' aired';
+    if(segs.length)html+=', across '+esc(segs.join(', '));
+    html+='. '+Object.keys(expired).length+' expired (on the board but not ticked).';
+    if(missing)html+=' '+missing+' aired id'+(missing===1?' is':'s are')+' not in this packet\'s story list.';
+    html+='</p><ul>'+items.map(function(s){return '<li>'+esc(s.title)+(s.desk?' <span class="mut">('+esc(s.desk)+')</span>':'')+'</li>';}).join('')+'</ul>';
+  }
+  html+='</section>';
+  if(peeps.length){
+    html+='<section><h2>Guests and callers</h2><ul>';
+    peeps.forEach(function(p){html+='<li><b>'+esc(p.kind)+':</b> '+esc(p.name)+(p.title?(' — '+esc(p.title)):'')+(p.blurb?(' · '+esc(p.blurb)):'')+'</li>';});
+    html+='</ul></section>';
+  }
+  if(segs.length){
+    html+='<section><h2>Segments with aired stories</h2><ul>';
+    segs.forEach(function(d){html+='<li>'+esc(d)+' — '+desks[d]+'</li>';});
+    html+='</ul></section>';
+  }
+  html+='<section><h2>Aired stories</h2>'+(items.map(function(s){return row(s,true);}).join('')||'<p>None.</p>')+'</section>';
+  if(social.length){
+    html+='<section class="ps-all"><h2>One overall show recap (draft only)</h2>';
+    [['X',recapX(social,dateLabel)],['Instagram / Facebook',recapCaption(social,dateLabel)],['LinkedIn',recapLinkedIn(social,dateLabel)]].forEach(function(pair){
+      html+='<div class="ps-d"><div class="ps-dl"><b>'+pair[0]+'</b> <span>'+pair[1].length+(pair[0]==='X'?'/280':'')+'</span> <button type="button" class="ps-copy" data-copy="'+encodeURIComponent(pair[1])+'">Copy</button></div><pre>'+esc(pair[1])+'</pre></div>';
+    });
+    html+='</section>';
+  }
+  html+='<p class="mut">A later post-show routine can pick this up from a downloaded aired.json (or a used-on-show issue attachment). That file is written only on this device unless you save or send it — this page does not upload it or post anything.</p>';
+  root.innerHTML=html;
+  root.onclick=function(e){
+    var b=e.target.closest('.ps-copy');
+    if(b){e.preventDefault();copy(decodeURIComponent(b.getAttribute('data-copy')||''),b);return;}
+    if(e.target.id==='ps-print'){e.preventDefault();window.print();return;}
+    if(e.target.id==='ps-back'){e.preventDefault();close();return;}
+    if(e.target.id==='ps-json'){e.preventDefault();download();return;}
+  };
+}
+function payload(){
+  var map=byId(), aired=readJSON('ditm-aired-v1',{}), expired=readJSON('ditm-expired-v1',{});
+  function pack(ids){return Object.keys(ids).map(function(id){var s=map[id]||{id:id}; return Object.assign({airedAt:ids[id]},s);});}
+  return {v:1, showDate:showDate(), generatedAt:new Date().toISOString(), timezone:'America/Chicago',
+    aired:pack(aired), expired:pack(expired), guests:guests()};
+}
+function download(){
+  var blob=new Blob([JSON.stringify(payload(),null,2)],{type:'application/json'});
+  var a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+  a.download='ditm-aired-'+(showDate()||'show')+'.json';
+  document.body.appendChild(a); a.click(); a.remove();
+}
+function open(){
+  var panel=$('post-show');
+  if(panel){
+    document.body.classList.add('show-post');
+    panel.hidden=false;
+    render($('ps-root')||panel);
+    try{panel.scrollIntoView({block:'start'});}catch(e){}
+    return;
+  }
+  // standalone page
+  var root=$('ps-root'); if(root)render(root);
+}
+function close(){
+  document.body.classList.remove('show-post');
+  var panel=$('post-show'); if(panel)panel.hidden=true;
+}
+window.ditmPostShow={open:open,close:close,render:render,payload:payload};
+if($('ps-root')&&!$('pin'))open(); // standalone post-show page
+if($('ps-open'))$('ps-open').onclick=function(){open();};
+document.addEventListener('click',function(e){
+  var a=e.target&&e.target.closest&&e.target.closest('a[href="#post-show"]');
+  if(!a)return; e.preventDefault(); open();
+});
+})();
+"""
+
 TLDR_JS = r"""
 (function(){
 function needs(el){return el && el.scrollHeight>el.clientHeight+2}
+function enhance(p){
+  if(!p||p.dataset.expInit)return;
+  p.dataset.expInit='1';
+  if(!needs(p))return;
+  var b=document.createElement('button');
+  b.type='button';b.className='tldr-exp';b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Show full synopsis');
+  b.textContent='More';
+  b.addEventListener('click',function(e){
+    e.preventDefault();e.stopPropagation();
+    var item=p.closest('.item'); if(!item)return;
+    var open=item.classList.toggle('tldr-open');
+    b.setAttribute('aria-expanded',open?'true':'false');
+    b.setAttribute('aria-label',open?'Hide extra synopsis':'Show full synopsis');
+    b.textContent=open?'Less':'More';
+  });
+  p.insertAdjacentElement('afterend',b);
+}
 function paint(){
   document.querySelectorAll('.item.trn .tldr').forEach(function(p){
     if(p.dataset.expInit)return;
-    if(!needs(p))return;
-    p.dataset.expInit='1';
-    var b=document.createElement('button');
-    b.type='button';b.className='tldr-exp';b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Show full synopsis');
-    b.textContent='More';
-    b.addEventListener('click',function(e){
-      e.preventDefault();e.stopPropagation();
-      var item=p.closest('.item'); if(!item)return;
-      var open=item.classList.toggle('tldr-open');
-      b.setAttribute('aria-expanded',open?'true':'false');
-      b.setAttribute('aria-label',open?'Hide extra synopsis':'Show full synopsis');
-      b.textContent=open?'Less':'More';
-    });
-    p.insertAdjacentElement('afterend',b);
+    var r=p.getBoundingClientRect();
+    if(r.bottom< -20||r.top>(window.innerHeight||0)+80)return;
+    enhance(p);
   });
 }
-if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',paint);else paint();
-window.ditmTldr={paint:paint};
+if(window.IntersectionObserver){
+  var io=new IntersectionObserver(function(ents){
+    ents.forEach(function(en){
+      if(!en.isIntersecting)return;
+      enhance(en.target);
+      io.unobserve(en.target);
+    });
+  },{root:null,rootMargin:'80px',threshold:0});
+  function watch(){document.querySelectorAll('.item.trn .tldr').forEach(function(p){if(!p.dataset.expInit)io.observe(p);});}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){requestAnimationFrame(watch);});
+  else requestAnimationFrame(watch);
+  window.ditmTldr={paint:function(){requestAnimationFrame(function(){watch();});},enhance:enhance};
+}else{
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){requestAnimationFrame(paint);});
+  else requestAnimationFrame(paint);
+  window.ditmTldr={paint:function(){requestAnimationFrame(paint);}};
+}
 })();
 """
 
 CHY_JS = r"""
 (function(){var api=window.ditmRos;if(!api)return;var $=function(i){return document.getElementById(i)};
-var LK='ditm-chyron-topic-v1',RX=/^[A-Za-z0-9_-]{6,64}$/,mem=null,CMDS={start:1,stop:1,hold:1,resume:1,toggle:1,logo:1,item:1,guest:1,guest_hide:1,caller:1,caller_show:1,caller_hide:1,next:1,prev:1,goto:1,clear:1,show:1,remove:1,restore:1},IDRX=/^i-[0-9a-f]{10}$/,RMID=/^r-[0-9a-f]{8,32}$/;
+var LK='ditm-chyron-topic-v1',RX=/^[A-Za-z0-9_-]{6,64}$/,mem=null,CMDS={start:1,stop:1,hold:1,resume:1,toggle:1,logo:1,item:1,guest:1,guest_hide:1,caller:1,caller_show:1,caller_hide:1,next:1,prev:1,goto:1,clear:1,show:1,remove:1,restore:1,aired:1,unaired:1,expire:1,unexpire:1},IDRX=/^i-[0-9a-f]{10}$/,RMID=/^r-[0-9a-f]{8,32}$/;
 function cap(v,n){return(typeof v==='string')?v.replace(/[\u0000-\u001f\u007f-\u009f]+/g,' ').replace(/\s+/g,' ').trim().slice(0,n):''}
 function httpsOnly(u){try{var x=new URL(u);return(x.protocol==='https:'&&x.hostname&&!x.username)?x.href:''}catch(e){return ''}}
 function gget(){try{return localStorage.getItem(LK)}catch(e){return mem}}function gset(v){mem=v;try{localStorage.setItem(LK,v)}catch(e){}}
@@ -2003,7 +2507,7 @@ if(q){gset(q[1]);try{history.replaceState(null,'',location.pathname)}catch(e){}}
 var topic=gget();if(!RX.test(topic||''))topic=null;
 var last=null,vis=true,ADRX=/^a-[0-9a-f]{10}$/;
 function send(cmd,idx,id,x){if(!topic||!Object.prototype.hasOwnProperty.call(CMDS,cmd))return;var m={k:'cmd',cmd:cmd,at:Date.now(),v:1};if(typeof idx==='number')m.idx=idx;if(cmd==='item'){if(IDRX.test(id||''))m.id=id;else{var h=cap(x&&x.headline,100);if(!h)return;m.headline=h;m.line=cap(x.line,118);m.kicker=cap(x.kicker,44);if(ADRX.test(id||''))m.id=id}}
- if((cmd==='remove'||cmd==='restore')&&id){if(!(RMID.test(id)||id==='*'))return;m.id=id}
+ if((cmd==='remove'||cmd==='restore'||cmd==='aired'||cmd==='unaired'||cmd==='expire'||cmd==='unexpire')&&id){if(!(RMID.test(id)||id==='*'))return;m.id=id}
  if(cmd==='guest'&&x){m.name=cap(x.name,60);m.title=cap(x.title,80);m.blurb=cap(x.blurb,140);if(!m.name)return}
  if(cmd==='caller'&&x){m.name=cap(x.name,60);m.title=cap(x.title,80);m.photo=(x.photo&&httpsOnly(x.photo))||'';if(!m.name)return}
  try{fetch(BASE+'/'+topic,{method:'POST',body:JSON.stringify(m)}).catch(function(){})}catch(e){}}
@@ -2068,7 +2572,8 @@ var es=null;function connect(){if(es){try{es.close()}catch(e){}es=null}if(!topic
  es=new EventSource(BASE+'/'+topic+'/sse?since=6h');
  es.onmessage=function(ev){var m;try{m=JSON.parse(ev.data)}catch(e){return}if(!m||m.event!=='message'||!m.message)return;var c;try{c=JSON.parse(m.message)}catch(e){return}
   if(c&&c.k==='state'&&typeof c.at==='number')onState(c);
-  if(c&&c.k==='cmd'&&(c.cmd==='remove'||c.cmd==='restore')&&window.ditmRemove)window.ditmRemove.apply(c)};
+  if(c&&c.k==='cmd'&&(c.cmd==='remove'||c.cmd==='restore')&&window.ditmRemove)window.ditmRemove.apply(c);
+  if(c&&c.k==='cmd'&&(c.cmd==='aired'||c.cmd==='unaired'||c.cmd==='expire'||c.cmd==='unexpire')&&window.ditmShowDone)window.ditmShowDone.apply(c)};
  es.onerror=function(){var st=$('chst');if(st&&!last)st.textContent='connecting\u2026'}}
 connect();ui();setInterval(ui,5000);
 window.ditmChy={send:send,linked:function(){return !!topic},state:function(){return last}};
@@ -2249,14 +2754,100 @@ def chy_btn(cid, title, on=""):
     return (f'<button class="chysend" type="button" data-chyid="{cid}" aria-pressed="false" aria-label="Send to chyron: {esc(title)}" title="Send to the on-air chyron (audible)">'
             f'<span class="ci">▶</span><span class="ct">Chyron</span></button>')
 
-def use_btn(sec, title, url=""):
+def use_btn(sec, title, url="", rmid=""):
     key = hashlib.sha1(f"{sec}|{url or title}".encode()).hexdigest()[:10]
-    return (f'<button class="use" type="button" data-key="{key}" data-title="{esc(title)}" data-url="{esc(url)}" data-sec="{esc(sec)}" aria-pressed="false" '
-            f'aria-label="Mark used on show: {esc(title)}" title="Mark used on show"><span class="ck"></span></button>')
+    rm = f' data-rmid="{esc(rmid)}"' if rmid else ""
+    label = "Mark as aired" if rmid else "Mark used on show"
+    return (f'<button class="use" type="button" data-key="{key}" data-title="{esc(title)}" data-url="{esc(url)}" data-sec="{esc(sec)}"{rm} aria-pressed="false" '
+            f'aria-label="{label}: {esc(title)}" title="{label}"><span class="ck"></span></button>')
 
 def _by_score(lst):
     return sorted(lst, key=lambda it: (-(it.get("score") or 0), it.get("ord", 0)))
 
+
+
+STORY_CATALOG = []
+
+def catalog_entry(it, desk):
+    """Facts already on the story. Never invents a synopsis or label."""
+    if not isinstance(it, dict):
+        return None
+    title = it.get("title") or it.get("headline") or ""
+    if not title:
+        return None
+    desk = desk or it.get("_desk") or ""
+    rumor = bool((it.get("badge") and "RUMOR" in str(it.get("badge"))) or desk.lower() == "chisme" or it.get("_desk") == "chisme")
+    kids = (isinstance(desk, str) and "family" in desk.lower()) or bool(is_family_kids_story(it))
+    return {
+        "id": it.get("_rmid") or story_remove_id(it),
+        "title": title,
+        "synopsis": story_synopsis(it),
+        "url": it.get("url") or it.get("source_url") or _story_url(it) or "",
+        "source": it.get("source") or "",
+        "desk": desk,
+        "date": it.get("_date_tag") or story_date_tag(it, it.get("_packet_date")),
+        "confirm": bool(it.get("confirm") or it.get("isConfirm")),
+        "rumor": rumor,
+        "chisme": rumor or desk.lower() == "chisme",
+        "kids": bool(kids),
+    }
+
+def build_story_catalog(week, seg):
+    rows, seen = [], set()
+    def add(it, desk):
+        e = catalog_entry(it, desk)
+        if not e or not e.get("id") or e["id"] in seen:
+            return
+        seen.add(e["id"]); rows.append(e)
+    names = {"C": "Local News", "D": "Local Politics", "E": "School Boards", "F": "City Hall",
+             "G": "Economic Development", "H": "Family & Kids", "I": "Statewide", "J": "The National Desk"}
+    for letter, name in names.items():
+        for it in (seg or {}).get(letter) or []:
+            add(it, name)
+    for it in (seg or {}).get("LIFE") or []:
+        add(it, "Lifestyle")
+    for it in (week or {}).get("chisme") or []:
+        add(it, "Chisme")
+    for key, label in (("national", "National"), ("trending", "Trending"), ("tech", "Tech"),
+                       ("rgv", "Local News"), ("texas", "Statewide")):
+        for it in (week or {}).get(key) or []:
+            add(it, label)
+    return rows
+
+def post_show_html(data, catalog, standalone=True):
+    """Self-contained recap page. Reads aired ids from localStorage; does not invent facts or post."""
+    m = (data or {}).get("meta") or {}
+    date = m.get("date") or m.get("showDate") or ""
+    logo = ""
+    try:
+        logo = b64(asset("assets/DITM_SunLogo.png"), "image/png")
+    except Exception:
+        logo = ""
+    cat = json.dumps(catalog or [], ensure_ascii=False).replace("<", "\\u003c")
+    css = (
+        "body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;"
+        "background:#f6f1e8;color:#1b2430;line-height:1.4}"
+        " .ps-wrap{max-width:52rem;margin:0 auto;padding:16px 16px 48px}"
+        " .ps-brand{display:flex;gap:12px;align-items:center;margin:0 0 16px}"
+        " .ps-brand img{width:72px;height:auto}"
+        " h1{margin:.2rem 0 0} .ps-date{font-weight:800}"
+        " .ps-acts{display:flex;flex-wrap:wrap;gap:8px} .ps-acts button,.ps-copy{min-height:44px;padding:0 14px;border-radius:8px;font:inherit;font-weight:800;cursor:pointer;border:1.5px solid #1b2430;background:#fff}"
+        " .ps-story{border:1.5px solid #1b2430;border-radius:10px;padding:10px 12px;margin:0 0 12px;background:#fff}"
+        " .ps-syn{line-height:1.4} .ps-d pre{white-space:pre-wrap;margin:6px 0 0;padding:8px;border-radius:8px;background:#f6f1e8;border:1px solid #1b2430;font:inherit}"
+        " .cf{background:#c1121f;color:#fff;font-size:.75rem;font-weight:800;border-radius:4px;padding:0 5px;margin-left:4px}"
+        " .mut{color:#5c6b7a} a{color:#0b5cad} @media print{.ps-acts,.ps-copy{display:none!important}}"
+    )
+    return (
+        f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">'
+        f'<meta http-equiv="Content-Security-Policy" content="default-src \'none\'; img-src data: https:; style-src \'unsafe-inline\'; script-src \'unsafe-inline\'; connect-src \'none\'">'
+        f'<title>Post-show recap · Drew in the Morning</title><style>{css}</style></head>'
+        f'<body data-showdate="{esc(date)}"><div class="ps-wrap"><div class="ps-brand">'
+        f'{("<img src=\""+logo+"\" alt=\"Drew in the Morning\">") if logo else ""}'
+        f'<div><p class="ps-k">Post-show recap</p></div></div><div id="ps-root"></div></div>'
+        f'<script type="application/json" id="ditm-stories">{cat}</script>'
+        f'<script>window.DITM_SHOW={{date:{json.dumps(date)}}};</script>'
+        f'<script>{POSTSHOW_JS}</script></body></html>'
+    )
 
 def studio_html(data, archive_href=None):
     CHY_ITEMS.clear()
@@ -2291,7 +2882,7 @@ def studio_html(data, archive_href=None):
     _off = [sum(x["minutes"] for x in clock[:i]) for i in range(len(clock))]
     clockbar = "".join(f'<a href="#blk-{c["letter"]}" data-jump="blk-{c["letter"]}" data-off="{_off[i]}" data-dur="{c["minutes"]}" data-letter="{c["letter"]}" style="width:{c["minutes"]/60*100:.3f}%;background:{c["color"]}" title="{esc(c["title"])} · {c["timeRange"]}">{c["letter"]}{"★" if c["signature"] else ""}<small>{c["minutes"]}m</small></a>' for i, c in enumerate(clock))
     thumb = data["headlines"].get("image")
-    thumbhtml = f'<div class="thumbrow"><img src="{b64(asset(thumb["file"]), "image/jpeg")}" alt="Starship file photo"><div class="src">{esc(thumb["caption"])} · {A(thumb["credit_url"], "source")}</div></div>' if thumb else ""
+    thumbhtml = f'<div class="thumbrow"><img src="{b64(asset(thumb["file"]), "image/jpeg")}" alt="Starship file photo" loading="lazy" decoding="async"><div class="src">{esc(thumb["caption"])} · {A(thumb["credit_url"], "source")}</div></div>' if thumb else ""
     # ================= v3 body: every section is a full-width bar that opens into Trending-model cards =================
     TZC = datetime.timezone(datetime.timedelta(hours=-6))
     def tcard(title, url="", pills=(), meta="", tldr="", riff="", riff_label="Riff", score="", conf="", extra="", sec_="", ord_=None, sc=0, copy_text="", use=True, uid="", cls="", badges="", chy_unconf=False, chy_fallback=None, rmid="", when=0, date_tag=""):
@@ -2310,12 +2901,12 @@ def studio_html(data, archive_href=None):
         fb = chy_fallback if chy_fallback is not None else meta
         cid = chy_register(sec_ or "Show", title, url, tldr, fb, unconf=bool(conf) or chy_unconf)
         hl = CHY_ITEMS[cid]["headline"]
-        acts = CP(ct, "Copy link" if url and not copy_text else "Copy") + chy_btn(cid, hl) + (use_btn(sec_, title, url) if (use and sec_) else "")
+        acts = CP(ct, "Copy link" if url and not copy_text else "Copy") + chy_btn(cid, hl) + (use_btn(sec_, title, url, rmid) if (use and sec_) else "")
         pills_txt = " ".join((x[0] if isinstance(x, tuple) else x) for x in pills if x)
         hay = " ".join(x for x in (title, meta, tldr, riff_txt, conf, sec_, pills_txt) if x)
         attrs = (f' data-ord="{ord_}" data-sc="{sc}"' if ord_ is not None else "") + (f' id="{uid}"' if uid else "") + (f' data-rmid="{esc(rmid)}"' if rmid else "") + (f' data-when="{int(when)}"' if when else "") + f' data-chyid="{cid}" data-chyh="{esc(hl)}" data-q="{esc(hay)}"'
         rmx = (f'<button type="button" class="rmx" data-rmid="{esc(rmid)}" aria-label="Remove story" title="Remove story">×</button>' if rmid else "")
-        return (f'<div class="item trn tc{(" " + cls) if cls else ""}"{attrs}>{rmx}<div class="tx"><b class="hd">{head}</b><div class="meta">{pl}{tag}{mt}{score}{badges}<span class="upill">USED</span>{cf}</div>{td}{rf}{extra}</div><div class="acts">{acts}</div></div>')
+        return (f'<div class="item trn tc{(" " + cls) if cls else ""}"{attrs}>{rmx}<div class="tx"><b class="hd">{head}</b><div class="meta">{pl}{tag}{mt}{score}{badges}<span class="upill">USED</span><span class="apill">AIRED</span><span class="xpill">EXPIRED</span> <button type="button" class="sd-restore">Restore</button>{cf}</div>{td}{rf}{extra}</div><div class="acts">{acts}</div></div>')
     def grid(cards, empty=""):
         return '<div class="sortbox">' + ("".join(cards) or f'<p class="mut noev">{esc(empty)}</p>') + "</div>"
     def lks_of(links):
@@ -2375,6 +2966,9 @@ def studio_html(data, archive_href=None):
     seg = assign_segment_stories(week["rgv"], week["texas"],
                                  national=week["national"], trending=week["trending"],
                                  tech=week["tech"], memes=_meme_flat)
+    global STORY_CATALOG
+    STORY_CATALOG = build_story_catalog(week, seg)
+    data["_story_catalog"] = STORY_CATALOG
     _moved = {_story_key(i) for i in (seg.get("H") or []) + (seg.get("LIFE") or [])
               if i.get("_desk") in ("national", "trending", "tech", "meme")}
 
@@ -2489,7 +3083,7 @@ def studio_html(data, archive_href=None):
     nav = "".join(f'<a href="#{i}" data-jump="{i}">{t}</a>' for i, t in (("brk", "Breaking"), ("blk-A", "Cold open"), ("blk-B", "Up To"), ("blk-C", "Local News"), ("chisme", "Chisme"),
                                                                        ("blk-D", "Local Politics"), ("blk-E", "School Boards"), ("blk-F", "City Hall"), ("blk-G", "Econ Dev"), ("blk-H", "Family & Kids"), ("blk-I", "Statewide"),
                                                                        ("blk-J", "National"), ("trending", "Trending"), ("tech", "Tech"), ("lifestyle", "Lifestyle"), ("obits", "Neighbors"), ("memes", "Meme of the Week"),
-                                                                       ("weather", "Weather"), ("hs", "HS Football"), ("nfl", "NFL"), ("nba", "NBA"), ("mlb", "MLB"), ("used", "Used list")))
+                                                                       ("weather", "Weather"), ("hs", "HS Football"), ("nfl", "NFL"), ("nba", "NBA"), ("mlb", "MLB"), ("used", "Used list"), ("aired", "Aired"), ("expired", "Expired"), ("post-show", "Post-show")))
     mon = m["mode"] == "monday"
     used_body = ('<ul id="usedul"></ul><p class="mut">Tap the box next to any item when it is used on the show. Marks stay on this device until cleared, so nothing gets repeated. '
                  '"Log to repo" opens a pre-filled GitHub issue (label used-on-show) for the post-show job: it cuts clips from the recording and drafts social teasers for approval. Nothing posts by itself.</p>')
@@ -2554,7 +3148,9 @@ def studio_html(data, archive_href=None):
         sec("nfl", "#264653", esc(sport_title(data["sports"]["nfl"], False).replace("NFL ", "NFL · ", 1)), "scores + notable", sports_nfl, count=f"{n_nfl} items"),
         sec("nba", "#c1121f", "NBA", esc((data["sports"]["nba"].get("window", "") + " + Texas teams").strip(" +")), sports_nba, count=f"{n_nba} items"),
         sec("mlb", "#003f88", "MLB · Offseason", "no scores · hot stove", sports_mlb, count=f'{len(mlb["notable"])} items'),
-        sec("used", "#1f9d55", "Used on Show", "running list · no repeats", used_body, count="0 used")])
+        sec("used", "#1f9d55", "Used on Show", "running list · no repeats", used_body, count="0 used"),
+        sec("aired", "#1f9d55", "Aired", "ticked off during the show — individually restorable", '<div class="sortbox" id="aired-box"></div>', count="None yet"),
+        sec("expired", "#5c6b7a", "Expired", "on the board but not ticked, after Show's done — individually restorable", '<div class="sortbox" id="expired-box"></div>', count="None yet")])
     segs = "".join(f"<li>{esc(s)}</li>" for s in data.get("segues", []))
     nowc = w.get("now") or {}
     bt = nowc.get("tempF"); bsrc = nowc.get("source", "forecast")
@@ -2591,7 +3187,10 @@ def studio_html(data, archive_href=None):
         f'<div class="dlg-a"><button id="link-go" type="button">Link</button></div></div></dialog>'
         f'<dialog id="stop-dlg" class="dlg" aria-labelledby="stop-ttl" aria-describedby="stop-msg"><div class="dlg-h"><h3 id="stop-ttl">Stop the show?</h3><button id="stop-x" class="dlg-x" type="button" aria-label="Cancel">×</button></div><div class="dlg-b">'
         f'<p id="stop-msg">Stop the show and reset to 0:00?</p>'
-        f'<div class="dlg-a"><button id="stop-go" type="button">Stop &amp; reset</button><button id="stop-no" type="button">Cancel</button></div></div></dialog></div>'
+        f'<div class="dlg-a"><button id="stop-go" type="button">Stop &amp; reset</button><button id="stop-no" type="button">Cancel</button></div></div></dialog>'
+        f'<dialog id="done-dlg" class="dlg" aria-labelledby="done-ttl" aria-describedby="done-msg"><div class="dlg-h"><h3 id="done-ttl">Show\'s done?</h3><button id="done-x" class="dlg-x" type="button" aria-label="Cancel">×</button></div><div class="dlg-b">'
+        f'<p id="done-msg">Mark ticked stories as Aired and every other story still on the board as Expired? You can undo.</p>'
+        f'<div class="dlg-a"><button id="done-go" type="button">Show\'s done</button><button id="done-no" type="button">Cancel</button></div></div></dialog></div>'
     )
     mcbar = (
         f'<div id="mc">'
@@ -2603,14 +3202,14 @@ def studio_html(data, archive_href=None):
         f'<button id="chhold" type="button" aria-pressed="false" title="Hold freezes the current topic and the show clock; Resume carries on and pushes the later topics back">Hold</button>'
         f'<button id="ssstop" type="button" title="Stop the show and reset to 0:00" aria-label="Stop the show and reset to 0:00" aria-haspopup="dialog" aria-controls="stop-dlg">Stop</button>'
         f'<button id="chprev" type="button">Prev</button><button id="chnext" type="button">Next</button><button id="chclr" type="button">Clear</button>'
-        f'<button id="mc-guest" type="button">Guest</button><button id="mc-caller" type="button">Caller</button><button id="mc-logo" type="button">Logo</button>'
+        f'<button id="mc-guest" type="button">Guest</button><button id="mc-caller" type="button">Caller</button><button id="mc-logo" type="button">Logo</button><button id="showdone" type="button" title="Mark ticked stories as Aired and the rest as Expired" aria-label="Show is done" aria-haspopup="dialog" aria-controls="done-dlg">Show\'s done</button>'
         f'<details id="mc-more"><summary aria-label="More controls">More</summary><div class="mc-more-p">'
         f'<button id="theme" type="button" title="Toggle dark/light">Dark / Light</button>'
         f'<button id="smaller" type="button">A−</button><button id="bigger" type="button">A+</button>'
         f'<button id="expand" type="button">Expand all</button><button id="collapse" type="button">Collapse all</button>'
         f'<button id="sortbtn" type="button" title="Order items by trend score or by the original editorial order">Sort: Score</button>'
         f'<button id="ssreset" type="button" title="Stop the show and reset to 0:00" aria-label="Stop the show and reset to 0:00" aria-haspopup="dialog" aria-controls="stop-dlg">Stop &amp; reset</button>'
-        f'<button id="rm-show" type="button">Show removed (0)</button><button id="rm-restore" type="button">Restore all</button>'
+        f'<button id="rm-show" type="button">Show removed (0)</button><button id="rm-restore" type="button">Restore all</button><button id="ps-open" type="button">Post-show recap</button>'
         f'<button id="chlink" type="button" class="chlink" title="Link this page to the OBS chyron (paste the link code once)">Link chyron</button>'
         f'<a id="brkbadge" class="btnlike" href="#brk" data-jump="brk" title="Breaking watch: new since this page was built">Breaking <b id="brkb">–</b></a>'
         f'<a href="#top" data-jump="top" aria-label="Back to top">Top ↑</a>'
@@ -2624,7 +3223,7 @@ def studio_html(data, archive_href=None):
            f'<div id="brklist" aria-live="polite"></div></section>')
     arch = f'<p><a href="{esc(archive_href)}">All past packets and briefings</a></p>' if archive_href else ""
     chk = data.get("linkCheck")
-    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data: https:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'self' https://api.weather.gov https://ntfy.sh http://127.0.0.1:*"><title>{esc(m["emailSubject"])} · Studio</title><style>{STUDIO_CSS}{STUDIO_CSS2}</style></head><body>
+    html_out = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data: https:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'self' https://api.weather.gov https://ntfy.sh http://127.0.0.1:*"><title>{esc(m["emailSubject"])} · Studio</title><style>{STUDIO_CSS}{STUDIO_CSS2}</style></head><body data-showdate="{esc(m["date"])}">
 <div id="pin">{mcbar}
 <div id="find"><label class="sr-only" for="q">Search stories and keywords</label><input id="q" type="search" placeholder="Search stories and keywords" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="search" inputmode="search"><button id="q-x" type="button" hidden aria-label="Clear search">Clear</button><span id="q-n" aria-live="polite"></span></div>
 <div class="clock pre" id="tl" role="img" aria-label="60 minute show timeline, blocks A to L">{clockbar}<div id="phw"><div id="ph" aria-hidden="true"></div></div></div></div>
@@ -2635,7 +3234,9 @@ def studio_html(data, archive_href=None):
 <nav>{nav}</nav>
 <main>{body}</main>
 <footer>{arch}<b>Jump segues (menu):</b><ul>{segs}</ul>Every item links to its source and opens in a new tab; Copy link puts the URL on your clipboard for sharing on screen. CONFIRM BEFORE AIR = verify first. No trackers, no external scripts or fonts. The only network request is the header clock's weather lookup (api.weather.gov); the page works offline (the clock then shows the build-time temperature, and links need internet). Show Start times are computed in the page from each block's offset and length.{(" Links checked "+chk["date"]+": "+str(chk["ok"])+" ok, "+str(chk["blocked"])+" bot-blocked, "+str(chk["dead"])+" dead.") if chk else ""}</footer>
-<div id="toast" role="status"></div><script>{STUDIO_JS}</script><script>{SEARCH_JS}</script><script>{SHOW_JS}</script><script>{CHY_JS}</script><script>{REMOVE_JS}</script><script>{TLDR_JS}</script><script>{CLOCK_JS}</script><script>{BRK_JS}</script></body></html>"""
+<div id="post-show" hidden><div id="ps-root"></div></div><!--DITM_STORIES--><div id="toast" role="status"></div><script>{STUDIO_JS}</script><script>{SEARCH_JS}</script><script>{SHOW_JS}</script><script>{CHY_JS}</script><script>{REMOVE_JS}</script><script>{SHOWDONE_JS}</script><script>{POSTSHOW_JS}</script><script>{TLDR_JS}</script><script>{CLOCK_JS}</script><script>{BRK_JS}</script></body></html>"""
+    _cat = json.dumps(STORY_CATALOG or data.get("_story_catalog") or [], ensure_ascii=False).replace("<", "\\u003c")
+    return html_out.replace("<!--DITM_STORIES-->", '<script type="application/json" id="ditm-stories">' + _cat + "</script>")
 
 
 # ---------------------------------------------------------------- render
@@ -2696,6 +3297,9 @@ def publish(out, stem, data, force=False):
         json.dump({"date": m["date"], "sample": bool(m.get("sample")), "stem": name}, open(lp, "w"))
         open(os.path.join(docs, "index.html"), "w").write(studio_html(data, archive_href="packets/index.html"))
         open(os.path.join(out, "latest-studio.html"), "w").write(studio_html(data))
+        _ps = os.path.join(docs, "post-show")
+        os.makedirs(_ps, exist_ok=True)
+        open(os.path.join(_ps, "index.html"), "w").write(post_show_html(data, data.get("_story_catalog") or STORY_CATALOG))
         # chyron-items.json: the ONLY words the on-air chyron will show for a "send to chyron" id (ids are what travels over ntfy)
         json.dump({"v": 1, "date": m["date"], "generated": data["generatedAt"], "items": dict(CHY_ITEMS)}, open(os.path.join(docs, "chyron-items.json"), "w"), ensure_ascii=False, indent=1)
         for ext, dst in ((".pdf", "latest.pdf"), (".txt", "latest.txt"), (".png", "latest.png")):
