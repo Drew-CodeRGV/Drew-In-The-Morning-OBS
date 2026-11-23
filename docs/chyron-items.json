@@ -1,8 +1,28 @@
 {
  "v": 1,
- "date": "2026-11-22",
- "generated": "2026-11-22T06:09:45-06:00",
+ "date": "2026-11-23",
+ "generated": "2026-11-23T06:15:57-06:00",
  "items": {
+  "i-63abb29ce5": {
+   "headline": "Democrats flip control of Texas State Board of Education for first time in more than 30 years",
+   "line": "UNCONFIRMED · A r/texas post shares a report that Democrats now control the State Board of Education for the first…",
+   "kicker": "CHISME"
+  },
+  "i-6078bde15f": {
+   "headline": "McAllen: Natural Grocers sets December 16 opening date for new South 10th Street store",
+   "line": "UNCONFIRMED · RGV.me says Natural Grocers will open its new South 10th Street store in McAllen on Dec.",
+   "kicker": "CHISME"
+  },
+  "i-338b902709": {
+   "headline": "Muslim organizer sues Gov. Greg Abbott over canceled Eid event at Texas waterpark",
+   "line": "UNCONFIRMED · A r/texas post shares a story about an event organizer suing Gov.",
+   "kicker": "CHISME"
+  },
+  "i-fef3d9315e": {
+   "headline": "If someone was pretending to be from the Valley, what would be a dead giveaway that they weren't?",
+   "line": "UNCONFIRMED · A r/RioGrandeValley thread with 164 comments asks what would expose a fake Valley local.",
+   "kicker": "CHISME"
+  },
   "i-b33b15585c": {
    "headline": "Austin man deported to Mexico is a U.S. citizen, feds say",
    "line": "UNCONFIRMED · A post shares a report that feds say an Austin man who was deported to Mexico is a U.S.",
@@ -25,7 +45,7 @@
   },
   "i-bc3715ff40": {
    "headline": "In apparent first, South Texas county rejects tax break for SpaceX data center",
-   "line": "Still the top r/RioGrandeValley post of the week: a report that Cameron County rejected SpaceX's data center tax…",
+   "line": "UNCONFIRMED · Still the top r/RioGrandeValley post: a report that a South Texas county rejected a SpaceX data center…",
    "kicker": "CHISME"
   },
   "i-46b94c2690": {
@@ -53,6 +73,31 @@
    "line": "UNCONFIRMED · A top r/texas post shares a story headlined: Gina Hinojosa tells sheriffs she will not cut Abbott's…",
    "kicker": "CHISME"
   },
+  "i-cb3165de95": {
+   "headline": "Voters oust some sheriffs who signed 287(g) pacts with ICE",
+   "line": "AP reports several sheriffs who signed agreements to help federal immigration enforcement lost their elections…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-2196211db6": {
+   "headline": "Ukraine says naval drones sank Russian corvette Merkury at a base in Libya",
+   "line": "Nov 22-23: Ukraine's SBU said seven naval drones launched from a mothership hit two Russian vessels at Benghazi…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-23cd1d856a": {
+   "headline": "Trump vows to work with Democrats to cap credit card interest at 10%",
+   "line": "Trump said he will work with Democrats, including Sen.",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-18b072267a": {
+   "headline": "Mexico captures 'El Chapo Isidro,' one of the FBI's 10 most wanted; firefight in Sinaloa leaves 11…",
+   "line": "Nov 21: Mexican forces captured Fausto Isidro Meza Flores in Guasave, Sinaloa, and flew him to Mexico City; the…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-6b0c04a180": {
+   "headline": "COP31 climate talks in Turkey end with no deal",
+   "line": "Nov 22: the UN climate summit in Antalya closed after two weeks and two days of overtime without a final pact…",
+   "kicker": "NATIONAL DESK"
+  },
   "i-21a0e57779": {
    "headline": "Trump orders federal contractors to clear congressional inquiries with the White House",
    "line": "Nov 20 (late Friday): an executive order directs contractors and subcontractors to consult the administration on…",
@@ -66,11 +111,6 @@
   "i-5f6d044d27": {
    "headline": "Storms on both coasts threaten Thanksgiving travel; San Francisco's mayor asks people not to…",
    "line": "Nov 21: San Francisco Mayor Daniel Lurie urged residents to avoid nonessential travel as extreme tides and rain are…",
-   "kicker": "NATIONAL DESK"
-  },
-  "i-18b072267a": {
-   "headline": "Mexico captures 'El Chapo Isidro,' one of the FBI's 10 most wanted; firefight in Sinaloa leaves 11…",
-   "line": "Nov 21: Mexican forces captured Fausto Isidro Meza Flores in Guasave, Sinaloa, and flew him to Mexico City; the…",
    "kicker": "NATIONAL DESK"
   },
   "i-a0f04f1466": {
@@ -136,6 +176,36 @@
   "i-1d8ad3cf77": {
    "headline": "Victor Wembanyama drops 50 points and 19 rebounds as the Spurs rout the Pelicans 114-91",
    "line": "Nov 21: Wembanyama scored 32 in the first half and added five blocks and four steals; the Spurs are 14-3.",
+   "kicker": "TRENDING"
+  },
+  "i-9ad4635d64": {
+   "headline": "Thanksgiving dinner for 10 costs $58.63, up 6%; turkey up 10%",
+   "line": "American Farm Bureau's 41st survey: $5.86 a person; a 16-lb turkey averages $23.68 ($1.48/lb), still below the 2022…",
+   "kicker": "TRENDING"
+  },
+  "i-c71529a70d": {
+   "headline": "LSU QB Sam Leavitt calls Neyland Stadium an 'insane atmosphere' after Tennessee's 27-13 win",
+   "line": "UNCONFIRMED · A trending Google search Monday morning; Leavitt praised the Knoxville crowd after the Vols beat LSU.",
+   "kicker": "TRENDING"
+  },
+  "i-40b16e5207": {
+   "headline": "Delta automation glitch delays 1,100-plus Atlanta flights days before Thanksgiving",
+   "line": "Nov 22: a weight-and-balance system outage hit Delta's Atlanta hub for hours; FlightAware showed 1,169 delays there…",
+   "kicker": "TRENDING"
+  },
+  "i-30e88f52af": {
+   "headline": "Dak Prescott accounts for 5 TDs as the Cowboys roll the Titans 51-30",
+   "line": "Nov 22: Prescott threw four TDs and ran for one, going 28-of-33 for 325 yards with no interceptions.",
+   "kicker": "TRENDING"
+  },
+  "i-989fc55d20": {
+   "headline": "49ers rout the Vikings 35-10 in Mexico City",
+   "line": "Nov 22: Brock Purdy threw three TDs as San Francisco (9-1) took control of the NFC's top seed; RT Colton McKivitz…",
+   "kicker": "TRENDING"
+  },
+  "i-6b36ea9df1": {
+   "headline": "'Sunrise on the Reaping' cast guide: young Haymitch, Effie and Snow",
+   "line": "UNCONFIRMED · Trending in Texas on Google; EW's guide lists Joseph Zada as young Haymitch for the Hunger Games…",
    "kicker": "TRENDING"
   },
   "i-84995aabbb": {
@@ -258,6 +328,26 @@
    "line": "After allowing 46 points and 584 yards to the 49ers, the 4-6 Cowboys moved play-calling from DC Christian Parker to…",
    "kicker": "TRENDING"
   },
+  "i-1672c2c5f8": {
+   "headline": "Why data centers are at the center of the Big Tech backlash",
+   "line": "UNCONFIRMED · Headline: TechCrunch looks at why data centers have become the focus of public pushback against Big…",
+   "kicker": "TECH"
+  },
+  "i-6355183f27": {
+   "headline": "The best apps to make new friends right now",
+   "line": "UNCONFIRMED · Headline: TechCrunch rounds up apps that promise to help people make new friends.",
+   "kicker": "TECH"
+  },
+  "i-34ddc587bd": {
+   "headline": "Meta Muse can do your Black Friday shopping at Walmart",
+   "line": "UNCONFIRMED · Headline: Meta's Muse AI can shop Walmart for you through Walmart's agent gateway, timed for Black…",
+   "kicker": "TECH"
+  },
+  "i-d9c6b8306a": {
+   "headline": "Binding of Isaac developer removes AI music from Repentance Plus",
+   "line": "UNCONFIRMED · Headline: the game's developer removed AI-generated music from the Repentance Plus expansion.",
+   "kicker": "TECH"
+  },
   "i-fe03d2c010": {
    "headline": "The FBI and USDA were reportedly hacked",
    "line": "UNCONFIRMED · Reports Friday said hackers hit the FBI's National Crime Information Center, which police use for…",
@@ -327,6 +417,16 @@
    "headline": "Anthropic prices IPO at $83 a share, above projected range",
    "line": "UNCONFIRMED · The long-awaited IPO reportedly prices at $83 a share, above the projected range, valuing the company…",
    "kicker": "TECH"
+  },
+  "i-070fa49917": {
+   "headline": "Remembering Hector Daniel Delgado Arizpe",
+   "line": "21 · Nov 23",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-4508c3afbd": {
+   "headline": "Remembering Ramona B. Gonzalez",
+   "line": "96 · Nov 23",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-c46e203224": {
    "headline": "Remembering Anna Segundo",
@@ -423,11 +523,6 @@
    "line": "65 · Edinburg · Nov 19",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-d2d88ce93d": {
-   "headline": "Remembering Anna Leah Cantu",
-   "line": "43 · Edinburg · Nov 18",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
   "i-0f77d205aa": {
    "headline": "Remembering Anna Maria Gonzales",
    "line": "71 · Nov 18",
@@ -446,11 +541,6 @@
   "i-bfa9fb98df": {
    "headline": "Remembering Daniel Garza",
    "line": "94 · Mission · Nov 18",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-6db7f0fd55": {
-   "headline": "Remembering Dora Luz Rodriguez",
-   "line": "80 · Nov 18",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-a5ab83df74": {
@@ -483,11 +573,6 @@
    "line": "53 · Sullivan City · Nov 18",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-58fe3d9192": {
-   "headline": "Remembering Lilia G. Lizcano",
-   "line": "89 · Edinburg · Nov 18",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
   "i-b0555043c1": {
    "headline": "Remembering Maria Santos Gomez",
    "line": "100 · Mission · Nov 18",
@@ -518,9 +603,9 @@
    "line": "99 · Edcouch · Nov 17",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-038efbe708": {
-   "headline": "Remembering Dolores Maria Garcia",
-   "line": "93 · Donna · Nov 16",
+  "i-9d15b56b4e": {
+   "headline": "Remembering Diana Cavazos Hinojosa",
+   "line": "Nov 16",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-a943f92dbe": {
@@ -531,6 +616,16 @@
   "i-e0f26477bc": {
    "headline": "Remembering Ray Dell McClaugherty",
    "line": "86 · Hargill · Nov 16",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-f22333b57f": {
+   "headline": "Remembering Alfredo Gonzalez",
+   "line": "76 · Pharr · Nov 14",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-2b2d1f993b": {
+   "headline": "Remembering Alicia Navarro",
+   "line": "66 · Nov 14",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-0b711c86ae": {
@@ -571,6 +666,16 @@
   "i-a116446c44": {
    "headline": "Remembering Joseph Anthony Allen",
    "line": "65 · Nov 14",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-d01881e0ca": {
+   "headline": "Remembering Maximiliano Torres",
+   "line": "17 · Nov 14",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-c5afa5aae8": {
+   "headline": "Remembering Peter James Graves",
+   "line": "82 · Nov 14",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-d2e4d5cfc7": {
@@ -718,44 +823,14 @@
    "line": "87 · Edinburg · Nov 10",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-bfc63488b7": {
-   "headline": "Remembering Benita Guerra",
-   "line": "84 · San Juan · Nov 9",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-ea9f21b601": {
-   "headline": "Remembering Daisy M. Chapa",
-   "line": "68 · Edinburg · Nov 9",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-adcb8398e5": {
-   "headline": "Remembering Elsa Maricela Basaldua",
-   "line": "62 · Wesalco · Nov 9",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-85383c049c": {
-   "headline": "Remembering Eva Dardanella Guerra Cárdenas",
-   "line": "McAllen · Nov 9",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-93932212e3": {
-   "headline": "Remembering Manuel Omar Hernandez",
-   "line": "50 · Nov 9",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-68d5fd442c": {
-   "headline": "Sun Nov 22",
-   "line": "Partly Sunny then Chance Showers And Thunderstorms",
-   "kicker": "SHOW"
-  },
   "i-b93eeebb9d": {
    "headline": "Mon Nov 23",
-   "line": "Rain Showers Likely",
+   "line": "Chance Rain Showers then Mostly Cloudy",
    "kicker": "SHOW"
   },
   "i-251b25dd91": {
    "headline": "Tue Nov 24",
-   "line": "Chance Rain Showers",
+   "line": "Rain Showers",
    "kicker": "SHOW"
   },
   "i-fa71ff7727": {
@@ -770,12 +845,17 @@
   },
   "i-7a4795866a": {
    "headline": "Fri Nov 27",
-   "line": "Chance Rain Showers",
+   "line": "Slight Chance Rain Showers then Mostly Cloudy",
    "kicker": "SHOW"
   },
   "i-cccc7ba157": {
    "headline": "Sat Nov 28",
    "line": "Mostly Sunny",
+   "kicker": "SHOW"
+  },
+  "i-c573bae00b": {
+   "headline": "Sun Nov 29",
+   "line": "Sunny",
    "kicker": "SHOW"
   },
   "i-01bbfde42d": {
@@ -848,89 +928,69 @@
    "line": "Thu Nov 19",
    "kicker": "SHOW"
   },
-  "i-6d39e0259b": {
-   "headline": "WAS 24, NYG 21",
-   "line": "Thu Nov 12",
+  "i-c33a5da476": {
+   "headline": "DAL 51, TEN 30",
+   "line": "Sun Nov 22",
    "kicker": "SHOW"
   },
-  "i-d047930887": {
-   "headline": "DET 35, NE 10 (Munich)",
-   "line": "Sun Nov 15",
+  "i-afd9af4cc3": {
+   "headline": "SF 35, MIN 10 (Mexico City)",
+   "line": "Sun Nov 22",
    "kicker": "SHOW"
   },
-  "i-751dcd6515": {
-   "headline": "KC 35, ATL 13",
-   "line": "Sun Nov 15",
+  "i-b2d77f5cfb": {
+   "headline": "BUF 26, MIA 9",
+   "line": "Sun Nov 22",
    "kicker": "SHOW"
   },
-  "i-863d892f0d": {
-   "headline": "CLE 27, HOU 24",
-   "line": "Sun Nov 15",
+  "i-00ee3205a4": {
+   "headline": "KC 34, ARI 7",
+   "line": "Sun Nov 22",
    "kicker": "SHOW"
   },
-  "i-ce1814a1ed": {
-   "headline": "MIN 30, GB 10",
-   "line": "Sun Nov 15",
+  "i-d234a5fc45": {
+   "headline": "DET 31, TB 21",
+   "line": "Sun Nov 22",
    "kicker": "SHOW"
   },
-  "i-822ff1fa38": {
-   "headline": "IND 24, MIA 22",
-   "line": "Sun Nov 15",
+  "i-7708242e99": {
+   "headline": "PHI 19, PIT 16",
+   "line": "Sun Nov 22",
    "kicker": "SHOW"
   },
-  "i-ad7bcc0591": {
-   "headline": "CAR 20, NO 17",
-   "line": "Sun Nov 15",
+  "i-06f52b268e": {
+   "headline": "DEN 38, LV 24",
+   "line": "Sun Nov 22",
    "kicker": "SHOW"
   },
-  "i-bd7294ae7c": {
-   "headline": "BUF 31, NYJ 12",
-   "line": "Sun Nov 15",
+  "i-0a029eaafa": {
+   "headline": "NYG 23, JAX 18",
+   "line": "Sun Nov 22",
    "kicker": "SHOW"
   },
-  "i-a434d0cd3a": {
-   "headline": "JAX 40, TEN 23",
-   "line": "Sun Nov 15",
+  "i-f1cb7c9daf": {
+   "headline": "CAR 35, BAL 33",
+   "line": "Sun Nov 22",
    "kicker": "SHOW"
   },
-  "i-58f02e45c2": {
-   "headline": "LAR 34, ARI 6",
-   "line": "Sun Nov 15",
+  "i-43f35a9e13": {
+   "headline": "CHI 21, NO 13",
+   "line": "Sun Nov 22",
    "kicker": "SHOW"
   },
-  "i-015eabf5e4": {
-   "headline": "SEA 21, LV 13",
-   "line": "Sun Nov 15",
+  "i-e5903b857c": {
+   "headline": "NYJ 27, LAC 24",
+   "line": "Sun Nov 22",
    "kicker": "SHOW"
   },
-  "i-3e10f34b12": {
-   "headline": "SF 46, DAL 40",
-   "line": "Sun Nov 15",
-   "kicker": "SHOW"
-  },
-  "i-70c79e7f60": {
-   "headline": "CIN 38, PIT 18 (SNF)",
-   "line": "Sun Nov 15",
-   "kicker": "SHOW"
-  },
-  "i-14a4a0020b": {
-   "headline": "LAC 23, BAL 20 (MNF)",
-   "line": "Mon Nov 16",
-   "kicker": "SHOW"
-  },
-  "i-94a5e2112d": {
-   "headline": "Today: Titans (1-8) at Cowboys (4-6), noon CT, AT&T Stadium, FOX",
-   "line": "DallasCowboys.com · Nov 20",
+  "i-8a6358a0a6": {
+   "headline": "Dak Prescott: 5 TDs, 28-of-33, 325 yards as Dallas hangs 51 on Tennessee",
+   "line": "AP · Nov 22",
    "kicker": "NFL"
   },
-  "i-8d80d9451e": {
-   "headline": "Tonight: Vikings vs. 49ers in Mexico City on Sunday Night Football (7:20 PM CT, NBC); Texans…",
-   "line": "NFL.com",
-   "kicker": "NFL"
-  },
-  "i-79bbd95496": {
-   "headline": "Texans 26, Colts 3: C.J. Stroud throws 3 TDs on Thursday Night Football",
-   "line": "AP · Nov 19",
+  "i-c4617d5c87": {
+   "headline": "Thanksgiving: Bears at Lions; Chiefs at Bills Thursday night",
+   "line": "The Guardian · Nov 22",
    "kicker": "NFL"
   },
   "i-fd8c618fa8": {
@@ -1020,7 +1080,7 @@
   },
   "i-8c90cbd7b1": {
    "headline": "hip hop class",
-   "line": "Tue Nov 17",
+   "line": "Tue Nov 24",
    "kicker": "WHAT I'VE BEEN UP TO"
   },
   "i-22f0669c9d": {
@@ -1030,13 +1090,33 @@
   },
   "i-170f71a0c9": {
    "headline": "tap class",
-   "line": "Wed Nov 18",
+   "line": "Wed Nov 25",
    "kicker": "WHAT I'VE BEEN UP TO"
   },
   "i-d5d38e51f8": {
    "headline": "the region clinic and concert",
    "line": "Fri Nov 20",
    "kicker": "WHAT I'VE BEEN UP TO"
+  },
+  "i-fae39ed1cc": {
+   "headline": "chess club",
+   "line": "Tue Nov 24 · twice",
+   "kicker": "WHAT I'VE BEEN UP TO"
+  },
+  "i-42da0706a0": {
+   "headline": "Edinburg Cares food drive delivers 1,000 turkeys and 1,000 food baskets to local families",
+   "line": "The City of Edinburg delivered 1,000 turkeys and 1,000 food baskets through its annual Edinburg Cares food drive…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-e4deaddae4": {
+   "headline": "Commentary: Debating tablets in the classroom",
+   "line": "UNCONFIRMED · An opinion column in The Monitor weighs the case for and against tablets in classrooms (headline read…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-4f935d0bc0": {
+   "headline": "Starship Flight 17's Super Heavy (Booster 24) starts cryogenic testing at Starbase's Massey's site",
+   "line": "UNCONFIRMED · Space-fan outlets report Booster 24, the Super Heavy expected for Starship Flight 17, began cryogenic…",
+   "kicker": "HEADLINES · RGV"
   },
   "i-36c43d56e5": {
    "headline": "Catholic Diocese of Brownsville adds a parish-wide collection for Catholic Charities RGV as…",
@@ -1131,6 +1211,11 @@
   "i-7565e4203d": {
    "headline": "Head football coaches at Edinburg North and Port Isabel resign",
    "line": "UNCONFIRMED · Edinburg North, Port Isabel head coaches resign",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-d774e0a7b4": {
+   "headline": "Brownsville Mayor John Cowen elected chair of the Texas Border Coalition",
+   "line": "Cowen succeeds Hudspeth County Judge Joanna MacKenzie, who is leaving her county post for the private sector.",
    "kicker": "HEADLINES · RGV"
   },
   "i-2c22b20c53": {
@@ -1316,6 +1401,11 @@
   "i-f42933d53d": {
    "headline": "State drops its lawsuit against Latino voting group Jolt Initiative",
    "line": "AG Ken Paxton's office dropped the suit, which followed unsubstantiated claims by a Fox News host that Texas groups…",
+   "kicker": "STATEWIDE"
+  },
+  "i-fb650b5579": {
+   "headline": "Texas drops abortion-pill lawsuits against out-of-state medical providers",
+   "line": "The state dropped its lawsuits against out-of-state providers (California and Delaware) over abortion pills, part of…",
    "kicker": "STATEWIDE"
   },
   "i-4e3826ad7d": {
