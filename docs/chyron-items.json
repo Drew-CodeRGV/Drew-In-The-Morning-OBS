@@ -1,11 +1,21 @@
 {
  "v": 1,
- "date": "2026-11-23",
- "generated": "2026-11-23T23:33:04+00:00",
+ "date": "2026-11-24",
+ "generated": "2026-11-24T06:19:42-06:00",
  "items": {
+  "i-84507fc93d": {
+   "headline": "MERCEDES: WINGSTOP PLANNING $300,000 FIRST MERCEDES LOCATION AT MERCEDES PLAZA NEAR THE OUTLETS",
+   "line": "UNCONFIRMED · RGV.me (post labeled AI content) says state permits show a $300,000, 3,005-square-foot Wingstop…",
+   "kicker": "CHISME"
+  },
   "i-63abb29ce5": {
    "headline": "Democrats flip control of Texas State Board of Education for first time in more than 30 years",
    "line": "UNCONFIRMED · A r/texas post shares a report that Democrats now control the State Board of Education for the first…",
+   "kicker": "CHISME"
+  },
+  "i-c492bf985e": {
+   "headline": "MCALLEN: NATURAL GROCERS SETS DECEMBER 16 OPENING DATE FOR NEW SOUTH 10TH STREET STORE",
+   "line": "UNCONFIRMED · RGV.me says Natural Grocers will open its McAllen store on South 10th Street on Wednesday, Dec.",
    "kicker": "CHISME"
   },
   "i-6078bde15f": {
@@ -26,6 +36,16 @@
   "i-b9ededa4b4": {
    "headline": "\"Pompous\" Texas Judge Finally Faces Discipline After Going Viral For Berating IT Worker Trying To…",
    "line": "UNCONFIRMED · An r/texas post shares a headline saying a Texas judge who went viral for berating an IT worker now…",
+   "kicker": "CHISME"
+  },
+  "i-ca91b82d1b": {
+   "headline": "Bistrot 87 in Matamoros: wings and 35-peso Monday beers",
+   "line": "UNCONFIRMED · Nomorecheezmeh recommends wings at Bistrot 87 in Matamoros and says Mondays bring 35-peso beers (about…",
+   "kicker": "CHISME"
+  },
+  "i-c757787ae8": {
+   "headline": "Suspected debris from a SpaceX rocket explosion has washed up in Mexico",
+   "line": "KRGV's Facebook post on suspected SpaceX debris washing up in Mexico drew 40 comments.",
    "kicker": "CHISME"
   },
   "i-338b902709": {
@@ -72,6 +92,16 @@
    "headline": "Gina Hinojosa tells sheriffs she will not cut Abbott's border security grants",
    "line": "UNCONFIRMED · A top r/texas post shares a story headlined: Gina Hinojosa tells sheriffs she will not cut Abbott's…",
    "kicker": "CHISME"
+  },
+  "i-e11a130374": {
+   "headline": "Nvidia reinstates Jensen Huang as CEO",
+   "line": "Nov 23: Nvidia's board reinstated Jensen Huang as president and CEO less than two weeks after he resigned amid a…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-f56067e122": {
+   "headline": "Storms targeting both US coasts threaten to snarl Thanksgiving travel for millions",
+   "line": "AAA expects 81.5 million Americans to travel 50+ miles Nov 24-30.",
+   "kicker": "NATIONAL DESK"
   },
   "i-a0f04f1466": {
    "headline": "Judge gives final approval to Bayer's Roundup cancer settlement, up to $7.25 billion",
@@ -168,10 +198,45 @@
    "line": "Nov 18: Iran fired drones at Ali Al Salem Air Base in Kuwait and at Bahrain after a U.S.",
    "kicker": "NATIONAL DESK"
   },
+  "i-33a9840e3c": {
+   "headline": "Husband of woman arrested by ICE at Seattle airport calls it \"unjust\"",
+   "line": "Nov 23: A U.S.",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-363b986c93": {
+   "headline": "Iran says it will use all means to end U.S. blockade as Trump plays down escalating attacks",
+   "line": "Nov 23-24: Iran vowed to force the U.S.",
+   "kicker": "NATIONAL DESK"
+  },
   "i-18b072267a": {
    "headline": "Mexico captures 'El Chapo Isidro,' one of the FBI's 10 most wanted; firefight in Sinaloa leaves 11…",
    "line": "Nov 21: Mexican forces captured Fausto Isidro Meza Flores in Guasave, Sinaloa, and flew him to Mexico City; the…",
    "kicker": "NATIONAL DESK"
+  },
+  "i-161966dc05": {
+   "headline": "Apple renews Ted Lasso for season 5",
+   "line": "Nov 23: Apple renewed Ted Lasso for a fifth season; no word yet on when it might stream.",
+   "kicker": "TRENDING"
+  },
+  "i-61cc8d4283": {
+   "headline": "Commanders 22, Bengals 20: Drew Stevens drills walk-off field goal on Monday Night Football",
+   "line": "Nov 23: After a 56-yard Bengals field goal with 46 seconds left, Jayden Daniels moved Washington 64 yards in three…",
+   "kicker": "TRENDING"
+  },
+  "i-e6392221f6": {
+   "headline": "Istanbul lioness never existed, Turkish officials say after 24-hour search for her",
+   "line": "Nov 23-24: Istanbul's governor mobilized animal experts, police and army commandos and released two videos of a…",
+   "kicker": "TRENDING"
+  },
+  "i-f600f5ecb1": {
+   "headline": "Man with Alzheimer's found alive after 11 days lost in Amazon jungle: \"He was very thirsty\"",
+   "line": "A 74-year-old man with Alzheimer's survived 11 days in the rainforest near Macapa, Brazil, eating berries, drinking…",
+   "kicker": "TRENDING"
+  },
+  "i-2e9984f16c": {
+   "headline": "Newly found farthest quasar from Earth is also record-setting oldest, scientists say",
+   "line": "A German-led team reported a quasar that formed within 630 million years of the Big Bang, the most distant yet…",
+   "kicker": "TRENDING"
   },
   "i-5ab285951c": {
    "headline": "BTS fans flood X voting for the MAMA Awards",
@@ -186,6 +251,11 @@
   "i-21ff8abe07": {
    "headline": "Ella Langley sweeps the CMA Awards with 'Choosin' Texas'",
    "line": "At the 60th CMA Awards (Nov 18) Ella Langley won Single, Song and Music Video of the Year for 'Choosin' Texas'…",
+   "kicker": "TRENDING"
+  },
+  "i-8dd14bfc69": {
+   "headline": "The hacker behind early GTA VI leaks has been sentenced — and released",
+   "line": "Nov 23: Arion Kurtaj, who hacked Rockstar Games and leaked 90 videos of GTA VI in 2022, was released after pleading…",
    "kicker": "TRENDING"
   },
   "i-6b36ea9df1": {
@@ -328,6 +398,16 @@
    "line": "At the DealBook Summit, Elon Musk, the cycle's top individual donor (much of it in Texas), called the spending…",
    "kicker": "TRENDING"
   },
+  "i-b4c38cdd0b": {
+   "headline": "Amazon fights Delivery Protection Act by putting stickers on its packages",
+   "line": "Some NYC shoppers got Amazon packages with a sticker saying the city council 'could add up to $5 per order' and a QR…",
+   "kicker": "TECH"
+  },
+  "i-f548a34a0f": {
+   "headline": "Google Search's AI Mode can now tap into Drive and Wallet for more personalized responses",
+   "line": "Google's Personal Intelligence in AI Mode can now connect to Drive, Wallet and the Gemini app; connecting is…",
+   "kicker": "TECH"
+  },
   "i-1672c2c5f8": {
    "headline": "Why data centers are at the center of the Big Tech backlash",
    "line": "UNCONFIRMED · Headline: TechCrunch looks at why data centers have become the focus of public pushback against Big…",
@@ -356,6 +436,11 @@
   "i-bbc97ae6c5": {
    "headline": "Anthropic prices IPO at $83 a share, above projected range",
    "line": "UNCONFIRMED · The long-awaited IPO reportedly prices at $83 a share, above the projected range, valuing the company…",
+   "kicker": "TECH"
+  },
+  "i-9000c73c5f": {
+   "headline": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+   "line": "State attorneys general sued SpaceX (which acquired xAI in February) alleging Grok still generates abuse imagery; X…",
    "kicker": "TECH"
   },
   "i-d9c6b8306a": {
@@ -417,6 +502,21 @@
    "headline": "The nation's largest school districts consider ditching Google Search",
    "line": "UNCONFIRMED · New York, Los Angeles and Chicago schools are weighing Google alternatives after Google said it will…",
    "kicker": "TECH"
+  },
+  "i-ed053f27bd": {
+   "headline": "Remembering Aurelio Veraza Posas",
+   "line": "68 · Edinburg · Nov 24",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-f0e1afb414": {
+   "headline": "Remembering Rudy Cano",
+   "line": "46 · Edinburg · Nov 24",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-0ec4af2aff": {
+   "headline": "Remembering Valentina Arevalo",
+   "line": "79 · Edinburg · Nov 24",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-070fa49917": {
    "headline": "Remembering Hector Daniel Delgado Arizpe",
@@ -523,6 +623,11 @@
    "line": "65 · Edinburg · Nov 19",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
+  "i-d2d88ce93d": {
+   "headline": "Remembering Anna Leah Cantu",
+   "line": "43 · Edinburg · Nov 18",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
   "i-0f77d205aa": {
    "headline": "Remembering Anna Maria Gonzales",
    "line": "71 · Nov 18",
@@ -541,6 +646,11 @@
   "i-bfa9fb98df": {
    "headline": "Remembering Daniel Garza",
    "line": "94 · Mission · Nov 18",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-6db7f0fd55": {
+   "headline": "Remembering Dora Luz Rodriguez",
+   "line": "80 · Nov 18",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-a5ab83df74": {
@@ -573,6 +683,11 @@
    "line": "53 · Sullivan City · Nov 18",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
+  "i-58fe3d9192": {
+   "headline": "Remembering Lilia G. Lizcano",
+   "line": "89 · Edinburg · Nov 18",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
   "i-b0555043c1": {
    "headline": "Remembering Maria Santos Gomez",
    "line": "100 · Mission · Nov 18",
@@ -603,9 +718,14 @@
    "line": "99 · Edcouch · Nov 17",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-9d15b56b4e": {
-   "headline": "Remembering Diana Cavazos Hinojosa",
-   "line": "Nov 16",
+  "i-840a452369": {
+   "headline": "Remembering Maria De Jesus Castillo",
+   "line": "74 · Donna · Nov 17",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-038efbe708": {
+   "headline": "Remembering Dolores Maria Garcia",
+   "line": "93 · Donna · Nov 16",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-a943f92dbe": {
@@ -616,16 +736,6 @@
   "i-e0f26477bc": {
    "headline": "Remembering Ray Dell McClaugherty",
    "line": "86 · Hargill · Nov 16",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-f22333b57f": {
-   "headline": "Remembering Alfredo Gonzalez",
-   "line": "76 · Pharr · Nov 14",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-2b2d1f993b": {
-   "headline": "Remembering Alicia Navarro",
-   "line": "66 · Nov 14",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-0b711c86ae": {
@@ -668,16 +778,6 @@
    "line": "65 · Nov 14",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-d01881e0ca": {
-   "headline": "Remembering Maximiliano Torres",
-   "line": "17 · Nov 14",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-c5afa5aae8": {
-   "headline": "Remembering Peter James Graves",
-   "line": "82 · Nov 14",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
   "i-d2e4d5cfc7": {
    "headline": "Remembering Ramon Ozuna",
    "line": "78 · Nov 14",
@@ -693,14 +793,14 @@
    "line": "66 · Pharr · Nov 13",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
+  "i-17e39ea585": {
+   "headline": "Remembering Pete T. Garcia",
+   "line": "91 · Richmond · Nov 13",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
   "i-4fa01e078d": {
    "headline": "Remembering Maria Martinez",
    "line": "83 · Alamo · Nov 12",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-bf0811cb53": {
-   "headline": "Remembering Arnulfo Rodriguez",
-   "line": "78 · Pharr · Nov 11",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-7deb9046a6": {
@@ -713,16 +813,6 @@
    "line": "85 · Elsa · Nov 11",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-5cef001925": {
-   "headline": "Remembering Eloy Flores Sr.",
-   "line": "84 · Nov 11",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-f26587f603": {
-   "headline": "Remembering Enriqueta Bazan (Bazan)",
-   "line": "84 · Hidalgo · Nov 11",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
   "i-93f923e113": {
    "headline": "Remembering Enriqueta Francisca Guzman Gonzalez",
    "line": "85 · Alamo · Nov 11",
@@ -733,14 +823,14 @@
    "line": "91 · Nov 11",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
+  "i-d94eaf4c4f": {
+   "headline": "Remembering Gauge Rene Cerda",
+   "line": "17 · Mission · Nov 11",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
   "i-455c83a62a": {
    "headline": "Remembering Gregoria B. Eureste",
    "line": "73 · Gregoria B Eureste Edinburg · Nov 11",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-bc1cbeb14c": {
-   "headline": "Remembering Ignacia Alfaro",
-   "line": "86 · Pharr · Nov 11",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-660e3b6c51": {
@@ -773,24 +863,29 @@
    "line": "59 · Nov 11",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
+  "i-dd7fd5ee49": {
+   "headline": "Remembering Maria Luisa Garza",
+   "line": "97 · Weslaco · Nov 11",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-b249735084": {
+   "headline": "Remembering Matthew Javier Garza",
+   "line": "27 · Nov 11",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
   "i-680e280980": {
    "headline": "Remembering Roberto Tovar",
    "line": "48 · Harlingen · Nov 11",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-79e0575a6c": {
-   "headline": "Remembering Ronda Sue Faulks",
-   "line": "67 · Edinburg · Nov 11",
+  "i-616115170c": {
+   "headline": "Remembering Rosa Hinojosa",
+   "line": "80 · Nov 11",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-fb43555dc5": {
    "headline": "Remembering Senovio Arevalo",
    "line": "90 · Mission · Nov 11",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-f68402a9ce": {
-   "headline": "Remembering Susana A. Perez",
-   "line": "76 · Nov 11",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-819d96610b": {
@@ -802,31 +897,6 @@
    "headline": "Remembering Tomas Alonzo Jr.",
    "line": "86 · San Juan · Nov 11",
    "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-0c5d774553": {
-   "headline": "Remembering Arnulfo Mercado",
-   "line": "71 · San Juan · Nov 10",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-b9510369c2": {
-   "headline": "Remembering Manuel Contreras",
-   "line": "95 · Alamo · Nov 10",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-eb6447a05a": {
-   "headline": "Remembering Maria Imelda Reyna",
-   "line": "73 · Weslaco · Nov 10",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-229e9ccaf3": {
-   "headline": "Remembering Maria J. Charo",
-   "line": "87 · Edinburg · Nov 10",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-b93eeebb9d": {
-   "headline": "Mon Nov 23",
-   "line": "Partly Sunny",
-   "kicker": "SHOW"
   },
   "i-251b25dd91": {
    "headline": "Tue Nov 24",
@@ -850,11 +920,16 @@
   },
   "i-cccc7ba157": {
    "headline": "Sat Nov 28",
-   "line": "Mostly Sunny",
+   "line": "Slight Chance Rain Showers then Mostly Sunny",
    "kicker": "SHOW"
   },
   "i-c573bae00b": {
    "headline": "Sun Nov 29",
+   "line": "Sunny",
+   "kicker": "SHOW"
+  },
+  "i-b73866cb15": {
+   "headline": "Mon Nov 30",
    "line": "Sunny",
    "kicker": "SHOW"
   },
@@ -923,9 +998,9 @@
    "line": "Good Day Edinburg / CBS Sports",
    "kicker": "HS FOOTBALL"
   },
-  "i-08f345846a": {
-   "headline": "HOU 26, IND 3 (TNF)",
-   "line": "Thu Nov 19",
+  "i-f00959ef6a": {
+   "headline": "WAS 22, CIN 20 (MNF)",
+   "line": "Mon Nov 23",
    "kicker": "SHOW"
   },
   "i-c33a5da476": {
@@ -938,53 +1013,18 @@
    "line": "Sun Nov 22",
    "kicker": "SHOW"
   },
-  "i-b2d77f5cfb": {
-   "headline": "BUF 26, MIA 9",
-   "line": "Sun Nov 22",
+  "i-08f345846a": {
+   "headline": "HOU 26, IND 3 (TNF)",
+   "line": "Thu Nov 19",
    "kicker": "SHOW"
   },
-  "i-00ee3205a4": {
-   "headline": "KC 34, ARI 7",
-   "line": "Sun Nov 22",
-   "kicker": "SHOW"
+  "i-e9d296b486": {
+   "headline": "Drew Stevens' fifth field goal as time expires: Commanders 22, Bengals 20",
+   "line": "Yahoo Sports · Nov 23",
+   "kicker": "NFL"
   },
-  "i-d234a5fc45": {
-   "headline": "DET 31, TB 21",
-   "line": "Sun Nov 22",
-   "kicker": "SHOW"
-  },
-  "i-7708242e99": {
-   "headline": "PHI 19, PIT 16",
-   "line": "Sun Nov 22",
-   "kicker": "SHOW"
-  },
-  "i-06f52b268e": {
-   "headline": "DEN 38, LV 24",
-   "line": "Sun Nov 22",
-   "kicker": "SHOW"
-  },
-  "i-0a029eaafa": {
-   "headline": "NYG 23, JAX 18",
-   "line": "Sun Nov 22",
-   "kicker": "SHOW"
-  },
-  "i-f1cb7c9daf": {
-   "headline": "CAR 35, BAL 33",
-   "line": "Sun Nov 22",
-   "kicker": "SHOW"
-  },
-  "i-43f35a9e13": {
-   "headline": "CHI 21, NO 13",
-   "line": "Sun Nov 22",
-   "kicker": "SHOW"
-  },
-  "i-e5903b857c": {
-   "headline": "NYJ 27, LAC 24",
-   "line": "Sun Nov 22",
-   "kicker": "SHOW"
-  },
-  "i-8a6358a0a6": {
-   "headline": "Dak Prescott: 5 TDs, 28-of-33, 325 yards as Dallas hangs 51 on Tennessee",
+  "i-fb77611bce": {
+   "headline": "Dak Prescott: 5 TDs as Dallas hangs 51 on Tennessee",
    "line": "AP · Nov 22",
    "kicker": "NFL"
   },
@@ -993,39 +1033,39 @@
    "line": "The Guardian · Nov 22",
    "kicker": "NFL"
   },
-  "i-fd8c618fa8": {
-   "headline": "SAS 114, NOP 91",
-   "line": "Sat Nov 21",
+  "i-6f99111220": {
+   "headline": "SAS 123, SAC 107",
+   "line": "Mon Nov 23",
    "kicker": "SHOW"
   },
-  "i-399b98334f": {
-   "headline": "DAL 110, LAC 100",
-   "line": "Sat Nov 21",
+  "i-9f5cbea09d": {
+   "headline": "HOU 116, LAC 104",
+   "line": "Mon Nov 23",
    "kicker": "SHOW"
   },
-  "i-936bdcfaef": {
-   "headline": "MIN 104, MEM 95",
-   "line": "Sat Nov 21",
+  "i-1483aa8e09": {
+   "headline": "LAL 109, UTA 94",
+   "line": "Mon Nov 23",
    "kicker": "SHOW"
   },
-  "i-197f366b5e": {
-   "headline": "DEN 133, HOU 124 (NBA Cup)",
-   "line": "Fri Nov 20",
+  "i-ce883f1ac8": {
+   "headline": "DAL 116, UTA 114",
+   "line": "Sun Nov 22",
    "kicker": "SHOW"
   },
-  "i-dbff668618": {
-   "headline": "Wembanyama: 50 points, 19 rebounds, 5 blocks as the Spurs (14-3) rout New Orleans",
-   "line": "ESPN/AP · Nov 21",
+  "i-702e993bd5": {
+   "headline": "Without Wembanyama, Fox and Harper, Castle (28 pts, 11 ast) keeps the Spurs (15-3) unbeaten on the…",
+   "line": "NBA.com/AP · Nov 23",
    "kicker": "NBA"
   },
-  "i-d2ec78107b": {
-   "headline": "Kyrie Irving 25, Cooper Flagg 22 as Dallas (9-7) closes on an 11-0 run to beat the Clippers",
-   "line": "NBA.com/AP · Nov 21",
+  "i-2fbfce00c3": {
+   "headline": "Cooper Flagg's free throws with 3.7 seconds left save Dallas (10-7) after an 18-point…",
+   "line": "AP · Nov 22",
    "kicker": "NBA"
   },
-  "i-63e2325869": {
-   "headline": "Rockets fall 133-124 at Denver in the NBA Cup despite Sengun's triple-double (28-11-10)",
-   "line": "NBA.com · Nov 21",
+  "i-9de8dfce85": {
+   "headline": "Kevin Durant 32 as Houston (13-5) beats the Clippers",
+   "line": "RealGM · Nov 23",
    "kicker": "NBA"
   },
   "i-14111bee30": {
@@ -1073,16 +1113,6 @@
    "line": "'Aura' = someone's vibe; 'aura farming' = doing things to look cool online; 'cooked' = in trouble.",
    "kicker": "MEME OF THE WEEK · HIGH SCHOOL"
   },
-  "i-8be7626624": {
-   "headline": "a school picnic",
-   "line": "Tue Nov 17",
-   "kicker": "WHAT I'VE BEEN UP TO"
-  },
-  "i-8c90cbd7b1": {
-   "headline": "hip hop class",
-   "line": "Tue Nov 24",
-   "kicker": "WHAT I'VE BEEN UP TO"
-  },
   "i-22f0669c9d": {
    "headline": "cotillion",
    "line": "Wed Nov 18",
@@ -1090,7 +1120,7 @@
   },
   "i-170f71a0c9": {
    "headline": "tap class",
-   "line": "Wed Nov 25",
+   "line": "Wed Nov 18",
    "kicker": "WHAT I'VE BEEN UP TO"
   },
   "i-d5d38e51f8": {
@@ -1100,8 +1130,18 @@
   },
   "i-fae39ed1cc": {
    "headline": "chess club",
-   "line": "Tue Nov 24 · twice",
+   "line": "Tue Nov 24",
    "kicker": "WHAT I'VE BEEN UP TO"
+  },
+  "i-8c90cbd7b1": {
+   "headline": "hip hop class",
+   "line": "Tue Nov 24",
+   "kicker": "WHAT I'VE BEEN UP TO"
+  },
+  "i-7e8212a53f": {
+   "headline": "Mexico demands SpaceX clean up suspected rocket debris washing ashore near Texas",
+   "line": "Mexican authorities say SpaceX must take responsibility for suspected rocket debris washing up at Bagdad Beach near…",
+   "kicker": "HEADLINES · RGV"
   },
   "i-42da0706a0": {
    "headline": "Edinburg Cares food drive delivers 1,000 turkeys and 1,000 food baskets to local families",
@@ -1111,6 +1151,21 @@
   "i-36c43d56e5": {
    "headline": "Catholic Diocese of Brownsville adds a parish-wide collection for Catholic Charities RGV as…",
    "line": "For the first time every parish is taking a second collection this weekend that goes entirely to Catholic Charities…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-3c22e5e197": {
+   "headline": "VIDA Plans to Triple Workforce Training Opportunities Across South Texas",
+   "line": "Valley Initiative for Development and Advancement (VIDA) plans to expand its workforce training programs to serve up…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-dea8f3ee1f": {
+   "headline": "Tiny town: Holiday Village returns to Brownsville’s Dean Porter Park",
+   "line": "Holiday Village at Brownsville's Dean Porter Park is back for its 17th year, opening Monday with live music, door…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-134716e793": {
+   "headline": "South Texas College Turkey Trot Generates Thousands to Support Hungry Students",
+   "line": "The South Texas College Foundation's 21st annual Turkey Trot raised more than $27,000 with more than 300 runners…",
    "kicker": "HEADLINES · RGV"
   },
   "i-9f2fd06d20": {
@@ -1131,6 +1186,61 @@
   "i-7565e4203d": {
    "headline": "Head football coaches at Edinburg North and Port Isabel resign",
    "line": "UNCONFIRMED · Edinburg North, Port Isabel head coaches resign",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-a8d82109a3": {
+   "headline": "Bobby Pulido joins community for Thanksgiving luncheon",
+   "line": "Fresh off a freshman orientation trip to Washington, Representative-elect Bobby Pulido returned to Bert Ogden Arena…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-2a1c6ba640": {
+   "headline": "RGV Livestock Show expands student outreach",
+   "line": "The Rio Grande Valley Livestock Show in Mercedes, celebrating its 88th year, is expanding year-round agricultural…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-d78f27718b": {
+   "headline": "City of Edinburg to Kick Off Holiday Season with Two-Day Celebration",
+   "line": "UNCONFIRMED · The City of Edinburg invites the community to a two-day holiday kickoff celebration.",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-e5cc79535a": {
+   "headline": "Brownsville to hold listening sessions for venue sound regulations",
+   "line": "Brownsville is starting a citywide sound management study with consulting firm Sound Music Cities, beginning with…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-5b71316a6b": {
+   "headline": "Food Bank RGV to distribute free produce ahead of Thanksgiving Day",
+   "line": "UNCONFIRMED · The Food Bank of the Rio Grande Valley will distribute free produce on Tuesday in Elsa ahead of…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-87a5bc3baf": {
+   "headline": "Veterans Voices: Construction on track for new $2.5M Harlingen VFW",
+   "line": "Harlingen VFW Post 2410 broke ground in May 2026 on a $2.5 million replacement facility off Whalen Road; the…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-8a168b5b7b": {
+   "headline": "Expanding care: Partnership between VA, UTRGV aims to help veterans",
+   "line": "UTRGV and the VA Texas Coastal Bend Health Care System signed a partnership to bring UT Health RGV…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-3cbba7bc1f": {
+   "headline": "Nearly all arrested in Hidalgo County under SB4 choose self deportation",
+   "line": "Since SB4 took partial effect in May, Hidalgo County has seen at least 60 arrests on the state illegal-entry charge.",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-7fb71fdbff": {
+   "headline": "STC Faculty Member Elected to Texas Board of Education",
+   "line": "South Texas College English faculty member Thomas Garcia is preparing to bring classroom experience and a mission to…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-6715e33df9": {
+   "headline": "Hidalgo International Trade Loop Aims to Expand Commerce and Freight Connectivity",
+   "line": "The project formerly known as the Hidalgo Loop has been renamed the Hidalgo International Trade Loop, reflecting…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-dc0034ae79": {
+   "headline": "McAllen and Tampico Sign Sister City Agreement to Expand Cross-Border Business Ties",
+   "line": "McAllen Mayor Javier Villalobos and Tampico Mayor Mónica Villarreal Anaya signed a Sister City Agreement on Nov.",
    "kicker": "HEADLINES · RGV"
   },
   "i-e4deaddae4": {
@@ -1206,6 +1316,31 @@
   "i-4e19052319": {
    "headline": "Hidalgo County confirms its first New World screwworm case (a calf); quarantine zone covers parts…",
    "line": "UNCONFIRMED · Hidalgo Co.",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-48dd301bb9": {
+   "headline": "Brownsville tax preparer admits to scheme that caused $529,130 in IRS losses",
+   "line": "A Brownsville tax preparer pleaded guilty to making false tax returns in a scheme that cost the IRS about $529,130…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-058590df0c": {
+   "headline": "McAllen fire chief urges residents to check heaters as temperatures drop",
+   "line": "McAllen Fire Chief Juan Gloria said families should check heaters, cords, outlets and smoke detectors before turning…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-bb084eefbc": {
+   "headline": "Gang member on state's most wanted list captured in Edinburg",
+   "line": "A Texas Chicano Brotherhood gang member on the state's most wanted list was arrested during a traffic stop in…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-ef0534cfc1": {
+   "headline": "Rio Grande Valley Leaders to Gather at Texas Capitol February 2–3",
+   "line": "The Rio Grande Valley Partnership is inviting business leaders, elected officials and community stakeholders to RGV…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-1acbcaf5c9": {
+   "headline": "After mistrial, former La Feria coach found guilty in deadly hit-and-run crash",
+   "line": "A Cameron County jury found a former La Feria High School coach, 59, guilty of accident involving death in the 2021…",
    "kicker": "HEADLINES · RGV"
   },
   "i-941546bd06": {
@@ -1343,6 +1478,11 @@
    "line": "Tesla eyes $3.1B Robstown plant, seeks school tax break",
    "kicker": "ECONOMIC DEVELOPMENT"
   },
+  "i-24bb4a825b": {
+   "headline": "Palmview library to use $20,000 grant to add shelves, new books",
+   "line": "The Palmview Municipal Library is getting a $20,000 upgrade.",
+   "kicker": "FAMILY & KIDS"
+  },
   "i-a296686d60": {
    "headline": "Congressman-elect Bobby Pulido hosts a free Friends' Thanksgiving Celebration Mon Nov 23, 11 AM-2…",
    "line": "UNCONFIRMED · Pulido's free Thanksgiving event Mon 11/23, Bert Ogden Arena",
@@ -1383,6 +1523,21 @@
    "line": "GTA VI launched Nov 19 on PS5 and Xbox Series X; rated M (17+), 212 GB download.",
    "kicker": "FAMILY & KIDS"
   },
+  "i-7588737d3e": {
+   "headline": "Clayton Tucker names Tracy King as deputy ag commissioner",
+   "line": "Incoming Agriculture Commissioner Clayton Tucker named former state Rep.",
+   "kicker": "STATEWIDE"
+  },
+  "i-52847f45b6": {
+   "headline": "Dems hope Texas’ power shift boosts their education priorities",
+   "line": "Education bills filed ahead of next year's session include some that failed in a GOP-controlled Legislature.",
+   "kicker": "STATEWIDE"
+  },
+  "i-97968175c9": {
+   "headline": "Texas Democrats consider tax relief for homeowners and renters",
+   "line": "Texas Democrats are considering cutting property taxes and ending corporate subsidies, and the Tribune lays out what…",
+   "kicker": "STATEWIDE"
+  },
   "i-5efb14eef7": {
    "headline": "Texas Sports Academy, tied to AI-driven Alpha School, is the biggest recipient of Texas' new…",
    "line": "Students at Texas Sports Academy, which schedules two hours of academics a day, have received $6.5 million in…",
@@ -1411,6 +1566,16 @@
   "i-521a50eb01": {
    "headline": "Texas public schools lost ~135,000 students this year, the largest one-year drop in state history…",
    "line": "Texas schools lose ~135K students, a record drop",
+   "kicker": "STATEWIDE"
+  },
+  "i-fe2f3cef4f": {
+   "headline": "Steven Alvis Named Chairman of Texas Transportation Commission",
+   "line": "Gov.",
+   "kicker": "STATEWIDE"
+  },
+  "i-99d63e2db0": {
+   "headline": "Texas Supreme Court dismisses lawsuit over 2021 abortion law",
+   "line": "The Texas Supreme Court dismissed a lawsuit over the 2021 abortion law after advocacy groups asked that it be…",
    "kicker": "STATEWIDE"
   },
   "i-dfbe94b47e": {

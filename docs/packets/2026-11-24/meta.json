@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-24",
+  "mode": "daily",
+  "sample": false,
+  "label": "Tuesday, November 24, 2026 \u00b7 Daily Briefing",
+  "kind": "Daily briefing",
+  "files": {
+    "studio": "index.html",
+    "pdf": "DITM-briefing-2026-11-24.pdf",
+    "txt": "DITM-briefing-2026-11-24.txt",
+    "email": "DITM-briefing-2026-11-24-email-preview.html"
+  },
+  "built": "2026-11-24T06:19:42-06:00"
+}
