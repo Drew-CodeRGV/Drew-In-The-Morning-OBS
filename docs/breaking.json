@@ -1,14 +1,14 @@
 {
  "version": 1,
- "generatedAt": "2026-11-23T19:06:03+00:00",
+ "generatedAt": "2026-11-24T15:39:05+00:00",
  "window_hours": 24,
  "bootstrap": false,
  "note": "Public headlines and links only. Everything here is a lead: CONFIRM BEFORE AIR.",
  "counts": {
-  "alert": 0,
-  "watch": 15,
-  "stories": 134,
-  "new": 129
+  "alert": 4,
+  "watch": 23,
+  "stories": 174,
+  "new": 137
  },
  "feeds": {
   "ok": 16,
@@ -21,6 +21,290 @@
  },
  "items": [
   {
+   "id": "93c726934951",
+   "title": "McAllen fire chief urges residents to check heaters as temperatures drop",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTXg3WUZkS3pEQjJmWDItYjg5ZzFHYmpNeWpWcXVzakVTVUY2NTlxWWdkUmFZNEVlODJDOUlWLTgxSlptX2M4YVBZRTlsWGxfY0VWNnpiMmliQ2ZabnlzdWlncUhaQTRCTlJuSHhSMkxnSmVwMmtwTWRZblAteVdwZHgtSnhNcUI4T3Q4QXAtXzF4MlhmOU9RTXVvZ3lnZXVE?oc=5",
+   "source": "KRGV",
+   "sources": [
+    {
+     "name": "KRGV",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTXg3WUZkS3pEQjJmWDItYjg5ZzFHYmpNeWpWcXVzakVTVUY2NTlxWWdkUmFZNEVlODJDOUlWLTgxSlptX2M4YVBZRTlsWGxfY0VWNnpiMmliQ2ZabnlzdWlncUhaQTRCTlJuSHhSMkxnSmVwMmtwTWRZblAteVdwZHgtSnhNcUI4T3Q4QXAtXzF4MlhmOU9RTXVvZ3lnZXVE?oc=5"
+    }
+   ],
+   "published": "2026-11-24T00:51:02+00:00",
+   "firstSeen": "2026-11-24T15:39:05+00:00",
+   "score": 15,
+   "label": "Active",
+   "uncovered": false,
+   "level": "alert",
+   "matches": [
+    "fire",
+    "McAllen"
+   ],
+   "why": "Score 15: 1 outlet 6 + recency 8.5 (15h old)"
+  },
+  {
+   "id": "dac17f62bcd2",
+   "title": "Fire officials urge kitchen safety ahead of Thanksgiving",
+   "url": "https://www.valleycentral.com/news/fire-officials-urge-kitchen-safety-ahead-of-thanksgiving/",
+   "source": "ValleyCentral (KVEO)",
+   "sources": [
+    {
+     "name": "ValleyCentral (KVEO)",
+     "url": "https://www.valleycentral.com/news/fire-officials-urge-kitchen-safety-ahead-of-thanksgiving/"
+    }
+   ],
+   "published": "2026-11-23T23:43:40+00:00",
+   "firstSeen": "2026-11-24T15:39:05+00:00",
+   "score": 14,
+   "label": "Active",
+   "uncovered": false,
+   "level": "alert",
+   "matches": [
+    "Edinburg",
+    "fire",
+    "Harlingen"
+   ],
+   "why": "Score 14: 1 outlet 6 + recency 8 (16h old)"
+  },
+  {
+   "id": "7d19bc1f6fac",
+   "title": "Rio Grande City police identify victim in deadly shooting",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSEg4NlV6azdXV0ZSODlaeEJ1UjlxZUx0WXBCc0VJZGlDczJTOGJRLURKcFNQVk5sRDJTOUxTaWZMSU9fajBZYU1IX1BJNWNnclgtd1drTVNpbjlzMmVja3ZCZFVwdzZQeUFNZnI4bTNENjNlcnU4MV9jY0I2LXFTelMwR1RCS2J1RDdMeQ?oc=5",
+   "source": "KRGV",
+   "sources": [
+    {
+     "name": "KRGV",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSEg4NlV6azdXV0ZSODlaeEJ1UjlxZUx0WXBCc0VJZGlDczJTOGJRLURKcFNQVk5sRDJTOUxTaWZMSU9fajBZYU1IX1BJNWNnclgtd1drTVNpbjlzMmVja3ZCZFVwdzZQeUFNZnI4bTNENjNlcnU4MV9jY0I2LXFTelMwR1RCS2J1RDdMeQ?oc=5"
+    }
+   ],
+   "published": "2026-11-23T22:47:36+00:00",
+   "firstSeen": "2026-11-24T15:39:05+00:00",
+   "score": 14,
+   "label": "Active",
+   "uncovered": false,
+   "level": "alert",
+   "matches": [
+    "Rio Grande City",
+    "shooting"
+   ],
+   "why": "Score 14: 1 outlet 6 + recency 7.6 (17h old)"
+  },
+  {
+   "id": "876d9275d5df",
+   "title": "Brownsville’s Engineering and Public Works crews are clearing debris from street gutters across the City to help rainwater reach storm drains and reduce water buildup on our streets. Use 546-HELP to report: • Drainage or street flooding • D",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMUk2Q3d6UU0xdTBkODNtUS1jc2N3ZzVuT3I3b3dYdWUzbjhTOFh3b1RpNUN5TVFMYVViN0pRcG04RF82TURMNWtFS3pkVlVfLU1RblhqS1Q4aTJBT3RHX1pTbnZNdTJvdkxaNW40RjE0a003c0FWcjlldXNhamM0eUhYbS1XRlZhUExYMHFpaUJyN3RmN080dkJJOEVlZ0FKeXpRWXlJdUdBRUEzdU0xcmpUN3kzczZLOExKTGNmcFJ4Nk5HVFhNb29iWHlVZEJ1?oc=5",
+   "source": "Facebook",
+   "sources": [
+    {
+     "name": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMUk2Q3d6UU0xdTBkODNtUS1jc2N3ZzVuT3I3b3dYdWUzbjhTOFh3b1RpNUN5TVFMYVViN0pRcG04RF82TURMNWtFS3pkVlVfLU1RblhqS1Q4aTJBT3RHX1pTbnZNdTJvdkxaNW40RjE0a003c0FWcjlldXNhamM0eUhYbS1XRlZhUExYMHFpaUJyN3RmN080dkJJOEVlZ0FKeXpRWXlJdUdBRUEzdU0xcmpUN3kzczZLOExKTGNmcFJ4Nk5HVFhNb29iWHlVZEJ1?oc=5"
+    }
+   ],
+   "published": "2026-11-23T23:30:15+00:00",
+   "firstSeen": "2026-11-24T15:39:05+00:00",
+   "score": 14,
+   "label": "Active",
+   "uncovered": false,
+   "level": "alert",
+   "matches": [
+    "Brownsville",
+    "flooding"
+   ],
+   "why": "Score 14: 1 outlet 6 + recency 7.9 (16h old)"
+  },
+  {
+   "id": "68d010da87cb",
+   "title": "Veterans Voices: Chicanos Por La Causa creates a safe space for veterans",
+   "url": "https://www.valleycentral.com/news/veterans-voices/veterans-voices-chicanos-por-la-causa-creates-a-safe-space-for-veterans/",
+   "source": "ValleyCentral (KVEO)",
+   "sources": [
+    {
+     "name": "ValleyCentral (KVEO)",
+     "url": "https://www.valleycentral.com/news/veterans-voices/veterans-voices-chicanos-por-la-causa-creates-a-safe-space-for-veterans/"
+    }
+   ],
+   "published": "2026-11-24T04:00:00+00:00",
+   "firstSeen": "2026-11-24T15:39:05+00:00",
+   "score": 16,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Harlingen",
+    "Rio Grande Valley",
+    "Weslaco"
+   ],
+   "why": "Score 16: 1 outlet 6 + recency 10.2 (12h old)"
+  },
+  {
+   "id": "b606d44ee3b6",
+   "title": "Inside Valley Politics: County denies SpaceX tax abatement, bills pre-filed for legislative session",
+   "url": "https://www.valleycentral.com/local-political-show/inside-valley-politics-county-denies-spacex-tax-abatement-bills-pre-filed-for-legislative-session/",
+   "source": "ValleyCentral (KVEO)",
+   "sources": [
+    {
+     "name": "ValleyCentral (KVEO)",
+     "url": "https://www.valleycentral.com/local-political-show/inside-valley-politics-county-denies-spacex-tax-abatement-bills-pre-filed-for-legislative-session/"
+    }
+   ],
+   "published": "2026-11-24T03:02:37+00:00",
+   "firstSeen": "2026-11-24T15:39:05+00:00",
+   "score": 16,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "abatement",
+    "Harlingen",
+    "Rio Grande Valley",
+    "SpaceX",
+    "Starbase"
+   ],
+   "why": "Score 16: 1 outlet 6 + recency 9.7 (13h old)"
+  },
+  {
+   "id": "b9a107fe918d",
+   "title": "Local Christmas tree lot puts quality and customers first",
+   "url": "https://www.valleycentral.com/news/local-news/local-christmas-tree-lot-puts-quality-and-customers-first/",
+   "source": "ValleyCentral (KVEO)",
+   "sources": [
+    {
+     "name": "ValleyCentral (KVEO)",
+     "url": "https://www.valleycentral.com/news/local-news/local-christmas-tree-lot-puts-quality-and-customers-first/"
+    }
+   ],
+   "published": "2026-11-24T02:21:07+00:00",
+   "firstSeen": "2026-11-24T15:39:05+00:00",
+   "score": 15,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Harlingen",
+    "McAllen",
+    "Rio Grande Valley"
+   ],
+   "why": "Score 15: 1 outlet 6 + recency 9.3 (13h old)"
+  },
+  {
+   "id": "0e4024d7f8bb",
+   "title": "Food Bank RGV to distribute free produce ahead of Thanksgiving Day",
+   "url": "https://www.valleycentral.com/news/local-news/food-bank-rgv-to-distribute-free-produce-ahead-of-thanksgiving/",
+   "source": "ValleyCentral (KVEO)",
+   "sources": [
+    {
+     "name": "ValleyCentral (KVEO)",
+     "url": "https://www.valleycentral.com/news/local-news/food-bank-rgv-to-distribute-free-produce-ahead-of-thanksgiving/"
+    }
+   ],
+   "published": "2026-11-23T22:25:31+00:00",
+   "firstSeen": "2026-11-24T15:39:05+00:00",
+   "score": 13,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Harlingen",
+    "Hidalgo",
+    "Hidalgo County",
+    "RGV",
+    "Rio Grande Valley"
+   ],
+   "why": "Score 13: 1 outlet 6 + recency 7.4 (17h old)"
+  },
+  {
+   "id": "10d2228b3e62",
+   "title": "Louisiana Opens Public Comment on SpaceX’s Starbase Wharf Plan",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9hM082SHdreUowbEVMTnFSR0hZYU1QTDRPVTZ2eDJMZHlrNlBFc1h4TzNtM3ZPb2lScUI4VDVOY3BkTkJYdzRFXzBGVGFMdGxFeGNuaW5aanlWb3dGeE02dEhRX2Nsa0dvOGlCbmxmNkxhTmI4Nm5LQTR6cW9Wdw?oc=5",
+   "source": "TeslaNorth.com",
+   "sources": [
+    {
+     "name": "TeslaNorth.com",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9hM082SHdreUowbEVMTnFSR0hZYU1QTDRPVTZ2eDJMZHlrNlBFc1h4TzNtM3ZPb2lScUI4VDVOY3BkTkJYdzRFXzBGVGFMdGxFeGNuaW5aanlWb3dGeE02dEhRX2Nsa0dvOGlCbmxmNkxhTmI4Nm5LQTR6cW9Wdw?oc=5"
+    }
+   ],
+   "published": "2026-11-23T21:19:20+00:00",
+   "firstSeen": "2026-11-24T15:39:05+00:00",
+   "score": 13,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "SpaceX",
+    "Starbase"
+   ],
+   "why": "Score 13: 1 outlet 6 + recency 6.9 (18h old)"
+  },
+  {
+   "id": "60348a6ddb1f",
+   "title": "Live coverage: SpaceX to launch classified payload for the U.S. Space Force",
+   "url": "https://spaceflightnow.com/2026/11/23/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-3/",
+   "source": "Spaceflight Now (Starbase / SpaceX)",
+   "sources": [
+    {
+     "name": "Spaceflight Now (Starbase / SpaceX)",
+     "url": "https://spaceflightnow.com/2026/11/23/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-3/"
+    }
+   ],
+   "published": "2026-11-23T22:21:32+00:00",
+   "firstSeen": "2026-11-24T15:39:05+00:00",
+   "score": 13,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Mission",
+    "SpaceX"
+   ],
+   "why": "Score 13: 1 outlet 6 + recency 7.4 (17h old)"
+  },
+  {
+   "id": "beedf721a5ac",
+   "title": "SpaceX denied tax abatement – KVEO-TV",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1Hci1wUGtVQWNOejVlRmZsOHdjMlc3SFFzR0FOMjZxMkVMY01lSnFGQmFIQkt5M3VRdnNEWHZpT3kxSDB3TGxUUnJuV2RKM1kwcGYwOXVwQzNWdS1ENkRSOEpiQUN1YVB2WnYtRXB1UkY4QlVUd1NoeGlqLVMtZw?oc=5",
+   "source": "ValleyCentral.com",
+   "sources": [
+    {
+     "name": "ValleyCentral.com",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1Hci1wUGtVQWNOejVlRmZsOHdjMlc3SFFzR0FOMjZxMkVMY01lSnFGQmFIQkt5M3VRdnNEWHZpT3kxSDB3TGxUUnJuV2RKM1kwcGYwOXVwQzNWdS1ENkRSOEpiQUN1YVB2WnYtRXB1UkY4QlVUd1NoeGlqLVMtZw?oc=5"
+    }
+   ],
+   "published": "2026-11-23T21:53:46+00:00",
+   "firstSeen": "2026-11-24T15:39:05+00:00",
+   "score": 13,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "abatement",
+    "SpaceX"
+   ],
+   "why": "Score 13: 1 outlet 6 + recency 7.2 (18h old)"
+  },
+  {
+   "id": "ddaddee23273",
+   "title": "Expanding care: Partnership between VA, UTRGV aims to help veterans",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQN0kyV1NHdkxVeHBRMEVlVHNMMTJ4am1JbnU5Z2VvSElldUl0SWVWYXNGaFpTcHJIM3J1cVpFeXpEMEhqamJwZXl6UEZvX3U3cFV3YkhHbkhweE9UeF81M0FhTW5xaTJ5cHdmaFlnYTdhbC1HZVlZdXk4eTREN2IxVnJMUUY1MzNvVG4xVzZLZWNoREE2LW04MUZSQlFRTk1BLURYc0tyTUFEZw?oc=5",
+   "source": "MyRGV.com",
+   "sources": [
+    {
+     "name": "MyRGV.com",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQN0kyV1NHdkxVeHBRMEVlVHNMMTJ4am1JbnU5Z2VvSElldUl0SWVWYXNGaFpTcHJIM3J1cVpFeXpEMEhqamJwZXl6UEZvX3U3cFV3YkhHbkhweE9UeF81M0FhTW5xaTJ5cHdmaFlnYTdhbC1HZVlZdXk4eTREN2IxVnJMUUY1MzNvVG4xVzZLZWNoREE2LW04MUZSQlFRTk1BLURYc0tyTUFEZw?oc=5"
+    }
+   ],
+   "published": "2026-11-23T19:49:00+00:00",
+   "firstSeen": "2026-11-24T15:39:05+00:00",
+   "score": 12,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "UTRGV"
+   ],
+   "why": "Score 12: 1 outlet 6 + recency 6.4 (20h old)"
+  },
+  {
    "id": "b1d819341a19",
    "title": "Mexico demands SpaceX clean up suspected rocket debris washing ashore near Texas",
    "url": "https://www.valleycentral.com/news/local-news/mexico-demands-spacex-clean-up-suspected-rocket-debris-washing-ashore-near-texas/",
@@ -29,11 +313,15 @@
     {
      "name": "ValleyCentral (KVEO)",
      "url": "https://www.valleycentral.com/news/local-news/mexico-demands-spacex-clean-up-suspected-rocket-debris-washing-ashore-near-texas/"
+    },
+    {
+     "name": "Texas Tribune",
+     "url": "https://feeds.texastribune.org/link/16799/17538489/spacex-rocket-debris-beach-texas-mexico"
     }
    ],
    "published": "2026-11-23T18:45:17+00:00",
    "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 26,
+   "score": 18,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -42,7 +330,7 @@
     "SpaceX",
     "Starship"
    ],
-   "why": "Score 26: 1 outlet 6 + recency 19.6 (0h old)"
+   "why": "Score 18: 2 outlets 12 + recency 6 (21h old)"
   },
   {
    "id": "1d96b75e478d",
@@ -57,7 +345,7 @@
    ],
    "published": "2026-11-23T17:19:40+00:00",
    "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 24,
+   "score": 12,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -66,7 +354,7 @@
     "Rio Grande Valley",
     "UTRGV"
    ],
-   "why": "Score 24: 1 outlet 6 + recency 18.1 (2h old)"
+   "why": "Score 12: 1 outlet 6 + recency 5.5 (22h old)"
   },
   {
    "id": "29bf015be08f",
@@ -81,7 +369,7 @@
    ],
    "published": "2026-11-23T16:19:30+00:00",
    "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 23,
+   "score": 11,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -90,7 +378,7 @@
     "Roma",
     "Starr County"
    ],
-   "why": "Score 23: 1 outlet 6 + recency 17 (3h old)"
+   "why": "Score 11: 1 outlet 6 + recency 5.2 (23h old)"
   },
   {
    "id": "1e9608ae757a",
@@ -149,7 +437,7 @@
    ],
    "published": "2026-11-23T16:13:36+00:00",
    "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 23,
+   "score": 11,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -157,7 +445,7 @@
     "SpaceX",
     "Starship"
    ],
-   "why": "Score 23: 1 outlet 6 + recency 16.9 (3h old)"
+   "why": "Score 11: 1 outlet 6 + recency 5.2 (23h old)"
   },
   {
    "id": "38509cdf7923",
@@ -260,14 +548,14 @@
    ],
    "published": "2026-11-23T10:34:08+00:00",
    "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 18,
+   "score": 10,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
    "matches": [
     "UTRGV"
    ],
-   "why": "Score 18: 1 outlet 6 + recency 12.2 (9h old)"
+   "why": "Score 10: 1 outlet 6 + recency 3.7 (29h old)"
   },
   {
    "id": "e1bef96ef97f",
