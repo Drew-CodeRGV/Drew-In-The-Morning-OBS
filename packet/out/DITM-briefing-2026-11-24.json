@@ -56,19 +56,127 @@
             "published": "2026-11-23T11:39:00-06:00"
           }
         ],
-        "score": 13,
+        "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.8 (19h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 5.2 (23h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.8,
+          "recency": 5.2,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
         "ord": 0
+      },
+      {
+        "title": "Internet providers say they'll challenge Pharr's new fiber optic ordinance",
+        "short": "AT&T, Spectrum vs Pharr fiber rule",
+        "url": "https://www.krgv.com/news/internet-providers-say-they-ll-challenge-pharr-s-new-fiber-optic-connection-mandate/",
+        "source": "KRGV · Apr 20, 2026",
+        "published": "April 20, 2026",
+        "valley": true,
+        "tldr": "On April 20, Pharr City Commissioners approved an update to the city's 2023 fiber ordinance, requiring new subdivisions and businesses to include fiber infrastructure. The city says the lines can support multiple providers and that residents will not pay for the fiber. AT&T and Spectrum say the rule illegally favors Pharr's municipal network, have sent legal letters and say they will challenge it.",
+        "riff": "Pharr says fiber is infrastructure, like water and sewer. AT&T and Spectrum say the city is writing the rules to benefit its own network. This is the Valley's municipal-broadband fight in one ordinance.",
+        "hook": "Pharr requires fiber in new subdivisions; AT&T and Spectrum say they'll challenge the ordinance",
+        "energy": 4,
+        "links": [],
+        "teaser": "AT&T and Spectrum vs Pharr's fiber ordinance",
+        "sources": [
+          {
+            "name": "KRGV",
+            "domain": "krgv.com",
+            "url": "https://www.krgv.com/news/internet-providers-say-they-ll-challenge-pharr-s-new-fiber-optic-connection-mandate/",
+            "local": true,
+            "published": null
+          }
+        ],
+        "score": 14,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 14: 1 outlet 6 + recency 8 (no timestamp)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 8,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 1
+      },
+      {
+        "title": "Pharr expands city internet service to 300 housing authority homes with $700K federal investment",
+        "short": "Pharr Connect to 300 PHA homes",
+        "url": "https://www.krgv.com/news/pharr-expands-city-internet-service-to-300-housing-authority-homes/",
+        "source": "KRGV · Jul 2, 2026",
+        "published": "July 2, 2026",
+        "valley": true,
+        "tldr": "On July 2, KRGV reported that Pharr Connect is expanding municipal fiber to about 300 households across three Pharr Housing Authority complexes, funded by a $700,000 federal investment. Plans are $25 a month for 500 Mbps or $50 for 1 Gbps. Deputy City Manager Cynthia Garza-Reyes said PSJA ISD households in those units can get the fiber free.",
+        "riff": "City internet at public housing: $25 for 500 megabits, a gig for $50, and free for PSJA families in those units. Finish the digital literacy class and you get a free laptop.",
+        "hook": "Pharr Connect to 300 housing-authority homes: $25 for 500 Mbps, $50 for 1 Gig — free for PSJA families",
+        "energy": 4,
+        "links": [],
+        "teaser": "Pharr Connect at 300 housing-authority homes",
+        "sources": [
+          {
+            "name": "KRGV",
+            "domain": "krgv.com",
+            "url": "https://www.krgv.com/news/pharr-expands-city-internet-service-to-300-housing-authority-homes/",
+            "local": true,
+            "published": null
+          }
+        ],
+        "score": 14,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 14: 1 outlet 6 + recency 8 (no timestamp)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 8,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 2
+      },
+      {
+        "title": "T-Fiber expands fiber-optic internet service into Mercedes",
+        "short": "T-Fiber wiring Mercedes",
+        "url": "https://www.rgvbusinessjournal.com/news/23/11/2026/t-fiber-expands-fiber-optic-internet-service-into-mercedes/",
+        "source": "RGV Business Journal · Nov 23",
+        "published": "2026-11-23",
+        "valley": true,
+        "tldr": "T-Fiber is expanding its fiber-optic network into Mercedes, giving residents another wired internet option. City Commissioner Ruben Saldaña said the south side is largely complete and northern neighborhoods should be finished within six months. Spectrum is currently the only provider offering that type of wired service in Mercedes.",
+        "riff": "Mercedes has been a one-wired-ISP town. T-Fiber is coming in from the south side, with the north side about six months out.",
+        "hook": "T-Fiber is wiring Mercedes: south side is largely done, and the north side is about six months out",
+        "energy": 3,
+        "links": [],
+        "teaser": "T-Fiber brings a second wired ISP to Mercedes",
+        "sources": [
+          {
+            "name": "RGV Business Journal",
+            "domain": "rgvbusinessjournal.com",
+            "url": "https://www.rgvbusinessjournal.com/news/23/11/2026/t-fiber-expands-fiber-optic-internet-service-into-mercedes/",
+            "local": false,
+            "published": "2026-11-23T00:00:00+00:00"
+          }
+        ],
+        "score": 8,
+        "label": "Active",
+        "uncovered": false,
+        "scoreWhy": "Score 8: 1 outlet 6 + recency 1.9 (41h old)",
+        "scoreParts": {
+          "outlets": 6,
+          "recency": 1.9,
+          "x": 0.0,
+          "trends": 0.0,
+          "chatter": 0.0
+        },
+        "dupes": 0,
+        "ord": 3
       },
       {
         "title": "Tiny town: Holiday Village returns to Brownsville’s Dean Porter Park",
@@ -92,19 +200,19 @@
             "published": "2026-11-23T14:06:00-06:00"
           }
         ],
-        "score": 14,
+        "score": 12,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 14: 1 outlet 6 + recency 7.8 (16h old)",
+        "scoreWhy": "Score 12: 1 outlet 6 + recency 6 (21h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.8,
+          "recency": 6.0,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 1
+        "ord": 4
       },
       {
         "title": "VIDA Plans to Triple Workforce Training Opportunities Across South Texas",
@@ -127,19 +235,19 @@
             "published": "2026-11-23T15:18:00-06:00"
           }
         ],
-        "score": 14,
+        "score": 12,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 14: 1 outlet 6 + recency 8.4 (15h old)",
+        "scoreWhy": "Score 12: 1 outlet 6 + recency 6.4 (20h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 8.4,
+          "recency": 6.4,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 2
+        "ord": 5
       },
       {
         "title": "South Texas College Turkey Trot Generates Thousands to Support Hungry Students",
@@ -162,19 +270,19 @@
             "published": "2026-11-23T11:01:00-06:00"
           }
         ],
-        "score": 13,
+        "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.6 (19h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 5 (24h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.6,
+          "recency": 5.0,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 3
+        "ord": 6
       },
       {
         "title": "McAllen and Tampico Sign Sister City Agreement to Expand Cross-Border Business Ties",
@@ -197,19 +305,19 @@
             "published": "2026-11-23T08:11:00-06:00"
           }
         ],
-        "score": 12,
+        "score": 10,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 12: 1 outlet 6 + recency 5.6 (22h old)",
+        "scoreWhy": "Score 10: 1 outlet 6 + recency 4.2 (27h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 5.6,
+          "recency": 4.2,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 4
+        "ord": 7
       },
       {
         "title": "Food Bank RGV to distribute free produce ahead of Thanksgiving Day",
@@ -233,19 +341,19 @@
             "published": "2026-11-23T16:25:00-06:00"
           }
         ],
-        "score": 15,
+        "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 15: 1 outlet 6 + recency 9 (14h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.8 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 9.0,
+          "recency": 6.8,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 5
+        "ord": 8
       },
       {
         "title": "Nearly all arrested in Hidalgo County under SB4 choose self deportation",
@@ -268,19 +376,19 @@
             "published": "2026-11-23T12:11:00-06:00"
           }
         ],
-        "score": 13,
+        "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 7 (18h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 5.3 (23h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.0,
+          "recency": 5.3,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 6
+        "ord": 9
       },
       {
         "title": "Expanding care: Partnership between VA, UTRGV aims to help veterans",
@@ -303,19 +411,19 @@
             "published": "2026-11-23T13:49:00-06:00"
           }
         ],
-        "score": 14,
+        "score": 12,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 14: 1 outlet 6 + recency 7.7 (17h old)",
+        "scoreWhy": "Score 12: 1 outlet 6 + recency 5.9 (21h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 7.7,
+          "recency": 5.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 7
+        "ord": 10
       },
       {
         "title": "Bobby Pulido joins community for Thanksgiving luncheon",
@@ -338,19 +446,19 @@
             "published": "2026-11-23T18:27:00-06:00"
           }
         ],
-        "score": 16,
+        "score": 14,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 16: 1 outlet 6 + recency 10.1 (12h old)",
+        "scoreWhy": "Score 14: 1 outlet 6 + recency 7.7 (17h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 10.1,
+          "recency": 7.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 8
+        "ord": 11
       },
       {
         "title": "Brownsville to hold listening sessions for venue sound regulations",
@@ -373,19 +481,19 @@
             "published": "2026-11-23T16:25:00-06:00"
           }
         ],
-        "score": 15,
+        "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 15: 1 outlet 6 + recency 9 (14h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.8 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 9.0,
+          "recency": 6.8,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 9
+        "ord": 12
       },
       {
         "title": "Hidalgo International Trade Loop Aims to Expand Commerce and Freight Connectivity",
@@ -408,19 +516,19 @@
             "published": "2026-11-23T10:00:00-06:00"
           }
         ],
-        "score": 12,
+        "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 12: 1 outlet 6 + recency 6.2 (20h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.7 (25h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.2,
+          "recency": 4.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 10
+        "ord": 13
       },
       {
         "title": "Palmview library to use $20,000 grant to add shelves, new books",
@@ -442,19 +550,19 @@
             "published": "2026-11-23T18:00:00+00:00"
           }
         ],
-        "score": 13,
+        "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (18h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 5.3 (23h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.9,
+          "recency": 5.3,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 11
+        "ord": 14
       },
       {
         "title": "RGV Livestock Show expands student outreach",
@@ -477,19 +585,19 @@
             "published": "2026-11-23T18:07:00-06:00"
           }
         ],
-        "score": 16,
+        "score": 14,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 16: 1 outlet 6 + recency 9.9 (12h old)",
+        "scoreWhy": "Score 14: 1 outlet 6 + recency 7.5 (17h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 9.9,
+          "recency": 7.5,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 12
+        "ord": 15
       },
       {
         "title": "Veterans Voices: Construction on track for new $2.5M Harlingen VFW",
@@ -512,19 +620,19 @@
             "published": "2026-11-23T14:48:00-06:00"
           }
         ],
-        "score": 14,
+        "score": 12,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 14: 1 outlet 6 + recency 8.2 (16h old)",
+        "scoreWhy": "Score 12: 1 outlet 6 + recency 6.2 (20h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 8.2,
+          "recency": 6.2,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 13
+        "ord": 16
       },
       {
         "title": "City of Edinburg to Kick Off Holiday Season with Two-Day Celebration",
@@ -549,19 +657,19 @@
             "published": "2026-11-23T16:34:00-06:00"
           }
         ],
-        "score": 15,
+        "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 15: 1 outlet 6 + recency 9 (14h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (18h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 9.0,
+          "recency": 6.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 14
+        "ord": 17
       },
       {
         "title": "McAllen fire chief urges residents to check heaters as temperatures drop",
@@ -585,19 +693,19 @@
             "published": "2026-11-23T19:03:00-06:00"
           }
         ],
-        "score": 16,
+        "score": 14,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 16: 1 outlet 6 + recency 10.4 (11h old)",
+        "scoreWhy": "Score 14: 1 outlet 6 + recency 8 (16h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 10.4,
+          "recency": 8.0,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 15
+        "ord": 18
       },
       {
         "title": "After mistrial, former La Feria coach found guilty in deadly hit-and-run crash",
@@ -621,19 +729,19 @@
             "published": "2026-11-23T10:38:00-06:00"
           }
         ],
-        "score": 12,
+        "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 12: 1 outlet 6 + recency 6.4 (20h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.9 (24h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.4,
+          "recency": 4.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 16
+        "ord": 19
       },
       {
         "title": "Brownsville tax preparer admits to scheme that caused $529,130 in IRS losses",
@@ -656,19 +764,19 @@
             "published": "2026-11-23T18:00:00+00:00"
           }
         ],
-        "score": 13,
+        "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (18h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 5.3 (23h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.9,
+          "recency": 5.3,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 17
+        "ord": 20
       },
       {
         "title": "Gang member on state's most wanted list captured in Edinburg",
@@ -692,19 +800,19 @@
             "published": "2026-11-23T16:11:00-06:00"
           }
         ],
-        "score": 15,
+        "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 15: 1 outlet 6 + recency 8.8 (14h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.7 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 8.8,
+          "recency": 6.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 18
+        "ord": 21
       },
       {
         "title": "STC Faculty Member Elected to Texas Board of Education",
@@ -728,19 +836,19 @@
             "published": "2026-11-23T10:34:00-06:00"
           }
         ],
-        "score": 12,
+        "score": 11,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 12: 1 outlet 6 + recency 6.4 (20h old)",
+        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.9 (24h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 6.4,
+          "recency": 4.9,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 19
+        "ord": 22
       },
       {
         "title": "Rio Grande Valley Leaders to Gather at Texas Capitol February 2–3",
@@ -764,19 +872,19 @@
             "published": "2026-11-23T14:30:00-06:00"
           }
         ],
-        "score": 14,
+        "score": 12,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 14: 1 outlet 6 + recency 8 (16h old)",
+        "scoreWhy": "Score 12: 1 outlet 6 + recency 6.1 (21h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 8.0,
+          "recency": 6.1,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
         },
         "dupes": 0,
-        "ord": 20
+        "ord": 23
       }
     ],
     "texas": [
@@ -801,13 +909,13 @@
             "published": "2026-11-23T18:07:00-06:00"
           }
         ],
-        "score": 16,
+        "score": 14,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 16: 1 outlet 6 + recency 9.9 (12h old)",
+        "scoreWhy": "Score 14: 1 outlet 6 + recency 7.5 (17h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 9.9,
+          "recency": 7.5,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -836,13 +944,13 @@
             "published": "2026-11-23T16:05:00-06:00"
           }
         ],
-        "score": 15,
+        "score": 13,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 15: 1 outlet 6 + recency 8.8 (14h old)",
+        "scoreWhy": "Score 13: 1 outlet 6 + recency 6.7 (19h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 8.8,
+          "recency": 6.7,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -871,13 +979,13 @@
             "published": "2026-11-23T05:00:00-06:00"
           }
         ],
-        "score": 11,
+        "score": 10,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.6 (25h old)",
+        "scoreWhy": "Score 10: 1 outlet 6 + recency 3.5 (30h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 4.6,
+          "recency": 3.5,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -906,13 +1014,13 @@
             "published": "2026-11-23T05:00:00-06:00"
           }
         ],
-        "score": 11,
+        "score": 10,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 11: 1 outlet 6 + recency 4.6 (25h old)",
+        "scoreWhy": "Score 10: 1 outlet 6 + recency 3.5 (30h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 4.6,
+          "recency": 3.5,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -941,13 +1049,13 @@
             "published": "2026-11-24T05:00:00-06:00"
           }
         ],
-        "score": 25,
+        "score": 20,
         "label": "Active",
         "uncovered": false,
-        "scoreWhy": "Score 25: 1 outlet 6 + recency 18.5 (1h old)",
+        "scoreWhy": "Score 20: 1 outlet 6 + recency 14.1 (6h old)",
         "scoreParts": {
           "outlets": 6,
-          "recency": 18.5,
+          "recency": 14.1,
           "x": 0.0,
           "trends": 0.0,
           "chatter": 0.0
@@ -1177,15 +1285,15 @@
     "lon": -98.23,
     "note": "McAllen / Rio Grande Valley; NWS Brownsville (BRO) forecast",
     "now": {
-      "tempF": 57,
-      "cond": "Cloudy",
-      "icon": "cloud",
-      "at": "2026-11-24T11:55:00+00:00",
+      "tempF": 55,
+      "cond": "",
+      "icon": "sun",
+      "at": "2026-11-24T15:53:00+00:00",
       "source": "KMFE observation"
     },
     "office": "BRO",
     "city": "McAllen",
-    "updated": "2026-11-24T11:45:14+00:00",
+    "updated": "2026-11-24T16:45:14+00:00",
     "days": [
       {
         "date": "2026-11-24",
@@ -1193,10 +1301,10 @@
         "dateLabel": "Nov 24",
         "hi": 58,
         "lo": 44,
-        "short": "Rain Showers Likely",
+        "short": "Chance Rain Showers",
         "icon": "rain",
-        "pop": 60,
-        "wind": "NNW 9 to 13 mph"
+        "pop": 52,
+        "wind": "NNW 13 mph"
       },
       {
         "date": "2026-11-25",
@@ -1258,7 +1366,7 @@
         "label": "Mon",
         "dateLabel": "Nov 30",
         "hi": 78,
-        "lo": null,
+        "lo": 60,
         "short": "Sunny",
         "icon": "sun",
         "pop": 0,
@@ -1787,13 +1895,13 @@
           "published": "2026-11-23T18:00:00+00:00"
         }
       ],
-      "score": 13,
+      "score": 11,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (18h old)",
+      "scoreWhy": "Score 11: 1 outlet 6 + recency 5.3 (23h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 6.9,
+        "recency": 5.3,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1867,13 +1975,13 @@
           "published": "2026-11-23T18:00:00+00:00"
         }
       ],
-      "score": 13,
+      "score": 11,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (18h old)",
+      "scoreWhy": "Score 11: 1 outlet 6 + recency 5.3 (23h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 6.9,
+        "recency": 5.3,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1907,13 +2015,13 @@
           "published": "2026-11-23T18:00:00+00:00"
         }
       ],
-      "score": 13,
+      "score": 11,
       "label": "Active",
       "uncovered": false,
-      "scoreWhy": "Score 13: 1 outlet 6 + recency 6.9 (18h old)",
+      "scoreWhy": "Score 11: 1 outlet 6 + recency 5.3 (23h old)",
       "scoreParts": {
         "outlets": 6,
-        "recency": 6.9,
+        "recency": 5.3,
         "x": 0.0,
         "trends": 0.0,
         "chatter": 0.0
@@ -1929,6 +2037,63 @@
     "searchedAt": "2026-11-24T06:20:00-06:00",
     "note": "No Fast Company Daily issue found in the last 48 h: searched Drew's Gmail read-only on Nov 24, 2026 at 6:20 AM CT (drew@drewlentz.com, then drew@politiquera.com) for (from:fastcompany OR subject:\"Fast Company Daily\") newer_than:2d. These items are the fallback from the tech wires (The Verge, TechCrunch, Ars Technica).",
     "items": [
+      {
+        "id": "pharr-fiber-ordinance",
+        "title": "Internet providers say they'll challenge Pharr's new fiber optic ordinance",
+        "short": "AT&T, Spectrum vs Pharr fiber rule",
+        "source": "KRGV",
+        "source_url": "https://www.krgv.com/news/internet-providers-say-they-ll-challenge-pharr-s-new-fiber-optic-connection-mandate/",
+        "published": "Apr 20, 2026",
+        "one_line": "On April 20, Pharr City Commissioners approved an update to the city's 2023 fiber ordinance, requiring new subdivisions and businesses to include fiber infrastructure. The city says the lines can support multiple providers and that residents will not pay for the fiber. AT&T and Spectrum say the rule illegally favors Pharr's municipal network, have sent legal letters and say they will challenge it.",
+        "tldr": "On April 20, Pharr City Commissioners approved an update to the city's 2023 fiber ordinance, requiring new subdivisions and businesses to include fiber infrastructure. The city says the lines can support multiple providers and that residents will not pay for the fiber. AT&T and Spectrum say the rule illegally favors Pharr's municipal network, have sent legal letters and say they will challenge it.",
+        "angle": "Pharr says fiber is infrastructure, like water and sewer. AT&T and Spectrum say the city is writing the rules to benefit its own network. This is the Valley's municipal-broadband fight in one ordinance.",
+        "hook": "Pharr requires fiber in new subdivisions; AT&T and Spectrum say they'll challenge the ordinance",
+        "energy": 4,
+        "verified": true,
+        "confirm": "",
+        "links": [],
+        "basis": "KRGV · RGV Tech",
+        "valley": true,
+        "isConfirm": false
+      },
+      {
+        "id": "pharr-connect-housing",
+        "title": "Pharr expands city internet service to 300 housing authority homes with $700K federal investment",
+        "short": "Pharr Connect to 300 PHA homes",
+        "source": "KRGV",
+        "source_url": "https://www.krgv.com/news/pharr-expands-city-internet-service-to-300-housing-authority-homes/",
+        "published": "Jul 2, 2026",
+        "one_line": "On July 2, KRGV reported that Pharr Connect is expanding municipal fiber to about 300 households across three Pharr Housing Authority complexes, funded by a $700,000 federal investment. Plans are $25 a month for 500 Mbps or $50 for 1 Gbps. Deputy City Manager Cynthia Garza-Reyes said PSJA ISD households in those units can get the fiber free.",
+        "tldr": "On July 2, KRGV reported that Pharr Connect is expanding municipal fiber to about 300 households across three Pharr Housing Authority complexes, funded by a $700,000 federal investment. Plans are $25 a month for 500 Mbps or $50 for 1 Gbps. Deputy City Manager Cynthia Garza-Reyes said PSJA ISD households in those units can get the fiber free.",
+        "angle": "City internet at public housing: $25 for 500 megabits, a gig for $50, and free for PSJA families in those units. Finish the digital literacy class and you get a free laptop.",
+        "hook": "Pharr Connect to 300 housing-authority homes: $25 for 500 Mbps, $50 for 1 Gig — free for PSJA families",
+        "energy": 4,
+        "verified": true,
+        "confirm": "",
+        "links": [],
+        "basis": "KRGV · RGV Tech",
+        "valley": true,
+        "isConfirm": false
+      },
+      {
+        "id": "tfiber-mercedes",
+        "title": "T-Fiber expands fiber-optic internet service into Mercedes",
+        "short": "T-Fiber wiring Mercedes",
+        "source": "RGV Business Journal",
+        "source_url": "https://www.rgvbusinessjournal.com/news/23/11/2026/t-fiber-expands-fiber-optic-internet-service-into-mercedes/",
+        "published": "Nov 23",
+        "one_line": "T-Fiber is expanding its fiber-optic network into Mercedes, giving residents another wired internet option. City Commissioner Ruben Saldaña said the south side is largely complete and northern neighborhoods should be finished within six months. Spectrum is currently the only provider offering that type of wired service in Mercedes.",
+        "tldr": "T-Fiber is expanding its fiber-optic network into Mercedes, giving residents another wired internet option. City Commissioner Ruben Saldaña said the south side is largely complete and northern neighborhoods should be finished within six months. Spectrum is currently the only provider offering that type of wired service in Mercedes.",
+        "angle": "Mercedes has been a one-wired-ISP town. T-Fiber is coming in from the south side, with the north side about six months out.",
+        "hook": "T-Fiber is wiring Mercedes: south side is largely done, and the north side is about six months out",
+        "energy": 3,
+        "verified": true,
+        "confirm": "",
+        "links": [],
+        "basis": "RGV Business Journal · RGV Tech",
+        "valley": true,
+        "isConfirm": false
+      },
       {
         "id": "grok-states-suit",
         "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
@@ -1959,23 +2124,6 @@
         "confirm": "",
         "links": [],
         "hook": "Google's AI Mode can now read your Drive and Wallet, if you let it",
-        "energy": 3,
-        "basis": "FALLBACK: TECH WIRES",
-        "isConfirm": false
-      },
-      {
-        "id": "amazon-stickers",
-        "title": "Amazon fights Delivery Protection Act by putting stickers on its packages",
-        "short": "Amazon's political package stickers",
-        "source": "Ars Technica",
-        "source_url": "https://arstechnica.com/tech-policy/2026/11/amazon-fights-delivery-protection-act-by-putting-stickers-on-its-packages/",
-        "published": "Nov 23",
-        "one_line": "Some NYC shoppers got Amazon packages with a sticker saying the city council 'could add up to $5 per order' and a QR code to contact council members, opposing a bill on delivery contractors.",
-        "angle": "Your box is now a campaign flyer. Imagine that on every porch in McAllen.",
-        "verified": true,
-        "confirm": "",
-        "links": [],
-        "hook": "Amazon's packages now carry political stickers: 'up to $5 per order'",
         "energy": 3,
         "basis": "FALLBACK: TECH WIRES",
         "isConfirm": false
@@ -4042,7 +4190,7 @@
       "signature": false,
       "weave": null,
       "talkingPoints": [
-        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Tuesday, November 24th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with SpaceX debris on Bagdad Beach, plus Holiday Village's 1,000 buñuelos. On the National Desk, Jensen Huang's comeback at Nvidia. In Trending, the lioness that never existed. And in How We'd Talk to Our Kids, Jess and I take on why hacking a video game is no prank, now that the GTA VI leaker got sentenced. It's 57 and cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+        "TODAY'S COLD OPEN (auto-filled, read aloud): Good morning, Rio Grande Valley! It's Tuesday, November 24th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with SpaceX debris on Bagdad Beach, plus AT&T and Spectrum vs Pharr's fiber ordinance. On the National Desk, Jensen Huang's comeback at Nvidia. In Trending, the lioness that never existed. And in How We'd Talk to Our Kids, Jess and I take on why hacking a video game is no prank, now that the GTA VI leaker got sentenced. It's 55 and  outside, the coffee's hot, so stick around, this is Drew in the Morning.",
         "JINGLE: Drew in the Morning. Your Valley, your news, your morning.",
         "JINGLE: \"Drew in the Morning. Your Valley, your news, your morning.\" (alternates in cold-open.md)",
         "COLD OPEN: read the paragraph the packet builds each morning (card at the top of the studio page; also in the PDF, txt and email, and in obs-data.json under coldOpen). It is one flowing paragraph, about 25 seconds, filled with today's real headlines.",
@@ -5041,520 +5189,46 @@
   ],
   "scoring": {
     "merged": 0,
-    "items": 36,
+    "items": 39,
     "hot": 0,
     "trending": 0,
-    "active": 36,
+    "active": 39,
     "uncovered": 0,
     "formula": "score = outlets(6 per distinct outlet, max 30) + recency(20 x 0.5^(age_h/12)) + X(20 x min(1, log10(1+eng+25 posts)/4)) + Google Trends(20 TX / 12 US) + chatter(10 x min(1, log10(1+eng+5 posts)/2.5)); Hot >= 45, Trending >= 27, else Active",
     "trendsNote": "Google Trends not available (no fetch, no fresh cache): trends signal = 0"
   },
   "coldOpen": {
-    "text": "Good morning, Rio Grande Valley! It's Tuesday, November 24th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with SpaceX debris on Bagdad Beach, plus Holiday Village's 1,000 buñuelos. On the National Desk, Jensen Huang's comeback at Nvidia. In Trending, the lioness that never existed. And in How We'd Talk to Our Kids, Jess and I take on why hacking a video game is no prank, now that the GTA VI leaker got sentenced. It's 57 and cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+    "text": "Good morning, Rio Grande Valley! It's Tuesday, November 24th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with SpaceX debris on Bagdad Beach, plus AT&T and Spectrum vs Pharr's fiber ordinance. On the National Desk, Jensen Huang's comeback at Nvidia. In Trending, the lioness that never existed. And in How We'd Talk to Our Kids, Jess and I take on why hacking a video game is no prank, now that the GTA VI leaker got sentenced. It's 55 and  outside, the coffee's hot, so stick around, this is Drew in the Morning.",
     "jingle": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [
       "Wake up, RGV. It's Drew in the Morning.",
       "From McAllen to the world, this is Drew in the Morning."
     ],
     "confirm": [],
-    "words": 100,
+    "words": 102,
     "template": "daily"
   },
-  "linkCheck": {
-    "date": "2026-11-24",
-    "ok": 105,
-    "blocked": 13,
-    "dead": 0,
-    "unreachable": 2
-  },
-  "linkCheckDetail": {
-    "https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://api.weather.gov/gridpoints/BRO/49,19/forecast": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://apnews.com/article/cowboys-titans-score-c94c416b2ad811b36b3525eb596c4041": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://apnews.com/article/mavericks-jazz-score-e609b4b5291e49d9f614cea67e1f5116": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://apnews.com/article/thanksgiving-travel-airlines-flight-delays-storms-c26a27fd648f766252b54724d8a897a3": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://ballotpedia.org/Bobby_Pulido": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://basketball.realgm.com/nba/scores/2026-11-23/All": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://ca.sports.yahoo.com/news/commanders-vs-bengals-live-updates-233348048.html": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://dailymcallen.com/local-news/editions/11-14-2026": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://dailymcallen.com/local-news/editions/11-16-2026": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://dailymcallen.com/local-news/editions/11-17-2026": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://dailymcallen.com/local-news/editions/11-18-2026": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://ew.com/snl-recap-john-mulaney-hosts-seventh-time-phoebe-bridgers-musical-guest-12253185": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://gooddayedinburg.com/local-news/editions/11-15-2026": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://homeland.house.gov/wp-content/uploads/2026/11/2026-11-18-HRG-Testimony-Mullin.pdf": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://kobi5.com/news/door-kicking-trend-is-growing-locally-five-incidents-reported-in-talent-319588/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/featured/2026/06/17/brownsville-appoints-interim-city-manager-alan-guard-to-permanent-position/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2023/07/25/despite-protest-mcallen-commission-rezones-park-for-austin-tech-company/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2026/11/04/not-over-yet-nearly-all-mission-races-heading-to-runoff-elections/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2026/11/23/brownsville-to-hold-listening-sessions-for-venue-sound-regulations/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2026/11/23/expanding-care-partnership-between-va-utrgv-aims-to-help-veterans/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2026/11/23/former-la-feria-coach-guilty-in-crash-that-killed-us-marine-veteran/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2026/11/23/nearly-all-arrested-in-hidalgo-county-under-sb4-choose-self-deportation/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://myrgv.com/local-news/2026/11/23/tiny-town-holiday-village-returns-to-brownsvilles-dean-porter-park/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://news4sanantonio.com/news/local/fake-instagram-account-claims-uvalde-schools-closed-for-gta-6-release": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://politiquera.com/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://rblxstat.com/blog/roblox-weekly-report-2026-11-15": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://rgv.me/thread/6717/natural-grocers-sets-december-16-opening-for-new-mcallen-store": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://rgv.me/thread/6724/wingstop-plans-300k-first-mercedes-location-near-outlets": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://rgvsports.com/area-roundup-la-villa-takes-down-chilton-to-advance-to-regional-semifinals/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://rgvsports.com/still-rolling-sabercats-earn-11th-straight-win-advance-to-third-round/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://rostats.io/charts/2026-11": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://safescreens.us/guides/gaming/roblox-experiences": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://takeitdown.ncmec.org/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://tea.texas.gov/taa-letters/implementation-texas-house-bill-1481-student-use-personal-communication-devices-school": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://texasborderbusiness.com/city-of-edinburg-to-kick-off-holiday-season-with-two-day-celebration/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://texasborderbusiness.com/hidalgo-international-trade-loop-aims-to-expand-commerce-and-freight-connectivity/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://texasborderbusiness.com/major-investment-in-echo-hotel-property-coming-to-edinburg/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://texasborderbusiness.com/mcallen-and-tampico-sign-sister-city-agreement-to-expand-cross-border-business-ties/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://texasborderbusiness.com/rio-grande-valley-leaders-to-gather-at-texas-capitol-february-2-3/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://texasborderbusiness.com/south-texas-college-turkey-trot-generates-thousands-to-support-hungry-students/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://texasborderbusiness.com/stc-faculty-member-elected-to-texas-board-of-education/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://texasborderbusiness.com/steven-alvis-named-chairman-of-texas-transportation-commission/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://texasborderbusiness.com/vida-plans-to-triple-workforce-training-opportunities-across-south-texas/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://theedinburgadvocate.com/2026/11/edinburg-cisd-board-to-seat-new-members-approve-3-million-stop-loss-insurance-contract-at-special-meeting-tuesday-nov-17/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://thergvnews.com/reviews/day/2026-11-17": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://trending.knowyourmeme.com/editorials/guides/what-is-the-pennywide-meme-the-viral-pennywise-house-video-and-memes-explained": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://weather.com/2026/11/23/holiday/thanksgiving/thanksgiving-travel-weather-forecast-us-storms": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.bbc.com/weather/articles/c5742nplemnno": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.borderreport.com/news/washington-governor-decries-out-of-control-ice-at-seattle-airport/": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.boston.com/culture/entertainment/2026/11/15/snl-recap-john-mulaney-2026/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.cbsnews.com/live-updates/iran-war-us-trump-blockade-strait-of-hormuz-ship-attacks/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.cbsnews.com/news/ice-arrest-seattle-airport-husband/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.cbsnews.com/news/istanbul-lioness-never-existed-turkish-officials-say-after-24-hour-search-for-her/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.cbsnews.com/news/man-alzheimers-found-alive-11-days-amazon-rainforest/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.cbsnews.com/news/quasar-farthest-oldest-found/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.cbssports.com/mlb/transactions/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.dhs.gov/sites/default/files/2026-08/26_0806_k2p_p2p-t2p-sextortion.pdf": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.dw.com/en/grand-theft-auto-vi-launches-to-global-fanfare/a-79986461": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.facebook.com/channel5news": {
-      "status": 400,
-      "result": "unreachable"
-    },
-    "https://www.facebook.com/nomorecheezmeh": {
-      "status": 400,
-      "result": "unreachable"
-    },
-    "https://www.fastcompany.com/newsletters": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/sextortion": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.gulfcoastnewsnow.com/article/video-door-kick-challenge-cape-coral-florida/74444521": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.healthychildren.org/English/health-issues/conditions/emotional-problems/Pages/when-children-and-teens-self-harm.aspx": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.hellomagazine.com/healthandbeauty/mother-and-baby/878329/your-gen-alpha-child-increasingly-bizarre-slang-how-to-respond/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.hidalgocounty.us/3526/December-12-2026-Local-Entities-Runoff-E": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/brownsville-tax-preparer-admits-to-scheme-that-caused-529-130-in-irs-losses": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/cameron-county-commissioners-pass-resolution-to-protect-public-access-to-boca-chica-beach/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/cameron-county-commissioners-reject-spacex-data-center-tax-break-request/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/city-of-mcallen-commissioners-vote-to-rezone-disc-golf-course/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/mcallen-fire-chief-urges-residents-to-check-heaters-as-temperatures-drop": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/mexico-demands-spacex-clean-up-suspected-rocket-debris-washing-ashore-near-texas": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/palmview-library-to-use-20-000-grant-to-add-shelves-new-books": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.krgv.com/news/rgv-livestock-show-expands-student-outreach": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.mlb.com/news/mlb-rumors-and-2026-27-free-agent-news-november-21": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.nba.com/game/sas-vs-sac-0022600296": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.nfl.com/schedules/2026/prime-time/monday-night-football": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.nimh.nih.gov/health/publications/warning-signs-of-suicide": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.psjaisd.us/academics/psja-isd-ai-guidebook": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.psjaisd.us/school-news-details/~board/pharr-san-juan-alamo-isd-news/post/psja-isd-swears-in-three-trustees-elects-new-board-leadership": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.rd.com/article/gen-alpha-slang/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.reddit.com/r/RioGrandeValley/comments/1xjnz54/community_march_to_petition_for_the_speer/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.rgvsports.com/rgv-football-playoff-schedule/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.showbiz411.com/2026/11/18/john-mulaney-phoebe-bridgers-snl-best-this-season-drops-back-to-season-average-ratings-down-20-from-last-weeks-high": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.texastribune.org/2026/11/03/texas-bobby-pulido-monica-de-la-cruz-congress-district-15-elections-2026/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.texastribune.org/2026/11/23/clayton-tucker-tracy-king-texas-agriculture-department/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.texastribune.org/2026/11/23/texas-abortion-lawsuit-dismissal-heartbeat-act/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.texastribune.org/2026/11/23/texas-democrats-education-priorities-school-funding/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.texastribune.org/2026/11/23/texas-democrats-property-taxes-relief/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.theguardian.com/sport/2026/nov/22/nfl-roundup-sunday-football-scores": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.theverge.com/entertainment/1040699/ted-lasso-season-5-apple-tv": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.theverge.com/games/1040966/arion-kurtaj-gta-vi-leaks-sentenced-released": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.valleycentral.com/news/local-news/bobby-pulido-joins-community-for-thanksgiving-luncheon/": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.valleycentral.com/news/local-news/food-bank-rgv-to-distribute-free-produce-ahead-of-thanksgiving/": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.valleycentral.com/news/local-news/gang-member-on-states-most-wanted-list-captured-in-edinburg/": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.valleycentral.com/news/veterans-voices/veterans-voices-construction-on-track-for-new-2-5m-harlingen-vfw/": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.valleycentral.com/valleycentrals-local-elections-hq/michael-fallek-officially-declared-winner-in-district-5-city-commission-race/": {
-      "status": 403,
-      "result": "blocked-by-site"
-    },
-    "https://www.weather.gov/bro/": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.youtube.com/watch?v=-X9dxL17t1k": {
-      "status": 200,
-      "result": "ok"
-    },
-    "https://www.youtube.com/watch?v=R_8UPhJNrZ4": {
-      "status": 200,
-      "result": "ok"
-    }
-  },
-  "generatedAt": "2026-11-24T06:19:42-06:00",
+  "generatedAt": "2026-11-24T11:01:17-06:00",
   "sources": [
     {
       "section": "Top headlines: RGV",
       "label": "Mexico demands SpaceX clean up suspected rocket debris washing ashore near Texas",
       "url": "https://www.krgv.com/news/mexico-demands-spacex-clean-up-suspected-rocket-debris-washing-ashore-near-texas"
+    },
+    {
+      "section": "Top headlines: RGV",
+      "label": "Internet providers say they'll challenge Pharr's new fiber optic ordinance",
+      "url": "https://www.krgv.com/news/internet-providers-say-they-ll-challenge-pharr-s-new-fiber-optic-connection-mandate/"
+    },
+    {
+      "section": "Top headlines: RGV",
+      "label": "Pharr expands city internet service to 300 housing authority homes with $700K federal investment",
+      "url": "https://www.krgv.com/news/pharr-expands-city-internet-service-to-300-housing-authority-homes/"
+    },
+    {
+      "section": "Top headlines: RGV",
+      "label": "T-Fiber expands fiber-optic internet service into Mercedes",
+      "url": "https://www.rgvbusinessjournal.com/news/23/11/2026/t-fiber-expands-fiber-optic-internet-service-into-mercedes/"
     },
     {
       "section": "Top headlines: RGV",
