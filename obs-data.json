@@ -1561,7 +1561,7 @@
     "caption": "We want YOUR voice on Monday's show. Got a topic, a story, or the hard parenting question you're afraid to ask? DM us, email, or ask for a live guest link. Anonymous is fine. #RGV #McAllen #DrewInTheMorning"
   },
   "schemaNotes": "v4 (Nov 18): 12 blocks A-L (new B = What I've Been Up To, family & kids woven into H, Starbase/Zoho/trending folded into other blocks). Segments carry offsetMinutes from the planned 8:00 start. coldOpen, jingle and upTo are filled by packet/build_packet.py on every build.",
-  "coldOpen": "Good morning, Rio Grande Valley! It's Monday, November 23rd, and you're listening to Drew in the Morning with Drew and Jess. Coming up this hour, the local stories everyone's talking about, starting with Edinburg's 1,000-turkey handoff, plus the Pharr family whose U.S.-citizen son was detained by ICE. On the National Desk, Ukraine's drone strike in Libya. In Trending, the Cowboys' 51-point Sunday. And in How We'd Talk to Our Kids, Jess and I take on Kindness: NPR (Nov 23) reports on a Sesame Workshop parents survey about families worrying the world. It's 65 and a chance of rain showers then mostly cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+  "coldOpen": "Good morning, Rio Grande Valley! It's Tuesday, November 24th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with SpaceX debris on Bagdad Beach, plus Holiday Village's 1,000 buñuelos. On the National Desk, Jensen Huang's comeback at Nvidia. In Trending, the lioness that never existed. And in How We'd Talk to Our Kids, Jess and I take on why hacking a video game is no prank, now that the GTA VI leaker got sentenced. It's 57 and cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
   "jingle": {
     "primary": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [
@@ -1570,25 +1570,13 @@
     ]
   },
   "upTo": {
-    "banner": "5 from the week + 3 coming up",
-    "script": "Busy week at the Lentz house. We had a school picnic on Tuesday, hip hop class on Tuesday, cotillion on Wednesday, tap class on Wednesday, and the region clinic and concert on Friday. Coming up this week: chess club twice, hip hop class on Tuesday, and tap class on Wednesday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.",
+    "banner": "5 from the week",
+    "script": "Busy week at the Lentz house. We had cotillion on Wednesday, tap class on Wednesday, the region clinic and concert on Friday, chess club on Tuesday, and hip hop class on Tuesday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.",
     "calendar": "Family calendar (iCloud, published feed)",
-    "window": "Nov 16–22, 2026",
-    "comingWindow": "Nov 23–29, 2026",
+    "window": "Nov 18–24, 2026",
+    "comingWindow": "",
     "source": "family calendar (tools/family_calendar.py), generic wording",
     "events": [
-      {
-        "date": "2026-11-17",
-        "label": "a school picnic",
-        "category": "school event",
-        "count": 1
-      },
-      {
-        "date": "2026-11-17",
-        "label": "hip hop class",
-        "category": "dance",
-        "count": 1
-      },
       {
         "date": "2026-11-18",
         "label": "cotillion",
@@ -1606,34 +1594,27 @@
         "label": "the region clinic and concert",
         "category": "music",
         "count": 1
-      }
-    ],
-    "coming": [
+      },
       {
         "date": "2026-11-24",
         "label": "chess club",
         "category": "club",
-        "count": 2
+        "count": 1
       },
       {
         "date": "2026-11-24",
         "label": "hip hop class",
         "category": "dance",
         "count": 1
-      },
-      {
-        "date": "2026-11-25",
-        "label": "tap class",
-        "category": "dance",
-        "count": 1
       }
-    ]
+    ],
+    "coming": []
   },
   "coldOpenMeta": {
-    "date": "2026-11-23",
-    "template": "monday",
+    "date": "2026-11-24",
+    "template": "daily",
     "confirm": [],
-    "builtFrom": "DITM-packet-2026-11-23",
+    "builtFrom": "DITM-briefing-2026-11-24",
     "sample": false
   }
 }
