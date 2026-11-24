@@ -22,11 +22,11 @@ NEXT SHOW: MONDAY, NOVEMBER 30, 8:00-9:00 AM CT · Monday 8 AM rundown (this bri
 COLD OPEN (read aloud, about 45 seconds)
   Good morning, Rio Grande Valley! It's Tuesday, November 24th, and this is your Drew in the
   Morning daily briefing. Today: the local stories everyone's talking about, starting with
-  SpaceX debris on Bagdad Beach, plus Holiday Village's 1,000 buñuelos. On the National
-  Desk, Jensen Huang's comeback at Nvidia. In Trending, the lioness that never existed. And
-  in How We'd Talk to Our Kids, Jess and I take on why hacking a video game is no prank, now
-  that the GTA VI leaker got sentenced. It's 57 and cloudy outside, the coffee's hot, so
-  stick around, this is Drew in the Morning.
+  SpaceX debris on Bagdad Beach, plus AT&T and Spectrum vs Pharr's fiber ordinance. On the
+  National Desk, Jensen Huang's comeback at Nvidia. In Trending, the lioness that never
+  existed. And in How We'd Talk to Our Kids, Jess and I take on why hacking a video game is
+  no prank, now that the GTA VI leaker got sentenced. It's 55 and  outside, the coffee's
+  hot, so stick around, this is Drew in the Morning.
   JINGLE: Drew in the Morning. Your Valley, your news, your morning.
 
 WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min, from the family calendar) · 5 from the week
@@ -43,122 +43,137 @@ WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min, from the family calendar) · 5
   INTERNAL NOTE (not for air): 1 calendar item left off the air (medical, personal, money,
     work, private or unsure); 5 qualifying occurrences used. Names never leave this note.
 
-STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README.md). 36
+STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README.md). 39
   stories, 0 duplicate(s) merged, 0 hot, 0 trending, 0 uncovered lead(s). Google Trends not
   available (no fetch, no fresh cache): trends signal = 0.
 
 TOP HEADLINES · RGV FIRST
-  - [ACT 13] Mexico demands SpaceX clean up suspected rocket debris washing ashore near
+  - [ACT 11] Mexico demands SpaceX clean up suspected rocket debris washing ashore near
     Texas (KRGV / Texas Tribune · Nov 23)
     https://www.krgv.com/news/mexico-demands-spacex-clean-up-suspected-rocket-debris-washing-ashore-near-texas
       HOOK: Big one: at least 1,500 fragments on Bagdad Beach, and Mexico says SpaceX must
     take responsibility
-  - [ACT 14] Tiny town: Holiday Village returns to Brownsville’s Dean Porter Park (The
+  - [ACT 14] Internet providers say they'll challenge Pharr's new fiber optic ordinance
+    (KRGV · Apr 20, 2026)
+    https://www.krgv.com/news/internet-providers-say-they-ll-challenge-pharr-s-new-fiber-optic-connection-mandate/
+      HOOK: Pharr requires fiber in new subdivisions; AT&T and Spectrum say they'll
+    challenge the ordinance
+  - [ACT 14] Pharr expands city internet service to 300 housing authority homes with $700K
+    federal investment (KRGV · Jul 2, 2026)
+    https://www.krgv.com/news/pharr-expands-city-internet-service-to-300-housing-authority-homes/
+      HOOK: Pharr Connect to 300 housing-authority homes: $25 for 500 Mbps, $50 for 1 Gig —
+    free for PSJA families
+  - [ACT 8] T-Fiber expands fiber-optic internet service into Mercedes (RGV Business Journal
+    · Nov 23)
+    https://www.rgvbusinessjournal.com/news/23/11/2026/t-fiber-expands-fiber-optic-internet-service-into-mercedes/
+      HOOK: T-Fiber is wiring Mercedes: south side is largely done, and the north side is
+    about six months out
+  - [ACT 12] Tiny town: Holiday Village returns to Brownsville’s Dean Porter Park (The
     Monitor/MyRGV · Nov 23)
     https://myrgv.com/local-news/2026/11/23/tiny-town-holiday-village-returns-to-brownsvilles-dean-porter-park/
       HOOK: 1,000 buñuelos and 39 decorated cottages: Holiday Village is back for its 17th
     year
-  - [ACT 14] VIDA Plans to Triple Workforce Training Opportunities Across South Texas (Texas
+  - [ACT 12] VIDA Plans to Triple Workforce Training Opportunities Across South Texas (Texas
     Border Business · Nov 23)
     https://texasborderbusiness.com/vida-plans-to-triple-workforce-training-opportunities-across-south-texas/
       HOOK: VIDA plans to triple workforce training: up to 3,000 participants a year
-  - [ACT 13] South Texas College Turkey Trot Generates Thousands to Support Hungry Students
+  - [ACT 11] South Texas College Turkey Trot Generates Thousands to Support Hungry Students
     (Texas Border Business · Nov 23)
     https://texasborderbusiness.com/south-texas-college-turkey-trot-generates-thousands-to-support-hungry-students/
       HOOK: Record Turkey Trot: more than $27,000 and 300 runners for the STC Student Food
     Pantry
-  - [ACT 12] McAllen and Tampico Sign Sister City Agreement to Expand Cross-Border Business
+  - [ACT 10] McAllen and Tampico Sign Sister City Agreement to Expand Cross-Border Business
     Ties (Texas Border Business · Nov 23)
     https://texasborderbusiness.com/mcallen-and-tampico-sign-sister-city-agreement-to-expand-cross-border-business-ties/
       HOOK: McAllen and Tampico sign a Sister City Agreement: business, tourism, public
     safety
-  - [ACT 15] Food Bank RGV to distribute free produce ahead of Thanksgiving Day
+  - [ACT 13] Food Bank RGV to distribute free produce ahead of Thanksgiving Day
     (ValleyCentral · Nov 23)
     https://www.valleycentral.com/news/local-news/food-bank-rgv-to-distribute-free-produce-ahead-of-thanksgiving/
       HOOK: Free produce Tuesday in Elsa: Food Bank of the Rio Grande Valley pop-up before
     Thanksgiving
-  - [ACT 13] Nearly all arrested in Hidalgo County under SB4 choose self deportation (The
+  - [ACT 11] Nearly all arrested in Hidalgo County under SB4 choose self deportation (The
     Monitor/MyRGV · Nov 23)
     https://myrgv.com/local-news/2026/11/23/nearly-all-arrested-in-hidalgo-county-under-sb4-choose-self-deportation/
       HOOK: At least 60 SB4 arrests in Hidalgo County, and nearly all chose self deportation
-  - [ACT 14] Expanding care: Partnership between VA, UTRGV aims to help veterans (The
+  - [ACT 12] Expanding care: Partnership between VA, UTRGV aims to help veterans (The
     Monitor/MyRGV · Nov 23)
     https://myrgv.com/local-news/2026/11/23/expanding-care-partnership-between-va-utrgv-aims-to-help-veterans/
       HOOK: Valley veterans get UT Health RGV specialists: gastroenterologists and
     orthopedic surgeons
-  - [ACT 16] Bobby Pulido joins community for Thanksgiving luncheon (ValleyCentral · Nov 23)
+  - [ACT 14] Bobby Pulido joins community for Thanksgiving luncheon (ValleyCentral · Nov 23)
     https://www.valleycentral.com/news/local-news/bobby-pulido-joins-community-for-thanksgiving-luncheon/
       HOOK: Representative-elect Bobby Pulido hands out holiday lunches at Bert Ogden Arena
-  - [ACT 15] Brownsville to hold listening sessions for venue sound regulations (The
+  - [ACT 13] Brownsville to hold listening sessions for venue sound regulations (The
     Monitor/MyRGV · Nov 23)
     https://myrgv.com/local-news/2026/11/23/brownsville-to-hold-listening-sessions-for-venue-sound-regulations/
       HOOK: Brownsville's citywide sound study starts, fittingly, with listening sessions
-  - [ACT 12] Hidalgo International Trade Loop Aims to Expand Commerce and Freight
+  - [ACT 11] Hidalgo International Trade Loop Aims to Expand Commerce and Freight
     Connectivity (Texas Border Business · Nov 23)
     https://texasborderbusiness.com/hidalgo-international-trade-loop-aims-to-expand-commerce-and-freight-connectivity/
       HOOK: Hidalgo Loop renamed Hidalgo International Trade Loop: bridges to industrial
     centers to the interstate
-  - [ACT 13] Palmview library to use $20,000 grant to add shelves, new books (KRGV · Nov 23)
+  - [ACT 11] Palmview library to use $20,000 grant to add shelves, new books (KRGV · Nov 23)
     https://www.krgv.com/news/palmview-library-to-use-20-000-grant-to-add-shelves-new-books
       HOOK: Palmview library's $20,000 upgrade: new shelving and up to 400 new children's
     books
-  - [ACT 16] RGV Livestock Show expands student outreach (KRGV · Nov 23)
+  - [ACT 14] RGV Livestock Show expands student outreach (KRGV · Nov 23)
     https://www.krgv.com/news/rgv-livestock-show-expands-student-outreach
       HOOK: 88th year: the Rio Grande Valley Livestock Show adds a full-time program leader
-  - [ACT 14] Veterans Voices: Construction on track for new $2.5M Harlingen VFW
+  - [ACT 12] Veterans Voices: Construction on track for new $2.5M Harlingen VFW
     (ValleyCentral · Nov 23)
     https://www.valleycentral.com/news/veterans-voices/veterans-voices-construction-on-track-for-new-2-5m-harlingen-vfw/
       HOOK: Harlingen VFW Post 2410's $2.5 million replacement is on track after decades of
     flooding
-  - [ACT 15] City of Edinburg to Kick Off Holiday Season with Two-Day Celebration (Texas
+  - [ACT 13] City of Edinburg to Kick Off Holiday Season with Two-Day Celebration (Texas
     Border Business · Nov 23)
     https://texasborderbusiness.com/city-of-edinburg-to-kick-off-holiday-season-with-two-day-celebration/
       HOOK: Edinburg's two-day holiday extravaganza is coming
-  - [ACT 16] McAllen fire chief urges residents to check heaters as temperatures drop (KRGV
+  - [ACT 14] McAllen fire chief urges residents to check heaters as temperatures drop (KRGV
     · Nov 23)
     https://www.krgv.com/news/mcallen-fire-chief-urges-residents-to-check-heaters-as-temperatures-drop
       HOOK: First cold week: McAllen's fire chief says check heaters, cords and smoke alarms
-  - [ACT 12] After mistrial, former La Feria coach found guilty in deadly hit-and-run crash
+  - [ACT 11] After mistrial, former La Feria coach found guilty in deadly hit-and-run crash
     (The Monitor/MyRGV · Nov 23)
     https://myrgv.com/local-news/2026/11/23/former-la-feria-coach-guilty-in-crash-that-killed-us-marine-veteran/
       HOOK: Developing: after a mistrial, guilty verdict in the 2021 hit-and-run that killed
     a Marine veteran
-  - [ACT 13] Brownsville tax preparer admits to scheme that caused $529,130 in IRS losses
+  - [ACT 11] Brownsville tax preparer admits to scheme that caused $529,130 in IRS losses
     (KRGV · Nov 23)
     https://www.krgv.com/news/brownsville-tax-preparer-admits-to-scheme-that-caused-529-130-in-irs-losses
       HOOK: Brownsville tax preparer pleads guilty: $529,130 in IRS losses
-  - [ACT 15] Gang member on state's most wanted list captured in Edinburg (ValleyCentral ·
+  - [ACT 13] Gang member on state's most wanted list captured in Edinburg (ValleyCentral ·
     Nov 23)
     https://www.valleycentral.com/news/local-news/gang-member-on-states-most-wanted-list-captured-in-edinburg/
       HOOK: Developing: Texas most wanted fugitive arrested at an Edinburg traffic stop
-  - [ACT 12] STC Faculty Member Elected to Texas Board of Education (Texas Border Business ·
+  - [ACT 11] STC Faculty Member Elected to Texas Board of Education (Texas Border Business ·
     Nov 23)
     https://texasborderbusiness.com/stc-faculty-member-elected-to-texas-board-of-education/
       HOOK: A South Texas College English teacher heads to the Texas Board of Education
-  - [ACT 14] Rio Grande Valley Leaders to Gather at Texas Capitol February 2–3 (Texas Border
+  - [ACT 12] Rio Grande Valley Leaders to Gather at Texas Capitol February 2–3 (Texas Border
     Business · Nov 23)
     https://texasborderbusiness.com/rio-grande-valley-leaders-to-gather-at-texas-capitol-february-2-3/
       HOOK: RGV Days at the Capitol: Valley leaders head to Austin Feb. 2-3 for the 90th
     session
   Texas:
-  - [ACT 16] Texas Supreme Court dismisses lawsuit over 2021 abortion law (Texas Tribune ·
+  - [ACT 14] Texas Supreme Court dismisses lawsuit over 2021 abortion law (Texas Tribune ·
     Nov 23)
     https://www.texastribune.org/2026/11/23/texas-abortion-lawsuit-dismissal-heartbeat-act/
       HOOK: Developing: Texas Supreme Court dismisses lawsuit over the 2021 abortion law
-  - [ACT 15] Clayton Tucker names Tracy King as deputy ag commissioner (Texas Tribune · Nov
+  - [ACT 13] Clayton Tucker names Tracy King as deputy ag commissioner (Texas Tribune · Nov
     23)
     https://www.texastribune.org/2026/11/23/clayton-tucker-tracy-king-texas-agriculture-department/
       HOOK: Clayton Tucker's first hire: former state Rep. Tracy King as deputy ag
     commissioner
-  - [ACT 11] Dems hope Texas’ power shift boosts their education priorities (Texas Tribune ·
+  - [ACT 10] Dems hope Texas’ power shift boosts their education priorities (Texas Tribune ·
     Nov 23)
     https://www.texastribune.org/2026/11/23/texas-democrats-education-priorities-school-funding/
       HOOK: Democrats now have the Texas House: education bills that failed before are back
-  - [ACT 11] Texas Democrats consider tax relief for homeowners and renters (Texas Tribune ·
+  - [ACT 10] Texas Democrats consider tax relief for homeowners and renters (Texas Tribune ·
     Nov 23)
     https://www.texastribune.org/2026/11/23/texas-democrats-property-taxes-relief/
       HOOK: Texas Democrats weigh property tax cuts and ending corporate subsidies
-  - [ACT 25] Steven Alvis Named Chairman of Texas Transportation Commission (Texas Border
+  - [ACT 20] Steven Alvis Named Chairman of Texas Transportation Commission (Texas Border
     Business · Nov 24)
     https://texasborderbusiness.com/steven-alvis-named-chairman-of-texas-transportation-commission/
       HOOK: New chairman for the Texas Transportation Commission, the five-member body over
@@ -209,7 +224,7 @@ TRENDING NEWS · what's trending around the nation (separate from the National D
     RIFF: He worked in the rainforest when he was young, and it saved him. Eleven days.
       Incredible.
     CBS News · Nov 24: https://www.cbsnews.com/news/man-alzheimers-found-alive-11-days-amazon-rainforest/
-- [ACT 13] Commanders 22, Bengals 20: Drew Stevens drills walk-off field goal on Monday Night Football  [sports]
+- [ACT 11] Commanders 22, Bengals 20: Drew Stevens drills walk-off field goal on Monday Night Football  [sports]
     SUMMARY: Nov 23: After a 56-yard Bengals field goal with 46 seconds left, Jayden Daniels
       moved Washington 64 yards in three plays and Drew Stevens hit his fifth field goal as
       time expired.
@@ -223,12 +238,12 @@ TRENDING NEWS · what's trending around the nation (separate from the National D
     RIFF: Light that left before Earth existed. Tell the 10-year-old; this one's a dinner-
       table fact.
     AP via CBS News · Nov 24: https://www.cbsnews.com/news/quasar-farthest-oldest-found/
-- [ACT 13] Apple renews Ted Lasso for season 5  [entertainment]
+- [ACT 11] Apple renews Ted Lasso for season 5  [entertainment]
     SUMMARY: Nov 23: Apple renewed Ted Lasso for a fifth season; no word yet on when it
       might stream.
     RIFF: Believe. Season 5. Jess already has the biscuits recipe out.
     The Verge · Nov 23: https://www.theverge.com/entertainment/1040699/ted-lasso-season-5-apple-tv
-- [ACT 13] The hacker behind early GTA VI leaks has been sentenced — and released  [gaming]
+- [ACT 11] The hacker behind early GTA VI leaks has been sentenced — and released  [gaming]
     SUMMARY: Nov 23: Arion Kurtaj, who hacked Rockstar Games and leaked 90 videos of GTA VI
       in 2022, was released after pleading guilty and being sentenced.
     RIFF: The kid who leaked GTA VI is out. Rockstar's still mad.
@@ -280,6 +295,35 @@ THE NATIONAL DESK (smaller; local leads)
 WHAT'S HAPPENING IN TECH (sub-segment of block J, after the National Desk) [FALLBACK: TECH WIRES]
   FALLBACK: tech wires (The Verge, TechCrunch, Ars Technica). No Fast Company Daily issue
     from the last 48 hours was found in Gmail.
+- Internet providers say they'll challenge Pharr's new fiber optic ordinance  (KRGV)
+    SUMMARY: On April 20, Pharr City Commissioners approved an update to the city's 2023
+      fiber ordinance, requiring new subdivisions and businesses to include fiber
+      infrastructure. The city says the lines can support multiple providers and that
+      residents will not pay for the fiber. AT&T and Spectrum say the rule illegally favors
+      Pharr's municipal network, have sent legal letters and say they will challenge it.
+    ON-AIR ANGLE: Pharr says fiber is infrastructure, like water and sewer. AT&T and
+      Spectrum say the city is writing the rules to benefit its own network. This is the
+      Valley's municipal-broadband fight in one ordinance.
+    Link: https://www.krgv.com/news/internet-providers-say-they-ll-challenge-pharr-s-new-fiber-optic-connection-mandate/
+- Pharr expands city internet service to 300 housing authority homes with $700K federal investment  (KRGV)
+    SUMMARY: On July 2, KRGV reported that Pharr Connect is expanding municipal fiber to
+      about 300 households across three Pharr Housing Authority complexes, funded by a
+      $700,000 federal investment. Plans are $25 a month for 500 Mbps or $50 for 1 Gbps.
+      Deputy City Manager Cynthia Garza-Reyes said PSJA ISD households in those units can
+      get the fiber free.
+    ON-AIR ANGLE: City internet at public housing: $25 for 500 megabits, a gig for $50, and
+      free for PSJA families in those units. Finish the digital literacy class and you get a
+      free laptop.
+    Link: https://www.krgv.com/news/pharr-expands-city-internet-service-to-300-housing-authority-homes/
+- T-Fiber expands fiber-optic internet service into Mercedes  (RGV Business Journal)
+    SUMMARY: T-Fiber is expanding its fiber-optic network into Mercedes, giving residents
+      another wired internet option. City Commissioner Ruben Saldaña said the south side is
+      largely complete and northern neighborhoods should be finished within six months.
+      Spectrum is currently the only provider offering that type of wired service in
+      Mercedes.
+    ON-AIR ANGLE: Mercedes has been a one-wired-ISP town. T-Fiber is coming in from the
+      south side, with the north side about six months out.
+    Link: https://www.rgvbusinessjournal.com/news/23/11/2026/t-fiber-expands-fiber-optic-internet-service-into-mercedes/
 - States sue SpaceX to stop Grok from generating child sex images, revenge porn  (Ars Technica)
     SUMMARY: State attorneys general sued SpaceX (which acquired xAI in February) alleging
       Grok still generates abuse imagery; X says every Grok output is screened.
@@ -292,12 +336,6 @@ WHAT'S HAPPENING IN TECH (sub-segment of block J, after the National Desk) [FALL
     ON-AIR ANGLE: Would you let Google's AI read your Wallet to find your card rewards? Opt-
       in, but read the fine print.
     Link: https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/
-- Amazon fights Delivery Protection Act by putting stickers on its packages  (Ars Technica)
-    SUMMARY: Some NYC shoppers got Amazon packages with a sticker saying the city council
-      'could add up to $5 per order' and a QR code to contact council members, opposing a
-      bill on delivery contractors.
-    ON-AIR ANGLE: Your box is now a campaign flyer. Imagine that on every porch in McAllen.
-    Link: https://arstechnica.com/tech-policy/2026/11/amazon-fights-delivery-protection-act-by-putting-stickers-on-its-packages/
 
 REMEMBERING OUR NEIGHBORS (read near the close, block L) · 79 obituaries from The Monitor on Legacy.com, Nov 11–24
   Only what each notice lists: no cause of death. CONFIRM name pronunciations before
@@ -394,15 +432,15 @@ REMEMBERING OUR NEIGHBORS (read near the close, block L) · 79 obituaries from T
   Source page: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor
 
 WEATHER · McALLEN / RGV (National Weather Service BRO (api.weather.gov))
-  Tue Nov 24  << SHOW DAY Rain Showers Likely, high 58F / low 44F, rain 60%, wind NNW 9 to 13 mph
+  Tue Nov 24  << SHOW DAY Chance Rain Showers, high 58F / low 44F, rain 52%, wind NNW 13 mph
   Wed Nov 25  Sunny, high 61F / low 41F, rain 0%, wind NNW 6 to 10 mph
   Thu Nov 26  Mostly Sunny, high 63F / low 47F, rain 0%, wind N 1 to 7 mph
   Fri Nov 27  Mostly Cloudy, high 64F / low 52F, rain 3%, wind NNE 2 mph
   Sat Nov 28  Slight Chance Rain Showers then Mostly Sunny, high 74F / low 57F, rain 15%, wind SSE 1 to 7 mph
   Sun Nov 29  Sunny, high 79F / low 58F, rain 1%, wind SSE 5 to 8 mph
-  Mon Nov 30  Sunny, high 78F / low --F, rain 0%, wind SE 7 mph
+  Mon Nov 30  Sunny, high 78F / low 60F, rain 0%, wind SE 7 mph
   Alerts: none active
-  Updated 2026-11-24T11:45:14+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
+  Updated 2026-11-24T16:45:14+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
   NWS Brownsville office: https://www.weather.gov/bro/
   API: https://api.weather.gov/gridpoints/BRO/49,19/forecast
 
@@ -550,5 +588,4 @@ What your kids might be saying at school this week, and one line on how to bring
 NEXT SHOW: Monday, November 30, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-24 06:19 CT.
-Links checked 2026-11-24: 105 ok, 13 blocked by the site's bot protection (verified in a browser/search), 0 dead, 2 unreachable.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-24 11:01 CT.

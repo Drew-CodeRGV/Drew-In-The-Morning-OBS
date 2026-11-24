@@ -1,7 +1,7 @@
 {
  "v": 1,
  "date": "2026-11-24",
- "generated": "2026-11-24T06:19:42-06:00",
+ "generated": "2026-11-24T11:01:17-06:00",
  "items": {
   "i-84507fc93d": {
    "headline": "MERCEDES: WINGSTOP PLANNING $300,000 FIRST MERCEDES LOCATION AT MERCEDES PLAZA NEAR THE OUTLETS",
@@ -398,14 +398,24 @@
    "line": "At the DealBook Summit, Elon Musk, the cycle's top individual donor (much of it in Texas), called the spending…",
    "kicker": "TRENDING"
   },
-  "i-b4c38cdd0b": {
-   "headline": "Amazon fights Delivery Protection Act by putting stickers on its packages",
-   "line": "Some NYC shoppers got Amazon packages with a sticker saying the city council 'could add up to $5 per order' and a QR…",
+  "i-1207ee0503": {
+   "headline": "Internet providers say they'll challenge Pharr's new fiber optic ordinance",
+   "line": "On April 20, Pharr City Commissioners approved an update to the city's 2023 fiber ordinance, requiring new…",
+   "kicker": "TECH"
+  },
+  "i-2fd99c219f": {
+   "headline": "Pharr expands city internet service to 300 housing authority homes with $700K federal investment",
+   "line": "On July 2, KRGV reported that Pharr Connect is expanding municipal fiber to about 300 households across three Pharr…",
    "kicker": "TECH"
   },
   "i-f548a34a0f": {
    "headline": "Google Search's AI Mode can now tap into Drive and Wallet for more personalized responses",
    "line": "Google's Personal Intelligence in AI Mode can now connect to Drive, Wallet and the Gemini app; connecting is…",
+   "kicker": "TECH"
+  },
+  "i-cf12b0133e": {
+   "headline": "T-Fiber expands fiber-optic internet service into Mercedes",
+   "line": "T-Fiber is expanding its fiber-optic network into Mercedes, giving residents another wired internet option.",
    "kicker": "TECH"
   },
   "i-1672c2c5f8": {
@@ -900,7 +910,7 @@
   },
   "i-251b25dd91": {
    "headline": "Tue Nov 24",
-   "line": "Rain Showers Likely",
+   "line": "Chance Rain Showers",
    "kicker": "SHOW"
   },
   "i-fa71ff7727": {
@@ -1243,6 +1253,11 @@
    "line": "McAllen Mayor Javier Villalobos and Tampico Mayor Mónica Villarreal Anaya signed a Sister City Agreement on Nov.",
    "kicker": "HEADLINES · RGV"
   },
+  "i-a1972399ae": {
+   "headline": "T-Fiber expands fiber-optic internet service into Mercedes",
+   "line": "T-Fiber is expanding its fiber-optic network into Mercedes, giving residents another wired internet option.",
+   "kicker": "HEADLINES · RGV"
+  },
   "i-e4deaddae4": {
    "headline": "Commentary: Debating tablets in the classroom",
    "line": "UNCONFIRMED · An opinion column in The Monitor weighs the case for and against tablets in classrooms (headline read…",
@@ -1408,6 +1423,11 @@
    "line": "Carlos Elizondo, Frank Ortiz and Garza were reelected; Marisa Franco Leal fills the two years left on the late…",
    "kicker": "SCHOOL BOARDS"
   },
+  "i-0587cc95cd": {
+   "headline": "Internet providers say they'll challenge Pharr's new fiber optic ordinance",
+   "line": "On April 20, Pharr City Commissioners approved an update to the city's 2023 fiber ordinance, requiring new…",
+   "kicker": "CITY HALL"
+  },
   "i-543ca0556c": {
    "headline": "McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan. 14 deadline still…",
    "line": "Vendors met a second time, with Commissioner Michael Fallek and the city attorney, asking the McAllen Chamber of…",
@@ -1447,6 +1467,11 @@
    "headline": "McAllen city manager: $17.5B in retail sales (2023, Dallas Fed), ~28% from Mexican shoppers; ~$99M…",
    "line": "McAllen: $17.5B retail, 28% from Mexican shoppers",
    "kicker": "CITY HALL"
+  },
+  "i-4b86fbc006": {
+   "headline": "Pharr expands city internet service to 300 housing authority homes with $700K federal investment",
+   "line": "On July 2, KRGV reported that Pharr Connect is expanding municipal fiber to about 300 households across three Pharr…",
+   "kicker": "ECONOMIC DEVELOPMENT"
   },
   "i-ad25851d89": {
    "headline": "RioPlex says $110 billion in industrial, energy and data center investment is headed to the Valley",
