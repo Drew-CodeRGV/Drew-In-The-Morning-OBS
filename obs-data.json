@@ -1561,7 +1561,7 @@
     "caption": "We want YOUR voice on Monday's show. Got a topic, a story, or the hard parenting question you're afraid to ask? DM us, email, or ask for a live guest link. Anonymous is fine. #RGV #McAllen #DrewInTheMorning"
   },
   "schemaNotes": "v4 (Nov 18): 12 blocks A-L (new B = What I've Been Up To, family & kids woven into H, Starbase/Zoho/trending folded into other blocks). Segments carry offsetMinutes from the planned 8:00 start. coldOpen, jingle and upTo are filled by packet/build_packet.py on every build.",
-  "coldOpen": "Good morning, Rio Grande Valley! It's Tuesday, November 24th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with SpaceX debris on Bagdad Beach, plus Holiday Village's 1,000 buñuelos. On the National Desk, Jensen Huang's comeback at Nvidia. In Trending, the lioness that never existed. And in How We'd Talk to Our Kids, Jess and I take on why hacking a video game is no prank, now that the GTA VI leaker got sentenced. It's 57 and cloudy outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+  "coldOpen": "Good morning, Rio Grande Valley! It's Wednesday, November 25th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with Weslaco's Grammy nominee, plus ticket or turkey in McAllen. On the National Desk, the Army's 5-ton Iowa blast. In Trending, the space-station baby. And in How We'd Talk to Our Kids, Jess and I take on AI toys on the holiday list: CBS News (Nov 24) reports a U.S. PIRG test of. It's 46 and clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
   "jingle": {
     "primary": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [
@@ -1570,25 +1570,13 @@
     ]
   },
   "upTo": {
-    "banner": "5 from the week",
-    "script": "Busy week at the Lentz house. We had cotillion on Wednesday, tap class on Wednesday, the region clinic and concert on Friday, chess club on Tuesday, and hip hop class on Tuesday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.",
+    "banner": "4 from the week",
+    "script": "Busy week at the Lentz house. We had the region clinic and concert on Friday, chess club twice, hip hop class on Tuesday, and tap class on Wednesday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.",
     "calendar": "Family calendar (iCloud, published feed)",
-    "window": "Nov 18–24, 2026",
+    "window": "Nov 19–25, 2026",
     "comingWindow": "",
     "source": "family calendar (tools/family_calendar.py), generic wording",
     "events": [
-      {
-        "date": "2026-11-18",
-        "label": "cotillion",
-        "category": "club",
-        "count": 1
-      },
-      {
-        "date": "2026-11-18",
-        "label": "tap class",
-        "category": "dance",
-        "count": 1
-      },
       {
         "date": "2026-11-20",
         "label": "the region clinic and concert",
@@ -1599,11 +1587,17 @@
         "date": "2026-11-24",
         "label": "chess club",
         "category": "club",
-        "count": 1
+        "count": 2
       },
       {
         "date": "2026-11-24",
         "label": "hip hop class",
+        "category": "dance",
+        "count": 1
+      },
+      {
+        "date": "2026-11-25",
+        "label": "tap class",
         "category": "dance",
         "count": 1
       }
@@ -1611,10 +1605,12 @@
     "coming": []
   },
   "coldOpenMeta": {
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "template": "daily",
-    "confirm": [],
-    "builtFrom": "DITM-briefing-2026-11-24",
+    "confirm": [
+      "RGV: McAllen PD: ticket or turkey today"
+    ],
+    "builtFrom": "DITM-briefing-2026-11-25",
     "sample": false
   }
 }
