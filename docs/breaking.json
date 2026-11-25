@@ -1,14 +1,14 @@
 {
  "version": 1,
- "generatedAt": "2026-11-24T15:39:05+00:00",
+ "generatedAt": "2026-11-25T02:04:57+00:00",
  "window_hours": 24,
  "bootstrap": false,
  "note": "Public headlines and links only. Everything here is a lead: CONFIRM BEFORE AIR.",
  "counts": {
   "alert": 4,
-  "watch": 23,
-  "stories": 174,
-  "new": 137
+  "watch": 17,
+  "stories": 179,
+  "new": 109
  },
  "feeds": {
   "ok": 16,
@@ -56,7 +56,7 @@
    ],
    "published": "2026-11-23T23:43:40+00:00",
    "firstSeen": "2026-11-24T15:39:05+00:00",
-   "score": 14,
+   "score": 10,
    "label": "Active",
    "uncovered": false,
    "level": "alert",
@@ -65,7 +65,7 @@
     "fire",
     "Harlingen"
    ],
-   "why": "Score 14: 1 outlet 6 + recency 8 (16h old)"
+   "why": "Score 10: 1 outlet 6 + recency 4.4 (26h old)"
   },
   {
    "id": "7d19bc1f6fac",
@@ -114,6 +114,227 @@
    "why": "Score 14: 1 outlet 6 + recency 7.9 (16h old)"
   },
   {
+   "id": "d0118e1d4a58",
+   "title": "2 more New World screwworm cases confirmed in Hidalgo County",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTkhTQ24tY05MU19xbUZBYk1mQ1pPZEg1UG5BbFVOa0N2M2lKT18yczB1WHVWeWlzYTBORVkwSUxvTElIcGFCT0tZNFVJY0xxQWVYTUlRWm9aTHN1QUUxRkZIUGdXNm84Q1RSMGYwNUZJZ1ZlQ1lVSnM5bE8zbG1LVFVBbm9sUkZWc1RrRGRsdkVSTk1EQ241R25WUEN6XzQtQU9F?oc=5",
+   "source": "MyRGV.com",
+   "sources": [
+    {
+     "name": "MyRGV.com",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTkhTQ24tY05MU19xbUZBYk1mQ1pPZEg1UG5BbFVOa0N2M2lKT18yczB1WHVWeWlzYTBORVkwSUxvTElIcGFCT0tZNFVJY0xxQWVYTUlRWm9aTHN1QUUxRkZIUGdXNm84Q1RSMGYwNUZJZ1ZlQ1lVSnM5bE8zbG1LVFVBbm9sUkZWc1RrRGRsdkVSTk1EQ241R25WUEN6XzQtQU9F?oc=5"
+    },
+    {
+     "name": "Texas Border Business",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUjYwcTJaSlNzVlEwZW9TV0pFLUh4SmJrQjkteW04STd0aHhFQ2V6Wk5aZ254MFJfbHR1X0FJN1lLZDlaNWFmVWdJZjJITHJqdGxVR0hsTEhTNUZtNUpWRzdpMkdET1A1Qy14eFN2b25PR3pRc1NyeHhZUlg0Y3B1b3lsRDF1VlhMd1psM0MxVm5UU1UzbktxakduaEV3WVk?oc=5"
+    },
+    {
+     "name": "KRGV",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWXZjcmxSbjd0U0pNNlRhN1h5QktHVkNOa1FJbTE1SGFrelNhTzFSdlRGNWtVYkE2OXFHLUhMNFBubjFicUNZb1lWRnRwelc1U3pQZjExMDZIdFh1ZlJqdWEzWm9obGg5ZWdsWno5VDBaLTQ1T3RlZmlmZ1QyVGpKYkVZNTcwWmpVaWhlbEd3a0YtSkk?oc=5"
+    }
+   ],
+   "published": "2026-11-24T22:55:01+00:00",
+   "firstSeen": "2026-11-25T02:04:57+00:00",
+   "score": 35,
+   "label": "Trending",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Hidalgo",
+    "Hidalgo County",
+    "screwworm"
+   ],
+   "why": "Score 35: 3 outlets 18 + recency 16.7 (3h old)"
+  },
+  {
+   "id": "6b8017a0bea7",
+   "title": "'Plebe-giving': El Plebe giving out free tacos ahead of Thanksgiving",
+   "url": "https://www.valleycentral.com/news/local-news/plebe-giving-el-plebe-giving-out-free-tacos-ahead-of-thanksgiving/",
+   "source": "ValleyCentral (KVEO)",
+   "sources": [
+    {
+     "name": "ValleyCentral (KVEO)",
+     "url": "https://www.valleycentral.com/news/local-news/plebe-giving-el-plebe-giving-out-free-tacos-ahead-of-thanksgiving/"
+    }
+   ],
+   "published": "2026-11-25T01:33:10+00:00",
+   "firstSeen": "2026-11-25T02:04:57+00:00",
+   "score": 25,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Harlingen",
+    "Rio Grande Valley"
+   ],
+   "why": "Score 25: 1 outlet 6 + recency 19.4 (1h old)"
+  },
+  {
+   "id": "d0ee03135c75",
+   "title": "Harlingen Animal Shelter asking for donations amid cold weather",
+   "url": "https://www.valleycentral.com/news/local-news/harlingen-animal-shelter-asking-for-donations-amid-cold-weather/",
+   "source": "ValleyCentral (KVEO)",
+   "sources": [
+    {
+     "name": "ValleyCentral (KVEO)",
+     "url": "https://www.valleycentral.com/news/local-news/harlingen-animal-shelter-asking-for-donations-amid-cold-weather/"
+    }
+   ],
+   "published": "2026-11-25T01:30:27+00:00",
+   "firstSeen": "2026-11-25T02:04:57+00:00",
+   "score": 25,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Harlingen",
+    "Rio Grande Valley"
+   ],
+   "why": "Score 25: 1 outlet 6 + recency 19.3 (1h old)"
+  },
+  {
+   "id": "6ce0617303aa",
+   "title": "Elon Musk’s SpaceX Data Centers Face Key Votes on Same Day in December",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdWFhVjFpc3RUdkVHRmJDODJDX0xJV3lEVWszQXlnandyS3ZzM1Npck51c2dPZTVlOFJBOXc1ci1pYndaQXBjZFpuTHFEQXlVak9EQUxibWtWTjBOY1lmenAwX01CZHloSXcyVGhVZXA5aFdKR2V0WlJfRHRKbEdTWWFkVWp0Njg3TGpmY2d0Ynp1MzlkUVZTUUp1SUZaVi1uSXVYMVJ3?oc=5",
+   "source": "Newsweek",
+   "sources": [
+    {
+     "name": "Newsweek",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdWFhVjFpc3RUdkVHRmJDODJDX0xJV3lEVWszQXlnandyS3ZzM1Npck51c2dPZTVlOFJBOXc1ci1pYndaQXBjZFpuTHFEQXlVak9EQUxibWtWTjBOY1lmenAwX01CZHloSXcyVGhVZXA5aFdKR2V0WlJfRHRKbEdTWWFkVWp0Njg3TGpmY2d0Ynp1MzlkUVZTUUp1SUZaVi1uSXVYMVJ3?oc=5"
+    }
+   ],
+   "published": "2026-11-25T01:33:00+00:00",
+   "firstSeen": "2026-11-25T02:04:57+00:00",
+   "score": 25,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "SpaceX"
+   ],
+   "why": "Score 25: 1 outlet 6 + recency 19.4 (1h old)"
+  },
+  {
+   "id": "68f0373ed65b",
+   "title": "Loaves and Fishes hosts community Thanksgiving luncheon",
+   "url": "https://www.valleycentral.com/news/local-news/loaves-and-fishes-hosts-community-thanksgiving-luncheon/",
+   "source": "ValleyCentral (KVEO)",
+   "sources": [
+    {
+     "name": "ValleyCentral (KVEO)",
+     "url": "https://www.valleycentral.com/news/local-news/loaves-and-fishes-hosts-community-thanksgiving-luncheon/"
+    }
+   ],
+   "published": "2026-11-25T00:02:40+00:00",
+   "firstSeen": "2026-11-25T02:04:57+00:00",
+   "score": 24,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Harlingen",
+    "Mission",
+    "Rio Grande Valley"
+   ],
+   "why": "Score 24: 1 outlet 6 + recency 17.8 (2h old)"
+  },
+  {
+   "id": "8b4e193e5acf",
+   "title": "Screwworm cases on the rise in the Rio Grande Valley",
+   "url": "https://www.valleycentral.com/news/local-news/screwworm-cases-on-the-rise-in-the-rio-grande-valley/",
+   "source": "ValleyCentral (KVEO)",
+   "sources": [
+    {
+     "name": "ValleyCentral (KVEO)",
+     "url": "https://www.valleycentral.com/news/local-news/screwworm-cases-on-the-rise-in-the-rio-grande-valley/"
+    }
+   ],
+   "published": "2026-11-24T22:42:52+00:00",
+   "firstSeen": "2026-11-25T02:04:57+00:00",
+   "score": 22,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Harlingen",
+    "Hidalgo",
+    "Hidalgo County",
+    "Rio Grande Valley",
+    "screwworm",
+    "Starr County"
+   ],
+   "why": "Score 22: 1 outlet 6 + recency 16.5 (3h old)"
+  },
+  {
+   "id": "eb5e6534acb5",
+   "title": "'No Refusal' initiative aims to curb drunk driving during holidays",
+   "url": "https://www.valleycentral.com/news/local-news/no-refusal-initiative-aims-to-curb-drunk-driving-during-holidays/",
+   "source": "ValleyCentral (KVEO)",
+   "sources": [
+    {
+     "name": "ValleyCentral (KVEO)",
+     "url": "https://www.valleycentral.com/news/local-news/no-refusal-initiative-aims-to-curb-drunk-driving-during-holidays/"
+    }
+   ],
+   "published": "2026-11-24T19:46:50+00:00",
+   "firstSeen": "2026-11-25T02:04:57+00:00",
+   "score": 20,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Brownsville",
+    "Rio Grande Valley"
+   ],
+   "why": "Score 20: 1 outlet 6 + recency 13.9 (6h old)"
+  },
+  {
+   "id": "907731451aba",
+   "title": "Greater Brownsville EDC’s Jerry Briones Named to Team Texas Advisory Council",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSXZ3emszSHVmNVpxaXpVaFYxSnFhdWZ3eFpZOGVsWERhZEZFWXJMSEN0MlpXS2gxeG5HYlprblRwem9vbGM3bFozSmNpNWRVc05fVjh6bGs3WDhXOElRQXF6NEpTMXFVUFFDM1p3WUljVHRIRGdubHhoOENpa2ZpQXFjOTRubFlwOXJkWHQzOWwxYnAzZElvNDRCczdOWWktVl84RjloSnJmbC03?oc=5",
+   "source": "Texas Border Business",
+   "sources": [
+    {
+     "name": "Texas Border Business",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSXZ3emszSHVmNVpxaXpVaFYxSnFhdWZ3eFpZOGVsWERhZEZFWXJMSEN0MlpXS2gxeG5HYlprblRwem9vbGM3bFozSmNpNWRVc05fVjh6bGs3WDhXOElRQXF6NEpTMXFVUFFDM1p3WUljVHRIRGdubHhoOENpa2ZpQXFjOTRubFlwOXJkWHQzOWwxYnAzZElvNDRCczdOWWktVl84RjloSnJmbC03?oc=5"
+    }
+   ],
+   "published": "2026-11-24T18:00:45+00:00",
+   "firstSeen": "2026-11-25T02:04:57+00:00",
+   "score": 19,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Brownsville",
+    "EDC"
+   ],
+   "why": "Score 19: 1 outlet 6 + recency 12.5 (8h old)"
+  },
+  {
+   "id": "eeef8298c10e",
+   "title": "City of Brownsville, TX - Municipal Government. . RGV Startup Week returns April 26–30, 2027, and it’s going to be bigger than ever! Brownsville Community Improvement Corporation and the UTRGV Entrepreneurship & Commercialization Center unv",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRXh2emYzX1RNWXZIVEtVUFFCejRwV05yU0w2bV96blpGSlFyZjRmajFMbVZnQWZUcFhJZGFUYWRrN3ZJZm1YMzd0ZGJBSS1Qd09YT2FYcEYxd1JoVUJkb0xBMU5hb2hfZHpUc29rbGZoTUZRaXFkTkQtVzV0LWxTRDlfVjRUeVVEdGJHTHNyU0J2Y1ZtVjRoM1BqeTY?oc=5",
+   "source": "Facebook",
+   "sources": [
+    {
+     "name": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRXh2emYzX1RNWXZIVEtVUFFCejRwV05yU0w2bV96blpGSlFyZjRmajFMbVZnQWZUcFhJZGFUYWRrN3ZJZm1YMzd0ZGJBSS1Qd09YT2FYcEYxd1JoVUJkb0xBMU5hb2hfZHpUc29rbGZoTUZRaXFkTkQtVzV0LWxTRDlfVjRUeVVEdGJHTHNyU0J2Y1ZtVjRoM1BqeTY?oc=5"
+    }
+   ],
+   "published": "2026-11-24T17:11:53+00:00",
+   "firstSeen": "2026-11-25T02:04:57+00:00",
+   "score": 18,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Brownsville",
+    "RGV",
+    "UTRGV"
+   ],
+   "why": "Score 18: 1 outlet 6 + recency 12 (9h old)"
+  },
+  {
    "id": "68d010da87cb",
    "title": "Veterans Voices: Chicanos Por La Causa creates a safe space for veterans",
    "url": "https://www.valleycentral.com/news/veterans-voices/veterans-voices-chicanos-por-la-causa-creates-a-safe-space-for-veterans/",
@@ -126,7 +347,7 @@
    ],
    "published": "2026-11-24T04:00:00+00:00",
    "firstSeen": "2026-11-24T15:39:05+00:00",
-   "score": 16,
+   "score": 12,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -135,7 +356,7 @@
     "Rio Grande Valley",
     "Weslaco"
    ],
-   "why": "Score 16: 1 outlet 6 + recency 10.2 (12h old)"
+   "why": "Score 12: 1 outlet 6 + recency 5.6 (22h old)"
   },
   {
    "id": "b606d44ee3b6",
@@ -150,7 +371,7 @@
    ],
    "published": "2026-11-24T03:02:37+00:00",
    "firstSeen": "2026-11-24T15:39:05+00:00",
-   "score": 16,
+   "score": 11,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -161,7 +382,7 @@
     "SpaceX",
     "Starbase"
    ],
-   "why": "Score 16: 1 outlet 6 + recency 9.7 (13h old)"
+   "why": "Score 11: 1 outlet 6 + recency 5.3 (23h old)"
   },
   {
    "id": "b9a107fe918d",
@@ -176,7 +397,7 @@
    ],
    "published": "2026-11-24T02:21:07+00:00",
    "firstSeen": "2026-11-24T15:39:05+00:00",
-   "score": 15,
+   "score": 11,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -185,7 +406,7 @@
     "McAllen",
     "Rio Grande Valley"
    ],
-   "why": "Score 15: 1 outlet 6 + recency 9.3 (13h old)"
+   "why": "Score 11: 1 outlet 6 + recency 5.1 (24h old)"
   },
   {
    "id": "0e4024d7f8bb",
@@ -200,7 +421,7 @@
    ],
    "published": "2026-11-23T22:25:31+00:00",
    "firstSeen": "2026-11-24T15:39:05+00:00",
-   "score": 13,
+   "score": 10,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -211,7 +432,7 @@
     "RGV",
     "Rio Grande Valley"
    ],
-   "why": "Score 13: 1 outlet 6 + recency 7.4 (17h old)"
+   "why": "Score 10: 1 outlet 6 + recency 4 (28h old)"
   },
   {
    "id": "10d2228b3e62",
@@ -238,7 +459,7 @@
   },
   {
    "id": "60348a6ddb1f",
-   "title": "Live coverage: SpaceX to launch classified payload for the U.S. Space Force",
+   "title": "SpaceX launches classified payload for the U.S. Space Force",
    "url": "https://spaceflightnow.com/2026/11/23/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-3/",
    "source": "Spaceflight Now (Starbase / SpaceX)",
    "sources": [
@@ -249,7 +470,7 @@
    ],
    "published": "2026-11-23T22:21:32+00:00",
    "firstSeen": "2026-11-24T15:39:05+00:00",
-   "score": 13,
+   "score": 10,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -257,7 +478,7 @@
     "Mission",
     "SpaceX"
    ],
-   "why": "Score 13: 1 outlet 6 + recency 7.4 (17h old)"
+   "why": "Score 10: 1 outlet 6 + recency 4 (28h old)"
   },
   {
    "id": "beedf721a5ac",
@@ -303,355 +524,6 @@
     "UTRGV"
    ],
    "why": "Score 12: 1 outlet 6 + recency 6.4 (20h old)"
-  },
-  {
-   "id": "b1d819341a19",
-   "title": "Mexico demands SpaceX clean up suspected rocket debris washing ashore near Texas",
-   "url": "https://www.valleycentral.com/news/local-news/mexico-demands-spacex-clean-up-suspected-rocket-debris-washing-ashore-near-texas/",
-   "source": "ValleyCentral (KVEO)",
-   "sources": [
-    {
-     "name": "ValleyCentral (KVEO)",
-     "url": "https://www.valleycentral.com/news/local-news/mexico-demands-spacex-clean-up-suspected-rocket-debris-washing-ashore-near-texas/"
-    },
-    {
-     "name": "Texas Tribune",
-     "url": "https://feeds.texastribune.org/link/16799/17538489/spacex-rocket-debris-beach-texas-mexico"
-    }
-   ],
-   "published": "2026-11-23T18:45:17+00:00",
-   "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 18,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "Matamoros",
-    "SpaceX",
-    "Starship"
-   ],
-   "why": "Score 18: 2 outlets 12 + recency 6 (21h old)"
-  },
-  {
-   "id": "1d96b75e478d",
-   "title": "UTRGV student combats period poverty with free kits",
-   "url": "https://www.valleycentral.com/community/utrgv-student-combats-period-poverty-with-free-kits/",
-   "source": "ValleyCentral (KVEO)",
-   "sources": [
-    {
-     "name": "ValleyCentral (KVEO)",
-     "url": "https://www.valleycentral.com/community/utrgv-student-combats-period-poverty-with-free-kits/"
-    }
-   ],
-   "published": "2026-11-23T17:19:40+00:00",
-   "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 12,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "Harlingen",
-    "Rio Grande Valley",
-    "UTRGV"
-   ],
-   "why": "Score 12: 1 outlet 6 + recency 5.5 (22h old)"
-  },
-  {
-   "id": "29bf015be08f",
-   "title": "Golden Apple Award: Dr. AnaKaren Lopez, Roma Middle School",
-   "url": "https://www.valleycentral.com/golden-apple/golden-apple-award-dr-anakaren-lopez-roma-middle-school/",
-   "source": "ValleyCentral (KVEO)",
-   "sources": [
-    {
-     "name": "ValleyCentral (KVEO)",
-     "url": "https://www.valleycentral.com/golden-apple/golden-apple-award-dr-anakaren-lopez-roma-middle-school/"
-    }
-   ],
-   "published": "2026-11-23T16:19:30+00:00",
-   "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 11,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "Rio Grande Valley",
-    "Roma",
-    "Starr County"
-   ],
-   "why": "Score 11: 1 outlet 6 + recency 5.2 (23h old)"
-  },
-  {
-   "id": "1e9608ae757a",
-   "title": "UTRGV Football Coach's Show",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBTdWMxbV8zN1J0MGd2cWJVSF9WZC12R2dyT0ctRTBDdWZPWG9BM2hCQVBMVkZibjRLRjBHbjJkb2dMamw0clUxZEMtRy1YVGtxLWtrMzMyenVUa0pQLXdPV29Xc0xUSVJ3UXpLNHdoSUU2R3FiMjlZNU56TUQ?oc=5",
-   "source": "KRGV",
-   "sources": [
-    {
-     "name": "KRGV",
-     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBTdWMxbV8zN1J0MGd2cWJVSF9WZC12R2dyT0ctRTBDdWZPWG9BM2hCQVBMVkZibjRLRjBHbjJkb2dMamw0clUxZEMtRy1YVGtxLWtrMzMyenVUa0pQLXdPV29Xc0xUSVJ3UXpLNHdoSUU2R3FiMjlZNU56TUQ?oc=5"
-    }
-   ],
-   "published": "2026-11-23T16:42:35+00:00",
-   "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 23,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "UTRGV"
-   ],
-   "why": "Score 23: 1 outlet 6 + recency 17.4 (2h old)"
-  },
-  {
-   "id": "4c0313faa57f",
-   "title": "Starbase-Seth-Chapman",
-   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQOXNvbXZkR1JFak0wX0ZwaVlCY29BSU9PekdXQzNZczAzWGpLc212NXRCYXV3MktnbEhBRlQwc2RNaGhtSC1zbGxIM2tzY25SZ1ZHQnI0QXlNWnZkOWNKTmptYUtRZUxfaWRrbVJuY2d4Q1U3M1BmbEo5VmY5VmN1MDducWVMNkJhekVaU19GalI0Ml9ISE83RHZiSWQxa2paV1FOQ2QzOGNROUVpajRmMnJKX2ZaWUZjcVNaNkI2NEhtcnhOa296Mi1mSFhhbWkteTdvc19Yb3NXdE5NdVItOWh0WFRRcTZJcFJNZ3l2dWVYbUhndEVz?oc=5",
-   "source": "Louisiana Sportsman",
-   "sources": [
-    {
-     "name": "Louisiana Sportsman",
-     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQOXNvbXZkR1JFak0wX0ZwaVlCY29BSU9PekdXQzNZczAzWGpLc212NXRCYXV3MktnbEhBRlQwc2RNaGhtSC1zbGxIM2tzY25SZ1ZHQnI0QXlNWnZkOWNKTmptYUtRZUxfaWRrbVJuY2d4Q1U3M1BmbEo5VmY5VmN1MDducWVMNkJhekVaU19GalI0Ml9ISE83RHZiSWQxa2paV1FOQ2QzOGNROUVpajRmMnJKX2ZaWUZjcVNaNkI2NEhtcnhOa296Mi1mSFhhbWkteTdvc19Yb3NXdE5NdVItOWh0WFRRcTZJcFJNZ3l2dWVYbUhndEVz?oc=5"
-    }
-   ],
-   "published": "2026-11-23T16:39:45+00:00",
-   "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 23,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "Starbase"
-   ],
-   "why": "Score 23: 1 outlet 6 + recency 17.4 (2h old)"
-  },
-  {
-   "id": "544d75366ea9",
-   "title": "SpaceX’s Starship wreckage sparks concerns on both sides of border - San Antonio Express-News",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNVNjVjRPMHNEVmxFSjQ3bmNuUWo2c2tuMHNGeElpOG1ZcW13dldaOS0zZEstZ1JUWnlySXdPRDAxdmxIQ0c1Y2VkQjBZaVA3ZndxTmFocF81dDZpUFB3ODVOMVoxaU9JbW5HWjdhWlVYWjlkbjN6d05fN2pTR1BjUjFVWm5YeldaNDlJaUlYUFZldDhtUV9ockxDV2RTcXJoQTE2eUF3d2pxUQ?oc=5",
-   "source": "San Antonio Express-News",
-   "sources": [
-    {
-     "name": "San Antonio Express-News",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNVNjVjRPMHNEVmxFSjQ3bmNuUWo2c2tuMHNGeElpOG1ZcW13dldaOS0zZEstZ1JUWnlySXdPRDAxdmxIQ0c1Y2VkQjBZaVA3ZndxTmFocF81dDZpUFB3ODVOMVoxaU9JbW5HWjdhWlVYWjlkbjN6d05fN2pTR1BjUjFVWm5YeldaNDlJaUlYUFZldDhtUV9ockxDV2RTcXJoQTE2eUF3d2pxUQ?oc=5"
-    }
-   ],
-   "published": "2026-11-23T16:13:36+00:00",
-   "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 11,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "SpaceX",
-    "Starship"
-   ],
-   "why": "Score 11: 1 outlet 6 + recency 5.2 (23h old)"
-  },
-  {
-   "id": "38509cdf7923",
-   "title": "Starbase-Kyle-Broussard-2",
-   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPT2xSU3VEXzBZZ1RNX3J0UlJhNW1BMi0yZDFpazZQNG8xLWNOdzBMcjVBZVg5X1paZjB1bVUzRzRpYXZaalV3LWNHWmFhQ3pWQmt0cExSYkRTMkI2M1ZKU2pIY0pLOXBzV3l3ZW1mUWRfSGptLS1hZmR0M3VTc2F0X3U5N0NmQ2dDX3piYlcyN2JqbGZ4ZnhZNUg5Rkp5OXdnMjVuRFlkMjZWMkFRdWJJdUlBQzBKTGFWc0EwSzhGb28yTy1Sbl8wWkd2cWVoRWtodE1fdlZBSHVENVRJeEVkMzJMTExHRGoyTzNYaVpHRU9PYVR1NDBheU9SaFk?oc=5",
-   "source": "Louisiana Sportsman",
-   "sources": [
-    {
-     "name": "Louisiana Sportsman",
-     "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPT2xSU3VEXzBZZ1RNX3J0UlJhNW1BMi0yZDFpazZQNG8xLWNOdzBMcjVBZVg5X1paZjB1bVUzRzRpYXZaalV3LWNHWmFhQ3pWQmt0cExSYkRTMkI2M1ZKU2pIY0pLOXBzV3l3ZW1mUWRfSGptLS1hZmR0M3VTc2F0X3U5N0NmQ2dDX3piYlcyN2JqbGZ4ZnhZNUg5Rkp5OXdnMjVuRFlkMjZWMkFRdWJJdUlBQzBKTGFWc0EwSzhGb28yTy1Sbl8wWkd2cWVoRWtodE1fdlZBSHVENVRJeEVkMzJMTExHRGoyTzNYaVpHRU9PYVR1NDBheU9SaFk?oc=5"
-    }
-   ],
-   "published": "2026-11-23T16:39:46+00:00",
-   "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 23,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "Starbase"
-   ],
-   "why": "Score 23: 1 outlet 6 + recency 17.4 (2h old)"
-  },
-  {
-   "id": "d0e3909f32af",
-   "title": "Starbase-PR-Burke—Ducks-Unlimited",
-   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOTG02NzJqRUU3NjFySzRPTEdFblJEZjlsWng4MTNHU0RsYTdsUmZlZFVtMG5teTFWcTJGS1QtT09QVUtfNVFYM2JUNkJwNkJXZ0hXMm1FMzExTU1Fd0lhRktPWVdDMUdEcmluM1VaOHJUZXZ6bmpGSVBWNzB6MVREZEFxMGRDTXZGV2NPUU9pR2hIaWpYdmI3Z2tIaDFTZkFkWHY4d0Fmbmw0bnpMUTh1X1ZJamtUNkFYUU1HZkdKTkE4U2tmZ244ek5SM2dMX3pVMmZVOGdOVTh6bFh2SjNxbVZFTWJBaTMzWWQzVEQxMnJaamFtTWRFeko2dEM2eVR6VDRRLUNXaw?oc=5",
-   "source": "Louisiana Sportsman",
-   "sources": [
-    {
-     "name": "Louisiana Sportsman",
-     "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOTG02NzJqRUU3NjFySzRPTEdFblJEZjlsWng4MTNHU0RsYTdsUmZlZFVtMG5teTFWcTJGS1QtT09QVUtfNVFYM2JUNkJwNkJXZ0hXMm1FMzExTU1Fd0lhRktPWVdDMUdEcmluM1VaOHJUZXZ6bmpGSVBWNzB6MVREZEFxMGRDTXZGV2NPUU9pR2hIaWpYdmI3Z2tIaDFTZkFkWHY4d0Fmbmw0bnpMUTh1X1ZJamtUNkFYUU1HZkdKTkE4U2tmZ244ek5SM2dMX3pVMmZVOGdOVTh6bFh2SjNxbVZFTWJBaTMzWWQzVEQxMnJaamFtTWRFeko2dEM2eVR6VDRRLUNXaw?oc=5"
-    }
-   ],
-   "published": "2026-11-23T16:40:00+00:00",
-   "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 23,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "Starbase"
-   ],
-   "why": "Score 23: 1 outlet 6 + recency 17.4 (2h old)"
-  },
-  {
-   "id": "5506d4d1b639",
-   "title": "Starbase-Marlon-Koch",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQTWxoTkZOeHpFeGo1N3VrZF9faThjRENDb1JWSURrS0J4Z1hITjFPOGlZYkEzQ0ljdnJxOXpjWldOVVpOZmVUUEFRMUJXU3o5bjlQX25QTDl3cWc4bDRQMW1MTG5KUV9aMFo2WWpQWGpCai1MS2J3TF9EWUpEOU1KOGc4ejhNMUpOelZvSkV6U3M4NU1QcFJueHQ1bmN1M0JGNkZPY2tJVHFpSVBuSGxKQlRjaDZaUmpBUThFeEZCemFNWXRQakpTdm9uYkxlSDM5dF9fd3Y0YWoySjY1V25uMmphRTI0NHhoWHNZOVZubGtxT3lKU2c?oc=5",
-   "source": "Louisiana Sportsman",
-   "sources": [
-    {
-     "name": "Louisiana Sportsman",
-     "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQTWxoTkZOeHpFeGo1N3VrZF9faThjRENDb1JWSURrS0J4Z1hITjFPOGlZYkEzQ0ljdnJxOXpjWldOVVpOZmVUUEFRMUJXU3o5bjlQX25QTDl3cWc4bDRQMW1MTG5KUV9aMFo2WWpQWGpCai1MS2J3TF9EWUpEOU1KOGc4ejhNMUpOelZvSkV6U3M4NU1QcFJueHQ1bmN1M0JGNkZPY2tJVHFpSVBuSGxKQlRjaDZaUmpBUThFeEZCemFNWXRQakpTdm9uYkxlSDM5dF9fd3Y0YWoySjY1V25uMmphRTI0NHhoWHNZOVZubGtxT3lKU2c?oc=5"
-    }
-   ],
-   "published": "2026-11-23T16:39:55+00:00",
-   "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 23,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "Starbase"
-   ],
-   "why": "Score 23: 1 outlet 6 + recency 17.4 (2h old)"
-  },
-  {
-   "id": "d8192c5cfa4b",
-   "title": "Virginia, Oregon sue Musk's SpaceX over Grok AI's creation of child sexual abuse images",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObnVxU21QWWFOSHYzcW1sajgxS25DUndFTGd6dTh6UzdyaFR5U0QtMWlROWIxZ01IcU0wNG5FLXRaMWZoS1o0dHhEUUFiaDItWFVIbE01S1pTbDZxYVZGN1hMaHlNYXBZck84N3JPaW1xcW5VMHdNeFBHSWZmRVN6MzlHZjdEcl8wTkVERGhBU3M0dVBXSHBFUHNpM1pCc1Q0MV9HTWlveVJSV1hiSEFaWjJDMEI0b2p2bzBIZEdrampIVFlVWEE?oc=5",
-   "source": "Reuters",
-   "sources": [
-    {
-     "name": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObnVxU21QWWFOSHYzcW1sajgxS25DUndFTGd6dTh6UzdyaFR5U0QtMWlROWIxZ01IcU0wNG5FLXRaMWZoS1o0dHhEUUFiaDItWFVIbE01S1pTbDZxYVZGN1hMaHlNYXBZck84N3JPaW1xcW5VMHdNeFBHSWZmRVN6MzlHZjdEcl8wTkVERGhBU3M0dVBXSHBFUHNpM1pCc1Q0MV9HTWlveVJSV1hiSEFaWjJDMEI0b2p2bzBIZEdrampIVFlVWEE?oc=5"
-    }
-   ],
-   "published": "2026-11-23T16:44:46+00:00",
-   "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 23,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "SpaceX"
-   ],
-   "why": "Score 23: 1 outlet 6 + recency 17.5 (2h old)"
-  },
-  {
-   "id": "5436c805b87b",
-   "title": "Music: Bruckner Symphony No. 7 by UTRGV Symphony Orchestra",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0tT0FjamxSWFdqTnVwQ3YyYVFYUzZnZXFTTkNwSnZHVnFBMmxjRURGTDhjWDd4Tl9UZWFJTXpyV0g5SVA2Q3U4OS0zNEFwdjBKb0hzbXdOcnJ5enVP?oc=5",
-   "source": "dailymcallen.com",
-   "sources": [
-    {
-     "name": "dailymcallen.com",
-     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0tT0FjamxSWFdqTnVwQ3YyYVFYUzZnZXFTTkNwSnZHVnFBMmxjRURGTDhjWDd4Tl9UZWFJTXpyV0g5SVA2Q3U4OS0zNEFwdjBKb0hzbXdOcnJ5enVP?oc=5"
-    }
-   ],
-   "published": "2026-11-23T10:34:08+00:00",
-   "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 10,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "UTRGV"
-   ],
-   "why": "Score 10: 1 outlet 6 + recency 3.7 (29h old)"
-  },
-  {
-   "id": "e1bef96ef97f",
-   "title": "SpaceX Starship Flight 17 Super Heavy Booster's cryogenic tests in full swing at Starbase—watch video",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTjBrUDJZN1RrZE54cGR4ZFVlOU9uam1jVy16Zmd1bFNTdUNjSlNURFpyb1VZZXl2cWw5Tm1hcFpiS3lHekN3SmxsSElKa0V0OGQ3MzhFNk02SWZmUlVzNXRzRzJrajZGa2ZEZWVfNzJySExPcnJhRlh2NXF4R3FLR3ZINllfQ0wxS1I4MVpkR2hhWVh2V3d5TFlrMDQzMDRnMTF5cDFwX3hEQjdN?oc=5",
-   "source": "Starlust.org",
-   "sources": [
-    {
-     "name": "Starlust.org",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTjBrUDJZN1RrZE54cGR4ZFVlOU9uam1jVy16Zmd1bFNTdUNjSlNURFpyb1VZZXl2cWw5Tm1hcFpiS3lHekN3SmxsSElKa0V0OGQ3MzhFNk02SWZmUlVzNXRzRzJrajZGa2ZEZWVfNzJySExPcnJhRlh2NXF4R3FLR3ZINllfQ0wxS1I4MVpkR2hhWVh2V3d5TFlrMDQzMDRnMTF5cDFwX3hEQjdN?oc=5"
-    }
-   ],
-   "published": "2026-11-23T06:30:03+00:00",
-   "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 16,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "SpaceX",
-    "Starbase",
-    "Starship"
-   ],
-   "why": "Score 16: 1 outlet 6 + recency 9.7 (13h old)"
-  },
-  {
-   "id": "3bb452d5afb3",
-   "title": "SpaceX sets target date for 15th Starship launch at Starbase",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWmQ4ZWl1ZHExTXdfd3ZDWktFSWtXS01vLXI2eE1NaDJUYXZQdDVKekQzc0dlUlZ6MDdPMGpob05VNzN1bTBtdEp6OGpxMzFwZFFQY0VSb0VHeW1fYTktT1RVQWYxTFY1c3FHUGdKNUtUTWgwa1FueTdEM2tscVdUaW1Ta1BqSFVwMEhJVzU2N241Q28?oc=5",
-   "source": "KRGV",
-   "sources": [
-    {
-     "name": "KRGV",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWmQ4ZWl1ZHExTXdfd3ZDWktFSWtXS01vLXI2eE1NaDJUYXZQdDVKekQzc0dlUlZ6MDdPMGpob05VNzN1bTBtdEp6OGpxMzFwZFFQY0VSb0VHeW1fYTktT1RVQWYxTFY1c3FHUGdKNUtUTWgwa1FueTdEM2tscVdUaW1Ta1BqSFVwMEhJVzU2N241Q28?oc=5"
-    }
-   ],
-   "published": "2026-11-23T06:32:27+00:00",
-   "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 16,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "SpaceX",
-    "Starbase",
-    "Starship"
-   ],
-   "why": "Score 16: 1 outlet 6 + recency 9.7 (13h old)"
-  },
-  {
-   "id": "cfb367ae08c6",
-   "title": "SpaceX Faces Setback in Texas as Cameron County Blocks Tax Break for $24 Billion Data Center",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWFlsNndaczVKcm5XMW85RHhYN1FHd1dBM1RKRkdfZnREam8zMnhXN3pYYnpMMHlmTEc1UXZsTWJlT0RNMTY0a0FVdnFIQ1FyN0dNQ2N6RFlWdWlRRHJ5ZzVleEJfNjExc0FBQXNCSE5FcGJFVTFzRGxOSDhObURhSlh5VWQ0MGJSOVhxWTFJeVlPN1ZsQ2k1dEVqYlBKd25ZVWtLMnpBbThKa2xfTDVaXzVnMFZ2Qld3d25PS2h1ZmhJdw?oc=5",
-   "source": "Speaks Media",
-   "sources": [
-    {
-     "name": "Speaks Media",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWFlsNndaczVKcm5XMW85RHhYN1FHd1dBM1RKRkdfZnREam8zMnhXN3pYYnpMMHlmTEc1UXZsTWJlT0RNMTY0a0FVdnFIQ1FyN0dNQ2N6RFlWdWlRRHJ5ZzVleEJfNjExc0FBQXNCSE5FcGJFVTFzRGxOSDhObURhSlh5VWQ0MGJSOVhxWTFJeVlPN1ZsQ2k1dEVqYlBKd25ZVWtLMnpBbThKa2xfTDVaXzVnMFZ2Qld3d25PS2h1ZmhJdw?oc=5"
-    }
-   ],
-   "published": "2026-11-23T00:45:00+00:00",
-   "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 13,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "Cameron",
-    "Cameron County",
-    "data center",
-    "SpaceX",
-    "tax break"
-   ],
-   "why": "Score 13: 1 outlet 6 + recency 6.9 (18h old)"
-  },
-  {
-   "id": "4b7e1ff89327",
-   "title": "Starbase, Explained in 5 Points: What Morgan Stanley Saw",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQX1BHVTFwQnljNElBRmtweWhQb2RZNnFCM1RMa1RSSktMc1BOYzdJVXFRX2hPaHY2czk5TGhhWDNtUlF2WDhTeW8xRkJVWnktYUZCNkdTdDVWcVJuSWNtMGpwdXZyUHEyeWFYQU4wbWdWYi1tOU41TTJWX3pXeE5JTnYyb0J4UmJja0FSQkJDTWY0clU?oc=5",
-   "source": "BASENOR - Tesla Accessories",
-   "sources": [
-    {
-     "name": "BASENOR - Tesla Accessories",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQX1BHVTFwQnljNElBRmtweWhQb2RZNnFCM1RMa1RSSktMc1BOYzdJVXFRX2hPaHY2czk5TGhhWDNtUlF2WDhTeW8xRkJVWnktYUZCNkdTdDVWcVJuSWNtMGpwdXZyUHEyeWFYQU4wbWdWYi1tOU41TTJWX3pXeE5JTnYyb0J4UmJja0FSQkJDTWY0clU?oc=5"
-    }
-   ],
-   "published": "2026-11-22T22:07:27+00:00",
-   "firstSeen": "2026-11-23T19:06:03+00:00",
-   "score": 12,
-   "label": "Active",
-   "uncovered": false,
-   "level": "watch",
-   "matches": [
-    "Starbase"
-   ],
-   "why": "Score 12: 1 outlet 6 + recency 6 (21h old)"
   }
  ]
 }
