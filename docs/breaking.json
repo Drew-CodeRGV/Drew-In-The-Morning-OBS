@@ -1,14 +1,14 @@
 {
  "version": 1,
- "generatedAt": "2026-11-25T02:04:57+00:00",
+ "generatedAt": "2026-11-25T12:23:16+00:00",
  "window_hours": 24,
  "bootstrap": false,
  "note": "Public headlines and links only. Everything here is a lead: CONFIRM BEFORE AIR.",
  "counts": {
-  "alert": 4,
-  "watch": 17,
-  "stories": 179,
-  "new": 109
+  "alert": 5,
+  "watch": 20,
+  "stories": 163,
+  "new": 78
  },
  "feeds": {
   "ok": 16,
@@ -20,6 +20,29 @@
   "US": 10
  },
  "items": [
+  {
+   "id": "f16c90987efe",
+   "title": "Brownsville residents push back against proposed duplexes over flooding, traffic concerns",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSC1TS2FXUDJDOXA4X1NlN29SNmc0NnN4NFJ3bVZicFgxM044bGtTVEJDQ0hRa0ZPd19NT2UyTWE4Y0tIU0tFNVZmOTlTZzdrRjFHZzAzdFBuam00SGtmRF91NklXcHN5MmdXX0NKMXFJQ1pTanoxcWJxSnVIdmFQMVhuWDdoYWMxZnVrXzRUVVg2ZWNhbEJONWUwd3BIUVplalR4b3VfcmsteHZOcWUzRmV6RWJuUQ?oc=5",
+   "source": "KRGV",
+   "sources": [
+    {
+     "name": "KRGV",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSC1TS2FXUDJDOXA4X1NlN29SNmc0NnN4NFJ3bVZicFgxM044bGtTVEJDQ0hRa0ZPd19NT2UyTWE4Y0tIU0tFNVZmOTlTZzdrRjFHZzAzdFBuam00SGtmRF91NklXcHN5MmdXX0NKMXFJQ1pTanoxcWJxSnVIdmFQMVhuWDdoYWMxZnVrXzRUVVg2ZWNhbEJONWUwd3BIUVplalR4b3VfcmsteHZOcWUzRmV6RWJuUQ?oc=5"
+    }
+   ],
+   "published": "2026-11-25T05:18:04+00:00",
+   "firstSeen": "2026-11-25T12:23:16+00:00",
+   "score": 19,
+   "label": "Active",
+   "uncovered": false,
+   "level": "alert",
+   "matches": [
+    "Brownsville",
+    "flooding"
+   ],
+   "why": "Score 19: 1 outlet 6 + recency 13.3 (7h old)"
+  },
   {
    "id": "93c726934951",
    "title": "McAllen fire chief urges residents to check heaters as temperatures drop",
@@ -114,28 +137,91 @@
    "why": "Score 14: 1 outlet 6 + recency 7.9 (16h old)"
   },
   {
+   "id": "5baee4cd95eb",
+   "title": "A chilly Thanksgiving across the Rio Grande Valley",
+   "url": "https://www.valleycentral.com/weather2/a-chilly-thanksgiving-across-the-rio-grande-valley/",
+   "source": "ValleyCentral (KVEO)",
+   "sources": [
+    {
+     "name": "ValleyCentral (KVEO)",
+     "url": "https://www.valleycentral.com/weather2/a-chilly-thanksgiving-across-the-rio-grande-valley/"
+    }
+   ],
+   "published": "2026-11-25T03:49:39+00:00",
+   "firstSeen": "2026-11-25T12:23:16+00:00",
+   "score": 18,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Harlingen",
+    "Rio Grande Valley"
+   ],
+   "why": "Score 18: 1 outlet 6 + recency 12.2 (9h old)"
+  },
+  {
+   "id": "3eaad36bfce7",
+   "title": "Goldman says US data center boom through 2028 will lift power and gas demand",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOc3FXeU1sR0Jwb3R5UUpxWTFidWtqTk9aUC1iNGd5Q1NWbDVxa010VmJOei1pQ2RTREJUTjYyMHZ3RFFJVTQzMkl2el9xUlhSZTRGWkpYOW9xZlB0SElCTFEwT2hPbUtGM0ItWUZ6SkdzeUw1SEs5Tk5ydk5iSWxuZWROSEVQNHg0TGk2TGtHbi1BNHlDUnQ0OFlSN0UwNDMydVF2R3Rmd18wWHFBaVJyeW1PdXAxU1NqaFliVG1ZRF8xQQ?oc=5",
+   "source": "Reuters",
+   "sources": [
+    {
+     "name": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOc3FXeU1sR0Jwb3R5UUpxWTFidWtqTk9aUC1iNGd5Q1NWbDVxa010VmJOei1pQ2RTREJUTjYyMHZ3RFFJVTQzMkl2el9xUlhSZTRGWkpYOW9xZlB0SElCTFEwT2hPbUtGM0ItWUZ6SkdzeUw1SEs5Tk5ydk5iSWxuZWROSEVQNHg0TGk2TGtHbi1BNHlDUnQ0OFlSN0UwNDMydVF2R3Rmd18wWHFBaVJyeW1PdXAxU1NqaFliVG1ZRF8xQQ?oc=5"
+    }
+   ],
+   "published": "2026-11-25T03:22:00+00:00",
+   "firstSeen": "2026-11-25T12:23:16+00:00",
+   "score": 18,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "data center"
+   ],
+   "why": "Score 18: 1 outlet 6 + recency 11.9 (9h old)"
+  },
+  {
+   "id": "59c5767199db",
+   "title": "Rio Grande Valley DA Coalition launches holiday 'No Refusal' DWI initiative",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNa0xEWmpzRHYycC1vRHZTQllqNDZwUXo2SDFMbC1HdDVNMXdvalc5RW5tT0h1eTFfSkNhNzI4cW9xcnVGR3B5c3lkLW5kcVZzc0tFQUNQdXpDa3d0dHJXTGtPMjhVNjNfcndKZEN3TkRYRkRCM1ZVdU5CTDM1eWozWktvRE5WN0ZUNGZ6R2NPQzVqb0c4OHN2aV9ONDg1cVF0d29FNA?oc=5",
+   "source": "KRGV",
+   "sources": [
+    {
+     "name": "KRGV",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNa0xEWmpzRHYycC1vRHZTQllqNDZwUXo2SDFMbC1HdDVNMXdvalc5RW5tT0h1eTFfSkNhNzI4cW9xcnVGR3B5c3lkLW5kcVZzc0tFQUNQdXpDa3d0dHJXTGtPMjhVNjNfcndKZEN3TkRYRkRCM1ZVdU5CTDM1eWozWktvRE5WN0ZUNGZ6R2NPQzVqb0c4OHN2aV9ONDg1cVF0d29FNA?oc=5"
+    }
+   ],
+   "published": "2026-11-25T02:02:53+00:00",
+   "firstSeen": "2026-11-25T12:23:16+00:00",
+   "score": 17,
+   "label": "Active",
+   "uncovered": false,
+   "level": "watch",
+   "matches": [
+    "Rio Grande Valley"
+   ],
+   "why": "Score 17: 1 outlet 6 + recency 11 (10h old)"
+  },
+  {
    "id": "d0118e1d4a58",
    "title": "2 more New World screwworm cases confirmed in Hidalgo County",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTkhTQ24tY05MU19xbUZBYk1mQ1pPZEg1UG5BbFVOa0N2M2lKT18yczB1WHVWeWlzYTBORVkwSUxvTElIcGFCT0tZNFVJY0xxQWVYTUlRWm9aTHN1QUUxRkZIUGdXNm84Q1RSMGYwNUZJZ1ZlQ1lVSnM5bE8zbG1LVFVBbm9sUkZWc1RrRGRsdkVSTk1EQ241R25WUEN6XzQtQU9F?oc=5",
    "source": "MyRGV.com",
    "sources": [
     {
-     "name": "MyRGV.com",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTkhTQ24tY05MU19xbUZBYk1mQ1pPZEg1UG5BbFVOa0N2M2lKT18yczB1WHVWeWlzYTBORVkwSUxvTElIcGFCT0tZNFVJY0xxQWVYTUlRWm9aTHN1QUUxRkZIUGdXNm84Q1RSMGYwNUZJZ1ZlQ1lVSnM5bE8zbG1LVFVBbm9sUkZWc1RrRGRsdkVSTk1EQ241R25WUEN6XzQtQU9F?oc=5"
-    },
-    {
      "name": "Texas Border Business",
      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUjYwcTJaSlNzVlEwZW9TV0pFLUh4SmJrQjkteW04STd0aHhFQ2V6Wk5aZ254MFJfbHR1X0FJN1lLZDlaNWFmVWdJZjJITHJqdGxVR0hsTEhTNUZtNUpWRzdpMkdET1A1Qy14eFN2b25PR3pRc1NyeHhZUlg0Y3B1b3lsRDF1VlhMd1psM0MxVm5UU1UzbktxakduaEV3WVk?oc=5"
     },
     {
-     "name": "KRGV",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWXZjcmxSbjd0U0pNNlRhN1h5QktHVkNOa1FJbTE1SGFrelNhTzFSdlRGNWtVYkE2OXFHLUhMNFBubjFicUNZb1lWRnRwelc1U3pQZjExMDZIdFh1ZlJqdWEzWm9obGg5ZWdsWno5VDBaLTQ1T3RlZmlmZ1QyVGpKYkVZNTcwWmpVaWhlbEd3a0YtSkk?oc=5"
+     "name": "MyRGV.com",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTkhTQ24tY05MU19xbUZBYk1mQ1pPZEg1UG5BbFVOa0N2M2lKT18yczB1WHVWeWlzYTBORVkwSUxvTElIcGFCT0tZNFVJY0xxQWVYTUlRWm9aTHN1QUUxRkZIUGdXNm84Q1RSMGYwNUZJZ1ZlQ1lVSnM5bE8zbG1LVFVBbm9sUkZWc1RrRGRsdkVSTk1EQ241R25WUEN6XzQtQU9F?oc=5"
     }
    ],
    "published": "2026-11-24T22:55:01+00:00",
    "firstSeen": "2026-11-25T02:04:57+00:00",
-   "score": 35,
-   "label": "Trending",
+   "score": 21,
+   "label": "Active",
    "uncovered": false,
    "level": "watch",
    "matches": [
@@ -143,7 +229,7 @@
     "Hidalgo County",
     "screwworm"
    ],
-   "why": "Score 35: 3 outlets 18 + recency 16.7 (3h old)"
+   "why": "Score 21: 2 outlets 12 + recency 9.2 (13h old)"
   },
   {
    "id": "6b8017a0bea7",
@@ -158,7 +244,7 @@
    ],
    "published": "2026-11-25T01:33:10+00:00",
    "firstSeen": "2026-11-25T02:04:57+00:00",
-   "score": 25,
+   "score": 17,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -166,7 +252,7 @@
     "Harlingen",
     "Rio Grande Valley"
    ],
-   "why": "Score 25: 1 outlet 6 + recency 19.4 (1h old)"
+   "why": "Score 17: 1 outlet 6 + recency 10.7 (11h old)"
   },
   {
    "id": "d0ee03135c75",
@@ -181,7 +267,7 @@
    ],
    "published": "2026-11-25T01:30:27+00:00",
    "firstSeen": "2026-11-25T02:04:57+00:00",
-   "score": 25,
+   "score": 17,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -189,7 +275,7 @@
     "Harlingen",
     "Rio Grande Valley"
    ],
-   "why": "Score 25: 1 outlet 6 + recency 19.3 (1h old)"
+   "why": "Score 17: 1 outlet 6 + recency 10.7 (11h old)"
   },
   {
    "id": "6ce0617303aa",
@@ -226,7 +312,7 @@
    ],
    "published": "2026-11-25T00:02:40+00:00",
    "firstSeen": "2026-11-25T02:04:57+00:00",
-   "score": 24,
+   "score": 16,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -235,7 +321,7 @@
     "Mission",
     "Rio Grande Valley"
    ],
-   "why": "Score 24: 1 outlet 6 + recency 17.8 (2h old)"
+   "why": "Score 16: 1 outlet 6 + recency 9.8 (12h old)"
   },
   {
    "id": "8b4e193e5acf",
@@ -250,7 +336,7 @@
    ],
    "published": "2026-11-24T22:42:52+00:00",
    "firstSeen": "2026-11-25T02:04:57+00:00",
-   "score": 22,
+   "score": 15,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -262,7 +348,7 @@
     "screwworm",
     "Starr County"
    ],
-   "why": "Score 22: 1 outlet 6 + recency 16.5 (3h old)"
+   "why": "Score 15: 1 outlet 6 + recency 9.1 (14h old)"
   },
   {
    "id": "eb5e6534acb5",
@@ -277,7 +363,7 @@
    ],
    "published": "2026-11-24T19:46:50+00:00",
    "firstSeen": "2026-11-25T02:04:57+00:00",
-   "score": 20,
+   "score": 14,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -285,7 +371,7 @@
     "Brownsville",
     "Rio Grande Valley"
    ],
-   "why": "Score 20: 1 outlet 6 + recency 13.9 (6h old)"
+   "why": "Score 14: 1 outlet 6 + recency 7.7 (17h old)"
   },
   {
    "id": "907731451aba",
@@ -300,7 +386,7 @@
    ],
    "published": "2026-11-24T18:00:45+00:00",
    "firstSeen": "2026-11-25T02:04:57+00:00",
-   "score": 19,
+   "score": 13,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -308,7 +394,7 @@
     "Brownsville",
     "EDC"
    ],
-   "why": "Score 19: 1 outlet 6 + recency 12.5 (8h old)"
+   "why": "Score 13: 1 outlet 6 + recency 6.9 (18h old)"
   },
   {
    "id": "eeef8298c10e",
@@ -323,7 +409,7 @@
    ],
    "published": "2026-11-24T17:11:53+00:00",
    "firstSeen": "2026-11-25T02:04:57+00:00",
-   "score": 18,
+   "score": 13,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -332,7 +418,7 @@
     "RGV",
     "UTRGV"
    ],
-   "why": "Score 18: 1 outlet 6 + recency 12 (9h old)"
+   "why": "Score 13: 1 outlet 6 + recency 6.6 (19h old)"
   },
   {
    "id": "68d010da87cb",
@@ -347,7 +433,7 @@
    ],
    "published": "2026-11-24T04:00:00+00:00",
    "firstSeen": "2026-11-24T15:39:05+00:00",
-   "score": 12,
+   "score": 9,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -356,7 +442,7 @@
     "Rio Grande Valley",
     "Weslaco"
    ],
-   "why": "Score 12: 1 outlet 6 + recency 5.6 (22h old)"
+   "why": "Score 9: 1 outlet 6 + recency 3.1 (32h old)"
   },
   {
    "id": "b606d44ee3b6",
@@ -371,7 +457,7 @@
    ],
    "published": "2026-11-24T03:02:37+00:00",
    "firstSeen": "2026-11-24T15:39:05+00:00",
-   "score": 11,
+   "score": 9,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -382,7 +468,7 @@
     "SpaceX",
     "Starbase"
    ],
-   "why": "Score 11: 1 outlet 6 + recency 5.3 (23h old)"
+   "why": "Score 9: 1 outlet 6 + recency 2.9 (33h old)"
   },
   {
    "id": "b9a107fe918d",
@@ -397,7 +483,7 @@
    ],
    "published": "2026-11-24T02:21:07+00:00",
    "firstSeen": "2026-11-24T15:39:05+00:00",
-   "score": 11,
+   "score": 9,
    "label": "Active",
    "uncovered": false,
    "level": "watch",
@@ -406,7 +492,7 @@
     "McAllen",
     "Rio Grande Valley"
    ],
-   "why": "Score 11: 1 outlet 6 + recency 5.1 (24h old)"
+   "why": "Score 9: 1 outlet 6 + recency 2.8 (34h old)"
   },
   {
    "id": "0e4024d7f8bb",
