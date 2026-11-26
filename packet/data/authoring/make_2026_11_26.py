@@ -1,0 +1,248 @@
+import json
+P='/workspace/drew-in-the-morning/packet/data/'
+d=json.load(open(P+'packet-2026-11-25.json'))
+d['meta'].update({"date":"2026-11-26","title":"Drew in the Morning \u00b7 Daily Briefing","dataAsOf":"Nov 26, 2026, 6:50 AM CT",
+ "recap":"Last 24 hours (Nov 25-26, Thanksgiving Day), story bank for Monday Nov 30","mode":"daily","showDate":"2026-11-30","sample":False,
+ "dateLabel":"Thursday, November 26, 2026",
+ "kidsTopic":"AI toys and kids' apps: New York just banned AI chatbot toys for five years (TechCrunch, Nov 25), and X is adding its first parental controls (The Verge, Nov 26). Ask the 10-year-old if a talking toy should know secrets; ask the 14-year-old which app settings they'd want parents to see"})
+def H(title,short,url,source,pub,tldr,riff,hook,energy,valley=True,confirm=None,teaser=None,noprint=False,theme=None):
+    it={"title":title,"short":short,"url":url,"source":source,"published":pub,"valley":valley,"tldr":tldr,"riff":riff,"hook":hook,"energy":energy,"links":[]}
+    if confirm: it["confirm"]=confirm
+    if teaser: it["teaser"]=teaser
+    if noprint: it["noprint"]=True
+    if theme: it["theme"]=theme
+    return it
+VCN="ValleyCentral blocks our reader; TL;DR from the ValleyCentral feed summary"
+K="https://www.krgv.com/news/"
+M="https://myrgv.com/local-news/2026/11/25/"
+rgv=[
+H("McAllen Airport therapy dog named grand marshal of McAllen Holiday Parade","Therapy dog = parade grand marshal",K+"mcallen-airport-therapy-dog-named-grand-marshal-of-mcallen-holiday-parade","KRGV \u00b7 Nov 25","2026-11-25",
+ "For the first time, an animal will serve as grand marshal of the McAllen Holiday Parade. The city announced at a Wednesday press conference that Sir Buddy Miles, the McAllen International Airport therapy dog, will lead the 13th annual parade.",
+ "Sir Buddy Miles outranks every politician in the parade this year. As he should.",
+ "First-ever four-legged grand marshal: Sir Buddy Miles leads the McAllen Holiday Parade",5,teaser="a dog leading the McAllen parade"),
+H("More than 1,600 runners to kick off Thanksgiving at sold-out Mission Turkey Trot","1,600+ at sold-out Mission Turkey Trot",K+"more-than-1-600-runners-to-kick-off-thanksgiving-at-sold-out-mission-turkey-trot","KRGV \u00b7 Nov 25","2026-11-25",
+ "More than 1,600 people were set to be up before sunrise on Thanksgiving Day for Sole Racing's sold-out Turkey Trot 5K/10K in Mission. One Rio Grande Valley family told KRGV the race has become a way to spend time together before the holiday begins.",
+ "Sixteen hundred people running before sunrise so they can eat guilt-free. Respect.",
+ "Sold out: 1,600-plus runners hit Mission's Turkey Trot before the turkey hits the table",5,teaser="the sold-out Mission Turkey Trot"),
+H("Valley first responders rally behind Weslaco Fire Department after loss of two members","Valley rallies around Weslaco FD",K+"valley-first-responders-rally-behind-weslaco-fire-department-after-loss-of-two-members","KRGV \u00b7 Nov 26","2026-11-26",
+ "Fire departments across the Rio Grande Valley are rallying around the Weslaco Fire Department, offering station coverage and mutual support after firefighters Johnny Pe\u00f1a, 43, and Julia Rocha, 21, died Wednesday. For some firefighters, the deaths were also the loss of close friends.",
+ "A hard one on Thanksgiving. Departments covering each other's stations is the Valley at its best.",
+ "Big one: Valley fire departments cover Weslaco's stations after two firefighters die",3,
+ confirm="Circumstances of the deaths were not in the text we read; CONFIRM BEFORE AIR and keep it respectful"),
+H("Staff at Gigi's Restaurant & Caf\u00e9 in Edcouch prep homemade Thanksgiving meals for local families","Gigi's Edcouch: 20 holiday meal packs",K+"gigi-s-restaurant-and-caf-in-edcouch-preps-homemade-thanksgiving-meals-for-local-families","KRGV \u00b7 Nov 25","2026-11-25",
+ "A family-owned restaurant in Edcouch spent three days preparing about 20 Thanksgiving meal packages for customers, double what it expected, owner Marisela Gonzalez told KRGV. The KRGV Facebook post on the story drew 215 reactions.",
+ "Double the orders they planned for. Small-town kitchens carry Thanksgiving.",
+ "Edcouch's Gigi's doubled its Thanksgiving orders: three days of cooking, 20 family meals",4),
+H("Widow to be reunited with custom urn lost in shipping and left at Donna cemetery","Lost urn mystery in Donna solved",K+"widow-to-be-reunited-with-custom-urn-lost-in-shipping-and-left-at-donna-cemetery","KRGV \u00b7 Nov 25","2026-11-25",
+ "Donna police say an empty urn found under a tree at the Donna City Cemetery was lost during an Amazon delivery and resold at a Weslaco bin store. The mystery is solved, and the widow it was made for will soon get it back.",
+ "Amazon, a bin store and a cemetery walk into a story. Happy ending, though.",
+ "Mystery solved: a lost-in-shipping urn turned up at a Donna cemetery and is going home",4,noprint=True),
+H("Flights on time across Rio Grande Valley airports amid heavy Thanksgiving travel crowds","RGV flights on time; +500/day in McAllen",K+"flights-on-time-across-rio-grande-valley-airports-amid-heavy-thanksgiving-travel-crowds","KRGV \u00b7 Nov 25","2026-11-25",
+ "Flights at all Rio Grande Valley airports were running on time Wednesday evening despite heavy Thanksgiving travel crowds. McAllen officials say they have seen about 500 extra passengers a day so far this holiday season.",
+ "While the coasts get hammered, the Valley's airports are boringly on time. We'll take boring.",
+ "500 extra flyers a day in McAllen, and every Valley flight still on time",3,noprint=True),
+H("Congressman-elect Bobby Pulido joins protest against border wall stakes at Santa Ana National Wildlife Refuge","Pulido vs. wall at Santa Ana refuge",K+"congressman-elect-bobby-pulido-joins-protest-against-border-wall-stakes-at-santa-ana-national-wildlife-refuge","KRGV \u00b7 Nov 25","2026-11-25",
+ "Congressman-elect Bobby Pulido spoke at a Wednesday protest against border wall construction inside the Santa Ana National Wildlife Refuge near Alamo, calling for alternative border security funding. ValleyCentral notes Hidalgo County Irrigation District No. 2 sued the federal government earlier this year.",
+ "He's not even sworn in yet and he's already picking a fight over Santa Ana. CD-15 is going to be loud.",
+ "Not sworn in yet, already at the fence line: Pulido takes on the wall at Santa Ana",4,teaser="Pulido at Santa Ana"),
+H("Incumbent Vicente Gonzalez declared winner in District 34 race","Gonzalez wins CD-34; Flores concedes",K+"incumbent-vicente-gonzalez-declared-winner-in-district-34-race","KRGV \u00b7 Nov 25","2026-11-25",
+ "Incumbent Vicente Gonzalez led Republican Eric Flores in the District 34 congressional race with more than 112,000 votes, about 56%, according to the Associated Press; unofficial results showed Flores with over 80,000 votes, about 40%. KRGV reports Flores conceded Tuesday night.",
+ "Fifty-six to forty. That's not a squeaker, that's a statement.",
+ "It's official in CD-34: Gonzalez wins with about 56%, and Flores concedes",4,confirm="Confirm the date of the concession and certification status before air"),
+H("Cameron County Elections Department to review three races as part of first statewide audit","Cameron Co. in first statewide audit",K+"cameron-county-elections-department-to-review-three-races-as-part-of-first-statewide-audit","KRGV \u00b7 Nov 26","2026-11-26",
+ "The Texas Secretary of State is conducting a statewide risk-limiting audit to check whether election results match what was reported. In Cameron County, the U.S. Senate race, the Texas Supreme Court chief justice race and the county clerk race will be reviewed.",
+ "An audit isn't a scandal, it's a receipt check. Good government is boring on purpose.",
+ "Texas' first statewide election audit puts three Cameron County races under review",3,confirm="KRGV summary mentions a Nov. 19 recount time; confirm the review date before air",noprint=True),
+H("Brownsville mayor elected as Texas Border Coalition chairman","Cowen named Texas Border Coalition chair",M+"brownsville-mayor-elected-as-texas-border-coalition-chairman/","MyRGV \u00b7 Nov 25","2026-11-25T14:06:00-06:00",
+ "Brownsville Mayor John Cowen Jr. has been elected chairman of the Texas Border Coalition, succeeding former Hudspeth County Judge Joanna MacKenzie, who stepped down as judge effective Nov. 20. TBC calls itself the collective voice of border mayors, county judges and economic development leaders.",
+ "A Valley mayor holding the border's microphone in Austin. That's leverage.",
+ "Brownsville's mayor now chairs the Texas Border Coalition",3,noprint=True),
+H("New ordinance in effect ahead of Mission runoff election","Mission: new rules at the polls",K+"new-ordinance-in-effect-ahead-of-mission-runoff-election","KRGV \u00b7 Nov 25","2026-11-25",
+ "Mission put a new election ordinance in effect this week ahead of the runoff election. Campaigning will only be allowed in designated areas at polling places, and the city plans to add barriers to keep people out of the street.",
+ "Campaign tents in their lanes. Mission politics, now with traffic cones.",
+ "Mission runoff gets new rules: campaigning only in designated zones at the polls",3,noprint=True),
+H("South Texas ISD supporting staff seek answers after new policy cuts paid time off","South Texas ISD cuts 10 PTO days",K+"south-texas-isd-supporting-staff-seek-answers-after-new-policy-cuts-paid-time-off","KRGV \u00b7 Nov 25","2026-11-25",
+ "South Texas ISD updated its vacation policy so that, starting next school year, support staff will no longer get 10 paid vacation days. The change affects 172 people, including bus drivers, custodians and maintenance workers, and has prompted employee concerns and a petition.",
+ "Bus drivers and custodians keep schools running. Cutting their days off is going to get a crowd at the board meeting.",
+ "172 bus drivers, custodians and maintenance workers lose 10 paid vacation days at South Texas ISD",4),
+H("State gives Harlingen school district 'C' financial rating","Harlingen CISD gets 'C' from state",M+"state-gives-harlingen-school-district-c-financial-rating/","MyRGV \u00b7 Nov 25","2026-11-25T17:08:00-06:00",
+ "For a second year, the Texas Education Agency's FIRST review gave the Harlingen school district a 'C' financial rating, finding expenses overran revenues while its fund balance fell far short of the recommended standard last year. Officials are responding while working to recover from one of the district's deepest financial crises in decades.",
+ "A C two years running. Parents should be asking what the recovery plan looks like.",
+ "Second straight 'C': state flags Harlingen CISD's finances",3),
+H("Mission suspends enforcing dog barking rule; creates review committee","Mission hits pause on dog-barking rule",M+"mission-suspends-enforcing-dog-barking-rule-creates-review-committee/","MyRGV \u00b7 Nov 25","2026-11-25T12:19:00-06:00",
+ "Following a backlash fueled by apparent misinformation, Mission City Council unanimously voted in a special meeting Wednesday to suspend enforcing the dog-barking section of an animal ordinance approved Nov. 10 and to create a five-member ad hoc committee to draft changes. ValleyCentral reports officials said the viral 'three-minute' barking limit is not in the ordinance.",
+ "The three-minute bark limit that never existed. Social media 1, Mission City Hall 0.",
+ "The 'three-minute bark limit' was never real, but Mission is pausing its dog rule anyway",5,teaser="Mission's dog-barking rule"),
+H("Harlingen pulling $376K from reserve fund due to rising asphalt prices","Harlingen: $376K reserves for paving",M+"harlingen-pulling-376k-from-reserve-fund-due-to-rising-asphalt-prices/","MyRGV \u00b7 Nov 25","2026-11-25T13:18:00-06:00",
+ "Harlingen officials are pulling $376,000 from the city's cash reserves to help fund the annual street paving program after the rising price of asphalt sparked a $1.8 million budget overrun. They are also taking $2.9 million from the street budget for a program aimed at topping 15 miles of roadways.",
+ "Asphalt is oil, oil went up, and your street is now a budget line item.",
+ "Asphalt prices blow a $1.8 million hole in Harlingen's paving plan",3,noprint=True),
+H("New $1.4 million Edinburg drainage project completed","Edinburg: +69M gallons stormwater room",K+"new-1-4-million-edinburg-drainage-project-completed","KRGV \u00b7 Nov 25","2026-11-25",
+ "Edinburg finished a $1.44 million pump project at Chapin Pond that gives the pond room for 69 million more gallons of stormwater, according to City Engineer Mardoqueo Hinojosa. Before the pumps, water reached the pond by gravity, which left part of its storage unused.",
+ "Sixty-nine million gallons of room. Next big storm, that's somebody's street that stays dry.",
+ "69 million more gallons of flood room: Edinburg's $1.4M Chapin Pond pumps are done",3,noprint=True),
+H("Harlingen seeks public input for downtown revival plan","Harlingen wants downtown ideas",K+"harlingen-seeks-public-input-for-downtown-revival-plan","KRGV \u00b7 Nov 25","2026-11-25",
+ "The city of Harlingen is holding community events to gather ideas for a plan to revitalize downtown before it goes to the city commission. Commissioner Daniel Nemecio Lopez said the city is partnering with the D-PRAT program to put the plan together.",
+ "Downtown Harlingen has the bones. Show up and tell them what you want there.",
+ "Harlingen wants your ideas for bringing downtown back",3,noprint=True),
+H("BPUB Powers Community with Solar Powered Charging Stations","BPUB: solar charging at 5 parks",
+ "https://texasborderbusiness.com/bpub-powers-community-with-solar-powered-charging-stations/","Texas Border Business \u00b7 Nov 25","2026-11-25T13:07:00-06:00",
+ "The Brownsville Public Utilities Board installed solar charging stations in five municipal parks on Friday, Nov. 20, giving people a place to charge devices while they enjoy the outdoors. ValleyCentral reports each station has four USB-A and USB-C ports; parks include Southern Pacific Linear Park, Joe & Tony Oliveira Park and Dean Porter Park.",
+ "Free solar power for your phone at the park. Small thing, real digital-equity win.",
+ "Dead phone at the park? Brownsville just put solar-powered USB chargers in five parks",3,theme="RGV Tech",teaser="solar phone chargers in Brownsville parks"),
+H("STC set to launch first Industrial Maintenance Mechanic Apprenticeship","STC launches first industrial apprenticeship",
+ "https://texasborderbusiness.com/stc-set-to-launch-first-industrial-maintenance-mechanic-apprenticeship/","Texas Border Business \u00b7 Nov 25","2026-11-25T11:57:00-06:00",
+ "South Texas College is launching its first Registered Industrial Maintenance Mechanic Apprenticeship, aimed at working professionals in the manufacturing industry. The program offers specialized training and industry-recognized credentials.",
+ "Last week STC's president said the Valley has a skills challenge. This is the answer in practice.",
+ "STC's first registered apprenticeship trains Valley techs to keep the factories running",3,theme="RGV Tech",
+ confirm="Only the headline and description were readable; schedule, cost and partners not read"),
+H("Cameron County commissioners reject SpaceX data center tax break request","Cameron Co. says no to SpaceX tax break",K+"cameron-county-commissioners-reject-spacex-data-center-tax-break-request","KRGV \u00b7 Nov 25","2026-11-25",
+ "Cameron County commissioners voted against moving SpaceX's tax break request for a $24 billion data center and natural gas power plant near Brownsville forward, stopping the proposal before it could reach another meeting where SpaceX would have presented final numbers. The vote means the county proposal will not advance; Starbase's own abatement vote is set for Dec. 9.",
+ "The county said no; Starbase City votes Dec. 9. That's the one to watch.",
+ "Cameron County shuts the door on SpaceX's $24 billion data center tax break",4,theme="RGV Tech",
+ confirm="KRGV's story surfaced Nov 25 but r/RioGrandeValley posted the rejection Nov 20; confirm the vote date before air"),
+H("Valley a top retirement spot for Houston boomers, report says","Houston boomers retiring to the Valley",M+"valley-a-top-retirement-spot-for-houston-boomers-report-says/","MyRGV \u00b7 Nov 25","2026-11-25T17:55:00-06:00",
+ "According to the 2026 U-Haul Midyear Migration Trend report, Houston's baby boomers are overwhelmingly choosing the Brownsville and McAllen metro areas when they relocate for retirement. The report looks at one-way U-Haul rentals from July 2025 to June 2026, broken down by generation.",
+ "Houston figured out what we already knew: winter is optional down here.",
+ "Houston's boomers are U-Hauling to the Valley more than anywhere else in America",4,teaser="Houston boomers moving here"),
+H("Valley Baptist Brownsville invites community to holiday toy giveaway","Valley Baptist toy giveaway drive-thru",
+ "https://www.valleycentral.com/news/local-news/valley-baptist-brownsville-invites-community-to-holiday-toy-giveaway/","ValleyCentral \u00b7 Nov 25","2026-11-25",
+ "Valley Baptist Medical Center in Brownsville is inviting the community to its annual holiday toy giveaway. The free event features a drive-thru lane where families can meet Santa and receive toys and goody bags.",
+ "Drive-thru Santa. The Valley invents the best holiday logistics.",
+ "Drive-thru Santa: Valley Baptist Brownsville's free toy giveaway is on",3,confirm=VCN+"; date and time not read",noprint=True),
+H("70-year-old Alamo woman dies after being ejected in crash, DPS says","Alamo woman, 70, dies in crash",K+"70-year-old-alamo-woman-dies-after-being-ejected-in-crash-dps-says","KRGV \u00b7 Nov 25","2026-11-25",
+ "A 70-year-old woman from Alamo was killed Wednesday after a two-vehicle crash in rural Hidalgo County north of Edinburg, at Terry Road and Benito Ramirez Road, according to DPS. State troopers responded at about 3:48 p.m.",
+ "Holiday travel reminder, said gently: seat belts, every seat, every trip.",
+ "Developing: Alamo woman, 70, killed in a crash north of Edinburg",1,noprint=True),
+]
+tx=[
+H("Cruz, Talarico unite in backing Texas' bid for U.S. Space Academy","Cruz + Talarico back Texas Space Academy bid",
+ "https://www.texastribune.org/2026/11/25/cruz-talarico-texas-space-academy/","Texas Tribune \u00b7 Nov 25","2026-11-25T10:46:00-06:00",
+ "U.S. Sen. Ted Cruz and Sen.-elect James Talarico issued a joint statement urging that Texas be selected for a new U.S. Space Academy, stressing a bipartisan commitment to the state's economy and its role in space exploration. It was the top-voted Texas political post on r/texas Wednesday (244 upvotes).",
+ "Cruz and Talarico agreeing on anything is news. With Starbase down here, the Valley should want a seat at this table.",
+ "Cruz and Talarico actually agree: Texas should get the new U.S. Space Academy",4,valley=False,teaser="the Texas Space Academy bid"),
+H("A Thanksgiving without a turkey: Texas food banks struggle to meet demand ahead of the holidays","Texas food banks: highest demand since 2020",
+ "https://feeds.texastribune.org/link/16799/17540209/texas-food-banks-turkeys-holidays","Texas Tribune \u00b7 Nov 25","2026-11-25",
+ "Millions of Texas families who rely on food banks will find their tables without traditional holiday foods this year, the Texas Tribune reports. Texas food banks face the highest demand they've seen since the 2020 pandemic.",
+ "If you've got room in the budget this week, the Food Bank RGV is the easiest yes there is.",
+ "Big one: Texas food banks see their highest demand since 2020, and turkeys are short",3,valley=False),
+H("Lavish European travel by Texas' ex-Juvenile Justice chief contributed to her exit, records show","Ex-TJJD chief's Europe trips",
+ "https://feeds.texastribune.org/link/16799/17540210/texas-juvenile-justice-department-european-travel-shandra-c","Texas Tribune \u00b7 Nov 25","2026-11-25",
+ "Records show lavish European travel by the former head of the Texas Juvenile Justice Department contributed to her exit, the Texas Tribune reports. It was the top post on r/texas Wednesday with 317 upvotes.",
+ "Taxpayer-funded Europe for the juvenile justice boss. The comments write themselves.",
+ "Records: the Texas juvenile justice chief's lavish Europe trips helped end her tenure",3,valley=False,
+ confirm="Only the headline was read; read the article before air",noprint=True),
+H("Texas comptroller ends 'hidden double tax' for small businesses","Comptroller ends 'double tax' on platform fees",
+ "https://www.valleycentral.com/news/local-news/texas-comptroller-ends-hidden-double-tax-for-small-businesses/","ValleyCentral \u00b7 Nov 25","2026-11-25",
+ "Texas Comptroller Don Huffines announced the adoption of amendments to Rule 3.330, which end the taxation of marketplace and platform fees under state tax rules, so Texans and small business owners avoid paying a double tax.",
+ "Every Valley Etsy seller and DoorDash restaurant should hear this one.",
+ "Selling on a marketplace? Texas just ended a 'hidden double tax' on platform fees",3,valley=False,confirm=VCN,noprint=True),
+]
+d['headlines']={'rgv':rgv,'texas':tx}
+d['nationalDesk']=[
+ {"id":"storms-macys","title":"Powerful storms disrupt holiday travel, as Macy's Thanksgiving Day Parade is postponed","print":True,
+  "summary":"Nov 26: Strong winds, high tides, heavy rain and floods are expected to affect an estimated 81.5 million Thanksgiving travelers, and the 100th Macy's parade was moved from Thursday to Saturday, the first weather postponement in its history (AP).",
+  "angle":"(Opinion) A hundred years and the balloons finally lose to the wind. Saturday parade, Thursday football, nobody's complaining.",
+  "valley":"Valley airports were on time Wednesday night; if your family is flying in from the coasts, check that connection now.",
+  "links":[{"label":"NPR","url":"https://www.npr.org/2026/11/26/nx-s1-6054079/storms-expected-on-both-coasts-as-millions-travel-for-thanksgivin"},{"label":"MyRGV (AP)","url":"https://myrgv.com/wire/nation/2026/11/25/macys-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/"}],
+  "teaser":"the Macy's parade getting bumped","pfact":"Macy's parade moved to Saturday; storms hit travel.","pangle":"First weather delay in 100 years.","pvalley":"Check coastal connections.",
+  "hook":"For the first time in 100 years, weather bumps the Macy's parade to Saturday","energy":5},
+ {"id":"fcc-abc","title":"U.S. judge rules FCC violated ABC's free speech rights to please Trump","print":True,
+  "summary":"Nov 26: A federal judge blocked the Trump administration from moving to review all local broadcast licenses held by ABC, whose stations air in six of the largest U.S. markets, finding the FCC's early review violated the network's free speech rights.",
+  "angle":"(Opinion) Whatever you think of ABC, a government reviewing licenses because it doesn't like the coverage should worry everybody.",
+  "valley":"The Valley's TV stations run on FCC licenses too. Local news only works if it can say things the powerful don't like.",
+  "links":[{"label":"NPR","url":"https://www.npr.org/2026/11/26/nx-s1-6000576/fcc-disney-abc-first-amendment-trump-brendan-carr"}],
+  "teaser":"a judge checking the FCC","pfact":"Judge blocks FCC review of ABC licenses.","pangle":"Free speech win for broadcasters.","pvalley":"Local TV runs on licenses too.",
+  "hook":"A federal judge says the FCC can't go after ABC's licenses to please the president","energy":4},
+ {"id":"fcc-spacex-1m","title":"FCC says SpaceX can deploy 1 million satellites for data centers in space. Scientists are skeptical","print":True,
+  "summary":"Nov 25: The FCC gave SpaceX conditional approval to deploy up to 1 million satellites for orbital AI data centers, despite objections from Amazon, Viasat and the American Astronomical Society over orbital debris and congestion (AP via NPR; TechCrunch).",
+  "angle":"(Opinion) One million satellites. Look up in ten years and count the dots.",
+  "valley":"Whatever launches those satellites likely lifts off from Boca Chica. Starbase is the factory floor for this.",
+  "links":[{"label":"NPR (AP)","url":"https://www.npr.org/2026/11/26/g-s1-155940/fcc-spacex-satellites-data-centers-in-space"},{"label":"TechCrunch","url":"https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/"}],
+  "teaser":"a million SpaceX satellites","pfact":"FCC OKs up to 1M SpaceX data-center satellites.","pangle":"Scientists worry about debris.","pvalley":"Starbase builds the rockets.",
+  "hook":"One million satellites: the FCC clears SpaceX to put AI data centers in orbit","energy":5},
+]
+def T(i,title,cat,one,ang,url,src,short,teaser,hook,en,pr=False,confirm=""):
+    return {"id":i,"title":title,"category":cat,"one_line":one,"suggested_angle":ang,"source_url":url,"source":src,"short":short,"teaser":teaser,"verified":True,"confirm":confirm,"print":pr,"links":[],"hook":hook,"energy":en}
+d['trending']=[
+ T("spacex-shares-kids","SpaceX and Elon Musk pledge a share each to every active Trump Account","money",
+   "Nov 26: SpaceX says it will donate one newly issued share to each active Trump Account (the savings accounts for U.S. children under 18), and Musk says he will personally match it; reports put the total near $18 billion.",
+   "Two shares of SpaceX for every kid with a Trump Account. Parents, go check whether yours is open.",
+   "https://x.com/i/trending/2125676952505766069","X News (Reuters, Forbes, Business Insider) \u00b7 Nov 26","SpaceX shares for kids","free SpaceX stock for kids",
+   "Every active Trump Account kid gets a SpaceX share, and Musk is matching it",5,pr=True,confirm="Terms (who qualifies, when shares arrive) come from news summaries; confirm with Reuters or SpaceX before air"),
+ T("fiona-hippo","Fiona the hippo dies at Cincinnati Zoo after swallowing a hat","viral",
+   "Fiona, the Cincinnati Zoo's famous Nile hippo born premature in 2017, died Nov. 19 at age 9 after a knit hat that blew into her enclosure lodged in her intestine; the zoo has added netting and removed fans. Bengals WR Tee Higgins wore a Fiona sweatshirt to Monday's game.",
+   "The whole internet raised Fiona. Quiet moment, then hug your kids' stuffed animals.",
+   "https://x.com/i/trending/2125369097815044438","X News (ABC News, USA Today) \u00b7 Nov 25","Fiona the hippo dies at 9","Fiona the hippo",
+   "The internet's favorite hippo, Fiona, has died at 9",2,confirm="Details from news summaries (ABC News, USA Today); confirm before air"),
+ T("miss-universe-pr","Puerto Rico's Jennifer Barreto crowned Miss Universe 2026, first mother to win","culture",
+   "Miss Puerto Rico Jennifer Barreto won Miss Universe 2026, the first mother to take the title; KWTX reports she worked at Fort Hood supporting military families.",
+   "A mom and a Texas military-family connection wins Miss Universe. Valley pageant families are celebrating.",
+   "https://www.borderreport.com/hot-topics/miss-puerto-rico-crowned-miss-universe-2026-first-mother-to-win-title/","Border Report \u00b7 Nov 25","Miss Universe: first mom wins","the first mom Miss Universe",
+   "First mom ever crowned Miss Universe, and she has a Fort Hood connection",4,pr=True),
+ T("rodgers-cut","Steelers cut Aaron Rodgers after the QB rips coach Mike McCarthy on TV","sports",
+   "Nov 25: Pittsburgh released the 42-year-old four-time MVP shortly after he criticized McCarthy on ESPN's Pat McAfee Show, capping a chaotic 18 hours that began with his benching for Mason Rudolph ahead of Friday's game vs. Denver.",
+   "Benched in the morning, rips the coach at lunch, cut by dinner. Fastest NFL breakup of the year.",
+   "https://www.npr.org/2026/11/26/nx-s1-6054760/steelers-cut-aaron-rodgers","NPR (AP) \u00b7 Nov 26","Steelers cut Rodgers","the Rodgers breakup",
+   "Benched, ripped the coach on McAfee, cut: Aaron Rodgers' 18 hours in Pittsburgh",5,pr=True),
+ T("andy-taylor","Andy Taylor, guitarist of new wave icons Duran Duran, dies at 65","music",
+   "Andy Taylor, the original guitarist of Duran Duran ('Hungry Like the Wolf,' 'The Reflex,' 'Rio'), has died at 65, his family and bandmates said; he revealed a Stage 4 prostate cancer diagnosis in 2022.",
+   "If you had a Walkman in 1983, this one lands. Play some 'Rio' for him.",
+   "https://www.npr.org/2026/11/26/g-s1-155934/andy-taylor-duran-duran-obit","NPR (AP) \u00b7 Nov 26","Duran Duran's Andy Taylor dies","Duran Duran's guitarist",
+   "Duran Duran's original guitarist Andy Taylor has died at 65",2),
+ T("pacifica-pier","Video shows California's Pacifica Pier collapsing into the ocean amid king tides","viral",
+   "Video shows part of the Pacifica Pier south of San Francisco collapsing into the ocean on Wednesday during king tides and strong waves, as officials warned of coastal flooding.",
+   "Mother Nature taking a pier on Thanksgiving Eve. South Padre folks, that's why we respect the Gulf.",
+   "https://www.borderreport.com/news/video-shows-californias-pacifica-pier-collapsing-into-the-ocean-amid-king-tides/","Border Report \u00b7 Nov 25","Pacifica Pier collapses on video","the pier that fell into the ocean",
+   "Caught on video: a chunk of California's Pacifica Pier falls into the ocean",4),
+ T("cybertruck-used","The canceled Tesla Cybertruck is the fastest-selling used truck in America","cars",
+   "The Cybertruck was the fastest-selling used truck last month, averaging 39.1 days on the market versus 65.5 days for trucks overall (TechCrunch).",
+   "Canceled new, hot used. Anybody in the Valley spot one at a lot lately?",
+   "https://techcrunch.com/2026/11/25/the-canceled-tesla-cybertruck-is-the-fastest-selling-used-truck-in-america/","TechCrunch \u00b7 Nov 25","Used Cybertrucks fly off lots","the used Cybertruck rush",
+   "Tesla stopped making it, and now the Cybertruck is the hottest used truck in America",4),
+]
+d['tech']={"origin":"wires","issue":None,"searchedAt":"2026-11-26T06:12:00-06:00",
+ "note":"No Fast Company Daily issue found in the last 48 h: searched Drew's Gmail read-only on Nov 26, 2026 at 6:12 AM CT (drew@drewlentz.com, then drew@politiquera.com) for (from:fastcompany OR subject:\"Fast Company Daily\") newer_than:2d. RGV tech items come first from local outlets; national items are the fallback from the tech wires (The Verge, TechCrunch, Ars Technica).",
+ "items":[
+  {"id":"bpub-solar-chargers","title":"BPUB Powers Community with Solar Powered Charging Stations","short":"BPUB solar chargers in 5 parks","source":"Texas Border Business","source_url":"https://texasborderbusiness.com/bpub-powers-community-with-solar-powered-charging-stations/","published":"Nov 25",
+   "one_line":"Brownsville Public Utilities Board installed solar charging stations in five city parks on Nov. 20, each with USB-A and USB-C ports, so people can charge devices outdoors.",
+   "angle":"Small, visible digital-equity win: free power for phones where families already gather.","hook":"Dead phone at the park? Brownsville just put solar USB chargers in five parks","energy":3,"verified":True,"confirm":"","links":[],"basis":"Texas Border Business \u00b7 RGV Tech","valley":True},
+  {"id":"stc-apprenticeship","title":"STC set to launch first Industrial Maintenance Mechanic Apprenticeship","short":"STC's first registered apprenticeship","source":"Texas Border Business","source_url":"https://texasborderbusiness.com/stc-set-to-launch-first-industrial-maintenance-mechanic-apprenticeship/","published":"Nov 25",
+   "one_line":"South Texas College is launching its first Registered Industrial Maintenance Mechanic Apprenticeship for working manufacturing professionals, with specialized training and industry-recognized credentials.",
+   "angle":"Follows STC President Solis's AI-and-skills warning last week: here's a concrete path into higher-tech plant jobs.","hook":"STC's first registered apprenticeship trains Valley techs to keep the factories running","energy":3,"verified":True,"confirm":"Only the headline and description were readable","links":[],"basis":"Texas Border Business \u00b7 RGV Tech","valley":True},
+  {"id":"cameron-spacex-dc","title":"Cameron County commissioners reject SpaceX data center tax break request","short":"Cameron Co. rejects SpaceX DC tax break","source":"KRGV","source_url":K+"cameron-county-commissioners-reject-spacex-data-center-tax-break-request","published":"Nov 25",
+   "one_line":"Cameron County commissioners voted against advancing SpaceX's tax break request for a $24 billion data center and gas power plant near Brownsville; Starbase's own abatement vote is Dec. 9.",
+   "angle":"The Valley's biggest tech-infrastructure fight: who pays, who benefits, and what the community gets back.","hook":"Cameron County shuts the door on SpaceX's $24 billion data center tax break","energy":4,"verified":True,"confirm":"Confirm the vote date (Reddit posted it Nov 20)","links":[],"basis":"KRGV \u00b7 RGV Tech","valley":True},
+  {"id":"x-parental","title":"X is finally getting its first parental controls","short":"X adds parental controls","source":"The Verge","source_url":"https://www.theverge.com/news/1043078/x-parental-controls-features","published":"Nov 26",
+   "one_line":"X is adding its first parental controls, arriving after months of concerns about Grok and deepfakes on the platform.",
+   "angle":"If your teen is on X, this is the week to sit down and turn them on together.","hook":"X finally gets parental controls. Parents, here's your weekend project","energy":4,"verified":True,"confirm":"Only the headline and deck were read; check which features before air","links":[]},
+  {"id":"ny-ai-toys","title":"Want to buy your kid an AI toy this Christmas? Not in New York","short":"New York bans AI chatbot toys","source":"TechCrunch","source_url":"https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/","published":"Nov 25",
+   "one_line":"Gov. Kathy Hochul signed a bill banning the manufacture, distribution and sale of toys with built-in AI chatbots in New York for five years, making it the second state after California; Common Sense Media research flagged safety failures.",
+   "angle":"Texas has no ban. So the talking teddy bear on the wish list is our call as parents.","hook":"New York bans AI chatbot toys for five years. Texas parents, it's on you","energy":4,"verified":True,"confirm":"","links":[]},
+ ]}
+s=d['sports']
+s['highSchool']['round']="Regional semifinals Friday, Nov. 27: PSJA North, Edinburg Vela and La Villa still alive"
+s['highSchool']['sourceNote']="ValleyCentral scouting report and KRGV La Villa preview (Nov 25). No RGV playoff games since Saturday Nov 21; confirm kickoff times and sites before air."
+s['highSchool']['results']=[]
+s['highSchool']['next']=[
+ {"title":"RGV high school football regional semifinal preview: La Villa Cardinals","short":"La Villa: first regional semi since 2006","url":K+"rgv-high-school-football-regional-semifinal-preview-la-villa-cardinals","source":"KRGV \u00b7 Nov 25"},
+ {"title":"Scouting report: Breaking down each Valley team's opponent for the regional semifinals","short":"Scouting the 3 Valley semifinal foes","url":"https://www.valleycentral.com/local-sports/scouting-report-breaking-down-each-valley-teams-opponent-for-the-regional-semifinals/","source":"ValleyCentral \u00b7 Nov 25","confirm":VCN}]
+s['highSchool']['college']=[{"title":"UTRGV's Jaiden Haygood wins Southland Conference Defensive Player of the Year","short":"UTRGV's Haygood: Southland DPOY (134 tackles)","url":K+"utrgv-s-jaiden-haygood-wins-southland-conference-defensive-player-of-the-year","source":"KRGV \u00b7 Nov 25"}] if isinstance(s['highSchool'].get('college'),list) else s['highSchool'].get('college')
+s['nfl']={"title":"NFL Week 12: Rams beat Packers Wednesday; Thanksgiving tripleheader today","scoreSource":{"title":"ESPN NFL scoreboard, Wed Nov 25","short":"","url":"https://www.espn.com/nfl/scoreboard/_/week/12/year/2026/seasontype/2","source":"ESPN"},
+ "scores":[["Wed Nov 25","LAR 26, GB 13"],["Mon Nov 23","WAS 22, CIN 20 (MNF)"],["Sun Nov 22","DAL 51, TEN 30"]],
+ "notable":[{"title":"Steelers cut Aaron Rodgers after the QB rips coach Mike McCarthy on TV","short":"Steelers cut Rodgers","url":"https://www.npr.org/2026/11/26/nx-s1-6054760/steelers-cut-aaron-rodgers","source":"NPR (AP) \u00b7 Nov 26"},
+  {"title":"Thanksgiving Day: Bears at Lions, Eagles at Cowboys, Chiefs at Bills","short":"CHI@DET, PHI@DAL, KC@BUF today","url":"https://www.cbssports.com/betting/news/rams-packers-prediction-odds-start-time-2026-nfl-thanksgiving-eve-game-picks/","source":"CBS Sports \u00b7 Nov 24"}]}
+n=s['nba']
+n['scoreSource']={"title":"ESPN NBA scoreboard, Wed Nov 25","short":"","url":"https://www.espn.com/nba/scoreboard/_/date/20261125","source":"ESPN"}
+n['scores']=[["Wed Nov 25","HOU 116, PHX 104"],["Wed Nov 25","POR 116, SA 111"],["Wed Nov 25","MIN 113, OKC 106"],["Wed Nov 25","NY 121, CLE 102"],["Wed Nov 25","GS 129, SAC 110"]]
+n['texas']=[["Wed Nov 25","HOU 116, PHX 104"],["Wed Nov 25","POR 116, SA 111"],["Tue Nov 24","DAL 120, DEN 101"]]
+n['notable']=[{"title":"Rockets 116, Suns 104","short":"Rockets beat Suns","url":"https://www.espn.com/nba/game/_/gameId/401909323","source":"ESPN \u00b7 Nov 25"},
+ {"title":"Trail Blazers 116, Spurs 111","short":"Spurs fall at Portland","url":"https://www.espn.com/nba/game/_/gameId/401909325","source":"ESPN \u00b7 Nov 25"}]
+d['leads']=[]
+d['chisme']={}
+o=json.load(open('/tmp/obits.json')); d['obituaries']=o
+for k in ['up_to','up_to_script','up_to_meta','up_to_coming']: d.pop(k,None)
+json.dump(d,open(P+'packet-2026-11-26.json','w'),indent=1,ensure_ascii=False)
+print('ok',len(rgv),len(tx))
+
+# image patch: headlines.image = starship_thumb for the Cameron County SpaceX item (applied after first build)
