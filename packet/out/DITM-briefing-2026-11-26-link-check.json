@@ -1,0 +1,490 @@
+{
+  "https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://api.weather.gov/gridpoints/BRO/49,19/forecast": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://ballotpedia.org/Bobby_Pulido": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://dailymcallen.com/local-news/editions/11-14-2026": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://dailymcallen.com/local-news/editions/11-16-2026": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://dailymcallen.com/local-news/editions/11-17-2026": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://dailymcallen.com/local-news/editions/11-18-2026": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://ew.com/snl-recap-john-mulaney-hosts-seventh-time-phoebe-bridgers-musical-guest-12253185": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://feeds.texastribune.org/link/16799/17540209/texas-food-banks-turkeys-holidays": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://feeds.texastribune.org/link/16799/17540210/texas-juvenile-justice-department-european-travel-shandra-c": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://gooddayedinburg.com/local-news/editions/11-15-2026": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://homeland.house.gov/wp-content/uploads/2026/11/2026-11-18-HRG-Testimony-Mullin.pdf": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://kobi5.com/news/door-kicking-trend-is-growing-locally-five-incidents-reported-in-talent-319588/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://myrgv.com/featured/2026/06/17/brownsville-appoints-interim-city-manager-alan-guard-to-permanent-position/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://myrgv.com/local-news/2023/07/25/despite-protest-mcallen-commission-rezones-park-for-austin-tech-company/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://myrgv.com/local-news/2026/11/04/not-over-yet-nearly-all-mission-races-heading-to-runoff-elections/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://myrgv.com/local-news/2026/11/25/brownsville-mayor-elected-as-texas-border-coalition-chairman/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://myrgv.com/local-news/2026/11/25/harlingen-pulling-376k-from-reserve-fund-due-to-rising-asphalt-prices/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://myrgv.com/local-news/2026/11/25/mission-suspends-enforcing-dog-barking-rule-creates-review-committee/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://myrgv.com/local-news/2026/11/25/state-gives-harlingen-school-district-c-financial-rating/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://myrgv.com/local-news/2026/11/25/valley-a-top-retirement-spot-for-houston-boomers-report-says/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://myrgv.com/wire/nation/2026/11/25/macys-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://news4sanantonio.com/news/local/fake-instagram-account-claims-uvalde-schools-closed-for-gta-6-release": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://politiquera.com/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://rblxstat.com/blog/roblox-weekly-report-2026-11-15": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://rgvsports.com/still-rolling-sabercats-earn-11th-straight-win-advance-to-third-round/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://rostats.io/charts/2026-11": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://safescreens.us/guides/gaming/roblox-experiences": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://takeitdown.ncmec.org/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://tea.texas.gov/taa-letters/implementation-texas-house-bill-1481-student-use-personal-communication-devices-school": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://techcrunch.com/2026/11/25/the-canceled-tesla-cybertruck-is-the-fastest-selling-used-truck-in-america/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://texasborderbusiness.com/bpub-powers-community-with-solar-powered-charging-stations/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://texasborderbusiness.com/major-investment-in-echo-hotel-property-coming-to-edinburg/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://texasborderbusiness.com/stc-set-to-launch-first-industrial-maintenance-mechanic-apprenticeship/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://theedinburgadvocate.com/2026/11/edinburg-cisd-board-to-seat-new-members-approve-3-million-stop-loss-insurance-contract-at-special-meeting-tuesday-nov-17/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://thergvnews.com/reviews/day/2026-11-17": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://trending.knowyourmeme.com/editorials/guides/what-is-the-pennywide-meme-the-viral-pennywise-house-video-and-memes-explained": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.borderreport.com/hot-topics/miss-puerto-rico-crowned-miss-universe-2026-first-mother-to-win-title/": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://www.borderreport.com/news/video-shows-californias-pacifica-pier-collapsing-into-the-ocean-amid-king-tides/": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://www.boston.com/culture/entertainment/2026/11/15/snl-recap-john-mulaney-2026/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.cbssports.com/betting/news/rams-packers-prediction-odds-start-time-2026-nfl-thanksgiving-eve-game-picks/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.cbssports.com/mlb/transactions/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.dhs.gov/sites/default/files/2026-08/26_0806_k2p_p2p-t2p-sextortion.pdf": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.dw.com/en/grand-theft-auto-vi-launches-to-global-fanfare/a-79986461": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.espn.com/nba/game/_/gameId/401909323": {
+    "status": 202,
+    "result": "ok"
+  },
+  "https://www.espn.com/nba/game/_/gameId/401909325": {
+    "status": 202,
+    "result": "ok"
+  },
+  "https://www.espn.com/nba/scoreboard/_/date/20261125": {
+    "status": 202,
+    "result": "ok"
+  },
+  "https://www.espn.com/nfl/scoreboard/_/week/12/year/2026/seasontype/2": {
+    "status": 202,
+    "result": "ok"
+  },
+  "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.facebook.com/RGV.ME": {
+    "status": 400,
+    "result": "unreachable"
+  },
+  "https://www.facebook.com/channel5news": {
+    "status": 400,
+    "result": "unreachable"
+  },
+  "https://www.facebook.com/groups/5774642885929554/": {
+    "status": 400,
+    "result": "unreachable"
+  },
+  "https://www.fastcompany.com/newsletters": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/sextortion": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.gulfcoastnewsnow.com/article/video-door-kick-challenge-cape-coral-florida/74444521": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.healthychildren.org/English/health-issues/conditions/emotional-problems/Pages/when-children-and-teens-self-harm.aspx": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.hellomagazine.com/healthandbeauty/mother-and-baby/878329/your-gen-alpha-child-increasingly-bizarre-slang-how-to-respond/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.hidalgocounty.us/3526/December-12-2026-Local-Entities-Runoff-E": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/70-year-old-alamo-woman-dies-after-being-ejected-in-crash-dps-says": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/cameron-county-commissioners-pass-resolution-to-protect-public-access-to-boca-chica-beach/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/cameron-county-commissioners-reject-spacex-data-center-tax-break-request": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/cameron-county-commissioners-reject-spacex-data-center-tax-break-request/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/cameron-county-elections-department-to-review-three-races-as-part-of-first-statewide-audit": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/city-of-mcallen-commissioners-vote-to-rezone-disc-golf-course/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/congressman-elect-bobby-pulido-joins-protest-against-border-wall-stakes-at-santa-ana-national-wildlife-refuge": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/flights-on-time-across-rio-grande-valley-airports-amid-heavy-thanksgiving-travel-crowds": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/gigi-s-restaurant-and-caf-in-edcouch-preps-homemade-thanksgiving-meals-for-local-families": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/harlingen-seeks-public-input-for-downtown-revival-plan": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/incumbent-vicente-gonzalez-declared-winner-in-district-34-race": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/mcallen-airport-therapy-dog-named-grand-marshal-of-mcallen-holiday-parade": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/more-than-1-600-runners-to-kick-off-thanksgiving-at-sold-out-mission-turkey-trot": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/new-1-4-million-edinburg-drainage-project-completed": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/new-ordinance-in-effect-ahead-of-mission-runoff-election": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/rgv-high-school-football-regional-semifinal-preview-la-villa-cardinals": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/south-texas-isd-supporting-staff-seek-answers-after-new-policy-cuts-paid-time-off": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/valley-first-responders-rally-behind-weslaco-fire-department-after-loss-of-two-members": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.krgv.com/news/widow-to-be-reunited-with-custom-urn-lost-in-shipping-and-left-at-donna-cemetery": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.mlb.com/news/mlb-rumors-and-2026-27-free-agent-news-november-21": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.nimh.nih.gov/health/publications/warning-signs-of-suicide": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.npr.org/2026/11/26/g-s1-155934/andy-taylor-duran-duran-obit": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.npr.org/2026/11/26/g-s1-155940/fcc-spacex-satellites-data-centers-in-space": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.npr.org/2026/11/26/nx-s1-6000576/fcc-disney-abc-first-amendment-trump-brendan-carr": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.npr.org/2026/11/26/nx-s1-6054079/storms-expected-on-both-coasts-as-millions-travel-for-thanksgivin": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.npr.org/2026/11/26/nx-s1-6054760/steelers-cut-aaron-rodgers": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://www.psjaisd.us/academics/psja-isd-ai-guidebook": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.psjaisd.us/school-news-details/~board/pharr-san-juan-alamo-isd-news/post/psja-isd-swears-in-three-trustees-elects-new-board-leadership": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.rd.com/article/gen-alpha-slang/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.reddit.com/r/RioGrandeValley/comments/1xjnz54/community_march_to_petition_for_the_speer/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.reddit.com/r/RioGrandeValley/comments/1y4d37w/valley_people_if_you_could_visit_any_place_in_the/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.reddit.com/r/RioGrandeValley/comments/1y4mi3r/a_toxic_tour_of_brownsvilles_industrial_future/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.reddit.com/r/texas/comments/1y561og/some_data_centers_kept_building_during_greg/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.reddit.com/r/texas/comments/1y5dtv7/sen_cruz_senelect_talarico_issue_joint_statement/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.rgvsports.com/rgv-football-playoff-schedule/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.showbiz411.com/2026/11/18/john-mulaney-phoebe-bridgers-snl-best-this-season-drops-back-to-season-average-ratings-down-20-from-last-weeks-high": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.texastribune.org/2026/11/03/texas-bobby-pulido-monica-de-la-cruz-congress-district-15-elections-2026/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.texastribune.org/2026/11/25/cruz-talarico-texas-space-academy/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.valleycentral.com/local-sports/scouting-report-breaking-down-each-valley-teams-opponent-for-the-regional-semifinals/": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://www.valleycentral.com/news/local-news/texas-comptroller-ends-hidden-double-tax-for-small-businesses/": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.valleycentral.com/news/local-news/valley-baptist-brownsville-invites-community-to-holiday-toy-giveaway/": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://www.valleycentral.com/valleycentrals-local-elections-hq/michael-fallek-officially-declared-winner-in-district-5-city-commission-race/": {
+    "status": 403,
+    "result": "blocked-by-site"
+  },
+  "https://www.weather.gov/bro/": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.youtube.com/watch?v=-X9dxL17t1k": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://www.youtube.com/watch?v=R_8UPhJNrZ4": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://x.com/i/trending/2125369097815044438": {
+    "status": 200,
+    "result": "ok"
+  },
+  "https://x.com/i/trending/2125676952505766069": {
+    "status": 200,
+    "result": "ok"
+  }
+}

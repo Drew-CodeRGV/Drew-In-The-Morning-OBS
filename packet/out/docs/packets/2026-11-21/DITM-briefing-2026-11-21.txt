@@ -25,8 +25,8 @@ COLD OPEN (read aloud, about 45 seconds)
   with the La Joya ISD student-search investigation, plus the food truck park fight in
   McAllen. On the National Desk, the President's press conference. In Trending, the Rockets
   in Denver. And in How We'd Talk to Our Kids, Jess and I take on Student searches at
-  school: what La Joya ISD's HOPE Academy review means, and what a 14-year-old. It's 67 and
-  clear outside, the coffee's hot, so stick around, this is Drew in the Morning.
+  school: what La Joya ISD's HOPE Academy review means, and what a 14-year-old. It's 66 and
+  mostly clear outside, the coffee's hot, so stick around, this is Drew in the Morning.
   JINGLE: Drew in the Morning. Your Valley, your news, your morning.
 
 WHAT I'VE BEEN UP TO THIS WEEK (block B, 2-3 min, from the family calendar) · 5 from the week
@@ -48,13 +48,13 @@ STORY SCORES: HOT / TREND / ACT label + score per item (formula in packet/README
   TX 10 + US 10 items, fetched 2026-11-20T03:00:46+00:00 (cache).
 
 TOP HEADLINES · RGV FIRST
-  - [ACT 15] La Joya ISD investigating 'excessive' student searches at HOPE Academy; 4
+  - [ACT 16] La Joya ISD investigating 'excessive' student searches at HOPE Academy; 4
     employees on leave and reported to TEA (KRGV · Nov 20)
     https://www.krgv.com/news/la-joya-isd-investigating-excessive-student-searches-at-hope-academy-4-employees-on-leave/
   - [ACT 13] Future of the state takeover of La Joya ISD in question as Gov.-elect Hinojosa
     vows to return local control (MyRGV · Nov 20)
     https://myrgv.com/local-news/2026/11/20/future-of-state-takeover-of-la-joya-isd-in-question/
-  - [ACT 15] 'It's not safe': Brownsville's Pinewood neighbors say a new carpool lot and
+  - [ACT 16] 'It's not safe': Brownsville's Pinewood neighbors say a new carpool lot and
     SpaceX charter buses jam their streets (KRGV · Nov 20)
     https://www.krgv.com/news/it-s-not-safe-brownsville-neighborhood-deals-with-heavy-traffic-from-new-carpool-lot/
   - [ACT 12] Texas LNG asks for more time on its federal export authorization at the Port of
@@ -63,10 +63,10 @@ TOP HEADLINES · RGV FIRST
   - [ACT 13] UTRGV and the VA sign agreements to bring UT Health RGV specialists into VA
     clinics for South Texas veterans (UTRGV · Nov 20)
     https://www.utrgv.edu/newsroom/2026/11/20/utrgv-and-va-partnership.htm
-  - [ACT 15] Mission sets a special meeting to review its overnight dog-barking rule; city
+  - [ACT 16] Mission sets a special meeting to review its overnight dog-barking rule; city
     says there's no three-minute limit (ValleyCentral · Nov 20)
     https://www.valleycentral.com/news/local-news/mission-sets-special-meeting-to-review-overnight-barking-ordinance/amp/
-  - [ACT 24] STC president at the Workforce Summit: South Texas has a skills gap, not a
+  - [ACT 26] STC president at the Workforce Summit: South Texas has a skills gap, not a
     worker gap (Daily McAllen · Nov 21)
     https://dailymcallen.com/local-news/editions/11-21-2026
   - [ACT 8] McAllen Food Truck Park owners ask the Chamber for a six-month extension; Jan.
@@ -78,13 +78,13 @@ TOP HEADLINES · RGV FIRST
   - [ACT 8] SpaceX responds after Cameron County rejects its data center tax break, says its
     payment plan would have steadied county revenue (MyRGV · Nov 19)
     https://myrgv.com/local-news/2026/11/19/spacex-responds-to-cameron-county-rejection-of-tax-break-application/
-  - [ACT 8] FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and
+  - [ACT 9] FAA holds a virtual hearing on SpaceX's plan for nearly 1,500 launches and
     landings a year at Starbase; next session Friday 5:30 PM (ValleyCentral · Nov 19)
     https://www.valleycentral.com/news/local-news/faa-holds-virtual-hearing-on-spacex-proposal-for-more-rocket-launches/
   - [ACT 8] Rep. Vicente Gonzalez's 'Hands Off Our Boca Chica Beach Act' clears the House
     Natural Resources Committee (ValleyCentral · Nov 19)
     https://www.valleycentral.com/news/local-news/hands-off-our-boca-chica-beach-act-advances/
-  - [ACT 8] Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some at
+  - [ACT 9] Gas drops below $3 a gallon across the Valley (GasBuddy avg about $2.96; some at
     $2.94) (ValleyCentral · Nov 19)
     https://www.valleycentral.com/news/local-news/gas-prices-dip-below-3-a-gallon-across-the-valley/
   - [ACT 8] Starbase fills a vacant commission seat with Haley Ruvalcaba, wife of a SpaceX
@@ -109,7 +109,7 @@ TOP HEADLINES · RGV FIRST
     Brooks, Hidalgo, Kenedy and Willacy under 'Infested Zone 37' rules (MyRGV · Nov 19)
     https://myrgv.com/local-news/2026/11/19/usda-confirms-fifth-case-of-screwworm-in-rio-grande-valley/
   Texas:
-  - [ACT 13] ERCOT CEO Pablo Vegas gets a contract extension worth up to $4.1M next year,
+  - [ACT 14] ERCOT CEO Pablo Vegas gets a contract extension worth up to $4.1M next year,
     angering Lt. Gov. Dan Patrick (Texas Tribune · Nov 20)
     https://www.texastribune.org/2026/11/20/ercot-texas-electric-grid-ceo-contract/
   - [ACT 14] Texas Supreme Court leaves the 'Death Star' law limiting city ordinances
@@ -379,9 +379,9 @@ WEATHER · McALLEN / RGV (National Weather Service BRO (api.weather.gov))
   Tue Nov 24  Mostly Cloudy, high 68F / low 53F, rain 14%, wind N 8 mph
   Wed Nov 25  Mostly Sunny, high 67F / low 50F, rain 1%, wind NNE 6 to 10 mph
   Thu Nov 26  Mostly Sunny, high 69F / low 54F, rain 15%, wind NE 5 mph
-  Fri Nov 27  Slight Chance Rain Showers, high 72F / low 53F, rain 21%, wind SE 8 mph
+  Fri Nov 27  Slight Chance Rain Showers, high 72F / low --F, rain 20%, wind SE 8 mph
   Alerts: none active
-  Updated 2026-11-21T13:00:13+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
+  Updated 2026-11-21T11:18:12+00:00 (UTC). Forecast page: https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23
   NWS Brownsville office: https://www.weather.gov/bro/
   API: https://api.weather.gov/gridpoints/BRO/49,19/forecast
 
@@ -535,4 +535,5 @@ What your kids might be saying at school this week, and one line on how to bring
 NEXT SHOW: Monday, November 23, 8 AM CT. The Monday 8 AM rundown (12 blocks A-L, 60 minutes) is in the studio page and run-of-show-monday.md.
 
 ============================================================================================
-Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-21 13:22 CT.
+Every fact above has a source URL. CONFIRM BEFORE AIR = verify before saying it on air. Generated 2026-11-21 06:06 CT.
+Links checked 2026-11-21: 100 ok, 23 blocked by the site's bot protection (verified in a browser/search), 0 dead, 1 unreachable.
