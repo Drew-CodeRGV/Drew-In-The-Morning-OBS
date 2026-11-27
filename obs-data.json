@@ -1561,7 +1561,7 @@
     "caption": "We want YOUR voice on Monday's show. Got a topic, a story, or the hard parenting question you're afraid to ask? DM us, email, or ask for a live guest link. Anonymous is fine. #RGV #McAllen #DrewInTheMorning"
   },
   "schemaNotes": "v4 (Nov 18): 12 blocks A-L (new B = What I've Been Up To, family & kids woven into H, Starbase/Zoho/trending folded into other blocks). Segments carry offsetMinutes from the planned 8:00 start. coldOpen, jingle and upTo are filled by packet/build_packet.py on every build.",
-  "coldOpen": "Good morning, Rio Grande Valley! It's Thursday, November 26th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with a dog leading the McAllen parade, plus the sold-out Mission Turkey Trot. On the National Desk, the Macy's parade getting bumped. In Trending, free SpaceX stock for kids. And in How We'd Talk to Our Kids, Jess and I take on AI toys and kids' apps: New York just banned AI chatbot toys for five years (TechCrunch. It's 43 and clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+  "coldOpen": "Good morning, Rio Grande Valley! It's Friday, November 27th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with Harlingen dancers stuck in New York, plus the Thanksgiving baby. On the National Desk, asylum heading to the Supreme Court. In Trending, the Cowboys collapse. And in How We'd Talk to Our Kids, Jess and I take on Screens vs. dice: parent groups are using Dungeons & Dragons as a screen-free hobby for 9. It's 54 and clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
   "jingle": {
     "primary": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [
@@ -1571,14 +1571,14 @@
   },
   "upTo": {
     "banner": "4 from the week",
-    "script": "Busy week at the Lentz house. We had the region clinic and concert on Friday, chess club twice, hip hop class on Tuesday, and tap class on Wednesday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.",
+    "script": "Busy week at the Lentz house. We had the region clinic and concert on Saturday, chess club twice, hip hop class on Tuesday, and tap class on Wednesday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.",
     "calendar": "Family calendar (iCloud, published feed)",
-    "window": "Nov 20–26, 2026",
+    "window": "Nov 21–27, 2026",
     "comingWindow": "",
     "source": "family calendar (tools/family_calendar.py), generic wording",
     "events": [
       {
-        "date": "2026-11-20",
+        "date": "2026-11-21",
         "label": "the region clinic and concert",
         "category": "music",
         "count": 1
@@ -1605,12 +1605,12 @@
     "coming": []
   },
   "coldOpenMeta": {
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "template": "daily",
     "confirm": [
-      "Trending: SpaceX shares for kids"
+      "RGV: Harlingen dancers stuck in NYC need $800 each"
     ],
-    "builtFrom": "DITM-briefing-2026-11-26",
+    "builtFrom": "DITM-briefing-2026-11-27",
     "sample": false
   }
 }

@@ -1,8 +1,13 @@
 {
  "v": 1,
- "date": "2026-11-26",
- "generated": "2026-11-26T10:28:49-06:00",
+ "date": "2026-11-27",
+ "generated": "2026-11-27T06:11:05-06:00",
  "items": {
+  "i-6363316bfb": {
+   "headline": "Christmas at Snapix in Downtown McAllen; Tacos with Santa in Edinburg Sat Dec 5",
+   "line": "UNCONFIRMED · Things To Do In The RGV is already in holiday mode: Christmas at Snapix in Downtown McAllen and Tacos…",
+   "kicker": "CHISME"
+  },
   "i-9d2f331fac": {
    "headline": "Brownsville: Dutch Bros Coffee planning $750,000 freestanding drive-thru on Ruben M. Torres…",
    "line": "UNCONFIRMED · RGV.me says Dutch Bros Coffee is planning a $750,000 freestanding drive-thru on Ruben M.",
@@ -28,14 +33,14 @@
    "line": "UNCONFIRMED · A r/texas post shares a report that Democrats now control the State Board of Education for the first…",
    "kicker": "CHISME"
   },
-  "i-1bd2c64519": {
-   "headline": "Gigi's Restaurant & Café in Edcouch: about 20 Thanksgiving meal packages, double what they expected",
-   "line": "KRGV's post on Gigi's in Edcouch doubling its expected Thanksgiving meal orders drew 215 reactions and 23 comments.",
+  "i-9e4d1cdb13": {
+   "headline": "Mission plumber warns against pouring grease down drains after Thanksgiving cooking",
+   "line": "UNCONFIRMED · A Mission plumbing company told KRGV the holidays bring more clogged-drain calls and shared tips for…",
    "kicker": "CHISME"
   },
-  "i-81aa617c45": {
-   "headline": "Elevated Events RGV free Preview & Open House, Mon Nov 30, 5-8 PM, downtown Mission",
-   "line": "UNCONFIRMED · A post in Things To Do In The RGV says Elevated Events RGV has a free open house Monday, Nov.",
+  "i-10fdceb9e8": {
+   "headline": "Edinburg smoke",
+   "line": "UNCONFIRMED · Redditors in Edinburg asked about visible smoke Thanksgiving afternoon.",
    "kicker": "CHISME"
   },
   "i-9680a2a004": {
@@ -66,6 +71,11 @@
   "i-641e51568b": {
    "headline": "Parking info in downtown Brownsville",
    "line": "UNCONFIRMED · A user asks where to park in downtown Brownsville.",
+   "kicker": "CHISME"
+  },
+  "i-fef3d9315e": {
+   "headline": "If someone was pretending to be from the Valley, what would be a dead giveaway that they weren't?",
+   "line": "UNCONFIRMED · r/RioGrandeValley asked how you'd spot a fake Valley local; 200-plus comments weighed in.",
    "kicker": "CHISME"
   },
   "i-41e7d5f810": {
@@ -103,11 +113,6 @@
    "line": "UNCONFIRMED · A r/texas post shares a story about an event organizer suing Gov.",
    "kicker": "CHISME"
   },
-  "i-fef3d9315e": {
-   "headline": "If someone was pretending to be from the Valley, what would be a dead giveaway that they weren't?",
-   "line": "UNCONFIRMED · A r/RioGrandeValley thread with 164 comments asks what would expose a fake Valley local.",
-   "kicker": "CHISME"
-  },
   "i-b33b15585c": {
    "headline": "Austin man deported to Mexico is a U.S. citizen, feds say",
    "line": "UNCONFIRMED · A post shares a report that feds say an Austin man who was deported to Mexico is a U.S.",
@@ -118,24 +123,24 @@
    "line": "UNCONFIRMED · r/texas is buzzing over the ERCOT CEO's contract being back on and the next governor's displeasure.",
    "kicker": "CHISME"
   },
-  "i-bc3715ff40": {
-   "headline": "In apparent first, South Texas county rejects tax break for SpaceX data center",
-   "line": "UNCONFIRMED · Still the top r/RioGrandeValley post: a report that a South Texas county rejected a SpaceX data center…",
-   "kicker": "CHISME"
-  },
-  "i-46b94c2690": {
-   "headline": "Democrats Plan to Govern Like Texas Is Still Red",
-   "line": "UNCONFIRMED · A top r/texas post shares a story on how Texas Democrats plan to govern after the election.",
-   "kicker": "CHISME"
-  },
-  "i-6351fe2ec0": {
-   "headline": "Elon Musk: things will be fine in Texas under Democratic leadership",
-   "line": "UNCONFIRMED · A post shares a quote attributed to Elon Musk saying things will be fine in Texas under Democratic…",
-   "kicker": "CHISME"
-  },
   "i-0cdeafd02b": {
    "headline": "FCC says SpaceX can deploy 1 million satellites for data centers in space. Scientists are skeptical",
    "line": "Nov 25: The FCC gave SpaceX conditional approval to deploy up to 1 million satellites for orbital AI data centers…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-104c06aba5": {
+   "headline": "From Thanksgiving blackouts to Black Friday, a holiday hit by wild weather and economic woes",
+   "line": "Nov 27: A storm from the Midwest to Manhattan left more than 980,000 people without power at its peak, canceled…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-215b2f7487": {
+   "headline": "Mexico's Sheinbaum slams U.S. DEA tip lines as interference",
+   "line": "UNCONFIRMED · Nov 26-27: President Claudia Sheinbaum called new DEA anonymous tip lines for Sinaloa residents…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-2d47f99129": {
+   "headline": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
+   "line": "Nov 27: For nearly two years the administration has barred asylum claims at the U.S.-Mexico border and canceled…",
    "kicker": "NATIONAL DESK"
   },
   "i-252f28e240": {
@@ -171,6 +176,11 @@
   "i-ade29e0e69": {
    "headline": "Wall Street's longest losing streak since 2024: Dow drops 1,100 as AI stocks slide, even with…",
    "line": "Nov 19: the Dow fell 1,101 points (2.2%), the S&P 500 lost 2% for a sixth straight day and the Nasdaq fell 2.3%…",
+   "kicker": "NATIONAL DESK"
+  },
+  "i-84888a8087": {
+   "headline": "China and other US trading partners hit back at Trump's new tariff plans",
+   "line": "UNCONFIRMED · Nov 26: China, Japan and others protested planned U.S.",
    "kicker": "NATIONAL DESK"
   },
   "i-4283d4e045": {
@@ -228,16 +238,6 @@
    "line": "Nov 20: at the White House, Trump praised his meetings with Xi and Putin and touted trade deals; AP said he 'can't…",
    "kicker": "NATIONAL DESK"
   },
-  "i-3849e26c2d": {
-   "headline": "Senate passes a bipartisan permitting bill that speeds energy projects and makes big data centers…",
-   "line": "UNCONFIRMED · Nov 19: the Senate passed the American Affordability and Jobs Act 62-33; it speeds permits for power…",
-   "kicker": "NATIONAL DESK"
-  },
-  "i-920d0782fa": {
-   "headline": "White House replaces its national cyber director after a week of outages (flights, Microsoft, banks)",
-   "line": "Nov 19: Sean Cairncross is out; Pentagon CIO Kirsten Davies serves as acting national cyber director.",
-   "kicker": "NATIONAL DESK"
-  },
   "i-33a9840e3c": {
    "headline": "Husband of woman arrested by ICE at Seattle airport calls it \"unjust\"",
    "line": "Nov 23: A U.S.",
@@ -258,6 +258,11 @@
    "line": "Nov 24: Divers found six people dead in the fuselage of a Cessna 210 that went down in the Gulf between Pascagoula…",
    "kicker": "NATIONAL DESK"
   },
+  "i-39745bfddb": {
+   "headline": "Eagles rally to stun Cowboys coming back from 21 points behind",
+   "line": "Down 31-10 early in the third, the Eagles beat Dallas 39-38 on Thanksgiving behind ex-Cowboys practice-squad QB Joe…",
+   "kicker": "TRENDING"
+  },
   "i-a526e09d76": {
    "headline": "SpaceX and Elon Musk pledge a share each to every active Trump Account",
    "line": "UNCONFIRMED · Nov 26: SpaceX says it will donate one newly issued share to each active Trump Account (the savings…",
@@ -276,6 +281,21 @@
   "i-d9792dc24e": {
    "headline": "Wife of Canadian astronaut aboard International Space Station gives birth to couple's third child",
    "line": "Nov 24: Heather Kutryk gave birth to a girl while husband Joshua Kutryk is aboard the ISS; the Canadian Space Agency…",
+   "kicker": "TRENDING"
+  },
+  "i-5ba120c688": {
+   "headline": "Bears outlast Lions 39-35; Bills beat Chiefs 13-10 on 57-yard field goal at the gun",
+   "line": "Thanksgiving's other games: Chicago won a 39-35 shootout at Detroit, and Tyler Bass hit a 57-yard field goal as time…",
+   "kicker": "TRENDING"
+  },
+  "i-c4b407436d": {
+   "headline": "Black Friday 2026 deals draw mixed reactions online",
+   "line": "UNCONFIRMED · Online chatter Friday morning turned to complaints that discounts are smaller this year, even as U.S.",
+   "kicker": "TRENDING"
+  },
+  "i-616a566399": {
+   "headline": "Screen-free tweens try their hand at Dungeons & Dragons",
+   "line": "NPR visited Tweens Without Screens, a New York parent collective whose monthly D&D groups for 9- to 12-year-olds are…",
    "kicker": "TRENDING"
   },
   "i-99ea6d3727": {
@@ -338,6 +358,11 @@
    "line": "Nov 19: Trump pardoned Rose's 1990 tax convictions; it's symbolic and doesn't change Hall of Fame status (MLB lifted…",
    "kicker": "TRENDING"
   },
+  "i-d38f42bc57": {
+   "headline": "Shopify launches a skate-park game around its live Black Friday sales globe",
+   "line": "UNCONFIRMED · Shopify CEO Tobi Lütke unveiled this year's live Black Friday Cyber Monday globe as a multiplayer…",
+   "kicker": "TRENDING"
+  },
   "i-e02a6b2a6b": {
    "headline": "Africa Cup title given back to Senegal after sports court rules against Morocco",
    "line": "The Court of Arbitration for Sport overturned a March ruling that had handed the January Africa Cup of Nations title…",
@@ -388,9 +413,9 @@
    "line": "Nov 20: Denver improved to 2-0 in Emirates NBA Cup play.",
    "kicker": "TRENDING"
   },
-  "i-525452c56f": {
-   "headline": "Texans rout the Colts 26-3 on Thursday Night Football; C.J. Stroud throws 3 TDs",
-   "line": "Nov 19: Houston beat Indianapolis 26-3 behind three Stroud touchdown passes.",
+  "i-74775cd87b": {
+   "headline": "Strobe Talbott, former Time magazine reporter and deputy secretary of state, has died",
+   "line": "UNCONFIRMED · Strobe Talbott, a former Time magazine reporter who later served as deputy secretary of state, has…",
    "kicker": "TRENDING"
   },
   "i-79025a7b7e": {
@@ -478,6 +503,26 @@
    "line": "UNCONFIRMED · The Nov.",
    "kicker": "TRENDING"
   },
+  "i-3e99c599cc": {
+   "headline": "Angels of Love collecting old phones, electronics to provide free service for domestic violence…",
+   "line": "McAllen's Angels of Love trades donated phones and electronics for refurbishing so survivors get two months of free…",
+   "kicker": "TECH"
+  },
+  "i-c130c354d6": {
+   "headline": "Hidalgo County's Rural Wi-Fi Went Dark Because Nobody Budgeted to Keep it Alive",
+   "line": "UNCONFIRMED · Hidalgo County's free colonia Wi-Fi, built with COVID money, is off because nobody funded the upkeep…",
+   "kicker": "TECH"
+  },
+  "i-47463de548": {
+   "headline": "SpaceX Seeks Greater Security Around Boca Chica Launch Facility",
+   "line": "SpaceX says acquiring about 1,200 acres of state land around its launch site would improve safety and security and…",
+   "kicker": "TECH"
+  },
+  "i-8f082b48db": {
+   "headline": "SpaceX Transforms Texas Dirt Field into Massive AI Data Center in 90 Days",
+   "line": "UNCONFIRMED · Aerial photos from September to late November show SpaceX's 444-acre Brownsville-area site turned into…",
+   "kicker": "TECH"
+  },
   "i-9cde3e0138": {
    "headline": "Cameron County commissioners reject SpaceX data center tax break request",
    "line": "UNCONFIRMED · Cameron County commissioners voted against advancing SpaceX's tax break request for a $24 billion data…",
@@ -506,6 +551,11 @@
   "i-2fd99c219f": {
    "headline": "Pharr expands city internet service to 300 housing authority homes with $700K federal investment",
    "line": "On July 2, KRGV reported that Pharr Connect is expanding municipal fiber to about 300 households across three Pharr…",
+   "kicker": "TECH"
+  },
+  "i-026bd0cc16": {
+   "headline": "Nvidia hits pause on chip shipments to Southeast Asia",
+   "line": "UNCONFIRMED · Nvidia told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and…",
    "kicker": "TECH"
   },
   "i-e0f685f7bb": {
@@ -608,15 +658,40 @@
    "line": "UNCONFIRMED · Headline from Ars Technica's feed (Nov 20): Valve says Steam Machine prices could go up because supply…",
    "kicker": "TECH"
   },
-  "i-3981c5029a": {
-   "headline": "Apple may be developing its own AI agent that runs your Mac",
-   "line": "A job listing (spotted by Bloomberg) seeks a manager for an 'AI agent that can use a computer': browsing, working…",
-   "kicker": "TECH"
+  "i-e185034019": {
+   "headline": "Remembering Andres Olivares Jr.",
+   "line": "67 · Pharr · Nov 27",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-4088b37ccc": {
-   "headline": "Elon Musk says SpaceX has a plan to eliminate cell phone dead zones",
-   "line": "UNCONFIRMED · Musk says SpaceX finished designing a miniature rooftop cell tower to fix indoor dead zones where…",
-   "kicker": "TECH"
+  "i-3616c2e1c0": {
+   "headline": "Remembering Ashley Gonzalez",
+   "line": "25 · Brownsville · Nov 27",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-e5bdc2da37": {
+   "headline": "Remembering Concapcion Naveja",
+   "line": "77 · Nov 27",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-8d245cbabd": {
+   "headline": "Remembering Eleno Alcocer Puente",
+   "line": "88 · Nov 27",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-9d5d52bea6": {
+   "headline": "Remembering Hortencia Martinez",
+   "line": "74 · Nov 27",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-16a85035fe": {
+   "headline": "Remembering Jessica Salazar",
+   "line": "45 · Nov 27",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
+  },
+  "i-a7d22bf606": {
+   "headline": "Remembering Rebecca Maricela Gallegos",
+   "line": "82 · Nov 27",
+   "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-632c105c49": {
    "headline": "Remembering Arnoldo Chapa Sr.",
@@ -868,11 +943,6 @@
    "line": "65 · Edinburg · Nov 19",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-d2d88ce93d": {
-   "headline": "Remembering Anna Leah Cantu",
-   "line": "43 · Edinburg · Nov 18",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
   "i-0f77d205aa": {
    "headline": "Remembering Anna Maria Gonzales",
    "line": "71 · Nov 18",
@@ -891,11 +961,6 @@
   "i-bfa9fb98df": {
    "headline": "Remembering Daniel Garza",
    "line": "94 · Mission · Nov 18",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-6db7f0fd55": {
-   "headline": "Remembering Dora Luz Rodriguez",
-   "line": "80 · Nov 18",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-a5ab83df74": {
@@ -928,11 +993,6 @@
    "line": "53 · Sullivan City · Nov 18",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-58fe3d9192": {
-   "headline": "Remembering Lilia G. Lizcano",
-   "line": "89 · Edinburg · Nov 18",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
   "i-b0555043c1": {
    "headline": "Remembering Maria Santos Gomez",
    "line": "100 · Mission · Nov 18",
@@ -963,21 +1023,6 @@
    "line": "99 · Edcouch · Nov 17",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-840a452369": {
-   "headline": "Remembering Maria De Jesus Castillo",
-   "line": "74 · Donna · Nov 17",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-9d15b56b4e": {
-   "headline": "Remembering Diana Cavazos Hinojosa",
-   "line": "Nov 16",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-038efbe708": {
-   "headline": "Remembering Dolores Maria Garcia",
-   "line": "93 · Donna · Nov 16",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
   "i-a943f92dbe": {
    "headline": "Remembering Gregorio Castellanos",
    "line": "77 · Weslaco · Nov 16",
@@ -986,26 +1031,6 @@
   "i-e0f26477bc": {
    "headline": "Remembering Ray Dell McClaugherty",
    "line": "86 · Hargill · Nov 16",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-f22333b57f": {
-   "headline": "Remembering Alfredo Gonzalez",
-   "line": "76 · Pharr · Nov 14",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-2b2d1f993b": {
-   "headline": "Remembering Alicia Navarro",
-   "line": "66 · Nov 14",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-0b711c86ae": {
-   "headline": "Remembering Benito Jimenez Cantu",
-   "line": "80 · Pharr · Nov 14",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-51ea8fa6ee": {
-   "headline": "Remembering Eloisa Huitron",
-   "line": "91 · Nov 14",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
   "i-74553f88d3": {
@@ -1023,11 +1048,6 @@
    "line": "73 · Nov 14",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-b386b69fde": {
-   "headline": "Remembering Jesus Cervantes",
-   "line": "67 · Nov 14",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
   "i-8c41911e90": {
    "headline": "Remembering John Wood",
    "line": "79 · Brownsville · Nov 14",
@@ -1038,40 +1058,10 @@
    "line": "65 · Nov 14",
    "kicker": "REMEMBERING OUR NEIGHBORS"
   },
-  "i-d01881e0ca": {
-   "headline": "Remembering Maximiliano Torres",
-   "line": "17 · Nov 14",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-c5afa5aae8": {
-   "headline": "Remembering Peter James Graves",
-   "line": "82 · Nov 14",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
   "i-d2e4d5cfc7": {
    "headline": "Remembering Ramon Ozuna",
    "line": "78 · Nov 14",
    "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-bf81ac0292": {
-   "headline": "Remembering Adolfo Torres Sr.",
-   "line": "74 · Nov 13",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-971075ab37": {
-   "headline": "Remembering Marina Barboza",
-   "line": "66 · Pharr · Nov 13",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-17e39ea585": {
-   "headline": "Remembering Pete T. Garcia",
-   "line": "91 · Richmond · Nov 13",
-   "kicker": "REMEMBERING OUR NEIGHBORS"
-  },
-  "i-ce9e2d9808": {
-   "headline": "Thu Nov 26",
-   "line": "Mostly Cloudy",
-   "kicker": "SHOW"
   },
   "i-7a4795866a": {
    "headline": "Fri Nov 27",
@@ -1080,12 +1070,12 @@
   },
   "i-cccc7ba157": {
    "headline": "Sat Nov 28",
-   "line": "Sunny",
+   "line": "Mostly Sunny",
    "kicker": "SHOW"
   },
   "i-c573bae00b": {
    "headline": "Sun Nov 29",
-   "line": "Mostly Sunny",
+   "line": "Sunny",
    "kicker": "SHOW"
   },
   "i-b73866cb15": {
@@ -1103,59 +1093,19 @@
    "line": "Mostly Sunny",
    "kicker": "SHOW"
   },
-  "i-01bbfde42d": {
-   "headline": "6A DII Area: Edinburg Vela 17, SA Sotomayor 7 (Vela 11-1, 11 straight wins)",
-   "line": "RGVSports · Nov 21",
+  "i-4f81090584": {
+   "headline": "Thu Dec 3",
+   "line": "Mostly Sunny",
+   "kicker": "SHOW"
+  },
+  "i-3635c8f936": {
+   "headline": "RGV Football Playoff Schedule & Scores: Vela-Westlake 2 p.m., PSJA North-Dripping Springs 5 p.m…",
+   "line": "RGVSports · Nov 27",
    "kicker": "HS FOOTBALL"
   },
-  "i-93f450b5d9": {
-   "headline": "6A DI Area: SA Harlan 34, Harlingen High 3",
-   "line": "RGVSports · Nov 20",
-   "kicker": "HS FOOTBALL"
-  },
-  "i-799a5019bd": {
-   "headline": "6A DII Area: PSJA North 46, SA Warren 15",
-   "line": "RGVSports · Nov 20",
-   "kicker": "HS FOOTBALL"
-  },
-  "i-2ff0bfa3eb": {
-   "headline": "5A DI Area: Smithson Valley 63, McAllen Rowe 6",
-   "line": "RGVSports · Nov 20",
-   "kicker": "HS FOOTBALL"
-  },
-  "i-6b36000604": {
-   "headline": "2A DII Area: La Villa 54, Chilton 28",
-   "line": "RGVSports · Nov 20",
-   "kicker": "HS FOOTBALL"
-  },
-  "i-c4ac0ec428": {
-   "headline": "6A DI Area: San Antonio Brennan 31, Weslaco High 15",
-   "line": "RGVSports · Nov 19",
-   "kicker": "HS FOOTBALL"
-  },
-  "i-fb85e2be36": {
-   "headline": "5A DI Area: Boerne Champion 72, McAllen High 14 (in Laredo)",
-   "line": "RGVSports · Nov 19",
-   "kicker": "HS FOOTBALL"
-  },
-  "i-2b37d5b334": {
-   "headline": "5A DII Area: Boerne 41, Mercedes 7",
-   "line": "RGVSports · Nov 19",
-   "kicker": "HS FOOTBALL"
-  },
-  "i-c245aaed5c": {
-   "headline": "5A DII Area: Alamo Heights 56, Sharyland High 0",
-   "line": "RGVSports · Nov 19",
-   "kicker": "HS FOOTBALL"
-  },
-  "i-d36bc2b7eb": {
-   "headline": "RGV high school football regional semifinal preview: La Villa Cardinals",
-   "line": "KRGV · Nov 25",
-   "kicker": "HS FOOTBALL"
-  },
-  "i-bf6aa6202b": {
-   "headline": "Scouting report: Breaking down each Valley team's opponent for the regional semifinals",
-   "line": "UNCONFIRMED · ValleyCentral · Nov 25",
+  "i-859a038fe2": {
+   "headline": "RGV high school football regional semifinal preview: Edinburg Vela Sabercats",
+   "line": "KRGV · Nov 26",
    "kicker": "HS FOOTBALL"
   },
   "i-22d25bc35a": {
@@ -1163,29 +1113,29 @@
    "line": "Good Day Edinburg / CBS Sports",
    "kicker": "HS FOOTBALL"
   },
+  "i-47bb3d3f68": {
+   "headline": "CHI 39, DET 35",
+   "line": "Thu Nov 26",
+   "kicker": "SHOW"
+  },
+  "i-be6efedf13": {
+   "headline": "PHI 39, DAL 38",
+   "line": "Thu Nov 26",
+   "kicker": "SHOW"
+  },
+  "i-62728c8ff1": {
+   "headline": "BUF 13, KC 10",
+   "line": "Thu Nov 26",
+   "kicker": "SHOW"
+  },
   "i-c114fb6d9a": {
    "headline": "LAR 26, GB 13",
    "line": "Wed Nov 25",
    "kicker": "SHOW"
   },
-  "i-f00959ef6a": {
-   "headline": "WAS 22, CIN 20 (MNF)",
-   "line": "Mon Nov 23",
-   "kicker": "SHOW"
-  },
-  "i-c33a5da476": {
-   "headline": "DAL 51, TEN 30",
-   "line": "Sun Nov 22",
-   "kicker": "SHOW"
-  },
-  "i-6a6e041036": {
-   "headline": "Steelers cut Aaron Rodgers after the QB rips coach Mike McCarthy on TV",
-   "line": "NPR (AP) · Nov 26",
-   "kicker": "NFL"
-  },
-  "i-2d39c6424e": {
-   "headline": "Thanksgiving Day: Bears at Lions, Eagles at Cowboys, Chiefs at Bills",
-   "line": "CBS Sports · Nov 24",
+  "i-c24e3c7ed2": {
+   "headline": "Eagles rally to stun Cowboys coming back from 21 points behind",
+   "line": "NPR (AP) · Nov 27",
    "kicker": "NFL"
   },
   "i-e339237ff0": {
@@ -1211,11 +1161,6 @@
   "i-2906a195af": {
    "headline": "GS 129, SAC 110",
    "line": "Wed Nov 25",
-   "kicker": "SHOW"
-  },
-  "i-bffbc739ba": {
-   "headline": "DAL 120, DEN 101",
-   "line": "Tue Nov 24",
    "kicker": "SHOW"
   },
   "i-b6dc423412": {
@@ -1275,7 +1220,7 @@
   },
   "i-d5d38e51f8": {
    "headline": "the region clinic and concert",
-   "line": "Fri Nov 20",
+   "line": "Sat Nov 21",
    "kicker": "WHAT I'VE BEEN UP TO"
   },
   "i-fae39ed1cc": {
@@ -1292,6 +1237,16 @@
    "headline": "tap class",
    "line": "Wed Nov 25",
    "kicker": "WHAT I'VE BEEN UP TO"
+  },
+  "i-23dfdca291": {
+   "headline": "'A place at the table': McAllen man hosts second annual free Thanksgiving dinner at Flying Walrus",
+   "line": "McAllen resident Steven Guerrero spent nearly $600 of his own money and about 10 hours cooking for his second annual…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-0464bec30c": {
+   "headline": "'What a wonderful surprise': Rio Grande Valley family welcomes Thanksgiving baby",
+   "line": "Baby Adrian, due Dec.",
+   "kicker": "HEADLINES · RGV"
   },
   "i-2ace931531": {
    "headline": "Mission suspends enforcing dog barking rule; creates review committee",
@@ -1326,6 +1281,26 @@
   "i-36c43d56e5": {
    "headline": "Catholic Diocese of Brownsville adds a parish-wide collection for Catholic Charities RGV as…",
    "line": "For the first time every parish is taking a second collection this weekend that goes entirely to Catholic Charities…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-332b2c0ead": {
+   "headline": "SpaceX Seeks Greater Security Around Boca Chica Launch Facility",
+   "line": "UNCONFIRMED · SpaceX says its proposal to acquire about 1,200 acres of state-managed land around its Starship launch…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-8a25bcd5a1": {
+   "headline": "Angels of Love collecting old phones, electronics to provide free service for domestic violence…",
+   "line": "McAllen nonprofit Angels of Love is collecting used cellphones and electronics, which a third party refurbishes and…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-39f0752fdc": {
+   "headline": "Cameron County commissioners pass resolution to protect public access to Boca Chica Beach",
+   "line": "UNCONFIRMED · Cameron County commissioners unanimously approved a resolution protecting Boca Chica Beach, public…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-3006db87d1": {
+   "headline": "Hidalgo County's Rural Wi-Fi Went Dark Because Nobody Budgeted to Keep it Alive",
+   "line": "UNCONFIRMED · Hidalgo County's free rural Wi-Fi, built with COVID money, is off because the build was funded and the…",
    "kicker": "HEADLINES · RGV"
   },
   "i-022f7e1daa": {
@@ -1378,14 +1353,9 @@
    "line": "The South Texas College Foundation's 21st annual Turkey Trot raised more than $27,000 with more than 300 runners…",
    "kicker": "HEADLINES · RGV"
   },
-  "i-9f2fd06d20": {
-   "headline": "Soldier home from a 10-month Middle East deployment surprises his 5th-grade daughter at IDEA Rio…",
-   "line": "Army Reserve Sgt.",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-47954bfebb": {
-   "headline": "South Padre Island approves $621,372 for parking improvements at the Water Sports Park",
-   "line": "UNCONFIRMED · The island approved $621,372 for parking improvements at its Water Sports Park.",
+  "i-97e619c6bf": {
+   "headline": "Project Organic Opens New Opportunities for Businesses and Employment",
+   "line": "Project Organic, a planned 71-acre mixed-use development in Harlingen's Medical District, could hold more than…",
    "kicker": "HEADLINES · RGV"
   },
   "i-dbea829d10": {
@@ -1393,9 +1363,29 @@
    "line": "UNCONFIRMED · The Texas Secretary of State is conducting a statewide risk-limiting audit to check whether election…",
    "kicker": "HEADLINES · RGV"
   },
+  "i-5931b5da67": {
+   "headline": "Community resource boxes installed in Mercedes neighborhoods",
+   "line": "The city of Mercedes and Mercedes ISD installed three community resource boxes in underserved neighborhoods and…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-24b9ef33a8": {
+   "headline": "Hidalgo County 911 dispatchers stay busy on Thanksgiving Day as call volume rises",
+   "line": "Hidalgo County Sheriff's Office dispatchers handle about 400 calls on a typical day and about 450 on Thanksgiving…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-d051b90947": {
+   "headline": "Safety concerns prompt pedestrian study of busy crosswalk near UTRGV in Edinburg",
+   "line": "TxDOT will conduct a pedestrian safety study near UTRGV in Edinburg after state Rep.",
+   "kicker": "HEADLINES · RGV"
+  },
   "i-05529f7913": {
    "headline": "Valley first responders rally behind Weslaco Fire Department after loss of two members",
    "line": "UNCONFIRMED · Fire departments across the Rio Grande Valley are rallying around the Weslaco Fire Department…",
+   "kicker": "HEADLINES · RGV"
+  },
+  "i-5c718286ad": {
+   "headline": "First case of New World screwworm reported in Cameron County",
+   "line": "UNCONFIRMED · Cameron County Judge Eddie Treviño Jr.",
    "kicker": "HEADLINES · RGV"
   },
   "i-e41c2a160f": {
@@ -1533,29 +1523,14 @@
    "line": "At STC's sixth annual Workforce Summit, President Ricardo Solis said the challenge is skills, not a shortage of…",
    "kicker": "HEADLINES · RGV"
   },
-  "i-56fe330247": {
-   "headline": "'It's not safe': Brownsville's Pinewood neighbors say a new carpool lot and SpaceX charter buses…",
-   "line": "Residents near Paredes Line Road and Pineda Boulevard say traffic from a new carpool lot, with cars and buses…",
+  "i-96cc210e68": {
+   "headline": "73-year-old Pharr hotel employee recovering after assault caught on surveillance video",
+   "line": "Pharr police arrested a 37-year-old man Wednesday after surveillance video showed a 73-year-old hotel worker being…",
    "kicker": "HEADLINES · RGV"
   },
-  "i-cae1d74ec0": {
-   "headline": "Mission sets a special meeting to review its overnight dog-barking rule; city says there's no…",
-   "line": "Commissioners will review Ordinance No.",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-e82bba7855": {
-   "headline": "RGV Startup Week returns April 26-30, 2027, announced at a Global Entrepreneurship Week event in…",
-   "line": "Five days of free talks, pitch opportunities, workshops and networking for startups and small businesses; the…",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-6baff195f6": {
-   "headline": "UTRGV and the VA sign agreements to bring UT Health RGV specialists into VA clinics for South…",
-   "line": "At a signing Nov.",
-   "kicker": "HEADLINES · RGV"
-  },
-  "i-88ee9267d7": {
-   "headline": "Texas LNG asks for more time on its federal export authorization at the Port of Brownsville…",
-   "line": "Texas LNG requested an extension on the timeline of its export authorization, citing prolonged litigation and…",
+  "i-d767b5d54b": {
+   "headline": "Vigil held in Brownsville during John Allen Rubio's execution to honor children he killed",
+   "line": "UNCONFIRMED · Community members and family gathered Thursday at Brownsville's Tres Angeles Park, built where the…",
    "kicker": "HEADLINES · RGV"
   },
   "i-c7611d1110": {
@@ -1593,9 +1568,9 @@
    "line": "A Cameron County jury found a former La Feria High School coach, 59, guilty of accident involving death in the 2021…",
    "kicker": "HEADLINES · RGV"
   },
-  "i-941546bd06": {
-   "headline": "Mission police investigate a deadly head-on crash at 3 Mile Line Road and Maria Street",
-   "line": "One person died and three were hospitalized in the Friday-evening two-vehicle crash shortly before 8 p.m., police…",
+  "i-29d5ed39db": {
+   "headline": "DPS: Mission man in custody after fleeing from deadly Thanksgiving Day crash",
+   "line": "A 22-year-old Mission man was arrested on a charge of collision involving death after a crash on Moorfield Road…",
    "kicker": "HEADLINES · RGV"
   },
   "i-d7c704f0ad": {
@@ -1628,20 +1603,15 @@
    "line": "For a second year, the Texas Education Agency's FIRST review gave the Harlingen school district a 'C' financial…",
    "kicker": "SCHOOL BOARDS"
   },
-  "i-544de900d5": {
-   "headline": "La Joya ISD investigating 'excessive' student searches at HOPE Academy; 4 employees on leave and…",
-   "line": "The district says a review of arrival search protocols at HOPE Academy, its disciplinary alternative campus, found…",
-   "kicker": "SCHOOL BOARDS"
-  },
-  "i-808302e743": {
-   "headline": "Future of the state takeover of La Joya ISD in question as Gov.-elect Hinojosa vows to return…",
-   "line": "After TEA's appointed Beaumont ISD superintendent resigned, Gov.-elect Gina Hinojosa said she will begin returning…",
-   "kicker": "SCHOOL BOARDS"
-  },
   "i-0587cc95cd": {
    "headline": "Internet providers say they'll challenge Pharr's new fiber optic ordinance",
    "line": "On April 20, Pharr City Commissioners approved an update to the city's 2023 fiber ordinance, requiring new…",
    "kicker": "CITY HALL"
+  },
+  "i-2a7f5eecd5": {
+   "headline": "SpaceX Transforms Texas Dirt Field into Massive AI Data Center in 90 Days",
+   "line": "UNCONFIRMED · Side-by-side aerial images shared on X from early September to late November show SpaceX's 444-acre…",
+   "kicker": "ECONOMIC DEVELOPMENT"
   },
   "i-e1a5ef72ba": {
    "headline": "Cameron County commissioners reject SpaceX data center tax break request",
@@ -1656,11 +1626,6 @@
   "i-4b86fbc006": {
    "headline": "Pharr expands city internet service to 300 housing authority homes with $700K federal investment",
    "line": "On July 2, KRGV reported that Pharr Connect is expanding municipal fiber to about 300 households across three Pharr…",
-   "kicker": "ECONOMIC DEVELOPMENT"
-  },
-  "i-ad25851d89": {
-   "headline": "RioPlex says $110 billion in industrial, energy and data center investment is headed to the Valley",
-   "line": "UNCONFIRMED · RioPlex Executive Director Mario Reyna estimates the multiplier effect at $40 billion to $80 billion…",
    "kicker": "ECONOMIC DEVELOPMENT"
   },
   "i-e589e026c6": {
@@ -1686,6 +1651,16 @@
   "i-9bf7df7756": {
    "headline": "Powerful storms disrupt holiday travel, as Macy's Thanksgiving Day Parade is postponed",
    "line": "Nov 26: Strong winds, high tides, heavy rain and floods are expected to affect an estimated 81.5 million…",
+   "kicker": "FAMILY & KIDS"
+  },
+  "i-9c9109f8c2": {
+   "headline": "Texas band raises $350,000 to stay for delayed Macy's Thanksgiving parade: \"Outpouring of kindness\"",
+   "line": "UNCONFIRMED · Pearland High School's 500-member band raised $350,000 in a few hours to cover two extra hotel nights…",
+   "kicker": "FAMILY & KIDS"
+  },
+  "i-b647703dc8": {
+   "headline": "Harlingen dancers in NYC scramble to raise extra funds after weather postpones Macy's Thanksgiving…",
+   "line": "UNCONFIRMED · After bad weather pushed the 100th Macy's Thanksgiving Day Parade to Saturday, 16 dancers from…",
    "kicker": "FAMILY & KIDS"
   },
   "i-075a773d36": {
@@ -1728,16 +1703,6 @@
    "line": "UNCONFIRMED · The Verge's weekly Installer column calls GTA VI the game of the year and says it has finally arrived.",
    "kicker": "FAMILY & KIDS"
   },
-  "i-2db9a31d7e": {
-   "headline": "Traumatized teens sue school, cops after Doritos bag triggers AI gun alert",
-   "line": "UNCONFIRMED · Teens are suing a school and police after an AI weapon-detection alert flagged a Doritos bag as a gun…",
-   "kicker": "FAMILY & KIDS"
-  },
-  "i-71d291ca62": {
-   "headline": "Uber tests rides for kids as young as 10, with extra pay for drivers",
-   "line": "'Uber Kids' quietly launched in Austin, Nashville and Madison, Wis., extending Uber's teen service (13-17) to…",
-   "kicker": "FAMILY & KIDS"
-  },
   "i-9304c72c98": {
    "headline": "GTA 6 is out (launched Nov 19)",
    "line": "GTA VI launched Nov 19 on PS5 and Xbox Series X; rated M (17+), 212 GB download.",
@@ -1751,6 +1716,11 @@
   "i-f494cd4862": {
    "headline": "Cruz, Talarico unite in backing Texas' bid for U.S. Space Academy",
    "line": "U.S.",
+   "kicker": "STATEWIDE"
+  },
+  "i-91b2cd4df0": {
+   "headline": "Eckhardt, Huffines clash over Texas comptroller transition",
+   "line": "Democratic Comptroller-elect Sarah Eckhardt says she hasn't received documents or briefings she requested after…",
    "kicker": "STATEWIDE"
   },
   "i-d0c93d0144": {
@@ -1798,11 +1768,6 @@
    "line": "Students at Texas Sports Academy, which schedules two hours of academics a day, have received $6.5 million in…",
    "kicker": "STATEWIDE"
   },
-  "i-6396c02b85": {
-   "headline": "ERCOT CEO Pablo Vegas gets a contract extension worth up to $4.1M next year, angering Lt. Gov. Dan…",
-   "line": "The extension, on hold for months after Patrick criticized the payouts, was finalized weeks after Patrick lost…",
-   "kicker": "STATEWIDE"
-  },
   "i-fe2f3cef4f": {
    "headline": "Steven Alvis Named Chairman of Texas Transportation Commission",
    "line": "Gov.",
@@ -1821,31 +1786,6 @@
   "i-dfbe94b47e": {
    "headline": "Paxton drops suits against two Texas doctors over transgender care as he prepares to leave office",
    "line": "Brett Cooper and May Lau were among three doctors Paxton accused of violating the 2023 ban on gender-transition care…",
-   "kicker": "STATEWIDE"
-  },
-  "i-f42933d53d": {
-   "headline": "State drops its lawsuit against Latino voting group Jolt Initiative",
-   "line": "AG Ken Paxton's office dropped the suit, which followed unsubstantiated claims by a Fox News host that Texas groups…",
-   "kicker": "STATEWIDE"
-  },
-  "i-fb650b5579": {
-   "headline": "Texas drops abortion-pill lawsuits against out-of-state medical providers",
-   "line": "The state dropped its lawsuits against out-of-state providers (California and Delaware) over abortion pills, part of…",
-   "kicker": "STATEWIDE"
-  },
-  "i-4e3826ad7d": {
-   "headline": "Federal cartel indictment ties 10 defendants to a Texas crash that killed 8 migrants",
-   "line": "Prosecutors name two brothers as leaders of La Nueva Familia Michoacana in a case with charges including drug, human…",
-   "kicker": "STATEWIDE"
-  },
-  "i-8a0fdfdaf4": {
-   "headline": "Texas Supreme Court leaves the 'Death Star' law limiting city ordinances intact; Democrats plan a…",
-   "line": "The court declined to hear a challenge to the law that bars localities from rules going further than state law, on…",
-   "kicker": "STATEWIDE"
-  },
-  "i-7e6fdbec84": {
-   "headline": "A Texas police department got $100K after a single immigration arrest under the 287(g) program",
-   "line": "The 287(g) immigration enforcement program funnels millions in federal dollars to local law enforcement with few…",
    "kicker": "STATEWIDE"
   }
  }
