@@ -1,0 +1,2032 @@
+{
+ "meta": {
+  "date": "2026-11-27",
+  "title": "Drew in the Morning · Daily Briefing",
+  "tagline": "Drew & Jess are watching the feeds so you don't have to",
+  "sample": false,
+  "dataAsOf": "Nov 27, 2026, 6:30 AM CT",
+  "timezone": "America/Chicago",
+  "recap": "Last 24 hours (Nov 26-27, Thanksgiving to Black Friday), story bank for Monday Nov 30",
+  "showEmail": "ditm@drewlentz.com",
+  "showEmailConfirm": true,
+  "handles": "IG/TikTok @drewinthemorning · YouTube @DrewintheMorning",
+  "kidsTopic": "Screens vs. dice: parent groups are using Dungeons & Dragons as a screen-free hobby for 9- to 12-year-olds (NPR, Nov 27). Ask the 10-year-old what character they'd play; ask the 14-year-old whether a no-phones game night would actually work at our house",
+  "mode": "daily",
+  "showDate": "2026-11-30",
+  "dateLabel": "Friday, November 27, 2026"
+ },
+ "headlines": {
+  "rgv": [
+   {
+    "title": "Harlingen dancers in NYC scramble to raise extra funds after weather postpones Macy's Thanksgiving Day Parade",
+    "short": "Harlingen dancers stuck in NYC need $800 each",
+    "url": "https://www.krgv.com/news/harlingen-dancers-in-nyc-scramble-to-raise-extra-funds-after-weather-postpones-macy-s-thanksgiving-day-parade",
+    "source": "KRGV · Nov 26",
+    "published": "2026-11-26",
+    "valley": true,
+    "tldr": "After bad weather pushed the 100th Macy's Thanksgiving Day Parade to Saturday, 16 dancers from Harlingen's Monarch Dance Studio and their families are scrambling to raise at least $800 each to cover extra hotel and flight costs in New York. Director April Perez said each dancer had already raised $5,000 for the original trip.",
+    "riff": "Pearland raised $350K in a few hours. Valley, our 16 Harlingen dancers need about $800 apiece. We can do this.",
+    "hook": "16 Harlingen dancers made it to Macy's 100th parade. Now they need $800 each to stay until Saturday",
+    "energy": 5,
+    "links": [],
+    "confirm": "Check the studio's official donation link and whether the goal is already met before air",
+    "teaser": "Harlingen dancers stuck in New York"
+   },
+   {
+    "title": "'What a wonderful surprise': Rio Grande Valley family welcomes Thanksgiving baby",
+    "short": "Thanksgiving baby arrives in Edinburg",
+    "url": "https://www.krgv.com/news/what-a-wonderful-surprise-rio-grande-valley-family-welcomes-thanksgiving-baby",
+    "source": "KRGV · Nov 26",
+    "published": "2026-11-26",
+    "valley": true,
+    "tldr": "Baby Adrian, due Dec. 23, arrived early Thanksgiving morning by C-section at South Texas Health System Edinburg, weighing 6 pounds, 9 ounces. He is the Bazaldua family's fifth child, the only baby born there Thanksgiving morning, and shares a Thanksgiving birthday with his charge nurse, Amanda Marinez.",
+    "riff": "Nearly a month early and right on time for pie. And the nurse shares his birthday? Come on.",
+    "hook": "Due Dec. 23, he showed up Thanksgiving morning, and shares a birthday with his nurse",
+    "energy": 5,
+    "links": [],
+    "teaser": "the Thanksgiving baby"
+   },
+   {
+    "title": "'A place at the table': McAllen man hosts second annual free Thanksgiving dinner at Flying Walrus",
+    "short": "McAllen man cooks free Thanksgiving meals",
+    "url": "https://www.krgv.com/news/a-place-at-the-table-mcallen-man-hosts-second-annual-free-thanksgiving-dinner-at-flying-walrus",
+    "source": "KRGV · Nov 26",
+    "published": "2026-11-26",
+    "valley": true,
+    "tldr": "McAllen resident Steven Guerrero spent nearly $600 of his own money and about 10 hours cooking for his second annual 'No One Should Miss Thanksgiving' meal giveaway at the Flying Walrus, where his boss provided drinks and the space. He told KRGV his family relied on neighbors for Thanksgiving when he was growing up.",
+    "riff": "Six hundred bucks of his own money and ten hours at the stove. That's the whole holiday in one guy.",
+    "hook": "He grew up relying on neighbors for Thanksgiving. Now he spends $600 of his own to feed McAllen",
+    "energy": 5,
+    "links": [],
+    "teaser": "the Flying Walrus Thanksgiving"
+   },
+   {
+    "title": "Hidalgo County's Rural Wi-Fi Went Dark Because Nobody Budgeted to Keep it Alive",
+    "short": "Hidalgo Co. rural Wi-Fi went dark",
+    "url": "https://wirelessnerd.net/2026/11/26/hidalgo-county-s-rural-wi-fi-went-dark-because-nobody/",
+    "source": "WirelessNerd via r/RioGrandeValley · Nov 26",
+    "published": "2026-11-26",
+    "valley": true,
+    "tldr": "Hidalgo County's free rural Wi-Fi, built with COVID money, is off because the build was funded and the upkeep was not, WirelessNerd writes; by the author's count the equipment went about three years without maintenance. KRGV reported in 2025 the service had connected 130 colonias and LUPE pushed the county to restore it.",
+    "riff": "Ribbon cuttings are free. Keeping the radios alive is the part nobody budgets. Full disclosure, this one's ours.",
+    "hook": "Hidalgo County's free colonia Wi-Fi is dark: the build was funded, the upkeep never was",
+    "energy": 4,
+    "links": [],
+    "confirm": "Opinion piece by WirelessNerd (Drew's brand; author discloses his company bid and came second). Disclose on air; county status from KRGV Sep 30, 2025",
+    "teaser": "why the county Wi-Fi went dark",
+    "theme": "RGV Tech"
+   },
+   {
+    "title": "Cameron County commissioners pass resolution to protect public access to Boca Chica Beach",
+    "short": "Cameron Co. resolution protects Boca Chica access",
+    "url": "https://www.krgv.com/news/cameron-county-commissioners-pass-resolution-to-protect-public-access-to-boca-chica-beach",
+    "source": "KRGV · Nov 26",
+    "published": "2026-11-26",
+    "valley": true,
+    "tldr": "Cameron County commissioners unanimously approved a resolution protecting Boca Chica Beach, public access to it and its wildlife and historic resources. It followed Texas Tribune reporting on SpaceX's proposal to buy Boca Chica State Park; Gov.-elect Gina Hinojosa directed state officials to pause sale discussions during her transition.",
+    "riff": "The county put it in writing: the beach is the public's. SpaceX can want the park all it likes.",
+    "hook": "Unanimous: Cameron County puts public access to Boca Chica Beach on the record",
+    "energy": 4,
+    "links": [],
+    "confirm": "Article says the vote was 'Tuesday'; confirm the meeting date before air",
+    "teaser": "the Boca Chica beach vote",
+    "theme": "RGV Tech"
+   },
+   {
+    "title": "SpaceX Seeks Greater Security Around Boca Chica Launch Facility",
+    "short": "SpaceX: 1,200 acres for Boca Chica security",
+    "url": "https://texasborderbusiness.com/spacex-seeks-greater-security-around-boca-chica-launch-facility/",
+    "source": "Texas Border Business · Nov 26",
+    "published": "2026-11-26T11:00:00-06:00",
+    "valley": true,
+    "tldr": "SpaceX says its proposal to acquire about 1,200 acres of state-managed land around its Starship launch facility would improve public safety, strengthen security and permanently protect about 600 acres of coastal habitat. The company says unauthorized people regularly enter operational areas through Texas Parks and Wildlife land.",
+    "riff": "Same land, two stories: SpaceX says security, the county says public access. Both landed this week.",
+    "hook": "SpaceX wants 1,200 acres around Starbase and says it would protect 600 of them forever",
+    "energy": 4,
+    "links": [],
+    "confirm": "Company's own framing via a Texas Border Business series; pair with the county resolution",
+    "theme": "RGV Tech"
+   },
+   {
+    "title": "SpaceX Transforms Texas Dirt Field into Massive AI Data Center in 90 Days",
+    "short": "Starbase data center rises in 90 days",
+    "url": "https://x.com/i/trending/2126209626958078202",
+    "source": "X News · Nov 27",
+    "published": "2026-11-27",
+    "valley": true,
+    "tldr": "Side-by-side aerial images shared on X from early September to late November show SpaceX's 444-acre site near the Port of Brownsville going from open land to a complex of white-roofed buildings and rows of Tesla Megapacks. It is part of the $24 billion supercomputing campus with an on-site natural gas plant.",
+    "riff": "Ninety days, dirt to data center. Love it or hate it, nobody builds like that down here.",
+    "hook": "Dirt field to AI data center in about 90 days: aerial photos show SpaceX's Brownsville build",
+    "energy": 4,
+    "links": [],
+    "confirm": "X News summary of posts (photos, $250M battery estimate); confirm with local news before air",
+    "theme": "RGV Tech"
+   },
+   {
+    "title": "Angels of Love collecting old phones, electronics to provide free service for domestic violence survivors",
+    "short": "Old phones → free service for DV survivors",
+    "url": "https://www.krgv.com/news/angels-of-love-collecting-old-phones-electronics-to-provide-free-service-for-domestic-violence-survivors",
+    "source": "KRGV · Nov 26",
+    "published": "2026-11-26",
+    "valley": true,
+    "tldr": "McAllen nonprofit Angels of Love is collecting used cellphones and electronics, which a third party refurbishes and recycles, so domestic violence survivors in its care get two months of free phone service. Drop-offs are at 1305 E. Nolana Ave., Suite D, in McAllen.",
+    "riff": "That old phone in your junk drawer can be somebody's lifeline. Black Friday upgrade? Donate the old one.",
+    "hook": "Upgrading on Black Friday? Your old phone can buy a survivor two months of free service",
+    "energy": 4,
+    "links": [],
+    "noprint": true,
+    "theme": "RGV Tech"
+   },
+   {
+    "title": "Vigil held in Brownsville during John Allen Rubio's execution to honor children he killed",
+    "short": "Brownsville vigil as Rubio executed",
+    "url": "https://www.krgv.com/news/vigil-held-in-brownsville-during-john-allen-rubio-s-execution-to-honor-children-he-killed",
+    "source": "KRGV · Nov 26",
+    "published": "2026-11-26",
+    "valley": true,
+    "tldr": "Community members and family gathered Thursday at Brownsville's Tres Angeles Park, built where the apartment once stood, to remember the three children John Allen Rubio killed in 2003 as his execution was carried out in Huntsville. 'It's done,' Cameron County DA Luis Saenz said.",
+    "riff": "Twenty-three years. A quiet moment for that family and for Brownsville.",
+    "hook": "Big one: Rubio executed for the 2003 killings; Brownsville gathers at Tres Angeles Park",
+    "energy": 2,
+    "links": [],
+    "confirm": "Sensitive: do not name the children on air; keep it respectful"
+   },
+   {
+    "title": "Hidalgo County 911 dispatchers stay busy on Thanksgiving Day as call volume rises",
+    "short": "911 calls jump to ~450 on Thanksgiving",
+    "url": "https://www.krgv.com/news/hidalgo-county-911-dispatchers-stay-busy-on-thanksgiving-day-as-call-volume-rises",
+    "source": "KRGV · Nov 26",
+    "published": "2026-11-26",
+    "valley": true,
+    "tldr": "Hidalgo County Sheriff's Office dispatchers handle about 400 calls on a typical day and about 450 on Thanksgiving, with kitchen fires and domestic disturbances among the top calls, 13-year dispatcher Oren Cortez told KRGV. Fires from deep-frying turkeys and ovens are common.",
+    "riff": "Fifty extra 911 calls and a lot of them are turkey fryers. Shout-out to the people answering.",
+    "hook": "Thanksgiving pushes Hidalgo County 911 to about 450 calls, turkey fryers included",
+    "energy": 3,
+    "links": [],
+    "noprint": true
+   },
+   {
+    "title": "First case of New World screwworm reported in Cameron County",
+    "short": "Screwworm reaches Cameron Co.; 12 in RGV",
+    "url": "https://myrgv.com/local-news/2026/11/25/first-case-of-new-world-screwworm-reported-in-cameron-county/",
+    "source": "MyRGV · Nov 25",
+    "published": "2026-11-25T17:22:00-06:00",
+    "valley": true,
+    "tldr": "Cameron County Judge Eddie Treviño Jr. said the Texas Animal Health Commission notified the county Tuesday that New World screwworm has arrived in the Lower Valley. That makes 12 confirmed Valley cases: eight in Starr, three in Hidalgo and one in Cameron.",
+    "riff": "Pet owners: cover cuts and check your animals. This pest keeps moving east.",
+    "hook": "Screwworm hits Cameron County: 12 Valley cases now, from Starr to the coast",
+    "energy": 3,
+    "links": [],
+    "confirm": "Count from TAHC via MyRGV Nov 25; Facebook (ValleyCentral) chatter flagged it; recheck the total before air"
+   },
+   {
+    "title": "Project Organic Opens New Opportunities for Businesses and Employment",
+    "short": "Harlingen Project Organic: 500+ jobs",
+    "url": "https://texasborderbusiness.com/project-organic-opens-new-opportunities-for-businesses-and-employment/",
+    "source": "Texas Border Business · Nov 27",
+    "published": "2026-11-27T05:00:00-06:00",
+    "valley": true,
+    "tldr": "Project Organic, a planned 71-acre mixed-use development in Harlingen's Medical District, could hold more than 300,000 square feet of commercial space and generate more than 500 permanent jobs, HEDC CEO Orlando Campos said. First anchor tenant Garver Engineering opened a 25,000-square-foot office built for more than 100 workers.",
+    "riff": "Five hundred jobs in the Medical District. Harlingen's quietly building something.",
+    "hook": "Harlingen's Project Organic: 71 acres, 300,000 sq ft and 500-plus jobs planned",
+    "energy": 3,
+    "links": [],
+    "noprint": true
+   },
+   {
+    "title": "Community resource boxes installed in Mercedes neighborhoods",
+    "short": "Mercedes puts resource boxes in colonias",
+    "url": "https://www.krgv.com/news/community-resource-boxes-installed-in-mercedes-neighborhoods",
+    "source": "KRGV · Nov 26",
+    "published": "2026-11-26",
+    "valley": true,
+    "tldr": "The city of Mercedes and Mercedes ISD installed three community resource boxes in underserved neighborhoods and colonias, stocked with library books, GED and job application information, health materials and first-aid supplies. A fourth is planned by January 2027.",
+    "riff": "A little free library with a job application and a Band-Aid. Simple and smart.",
+    "hook": "Books, GED info and first aid: Mercedes puts resource boxes in its colonias",
+    "energy": 3,
+    "links": [],
+    "noprint": true
+   },
+   {
+    "title": "73-year-old Pharr hotel employee recovering after assault caught on surveillance video",
+    "short": "Pharr hotel worker, 73, assaulted",
+    "url": "https://www.krgv.com/news/73-year-old-pharr-hotel-employee-recovering-after-assault-caught-on-surveillance-video",
+    "source": "KRGV · Nov 26",
+    "published": "2026-11-26",
+    "valley": true,
+    "tldr": "Pharr police arrested a 37-year-old man Wednesday after surveillance video showed a 73-year-old hotel worker being hit outside a hotel near North Cage Boulevard and Nolana Avenue. The worker told KRGV he has neck pain and cannot work until he heals.",
+    "riff": "Seventy-three and still working, and someone does this. Glad he's home.",
+    "hook": "Developing: 73-year-old Pharr hotel worker hit on camera; arrest made",
+    "energy": 2,
+    "links": [],
+    "noprint": true
+   },
+   {
+    "title": "Safety concerns prompt pedestrian study of busy crosswalk near UTRGV in Edinburg",
+    "short": "TxDOT to study UTRGV crosswalk",
+    "url": "https://www.krgv.com/news/safety-concerns-prompt-pedestrian-study-of-busy-crosswalk-near-utrgv-in-edinburg",
+    "source": "KRGV · Nov 26",
+    "published": "2026-11-26",
+    "valley": true,
+    "tldr": "TxDOT will conduct a pedestrian safety study near UTRGV in Edinburg after state Rep. Terry Canales raised concerns about people crossing six-lane University Drive. Students told KRGV the crosswalk buttons sometimes don't work and they've seen close calls.",
+    "riff": "Six lanes, a broken button and a scooter. Glad somebody's measuring it.",
+    "hook": "Six lanes and a crosswalk button that doesn't always work: TxDOT will study UTRGV's crossing",
+    "energy": 3,
+    "links": [],
+    "noprint": true
+   },
+   {
+    "title": "DPS: Mission man in custody after fleeing from deadly Thanksgiving Day crash",
+    "short": "Mission crash: driver arrested after fleeing",
+    "url": "https://www.krgv.com/news/dps-mission-man-in-custody-after-fleeing-from-deadly-thanksgiving-day-crash",
+    "source": "KRGV · Nov 26",
+    "published": "2026-11-26",
+    "valley": true,
+    "tldr": "A 22-year-old Mission man was arrested on a charge of collision involving death after a crash on Moorfield Road north of 5 Mile Line at about 1:44 a.m. Thursday, DPS said. A 30-year-old rear passenger died at the scene; another passenger had minor injuries.",
+    "riff": "Holiday weekend: slow down, and never leave the scene.",
+    "hook": "Developing: driver arrested after fleeing a deadly Thanksgiving crash near Mission, DPS says",
+    "energy": 1,
+    "links": [],
+    "noprint": true
+   }
+  ],
+  "texas": [
+   {
+    "title": "Texas band raises $350,000 to stay for delayed Macy's Thanksgiving parade: \"Outpouring of kindness\"",
+    "short": "Pearland band raises $350K to stay in NYC",
+    "url": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/",
+    "source": "CBS News · Nov 26",
+    "published": "2026-11-26T10:44:00-06:00",
+    "valley": false,
+    "tldr": "Pearland High School's 500-member band raised $350,000 in a few hours to cover two extra hotel nights, meals and charter buses home after the Macy's parade moved to Saturday, director Ryan Demkovich told CBS News. Donors included Gringo's Mexican Kitchen, Mattress Mack and CenterPoint Energy.",
+    "riff": "Three hundred fifty grand in a few hours. Texas doesn't let its band kids miss 34th Street.",
+    "hook": "500 Texas band kids, $350,000 raised in hours: Pearland is marching in Macy's on Saturday",
+    "energy": 5,
+    "links": [],
+    "confirm": "Top r/texas post Nov 26 (815 upvotes); confirmed by CBS News, KHOU, Click2Houston",
+    "teaser": "the $350K band rescue"
+   },
+   {
+    "title": "Eckhardt, Huffines clash over Texas comptroller transition",
+    "short": "Comptroller transition fight",
+    "url": "https://feeds.texastribune.org/link/16799/17540998/texas-comptroller-sarah-eckhardt-don-huffines-transition-co",
+    "source": "Texas Tribune · Nov 25",
+    "published": "2026-11-25T16:30:00-06:00",
+    "valley": false,
+    "tldr": "Democratic Comptroller-elect Sarah Eckhardt says she hasn't received documents or briefings she requested after defeating Don Huffines on Nov. 3. The Republican incumbent pushed back, saying the briefings are coming.",
+    "riff": "The state's checkbook is changing hands and the handoff is already messy.",
+    "hook": "Texas' new comptroller says she can't get the briefings; Huffines says they're coming",
+    "energy": 3,
+    "links": [],
+    "noprint": true
+   }
+  ],
+  "image": {
+   "file": "assets/starship_thumb.jpg",
+   "caption": "File photo: Starship (Steve Jurvetson, CC BY 2.0, Wikimedia Commons)",
+   "credit_url": "https://commons.wikimedia.org/wiki/File:SpaceX_Starship_before_IFT-5.jpg",
+   "forItem": 5
+  }
+ },
+ "nationalDesk": [
+  {
+   "id": "asylum-scotus",
+   "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
+   "print": true,
+   "summary": "Nov 27: For nearly two years the administration has barred asylum claims at the U.S.-Mexico border and canceled thousands of pending applications; the Supreme Court will soon consider whether the president can unilaterally suspend asylum access (NPR).",
+   "angle": "(Opinion) Whatever side you're on, 'can a president switch off a law Congress wrote' is the question, and it lands at the Court.",
+   "valley": "Border Patrol apprehensions hit their lowest level in agency history this year, per NPR. The Valley sees both sides of this up close.",
+   "links": [
+    {
+     "label": "NPR",
+     "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court"
+    }
+   ],
+   "teaser": "asylum heading to the Supreme Court",
+   "pfact": "SCOTUS to weigh Trump's border asylum ban.",
+   "pangle": "Can a president switch off asylum?",
+   "pvalley": "Record-low apprehensions here.",
+   "hook": "Asylum at the border is all but gone, and the Supreme Court will decide if that's legal",
+   "energy": 4
+  },
+  {
+   "id": "storm-blackouts",
+   "title": "From Thanksgiving blackouts to Black Friday, a holiday hit by wild weather and economic woes",
+   "print": true,
+   "summary": "Nov 27: A storm from the Midwest to Manhattan left more than 980,000 people without power at its peak, canceled 400-plus flights and delayed 2,000 more; Atlantic City saw 2 to 3 feet of water in low spots (NPR).",
+   "angle": "(Opinion) Nearly a million people ate Thanksgiving by flashlight. Your dry turkey is fine.",
+   "valley": "Valley airports ran on time; if family is flying home from the East Coast this weekend, check that connection.",
+   "links": [
+    {
+     "label": "NPR",
+     "url": "https://www.npr.org/2026/11/27/nx-s1-6054884/thanksgiving-weather-black-friday"
+    }
+   ],
+   "teaser": "nearly a million in the dark on Thanksgiving",
+   "pfact": "980K lost power; 400+ flights canceled.",
+   "pangle": "Thanksgiving by flashlight.",
+   "pvalley": "Check East Coast connections.",
+   "hook": "Nearly a million people lost power on Thanksgiving as a storm hammered the East",
+   "energy": 4
+  },
+  {
+   "id": "tariffs-14",
+   "title": "China and other US trading partners hit back at Trump's new tariff plans",
+   "print": true,
+   "summary": "Nov 26: China, Japan and others protested planned U.S. tariff hikes on 14 economies over alleged excess factory capacity, announced Wednesday after a Section 301 probe and likely to take effect early next year (AP; Reuters).",
+   "angle": "(Opinion) Round two of the tariff fight, right after the midterms. Your Christmas list notices before Washington does.",
+   "valley": "Mexico is not on the list of 14 (Business Times list). Watch whether that pushes more trade through Valley bridges.",
+   "links": [
+    {
+     "label": "AP",
+     "url": "https://apnews.com/article/us-tariffs-china-japan-singapore-b94a693004ad8f9b5e78f7aafb196a71"
+    },
+    {
+     "label": "Reuters",
+     "url": "https://www.reuters.com/3fec1b0a85a0/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/"
+    }
+   ],
+   "teaser": "the new tariff fight",
+   "pfact": "New tariffs on 14 economies; China pushes back.",
+   "pangle": "Round two, post-midterms.",
+   "pvalley": "Mexico not on the list.",
+   "hook": "Fourteen economies, new tariffs, and China says the premise is false",
+   "energy": 3,
+   "confirm": "Valley bridge angle is our opinion, not reported"
+  },
+  {
+   "id": "sheinbaum-dea",
+   "title": "Mexico's Sheinbaum slams U.S. DEA tip lines as interference",
+   "print": false,
+   "summary": "Nov 26-27: President Claudia Sheinbaum called new DEA anonymous tip lines for Sinaloa residents (WhatsApp, Signal) interference, and also pushed for government talks on SpaceX launches after debris hit Tamaulipas beaches (X News summary).",
+   "angle": "(Opinion) Anonymous tips by WhatsApp from a foreign agency. You can see why Mexico City bristled.",
+   "valley": "Tamaulipas is next door, and the SpaceX debris complaint points straight at Boca Chica.",
+   "links": [
+    {
+     "label": "X News",
+     "url": "https://x.com/i/trending/2125995650776994269"
+    }
+   ],
+   "teaser": "Sheinbaum vs. the DEA",
+   "pfact": "Sheinbaum: DEA tip lines are interference.",
+   "pangle": "Sovereignty fight.",
+   "pvalley": "SpaceX debris in Tamaulipas.",
+   "hook": "Mexico's president calls DEA cartel tip lines interference, and brings up SpaceX debris on Tamaulipas beaches",
+   "energy": 4,
+   "confirm": "X News summary only; confirm with AP/Reuters before air"
+  }
+ ],
+ "weather": {
+  "mode": "nws",
+  "lat": 26.2034,
+  "lon": -98.23,
+  "note": "McAllen / Rio Grande Valley; NWS Brownsville (BRO) forecast"
+ },
+ "sports": {
+  "highSchool": {
+   "title": "RGV High School Football Playoffs",
+   "round": "Regional semifinals TODAY, Fri Nov 27: Edinburg Vela vs. Austin Westlake (2 p.m., Heroes Stadium, San Antonio), PSJA North vs. Dripping Springs (5 p.m., Alamo Stadium), La Villa vs. Falls City (6 p.m., Alice)",
+   "sourceNote": "RGVSports playoff page (current at 6 AM CT Nov 27). No RGV playoff results since Saturday Nov 21; games are today, so no scores yet.",
+   "results": [],
+   "next": [
+    {
+     "title": "RGV Football Playoff Schedule & Scores: Vela-Westlake 2 p.m., PSJA North-Dripping Springs 5 p.m., La Villa-Falls City 6 p.m.",
+     "short": "3 Valley teams play today",
+     "url": "https://www.rgvsports.com/rgv-football-playoff-schedule/",
+     "source": "RGVSports · Nov 27"
+    },
+    {
+     "title": "RGV high school football regional semifinal preview: Edinburg Vela Sabercats",
+     "short": "Vela: 0-2 vs. Westlake in round 3",
+     "url": "https://www.krgv.com/news/rgv-high-school-football-regional-semifinal-preview-edinburg-vela-sabercats",
+     "source": "KRGV · Nov 26"
+    }
+   ],
+   "note": "Three Valley teams still alive after Vela's Saturday win: Vela, PSJA North and La Villa. Two beat San Antonio-area teams in the area round.",
+   "college": {
+    "title": "UTRGV falls 48-0 to No. 7 SFA in the home finale (UTRGV 5-6)",
+    "short": "UTRGV 0, Stephen F. Austin 48 (Nov 14)",
+    "url": "https://gooddayedinburg.com/local-news/editions/11-15-2026",
+    "source": "Good Day Edinburg / CBS Sports"
+   },
+   "upcoming": [
+    {
+     "title": "6A DII Region IV semifinal: Edinburg Vela (11-1) vs. Austin Westlake (11-1), Fri Nov 27, 2 p.m., Heroes Stadium, San Antonio",
+     "short": "Vela vs. Westlake, Fri 2 PM",
+     "url": "https://www.valleycentral.com/local-sports/three-valley-teams-remain-in-texas-high-school-football-playoffs-third-round-matchups/amp/",
+     "source": "ValleyCentral · Nov 22"
+    }
+   ]
+  },
+  "nfl": {
+   "title": "NFL Thanksgiving: Bears 39-35 at DET, Eagles 39-38 at DAL, Bills 13-10 vs KC",
+   "scoreSource": {
+    "title": "ESPN NFL scoreboard, Thu Nov 26",
+    "short": "",
+    "url": "https://www.espn.com/nfl/scoreboard/_/week/12/year/2026/seasontype/2",
+    "source": "ESPN"
+   },
+   "scores": [
+    [
+     "Thu Nov 26",
+     "CHI 39, DET 35"
+    ],
+    [
+     "Thu Nov 26",
+     "PHI 39, DAL 38"
+    ],
+    [
+     "Thu Nov 26",
+     "BUF 13, KC 10"
+    ],
+    [
+     "Wed Nov 25",
+     "LAR 26, GB 13"
+    ]
+   ],
+   "notable": [
+    {
+     "title": "Eagles rally to stun Cowboys coming back from 21 points behind",
+     "short": "Ex-Cowboy Joe Milton beats Dallas",
+     "url": "https://www.npr.org/2026/11/27/nx-s1-6055519/eagles-stun-cowboys",
+     "source": "NPR (AP) · Nov 27"
+    }
+   ]
+  },
+  "nba": {
+   "title": "NBA",
+   "scoreSource": {
+    "title": "ESPN NBA scoreboard, Wed Nov 25 (no games Thanksgiving)",
+    "short": "",
+    "url": "https://www.espn.com/nba/scoreboard/_/date/20261125",
+    "source": "ESPN"
+   },
+   "scores": [
+    [
+     "Wed Nov 25",
+     "HOU 116, PHX 104"
+    ],
+    [
+     "Wed Nov 25",
+     "POR 116, SA 111"
+    ],
+    [
+     "Wed Nov 25",
+     "MIN 113, OKC 106"
+    ],
+    [
+     "Wed Nov 25",
+     "NY 121, CLE 102"
+    ],
+    [
+     "Wed Nov 25",
+     "GS 129, SAC 110"
+    ]
+   ],
+   "texas": [
+    [
+     "Wed Nov 25",
+     "HOU 116, PHX 104"
+    ],
+    [
+     "Wed Nov 25",
+     "POR 116, SA 111"
+    ]
+   ],
+   "notable": [
+    {
+     "title": "Rockets 116, Suns 104",
+     "short": "Rockets beat Suns",
+     "url": "https://www.espn.com/nba/game/_/gameId/401909323",
+     "source": "ESPN · Nov 25"
+    },
+    {
+     "title": "Trail Blazers 116, Spurs 111",
+     "short": "Spurs fall at Portland",
+     "url": "https://www.espn.com/nba/game/_/gameId/401909325",
+     "source": "ESPN · Nov 25"
+    }
+   ]
+  },
+  "mlb": {
+   "title": "MLB: OFFSEASON (no scores)",
+   "offseason": true,
+   "note": "MLB is in the offseason in November, so this card shows news instead of scores. The Brewers are 2026 World Series champions.",
+   "notable": [
+    {
+     "title": "Mets reportedly offer Tarik Skubal a nine-year deal worth nearly $400 million",
+     "short": "Report: Mets offer Skubal ~9 yrs, ~$400M",
+     "url": "https://www.mlb.com/news/mlb-rumors-and-2026-27-free-agent-news-november-21",
+     "source": "MLB.com · Nov 21"
+    },
+    {
+     "title": "Mets lock up OF A.J. Ewing, 22, with an eight-year extension through 2035",
+     "short": "Mets extend A.J. Ewing 8 years",
+     "url": "https://www.mlb.com/news/mlb-rumors-and-2026-27-free-agent-news-november-21",
+     "source": "MLB.com · Nov 21"
+    },
+    {
+     "title": "Non-tender deadline: Astros let OF Taylor Trammell go; Cardinals non-tender Nolan Gorman; Yankees re-sign Jonathan Loáisiga (2 yrs)",
+     "short": "Non-tenders: Trammell (HOU), Gorman (STL)",
+     "url": "https://www.cbssports.com/mlb/transactions/",
+     "source": "CBS Sports transactions"
+    }
+   ]
+  }
+ },
+ "memes": {
+  "tagline": "Drew & Jess are watching the feeds so you don't have to",
+  "intro": "What your kids might be saying at school this week, and one line on how to bring it up.",
+  "memeOfTheWeek": "talk-doja",
+  "levels": [
+   {
+    "level": "Elementary",
+    "icon": "🎒",
+    "items": [
+     {
+      "id": "roblox",
+      "title": "Roblox: 'Steal An Egg' & 'Throw Food For Animals'",
+      "what": "Steal An Egg is Roblox's #1 game (about 1.17M playing); Throw Food For Animals is #2 and up 58% on the week.",
+      "means": "Pet-collecting games where other players can take your eggs; paid boosts are optional.",
+      "tip": "Ask 'who's stealing your eggs?' Set chat to friends-only and a spending limit.",
+      "links": [
+       {
+        "label": "RBLXSTAT: Roblox weekly report Nov 9-15",
+        "url": "https://rblxstat.com/blog/roblox-weekly-report-2026-11-15"
+       },
+       {
+        "label": "SafeScreens: Roblox parent's guide",
+        "url": "https://safescreens.us/guides/gaming/roblox-experiences"
+       },
+       {
+        "label": "RoStats: Top Roblox games Nov 2026",
+        "url": "https://rostats.io/charts/2026-11"
+       }
+      ],
+      "confirm": [],
+      "pwhat": "Roblox's #1 game: pet-collecting 'Steal An Egg' (1.17M playing); other players can grab your eggs.",
+      "ptip": "Ask 'who's stealing your eggs?' Friends-only chat, spending limit."
+     },
+     {
+      "id": "six-seven",
+      "title": "'6-7'",
+      "what": "A catchphrase kids yell for laughs, often with a hands-weighing gesture.",
+      "means": "No fixed meaning; some link it to LaMelo Ball (6'7\"). Already being mocked as overused.",
+      "tip": "Laugh and ask them to show you the gesture; it's meant to confuse adults.",
+      "links": [
+       {
+        "label": "Reader's Digest: Gen Alpha slang",
+        "url": "https://www.rd.com/article/gen-alpha-slang/"
+       },
+       {
+        "label": "MadeForMums: parents' guide to slang",
+        "url": "https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/"
+       }
+      ],
+      "confirm": [],
+      "pwhat": "Catchphrase kids yell with a hands-weighing gesture; no fixed meaning, already called overused.",
+      "ptip": "Ask them to show you the gesture; it's meant to confuse adults."
+     }
+    ]
+   },
+   {
+    "level": "Middle School",
+    "icon": "📱",
+    "items": [
+     {
+      "id": "talk-doja",
+      "title": "'Talk To Me Doja' (Meme of the Week)",
+      "what": "A TikTok dance trend copying a dance from the anime 'Yamada-kun and the Seven Witches' set to Doja Cat's 'Like That' (started Nov 7).",
+      "means": "Kids film their own version next to the anime clip.",
+      "tip": "Ask 'show me the dance?' Check the anime's rating before streaming it.",
+      "links": [
+       {
+        "label": "Know Your Meme: Talk To Me Doja",
+        "url": "https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained"
+       }
+      ],
+      "confirm": [
+       "Popularity is TikTok-side; X shows only ~38 posts in 7 days"
+      ],
+      "pwhat": "TikTok dance copying a scene from anime 'Yamada-kun and the Seven Witches' set to Doja Cat's 'Like That.'",
+      "ptip": "Ask 'show me the dance?' Check the anime's rating first."
+     },
+     {
+      "id": "pennywide",
+      "title": "'Pennywide' meme",
+      "what": "A Halloween trick-or-treat video of a child in a Pennywise mask went viral and became memes mocking him.",
+      "means": "A cruelty meme aimed at a real kid, remixed into brainrot edits.",
+      "tip": "Ask 'would you laugh if that was your cousin?' It's a natural bridge to the bullying talk.",
+      "links": [
+       {
+        "label": "Know Your Meme: Pennywide",
+        "url": "https://trending.knowyourmeme.com/editorials/guides/what-is-the-pennywide-meme-the-viral-pennywise-house-video-and-memes-explained"
+       }
+      ],
+      "confirm": [],
+      "pwhat": "Viral Halloween video of a kid in a Pennywise mask, turned into memes mocking him: cruelty aimed at a real kid.",
+      "ptip": "Ask 'would you laugh if that was your cousin?' Bridge to the bullying talk."
+     }
+    ]
+   },
+   {
+    "level": "High School",
+    "icon": "🎓",
+    "items": [
+     {
+      "id": "door-kick",
+      "title": "The Door Kick Challenge",
+      "what": "A TikTok trend: kick or pound a stranger's front door, film it, run.",
+      "means": "Police say it can mean vandalism, trespass or burglary charges, and a scared homeowner may react.",
+      "tip": "It's a crime, not a prank; Irvine PD says parents can be held accountable. Ask what they'd do if friends filmed it.",
+      "links": [
+       {
+        "label": "ABC7: Irvine police warning (Nov 12)",
+        "url": "https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/"
+       },
+       {
+        "label": "WBBH: Cape Coral incident (Nov 16)",
+        "url": "https://www.gulfcoastnewsnow.com/article/video-door-kick-challenge-cape-coral-florida/74444521"
+       },
+       {
+        "label": "KOBI: Talent, Oregon (Nov 12)",
+        "url": "https://kobi5.com/news/door-kicking-trend-is-growing-locally-five-incidents-reported-in-talent-319588/"
+       }
+      ],
+      "confirm": [
+       "No RGV incident found; X shows only ~39 posts in 7 days"
+      ],
+      "pwhat": "TikTok trend: pound on a stranger's door, film it, run. Police say vandalism, trespass or worse.",
+      "ptip": "A crime, not a prank; parents can be held accountable. What if friends filmed it?"
+     },
+     {
+      "id": "slang",
+      "title": "Slang: aura, aura farming, cooked",
+      "what": "'Aura' = someone's vibe; 'aura farming' = doing things to look cool online; 'cooked' = in trouble.",
+      "means": "Words to question: 'huzz,' 'bop,' 'big back' can objectify or mock women and bodies.",
+      "tip": "Be curious, not corrective: ask what a word means. Terms burn out fast.",
+      "links": [
+       {
+        "label": "MadeForMums: 45 Gen Alpha slang words",
+        "url": "https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/"
+       },
+       {
+        "label": "Reader's Digest: 24 Gen Alpha slang terms",
+        "url": "https://www.rd.com/article/gen-alpha-slang/"
+       },
+       {
+        "label": "Hello!: how to respond to bizarre slang",
+        "url": "https://www.hellomagazine.com/healthandbeauty/mother-and-baby/878329/your-gen-alpha-child-increasingly-bizarre-slang-how-to-respond/"
+       }
+      ],
+      "confirm": [],
+      "pwhat": "'Aura' = vibe; 'aura farming' = acting cool online; 'cooked' = in trouble. Question 'huzz,' 'bop,' 'big back.'",
+      "ptip": "Be curious: ask what a word means."
+     },
+     {
+      "id": "gta6",
+      "title": "GTA 6 is out (launched Nov 19)",
+      "what": "GTA VI launched Nov 19 on PS5 and Xbox Series X; rated M (17+), 212 GB download.",
+      "means": "Late nights and possible skipped school; some UK schools set attendance prizes.",
+      "tip": "Is 17+ a rule or a suggestion at your house? (Jess has more on this in Block C.)",
+      "links": [
+       {
+        "label": "ABC News: parents and GTA 6",
+        "url": "https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889"
+       },
+       {
+        "label": "Independent: UK schools and GTA 6",
+        "url": "https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html"
+       },
+       {
+        "label": "DW: GTA VI launches",
+        "url": "https://www.dw.com/en/grand-theft-auto-vi-launches-to-global-fanfare/a-79986461"
+       }
+      ],
+      "confirm": [],
+      "pwhat": "GTA VI is out (Nov 19), rated M 17+; expect late nights this weekend.",
+      "ptip": "Is 17+ a rule or a suggestion at your house?"
+     }
+    ]
+   }
+  ]
+ },
+ "trending": [
+  {
+   "id": "eagles-cowboys",
+   "title": "Eagles rally to stun Cowboys coming back from 21 points behind",
+   "category": "sports",
+   "one_line": "Down 31-10 early in the third, the Eagles beat Dallas 39-38 on Thanksgiving behind ex-Cowboys practice-squad QB Joe Milton (three TD passes, one TD run) and Jake Elliott's 59-yard field goal with 2 seconds left.",
+   "suggested_angle": "The Cowboys' old backup comes home and beats them on Thanksgiving. You can't write it meaner.",
+   "source_url": "https://www.npr.org/2026/11/27/nx-s1-6055519/eagles-stun-cowboys",
+   "source": "NPR (AP) · Nov 27",
+   "short": "Eagles stun Cowboys 39-38",
+   "teaser": "the Cowboys collapse",
+   "verified": true,
+   "confirm": "",
+   "print": true,
+   "links": [],
+   "hook": "The Cowboys' former backup QB erased a 21-point lead and beat them 39-38 on a 59-yard kick",
+   "energy": 5
+  },
+  {
+   "id": "tg-football",
+   "title": "Bears outlast Lions 39-35; Bills beat Chiefs 13-10 on 57-yard field goal at the gun",
+   "category": "sports",
+   "one_line": "Thanksgiving's other games: Chicago won a 39-35 shootout at Detroit, and Tyler Bass hit a 57-yard field goal as time expired to lift Buffalo past Kansas City 13-10 (ESPN scoreboard; AP).",
+   "suggested_angle": "Three games, three finishes. Best Thanksgiving football day in years.",
+   "source_url": "https://www.espn.com/nfl/scoreboard/_/week/12/year/2026/seasontype/2",
+   "source": "ESPN · Nov 26",
+   "short": "Bears 39-35; Bills walk-off",
+   "teaser": "Thanksgiving football chaos",
+   "verified": true,
+   "confirm": "",
+   "print": false,
+   "links": [],
+   "hook": "A 39-35 shootout and a 57-yard walk-off: the rest of Thanksgiving football delivered too",
+   "energy": 4
+  },
+  {
+   "id": "bf-deals-meh",
+   "title": "Black Friday 2026 deals draw mixed reactions online",
+   "category": "shopping",
+   "one_line": "Online chatter Friday morning turned to complaints that discounts are smaller this year, even as U.S. online Black Friday spending is projected at $12.9 billion, up 9% (X News summary).",
+   "suggested_angle": "Is it just us or are the deals kind of bad? Jess, what's in your cart?",
+   "source_url": "https://x.com/i/trending/2126272126134988985",
+   "source": "X News · Nov 27",
+   "short": "'Do Black Friday deals suck?'",
+   "teaser": "whether the deals are actually good",
+   "verified": true,
+   "confirm": "Spending projection from X News summary; confirm source (Adobe?) before air",
+   "print": true,
+   "links": [],
+   "hook": "Shoppers say the deals stink, but online Black Friday spending is still headed for $12.9 billion",
+   "energy": 4
+  },
+  {
+   "id": "shopify-globe",
+   "title": "Shopify launches a skate-park game around its live Black Friday sales globe",
+   "category": "tech",
+   "one_line": "Shopify CEO Tobi Lütke unveiled this year's live Black Friday Cyber Monday globe as a multiplayer skate-park game at bfcm.shop, showing sales in real time through the weekend (X News summary).",
+   "suggested_angle": "Watching the whole world shop while doing a kickflip. Peak 2026.",
+   "source_url": "https://x.com/i/trending/2126158988886917484",
+   "source": "X News · Nov 27",
+   "short": "Shopify's Black Friday skate park",
+   "teaser": "the Black Friday skate park",
+   "verified": true,
+   "confirm": "X News summary; try bfcm.shop before air",
+   "print": false,
+   "links": [],
+   "hook": "Shopify turned live Black Friday sales into a skate-park video game",
+   "energy": 3
+  },
+  {
+   "id": "dnd-tweens",
+   "title": "Screen-free tweens try their hand at Dungeons & Dragons",
+   "category": "parenting",
+   "one_line": "NPR visited Tweens Without Screens, a New York parent collective whose monthly D&D groups for 9- to 12-year-olds are a screen-free alternative built on dice, imagination and talking face to face.",
+   "suggested_angle": "Fifty years later, D&D is the parents' secret weapon. Who's the Dungeon Master at your house?",
+   "source_url": "https://www.npr.org/2026/11/27/nx-s1-6042445/screen-free-tweens-try-their-hand-at-dungeons-dragons",
+   "source": "NPR · Nov 27",
+   "short": "D&D: the screen-free hack",
+   "teaser": "D&D for screen-free kids",
+   "verified": true,
+   "confirm": "",
+   "print": false,
+   "links": [],
+   "hook": "Parents found a screen-time fix from 1974: Dungeons & Dragons",
+   "energy": 4
+  },
+  {
+   "id": "strobe-talbott",
+   "title": "Strobe Talbott, former Time magazine reporter and deputy secretary of state, has died",
+   "category": "news",
+   "one_line": "Strobe Talbott, a former Time magazine reporter who later served as deputy secretary of state, has died, NPR reports.",
+   "suggested_angle": "A reporter who went on to run diplomacy. Quick tip of the hat.",
+   "source_url": "https://www.npr.org/2026/11/27/g-s1-155990/strobe-talbott-obit",
+   "source": "NPR · Nov 27",
+   "short": "Strobe Talbott dies",
+   "teaser": "Strobe Talbott",
+   "verified": true,
+   "confirm": "Only the headline was read; read before air",
+   "print": false,
+   "links": [],
+   "hook": "Strobe Talbott, the Time reporter turned deputy secretary of state, has died",
+   "energy": 2
+  }
+ ],
+ "leads": [],
+ "tech": {
+  "origin": "wires",
+  "issue": null,
+  "searchedAt": "2026-11-27T06:10:00-06:00",
+  "note": "No Fast Company Daily issue found in the last 48 h: searched Drew's Gmail read-only on Nov 27, 2026 at 6:10 AM CT (drew@drewlentz.com, then drew@politiquera.com) for (from:fastcompany OR subject:\"Fast Company Daily\") newer_than:2d. RGV tech items come first from local outlets; national items are the fallback from the tech wires (The Verge, TechCrunch, Ars Technica).",
+  "items": [
+   {
+    "id": "hidalgo-wifi-dark",
+    "title": "Hidalgo County's Rural Wi-Fi Went Dark Because Nobody Budgeted to Keep it Alive",
+    "short": "Hidalgo rural Wi-Fi went dark",
+    "source": "WirelessNerd (via r/RioGrandeValley)",
+    "source_url": "https://wirelessnerd.net/2026/11/26/hidalgo-county-s-rural-wi-fi-went-dark-because-nobody/",
+    "published": "Nov 26",
+    "one_line": "Hidalgo County's free colonia Wi-Fi, built with COVID money, is off because nobody funded the upkeep; the author says the gear went about three years without maintenance.",
+    "angle": "Digital equity lesson for every Valley city: budget the long tail, not just the ribbon cutting. (Our own piece; disclose.)",
+    "hook": "Hidalgo County's free colonia Wi-Fi is dark: the build was funded, the upkeep never was",
+    "energy": 4,
+    "verified": true,
+    "confirm": "Opinion piece by Drew's WirelessNerd; disclose on air",
+    "links": [],
+    "basis": "WirelessNerd · RGV Tech",
+    "valley": true
+   },
+   {
+    "id": "starbase-dc-90",
+    "title": "SpaceX Transforms Texas Dirt Field into Massive AI Data Center in 90 Days",
+    "short": "Starbase DC rises in 90 days",
+    "source": "X News",
+    "source_url": "https://x.com/i/trending/2126209626958078202",
+    "published": "Nov 27",
+    "one_line": "Aerial photos from September to late November show SpaceX's 444-acre Brownsville-area site turned into a data center complex with rows of Tesla Megapacks.",
+    "angle": "The county said no to the tax break; the buildings went up anyway. Starbase's own abatement vote is Dec. 9.",
+    "hook": "Dirt field to AI data center in about 90 days near the Port of Brownsville",
+    "energy": 4,
+    "verified": true,
+    "confirm": "X News summary; confirm with local news",
+    "links": [],
+    "basis": "X News · RGV Tech",
+    "valley": true
+   },
+   {
+    "id": "boca-security",
+    "title": "SpaceX Seeks Greater Security Around Boca Chica Launch Facility",
+    "short": "SpaceX wants 1,200 acres",
+    "source": "Texas Border Business",
+    "source_url": "https://texasborderbusiness.com/spacex-seeks-greater-security-around-boca-chica-launch-facility/",
+    "published": "Nov 26",
+    "one_line": "SpaceX says acquiring about 1,200 acres of state land around its launch site would improve safety and security and permanently protect about 600 acres of habitat; Cameron County just passed a resolution protecting public beach access.",
+    "angle": "Security vs. public beach: the Boca Chica tug-of-war in one week.",
+    "hook": "SpaceX wants 1,200 acres around Starbase; the county says the beach stays public",
+    "energy": 4,
+    "verified": true,
+    "confirm": "",
+    "links": [],
+    "basis": "Texas Border Business · RGV Tech",
+    "valley": true
+   },
+   {
+    "id": "angels-phones",
+    "title": "Angels of Love collecting old phones, electronics to provide free service for domestic violence survivors",
+    "short": "Old phones for DV survivors",
+    "source": "KRGV",
+    "source_url": "https://www.krgv.com/news/angels-of-love-collecting-old-phones-electronics-to-provide-free-service-for-domestic-violence-survivors",
+    "published": "Nov 26",
+    "one_line": "McAllen's Angels of Love trades donated phones and electronics for refurbishing so survivors get two months of free phone service.",
+    "angle": "Black Friday upgrade? The old phone has a second job.",
+    "hook": "Upgrading on Black Friday? Your old phone can buy a survivor two months of service",
+    "energy": 4,
+    "verified": true,
+    "confirm": "",
+    "links": [],
+    "basis": "KRGV · RGV Tech",
+    "valley": true
+   },
+   {
+    "id": "nvidia-sea",
+    "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+    "short": "Nvidia pauses SE Asia shipments",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+    "published": "Nov 26",
+    "one_line": "Nvidia told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia as the U.S. tightens its push to keep AI chips out of China.",
+    "angle": "The AI chip squeeze keeps tightening, the same week SpaceX's Valley data center is going up.",
+    "hook": "Nvidia pauses AI server shipments to four Southeast Asian countries",
+    "energy": 3,
+    "verified": true,
+    "confirm": "Only the headline and deck were read",
+    "links": []
+   },
+   {
+    "id": "1password",
+    "title": "1Password said hackers broke into its internal systems, but customer passwords are safe",
+    "short": "1Password breached; vaults safe",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/11/25/1password-said-hackers-broke-into-its-internal-systems-but-customer-passwords-are-safe/",
+    "published": "Nov 25",
+    "one_line": "The password manager said an attacker got into an employee's corporate account and took some customer information; customer passwords are safe.",
+    "angle": "If the family uses 1Password: turn on two-factor and watch for phishing this week.",
+    "hook": "Hackers got into 1Password's internal systems; the company says your passwords are safe",
+    "energy": 3,
+    "verified": true,
+    "confirm": "Only the headline and deck were read",
+    "links": []
+   }
+  ]
+ },
+ "obituaries": {
+  "source": "Legacy.com · The Monitor (McAllen, TX)",
+  "sourceUrl": "https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor",
+  "window": {
+   "from": "2026-11-14",
+   "to": "2026-11-27",
+   "days": 14
+  },
+  "fetchedAt": "2026-11-27T06:02:19-06:00",
+  "pagesRead": 3,
+  "mergedDuplicates": 0,
+  "items": [
+   {
+    "id": "62975711",
+    "name": "Andres Olivares Jr.",
+    "age": 67,
+    "city": "Pharr",
+    "died": "2026-11-25",
+    "published": "2026-11-27",
+    "firstPublished": "2026-11-27",
+    "funeralHome": "Memorial Funeral Home of San Juan",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/andres-olivares-obituary?id=63070675"
+   },
+   {
+    "id": "62975707",
+    "name": "Ashley Gonzalez",
+    "age": 25,
+    "city": "Brownsville",
+    "died": "2026-11-24",
+    "published": "2026-11-27",
+    "firstPublished": "2026-11-27",
+    "funeralHome": "",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/ashley-gonzalez-obituary?id=63070671"
+   },
+   {
+    "id": "62975706",
+    "name": "Concapcion Naveja",
+    "age": 77,
+    "city": "",
+    "died": "2026-11-25",
+    "published": "2026-11-27",
+    "firstPublished": "2026-11-27",
+    "funeralHome": "Garcia & Trevino Funeral Home of mercedes,TX",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/concapcion-naveja-obituary?id=63070670"
+   },
+   {
+    "id": "62971262",
+    "name": "Eleno Alcocer Puente",
+    "age": 88,
+    "city": "",
+    "died": "2026-11-22",
+    "published": "2026-11-27",
+    "firstPublished": "2026-11-27",
+    "funeralHome": "Rivera at Hillcrest Funerals and Cremations",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/eleno-puente-obituary?id=63070681"
+   },
+   {
+    "id": "62971922",
+    "name": "Hortencia Martinez",
+    "age": 74,
+    "city": "",
+    "died": "2026-11-25",
+    "published": "2026-11-27",
+    "firstPublished": "2026-11-27",
+    "funeralHome": "Salinas Funeral Home - Weslaco",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/hortencia-martinez-obituary?id=63070673"
+   },
+   {
+    "id": "62972844",
+    "name": "Jessica Salazar",
+    "age": 45,
+    "city": "",
+    "died": "2026-11-22",
+    "published": "2026-11-27",
+    "firstPublished": "2026-11-27",
+    "funeralHome": "Rivera at Hillcrest Funerals and Cremations",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/jessica-salazar-obituary?id=63070678"
+   },
+   {
+    "id": "62974575",
+    "name": "Rebecca Maricela Gallegos",
+    "age": 82,
+    "city": "",
+    "died": "2026-11-21",
+    "published": "2026-11-27",
+    "firstPublished": "2026-11-27",
+    "funeralHome": "Rivera at Hillcrest Funerals and Cremations",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/rebecca-gallegos-obituary?id=63070676"
+   },
+   {
+    "id": "62972287",
+    "name": "Arnoldo Chapa Sr.",
+    "age": 86,
+    "city": "",
+    "died": "2026-11-24",
+    "published": "2026-11-26",
+    "firstPublished": "2026-11-26",
+    "funeralHome": "Aurora Funeral Home - Sam Houston",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/arnoldo-chapa-obituary?id=63068800"
+   },
+   {
+    "id": "62973837",
+    "name": "Esperanza De La Rosa",
+    "age": 85,
+    "city": "San Juan",
+    "died": "2026-11-24",
+    "published": "2026-11-26",
+    "firstPublished": "2026-11-26",
+    "funeralHome": "Memorial Funeral Home of San Juan",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/esperanza-rosa-obituary?id=63068801"
+   },
+   {
+    "id": "62973838",
+    "name": "Eva Morales de Rodriguez",
+    "age": 83,
+    "city": "Alamo",
+    "died": "2026-11-24",
+    "published": "2026-11-26",
+    "firstPublished": "2026-11-26",
+    "funeralHome": "Memorial Funeral Home of San Juan",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/eva-rodriguez-obituary?id=63068802"
+   },
+   {
+    "id": "62962510",
+    "name": "Juan Martinez",
+    "age": 74,
+    "city": "San Juan",
+    "died": "2026-11-24",
+    "published": "2026-11-26",
+    "firstPublished": "2026-11-26",
+    "funeralHome": "Memorial Funeral Home - San Juan",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/juan-martinez-obituary?id=63068794"
+   },
+   {
+    "id": "62968046",
+    "name": "Mireya Saenz Resendez",
+    "age": 91,
+    "city": "",
+    "died": "2026-11-24",
+    "published": "2026-11-26",
+    "firstPublished": "2026-11-26",
+    "funeralHome": "Hernandez Funeral Home - Rio Grande City",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/mireya-resendez-obituary?id=63068804"
+   },
+   {
+    "id": "62964941",
+    "name": "Adrian Ramirez",
+    "age": 73,
+    "city": "McAllen",
+    "died": "2026-11-13",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/adrian-ramirez-obituary?id=63059905"
+   },
+   {
+    "id": "62960523",
+    "name": "Aurora Benavides Dorsett",
+    "age": 92,
+    "city": "",
+    "died": "2026-11-24",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Darling-Mouser Funeral Home",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/aurora-dorsett-obituary?id=63059922"
+   },
+   {
+    "id": "62964934",
+    "name": "Barbara Grossman",
+    "age": 83,
+    "city": "Edinburg",
+    "died": "2026-11-17",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/barbara-grossman-obituary?id=63059898"
+   },
+   {
+    "id": "62964942",
+    "name": "Carlos Alberto Solis",
+    "age": 20,
+    "city": "Donna",
+    "died": "2026-11-14",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/carlos-solis-obituary?id=63059906"
+   },
+   {
+    "id": "62964908",
+    "name": "Donato Morin",
+    "age": 92,
+    "city": "",
+    "died": "2026-11-24",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Salinas Funeral Homes - Elsa",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/donato-morin-obituary?id=63059919"
+   },
+   {
+    "id": "62964946",
+    "name": "Felicidad Garcia",
+    "age": 86,
+    "city": "Mission",
+    "died": "2026-11-15",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/felicidad-garcia-obituary?id=63059910"
+   },
+   {
+    "id": "62964943",
+    "name": "Felipe Ledesma",
+    "age": 95,
+    "city": "Palmview",
+    "died": "2026-11-18",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/felipe-ledesma-obituary?id=63059907"
+   },
+   {
+    "id": "62964935",
+    "name": "Jose Francisco Mendoza Garcia",
+    "age": 83,
+    "city": "Mission",
+    "died": "2026-11-16",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/jose-garcia-obituary?id=63059899"
+   },
+   {
+    "id": "62964947",
+    "name": "Jose Gonzalez Fernandez III",
+    "age": 74,
+    "city": "Mission",
+    "died": "2026-11-14",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/jose-fernandez-obituary?id=63059911"
+   },
+   {
+    "id": "62953772",
+    "name": "Jose Maria Lisardo Garcia",
+    "age": 82,
+    "city": "",
+    "died": "2026-11-23",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Eternal Light Funeral Home (Funeraria Luz Eterna) - Elsa",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/jose-garcia-obituary?id=63059915"
+   },
+   {
+    "id": "62938524",
+    "name": "Joshua James Gallegos",
+    "age": 28,
+    "city": "",
+    "died": "2026-11-14",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Darling-Mouser Funeral Home",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/joshua-gallegos-obituary?id=63059921"
+   },
+   {
+    "id": "62917052",
+    "name": "Juan Francisco Tovar",
+    "age": 52,
+    "city": "",
+    "died": "2026-11-14",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Ric Brown Family Funeral Home - at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/juan-tovar-obituary?id=63059894"
+   },
+   {
+    "id": "62964949",
+    "name": "Juanita (Jaynie) Lynn Lozano",
+    "age": 54,
+    "city": "Edinburg",
+    "died": "2026-11-22",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/juanita-lozano-obituary?id=63059913"
+   },
+   {
+    "id": "62964939",
+    "name": "Linda K. Deramus",
+    "age": 80,
+    "city": "McAllen",
+    "died": "2026-11-13",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/linda-deramus-obituary?id=63059903"
+   },
+   {
+    "id": "62958862",
+    "name": "Maria Teresa Garcia",
+    "age": 67,
+    "city": "",
+    "died": "2026-11-23",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Salinas Funeral Home - Weslaco",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-garcia-obituary?id=63059917"
+   },
+   {
+    "id": "62917020",
+    "name": "Matilde Gomez",
+    "age": 83,
+    "city": "",
+    "died": "2026-11-13",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Ric Brown Family Funeral Home - at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/matilde-gomez-obituary?id=63059896"
+   },
+   {
+    "id": "62964954",
+    "name": "Melanie Juarez",
+    "age": 20,
+    "city": "Mission",
+    "died": "2026-11-13",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/melanie-juarez-obituary?id=63059918"
+   },
+   {
+    "id": "62964944",
+    "name": "Miguel Angel Ibarra",
+    "age": 64,
+    "city": "Mission",
+    "died": "2026-11-14",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/miguel-ibarra-obituary?id=63059908"
+   },
+   {
+    "id": "62964931",
+    "name": "Rogelio Cantu",
+    "age": 73,
+    "city": "Mission",
+    "died": "2026-11-11",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/rogelio-cantu-obituary?id=63059895"
+   },
+   {
+    "id": "62964933",
+    "name": "Rosenda Coronado Zuniga",
+    "age": 94,
+    "city": "Alamo",
+    "died": "2026-11-11",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/rosenda-zuniga-obituary?id=63059897"
+   },
+   {
+    "id": "62943253",
+    "name": "Theresa M. Kaleta",
+    "age": 92,
+    "city": "Forestville",
+    "died": "2026-11-15",
+    "published": "2026-11-25",
+    "firstPublished": "2026-11-25",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/theresa-kaleta-obituary?id=63059904"
+   },
+   {
+    "id": "62955250",
+    "name": "Aurelio Veraza Posas",
+    "age": 68,
+    "city": "Edinburg",
+    "died": "2026-11-20",
+    "published": "2026-11-24",
+    "firstPublished": "2026-11-24",
+    "funeralHome": "",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/aurelio-posas-obituary?id=63050218"
+   },
+   {
+    "id": "62955251",
+    "name": "Rudy Cano",
+    "age": 46,
+    "city": "Edinburg",
+    "died": "2026-11-21",
+    "published": "2026-11-24",
+    "firstPublished": "2026-11-24",
+    "funeralHome": "",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/rudy-cano-obituary?id=63050217"
+   },
+   {
+    "id": "62948836",
+    "name": "Valentina Arevalo",
+    "age": 79,
+    "city": "",
+    "died": "2026-11-21",
+    "published": "2026-11-24",
+    "firstPublished": "2026-11-24",
+    "funeralHome": "Virgil Wilson Mortuary - Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/valentina-arevalo-obituary?id=63050219"
+   },
+   {
+    "id": "62938323",
+    "name": "Hector Daniel Delgado Arizpe",
+    "age": 21,
+    "city": "",
+    "died": "2026-11-19",
+    "published": "2026-11-23",
+    "firstPublished": "2026-11-23",
+    "funeralHome": "Rivera at Hillcrest Funerals and Cremations",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/hector-arizpe-obituary?id=63040964"
+   },
+   {
+    "id": "62941174",
+    "name": "Ramona B. Gonzalez",
+    "age": 96,
+    "city": "",
+    "died": "2026-11-20",
+    "published": "2026-11-23",
+    "firstPublished": "2026-11-23",
+    "funeralHome": "Rivera at Hillcrest Funerals and Cremations",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/ramona-gonzalez-obituary?id=63040965"
+   },
+   {
+    "id": "62939439",
+    "name": "Anna Segundo",
+    "age": 74,
+    "city": "Mission",
+    "died": "2026-10-25",
+    "published": "2026-11-21",
+    "firstPublished": "2026-11-21",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/anna-segundo-obituary?id=63034403"
+   },
+   {
+    "id": "62939446",
+    "name": "Dalia Cortinas",
+    "age": 81,
+    "city": "Mission",
+    "died": "2026-10-28",
+    "published": "2026-11-21",
+    "firstPublished": "2026-11-21",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/dalia-cortinas-obituary?id=63034410"
+   },
+   {
+    "id": "62939452",
+    "name": "Henry Coy Stevens",
+    "age": 83,
+    "city": "Mission",
+    "died": "2026-11-10",
+    "published": "2026-11-21",
+    "firstPublished": "2026-11-21",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/henry-stevens-obituary?id=63034416"
+   },
+   {
+    "id": "62939455",
+    "name": "Jose Arturo Sanchez",
+    "age": 69,
+    "city": "Donna",
+    "died": "2026-11-13",
+    "published": "2026-11-21",
+    "firstPublished": "2026-11-21",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/jose-sanchez-obituary?id=63034419"
+   },
+   {
+    "id": "62939443",
+    "name": "Jose Peralta",
+    "age": 62,
+    "city": "Mission",
+    "died": "2026-10-25",
+    "published": "2026-11-21",
+    "firstPublished": "2026-11-21",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/jose-peralta-obituary?id=63034407"
+   },
+   {
+    "id": "62849832",
+    "name": "Phillip Liupakka",
+    "age": 64,
+    "city": "",
+    "died": "2026-11-04",
+    "published": "2026-11-21",
+    "firstPublished": "2026-11-21",
+    "funeralHome": "",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/phillip-liupakka-obituary?id=63034411"
+   },
+   {
+    "id": "62939451",
+    "name": "Ramona Gonzalez",
+    "age": 84,
+    "city": "Mission",
+    "died": "2026-11-02",
+    "published": "2026-11-21",
+    "firstPublished": "2026-11-21",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/ramona-gonzalez-obituary?id=63034415"
+   },
+   {
+    "id": "62939448",
+    "name": "San Juanita Villarreal",
+    "age": 53,
+    "city": "Mission",
+    "died": "2026-11-04",
+    "published": "2026-11-21",
+    "firstPublished": "2026-11-21",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/san-villarreal-obituary?id=63034412"
+   },
+   {
+    "id": "62939441",
+    "name": "Sergio Rodriguez Vasquez",
+    "age": 59,
+    "city": "McAllen",
+    "died": "2026-10-22",
+    "published": "2026-11-21",
+    "firstPublished": "2026-11-21",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/sergio-vasquez-obituary?id=63034405"
+   },
+   {
+    "id": "62939438",
+    "name": "Servando Rivera Martinez",
+    "age": 73,
+    "city": "Edinburg",
+    "died": "2026-11-18",
+    "published": "2026-11-21",
+    "firstPublished": "2026-11-21",
+    "funeralHome": "Memorial Funeral Home of Edinburg",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/servando-martinez-obituary?id=63034402"
+   },
+   {
+    "id": "62939432",
+    "name": "Sonia Maydee Faz De Garza",
+    "age": 73,
+    "city": "McAllen",
+    "died": "2026-11-18",
+    "published": "2026-11-21",
+    "firstPublished": "2026-11-21",
+    "funeralHome": "",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/sonia-garza-obituary?id=63034396"
+   },
+   {
+    "id": "62939445",
+    "name": "Tomas Raya Sr.",
+    "age": 83,
+    "city": "Alton",
+    "died": "2026-10-20",
+    "published": "2026-11-21",
+    "firstPublished": "2026-11-21",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/tomas-raya-obituary?id=63034409"
+   },
+   {
+    "id": "62933890",
+    "name": "William (Bill) Theriault",
+    "age": 66,
+    "city": "Edinburg",
+    "died": "2026-11-19",
+    "published": "2026-11-21",
+    "firstPublished": "2026-11-21",
+    "funeralHome": "Memorial Funeral Home - Edinburg",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/william-theriault-obituary?id=63034397"
+   },
+   {
+    "id": "62930644",
+    "name": "Gregoria Lloyd",
+    "age": 90,
+    "city": "Alamo",
+    "died": "2026-11-18",
+    "published": "2026-11-20",
+    "firstPublished": "2026-11-20",
+    "funeralHome": "Memorial Funeral Home - San Juan",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/gregoria-lloyd-obituary?id=63025610"
+   },
+   {
+    "id": "62901962",
+    "name": "Guadalupe Valdez Gamboa",
+    "age": 78,
+    "city": "",
+    "died": "2026-11-15",
+    "published": "2026-11-20",
+    "firstPublished": "2026-11-20",
+    "funeralHome": "Family Funeral Home - Donna",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/guadalupe-gamboa-obituary?id=63025611"
+   },
+   {
+    "id": "62930640",
+    "name": "Marco Antonio Capetillo Hernandez",
+    "age": 67,
+    "city": "Weslaco",
+    "died": "2026-11-14",
+    "published": "2026-11-20",
+    "firstPublished": "2026-11-20",
+    "funeralHome": "",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/marco-hernandez-obituary?id=63025608"
+   },
+   {
+    "id": "62920819",
+    "name": "Pedro Ybarra",
+    "age": 46,
+    "city": "",
+    "died": "2026-11-18",
+    "published": "2026-11-20",
+    "firstPublished": "2026-11-20",
+    "funeralHome": "Salinas Funeral Home - Weslaco",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/pedro-ybarra-obituary?id=63025607"
+   },
+   {
+    "id": "62922956",
+    "name": "Francisco A. Rodriguez Gomez",
+    "age": 83,
+    "city": "Pharr",
+    "died": "2026-11-17",
+    "published": "2026-11-19",
+    "firstPublished": "2026-11-19",
+    "funeralHome": "Eternal Light Funeral Home of Elsa, Texas",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/francisco-gomez-obituary?id=63017922"
+   },
+   {
+    "id": "62906531",
+    "name": "Glenn Edward Richards",
+    "age": 65,
+    "city": "Edinburg",
+    "died": "2026-11-11",
+    "published": "2026-11-19",
+    "firstPublished": "2026-11-19",
+    "funeralHome": "",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/glenn-richards-obituary?id=63017920"
+   },
+   {
+    "id": "62899481",
+    "name": "Anna Maria Gonzales",
+    "age": 71,
+    "city": "",
+    "died": "2026-11-14",
+    "published": "2026-11-18",
+    "firstPublished": "2026-11-18",
+    "funeralHome": "Aurora Funeral Home - Sam Houston",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/anna-gonzales-obituary?id=63008804"
+   },
+   {
+    "id": "62874130",
+    "name": "Armando Carrera",
+    "age": 81,
+    "city": "Mission",
+    "died": "2026-11-11",
+    "published": "2026-11-18",
+    "firstPublished": "2026-11-18",
+    "funeralHome": "Ric Brown Family Funeral Home - at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/armando-carrera-obituary?id=63008783"
+   },
+   {
+    "id": "62901506",
+    "name": "Cynthia (Cindy) Roberts",
+    "age": 72,
+    "city": "",
+    "died": "2026-10-04",
+    "published": "2026-11-18",
+    "firstPublished": "2026-11-18",
+    "funeralHome": "",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/cynthia-roberts-obituary?id=63008803"
+   },
+   {
+    "id": "62913819",
+    "name": "Daniel Garza",
+    "age": 94,
+    "city": "Mission",
+    "died": "2026-11-09",
+    "published": "2026-11-18",
+    "firstPublished": "2026-11-18",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/daniel-garza-obituary?id=63008787"
+   },
+   {
+    "id": "62913822",
+    "name": "Federico Fonseca",
+    "age": 81,
+    "city": "Pharr",
+    "died": "2026-10-25",
+    "published": "2026-11-18",
+    "firstPublished": "2026-11-18",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/federico-fonseca-obituary?id=63008790"
+   },
+   {
+    "id": "62913831",
+    "name": "Gerardo Alvarez",
+    "age": 51,
+    "city": "Mission",
+    "died": "2026-11-01",
+    "published": "2026-11-18",
+    "firstPublished": "2026-11-18",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/gerardo-alvarez-obituary?id=63008799"
+   },
+   {
+    "id": "62882669",
+    "name": "Gonzalo Lerma Ortiz",
+    "age": 86,
+    "city": "Edinburg",
+    "died": "2026-11-12",
+    "published": "2026-11-18",
+    "firstPublished": "2026-11-18",
+    "funeralHome": "Memorial Funeral Home - Edinburg",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/gonzalo-ortiz-obituary?id=63008780"
+   },
+   {
+    "id": "62913830",
+    "name": "Janluca Amor Acosta",
+    "age": null,
+    "city": "Mission",
+    "died": "2026-10-27",
+    "published": "2026-11-18",
+    "firstPublished": "2026-11-18",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/janluca-acosta-obituary?id=63008798"
+   },
+   {
+    "id": "62906155",
+    "name": "John T. Hudson",
+    "age": 71,
+    "city": "",
+    "died": "2026-11-16",
+    "published": "2026-11-18",
+    "firstPublished": "2026-11-18",
+    "funeralHome": "Darling-Mouser Funeral Home",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/john-hudson-obituary?id=63008807"
+   },
+   {
+    "id": "62913832",
+    "name": "Jose Elizondo",
+    "age": 53,
+    "city": "Sullivan City",
+    "died": "2026-10-23",
+    "published": "2026-11-18",
+    "firstPublished": "2026-11-18",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/jose-elizondo-obituary?id=63008800"
+   },
+   {
+    "id": "62913824",
+    "name": "Maria Santos Gomez",
+    "age": 100,
+    "city": "Mission",
+    "died": "2026-11-03",
+    "published": "2026-11-18",
+    "firstPublished": "2026-11-18",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/maria-gomez-obituary?id=63008792"
+   },
+   {
+    "id": "62913828",
+    "name": "Richard Vogelsang",
+    "age": 80,
+    "city": "Palmview",
+    "died": "2026-11-01",
+    "published": "2026-11-18",
+    "firstPublished": "2026-11-18",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/richard-vogelsang-obituary?id=63008796"
+   },
+   {
+    "id": "62863678",
+    "name": "Salvador Raya Sr.",
+    "age": 91,
+    "city": "",
+    "died": "2026-11-07",
+    "published": "2026-11-18",
+    "firstPublished": "2026-11-18",
+    "funeralHome": "Ric Brown Family Funeral Home - Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/salvador-raya-obituary?id=63008786"
+   },
+   {
+    "id": "62911818",
+    "name": "Victoria M. Kraft",
+    "age": 78,
+    "city": "Edinburg",
+    "died": "2026-11-15",
+    "published": "2026-11-18",
+    "firstPublished": "2026-11-18",
+    "funeralHome": "Memorial Funeral Home - Edinburg",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/victoria-kraft-obituary?id=63008808"
+   },
+   {
+    "id": "62889463",
+    "name": "Angel Jose Desiga",
+    "age": 62,
+    "city": "La Feria",
+    "died": "2026-11-12",
+    "published": "2026-11-17",
+    "firstPublished": "2026-11-17",
+    "funeralHome": "Salinas Funeral Home - Weslaco",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/angel-desiga-obituary?id=62998832"
+   },
+   {
+    "id": "62903858",
+    "name": "Francisa R. Cruz",
+    "age": 99,
+    "city": "Edcouch",
+    "died": "2026-11-14",
+    "published": "2026-11-17",
+    "firstPublished": "2026-11-17",
+    "funeralHome": "",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/francisa-cruz-obituary?id=62998833"
+   },
+   {
+    "id": "62826713",
+    "name": "Gregorio Castellanos",
+    "age": 77,
+    "city": "Weslaco",
+    "died": "2026-11-04",
+    "published": "2026-11-16",
+    "firstPublished": "2026-11-16",
+    "funeralHome": "McCaleb Funeral Home",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/gregorio-castellanos-obituary?id=62989645"
+   },
+   {
+    "id": "62883445",
+    "name": "Ray Dell McClaugherty",
+    "age": 86,
+    "city": "Hargill",
+    "died": "2026-11-11",
+    "published": "2026-11-16",
+    "firstPublished": "2026-11-14",
+    "funeralHome": "Memorial Funeral Home - Edinburg",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/ray-mcclaugherty-obituary?id=62989641"
+   },
+   {
+    "id": "62887938",
+    "name": "Gregoria Saavedra De Medina",
+    "age": 83,
+    "city": "McAllen",
+    "died": "2026-11-05",
+    "published": "2026-11-14",
+    "firstPublished": "2026-11-14",
+    "funeralHome": "Brown Family Funeral Home at the Expressway of Mission",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/gregoria-medina-obituary?id=62982908"
+   },
+   {
+    "id": "62876836",
+    "name": "Guadalupe Sauceda",
+    "age": 89,
+    "city": "",
+    "died": "2026-11-11",
+    "published": "2026-11-14",
+    "firstPublished": "2026-11-14",
+    "funeralHome": "Salinas Funeral Home - Brownsville",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/guadalupe-sauceda-obituary?id=62982910"
+   },
+   {
+    "id": "62874844",
+    "name": "Humberto Solis",
+    "age": 73,
+    "city": "",
+    "died": "2026-11-11",
+    "published": "2026-11-14",
+    "firstPublished": "2026-11-14",
+    "funeralHome": "Salinas Funeral Homes - Elsa",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/humberto-solis-obituary?id=62982911"
+   },
+   {
+    "id": "62838001",
+    "name": "John Wood",
+    "age": 79,
+    "city": "Brownsville",
+    "died": "2026-11-06",
+    "published": "2026-11-14",
+    "firstPublished": "2026-11-11",
+    "funeralHome": "Darling-Mouser Funeral Home",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/john-wood-obituary?id=62982904"
+   },
+   {
+    "id": "62880188",
+    "name": "Joseph Anthony Allen",
+    "age": 65,
+    "city": "",
+    "died": "2026-11-09",
+    "published": "2026-11-14",
+    "firstPublished": "2026-11-14",
+    "funeralHome": "Kreidler Funeral Home, Inc.",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/joseph-allen-obituary?id=62982921"
+   },
+   {
+    "id": "62847123",
+    "name": "Ramon Ozuna",
+    "age": 78,
+    "city": "",
+    "died": "2026-11-08",
+    "published": "2026-11-14",
+    "firstPublished": "2026-11-11",
+    "funeralHome": "Darling-Mouser Funeral Home",
+    "url": "https://www.legacy.com/us/obituaries/themonitor/name/ramon-ozuna-obituary?id=62982905"
+   }
+  ]
+ },
+ "chisme": {
+  "items": [
+   {
+    "id": "reddit-ne-was-pretending-to-be-from-the-valley",
+    "platform": "reddit",
+    "source": "r/RioGrandeValley",
+    "title": "If someone was pretending to be from the Valley, what would be a dead giveaway that they weren't?",
+    "url": "https://www.reddit.com/r/RioGrandeValley/comments/1y2eq0x/if_someone_was_pretending_to_be_from_the_valley/",
+    "published": "2026-11-25T18:00:00+00:00",
+    "engagement": 485,
+    "metrics": {
+     "upvotes": 284,
+     "comments": 201
+    },
+    "tldr": "r/RioGrandeValley asked how you'd spot a fake Valley local; 200-plus comments weighed in.",
+    "riff": "Everybody has a tell. Call in with yours.",
+    "confirmedBy": null,
+    "badge": "RUMOR · CONFIRM BEFORE AIR",
+    "ageHours": 42.2,
+    "ord": 0
+   },
+   {
+    "id": "reddit-evalley-comments-1y6dh2l-edinburg-smoke",
+    "platform": "reddit",
+    "source": "r/RioGrandeValley",
+    "title": "Edinburg smoke",
+    "url": "https://www.reddit.com/r/RioGrandeValley/comments/1y6dh2l/edinburg_smoke/",
+    "published": "2026-11-26T22:28:00+00:00",
+    "engagement": 88,
+    "metrics": {
+     "upvotes": 75,
+     "comments": 13
+    },
+    "tldr": "Redditors in Edinburg asked about visible smoke Thanksgiving afternoon. The cause was not in what we read.",
+    "riff": "Hopefully just somebody's turkey fryer. Check with Edinburg Fire before we say anything.",
+    "confirmedBy": null,
+    "badge": "RUMOR · CONFIRM BEFORE AIR",
+    "ageHours": 13.7,
+    "ord": 1
+   },
+   {
+    "id": "facebook-https-www-facebook-com-channel5news",
+    "platform": "facebook",
+    "source": "KRGV Channel 5 News",
+    "title": "Mission plumber warns against pouring grease down drains after Thanksgiving cooking",
+    "url": "https://www.facebook.com/channel5news",
+    "published": "2026-11-27T02:00:00+00:00",
+    "engagement": 12,
+    "metrics": {
+     "comments": 2,
+     "reactions": 8
+    },
+    "tldr": "A Mission plumbing company told KRGV the holidays bring more clogged-drain calls and shared tips for disposing of cooking grease.",
+    "riff": "Grease goes in a can, not the sink. Your plumber thanks you.",
+    "confirmedBy": null,
+    "badge": "RUMOR · CONFIRM BEFORE AIR",
+    "ageHours": 10.2,
+    "ord": 2
+   },
+   {
+    "id": "facebook-ww-facebook-com-groups-5774642885929554",
+    "platform": "facebook",
+    "source": "Things To Do In The RGV (group)",
+    "title": "Christmas at Snapix in Downtown McAllen; Tacos with Santa in Edinburg Sat Dec 5",
+    "url": "https://www.facebook.com/groups/5774642885929554/",
+    "published": "2026-11-26T18:00:00+00:00",
+    "engagement": null,
+    "metrics": {},
+    "tldr": "Things To Do In The RGV is already in holiday mode: Christmas at Snapix in Downtown McAllen and Tacos with Santa in Edinburg on Saturday, Dec 5 at 8 AM.",
+    "riff": "Tacos with Santa is the most Valley sentence ever written.",
+    "confirmedBy": null,
+    "badge": "RUMOR · CONFIRM BEFORE AIR",
+    "ageHours": 18.2,
+    "ord": 3
+   }
+  ],
+  "window": "last 72 hours",
+  "dropped": {
+   "stale": 0,
+   "unsafe": 1,
+   "dup-headline": 3,
+   "dup": 0,
+   "invalid": 0
+  },
+  "dropReasons": [
+   "mentions a minor"
+  ],
+  "sources": {
+   "r/RGV": {
+    "items": 0,
+    "ok": false,
+    "note": "no data: old.reddit.com hot.json HTTP 302; www.reddit.com hot.json HTTP 403; rss HTTP 429"
+   },
+   "r/McAllen": {
+    "items": 0,
+    "ok": false,
+    "note": "no data: old.reddit.com hot.json HTTP 302; www.reddit.com hot.json HTTP 403; rss HTTP 404"
+   },
+   "r/Brownsville": {
+    "items": 0,
+    "ok": false,
+    "note": "no data: old.reddit.com hot.json HTTP 302; www.reddit.com hot.json HTTP 403; rss HTTP 429"
+   },
+   "r/Harlingen": {
+    "items": 0,
+    "ok": false,
+    "note": "no data: old.reddit.com hot.json HTTP 302; www.reddit.com hot.json HTTP 403; rss HTTP 429"
+   },
+   "r/Edinburg": {
+    "items": 0,
+    "ok": false,
+    "note": "no data: old.reddit.com hot.json HTTP 302; www.reddit.com hot.json HTTP 403; rss HTTP 429"
+   },
+   "r/riograndevalley": {
+    "items": 0,
+    "ok": false,
+    "note": "no data: old.reddit.com hot.json HTTP 302; www.reddit.com hot.json HTTP 403; rss HTTP 404"
+   },
+   "r/RioGrandeValley": {
+    "items": 0,
+    "ok": false,
+    "note": "no data: old.reddit.com hot.json HTTP 302; www.reddit.com hot.json HTTP 403; rss HTTP 429"
+   },
+   "facebook:The Monitor": {
+    "items": 0,
+    "ok": false,
+    "note": "HTTP 301; login wall, 0 post links in the public shell; use the capture file (browser, read only)"
+   },
+   "facebook:KRGV Channel 5": {
+    "items": 0,
+    "ok": false,
+    "note": "HTTP 301; login wall, 0 post links in the public shell; use the capture file (browser, read only)"
+   },
+   "facebook:Nomorecheezmeh": {
+    "items": 0,
+    "ok": false,
+    "note": "HTTP 301; login wall, 0 post links in the public shell; use the capture file (browser, read only)"
+   },
+   "facebook:RGV.ME": {
+    "items": 0,
+    "ok": false,
+    "note": "HTTP 301; login wall, 0 post links in the public shell; use the capture file (browser, read only)"
+   },
+   "facebook:Things To Do In The RGV (group)": {
+    "items": 0,
+    "ok": false,
+    "note": "HTTP 301; login wall, 0 post links in the public shell; use the capture file (browser, read only)"
+   },
+   "instagram": {
+    "items": 0,
+    "ok": false,
+    "note": "public endpoints are login-walled (HTTP 404 / login page); skipped, nothing faked"
+   },
+   "capture:chisme-capture-2026-11-27.json": {
+    "items": 8,
+    "ok": true,
+    "note": "facebook 4, reddit 4"
+   }
+  },
+  "generatedAt": "2026-11-27T12:10:14.430507+00:00",
+  "badge": "RUMOR · CONFIRM BEFORE AIR"
+ },
+ "up_to": [
+  {
+   "date": "2026-11-21",
+   "label": "the region clinic and concert",
+   "category": "music",
+   "count": 1
+  },
+  {
+   "date": "2026-11-24",
+   "label": "chess club",
+   "category": "club",
+   "count": 2
+  },
+  {
+   "date": "2026-11-24",
+   "label": "hip hop class",
+   "category": "dance",
+   "count": 1
+  },
+  {
+   "date": "2026-11-25",
+   "label": "tap class",
+   "category": "dance",
+   "count": 1
+  }
+ ],
+ "up_to_coming": [],
+ "up_to_script": "Busy week at the Lentz house. We had the region clinic and concert on Saturday, chess club twice, hip hop class on Tuesday, and tap class on Wednesday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.",
+ "up_to_meta": {
+  "calendar": "Family calendar (iCloud, published feed)",
+  "mode": "daily",
+  "window": "Nov 21–27, 2026",
+  "comingWindow": "",
+  "status": "found",
+  "nameKidsOnAir": false,
+  "internal": "0 calendar items left off the air (medical, personal, money, work, private or unsure); 5 qualifying occurrences used. Names never leave this note.",
+  "excludedCount": 0,
+  "usedCount": 5,
+  "builtAt": "2026-11-27T06:07:59-06:00"
+ }
+}
