@@ -1561,7 +1561,7 @@
     "caption": "We want YOUR voice on Monday's show. Got a topic, a story, or the hard parenting question you're afraid to ask? DM us, email, or ask for a live guest link. Anonymous is fine. #RGV #McAllen #DrewInTheMorning"
   },
   "schemaNotes": "v4 (Nov 18): 12 blocks A-L (new B = What I've Been Up To, family & kids woven into H, Starbase/Zoho/trending folded into other blocks). Segments carry offsetMinutes from the planned 8:00 start. coldOpen, jingle and upTo are filled by packet/build_packet.py on every build.",
-  "coldOpen": "Good morning, Rio Grande Valley! It's Friday, November 27th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with Harlingen dancers stuck in New York, plus the Thanksgiving baby. On the National Desk, asylum heading to the Supreme Court. In Trending, the Cowboys collapse. And in How We'd Talk to Our Kids, Jess and I take on Screens vs. dice: parent groups are using Dungeons & Dragons as a screen-free hobby for 9. It's 54 and clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
+  "coldOpen": "Good morning, Rio Grande Valley! It's Saturday, November 28th, and this is your Drew in the Morning daily briefing. Today: the local stories everyone's talking about, starting with La Villa's history-making win, plus how Vela and PSJA North finished. On the National Desk, the parade that finally happens today. In Trending, the Luka wristband shove. And in How We'd Talk to Our Kids, Jess and I take on Grand Theft Auto VI is everywhere: it launched Nov. 19 and a new 'Criminal Profile' system. It's 55 and clear outside, the coffee's hot, so stick around, this is Drew in the Morning.",
   "jingle": {
     "primary": "Drew in the Morning. Your Valley, your news, your morning.",
     "alternates": [
@@ -1570,19 +1570,13 @@
     ]
   },
   "upTo": {
-    "banner": "4 from the week",
-    "script": "Busy week at the Lentz house. We had the region clinic and concert on Saturday, chess club twice, hip hop class on Tuesday, and tap class on Wednesday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.",
+    "banner": "3 from the week",
+    "script": "Busy week at the Lentz house. We had chess club twice, hip hop class on Tuesday, and tap class on Wednesday. Jess, what was your favorite part of the week? Okay, let's get into the Valley.",
     "calendar": "Family calendar (iCloud, published feed)",
-    "window": "Nov 21–27, 2026",
+    "window": "Nov 22–28, 2026",
     "comingWindow": "",
     "source": "family calendar (tools/family_calendar.py), generic wording",
     "events": [
-      {
-        "date": "2026-11-21",
-        "label": "the region clinic and concert",
-        "category": "music",
-        "count": 1
-      },
       {
         "date": "2026-11-24",
         "label": "chess club",
@@ -1605,12 +1599,14 @@
     "coming": []
   },
   "coldOpenMeta": {
-    "date": "2026-11-27",
+    "date": "2026-11-28",
     "template": "daily",
     "confirm": [
-      "RGV: Harlingen dancers stuck in NYC need $800 each"
+      "RGV: La Villa 42, Falls City 34: regional final!",
+      "National Desk: Macy's Thanksgiving Day Parade kicks off after being postponed due to weather for first time ever",
+      "Trending: Spurs fan shoves Luka"
     ],
-    "builtFrom": "DITM-briefing-2026-11-27",
+    "builtFrom": "DITM-briefing-2026-11-28",
     "sample": false
   }
 }

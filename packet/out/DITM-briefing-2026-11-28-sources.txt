@@ -1,0 +1,250 @@
+Sources for DITM-briefing-2026-11-28
+
+
+Top headlines: RGV
+  - Marching On: La Villa holds off Falls City, advances to regional final: https://rgvsports.com/marching-on-la-villa-holds-off-falls-city-advances-to-regional-final/  [ok]
+  - Vela's season ends in regional semifinals, fall to Westlake; PSJA North falls to Dripping Springs 44-27: https://rgvsports.com/velas-season-ends-in-regional-semifinals-fall-to-westlake/  [ok]
+  - México buscará reunirse con EEUU para delimitar el uso que SpaceX le da a su espacio aéreo (Mexico seeks US talks about suspected SpaceX debris): https://apnews.com/article/mexico-eeuu-spacex-cohetes-tamaulipas-b93da22b241e7261fe19caabe6ade8a6  [blocked-by-site]
+  - SpaceX Reports Major Cleanup and Conservation Efforts at Boca Chica Beach: https://texasborderbusiness.com/spacex-reports-major-cleanup-and-conservation-efforts-at-boca-chica-beach/  [ok]
+  - La Plaza Mall celebrates 50th Black Friday with giveaways and doorbuster deals: https://www.valleycentral.com/community/la-plaza-mall-celebrates-50th-black-friday-with-giveaways-and-doorbuster-deals/  [blocked-by-site]
+  - South Pole Illuminated Festival opens in McAllen with free admission: https://www.krgv.com/news/south-pole-illuminated-festival-opens-in-mcallen-with-free-admission  [ok]
+  - Unlike Corpus, Valley projected to have unmet water needs by 2080: https://myrgv.com/local-news/2026/11/27/unlike-corpus-valley-projected-to-have-unmet-water-needs-by-2080/  [ok]
+  - New ag commissioner warns of new pest, shares plans for Valley farmers: https://myrgv.com/local-news/2026/11/27/new-ag-commissioner-warns-of-new-pest-shares-plans-for-valley-farmers/  [ok]
+  - Bayview beef ranch fights state's fever tick response protocol: https://myrgv.com/local-news/2026/11/27/bayview-beef-ranch-fights-states-fever-tick-response-protocol/  [ok]
+  - McAllen Christmas tree lot receives loyal customers as holiday season begins: https://www.valleycentral.com/news/local-news/mcallen-christmas-tree-lot-receives-loyal-customers-as-holiday-season-begins/  [blocked-by-site]
+  - San Juan police investigating deadly auto-pedestrian crash: https://www.krgv.com/news/san-juan-police-investigating-deadly-auto-pedestrian-crash  [ok]
+  - Two women, gang member linked to severe beating in Cameron County: https://www.valleycentral.com/news/local-news/two-women-gang-member-linked-to-severe-beating-in-cameron-county/  [blocked-by-site]
+
+Top headlines: Texas
+  - Arch Manning and No. 5 Texas grind past Texas A&M 16-6 to secure SEC title game spot: https://www.espn.com/college-football/game/_/gameId/401856756  [ok]
+  - New Democratic attorneys general may reshape justice system: https://www.npr.org/2026/11/28/g-s1-155837/democratic-attorneys-general-justice-system-texas  [ok]
+  - Spurs ride second-half surge to earn spot in NBA Cup knockout round with 99-96 victory over Lakers: https://www.espn.com/nba/game/_/gameId/401909333  [ok]
+  - Texas lawmakers should promote fatherhood, family skills in 2027, report says: https://www.krgv.com/news/texas-lawmakers-should-promote-fatherhood-family-skills-in-2027-report-says  [ok]
+
+National Desk
+  - CBS News: https://www.cbsnews.com/news/macys-thanksgiving-day-parade-2026-nyc/  [ok]
+  - CBS News: https://www.cbsnews.com/news/us-opens-hotline-tips-cartels-angering-mexico/  [ok]
+  - CBS News: https://www.cbsnews.com/news/american-airlines-jets-clip-wings-reagan-airport/  [ok]
+  - CBS News: https://www.cbsnews.com/news/east-coast-thanksgiving-storm-power-outages-cleanup/  [ok]
+
+Weather
+  - NWS forecast page (McAllen): https://forecast.weather.gov/MapClick.php?lat=26.2034&lon=-98.23  [ok]
+  - NWS Brownsville office: https://www.weather.gov/bro/  [ok]
+  - NWS API forecast (JSON): https://api.weather.gov/gridpoints/BRO/49,19/forecast  [ok]
+
+High school sports
+  - La Villa 42, Falls City 34 (Region IV-2A DII semifinal, Alice): first regional final in program history: https://rgvsports.com/marching-on-la-villa-holds-off-falls-city-advances-to-regional-final/  [ok]
+  - Dripping Springs 44, PSJA North 27 (Region IV-6A semifinal, Alamo Stadium): Raiders finish 10-3: https://rgvsports.com/down-swinging-raiders-fall-short-against-tigers/  [ok]
+  - Austin Westlake 65, Edinburg Vela 7 (Region IV-6A DII semifinal, Heroes Stadium): SaberCats finish 11-2: https://rgvsports.com/velas-season-ends-in-regional-semifinals-fall-to-westlake/  [ok]
+  - La Villa vs. TBD, Region IV-2A DII final (date/site TBA): https://www.rgvsports.com/rgv-football-playoff-schedule/  [ok]
+  - No. 5 Texas 16, Texas A&M 6 at Kyle Field; Longhorns clinch SEC title game spot: https://www.espn.com/college-football/game/_/gameId/401856756  [ok]
+
+NFL Black Friday: Steelers 27, Broncos 5
+  - ESPN NFL scoreboard, Fri Nov 27: https://www.espn.com/nfl/scoreboard/_/week/12/year/2026/seasontype/2  [ok]
+  - Inspired Steelers move on from Rodgers' exit with cathartic 27-5 win over sloppy Broncos: https://www.espn.com/nfl/game/_/gameId/401873083  [ok]
+
+NBA
+  - ESPN NBA scoreboard, Fri Nov 27 (NBA Cup): https://www.espn.com/nba/scoreboard/_/date/20261127  [ok]
+  - Rockets 116, Suns 104: https://www.espn.com/nba/game/_/gameId/401909323  [ok]
+  - Trail Blazers 116, Spurs 111: https://www.espn.com/nba/game/_/gameId/401909325  [ok]
+
+MLB: OFFSEASON (no scores)
+  - Mets reportedly offer Tarik Skubal a nine-year deal worth nearly $400 million: https://www.mlb.com/news/mlb-rumors-and-2026-27-free-agent-news-november-21  [ok]
+  - Non-tender deadline: Astros let OF Taylor Trammell go; Cardinals non-tender Nolan Gorman; Yankees re-sign Jonathan Loáisiga (2 yrs): https://www.cbssports.com/mlb/transactions/  [ok]
+
+Meme of the Week: Elementary
+  - RBLXSTAT: Roblox weekly report Nov 9-15: https://rblxstat.com/blog/roblox-weekly-report-2026-11-15  [ok]
+  - SafeScreens: Roblox parent's guide: https://safescreens.us/guides/gaming/roblox-experiences  [ok]
+  - RoStats: Top Roblox games Nov 2026: https://rostats.io/charts/2026-11  [ok]
+  - Reader's Digest: Gen Alpha slang: https://www.rd.com/article/gen-alpha-slang/  [ok]
+  - MadeForMums: parents' guide to slang: https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/  [ok]
+
+Meme of the Week: Middle School
+  - Know Your Meme: Talk To Me Doja: https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained  [ok]
+  - Know Your Meme: Pennywide: https://trending.knowyourmeme.com/editorials/guides/what-is-the-pennywide-meme-the-viral-pennywise-house-video-and-memes-explained  [ok]
+
+Meme of the Week: High School
+  - ABC7: Irvine police warning (Nov 12): https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/  [ok]
+  - WBBH: Cape Coral incident (Nov 16): https://www.gulfcoastnewsnow.com/article/video-door-kick-challenge-cape-coral-florida/74444521  [ok]
+  - KOBI: Talent, Oregon (Nov 12): https://kobi5.com/news/door-kicking-trend-is-growing-locally-five-incidents-reported-in-talent-319588/  [ok]
+  - MadeForMums: 45 Gen Alpha slang words: https://www.madeformums.com/features/parents-guide-to-gen-alpha-slang/  [ok]
+  - Reader's Digest: 24 Gen Alpha slang terms: https://www.rd.com/article/gen-alpha-slang/  [ok]
+  - Hello!: how to respond to bizarre slang: https://www.hellomagazine.com/healthandbeauty/mother-and-baby/878329/your-gen-alpha-child-increasingly-bizarre-slang-how-to-respond/  [ok]
+  - ABC News: parents and GTA 6: https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889  [ok]
+  - Independent: UK schools and GTA 6: https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html  [ok]
+  - DW: GTA VI launches: https://www.dw.com/en/grand-theft-auto-vi-launches-to-global-fanfare/a-79986461  [ok]
+
+Trending News
+  - Spurs fan shoves Doncic after wristband toss in Lakers loss: https://x.com/i/trending/2126619536300630456  [ok]
+  - Netflix releases unearthed 1996 Tupac interview tapes: https://x.com/i/trending/2125794986948006007  [ok]
+  - Inspired Steelers move on from Rodgers' exit with cathartic 27-5 win over sloppy Broncos: https://www.espn.com/nfl/game/_/gameId/401873083  [ok]
+  - Rocker the coonhound nabs Best in Show at 2026 National Dog Show: https://www.cbsnews.com/news/2026-national-dog-show-winner-rocker-coonhound/  [ok]
+  - A funeral home asked for pallbearers for a Georgia Army veteran. Hundreds came to say goodbye.: https://www.cbsnews.com/news/a-funeral-home-asked-for-pallbearers-for-a-georgia-army-veteran-hundreds-came-to-say-goodbye/  [ok]
+  - Cooper Flagg leads Mavericks' rally to beat Suns, finish 4-0 in NBA Cup group play: https://www.espn.com/nba/game/_/gameId/401909332  [ok]
+  - Cloud waterfall frames Christ the Redeemer above Rio: https://x.com/i/trending/2126163960202248683  [ok]
+
+Run of show: C
+  - MyRGV: commissioners reject SpaceX bid: https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/  [ok]
+  - KRGV: commissioners reject tax break: https://www.krgv.com/news/cameron-county-commissioners-reject-spacex-data-center-tax-break-request/  [ok]
+  - Politico: Texas issues air permit: https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758  [blocked-by-site]
+  - Spaceflight Now: Flight 15: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/  [ok]
+  - Daily McAllen: Starbase says nobody is buying Boca Chica Beach: https://dailymcallen.com/local-news/editions/11-14-2026  [ok]
+  - KRGV: Boca Chica Beach resolution: https://www.krgv.com/news/cameron-county-commissioners-pass-resolution-to-protect-public-access-to-boca-chica-beach/  [ok]
+  - r/RioGrandeValley: Speer Library march: https://www.reddit.com/r/RioGrandeValley/comments/1xjnz54/community_march_to_petition_for_the_speer/  [ok]
+
+Run of show: D
+  - Texas Tribune: Pulido beats De La Cruz: https://www.texastribune.org/2026/11/03/texas-bobby-pulido-monica-de-la-cruz-congress-district-15-elections-2026/  [ok]
+  - Ballotpedia: Bobby Pulido: https://ballotpedia.org/Bobby_Pulido  [ok]
+  - MyRGV: Mission races to runoff: https://myrgv.com/local-news/2026/11/04/not-over-yet-nearly-all-mission-races-heading-to-runoff-elections/  [ok]
+  - KRGV: Mission runoff Dec. 12: https://www.krgv.com/news/mission-mayoral-and-city-council-runoff-elections-set-for-dec-12/  [ok]
+  - Hidalgo County runoff page: https://www.hidalgocounty.us/3526/December-12-2026-Local-Entities-Runoff-E  [ok]
+  - Politiquera: https://politiquera.com/  [ok]
+
+Run of show: E
+  - Edinburg Advocate: Edinburg CISD seats new members: https://theedinburgadvocate.com/2026/11/edinburg-cisd-board-to-seat-new-members-approve-3-million-stop-loss-insurance-contract-at-special-meeting-tuesday-nov-17/  [ok]
+  - PSJA ISD: swears in trustees: https://www.psjaisd.us/school-news-details/~board/pharr-san-juan-alamo-isd-news/post/psja-isd-swears-in-three-trustees-elects-new-board-leadership  [ok]
+
+Run of show: F
+  - ValleyCentral: Fallek wins District 5: https://www.valleycentral.com/valleycentrals-local-elections-hq/michael-fallek-officially-declared-winner-in-district-5-city-commission-race/  [blocked-by-site]
+  - MyRGV: Brownsville names Alan Guard: https://myrgv.com/featured/2026/06/17/brownsville-appoints-interim-city-manager-alan-guard-to-permanent-position/  [ok]
+  - MyRGV 2023: commission rezones park: https://myrgv.com/local-news/2023/07/25/despite-protest-mcallen-commission-rezones-park-for-austin-tech-company/  [ok]
+  - KRGV 2023: commissioners vote to rezone: https://www.krgv.com/news/city-of-mcallen-commissioners-vote-to-rezone-disc-golf-course/  [ok]
+  - Texas Border Business: Echo Hotel: https://texasborderbusiness.com/major-investment-in-echo-hotel-property-coming-to-edinburg/  [ok]
+
+Run of show: G
+  - Daily McAllen Nov 16: https://dailymcallen.com/local-news/editions/11-16-2026  [ok]
+  - Daily McAllen Nov 17: https://dailymcallen.com/local-news/editions/11-17-2026  [ok]
+  - Daily McAllen Nov 18: https://dailymcallen.com/local-news/editions/11-18-2026  [ok]
+  - The RGV News: Nov 17 brief: https://thergvnews.com/reviews/day/2026-11-17  [ok]
+
+Run of show: H
+  - ABC News: parents and GTA 6: https://abcnews.com/GMA/Family/parents-gta-6-kids/story?id=138089889  [ok]
+  - Independent: UK schools and GTA 6: https://www.independent.co.uk/tech/gta-6-release-schools-absentee-pupils-b3087400.html  [ok]
+  - News4 San Antonio: fake Uvalde post: https://news4sanantonio.com/news/local/fake-instagram-account-claims-uvalde-schools-closed-for-gta-6-release  [ok]
+  - TEA: HB 1481 phone rule: https://tea.texas.gov/taa-letters/implementation-texas-house-bill-1481-student-use-personal-communication-devices-school  [ok]
+  - PSJA ISD AI guidebook: https://www.psjaisd.us/academics/psja-isd-ai-guidebook  [ok]
+  - FBI: sextortion: https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/sextortion  [ok]
+  - DHS: Know2Protect sextortion PDF: https://www.dhs.gov/sites/default/files/2026-08/26_0806_k2p_p2p-t2p-sextortion.pdf  [ok]
+  - NCMEC: Take It Down: https://takeitdown.ncmec.org/  [ok]
+  - NIMH: warning signs of suicide: https://www.nimh.nih.gov/health/publications/warning-signs-of-suicide  [ok]
+  - AAP HealthyChildren: when children and teens self-harm: https://www.healthychildren.org/English/health-issues/conditions/emotional-problems/Pages/when-children-and-teens-self-harm.aspx  [ok]
+
+Run of show: I
+  - Congress Democrats ask DHS inspector general to probe ~$7.5B Big Bend border con: https://texianpartisan.com/news/daily-briefing/daily-briefing-tuesday-november-17-2026/  [ok]
+
+Run of show: J
+  - FAA: Nationwide Ground Stop Q&A: https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers  [ok]
+  - ABC: Mullin grilled, FAA head says 'blame me': https://abcnews.com/Politics/mullin-faces-congressional-hearing-wake-historic-nationwide-ground/story?id=138226960  [ok]
+  - House Homeland Security: Mullin written testimony (PDF): https://homeland.house.gov/wp-content/uploads/2026/11/2026-11-18-HRG-Testimony-Mullin.pdf  [ok]
+  - ValleyCentral: Valley airports issue advisories: https://www.valleycentral.com/news/local-news/valley-airports-airports-issue-travel-advisories-amid-faa-nationwide-ground-stop/amp/  [ok]
+  - KRGV: Brownsville airport after ground stop: https://www.krgv.com/news/cancellations-and-delays-linger-at-brownsville-airport-after-nationwide-faa-ground-stop-ends/  [ok]
+  - YouTube: SNL 'Sister': https://www.youtube.com/watch?v=-X9dxL17t1k  [ok]
+  - YouTube: SNL 'CIA Meeting' cold open: https://www.youtube.com/watch?v=R_8UPhJNrZ4  [ok]
+  - EW: SNL recap: https://ew.com/snl-recap-john-mulaney-hosts-seventh-time-phoebe-bridgers-musical-guest-12253185  [ok]
+  - Boston.com: SNL recap: https://www.boston.com/culture/entertainment/2026/11/15/snl-recap-john-mulaney-2026/  [ok]
+  - Showbiz411: SNL ratings: https://www.showbiz411.com/2026/11/18/john-mulaney-phoebe-bridgers-snl-best-this-season-drops-back-to-season-average-ratings-down-20-from-last-weeks-high  [ok]
+  - Nvidia press release: CEO transition: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx  [ok]
+  - ABC: Ten Commandments in Texas classrooms: https://abcnews.com/Politics/democratic-wave-upends-battle-ten-commandments-texas-classrooms/story?id=138118010  [ok]
+  - Fast Company Daily (Drew's email; the daily refresh pulls it): https://www.fastcompany.com/newsletters  [blocked-by-site]
+
+Run of show: L
+  - Know Your Meme: Talk To Me Doja: https://knowyourmeme.com/editorials/guides/what-is-the-talk-to-me-doja-meme-the-viral-yamada-kun-and-the-seven-witches-memes-explained  [ok]
+  - ABC7: Irvine PD on door kick challenge: https://abc7.com/story/irvine-police-warn-social-media-driven-door-kick-challenge-could-lead-criminal-charges/20033918/  [ok]
+  - Legacy.com: The Monitor obituaries, McAllen: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor  [blocked-by-site]
+
+Chisme
+  - Mexico seeks talks with U.S. over SpaceX launches from Starbase: https://www.facebook.com/RGV.ME/posts/pfbid027S4n9EYouHtjqkqzAWhkGxZha5Hsp71fAGV7iT8AVaBkpo6GiKvKy3JWhaLKBjxal  [unreachable]
+  - Texas just went blue. Here's why business leaders aren't panicking.: https://www.reddit.com/r/texas/comments/1y77om3/texas_just_went_blue_heres_why_business_leaders/  [ok]
+  - Thanksgiving - Places where unhoused hang out: https://www.reddit.com/r/RioGrandeValley/comments/1y70hj4/thanksgiving_places_where_unhoused_hang_out/  [ok]
+  - Is Ross, Burlington, Marshall's packed today?: https://www.reddit.com/r/RioGrandeValley/comments/1y6ukdg/is_ross_burlington_marshalls_packed_today/  [ok]
+
+Remembering Our Neighbors
+  - Legacy.com: The Monitor obituaries, McAllen: https://www.legacy.com/us/obituaries/local/texas/mcallen?publisher=The+Monitor  [blocked-by-site]
+  - Andres Olivarez Jr.: https://www.legacy.com/us/obituaries/themonitor/name/andres-olivarez-obituary?id=63077896
+  - Bertha Alicia Maravilla: https://www.legacy.com/us/obituaries/themonitor/name/bertha-maravilla-obituary?id=63077895
+  - Francisco Javier Vasquez: https://www.legacy.com/us/obituaries/themonitor/name/francisco-vasquez-obituary?id=63077893
+  - Jesus Cabrera: https://www.legacy.com/us/obituaries/themonitor/name/jesus-cabrera-obituary?id=63077898
+  - Kenneth Leslie Eckardt: https://www.legacy.com/us/obituaries/themonitor/name/kenneth-eckardt-obituary?id=63077892
+  - Magdalena Garza: https://www.legacy.com/us/obituaries/themonitor/name/magdalena-garza-obituary?id=63077897
+  - Maria Elena Alfaro: https://www.legacy.com/us/obituaries/themonitor/name/maria-alfaro-obituary?id=63077890
+  - Maribel Cabrera: https://www.legacy.com/us/obituaries/themonitor/name/maribel-cabrera-obituary?id=63077894
+  - Andres Olivares Jr.: https://www.legacy.com/us/obituaries/themonitor/name/andres-olivares-obituary?id=63070675
+  - Ashley Gonzalez: https://www.legacy.com/us/obituaries/themonitor/name/ashley-gonzalez-obituary?id=63070671
+  - Concapcion Naveja: https://www.legacy.com/us/obituaries/themonitor/name/concapcion-naveja-obituary?id=63070670
+  - Eleno Alcocer Puente: https://www.legacy.com/us/obituaries/themonitor/name/eleno-puente-obituary?id=63070681
+  - Hortencia Martinez: https://www.legacy.com/us/obituaries/themonitor/name/hortencia-martinez-obituary?id=63070673
+  - Jessica Salazar: https://www.legacy.com/us/obituaries/themonitor/name/jessica-salazar-obituary?id=63070678
+  - Rebecca Maricela Gallegos: https://www.legacy.com/us/obituaries/themonitor/name/rebecca-gallegos-obituary?id=63070676
+  - Arnoldo Chapa Sr.: https://www.legacy.com/us/obituaries/themonitor/name/arnoldo-chapa-obituary?id=63068800
+  - Esperanza De La Rosa: https://www.legacy.com/us/obituaries/themonitor/name/esperanza-rosa-obituary?id=63068801
+  - Eva Morales de Rodriguez: https://www.legacy.com/us/obituaries/themonitor/name/eva-rodriguez-obituary?id=63068802
+  - Juan Martinez: https://www.legacy.com/us/obituaries/themonitor/name/juan-martinez-obituary?id=63068794
+  - Mireya Saenz Resendez: https://www.legacy.com/us/obituaries/themonitor/name/mireya-resendez-obituary?id=63068804
+  - Adrian Ramirez: https://www.legacy.com/us/obituaries/themonitor/name/adrian-ramirez-obituary?id=63059905
+  - Aurora Benavides Dorsett: https://www.legacy.com/us/obituaries/themonitor/name/aurora-dorsett-obituary?id=63059922
+  - Barbara Grossman: https://www.legacy.com/us/obituaries/themonitor/name/barbara-grossman-obituary?id=63059898
+  - Carlos Alberto Solis: https://www.legacy.com/us/obituaries/themonitor/name/carlos-solis-obituary?id=63059906
+  - Donato Morin: https://www.legacy.com/us/obituaries/themonitor/name/donato-morin-obituary?id=63059919
+  - Felicidad Garcia: https://www.legacy.com/us/obituaries/themonitor/name/felicidad-garcia-obituary?id=63059910
+  - Felipe Ledesma: https://www.legacy.com/us/obituaries/themonitor/name/felipe-ledesma-obituary?id=63059907
+  - Jose Francisco Mendoza Garcia: https://www.legacy.com/us/obituaries/themonitor/name/jose-garcia-obituary?id=63059899
+  - Jose Gonzalez Fernandez III: https://www.legacy.com/us/obituaries/themonitor/name/jose-fernandez-obituary?id=63059911
+  - Jose Maria Lisardo Garcia: https://www.legacy.com/us/obituaries/themonitor/name/jose-garcia-obituary?id=63059915
+  - Joshua James Gallegos: https://www.legacy.com/us/obituaries/themonitor/name/joshua-gallegos-obituary?id=63059921
+  - Juan Francisco Tovar: https://www.legacy.com/us/obituaries/themonitor/name/juan-tovar-obituary?id=63059894
+  - Juanita (Jaynie) Lynn Lozano: https://www.legacy.com/us/obituaries/themonitor/name/juanita-lozano-obituary?id=63059913
+  - Linda K. Deramus: https://www.legacy.com/us/obituaries/themonitor/name/linda-deramus-obituary?id=63059903
+  - Maria Teresa Garcia: https://www.legacy.com/us/obituaries/themonitor/name/maria-garcia-obituary?id=63059917
+  - Matilde Gomez: https://www.legacy.com/us/obituaries/themonitor/name/matilde-gomez-obituary?id=63059896
+  - Melanie Juarez: https://www.legacy.com/us/obituaries/themonitor/name/melanie-juarez-obituary?id=63059918
+  - Miguel Angel Ibarra: https://www.legacy.com/us/obituaries/themonitor/name/miguel-ibarra-obituary?id=63059908
+  - Rogelio Cantu: https://www.legacy.com/us/obituaries/themonitor/name/rogelio-cantu-obituary?id=63059895
+  - Rosenda Coronado Zuniga: https://www.legacy.com/us/obituaries/themonitor/name/rosenda-zuniga-obituary?id=63059897
+  - Theresa M. Kaleta: https://www.legacy.com/us/obituaries/themonitor/name/theresa-kaleta-obituary?id=63059904
+  - Aurelio Veraza Posas: https://www.legacy.com/us/obituaries/themonitor/name/aurelio-posas-obituary?id=63050218
+  - Rudy Cano: https://www.legacy.com/us/obituaries/themonitor/name/rudy-cano-obituary?id=63050217
+  - Valentina Arevalo: https://www.legacy.com/us/obituaries/themonitor/name/valentina-arevalo-obituary?id=63050219
+  - Hector Daniel Delgado Arizpe: https://www.legacy.com/us/obituaries/themonitor/name/hector-arizpe-obituary?id=63040964
+  - Ramona B. Gonzalez: https://www.legacy.com/us/obituaries/themonitor/name/ramona-gonzalez-obituary?id=63040965
+  - Anna Segundo: https://www.legacy.com/us/obituaries/themonitor/name/anna-segundo-obituary?id=63034403
+  - Dalia Cortinas: https://www.legacy.com/us/obituaries/themonitor/name/dalia-cortinas-obituary?id=63034410
+  - Henry Coy Stevens: https://www.legacy.com/us/obituaries/themonitor/name/henry-stevens-obituary?id=63034416
+  - Jose Arturo Sanchez: https://www.legacy.com/us/obituaries/themonitor/name/jose-sanchez-obituary?id=63034419
+  - Jose Peralta: https://www.legacy.com/us/obituaries/themonitor/name/jose-peralta-obituary?id=63034407
+  - Phillip Liupakka: https://www.legacy.com/us/obituaries/themonitor/name/phillip-liupakka-obituary?id=63034411
+  - Ramona Gonzalez: https://www.legacy.com/us/obituaries/themonitor/name/ramona-gonzalez-obituary?id=63034415
+  - San Juanita Villarreal: https://www.legacy.com/us/obituaries/themonitor/name/san-villarreal-obituary?id=63034412
+  - Sergio Rodriguez Vasquez: https://www.legacy.com/us/obituaries/themonitor/name/sergio-vasquez-obituary?id=63034405
+  - Servando Rivera Martinez: https://www.legacy.com/us/obituaries/themonitor/name/servando-martinez-obituary?id=63034402
+  - Sonia Maydee Faz De Garza: https://www.legacy.com/us/obituaries/themonitor/name/sonia-garza-obituary?id=63034396
+  - Tomas Raya Sr.: https://www.legacy.com/us/obituaries/themonitor/name/tomas-raya-obituary?id=63034409
+  - William (Bill) Theriault: https://www.legacy.com/us/obituaries/themonitor/name/william-theriault-obituary?id=63034397
+  - Gregoria Lloyd: https://www.legacy.com/us/obituaries/themonitor/name/gregoria-lloyd-obituary?id=63025610
+  - Guadalupe Valdez Gamboa: https://www.legacy.com/us/obituaries/themonitor/name/guadalupe-gamboa-obituary?id=63025611
+  - Marco Antonio Capetillo Hernandez: https://www.legacy.com/us/obituaries/themonitor/name/marco-hernandez-obituary?id=63025608
+  - Pedro Ybarra: https://www.legacy.com/us/obituaries/themonitor/name/pedro-ybarra-obituary?id=63025607
+  - Francisco A. Rodriguez Gomez: https://www.legacy.com/us/obituaries/themonitor/name/francisco-gomez-obituary?id=63017922
+  - Glenn Edward Richards: https://www.legacy.com/us/obituaries/themonitor/name/glenn-richards-obituary?id=63017920
+  - Anna Leah Cantu: https://www.legacy.com/us/obituaries/themonitor/name/anna-cantu-obituary?id=63008789
+  - Anna Maria Gonzales: https://www.legacy.com/us/obituaries/themonitor/name/anna-gonzales-obituary?id=63008804
+  - Armando Carrera: https://www.legacy.com/us/obituaries/themonitor/name/armando-carrera-obituary?id=63008783
+  - Cynthia (Cindy) Roberts: https://www.legacy.com/us/obituaries/themonitor/name/cynthia-roberts-obituary?id=63008803
+  - Daniel Garza: https://www.legacy.com/us/obituaries/themonitor/name/daniel-garza-obituary?id=63008787
+  - Dora Luz Rodriguez: https://www.legacy.com/us/obituaries/themonitor/name/dora-rodriguez-obituary?id=63008802
+  - Federico Fonseca: https://www.legacy.com/us/obituaries/themonitor/name/federico-fonseca-obituary?id=63008790
+  - Gerardo Alvarez: https://www.legacy.com/us/obituaries/themonitor/name/gerardo-alvarez-obituary?id=63008799
+  - Gonzalo Lerma Ortiz: https://www.legacy.com/us/obituaries/themonitor/name/gonzalo-ortiz-obituary?id=63008780
+  - Janluca Amor Acosta: https://www.legacy.com/us/obituaries/themonitor/name/janluca-acosta-obituary?id=63008798
+  - John T. Hudson: https://www.legacy.com/us/obituaries/themonitor/name/john-hudson-obituary?id=63008807
+  - Jose Elizondo: https://www.legacy.com/us/obituaries/themonitor/name/jose-elizondo-obituary?id=63008800
+  - Lilia G. Lizcano: https://www.legacy.com/us/obituaries/themonitor/name/lilia-lizcano-obituary?id=63008805
+  - Maria Santos Gomez: https://www.legacy.com/us/obituaries/themonitor/name/maria-gomez-obituary?id=63008792
+  - Richard Vogelsang: https://www.legacy.com/us/obituaries/themonitor/name/richard-vogelsang-obituary?id=63008796
+  - Salvador Raya Sr.: https://www.legacy.com/us/obituaries/themonitor/name/salvador-raya-obituary?id=63008786
+  - Victoria M. Kraft: https://www.legacy.com/us/obituaries/themonitor/name/victoria-kraft-obituary?id=63008808
+  - Angel Jose Desiga: https://www.legacy.com/us/obituaries/themonitor/name/angel-desiga-obituary?id=62998832
+  - Francisa R. Cruz: https://www.legacy.com/us/obituaries/themonitor/name/francisa-cruz-obituary?id=62998833
+  - Maria De Jesus Castillo: https://www.legacy.com/us/obituaries/themonitor/name/maria-castillo-obituary?id=62998836
+  - Dolores Maria Garcia: https://www.legacy.com/us/obituaries/themonitor/name/dolores-garcia-obituary?id=62989642
+  - Gregorio Castellanos: https://www.legacy.com/us/obituaries/themonitor/name/gregorio-castellanos-obituary?id=62989645
+  - Ray Dell McClaugherty: https://www.legacy.com/us/obituaries/themonitor/name/ray-mcclaugherty-obituary?id=62989641
